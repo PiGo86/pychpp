@@ -10,7 +10,6 @@ class CHPP:
     """
     Manage connection and requests with Hattrick API
     """
-
     def __init__(self, consumer_key='', consumer_secret='', access_token_key='', access_token_secret=''):
 
         self.consumer_key = consumer_key
@@ -33,8 +32,15 @@ class CHPP:
             signature_obj=HmacSha1Signature,
         )
 
-    def get_auth(self, callback_url, scope=''):
-
+    def get_auth(self, callback_url='oob', scope=''):
+        """
+        Get url, request_token and request_token_secret to get auth from Hattrick for this user
+        :param callback_url: url that have to be request by Hattrick after the user have fill his credentials
+        :param scope: authorization granted by user to the application
+                      can be '', 'manage_challenges', 'set_matchorder', 'manage_youthplayers',
+                      'set_training', 'place_bid'
+        :return: {'request_token':..., 'request_token_secret':..., 'url':...}
+        """
         auth = dict()
 
         request_token, request_token_secret = self.service.get_request_token(params={'oauth_callback': callback_url})
