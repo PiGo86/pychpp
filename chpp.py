@@ -39,7 +39,7 @@ class CHPP:
         :param scope: authorization granted by user to the application
                       can be '', 'manage_challenges', 'set_matchorder', 'manage_youthplayers',
                       'set_training', 'place_bid'
-        :return: {'request_token':..., 'request_token_secret':..., 'url':...}
+        :return: {'request_token': ..., 'request_token_secret':..., 'url': ...}
         """
         auth = dict()
 
@@ -52,7 +52,15 @@ class CHPP:
         return auth
 
     def get_access_token(self, request_token, request_token_secret, code):
-
+        """
+        Query access token from Hattrick once the user granted the application on Hattrick
+        Access token have to be stored by the application in order to be used for following use of CHPP class
+        :param request_token: returned by get_auth
+        :param request_token_secret: returned by get_auth
+        :param code: code returned by Hattrick after the user granted the application
+                     send to callback_url by Hattrick or shown direclty on Hattrick if callback_url was ''
+        :return: {'key': ..., 'secret': ...}
+        """
         access_token_query = self.service.get_access_token(request_token,
                                                            request_token_secret,
                                                            params={'oauth_verifier': code},
