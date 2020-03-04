@@ -29,7 +29,7 @@ pyCHPP is a python framework created to use the API provided by the online game 
                         code=code,
                         )
 
-### Further connection
+### Further connections
     # Once you have obtained access_token for a user
     # You can use it to call Hattrick API
     chpp = CHPP(consumer_key,
@@ -41,3 +41,7 @@ pyCHPP is a python framework created to use the API provided by the online game 
     # Now you can use chpp methods to get datas from Hattrick API
     # For example :
     user = chpp.get_current_user()
+
+## License
+
+pyCHPP is licensed under the Apache License 2.0.
