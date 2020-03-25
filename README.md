@@ -1,9 +1,18 @@
 # pyCHPP
+
 pyCHPP is a python framework created to use the API provided by the online game Hattrick (www.hattrick.org).
+
+## Installation
+
+pyCHPP can be installed using pip :
+
+    pip install pychpp
 
 ## Usage
 
 ### First connection
+    from pychpp import CHPP
+    
     # Set consumer_key and consumer_secret provided for your app by Hattrick
     consumer_key = ''
     consumer_secret = ''
@@ -43,5 +52,4 @@ pyCHPP is a python framework created to use the API provided by the online game 
     user = chpp.get_current_user()
 
 ## License
-
 pyCHPP is licensed under the Apache License 2.0.
