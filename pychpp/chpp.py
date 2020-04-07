@@ -5,6 +5,8 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree as ET
 import datetime
 
+from pychpp.ht_user import HTUser
+
 
 class CHPP:
     """
@@ -96,20 +98,8 @@ class CHPP:
 
         return result
 
-    def get_current_user(self):
-
-        result = self.request(file='managercompendium',
-                              version='1.2',
-                              )
-
-        infos = result.find('Manager')
-
-        user = dict()
-
-        user['id'] = int(infos.find('UserId').text)
-        user['username'] = infos.find('Loginname').text
-
-        return user
+    def user(self):
+        return HTUser(self)
 
     def get_user_teams(self):
 
