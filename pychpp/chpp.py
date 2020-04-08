@@ -5,8 +5,8 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree as ET
 import datetime
 
-from pychpp.ht_user import HTUser
-
+from pychpp import ht_user
+from pychpp import ht_team
 
 class CHPP:
     """
@@ -98,8 +98,8 @@ class CHPP:
 
         return result
 
-    def user(self):
-        return HTUser(self)
+    def user(self, **kwargs):
+        return ht_user.HTUser(self, **kwargs)
 
     def get_user_teams(self):
 
@@ -122,33 +122,8 @@ class CHPP:
 
         return teams
 
-    def get_team(self, team_id):
-
-        infos = self.request(file='teamdetails',
-                             version='3.4',
-                             teamID=f'{team_id}',
-                             )
-
-        team = dict()
-
-        team['user_id'] = int(infos.find('User').find('UserID').text)
-        team['user_name'] = infos.find('User').find('Loginname').text
-
-        team['id'] = None
-        team['name'] = None
-        team['short_name'] = None
-        team['arena_id'] = None
-
-        for t in infos.find('Teams').findall('Team'):
-            if t.find('TeamID').text == str(team_id):
-                team['id'] = team_id
-                team['name'] = t.find('TeamName').text
-                team['short_name'] = t.find('ShortTeamName').text
-                team['arena_id'] = int(t.find('Arena').find('ArenaID').text)
-                team['country'] = t.find('League').find('LeagueName').text
-                team['region'] = t.find('Region').find('RegionName').text
-
-        return team
+    def team(self, **kwargs):
+        return ht_team.HTTeam(self, **kwargs)
 
     def get_arena(self, arena_id):
 
