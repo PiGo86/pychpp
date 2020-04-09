@@ -22,6 +22,7 @@ class HTTeam:
         team_data = data.find('Teams').find('Team')
         user_data = data.find('User')
 
+        # Assign attributes
         self.ht_id = int(team_data.find('TeamID').text)
         self.name = team_data.find('TeamName').text
         self.short_name = team_data.find('ShortTeamName').text
@@ -35,11 +36,12 @@ class HTTeam:
 
     @property
     def user(self):
+        """Owner of the current team"""
         return ht_user.HTUser(chpp=self._chpp, ht_id=self._user_ht_id)
 
     @property
     def players(self):
-
+        """Players list of current team"""
         data = self._chpp.request(file='players',
                                   version='2.4',
                                   actionType='view',

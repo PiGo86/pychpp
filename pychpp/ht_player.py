@@ -17,6 +17,7 @@ class HTPlayer:
                             **kwargs,
                             ).find('Player')
 
+        # Assign attributes
         self.ht_id = int(data.find('PlayerID').text)
         self.first_name = data.find('FirstName').text
         self.nick_name = data.find('NickName').text

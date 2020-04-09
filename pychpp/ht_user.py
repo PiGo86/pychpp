@@ -36,6 +36,7 @@ class HTUser:
 
     @property
     def teams(self):
+        """Teams list of current user"""
         return [ht_team.HTTeam(chpp=self._chpp, ht_id=team_ht_id) for team_ht_id in self._teams_ht_id]
 
 
