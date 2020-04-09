@@ -5,8 +5,8 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree as ET
 import datetime
 
-from pychpp import ht_user
-from pychpp import ht_team
+from pychpp import ht_user, ht_team, ht_player
+
 
 class CHPP:
     """
@@ -101,6 +101,12 @@ class CHPP:
     def user(self, **kwargs):
         return ht_user.HTUser(self, **kwargs)
 
+    def team(self, **kwargs):
+        return ht_team.HTTeam(self, **kwargs)
+
+    def player(self, **kwargs):
+        return ht_player.HTPlayer(self, **kwargs)
+
     def get_user_teams(self):
 
         result = self.request(file='managercompendium',
@@ -121,9 +127,6 @@ class CHPP:
             teams.append(team)
 
         return teams
-
-    def team(self, **kwargs):
-        return ht_team.HTTeam(self, **kwargs)
 
     def get_arena(self, arena_id):
 
