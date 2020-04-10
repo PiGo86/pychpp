@@ -91,21 +91,20 @@ class CHPP:
         result = ET.fromstring(query.text)
         file_name = result.find('FileName').text
 
-        # Si Hattrick renvoie une erreur, on lance une exception appropriée
-        # selon le code d'erreur
+        # If Hattrick returns an error, an exception is raised
         if file_name == 'chpperror.xml':
             raise HTUndefinedError(result.find('Error').text)
 
         return result
 
     def user(self, **kwargs):
-        return ht_user.HTUser(self, **kwargs)
+        return ht_user.HTUser(chpp=self, **kwargs)
 
     def team(self, **kwargs):
-        return ht_team.HTTeam(self, **kwargs)
+        return ht_team.HTTeam(chpp=self, **kwargs)
 
     def player(self, **kwargs):
-        return ht_player.HTPlayer(self, **kwargs)
+        return ht_player.HTPlayer(chpp=self, **kwargs)
 
     def get_user_teams(self):
 
