@@ -2,17 +2,22 @@ import xml
 from pychpp import ht_team
 
 
-class HTPlayer:
+class HTCorePlayer:
     """
-    Represents a Hattrick player
+    Default Hattrick player
+    Used to create HTPlayer and HTYouthPlayer classes
     """
+
+    _SOURCE_FILE = 'playerdetails'
+    _SOURCE_FILE_VERSION = '2.8'
+    _REQUEST_ARGS = {'actionType': 'view', 'playerID': None}
 
     def __init__(self, chpp, ht_id=None, data=None, team_ht_id=None):
 
         self._chpp = chpp
 
         # Init depends on given parameters
-        # If chpp is given, data variable as to be defined
+        # If data is not defined, ht_id has to be defined
         if data is None:
 
             # Check ht_id integrity as data is not defined
@@ -25,12 +30,20 @@ class HTPlayer:
             # If ht_id is well defined, data is fetched and self.team_ht_id defined
             else:
 
-                kwargs = {'actionType': 'view', 'playerID': ht_id}
-                data = chpp.request(file='playerdetails',
-                                    version='2.8',
-                                    **kwargs,
-                                    ).find('Player')
-                self.team_ht_id = int(data.find('OwningTeam').find('TeamID').text)
+                if self._REQUEST_ARGS.get('playerID', None) is not None:
+                    self._REQUEST_ARGS['playerID'] = ht_id
+                else:
+                    self._REQUEST_ARGS['youthPlayerId'] = ht_id
+
+                data = chpp.request(file=self._SOURCE_FILE,
+                                    version=self._SOURCE_FILE_VERSION,
+                                    **self._REQUEST_ARGS,
+                                    )
+
+                if self._REQUEST_ARGS.get('playerID', None) is not None:
+                    data = data.find('Player')
+                else:
+                    data = data.find('YouthPlayer')
 
         elif not isinstance(data, xml.etree.ElementTree.Element):
             raise ValueError('data parameter has to be an ElementTree.Element instance')
@@ -42,71 +55,80 @@ class HTPlayer:
         else:
             self.team_ht_id = team_ht_id
 
-        # Assign attributes
-        self.ht_id = int(data.find('PlayerID').text)
-        self.first_name = data.find('FirstName').text
-        self.nick_name = data.find('NickName').text
-        self.last_name = data.find('LastName').text
-        self.player_number = int(data.find('PlayerNumber').text)
-        self.age = int(data.find('Age').text)
-        self.age_days = int(data.find('AgeDays').text)
-        self.arrival_date = data.find('ArrivalDate').text
-        self.owner_notes = data.find('OwnerNotes').text
-        self.tsi = int(data.find('TSI').text)
-        self.player_form = int(data.find('PlayerForm').text)
-        self.statement = data.find('Statement').text
-        self.experience = int(data.find('Experience').text)
-        self.loyalty = int(data.find('Loyalty').text)
-        self.mother_club_bonus = True if data.find('MotherClubBonus').text == True else False
-        self.leadership = int(data.find('Leadership').text)
-        self.salary = int(data.find('Salary').text)
-        self.is_abroad = True if data.find('IsAbroad').text == 'True' else False
-        self.agreeability = int(data.find('Agreeability').text)
-        self.aggressiveness = int(data.find('Aggressiveness').text)
-        self.honesty = int(data.find('Honesty').text)
-        self.league_goals = int(data.find('LeagueGoals').text)
-        self.cup_goals = int(data.find('CupGoals').text)
-        self.friendlies_goals = int(data.find('FriendliesGoals').text)
-        self.career_goals = int(data.find('CareerGoals').text)
-        self.career_hattricks = int(data.find('CareerHattricks').text)
-        self.matches_current_team = int(data.find('MatchesCurrentTeam').text)
-        self.goals_current_team = int(data.find('GoalsCurrentTeam').text)
-        self.specialty = int(data.find('Specialty').text)
-        self.transfer_listed = True if data.find('TransferListed').text == 'True' else False
-
-        self.caps = int(data.find('Caps').text)
-        self.caps_u20 = int(data.find('CapsU20').text)
-        self.cards = int(data.find('Cards').text)
-        self.injury_level = int(data.find('InjuryLevel').text)
-
         # Skills
         if ht_id is None:
             skill_data = data
         else:
             skill_data = data.find('PlayerSkills')
 
-        self.stamina_skill = int(skill_data.find('StaminaSkill').text)
-        self.keeper_skill = int(skill_data.find('KeeperSkill').text)
-        self.playmaker_skill = int(skill_data.find('PlaymakerSkill').text)
-        self.scorer_skill = int(skill_data.find('ScorerSkill').text)
-        self.passing_skill = int(skill_data.find('PassingSkill').text)
-        self.winger_skill = int(skill_data.find('WingerSkill').text)
-        self.defender_skill = int(skill_data.find('DefenderSkill').text)
-        self.set_pieces_skill = int(skill_data.find('SetPiecesSkill').text)
+        # Internal attributes
+        self._data = data
+        self._skill_data = skill_data
 
-        # tags name depending on xml source file (players.xml vs playerdetails.xml)
-        if ht_id is None:
-            self.national_team_id = int(data.find('NationalTeamID').text)
-            self.country_id = int(data.find('CountryID').text)
-            self.category_id = int(data.find('PlayerCategoryId').text)
+        # Assign attributes
+        self.first_name = data.find('FirstName').text
+        self.nick_name = data.find('NickName').text
+        self.last_name = data.find('LastName').text
 
+        self.age = int(data.find('Age').text)
+        self.age_days = int(data.find('AgeDays').text)
+        self.arrival_date = data.find('ArrivalDate').text
+        # self.owner_notes = data.find('OwnerNotes').text
+        self.statement = data.find('Statement').text
+
+        self.league_goals = int(data.find('LeagueGoals').text)
+        self.career_goals = int(data.find('CareerGoals').text)
+        self.career_hattricks = int(data.find('CareerHattricks').text)
+        self.specialty = int(data.find('Specialty').text)
+
+        self.cards = int(data.find('Cards').text)
+        self.injury_level = int(data.find('InjuryLevel').text)
+
+
+class HTPlayer(HTCorePlayer):
+    """
+    Hattrick player
+    """
+
+    def __init__(self, **kwargs):
+
+        super().__init__(**kwargs)
+
+        if kwargs.get('data', None) is not None:
+            self.team_ht_id = kwargs['ht_id']
         else:
-            self.country_id = int(data.find('NativeCountryID').text)
-            self.native_league_id = int(data.find('NativeLeagueID').text)
-            self.native_league_name = data.find('NativeLeagueName').text
-            self.next_birth_day = data.find('NextBirthDay').text
-            self.player_language = data.find('PlayerLanguage').text
-            self.player_language_id = data.find('PlayerLanguageID').text
+            self.team_ht_id = int(self._data.find('OwningTeam').find('TeamID').text)
+
+        self.ht_id = int(self._data.find('PlayerID').text)
+        self.player_number = int(self._data.find('PlayerNumber').text)
+        self.tsi = int(self._data.find('TSI').text)
+        self.player_form = int(self._data.find('PlayerForm').text)
+        self.experience = int(self._data.find('Experience').text)
+        self.loyalty = int(self._data.find('Loyalty').text)
+        self.mother_club_bonus = True if self._data.find('MotherClubBonus').text == 'True' else False
+        self.leadership = int(self._data.find('Leadership').text)
+        self.salary = int(self._data.find('Salary').text)
+        self.is_abroad = True if self._data.find('IsAbroad').text == 'True' else False
+        self.agreeability = int(self._data.find('Agreeability').text)
+        self.aggressiveness = int(self._data.find('Aggressiveness').text)
+        self.honesty = int(self._data.find('Honesty').text)
+        self.friendlies_goals = int(self._data.find('FriendliesGoals').text)
+        self.cup_goals = int(self._data.find('CupGoals').text)
+        self.goals_current_team = int(self._data.find('GoalsCurrentTeam').text)
+        self.matches_current_team = int(self._data.find('MatchesCurrentTeam').text)
+        self.transfer_listed = True if self._data.find('TransferListed').text == 'True' else False
+
+        self.caps = int(self._data.find('Caps').text)
+        self.caps_u20 = int(self._data.find('CapsU20').text)
+
+        self.stamina_skill = int(self._skill_data.find('StaminaSkill').text)
+        self.keeper_skill = int(self._skill_data.find('KeeperSkill').text)
+        self.playmaker_skill = int(self._skill_data.find('PlaymakerSkill').text)
+        self.scorer_skill = int(self._skill_data.find('ScorerSkill').text)
+        self.passing_skill = int(self._skill_data.find('PassingSkill').text)
+        self.winger_skill = int(self._skill_data.find('WingerSkill').text)
+        self.defender_skill = int(self._skill_data.find('DefenderSkill').text)
+        self.set_pieces_skill = int(self._skill_data.find('SetPiecesSkill').text)
 
     def __repr__(self):
         return f'<HTPlayer object : {self.first_name} {self.last_name} ({self.ht_id})>'
@@ -114,3 +136,29 @@ class HTPlayer:
     @property
     def team(self):
         return ht_team.HTTeam(chpp=self._chpp, ht_id=self.team_ht_id)
+
+
+class HTYouthPlayer(HTCorePlayer):
+    """
+    Hattrick youth player
+    """
+
+    _SOURCE_FILE = 'youthplayerdetails'
+    _SOURCE_FILE_VERSION = '1.1'
+    _REQUEST_ARGS = {'actionType': 'view', 'youthPlayerId': None}
+
+    def __init__(self, **kwargs):
+
+        super().__init__(**kwargs)
+
+        if kwargs.get('data', None) is not None:
+            self.team_ht_id = kwargs['ht_id']
+        else:
+            self.team_ht_id = int(self._data.find('OwningYouthTeam').find('YouthTeamID').text)
+
+        self.ht_id = int(self._data.find('YouthPlayerID').text)
+        self.friendlies_goals = int(self._data.find('FriendlyGoals').text)
+
+    def __repr__(self):
+        return f'<HTYouthPlayer object : {self.first_name} {self.last_name} ({self.ht_id})>'
+

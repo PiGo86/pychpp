@@ -47,5 +47,7 @@ class HTTeam:
                                   actionType='view',
                                   teamID=self.ht_id).find('Team').find('PlayerList')
 
-        return [ht_player.HTPlayer(chpp=self._chpp, data=p_data) for p_data in data.findall('Player')]
+        return [ht_player.HTPlayer(chpp=self._chpp,
+                                   data=p_data,
+                                   team_ht_id=self.ht_id) for p_data in data.findall('Player')]
 

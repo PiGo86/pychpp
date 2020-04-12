@@ -106,6 +106,9 @@ class CHPP:
     def player(self, **kwargs):
         return ht_player.HTPlayer(chpp=self, **kwargs)
 
+    def youth_player(self, **kwargs):
+        return ht_player.HTYouthPlayer(chpp=self, **kwargs)
+
     def get_user_teams(self):
 
         result = self.request(file='managercompendium',
