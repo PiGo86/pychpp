@@ -30,6 +30,7 @@ class HTCorePlayer:
             # If ht_id is well defined, data is fetched and self.team_ht_id defined
             else:
 
+                # Request arguments depends on player type (senior or youth)
                 if self._REQUEST_ARGS.get('playerID', None) is not None:
                     self._REQUEST_ARGS['playerID'] = ht_id
                 else:
@@ -40,6 +41,7 @@ class HTCorePlayer:
                                     **self._REQUEST_ARGS,
                                     )
 
+                # Xml main tag depends on player type (senior or youth)
                 if self._REQUEST_ARGS.get('playerID', None) is not None:
                     data = data.find('Player')
                 else:
@@ -50,10 +52,6 @@ class HTCorePlayer:
 
         elif team_ht_id is None:
             raise ValueError('team_ht_id must be defined as data is defined')
-
-        # if team_ht_id is well defined, it is assigned to self.team_ht_id
-        else:
-            self.team_ht_id = team_ht_id
 
         # Skills
         if ht_id is None:
@@ -84,6 +82,9 @@ class HTCorePlayer:
         self.cards = int(data.find('Cards').text)
         self.injury_level = int(data.find('InjuryLevel').text)
 
+    def __repr__(self):
+        return f'<HTCorePlayer object : {self.first_name} {self.last_name} ({self.ht_id})>'
+
 
 class HTPlayer(HTCorePlayer):
     """
@@ -94,11 +95,13 @@ class HTPlayer(HTCorePlayer):
 
         super().__init__(**kwargs)
 
+        # team_ht_id is defined by arguments or inside xml data
         if kwargs.get('data', None) is not None:
             self.team_ht_id = kwargs['ht_id']
         else:
             self.team_ht_id = int(self._data.find('OwningTeam').find('TeamID').text)
 
+        # Assign specific senior player attributes
         self.ht_id = int(self._data.find('PlayerID').text)
         self.player_number = int(self._data.find('PlayerNumber').text)
         self.tsi = int(self._data.find('TSI').text)
@@ -151,11 +154,13 @@ class HTYouthPlayer(HTCorePlayer):
 
         super().__init__(**kwargs)
 
+        # team_ht_id is defined by arguments or inside xml data
         if kwargs.get('data', None) is not None:
             self.team_ht_id = kwargs['ht_id']
         else:
             self.team_ht_id = int(self._data.find('OwningYouthTeam').find('YouthTeamID').text)
 
+        # Assign specific youth player attributes
         self.ht_id = int(self._data.find('YouthPlayerID').text)
         self.friendlies_goals = int(self._data.find('FriendlyGoals').text)
 
