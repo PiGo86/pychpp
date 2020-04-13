@@ -71,7 +71,6 @@ class HTCorePlayer:
         self.age = int(data.find('Age').text)
         self.age_days = int(data.find('AgeDays').text)
         self.arrival_date = data.find('ArrivalDate').text
-        # self.owner_notes = data.find('OwnerNotes').text
         self.statement = data.find('Statement').text
 
         self.league_goals = int(data.find('LeagueGoals').text)
@@ -104,6 +103,7 @@ class HTPlayer(HTCorePlayer):
         # Assign specific senior player attributes
         self.ht_id = int(self._data.find('PlayerID').text)
         self.player_number = int(self._data.find('PlayerNumber').text)
+        self.owner_notes = self._data.find('OwnerNotes').text
         self.tsi = int(self._data.find('TSI').text)
         self.player_form = int(self._data.find('PlayerForm').text)
         self.experience = int(self._data.find('Experience').text)
@@ -124,6 +124,7 @@ class HTPlayer(HTCorePlayer):
         self.caps = int(self._data.find('Caps').text)
         self.caps_u20 = int(self._data.find('CapsU20').text)
 
+        # TODO: connect to HTSkill class
         self.stamina_skill = int(self._skill_data.find('StaminaSkill').text)
         self.keeper_skill = int(self._skill_data.find('KeeperSkill').text)
         self.playmaker_skill = int(self._skill_data.find('PlaymakerSkill').text)
@@ -162,8 +163,22 @@ class HTYouthPlayer(HTCorePlayer):
 
         # Assign specific youth player attributes
         self.ht_id = int(self._data.find('YouthPlayerID').text)
+        self.can_be_promoted_in = int(self._data.find('CanBePromotedIn').text)
+        self.player_number = int(self._data.find('PlayerNumber').text) if (self._data.find('PlayerNumber')
+                                                                           is not None) else None
+        self.player_category_id = int(self._data.find('PlayerCategoryID').text) if (self._data.find('PlayerNumber')
+                                                                                    is not None) else None
         self.friendlies_goals = int(self._data.find('FriendlyGoals').text)
+
+        # Skills attributes
+        # TODO: connect to HTYouthSkill class
+        self.keeper_skill = int(self._skill_data.find('KeeperSkill').text)
+        self.playmaker_skill = int(self._skill_data.find('PlaymakerSkill').text)
+        self.scorer_skill = int(self._skill_data.find('ScorerSkill').text)
+        self.passing_skill = int(self._skill_data.find('PassingSkill').text)
+        self.winger_skill = int(self._skill_data.find('WingerSkill').text)
+        self.defender_skill = int(self._skill_data.find('DefenderSkill').text)
+        self.set_pieces_skill = int(self._skill_data.find('SetPiecesSkill').text)
 
     def __repr__(self):
         return f'<HTYouthPlayer object : {self.first_name} {self.last_name} ({self.ht_id})>'
-
