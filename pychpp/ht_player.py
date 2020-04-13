@@ -4,7 +4,7 @@ from pychpp import ht_team
 
 class HTCorePlayer:
     """
-    Default Hattrick player
+    Core Hattrick player
     Used to create HTPlayer and HTYouthPlayer classes
     """
 
@@ -31,7 +31,7 @@ class HTCorePlayer:
             else:
 
                 # Request arguments depends on player type (senior or youth)
-                if self._REQUEST_ARGS.get('playerID', None) is not None:
+                if 'playerID' in self._REQUEST_ARGS:
                     self._REQUEST_ARGS['playerID'] = ht_id
                 else:
                     self._REQUEST_ARGS['youthPlayerId'] = ht_id
@@ -42,7 +42,7 @@ class HTCorePlayer:
                                     )
 
                 # Xml main tag depends on player type (senior or youth)
-                if self._REQUEST_ARGS.get('playerID', None) is not None:
+                if 'playerID' in self._REQUEST_ARGS:
                     data = data.find('Player')
                 else:
                     data = data.find('YouthPlayer')
@@ -62,6 +62,7 @@ class HTCorePlayer:
         # Internal attributes
         self._data = data
         self._skill_data = skill_data
+        self.ht_id = ht_id
 
         # Assign attributes
         self.first_name = data.find('FirstName').text
@@ -82,7 +83,7 @@ class HTCorePlayer:
         self.injury_level = int(data.find('InjuryLevel').text)
 
     def __repr__(self):
-        return f'<HTCorePlayer object : {self.first_name} {self.last_name} ({self.ht_id})>'
+        return f'<{self.__class__.__name__} object : {self.first_name} {self.last_name} ({self.ht_id})>'
 
 
 class HTPlayer(HTCorePlayer):
@@ -134,9 +135,6 @@ class HTPlayer(HTCorePlayer):
         self.defender_skill = int(self._skill_data.find('DefenderSkill').text)
         self.set_pieces_skill = int(self._skill_data.find('SetPiecesSkill').text)
 
-    def __repr__(self):
-        return f'<HTPlayer object : {self.first_name} {self.last_name} ({self.ht_id})>'
-
     @property
     def team(self):
         return ht_team.HTTeam(chpp=self._chpp, ht_id=self.team_ht_id)
@@ -179,6 +177,3 @@ class HTYouthPlayer(HTCorePlayer):
         self.winger_skill = int(self._skill_data.find('WingerSkill').text)
         self.defender_skill = int(self._skill_data.find('DefenderSkill').text)
         self.set_pieces_skill = int(self._skill_data.find('SetPiecesSkill').text)
-
-    def __repr__(self):
-        return f'<HTYouthPlayer object : {self.first_name} {self.last_name} ({self.ht_id})>'

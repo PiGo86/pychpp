@@ -103,6 +103,9 @@ class CHPP:
     def team(self, **kwargs):
         return ht_team.HTTeam(chpp=self, **kwargs)
 
+    def youth_team(self, **kwargs):
+        return ht_team.HTYouthTeam(chpp=self, **kwargs)
+
     def player(self, **kwargs):
         return ht_player.HTPlayer(chpp=self, **kwargs)
 
