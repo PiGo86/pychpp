@@ -14,6 +14,7 @@ rauth = "^0.7.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+pytest-dotenv = "^0.4.0"
 
 [build-system]
 requires = ["poetry>=0.12"]

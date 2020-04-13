@@ -104,7 +104,6 @@ class HTPlayer(HTCorePlayer):
         # Assign specific senior player attributes
         self.ht_id = int(self._data.find('PlayerID').text)
         self.player_number = int(self._data.find('PlayerNumber').text)
-        self.owner_notes = self._data.find('OwnerNotes').text
         self.tsi = int(self._data.find('TSI').text)
         self.player_form = int(self._data.find('PlayerForm').text)
         self.experience = int(self._data.find('Experience').text)
@@ -125,15 +124,36 @@ class HTPlayer(HTCorePlayer):
         self.caps = int(self._data.find('Caps').text)
         self.caps_u20 = int(self._data.find('CapsU20').text)
 
+        # attributes only visible for team of current user
+        self.owner_notes = (self._data.find('OwnerNotes').text
+                            if self._data.find('OwnerNotes') is not None else None)
+
         # TODO: connect to HTSkill class
+        # stamina is always available
         self.stamina_skill = int(self._skill_data.find('StaminaSkill').text)
-        self.keeper_skill = int(self._skill_data.find('KeeperSkill').text)
-        self.playmaker_skill = int(self._skill_data.find('PlaymakerSkill').text)
-        self.scorer_skill = int(self._skill_data.find('ScorerSkill').text)
-        self.passing_skill = int(self._skill_data.find('PassingSkill').text)
-        self.winger_skill = int(self._skill_data.find('WingerSkill').text)
-        self.defender_skill = int(self._skill_data.find('DefenderSkill').text)
-        self.set_pieces_skill = int(self._skill_data.find('SetPiecesSkill').text)
+
+        # other skills are only available if this current user team
+        # if skills are not available, set to None
+        self.keeper_skill = (int(self._skill_data.find('KeeperSkill').text)
+                             if self._skill_data.find('KeeperSkill') is not None else None)
+
+        self.playmaker_skill = (int(self._skill_data.find('PlaymakerSkill').text)
+                                if self._skill_data.find('PlaymakerSkill') is not None else None)
+
+        self.scorer_skill = (int(self._skill_data.find('ScorerSkill').text)
+                             if self._skill_data.find('ScorerSkill') is not None else None)
+
+        self.passing_skill = (int(self._skill_data.find('PassingSkill').text)
+                              if self._skill_data.find('PassingSkill') is not None else None)
+
+        self.winger_skill = (int(self._skill_data.find('WingerSkill').text)
+                             if self._skill_data.find('WingerSkill') is not None else None)
+
+        self.defender_skill = (int(self._skill_data.find('DefenderSkill').text)
+                               if self._skill_data.find('DefenderSkill') is not None else None)
+
+        self.set_pieces_skill = (int(self._skill_data.find('SetPiecesSkill').text)
+                                 if self._skill_data.find('SetPiecesSkill') is not None else None)
 
     @property
     def team(self):
