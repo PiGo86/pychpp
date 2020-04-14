@@ -3,7 +3,7 @@ from pychpp import ht_team
 
 class HTUser:
     """
-    Represent a Hattrick user
+    Hattrick user
     """
 
     def __init__(self, chpp, ht_id=None):

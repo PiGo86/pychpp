@@ -5,7 +5,7 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree as ET
 import datetime
 
-from pychpp import ht_user, ht_team, ht_player
+from pychpp import ht_user, ht_team, ht_player, ht_arena
 
 
 class CHPP:
@@ -112,44 +112,8 @@ class CHPP:
     def youth_player(self, **kwargs):
         return ht_player.HTYouthPlayer(chpp=self, **kwargs)
 
-    def get_user_teams(self):
-
-        result = self.request(file='managercompendium',
-                              version='1.2',
-                              )
-
-        infos = result.find('Manager')
-
-        teams = list()
-
-        for t in infos.find('Teams').findall('Team'):
-            team = dict()
-            team['id'] = int(t.find('TeamId').text)
-            team['name'] = t.find('TeamName').text
-            team['arena_id'] = int(t.find('Arena').find('ArenaId').text)
-            team['country'] = t.find('League').find('LeagueName').text
-            team['region'] = t.find('Region').find('RegionName').text
-            teams.append(team)
-
-        return teams
-
-    def get_arena(self, arena_id):
-
-        result = self.request(file='arenadetails',
-                              version='1.5',
-                              arenaID=f'{arena_id}',
-                              )
-
-        infos = result.find('Arena')
-
-        arena = dict()
-        arena['id'] = arena_id
-        arena['name'] = infos.find('ArenaName').text
-        arena['capacity'] = int(infos.find('CurrentCapacity').find('Total').text)
-        arena['country'] = infos.find('League').find('LeagueName').text
-        arena['region'] = infos.find('Region').find('RegionName').text
-
-        return arena
+    def arena(self, **kwargs):
+        return ht_arena.HTArena(chpp=self, **kwargs)
 
     def get_challenges(self, author, weekend):
 

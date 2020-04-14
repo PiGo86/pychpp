@@ -81,6 +81,11 @@ class HTTeam(HTCoreTeam):
                                    data=p_data,
                                    team_ht_id=self.ht_id) for p_data in data.findall('Player')]
 
+    @property
+    def youth_team(self):
+        yt_id = int(self._team_data.find('YouthTeamID').text)
+        return HTYouthTeam(chpp=self._chpp, ht_id=yt_id) if yt_id != 0 else None
+
 
 class HTYouthTeam(HTCoreTeam):
     """

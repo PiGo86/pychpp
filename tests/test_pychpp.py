@@ -7,6 +7,7 @@ from pychpp import CHPP
 from pychpp.ht_team import HTTeam, HTYouthTeam
 from pychpp.ht_user import HTUser
 from pychpp.ht_player import HTPlayer
+from pychpp.ht_arena import HTArena
 
 
 PYCHPP_CONSUMER_KEY = os.environ['PYCHPP_CONSUMER_KEY']
@@ -53,11 +54,17 @@ def test_get_current_team(chpp):
     assert isinstance(team.ht_id, int)
     assert isinstance(team.name, str)
 
+    youth_team = team.youth_team
+    assert isinstance(youth_team, HTYouthTeam) or youth_team is None
+
+    user = team.user
+    test_user = chpp.user()
+    assert user.ht_id == test_user.ht_id
+
 
 def test_get_specific_team(chpp):
 
     team = chpp.team(ht_id=591993)
-
     assert isinstance(team, HTTeam)
     assert team.ht_id == 591993
     assert team.name == "thekiki's"
@@ -65,11 +72,14 @@ def test_get_specific_team(chpp):
     assert team.is_primary_club is True
 
     user = team.user
-
     assert isinstance(user, HTUser)
     assert user.ht_id == 6336642
     assert user.username == 'thekiki76'
     assert user.supporter_tier == 'platinum'
+
+    youth_team = team.youth_team
+    assert isinstance(youth_team, HTYouthTeam)
+    assert youth_team.name == 'thebabykikis'
 
 
 def test_get_current_user(chpp):
@@ -97,3 +107,10 @@ def test_get_player(chpp):
     assert isinstance(player.tsi, int)
     assert isinstance(player.injury_level, int)
 
+
+def test_get_current_user_arena(chpp):
+
+    arena = chpp.arena()
+    assert isinstance(arena, HTArena)
+    assert isinstance(arena.ht_id, int)
+    assert isinstance(arena.name, str)
