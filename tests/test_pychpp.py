@@ -8,6 +8,7 @@ from pychpp.ht_team import HTTeam, HTYouthTeam
 from pychpp.ht_user import HTUser
 from pychpp.ht_player import HTPlayer
 from pychpp.ht_arena import HTArena
+from pychpp.ht_region import HTRegion
 
 
 PYCHPP_CONSUMER_KEY = os.environ['PYCHPP_CONSUMER_KEY']
@@ -131,3 +132,15 @@ def test_get_specific_arena(chpp):
     assert isinstance(team, HTTeam)
     assert team.ht_id == 295023
     assert team.name == 'Les piments verts'
+
+
+def test_get_current_user_region(chpp):
+
+    region = chpp.region()
+    assert isinstance(region, HTRegion)
+    assert isinstance(region.ht_id, int)
+    assert isinstance(region.name, str)
+    assert isinstance(region.number_of_users, int)
+    assert isinstance(region.number_of_online, int)
+    assert isinstance(region.weather, int)
+    assert isinstance(region.tomorrow_weather, int)

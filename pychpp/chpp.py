@@ -5,7 +5,7 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree as ET
 import datetime
 
-from pychpp import ht_user, ht_team, ht_player, ht_arena
+from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region
 
 
 class CHPP:
@@ -114,6 +114,9 @@ class CHPP:
 
     def arena(self, **kwargs):
         return ht_arena.HTArena(chpp=self, **kwargs)
+
+    def region(self, **kwargs):
+        return ht_region.HTRegion(chpp=self, **kwargs)
 
     def get_challenges(self, author, weekend):
 
