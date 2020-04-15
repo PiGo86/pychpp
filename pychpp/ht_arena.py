@@ -1,7 +1,13 @@
+from pychpp import ht_team
+
+
 class HTArena:
     """
     Hattrick arena
     """
+
+    _SOURCE_FILE = 'arenadetails'
+    _SOURCE_FILE_VERSION = '1.5'
 
     def __init__(self, chpp, ht_id=None):
 
@@ -11,10 +17,12 @@ class HTArena:
         if ht_id is not None:
             kwargs['arenaID'] = ht_id
 
-        data = chpp.request(file='arenadetails',
-                            version='1.5',
+        data = chpp.request(file=self._SOURCE_FILE,
+                            version=self._SOURCE_FILE_VERSION,
                             **kwargs,
                             ).find('Arena')
+
+        self._data = data
 
         self.ht_id = int(data.find('ArenaID').text)
         self.name = data.find('ArenaName').text
@@ -48,3 +56,8 @@ class HTArena:
 
     def __repr__(self):
         return f'<{self.__class__.__name__} object : {self.name} ({self.ht_id})>'
+
+    @property
+    def team(self):
+        return ht_team.HTTeam(chpp=self._chpp,
+                              ht_id=int(self._data.find('Team').find('TeamID').text))

@@ -1,4 +1,4 @@
-from pychpp import ht_user, ht_player
+from pychpp import ht_user, ht_player, ht_arena
 
 
 class HTCoreTeam:
@@ -85,6 +85,11 @@ class HTTeam(HTCoreTeam):
     def youth_team(self):
         yt_id = int(self._team_data.find('YouthTeamID').text)
         return HTYouthTeam(chpp=self._chpp, ht_id=yt_id) if yt_id != 0 else None
+
+    @property
+    def arena(self):
+        ht_id = int(self._team_data.find(f'Arena').find('ArenaID').text)
+        return ht_arena.HTArena(chpp=self._chpp, ht_id=ht_id)
 
 
 class HTYouthTeam(HTCoreTeam):

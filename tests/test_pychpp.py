@@ -81,6 +81,10 @@ def test_get_specific_team(chpp):
     assert isinstance(youth_team, HTYouthTeam)
     assert youth_team.name == 'thebabykikis'
 
+    arena = team.arena
+    assert isinstance(arena, HTArena)
+    assert arena.name == "thekiki's evil"
+
 
 def test_get_current_user(chpp):
 
@@ -114,3 +118,16 @@ def test_get_current_user_arena(chpp):
     assert isinstance(arena, HTArena)
     assert isinstance(arena.ht_id, int)
     assert isinstance(arena.name, str)
+
+
+def test_get_specific_arena(chpp):
+
+    arena = chpp.arena(ht_id=295023)
+    assert isinstance(arena, HTArena)
+    assert arena.ht_id == 295023
+    assert arena.name == 'Les piments verts Arena'
+
+    team = arena.team
+    assert isinstance(team, HTTeam)
+    assert team.ht_id == 295023
+    assert team.name == 'Les piments verts'
