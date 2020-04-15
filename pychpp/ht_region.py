@@ -12,7 +12,7 @@ class HTRegion:
         kwargs = {}
 
         if ht_id is not None:
-            kwargs['arenaID'] = ht_id
+            kwargs['regionID'] = ht_id
 
         data = chpp.request(file=self._SOURCE_FILE,
                             version=self._SOURCE_FILE_VERSION,

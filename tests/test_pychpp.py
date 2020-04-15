@@ -144,3 +144,15 @@ def test_get_current_user_region(chpp):
     assert isinstance(region.number_of_online, int)
     assert isinstance(region.weather, int)
     assert isinstance(region.tomorrow_weather, int)
+
+
+def test_get_specific_region(chpp):
+
+    region = chpp.region(ht_id=148)
+    assert isinstance(region, HTRegion)
+    assert region.ht_id == 148
+    assert region.name == "Poitou-Charentes"
+    assert isinstance(region.number_of_users, int)
+    assert isinstance(region.number_of_online, int)
+    assert isinstance(region.weather, int)
+    assert isinstance(region.tomorrow_weather, int)
