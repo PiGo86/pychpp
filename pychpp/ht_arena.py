@@ -1,4 +1,5 @@
 from pychpp import ht_team
+from pychpp.ht_date import HTDate
 
 
 class HTArena:
@@ -28,7 +29,7 @@ class HTArena:
         self.name = data.find('ArenaName').text
 
         cap_data = data.find('CurrentCapacity')
-        rebuilt_date = (cap_data.find('RebuiltDate').text
+        rebuilt_date = (HTDate.from_ht(cap_data.find('RebuiltDate').text)
                         if cap_data.find('RebuiltDate').attrib['Available'] == 'True'
                         else None
                         )
@@ -44,7 +45,7 @@ class HTArena:
         exp_data = data.find('ExpandedCapacity')
 
         if exp_data.attrib['Available'] == 'True':
-            self.expanded_capacity = {'expansion_date': exp_data.find('ExpansionDate').text,
+            self.expanded_capacity = {'expansion_date': HTDate.from_ht(exp_data.find('ExpansionDate').text),
                                       'terraces': int(exp_data.find('Terraces').text),
                                       'basic': int(exp_data.find('Basic').text),
                                       'roof': int(exp_data.find('Roof').text),

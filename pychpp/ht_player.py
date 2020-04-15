@@ -1,5 +1,6 @@
 import xml
 from pychpp import ht_team
+from pychpp.ht_date import HTDate
 
 
 class HTCorePlayer:
@@ -71,7 +72,7 @@ class HTCorePlayer:
 
         self.age = int(data.find('Age').text)
         self.age_days = int(data.find('AgeDays').text)
-        self.arrival_date = data.find('ArrivalDate').text
+        self.arrival_date = HTDate.from_ht(data.find('ArrivalDate').text)
         self.statement = data.find('Statement').text
 
         self.league_goals = int(data.find('LeagueGoals').text)
@@ -182,10 +183,12 @@ class HTYouthPlayer(HTCorePlayer):
         # Assign specific youth player attributes
         self.ht_id = int(self._data.find('YouthPlayerID').text)
         self.can_be_promoted_in = int(self._data.find('CanBePromotedIn').text)
-        self.player_number = int(self._data.find('PlayerNumber').text) if (self._data.find('PlayerNumber')
-                                                                           is not None) else None
-        self.player_category_id = int(self._data.find('PlayerCategoryID').text) if (self._data.find('PlayerNumber')
-                                                                                    is not None) else None
+        self.player_number = (int(self._data.find('PlayerNumber').text)
+                              if self._data.find('PlayerNumber') is not None
+                              else None)
+        self.player_category_id = (int(self._data.find('PlayerCategoryID').text)
+                                   if self._data.find('PlayerNumber') is not None
+                                   else None)
         self.friendlies_goals = int(self._data.find('FriendlyGoals').text)
 
         # Skills attributes

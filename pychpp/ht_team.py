@@ -1,4 +1,5 @@
 from pychpp import ht_user, ht_player, ht_arena
+from pychpp.ht_date import HTDate
 
 
 class HTCoreTeam:
@@ -61,7 +62,7 @@ class HTTeam(HTCoreTeam):
         self._user_ht_id = int(self._user_data.find('UserID').text)
 
         self.name = self._team_data.find('TeamName').text
-        self.founded_date = self._team_data.find('FoundedDate').text
+        self.founded_date = HTDate.from_ht(self._team_data.find('FoundedDate').text)
         self.is_primary_club = True if self._team_data.find('IsPrimaryClub').text == 'True' else False
 
     @property
@@ -106,7 +107,7 @@ class HTYouthTeam(HTCoreTeam):
 
         self.ht_id = int(self._team_data.find('YouthTeamID').text)
         self.name = self._team_data.find('YouthTeamName').text
-        self.created_date = self._team_data.find('CreatedDate').text
+        self.created_date = HTDate.from_ht(self._team_data.find('CreatedDate').text)
 
     @property
     def players(self):
