@@ -1,6 +1,7 @@
 import xml
 from pychpp import ht_team
 from pychpp.ht_date import HTDate
+from pychpp.ht_skill import HTSkill, HTSkillYouth, youth_skills_tag, senior_skills_tag
 
 
 class HTCorePlayer:
@@ -48,7 +49,7 @@ class HTCorePlayer:
                 else:
                     data = data.find('YouthPlayer')
 
-        elif not isinstance(data, xml.etree.ElementTree.Element):
+        elif not (isinstance(data, xml.etree.ElementTree.Element) and data.tag == "Player"):
             raise ValueError('data parameter has to be an ElementTree.Element instance')
 
         elif team_ht_id is None:
@@ -129,32 +130,11 @@ class HTPlayer(HTCorePlayer):
         self.owner_notes = (self._data.find('OwnerNotes').text
                             if self._data.find('OwnerNotes') is not None else None)
 
-        # TODO: connect to HTSkill class
-        # stamina is always available
-        self.stamina_skill = int(self._skill_data.find('StaminaSkill').text)
-
-        # other skills are only available if this current user team
-        # if skills are not available, set to None
-        self.keeper_skill = (int(self._skill_data.find('KeeperSkill').text)
-                             if self._skill_data.find('KeeperSkill') is not None else None)
-
-        self.playmaker_skill = (int(self._skill_data.find('PlaymakerSkill').text)
-                                if self._skill_data.find('PlaymakerSkill') is not None else None)
-
-        self.scorer_skill = (int(self._skill_data.find('ScorerSkill').text)
-                             if self._skill_data.find('ScorerSkill') is not None else None)
-
-        self.passing_skill = (int(self._skill_data.find('PassingSkill').text)
-                              if self._skill_data.find('PassingSkill') is not None else None)
-
-        self.winger_skill = (int(self._skill_data.find('WingerSkill').text)
-                             if self._skill_data.find('WingerSkill') is not None else None)
-
-        self.defender_skill = (int(self._skill_data.find('DefenderSkill').text)
-                               if self._skill_data.find('DefenderSkill') is not None else None)
-
-        self.set_pieces_skill = (int(self._skill_data.find('SetPiecesSkill').text)
-                                 if self._skill_data.find('SetPiecesSkill') is not None else None)
+        # Skills attributes
+        self.skills = {k: HTSkill(name=k,
+                                  level=int(self._skill_data.find(v).text)
+                                  if self._skill_data.find(v).text is not None else None)
+                       for k, v in senior_skills_tag.items()}
 
     @property
     def team(self):
@@ -187,16 +167,13 @@ class HTYouthPlayer(HTCorePlayer):
                               if self._data.find('PlayerNumber') is not None
                               else None)
         self.player_category_id = (int(self._data.find('PlayerCategoryID').text)
-                                   if self._data.find('PlayerNumber') is not None
+                                   if self._data.find('PlayerCategoryID') is not None
                                    else None)
         self.friendlies_goals = int(self._data.find('FriendlyGoals').text)
 
         # Skills attributes
-        # TODO: connect to HTYouthSkill class
-        self.keeper_skill = int(self._skill_data.find('KeeperSkill').text)
-        self.playmaker_skill = int(self._skill_data.find('PlaymakerSkill').text)
-        self.scorer_skill = int(self._skill_data.find('ScorerSkill').text)
-        self.passing_skill = int(self._skill_data.find('PassingSkill').text)
-        self.winger_skill = int(self._skill_data.find('WingerSkill').text)
-        self.defender_skill = int(self._skill_data.find('DefenderSkill').text)
-        self.set_pieces_skill = int(self._skill_data.find('SetPiecesSkill').text)
+        self.skills = {k: HTSkillYouth(name=k,
+                                       level=int(self._skill_data.find(v[0]).text) if self._skill_data.find(v[0]).text is not None else None,
+                                       maximum=int(self._skill_data.find(v[1]).text) if self._skill_data.find(v[1]).text is not None else None,
+                                       maximum_reached=bool(self._skill_data.find(v[0]).attrib["IsMaxReached"]))
+                       for k, v in youth_skills_tag.items()}
