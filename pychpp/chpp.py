@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 import datetime
 
 from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region
+from pychpp import error
 
 
 class CHPP:
@@ -33,6 +34,41 @@ class CHPP:
             base_url=self.base_url,
             signature_obj=HmacSha1Signature,
         )
+
+    # noinspection PyMethodMayBeStatic
+    def _analyze_error(self, xml_data):
+        """
+        Parse xml data returned by Hattrick and raise relevant exception
+        """
+        error_code = int(xml_data.find('ErrorCode').text)
+
+        if error_code == 70:
+            error_text = xml_data.find('Error').text.split('Additional Info:')[-1].strip()
+
+            if error_text == 'arena busy':
+                raise error.HTArenaNotAvailableError('The arena is not available')
+
+            elif error_text[-10:] == 'être défié':
+                raise error.HTOpponentNotAvailableError('The opponent team is not available')
+
+            elif 'Your team is travelling' in error_text:
+                raise error.HTTeamIsTravellingError('The own team is travelling'
+                                                    'and can\'t launch a challenge')
+
+            elif 'are currently abroad' in error_text:
+                raise error.HTOpponentTeamIsTravellingError('The opponent team is travelling'
+                                                            'and can\'t be challenged')
+
+            elif 'Challenges have been temporarily disabled' in error_text:
+                raise error.HTChallengesNotOpenedError('Challenges can\'t be launched (to soon)')
+
+            else:
+                raise error.HTChallengeError(f"Unknown Hattrick error with challenge : "
+                                             f"{xml_data.find('Error').text}")
+
+        else:
+            raise error.HTUndefinedError(f"Unknown Hattrick error : "
+                                         f"({error_code}) {xml_data.find('Error').text}")
 
     def get_auth(self, callback_url='oob', scope=''):
         """
@@ -88,14 +124,14 @@ class CHPP:
         query = session.get(self.base_url, params=params)
         query.encoding = 'UTF-8'
 
-        result = ET.fromstring(query.text)
-        file_name = result.find('FileName').text
+        data = ET.fromstring(query.text)
+        file_name = data.find('FileName').text
 
         # If Hattrick returns an error, an exception is raised
         if file_name == 'chpperror.xml':
-            raise HTUndefinedError(result.find('Error').text)
+            self._analyze_error(data)
 
-        return result
+        return data
 
     def user(self, **kwargs):
         return ht_user.HTUser(chpp=self, **kwargs)
