@@ -1,16 +1,28 @@
-class HTUndefinedError(Exception):
-    """Raise when error occurs with Hattrick request"""
+class HTError(Exception):
+    """Base Hattrick error"""
 
 
-class HTChallengeError(Exception):
+class HTNotOwnedTeamError(HTError):
+    """Raise when the request concerns a team not owned by the connected user"""
+
+
+class HTChallengeError(HTError):
     """Raise when error occurs on Hattrick with challenges"""
+
+
+class HTTeamChallengingItself(HTChallengeError):
+    """Raise when a team is challenging itself"""
 
 
 class HTArenaNotAvailableError(HTChallengeError):
     """Raise when arena is busy"""
 
 
-class HTOpponentNotAvailableError(HTChallengeError):
+class HTTeamNotAvailableError(HTChallengeError):
+    """Raise when opponent team is not available for a challenge"""
+
+
+class HTOpponentTeamNotAvailableError(HTChallengeError):
     """Raise when opponent team is not available for a challenge"""
 
 
@@ -24,3 +36,7 @@ class HTOpponentTeamIsTravellingError(HTChallengeError):
 
 class HTChallengesNotOpenedError(HTChallengeError):
     """Raise when challenges can't be organized yet (to soon)"""
+
+
+class HTUndefinedError(HTError):
+    """Raise when error occurs with Hattrick request"""

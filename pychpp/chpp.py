@@ -42,14 +42,23 @@ class CHPP:
         """
         error_code = int(xml_data.find('ErrorCode').text)
 
-        if error_code == 70:
+        if error_code == 59:
+            raise error.HTNotOwnedTeamError('The requested team is not owned by the connected user')
+
+        elif error_code == 70:
             error_text = xml_data.find('Error').text.split('Additional Info:')[-1].strip()
 
-            if error_text == 'arena busy':
+            if 'You tried to challenge yourself' in error_text:
+                raise error.HTTeamChallengingItself('The team is challenging itself')
+
+            elif error_text == 'arena busy':
                 raise error.HTArenaNotAvailableError('The arena is not available')
 
+            elif 'Your team already has booked' in error_text:
+                raise error.HTTeamNotAvailableError('The own team has already booked a friendly match')
+
             elif error_text[-10:] == 'être défié':
-                raise error.HTOpponentNotAvailableError('The opponent team is not available')
+                raise error.HTOpponentTeamNotAvailableError('The opponent team is not available')
 
             elif 'Your team is travelling' in error_text:
                 raise error.HTTeamIsTravellingError('The own team is travelling'
