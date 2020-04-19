@@ -45,11 +45,11 @@ class HTAge:
         else:
             raise HTAgeError('age & age_days must be either int or Element')
 
-    def age_in_char(self):
+    def __str__(self):
         return f"{self.age} years and {self.age_days} days"
 
     def __repr__(self):
-        return self.age_in_char()
+        return f"<HTAge object {self.__str__()}>"
 
 
 class HTAgeError(Exception):
