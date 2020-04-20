@@ -49,7 +49,7 @@ class HTAge:
         return f"{self.age} years and {self.age_days} days"
 
     def __repr__(self):
-        return f"<HTAge object {self.__str__()}>"
+        return f"<HTAge object : {self.__str__()}>"
 
 
 class HTAgeError(Exception):

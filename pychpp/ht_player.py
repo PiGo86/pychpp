@@ -112,7 +112,7 @@ class HTPlayer(HTCorePlayer):
 
         # team_ht_id is defined by arguments or inside xml data
         if kwargs.get('data', None) is not None:
-            self.team_ht_id = kwargs['ht_id']
+            self.team_ht_id = kwargs['team_ht_id']
         else:
             self.team_ht_id = int(self._data.find('OwningTeam').find('TeamID').text)
 
@@ -146,7 +146,7 @@ class HTPlayer(HTCorePlayer):
         # Skills attributes
         self.skills = {k: HTSkill(name=k,
                                   level=int(self._skill_data.find(v).text)
-                                  if self._skill_data.find(v).text is not None else None)
+                                  if self._skill_data.find(v) is not None else None)
                        for k, v in senior_skills_tag.items()}
 
     @property
@@ -186,7 +186,9 @@ class HTYouthPlayer(HTCorePlayer):
 
         # Skills attributes
         self.skills = {k: HTSkillYouth(name=k,
-                                       level=int(self._skill_data.find(v[0]).text) if self._skill_data.find(v[0]).text is not None else None,
-                                       maximum=int(self._skill_data.find(v[1]).text) if self._skill_data.find(v[1]).text is not None else None,
+                                       level=(int(self._skill_data.find(v[0]).text)
+                                              if self._skill_data.find(v[0]) is not None else None),
+                                       maximum=(int(self._skill_data.find(v[1]).text)
+                                                if self._skill_data.find(v[1]) is not None else None),
                                        maximum_reached=bool(self._skill_data.find(v[0]).attrib["IsMaxReached"]))
                        for k, v in youth_skills_tag.items()}

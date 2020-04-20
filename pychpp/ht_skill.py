@@ -18,7 +18,7 @@ class HTCoreSkill:
 
     def __repr__(self):
         """Represent an HTSkill or HTSkillYouth"""
-        return f"<{self.__class__.__name__} object {self.name()}>"
+        return f"<{self.__class__.__name__} object : {self.name}>"
 
 
 class HTSkill(HTCoreSkill):

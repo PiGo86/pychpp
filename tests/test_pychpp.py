@@ -61,6 +61,11 @@ def test_get_current_team(chpp):
     test_user = chpp.user()
     assert user.ht_id == test_user.ht_id
 
+    players = team.players
+    assert isinstance(players, list)
+    for p in players:
+        assert isinstance(p, HTPlayer)
+
 
 def test_get_specific_team(chpp):
     team = chpp.team(ht_id=591993)
@@ -97,7 +102,7 @@ def test_get_player(chpp):
     player = chpp.player(ht_id=432002549)
 
     assert isinstance(player, HTPlayer)
-    assert player.passing_skill is None
+    assert isinstance(player.skills, dict)
     assert player.owner_notes is None
 
     assert player.ht_id == 432002549
