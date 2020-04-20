@@ -9,7 +9,7 @@ from pychpp.ht_user import HTUser
 from pychpp.ht_player import HTPlayer
 from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
-
+from pychpp.ht_challenge import HTChallenge
 
 PYCHPP_CONSUMER_KEY = os.environ['PYCHPP_CONSUMER_KEY']
 PYCHPP_CONSUMER_SECRET = os.environ['PYCHPP_CONSUMER_SECRET']
@@ -48,7 +48,6 @@ def chpp():
 
 
 def test_get_current_team(chpp):
-
     team = chpp.team()
 
     assert isinstance(team, HTTeam)
@@ -64,7 +63,6 @@ def test_get_current_team(chpp):
 
 
 def test_get_specific_team(chpp):
-
     team = chpp.team(ht_id=591993)
     assert isinstance(team, HTTeam)
     assert team.ht_id == 591993
@@ -88,7 +86,6 @@ def test_get_specific_team(chpp):
 
 
 def test_get_current_user(chpp):
-
     user = chpp.user()
 
     assert isinstance(user, HTUser)
@@ -97,7 +94,6 @@ def test_get_current_user(chpp):
 
 
 def test_get_player(chpp):
-
     player = chpp.player(ht_id=432002549)
 
     assert isinstance(player, HTPlayer)
@@ -114,7 +110,6 @@ def test_get_player(chpp):
 
 
 def test_get_current_user_arena(chpp):
-
     arena = chpp.arena()
     assert isinstance(arena, HTArena)
     assert isinstance(arena.ht_id, int)
@@ -122,7 +117,6 @@ def test_get_current_user_arena(chpp):
 
 
 def test_get_specific_arena(chpp):
-
     arena = chpp.arena(ht_id=295023)
     assert isinstance(arena, HTArena)
     assert arena.ht_id == 295023
@@ -135,7 +129,6 @@ def test_get_specific_arena(chpp):
 
 
 def test_get_current_user_region(chpp):
-
     region = chpp.region()
     assert isinstance(region, HTRegion)
     assert isinstance(region.ht_id, int)
@@ -147,7 +140,6 @@ def test_get_current_user_region(chpp):
 
 
 def test_get_specific_region(chpp):
-
     region = chpp.region(ht_id=149)
     assert isinstance(region, HTRegion)
     assert region.ht_id == 149
@@ -156,3 +148,9 @@ def test_get_specific_region(chpp):
     assert isinstance(region.number_of_online, int)
     assert isinstance(region.weather, int)
     assert isinstance(region.tomorrow_weather, int)
+
+
+def test_launch_challenge(chpp):
+    # HTChallenge.launch(chpp=chpp, team_ht_id=1165592, opponent_team_ht_id=1165592,
+    #                    match_type='normal', match_place='home')
+    pass

@@ -28,7 +28,7 @@ class HTUser:
         self.ht_id = int(data.find('UserId').text)
         self.username = data.find('Loginname').text
         self.supporter_tier = data.find('SupporterTier').text
-        self.last_logins = [HTDate.from_ht(login.text) for login in data.find('LastLogins').findall('LoginTime')]
+        self.last_logins = [login.text for login in data.find('LastLogins').findall('LoginTime')]
 
         self._teams_ht_id = [int(team.find('TeamId').text) for team in teams_data.findall('Team')]
 
