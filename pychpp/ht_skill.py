@@ -16,6 +16,10 @@ class HTCoreSkill:
 
         self.name = name
 
+    def __repr__(self):
+        """Represent an HTSkill or HTSkillYouth"""
+        return f"<{self.__class__.__name__} object {self.name()}>"
+
 
 class HTSkill(HTCoreSkill):
     """
@@ -46,12 +50,13 @@ class HTSkill(HTCoreSkill):
 
         self.level = level
 
-    def __repr__(self):
-        """Represent an HTSkill"""
+    def __str__(self):
+        """Print an HTSkill"""
         if self.level is None:
             return f"{self.name:<12} : 'unknown' (?)"
         else:
             return f"{self.name:<12} : {'=' * int(self.level):<20} ({int(self.level)})"
+
 
 
 class HTSkillYouth(HTCoreSkill):
@@ -96,7 +101,7 @@ class HTSkillYouth(HTCoreSkill):
         else:
             self.maximum_reached = maximum_reached
 
-    def __repr__(self):
+    def __str__(self):
         """
         Represent an HTSkillYouth, 4 different cases possibles :
          - (?/?)

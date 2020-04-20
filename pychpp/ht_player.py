@@ -2,6 +2,7 @@ import xml
 from pychpp import ht_team
 from pychpp.ht_date import HTDate
 from pychpp.ht_skill import HTSkill, HTSkillYouth, youth_skills_tag, senior_skills_tag
+from pychpp.ht_age import HTAge
 
 
 class HTCorePlayer:
@@ -71,8 +72,7 @@ class HTCorePlayer:
         self.nick_name = data.find('NickName').text
         self.last_name = data.find('LastName').text
 
-        self.age = int(data.find('Age').text)
-        self.age_days = int(data.find('AgeDays').text)
+        self.age = HTAge(age=int(data.find('Age').text), age_days=int(data.find('AgeDays').text))
         self.arrival_date = HTDate.from_ht(data.find('ArrivalDate').text)
         self.statement = data.find('Statement').text
 
@@ -83,6 +83,19 @@ class HTCorePlayer:
 
         self.cards = int(data.find('Cards').text)
         self.injury_level = int(data.find('InjuryLevel').text)
+
+    def __str__(self):
+        """
+        Pretty print with :
+          - First name, last name
+          - Age
+          - Skills
+        """
+        lines = [f"{self.first_name} {self.last_name} ({self.ht_id})",
+                 self.age.__str__(),
+                 "\n".join([i.__str__() for i in self.skills.values()])
+                 ]
+        return "\n".join(lines)
 
     def __repr__(self):
         return f'<{self.__class__.__name__} object : {self.first_name} {self.last_name} ({self.ht_id})>'
