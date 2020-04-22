@@ -5,7 +5,7 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree as ET
 import datetime
 
-from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region
+from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge
 from pychpp import error
 
 
@@ -163,39 +163,8 @@ class CHPP:
     def region(self, **kwargs):
         return ht_region.HTRegion(chpp=self, **kwargs)
 
-    def get_challenges(self, author, weekend):
-
-        xml = self.request(
-            file='challenges',
-            version='1.6',
-            actionType='view',
-            isWeekendFriendly=weekend
-        )
-
-        if author == 'ByMe':
-            xml = xml.find('Team').find('ChallengesByMe')
-            child = 'Challenge'
-        elif author == 'ByOthers':
-            xml = xml.find('Team').find('OffersByOthers')
-            child = 'Offer'
-        else:
-            raise ValueError('author must be "ByMe" or "ByOthers"')
-
-        challenges = list()
-
-        if xml:
-            for c in xml.findall(child):
-                challenge = dict()
-                challenge['TrainingMatchID'] = int(c.find('TrainingMatchID').text)
-                challenge['MatchTime'] = datetime.datetime.strptime(c.find('MatchTime').text, '%Y-%m-%d %H:%M:%S')
-                challenge['FriendlyType'] = int(c.find('FriendlyType').text)
-                challenge['TeamID'] = int(c.find('Opponent').find('TeamID').text)
-                challenge['ArenaID'] = int(c.find('Arena').find('ArenaID').text)
-                challenge['IsAgreed'] = True if (c.find('IsAgreed').text == 'True') else False
-
-                challenges.append(challenge)
-
-        return challenges
+    def challenge_manager(self, **kwargs):
+        return ht_challenge.HTChallengeManager(chpp=self, **kwargs)
 
     def is_challengeable(self, team_id):
 
@@ -212,84 +181,6 @@ class CHPP:
         challengeable = True if infos == 'True' else False
 
         return challengeable
-
-    def challenge(self, team_id, opponent_team_id, match_type, match_place, neutral_arena_id=0, weekend=0):
-
-        result = self.request(file='challenges',
-                              version='1.6',
-                              actionType='challenge',
-                              teamId=str(team_id),
-                              opponentTeamId=str(opponent_team_id),
-                              matchType=str(match_type),
-                              matchPlace=str(match_place),
-                              neutralArenaId=str(neutral_arena_id),
-                              isWeekendFriendly=str(weekend),
-                              )
-
-        return result
-
-    def accept_challenge(self, team_id, training_match_id):
-
-        session = self.open_session()
-        action = session.get(self.base_url, params={'file': 'challenges',
-                                                    'version': '1.6',
-                                                    'actionType': 'accept',
-                                                    'teamId': str(team_id),
-                                                    'trainingMatchId': str(training_match_id),
-                                                    'isWeekendFriendly': '0',
-                                                    })
-
-        action.encoding = 'UTF-8'
-        result = ET.fromstring(action.text)
-        file_name = result.find('FileName').text
-
-        error = False
-        if file_name == "chpperror.xml":
-            error = ('error', int(result.find('ErrorCode').text), result.find('Error').text, action.text)
-
-        return error
-
-    def decline_challenge(self, team_id, training_match_id):
-
-        session = self.open_session()
-        action = session.get(self.base_url, params={'file': 'challenges',
-                                                    'version': '1.6',
-                                                    'actionType': 'decline',
-                                                    'teamId': str(team_id),
-                                                    'trainingMatchId': str(training_match_id),
-                                                    'isWeekendFriendly': '0',
-                                                    })
-
-        action.encoding = 'UTF-8'
-        result = ET.fromstring(action.text)
-        file_name = result.find('FileName').text
-
-        error = None
-        if file_name == "chpperror.xml":
-            error = ('error', int(result.find('ErrorCode').text), result.find('Error').text, action.text)
-
-        return error
-
-    def withdraw_challenge(self, team_id, training_match_id):
-
-        session = self.open_session()
-        action = session.get(self.base_url, params={'file': 'challenges',
-                                                    'version': '1.6',
-                                                    'actionType': 'withdraw',
-                                                    'teamId': str(team_id),
-                                                    'trainingMatchId': str(training_match_id),
-                                                    'isWeekendFriendly': '0',
-                                                    })
-
-        action.encoding = 'UTF-8'
-        result = ET.fromstring(action.text)
-        file_name = result.find('FileName').text
-
-        error = None
-        if file_name == "chpperror.xml":
-            error = ('error', int(result.find('ErrorCode').text), result.find('Error').text, action.text)
-
-        return error
 
     def get_matches_archive(self, team_id, start_date=(datetime.datetime.now() - datetime.timedelta(days=30)),
                             end_date=(datetime.datetime.now()), season=None):
