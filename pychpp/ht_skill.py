@@ -10,7 +10,7 @@ class HTCoreSkill:
     Used to create HTSkill and HTSkillYouth classes
     """
     def __init__(self, name):
-        # Name attribute (pff c'est naze)
+        # Name attribute
         if not {name} < senior_skills_names:
             raise HTSkillError("Skill name must be one of : " + ", ".join(senior_skills_names))
 
@@ -58,7 +58,6 @@ class HTSkill(HTCoreSkill):
             return f"{self.name:<12} : {'=' * int(self.level):<20} ({int(self.level)})"
 
 
-
 class HTSkillYouth(HTCoreSkill):
     """
     Class HTSkillYouth inherits from HTSkill.
@@ -92,12 +91,12 @@ class HTSkillYouth(HTCoreSkill):
             raise HTSkillError("Level must be integer")
         else:
             if maximum is not None and level > maximum:
-                raise HTSkillError('Level can\'t be superior than maximum')
+                raise HTSkillError("Level can't be superior than maximum")
             self.level = level
 
         # Maximum reached
         if not isinstance(maximum_reached, bool):
-            raise HTSkillError('maximum_reached must be boolean')
+            raise HTSkillError("maximum_reached must be boolean")
         else:
             self.maximum_reached = maximum_reached
 

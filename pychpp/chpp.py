@@ -2,7 +2,7 @@ from rauth import OAuth1Service
 from rauth import OAuth1Session
 from rauth.oauth import HmacSha1Signature
 
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ElementTree
 import datetime
 
 from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge
@@ -20,10 +20,10 @@ class CHPP:
         self.access_token_key = access_token_key
         self.access_token_secret = access_token_secret
 
-        self.request_token_url = 'https://chpp.hattrick.org/oauth/request_token.ashx'
-        self.access_token_url = 'https://chpp.hattrick.org/oauth/access_token.ashx'
-        self.authorize_url = 'https://chpp.hattrick.org/oauth/authorize.aspx'
-        self.base_url = 'https://chpp.hattrick.org/chppxml.ashx'
+        self.request_token_url = "https://chpp.hattrick.org/oauth/request_token.ashx"
+        self.access_token_url = "https://chpp.hattrick.org/oauth/access_token.ashx"
+        self.authorize_url = "https://chpp.hattrick.org/oauth/authorize.aspx"
+        self.base_url = "https://chpp.hattrick.org/chppxml.ashx"
 
         self.service = OAuth1Service(
             consumer_key=self.consumer_key,
@@ -40,36 +40,36 @@ class CHPP:
         """
         Parse xml data returned by Hattrick and raise relevant exception
         """
-        error_code = int(xml_data.find('ErrorCode').text)
+        error_code = int(xml_data.find("ErrorCode").text)
 
         if error_code == 59:
-            raise error.HTNotOwnedTeamError('The requested team is not owned by the connected user')
+            raise error.HTNotOwnedTeamError("The requested team is not owned by the connected user")
 
         elif error_code == 70:
-            error_text = xml_data.find('Error').text.split('Additional Info:')[-1].strip()
+            error_text = xml_data.find("Error").text.split("Additional Info:")[-1].strip()
 
-            if 'You tried to challenge yourself' in error_text:
-                raise error.HTTeamChallengingItself('The team is challenging itself')
+            if "You tried to challenge yourself" in error_text:
+                raise error.HTTeamChallengingItself("The team is challenging itself")
 
-            elif error_text == 'arena busy':
-                raise error.HTArenaNotAvailableError('The arena is not available')
+            elif error_text == "arena busy":
+                raise error.HTArenaNotAvailableError("The arena is not available")
 
-            elif 'Your team already has booked' in error_text:
-                raise error.HTTeamNotAvailableError('The own team has already booked a friendly match')
+            elif "Your team already has booked" in error_text:
+                raise error.HTTeamNotAvailableError("The own team has already booked a friendly match")
 
-            elif error_text[-10:] == 'être défié':
-                raise error.HTOpponentTeamNotAvailableError('The opponent team is not available')
+            elif error_text[-10:] == "être défié":
+                raise error.HTOpponentTeamNotAvailableError("The opponent team is not available")
 
-            elif 'Your team is travelling' in error_text:
-                raise error.HTTeamIsTravellingError('The own team is travelling'
-                                                    'and can\'t launch a challenge')
+            elif "Your team is travelling" in error_text:
+                raise error.HTTeamIsTravellingError("The own team is travelling"
+                                                    "and can't launch a challenge")
 
-            elif 'are currently abroad' in error_text:
-                raise error.HTOpponentTeamIsTravellingError('The opponent team is travelling'
-                                                            'and can\'t be challenged')
+            elif "are currently abroad" in error_text:
+                raise error.HTOpponentTeamIsTravellingError("The opponent team is travelling"
+                                                            "and can't be challenged")
 
-            elif 'Challenges have been temporarily disabled' in error_text:
-                raise error.HTChallengesNotOpenedError('Challenges can\'t be launched (to soon)')
+            elif "Challenges have been temporarily disabled" in error_text:
+                raise error.HTChallengesNotOpenedError("Challenges can't be launched (to soon)")
 
             else:
                 raise error.HTChallengeError(f"Unknown Hattrick error with challenge : "
@@ -79,22 +79,22 @@ class CHPP:
             raise error.HTUndefinedError(f"Unknown Hattrick error : "
                                          f"({error_code}) {xml_data.find('Error').text}")
 
-    def get_auth(self, callback_url='oob', scope=''):
+    def get_auth(self, callback_url="oob", scope=""):
         """
         Get url, request_token and request_token_secret to get auth from Hattrick for this user
         :param callback_url: url that have to be request by Hattrick after the user have fill his credentials
         :param scope: authorization granted by user to the application
-                      can be '', 'manage_challenges', 'set_matchorder', 'manage_youthplayers',
-                      'set_training', 'place_bid'
-        :return: {'request_token': ..., 'request_token_secret':..., 'url': ...}
+                      can be "", "manage_challenges", "set_matchorder", "manage_youthplayers",
+                      "set_training", "place_bid"
+        :return: {"request_token": ..., "request_token_secret":..., "url": ...}
         """
         auth = dict()
 
-        request_token, request_token_secret = self.service.get_request_token(params={'oauth_callback': callback_url})
+        request_token, request_token_secret = self.service.get_request_token(params={"oauth_callback": callback_url})
 
-        auth['request_token'] = request_token
-        auth['request_token_secret'] = request_token_secret
-        auth['url'] = self.service.get_authorize_url(request_token, scope=scope)
+        auth["request_token"] = request_token
+        auth["request_token_secret"] = request_token_secret
+        auth["url"] = self.service.get_authorize_url(request_token, scope=scope)
 
         return auth
 
@@ -105,18 +105,18 @@ class CHPP:
         :param request_token: returned by get_auth
         :param request_token_secret: returned by get_auth
         :param code: code returned by Hattrick after the user granted the application
-                     send to callback_url by Hattrick or shown direclty on Hattrick if callback_url was ''
-        :return: {'key': ..., 'secret': ...}
+                     send to callback_url by Hattrick or shown direclty on Hattrick if callback_url was ""
+        :return: {"key": ..., "secret": ...}
         """
         access_token_query = self.service.get_access_token(request_token,
                                                            request_token_secret,
-                                                           params={'oauth_verifier': code},
+                                                           params={"oauth_verifier": code},
                                                            )
 
         access_token = dict()
 
-        access_token['key'] = access_token_query[0]
-        access_token['secret'] = access_token_query[1]
+        access_token["key"] = access_token_query[0]
+        access_token["secret"] = access_token_query[1]
 
         return access_token
 
@@ -131,13 +131,13 @@ class CHPP:
 
         session = self.open_session()
         query = session.get(self.base_url, params=params)
-        query.encoding = 'UTF-8'
+        query.encoding = "UTF-8"
 
-        data = ET.fromstring(query.text)
-        file_name = data.find('FileName').text
+        data = ElementTree.fromstring(query.text)
+        file_name = data.find("FileName").text
 
         # If Hattrick returns an error, an exception is raised
-        if file_name == 'chpperror.xml':
+        if file_name == "chpperror.xml":
             self._analyze_error(data)
 
         return data
@@ -169,16 +169,16 @@ class CHPP:
     def is_challengeable(self, team_id):
 
         session = self.open_session()
-        result = session.get(self.base_url, params={'file': 'challenges',
-                                                    'version': '1.6',
-                                                    'actionType': 'challengeable',
-                                                    'suggestedTeamIds': str(team_id),
+        result = session.get(self.base_url, params={"file": "challenges",
+                                                    "version": "1.6",
+                                                    "actionType": "challengeable",
+                                                    "suggestedTeamIds": str(team_id),
                                                     })
 
-        infos = ET.fromstring(result.text)
-        infos = infos.find('Team').find('ChallengeableResult').find('Opponent').find('IsChallengeable').text
+        infos = ElementTree.fromstring(result.text)
+        infos = infos.find("Team").find("ChallengeableResult").find("Opponent").find("IsChallengeable").text
 
-        challengeable = True if infos == 'True' else False
+        challengeable = True if infos == "True" else False
 
         return challengeable
 
@@ -186,33 +186,33 @@ class CHPP:
                             end_date=(datetime.datetime.now()), season=None):
 
         xml = self.request(
-            file='matchesarchive',
-            version='1.4',
+            file="matchesarchive",
+            version="1.4",
             teamID=str(team_id),
-            isYouth='false',
-            FirstMatchDate=start_date.strftime('%Y-%m-%d %H:%M:%S'),
-            LastMatchDate=end_date.strftime('%Y-%m-%d %H:%M:%S'),
+            isYouth="false",
+            FirstMatchDate=start_date.strftime("%Y-%m-%d %H:%M:%S"),
+            LastMatchDate=end_date.strftime("%Y-%m-%d %H:%M:%S"),
             season=season,
         )
 
-        file_name = xml.find('FileName').text
+        file_name = xml.find("FileName").text
 
         if file_name == "chpperror.xml":
-            result = ('error', int(xml.find('ErrorCode').text), xml.find('Error').text, xml.text)
+            result = ("error", int(xml.find("ErrorCode").text), xml.find("Error").text, xml.text)
 
         else:
             result = list()
 
-            for m in xml.find('Team').find('MatchList').findall('Match'):
+            for m in xml.find("Team").find("MatchList").findall("Match"):
                 match = {
-                    'MatchID': int(m.find('MatchID').text),
-                    'HomeTeamID': int(m.find('HomeTeam').find('HomeTeamID').text),
-                    'HomeTeamName': m.find('HomeTeam').find('HomeTeamName').text,
-                    'AwayTeamID': int(m.find('AwayTeam').find('AwayTeamID').text),
-                    'AwayTeamName': m.find('AwayTeam').find('AwayTeamName').text,
-                    'MatchDate': datetime.datetime.strptime(m.find('MatchDate').text, '%Y-%m-%d %H:%M:%S'),
-                    'HomeGoals': int(m.find('HomeGoals').text),
-                    'AwayGoals': int(m.find('AwayGoals').text),
+                    "MatchID": int(m.find("MatchID").text),
+                    "HomeTeamID": int(m.find("HomeTeam").find("HomeTeamID").text),
+                    "HomeTeamName": m.find("HomeTeam").find("HomeTeamName").text,
+                    "AwayTeamID": int(m.find("AwayTeam").find("AwayTeamID").text),
+                    "AwayTeamName": m.find("AwayTeam").find("AwayTeamName").text,
+                    "MatchDate": datetime.datetime.strptime(m.find("MatchDate").text, "%Y-%m-%d %H:%M:%S"),
+                    "HomeGoals": int(m.find("HomeGoals").text),
+                    "AwayGoals": int(m.find("AwayGoals").text),
                 }
 
                 result.append(match)
@@ -222,27 +222,27 @@ class CHPP:
     def get_matches(self, team_id, end_date):
 
         xml = self.request(
-            file='matches',
-            version='2.8',
+            file="matches",
+            version="2.8",
             teamID=str(team_id),
-            isYouth='false',
-            LastMatchDate=end_date.strftime('%Y-%m-%d %H:%M:%S'),
+            isYouth="false",
+            LastMatchDate=end_date.strftime("%Y-%m-%d %H:%M:%S"),
         )
 
-        file_name = xml.find('FileName').text
+        file_name = xml.find("FileName").text
 
         if file_name == "chpperror.xml":
-            result = ('error', int(xml.find('ErrorCode').text), xml.find('Error').text, xml.text)
+            result = ("error", int(xml.find("ErrorCode").text), xml.find("Error").text, xml.text)
 
         else:
             result = list()
 
-            for m in xml.find('Team').find('MatchList').findall('Match'):
+            for m in xml.find("Team").find("MatchList").findall("Match"):
                 match = {
-                    'MatchID': int(m.find('MatchID').text),
-                    'HomeTeamID': int(m.find('HomeTeam').find('HomeTeamID').text),
-                    'AwayTeamID': int(m.find('AwayTeam').find('AwayTeamID').text),
-                    'MatchDate': datetime.datetime.strptime(m.find('MatchDate').text, '%Y-%m-%d %H:%M:%S'),
+                    "MatchID": int(m.find("MatchID").text),
+                    "HomeTeamID": int(m.find("HomeTeam").find("HomeTeamID").text),
+                    "AwayTeamID": int(m.find("AwayTeam").find("AwayTeamID").text),
+                    "MatchDate": datetime.datetime.strptime(m.find("MatchDate").text, "%Y-%m-%d %H:%M:%S"),
                 }
 
                 result.append(match)
@@ -252,82 +252,82 @@ class CHPP:
     def get_match_details(self, match_id):
 
         xml = self.request(
-            file='matchdetails',
-            version='3.0',
-            matchEvents='true',
+            file="matchdetails",
+            version="3.0",
+            matchEvents="true",
             matchID=str(match_id),
-            sourceSystem='hattrick',
+            sourceSystem="hattrick",
         )
 
-        file_name = xml.find('FileName').text
+        file_name = xml.find("FileName").text
 
         if file_name == "chpperror.xml":
-            result = ('error', int(xml.find('ErrorCode').text), xml.find('Error').text, xml.text)
+            result = ("error", int(xml.find("ErrorCode").text), xml.find("Error").text, xml.text)
 
         else:
 
-            m = xml.find('Match')
+            m = xml.find("Match")
 
             result = dict()
 
-            result['MatchID'] = int(m.find('MatchID').text)
-            result['MatchDate'] = datetime.datetime.strptime(m.find('MatchDate').text, '%Y-%m-%d %H:%M:%S')
+            result["MatchID"] = int(m.find("MatchID").text)
+            result["MatchDate"] = datetime.datetime.strptime(m.find("MatchDate").text, "%Y-%m-%d %H:%M:%S")
 
-            if m.find('FinishedDate') is not None:
-                result['FinishedDate'] = datetime.datetime.strptime(m.find('FinishedDate').text, '%Y-%m-%d %H:%M:%S')
+            if m.find("FinishedDate") is not None:
+                result["FinishedDate"] = datetime.datetime.strptime(m.find("FinishedDate").text, "%Y-%m-%d %H:%M:%S")
             else:
-                result['FinishedDate'] = None
+                result["FinishedDate"] = None
 
-            result['HomeTeamID'] = int(m.find('HomeTeam').find('HomeTeamID').text)
+            result["HomeTeamID"] = int(m.find("HomeTeam").find("HomeTeamID").text)
 
-            if m.find('HomeTeam').find('HomeGoals') is not None:
-                result['HomeGoals'] = int(m.find('HomeTeam').find('HomeGoals').text)
+            if m.find("HomeTeam").find("HomeGoals") is not None:
+                result["HomeGoals"] = int(m.find("HomeTeam").find("HomeGoals").text)
             else:
-                result['HomeGoals'] = None
-            result['AwayTeamID'] = int(m.find('AwayTeam').find('AwayTeamID').text)
+                result["HomeGoals"] = None
+            result["AwayTeamID"] = int(m.find("AwayTeam").find("AwayTeamID").text)
 
-            if m.find('AwayTeam').find('AwayGoals') is not None:
-                result['AwayGoals'] = int(m.find('AwayTeam').find('AwayGoals').text)
+            if m.find("AwayTeam").find("AwayGoals") is not None:
+                result["AwayGoals"] = int(m.find("AwayTeam").find("AwayGoals").text)
             else:
-                result['AwayGoals'] = None
+                result["AwayGoals"] = None
 
-            result['ArenaID'] = int(m.find('Arena').find('ArenaID').text)
+            result["ArenaID"] = int(m.find("Arena").find("ArenaID").text)
 
             # Si le match est terminé
-            if result['FinishedDate'] is not None:
+            if result["FinishedDate"] is not None:
 
                 goals = list()
 
-                if m.find('Scorers') is not None:
-                    for g in m.find('Scorers').findall('Goal'):
+                if m.find("Scorers") is not None:
+                    for g in m.find("Scorers").findall("Goal"):
                         goal = {
-                            'ScorerTeamID': int(g.find('ScorerTeamID').text),
-                            'ScorerHomeGoals': int(g.find('ScorerHomeGoals').text),
-                            'ScorerAwayGoals': int(g.find('ScorerAwayGoals').text),
-                            'ScorerMinute': int(g.find('ScorerMinute').text),
-                            'MatchPart': int(g.find('MatchPart').text),
+                            "ScorerTeamID": int(g.find("ScorerTeamID").text),
+                            "ScorerHomeGoals": int(g.find("ScorerHomeGoals").text),
+                            "ScorerAwayGoals": int(g.find("ScorerAwayGoals").text),
+                            "ScorerMinute": int(g.find("ScorerMinute").text),
+                            "MatchPart": int(g.find("MatchPart").text),
                         }
 
                         goals.append(goal)
 
-                result['Goals'] = goals
+                result["Goals"] = goals
 
                 extension = False
                 penalty = False
 
-                for e in m.find('EventList').findall('Event'):
+                for e in m.find("EventList").findall("Event"):
 
-                    if int(e.find('EventTypeID').text) == 70:
+                    if int(e.find("EventTypeID").text) == 70:
                         extension = True
-                    elif int(e.find('EventTypeID').text) == 71:
+                    elif int(e.find("EventTypeID").text) == 71:
                         penalty = True
 
                 if penalty:
-                    result['End'] = 2
+                    result["End"] = 2
                 elif extension:
-                    result['End'] = 1
+                    result["End"] = 1
                 else:
-                    result['End'] = 0
+                    result["End"] = 0
 
         return result
 

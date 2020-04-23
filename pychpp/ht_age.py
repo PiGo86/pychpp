@@ -23,9 +23,9 @@ class HTAge:
         :rtype: HTAge
 
         Second one with ElementTree.Element
-        :param age: Element with tag 'Age'
+        :param age: Element with tag "Age"
         :type age: ElementTree.Element
-        :param age_days: Element with tag 'AgeDays'
+        :param age_days: Element with tag "AgeDays"
         :type age_days: ElementTree.Element
         :returns: Hattrick age
         :rtype: HTAge
@@ -36,14 +36,14 @@ class HTAge:
             self.age = age
             self.age_days = age_days
         elif isinstance(age, xml.etree.ElementTree.Element) and isinstance(age_days, xml.etree.ElementTree.Element):
-            if age.tag != 'Age' or age_days.tag != 'AgeDays':
-                raise HTAgeError('age must have tag \'Age\' and age_days must have tag \'AgeDays\'')
+            if age.tag != "Age" or age_days.tag != "AgeDays":
+                raise HTAgeError("age must have tag 'Age' and age_days must have tag 'AgeDays'")
             else:
                 self.days = int(age.text) * 112 + int(age_days.text)
                 self.age = int(age.text)
                 self.age_days = int(age_days.text)
         else:
-            raise HTAgeError('age & age_days must be either int or Element')
+            raise HTAgeError("age & age_days must be either int or Element")
 
     def __str__(self):
         return f"{self.age} years and {self.age_days} days"
