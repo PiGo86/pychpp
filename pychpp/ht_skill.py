@@ -1,7 +1,8 @@
-youth_skills_names = {"Keeper", "Defender", "Playmaker", "Winger", "Scorer", "Passing", "SetPieces"}
-senior_skills_names = youth_skills_names | {"Stamina"}
-youth_skills_tag = {i: (i + "Skill", i + "SkillMax") for i in youth_skills_names}
-senior_skills_tag = {i: (i + "Skill") for i in youth_skills_names}
+youth_skills_names = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces"}
+senior_skills_names = youth_skills_names | {"stamina"}
+youth_skills_tag = {i: (i.title().replace("_", "") + "Skill",
+                        i.title().replace("_", "") + "SkillMax") for i in youth_skills_names}
+senior_skills_tag = {i: (i.title().replace("_", "") + "Skill") for i in youth_skills_names}
 
 
 class HTCoreSkill:
@@ -24,10 +25,10 @@ class HTCoreSkill:
 class HTSkill(HTCoreSkill):
     """
     Class that defines a skill with :
-    :ivar name: Name of skill (one of Keeper, Defender, Playmaker, Winger, Scorer, Passing, SetPieces)
+    :ivar name: Name of skill (one of "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
     :type name: str
     :ivar level: Level (from 0 to 30, knowing that player can be divin+1, divin+2, etc...)
-    :type level: int 
+    :type level: int
     
     Initialize instance with parameter  :
     :param name: Name of the skill
@@ -53,9 +54,12 @@ class HTSkill(HTCoreSkill):
     def __str__(self):
         """Print an HTSkill"""
         if self.level is None:
-            return f"{self.name:<12} : 'unknown' (?)"
+            return f"{self.name.title().replace('_', ' '):<12} : 'unknown' (?)"
         else:
-            return f"{self.name:<12} : {'=' * int(self.level):<20} ({int(self.level)})"
+            return f"{self.name.title().replace('_', ' '):<12} : {'=' * int(self.level):<20} ({int(self.level)})"
+
+    def __int__(self):
+        return self.level
 
 
 class HTSkillYouth(HTCoreSkill):
