@@ -6,7 +6,7 @@ import xml.etree.ElementTree
 import datetime
 
 from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge
-from pychpp import error
+from pychpp import ht_error
 
 
 class CHPP:
@@ -62,41 +62,41 @@ class CHPP:
         error_code = int(xml_data.find("ErrorCode").text)
 
         if error_code == 59:
-            raise error.HTNotOwnedTeamError("The requested team is not owned by the connected user")
+            raise ht_error.HTNotOwnedTeamError("The requested team is not owned by the connected user")
 
         elif error_code == 70:
             error_text = xml_data.find("Error").text.split("Additional Info:")[-1].strip()
 
             if "You tried to challenge yourself" in error_text:
-                raise error.HTTeamChallengingItself("The team is challenging itself")
+                raise ht_error.HTTeamChallengingItself("The team is challenging itself")
 
             elif error_text == "arena busy":
-                raise error.HTArenaNotAvailableError("The arena is not available")
+                raise ht_error.HTArenaNotAvailableError("The arena is not available")
 
             elif "Your team already has booked" in error_text:
-                raise error.HTTeamNotAvailableError("The own team has already booked a friendly match")
+                raise ht_error.HTTeamNotAvailableError("The own team has already booked a friendly match")
 
             elif error_text[-10:] == "être défié":
-                raise error.HTOpponentTeamNotAvailableError("The opponent team is not available")
+                raise ht_error.HTOpponentTeamNotAvailableError("The opponent team is not available")
 
             elif "Your team is travelling" in error_text:
-                raise error.HTTeamIsTravellingError("The own team is travelling"
-                                                    "and can't launch a challenge")
+                raise ht_error.HTTeamIsTravellingError("The own team is travelling"
+                                                       "and can't launch a challenge")
 
             elif "are currently abroad" in error_text:
-                raise error.HTOpponentTeamIsTravellingError("The opponent team is travelling"
-                                                            "and can't be challenged")
+                raise ht_error.HTOpponentTeamIsTravellingError("The opponent team is travelling"
+                                                               "and can't be challenged")
 
             elif "Challenges have been temporarily disabled" in error_text:
-                raise error.HTChallengesNotOpenedError("Challenges can't be launched (to soon)")
+                raise ht_error.HTChallengesNotOpenedError("Challenges can't be launched (to soon)")
 
             else:
-                raise error.HTChallengeError(f"Unknown Hattrick error with challenge : "
-                                             f"{xml_data.find('Error').text}")
+                raise ht_error.HTChallengeError(f"Unknown Hattrick error with challenge : "
+                                                f"{xml_data.find('Error').text}")
 
         else:
-            raise error.HTUndefinedError(f"Unknown Hattrick error : "
-                                         f"({error_code}) {xml_data.find('Error').text}")
+            raise ht_error.HTUndefinedError(f"Unknown Hattrick error : "
+                                            f"({error_code}) {xml_data.find('Error').text}")
 
     def get_auth(self, callback_url="oob", scope=""):
         """
