@@ -1,4 +1,5 @@
-import xml
+import xml.etree.ElementTree
+
 from pychpp import ht_team
 from pychpp.ht_date import HTDate
 from pychpp.ht_skill import HTSkill, HTSkillYouth, youth_skills_tag, senior_skills_tag
@@ -16,7 +17,18 @@ class HTCorePlayer:
     _REQUEST_ARGS = {"actionType": "view", "playerID": None}
 
     def __init__(self, chpp, ht_id=None, data=None, team_ht_id=None):
+        """
+        Initialize HTCorePlayer instance
 
+        :param chpp: CHPP instance of connected user
+        :param ht_id: player Hattrick ID (have to be defined if data is None), defaults to None
+        :param data: ElementTree data to serialize (have to be defined if ht_id is None), defaults to None
+        :param team_ht_id: team Hattrick ID of player's team (have to be defined if ht_id is None), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        :type data: xml.ElementTree.Element, optional
+        :type team_ht_id: int, optional
+        """
         self._chpp = chpp
 
         # Init depends on given parameters
@@ -84,6 +96,8 @@ class HTCorePlayer:
         self.cards = int(data.find("Cards").text)
         self.injury_level = int(data.find("InjuryLevel").text)
 
+        self.skills = dict()
+
     def __str__(self):
         """
         Pretty print with :
@@ -103,11 +117,22 @@ class HTCorePlayer:
 
 class HTPlayer(HTCorePlayer):
     """
-    Hattrick player
+    Hattrick senior player
     """
 
     def __init__(self, **kwargs):
+        """
+        Initialize HTPlayer instance
 
+        :key chpp: CHPP instance of connected user
+        :key ht_id: player Hattrick ID (have to be defined if data is None), defaults to None
+        :key data: ElementTree data to serialize (have to be defined if ht_id is None), defaults to None
+        :key team_ht_id: team Hattrick ID of player's team (have to be defined if ht_id is None), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        :type data: xml.ElementTree.Element, optional
+        :type team_ht_id: int, optional
+        """
         super().__init__(**kwargs)
 
         # team_ht_id is defined by arguments or inside xml data
@@ -164,7 +189,18 @@ class HTYouthPlayer(HTCorePlayer):
     _REQUEST_ARGS = {"actionType": "view", "youthPlayerId": None}
 
     def __init__(self, **kwargs):
+        """
+        Initialize HTYouthPlayer instance
 
+        :key chpp: CHPP instance of connected user
+        :key ht_id: player Hattrick ID (have to be defined if data is None), defaults to None
+        :key data: ElementTree data to serialize (have to be defined if ht_id is None), defaults to None
+        :key team_ht_id: team Hattrick ID of player's team (have to be defined if ht_id is None), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        :type data: xml.ElementTree.Element, optional
+        :type team_ht_id: int, optional
+        """
         super().__init__(**kwargs)
 
         # team_ht_id is defined by arguments or inside xml data

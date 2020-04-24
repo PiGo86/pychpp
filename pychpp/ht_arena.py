@@ -11,7 +11,14 @@ class HTArena:
     _SOURCE_FILE_VERSION = "1.5"
 
     def __init__(self, chpp, ht_id=None):
+        """
+        Initialization of a HTArena instance
 
+        :param chpp: CHPP instance of connected user
+        :param ht_id: Hattrick ID of arena
+        :type chpp: CHPP
+        :type ht_id: int
+        """
         self._chpp = chpp
         kwargs = {}
 

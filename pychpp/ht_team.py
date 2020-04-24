@@ -13,7 +13,14 @@ class HTCoreTeam:
     _REQUEST_ARGS = {}
 
     def __init__(self, chpp, ht_id=None):
+        """
+        Initialize HTCoreTeam instance
 
+        :param chpp: CHPP instance of connected user
+        :param ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        """
         self._chpp = chpp
 
         # If set, check ht_id integrity and add to request arguments
@@ -56,6 +63,14 @@ class HTTeam(HTCoreTeam):
     """
 
     def __init__(self, **kwargs):
+        """
+        Initialize HTTeam instance
+
+        :key chpp: CHPP instance of connected user
+        :key ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        """
         super().__init__(**kwargs)
 
         self.ht_id = int(self._team_data.find("TeamID").text)
@@ -86,11 +101,13 @@ class HTTeam(HTCoreTeam):
 
     @property
     def youth_team(self):
+        """Youth team of current team"""
         yt_id = int(self._team_data.find("YouthTeamID").text)
         return HTYouthTeam(chpp=self._chpp, ht_id=yt_id) if yt_id != 0 else None
 
     @property
     def arena(self):
+        """Team arena"""
         ht_id = int(self._team_data.find(f"Arena").find("ArenaID").text)
         return ht_arena.HTArena(chpp=self._chpp, ht_id=ht_id)
 
@@ -105,6 +122,14 @@ class HTYouthTeam(HTCoreTeam):
     _REQUEST_ARGS = {"youthTeamId": None}
 
     def __init__(self, **kwargs):
+        """
+        Initialize HTYouthTeam instance
+
+        :key chpp: CHPP instance of connected user
+        :key ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        """
         super().__init__(**kwargs)
 
         self.ht_id = int(self._team_data.find("YouthTeamID").text)

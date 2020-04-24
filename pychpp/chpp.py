@@ -2,7 +2,7 @@ from rauth import OAuth1Service
 from rauth import OAuth1Session
 from rauth.oauth import HmacSha1Signature
 
-import xml.etree.ElementTree as ElementTree
+import xml.etree.ElementTree
 import datetime
 
 from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge
@@ -13,8 +13,26 @@ class CHPP:
     """
     Manage connection and requests with Hattrick API
     """
-    def __init__(self, consumer_key, consumer_secret, access_token_key='', access_token_secret=''):
 
+    def __init__(self, consumer_key, consumer_secret, access_token_key='', access_token_secret=''):
+        """
+        Initialization of a CHPP instance
+
+        It needs at least consumer_key and consumer_secret parameters.
+
+        If access_token_key and access_token_secret parameters are not defined,
+        the instanciated object can be used to obtain them from Hattrick.
+
+        :param consumer_key: Consumer Key of the application
+        :param consumer_secret: Consumer Secret of the application
+        :param access_token_key: Access Token Key for the current user
+        :param access_token_secret: Access Token Secret for the current user
+        :type consumer_key: str
+        :type consumer_secret: str
+        :type access_token_key: str
+        :type access_token_secret: str
+        :return: None
+        """
         self.consumer_key = consumer_key
         self.consumer_secret = consumer_secret
         self.access_token_key = access_token_key
@@ -40,6 +58,7 @@ class CHPP:
         """
         Parse xml data returned by Hattrick and raise relevant exception
         """
+
         error_code = int(xml_data.find("ErrorCode").text)
 
         if error_code == 59:
@@ -81,12 +100,16 @@ class CHPP:
 
     def get_auth(self, callback_url="oob", scope=""):
         """
-        Get url, request_token and request_token_secret to get auth from Hattrick for this user
+        Get url, request_token and request_token_secret to get authentification tokens from Hattrick for this user
+
         :param callback_url: url that have to be request by Hattrick after the user have fill his credentials
         :param scope: authorization granted by user to the application
                       can be "", "manage_challenges", "set_matchorder", "manage_youthplayers",
                       "set_training", "place_bid"
+        :type callback_url: str
+        :type scope: str
         :return: {"request_token": ..., "request_token_secret":..., "url": ...}
+        :rtype: dict
         """
         auth = dict()
 
@@ -101,7 +124,9 @@ class CHPP:
     def get_access_token(self, request_token, request_token_secret, code):
         """
         Query access token from Hattrick once the user granted the application on Hattrick
-        Access token have to be stored by the application in order to be used for following use of CHPP class
+
+        Access token have to be stored by the application in order to be used for further use of CHPP class.
+
         :param request_token: returned by get_auth
         :param request_token_secret: returned by get_auth
         :param code: code returned by Hattrick after the user granted the application
@@ -127,13 +152,18 @@ class CHPP:
                              access_token_secret=self.access_token_secret,
                              )
 
-    def request(self, **params):
+    def request(self, **kwargs):
+        """
+        Send a request via the CHPP API
 
+        :return: xml data fetched on Hattrick
+        :rtype: ElementTree
+        """
         session = self.open_session()
-        query = session.get(self.base_url, params=params)
+        query = session.get(self.base_url, params=kwargs)
         query.encoding = "UTF-8"
 
-        data = ElementTree.fromstring(query.text)
+        data = xml.etree.ElementTree.fromstring(query.text)
         file_name = data.find("FileName").text
 
         # If Hattrick returns an error, an exception is raised
@@ -143,24 +173,74 @@ class CHPP:
         return data
 
     def user(self, **kwargs):
+        """
+        Get a user from its Hattrick ID
+
+        If not ht_id is defined, return the connected user.
+
+        :key ht_id: Hattrick ID of the requested user, must be an int
+        :rtype: ht_user.HTUser
+        """
         return ht_user.HTUser(chpp=self, **kwargs)
 
     def team(self, **kwargs):
+        """
+        Get a team from its Hattrick ID
+
+        If not ht_id is defined, return the primary team of connected user.
+
+        :key ht_id: Hattrick ID of the requested team, must be an int
+        :rtype: ht_team.HTTeam
+        """
         return ht_team.HTTeam(chpp=self, **kwargs)
 
     def youth_team(self, **kwargs):
+        """
+        Get a youth team from its Hattrick ID
+
+        If not ht_id is defined, return the youth primary team of connected user.
+
+        :key ht_id: Hattrick ID of the requested youth team, must be an int
+        :rtype: ht_team.HTYouthTeam
+        """
         return ht_team.HTYouthTeam(chpp=self, **kwargs)
 
     def player(self, **kwargs):
+        """
+        Get a player from its Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested player, must be an int
+        :rtype: ht_player.HTPlayer
+        """
         return ht_player.HTPlayer(chpp=self, **kwargs)
 
     def youth_player(self, **kwargs):
+        """
+        Get a youth player from its Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested youth player, must be an int
+        :rtype: ht_player.HTYouthPlayer
+        """
         return ht_player.HTYouthPlayer(chpp=self, **kwargs)
 
     def arena(self, **kwargs):
+        """
+        Get an arena from its Hattrick ID
+
+        If not ht_id is defined, return the primary team arena of connected user.
+
+        :key ht_id: Hattrick ID of the requested arena, must be an int
+        :rtype: ht_arena.HTArena
+        """
         return ht_arena.HTArena(chpp=self, **kwargs)
 
     def region(self, **kwargs):
+        """
+        Get a region from his Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested region, must be an int
+        :rtype: ht_region.HTRegion
+        """
         return ht_region.HTRegion(chpp=self, **kwargs)
 
     def challenge_manager(self, **kwargs):
@@ -175,7 +255,7 @@ class CHPP:
                                                     "suggestedTeamIds": str(team_id),
                                                     })
 
-        infos = ElementTree.fromstring(result.text)
+        infos = xml.etree.ElementTree.fromstring(result.text)
         infos = infos.find("Team").find("ChallengeableResult").find("Opponent").find("IsChallengeable").text
 
         challengeable = True if infos == "True" else False
@@ -185,7 +265,7 @@ class CHPP:
     def get_matches_archive(self, team_id, start_date=(datetime.datetime.now() - datetime.timedelta(days=30)),
                             end_date=(datetime.datetime.now()), season=None):
 
-        xml = self.request(
+        _xml = self.request(
             file="matchesarchive",
             version="1.4",
             teamID=str(team_id),
@@ -195,15 +275,15 @@ class CHPP:
             season=season,
         )
 
-        file_name = xml.find("FileName").text
+        file_name = _xml.find("FileName").text
 
         if file_name == "chpperror.xml":
-            result = ("error", int(xml.find("ErrorCode").text), xml.find("Error").text, xml.text)
+            result = ("error", int(_xml.find("ErrorCode").text), _xml.find("Error").text, _xml.text)
 
         else:
             result = list()
 
-            for m in xml.find("Team").find("MatchList").findall("Match"):
+            for m in _xml.find("Team").find("MatchList").findall("Match"):
                 match = {
                     "MatchID": int(m.find("MatchID").text),
                     "HomeTeamID": int(m.find("HomeTeam").find("HomeTeamID").text),
@@ -221,7 +301,7 @@ class CHPP:
 
     def get_matches(self, team_id, end_date):
 
-        xml = self.request(
+        _xml = self.request(
             file="matches",
             version="2.8",
             teamID=str(team_id),
@@ -229,15 +309,15 @@ class CHPP:
             LastMatchDate=end_date.strftime("%Y-%m-%d %H:%M:%S"),
         )
 
-        file_name = xml.find("FileName").text
+        file_name = _xml.find("FileName").text
 
         if file_name == "chpperror.xml":
-            result = ("error", int(xml.find("ErrorCode").text), xml.find("Error").text, xml.text)
+            result = ("error", int(_xml.find("ErrorCode").text), _xml.find("Error").text, _xml.text)
 
         else:
             result = list()
 
-            for m in xml.find("Team").find("MatchList").findall("Match"):
+            for m in _xml.find("Team").find("MatchList").findall("Match"):
                 match = {
                     "MatchID": int(m.find("MatchID").text),
                     "HomeTeamID": int(m.find("HomeTeam").find("HomeTeamID").text),
@@ -251,7 +331,7 @@ class CHPP:
 
     def get_match_details(self, match_id):
 
-        xml = self.request(
+        _xml = self.request(
             file="matchdetails",
             version="3.0",
             matchEvents="true",
@@ -259,14 +339,14 @@ class CHPP:
             sourceSystem="hattrick",
         )
 
-        file_name = xml.find("FileName").text
+        file_name = _xml.find("FileName").text
 
         if file_name == "chpperror.xml":
-            result = ("error", int(xml.find("ErrorCode").text), xml.find("Error").text, xml.text)
+            result = ("error", int(_xml.find("ErrorCode").text), _xml.find("Error").text, _xml.text)
 
         else:
 
-            m = xml.find("Match")
+            m = _xml.find("Match")
 
             result = dict()
 

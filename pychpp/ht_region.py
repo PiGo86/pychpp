@@ -7,7 +7,14 @@ class HTRegion:
     _SOURCE_FILE_VERSION = "1.2"
 
     def __init__(self, chpp, ht_id=None):
+        """
+        Initialize HTRegion instance
 
+        :param chpp: CHPP instance of connected user
+        :param ht_id: arena Hattrick ID (if none, fetch the primary club arena of connected user), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        """
         self._chpp = chpp
         kwargs = {}
 

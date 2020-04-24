@@ -1,4 +1,4 @@
-import xml
+import xml.etree.ElementTree
 
 from pychpp import chpp as _chpp
 from pychpp import ht_date
@@ -19,7 +19,14 @@ class HTChallengeManager:
                      }
 
     def __init__(self, chpp, team_ht_id, match_period="week"):
+        """
+        Initialize a HTChallengeManager instance
 
+        :param chpp: CHPP instance of connected user
+        :param team_ht_id: Hattrick ID of team to manage challenges
+        :type chpp: CHPP
+        :type team_ht_id: int
+        """
         if not isinstance(chpp, _chpp.CHPP):
             raise ValueError("chpp must be a CHPP oject")
         elif not isinstance(team_ht_id, int):
@@ -39,6 +46,16 @@ class HTChallengeManager:
     def list(self, author="both", data=None):
         """
         List pending challenges for current team
+
+        :param author: choose challenges to show :
+                       - only challenges launched by current team ("own_team") ;
+                       - only challenges launched by otehr teams ("other_teams") ;
+                       - all challenges ("both").
+        :param data: ElementTree data (to avoid a new fetch to Hattrick)
+        :type author: str
+        :type data: xml.tree.ElementTree, optional
+        :return: a list of Challenge instances
+        :rtype: list
         """
         if author not in ("own_team", "other_teams", "both"):
             raise ValueError("author must be equal to 'own_team', 'other_teams' or 'both'")
@@ -59,7 +76,7 @@ class HTChallengeManager:
                         HTChallenge(author="own_team" if child.tag == "ChallengesByMe" else "other_teams",
                                     training_match_id=int(c.find("TrainingMatchID").text),
                                     match_date=ht_date.HTDate.from_ht(c.find("MatchTime").text),
-                                    match_type=int(c.find("FriendlyType").text),
+                                    match_type=c.find("FriendlyType").text,
                                     opponent_team_ht_id=int(c.find("Opponent").find("TeamID").text),
                                     arena_ht_id=int(c.find("Arena").find("ArenaID").text),
                                     is_agreed=True if c.find("IsAgreed").text == "True" else False,
@@ -68,9 +85,20 @@ class HTChallengeManager:
         return challenges
 
     def launch(self, opponent_team_ht_id, match_type="normal",
-               match_place="home", arena_ht_id=0, match_period="week"):
+               match_place="home", arena_ht_id=0):
         """
         Challenge another team
+
+        :param opponent_team_ht_id: Hattrick ID of team to challenge
+        :param match_type: type of match : can be "normal" or "cup_rules", defaults to "normal"
+        :param match_place: place of match : can be "home", "away", or "neutral", default to "home"
+        :param arena_ht_id: if "match_place" is "neutral", Hattrick ID of Arena where playing match, default to 0
+        :type opponent_team_ht_id: int
+        :type match_type: str, optional
+        :type match_place: str, optional
+        :type arena_ht_id: int, optional
+        :return: the launched challenge
+        :rtype: HTChallenge
         """
 
         # Check parameters integrity
@@ -101,6 +129,11 @@ class HTChallengeManager:
     def accept(self, training_match_ht_id):
         """
         Accept a challenge
+
+        :param training_match_ht_id: Hattrick ID of challenge to accept
+        :type training_match_ht_id: int
+        :return: the accepted challenge
+        :rtype: HTChallenge
         """
         self._REQUEST_ARGS["actionType"] = "accept"
         self._set_tm_ht_id(training_match_ht_id)
@@ -112,6 +145,9 @@ class HTChallengeManager:
     def decline(self, training_match_ht_id):
         """
         Decline a challenge
+
+        :param training_match_ht_id: Hattrick ID of challenge to decline
+        :type training_match_ht_id: int
         """
         self._REQUEST_ARGS["actionType"] = "decline"
         self._set_tm_ht_id(training_match_ht_id)
@@ -120,6 +156,9 @@ class HTChallengeManager:
     def withdraw(self, training_match_ht_id):
         """
         Withdraw a challenge
+
+        :param training_match_ht_id: Hattrick ID of challenge to withdraw
+        :type training_match_ht_id: int
         """
         self._REQUEST_ARGS["actionType"] = "withdraw"
         self._set_tm_ht_id(training_match_ht_id)
@@ -133,7 +172,22 @@ class HTChallenge:
 
     def __init__(self, author, training_match_id, match_date, match_type,
                  opponent_team_ht_id, arena_ht_id, is_agreed):
+        """
+        Initialize HTChallenge instance
 
+        :param author: author of challenge, can be "own_team" or "other_teams"
+        :param training_match_id: challenge Hattrick ID
+        :param match_date: challenge date
+        :param match_type: challenge type : can be "normal" or "cup_rules"
+        :param opponent_team_ht_id: opponent team Hattrick ID
+        :param arena_ht_id: if "match_place" is "neutral", Hattrick ID of Arena where playing match, default to 0
+        :type author: str
+        :type training_match_id: int
+        :type match_date: datetime.datetime
+        :type match_type: str
+        :type opponent_team_ht_id: int
+        :type arena_ht_id: int
+        """
         self.author = author
         self.training_match_id = training_match_id
         self.match_date = match_date

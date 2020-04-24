@@ -7,7 +7,14 @@ class HTUser:
     """
 
     def __init__(self, chpp, ht_id=None):
+        """
+        Initialize HTUser instance
 
+        :param chpp: CHPP instance of connected user
+        :param ht_id: user Hattrick ID (if none, fetch the connected user), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        """
         self._chpp = chpp
         kwargs = {}
 
