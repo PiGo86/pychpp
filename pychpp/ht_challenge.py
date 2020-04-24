@@ -18,30 +18,59 @@ class HTChallengeManager:
                      "action_type": _ACTION_TYPE,
                      }
 
-    def __init__(self, chpp, team_ht_id, match_period="week"):
+    def __init__(self, chpp, team_ht_id=None, match_period="week"):
         """
         Initialize a HTChallengeManager instance
 
         :param chpp: CHPP instance of connected user
         :param team_ht_id: Hattrick ID of team to manage challenges
+        :param match_period: Period concerned, can be "week" or "weekend", defaults to "week"
         :type chpp: CHPP
         :type team_ht_id: int
+        :type match_period: str
         """
         if not isinstance(chpp, _chpp.CHPP):
             raise ValueError("chpp must be a CHPP oject")
-        elif not isinstance(team_ht_id, int):
+        elif team_ht_id is not None and not isinstance(team_ht_id, int):
             raise ValueError("team_ht_id must be an integer")
         elif match_period not in ("week", "weekend"):
             raise ValueError("match_period must be equal to 'week' or 'weekend'")
 
         self._chpp = chpp
-        self._REQUEST_ARGS["teamId"] = str(team_ht_id)
+        self._REQUEST_ARGS["teamId"] = str(team_ht_id) if team_ht_id is not None else ""
         self._REQUEST_ARGS["isWeekendFriendly"] = {"week": "0", "weekend": "1"}[match_period]
 
     def _set_tm_ht_id(self, training_match_ht_id):
         if not isinstance(training_match_ht_id, int):
             raise ValueError("training_match_ht_id must be an integer")
         self._REQUEST_ARGS["trainingMatchId"] = str(training_match_ht_id)
+
+    def is_challengeable(self, team_ht_id):
+        """
+        Check if one or more team are available to be challenged
+
+        :param team_ht_id: team Hattrick ID or list of teams Hattrick ID to check availability
+        :type team_ht_id: int or list
+        :return: a dictionnary with keys equal to every tested team_ht_id and values equal to booleans
+        :rtype: dict
+        """
+        # Check team_ht_id integrity
+        if isinstance(team_ht_id, int):
+            self._REQUEST_ARGS['suggestedTeamIds'] = str(team_ht_id)
+        elif (isinstance(team_ht_id, list)
+              and all(isinstance(i, int) and type(i) != bool for i in team_ht_id)):
+            self._REQUEST_ARGS['suggestedTeamIds'] = ','.join(str(ht_id) for ht_id in team_ht_id)
+        else:
+            raise ValueError("team_ht_id must be an int or a list of int")
+
+        self._REQUEST_ARGS['actionType'] = "challengeable"
+        data = self._chpp.request(**self._REQUEST_ARGS).find("Team").find("ChallengeableResult")
+
+        result_dict = {int(i.find("TeamId").text):
+                       True if i.find('IsChallengeable').text == "True" else False
+                       for i in data}
+
+        return result_dict
 
     def list(self, author="both", data=None):
         """

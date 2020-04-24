@@ -246,22 +246,6 @@ class CHPP:
     def challenge_manager(self, **kwargs):
         return ht_challenge.HTChallengeManager(chpp=self, **kwargs)
 
-    def is_challengeable(self, team_id):
-
-        session = self.open_session()
-        result = session.get(self.base_url, params={"file": "challenges",
-                                                    "version": "1.6",
-                                                    "actionType": "challengeable",
-                                                    "suggestedTeamIds": str(team_id),
-                                                    })
-
-        infos = xml.etree.ElementTree.fromstring(result.text)
-        infos = infos.find("Team").find("ChallengeableResult").find("Opponent").find("IsChallengeable").text
-
-        challengeable = True if infos == "True" else False
-
-        return challengeable
-
     def get_matches_archive(self, team_id, start_date=(datetime.datetime.now() - datetime.timedelta(days=30)),
                             end_date=(datetime.datetime.now()), season=None):
 
