@@ -1,16 +1,14 @@
+from pychpp import ht_model
 from pychpp import ht_team, ht_arena, ht_xml
 
 
-class HTMatch:
+class HTMatch(ht_model.HTModel):
     """
     Hattrick match
     """
 
     _SOURCE_FILE = "matchdetails"
     _SOURCE_FILE_VERSION = "3.0"
-    _REQUEST_ARGS = {"matchEvents": "false",
-                     "matchID": None,
-                     "sourceSystem": "hattrick"}
 
     _HT_ATTRIBUTES = [("ht_id", "Match/MatchID", ht_xml.HTXml.ht_int),
 
@@ -20,8 +18,8 @@ class HTMatch:
                       ("rule", "Match/MatchRuleId", ht_xml.HTXml.ht_str),
                       ("cup_level", "Match/CupLevel", ht_xml.HTXml.ht_int),
                       ("cup_level_index", "Match/CupLevelIndex", ht_xml.HTXml.ht_int),
-                      ("date", "Match/MatchDate", ht_xml.HTXml.ht_date),
-                      ("finished_date", "Match/FinishedDate", ht_xml.HTXml.ht_date),
+                      ("date", "Match/MatchDate", ht_xml.HTXml.ht_date_from_text),
+                      ("finished_date", "Match/FinishedDate", ht_xml.HTXml.ht_date_from_text),
                       ("added_minutes", "Match/AddedMinutes", ht_xml.HTXml.ht_str),
 
                       # Home team
@@ -88,7 +86,9 @@ class HTMatch:
                       ("goals", "Match/Scorers", ht_xml.HTXml.ht_goals),
                       ]
 
-    def __init__(self, chpp, ht_id, events=False, source="hattrick"):
+    def __init__(self, ht_id, events=False, source="hattrick", **kwargs):
+
+        super().__init__(**kwargs)
 
         if not isinstance(ht_id, int):
             raise ValueError("ht_id must be an integer")
@@ -97,24 +97,14 @@ class HTMatch:
         elif source not in ("hattrick", "youth", "htointegrated"):
             raise ValueError("source must be equal to 'hattrick, 'youth' or 'htointegrated'")
 
-        self._chpp = chpp
-
         self._REQUEST_ARGS["matchID"] = str(ht_id)
         self._REQUEST_ARGS["matchEvents"] = "true" if events is True else "false"
         self._REQUEST_ARGS["sourceSystem"] = source
 
-        data = self._chpp.request(file=self._SOURCE_FILE,
-                                  version=self._SOURCE_FILE_VERSION,
-                                  **self._REQUEST_ARGS,
-                                  )
+        self.ht_id = ht_id
 
-        for attr_tuple in self._HT_ATTRIBUTES:
-            setattr(self,
-                    attr_tuple[0],
-                    (attr_tuple[2](data.find(attr_tuple[1]))
-                     if data.find(attr_tuple[1]) is not None
-                     else None),
-                    )
+    def __repr__(self):
+        return f"<HTMatch object : ({self.ht_id})>"
 
     @property
     def home_team(self):

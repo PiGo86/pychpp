@@ -1,8 +1,8 @@
-from pychpp import ht_team
-from pychpp.ht_date import HTDate
+from pychpp import ht_model, ht_xml
+from pychpp import ht_team, ht_region
 
 
-class HTArena:
+class HTArena(ht_model.HTModel):
     """
     Hattrick arena
     """
@@ -10,7 +10,25 @@ class HTArena:
     _SOURCE_FILE = "arenadetails"
     _SOURCE_FILE_VERSION = "1.5"
 
-    def __init__(self, chpp, ht_id=None):
+    _HT_ATTRIBUTES = [("ht_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
+                      # General information
+                      ("name", "Arena/ArenaName", ht_xml.HTXml.ht_str),
+                      # Team
+                      ("team_ht_id", "Arena/Team/TeamID", ht_xml.HTXml.ht_int),
+                      ("team_name", "Arena/Team/TeamName", ht_xml.HTXml.ht_str),
+                      # Country
+                      ("country_ht_id", "Arena/League/LeagueID", ht_xml.HTXml.ht_int),
+                      ("country_name", "Arena/League/LeagueName", ht_xml.HTXml.ht_str),
+                      # Region
+                      ("region_ht_id", "Arena/Region/RegionID", ht_xml.HTXml.ht_int),
+                      ("region_name", "Arena/Region/RegionName", ht_xml.HTXml.ht_str),
+                      # Current capacity
+                      ("current_capacity", "Arena/CurrentCapacity", ht_xml.HTXml.ht_arena_capacity),
+                      # Expanded capacity
+                      ("expanded_capacity", "Arena/ExpandedCapacity", ht_xml.HTXml.ht_arena_capacity),
+                      ]
+
+    def __init__(self, ht_id=None, **kwargs):
         """
         Initialization of a HTArena instance
 
@@ -19,53 +37,21 @@ class HTArena:
         :type chpp: CHPP
         :type ht_id: int
         """
-        self._chpp = chpp
-        kwargs = {}
 
-        if ht_id is not None:
-            kwargs["arenaID"] = ht_id
-
-        data = chpp.request(file=self._SOURCE_FILE,
-                            version=self._SOURCE_FILE_VERSION,
-                            **kwargs,
-                            ).find("Arena")
-
-        self._data = data
-
-        self.ht_id = int(data.find("ArenaID").text)
-        self.name = data.find("ArenaName").text
-
-        cap_data = data.find("CurrentCapacity")
-        rebuilt_date = (HTDate.from_ht(cap_data.find("RebuiltDate").text)
-                        if cap_data.find("RebuiltDate").attrib["Available"] == "True"
-                        else None
-                        )
-
-        self.capacity = {"rebuilt_date": rebuilt_date,
-                         "terraces": int(cap_data.find("Terraces").text),
-                         "basic": int(cap_data.find("Basic").text),
-                         "roof": int(cap_data.find("Roof").text),
-                         "vip": int(cap_data.find("VIP").text),
-                         "total": int(cap_data.find("Total").text),
-                         }
-
-        exp_data = data.find("ExpandedCapacity")
-
-        if exp_data.attrib["Available"] == "True":
-            self.expanded_capacity = {"expansion_date": HTDate.from_ht(exp_data.find("ExpansionDate").text),
-                                      "terraces": int(exp_data.find("Terraces").text),
-                                      "basic": int(exp_data.find("Basic").text),
-                                      "roof": int(exp_data.find("Roof").text),
-                                      "vip": int(exp_data.find("VIP").text),
-                                      "total": int(exp_data.find("Total").text),
-                                      }
-        else:
-            self.expanded_capacity = None
+        super().__init__(**kwargs)
+        self._REQUEST_ARGS["arenaID"] = ht_id if ht_id is not None else ""
+        self.ht_id = ht_id
 
     def __repr__(self):
-        return f"<{self.__class__.__name__} object : {self.name} ({self.ht_id})>"
+        return f"<{self.__class__.__name__} object>"
 
     @property
     def team(self):
         return ht_team.HTTeam(chpp=self._chpp,
-                              ht_id=int(self._data.find("Team").find("TeamID").text))
+                              ht_id=self.team_ht_id)
+
+    @property
+    def region(self):
+        return ht_region.HTRegion(chpp=self._chpp,
+                                  ht_id=self.region_ht_id)
+

@@ -25,7 +25,7 @@ class HTXml:
         return goals
 
     @staticmethod
-    def ht_date(data):
+    def ht_date_from_text(data):
         """
         Converting strings from xml data to datetime objects
 
@@ -35,3 +35,46 @@ class HTXml:
         :rtype: datetime.datetime
         """
         return datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+
+    @staticmethod
+    def ht_date_to_text(_date):
+        """
+        Converting strings from xml data to datetime objects
+
+        :param _date: a datetime object
+        :type _date: datetime.datetime
+        :return: a string representing a date and a time
+        :rtype: str
+        """
+        return _date.strftime("%Y-%m-%d %H:%M:%S")
+
+    @staticmethod
+    def ht_match_list(data):
+        matches_id = list()
+        for match in data.findall('Match'):
+            matches_id.append(int(match.find("MatchID").text))
+        return matches_id
+
+    @classmethod
+    def ht_arena_capacity(cls, data):
+
+        capacity = dict()
+
+        if data.tag not in ("CurrentCapacity", "ExpandedCapacity"):
+            raise ValueError("root tag must be equal to 'CurrentCapacity or 'ExpandedCapacity'")
+
+        elif (data.tag == "CurrentCapacity"
+              or (data.tag == "ExpandedCapacity" and data.attrib["Available"] == "True")):
+
+            if data.find("RebuiltDate") is not None and data.find("RebuiltDate").attrib["Available"] == "True":
+                capacity['rebuilt_date'] = cls.ht_date_from_text(data.find("RebuiltDate"))
+            elif data.find("ExpandedDate") is not None and data.find("ExpandedDate").attrib["Available"] == "True":
+                capacity['expanded_date'] = cls.ht_date_from_text(data.find("ExpandedDate"))
+
+            capacity["terraces"] = int(data.find("Terraces").text)
+            capacity["basic"] = int(data.find("Basic").text)
+            capacity["roof"] = int(data.find("Roof").text)
+            capacity["vip"] = int(data.find("VIP").text)
+            capacity["total"] = int(data.find("Total").text)
+
+        return capacity if capacity else None

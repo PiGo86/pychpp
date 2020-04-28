@@ -5,7 +5,7 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree
 import datetime
 
-from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge
+from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge, ht_match, ht_matches_archive
 from pychpp import ht_error
 
 
@@ -245,6 +245,12 @@ class CHPP:
 
     def challenge_manager(self, **kwargs):
         return ht_challenge.HTChallengeManager(chpp=self, **kwargs)
+
+    def match(self, **kwargs):
+        return ht_match.HTMatch(chpp=self, **kwargs)
+
+    def matches_archive(self, **kwargs):
+        return ht_matches_archive.HTMatchesArchive(chpp=self, **kwargs)
 
     def get_matches_archive(self, team_id, start_date=(datetime.datetime.now() - datetime.timedelta(days=30)),
                             end_date=(datetime.datetime.now()), season=None):
