@@ -1,18 +1,15 @@
+from pychpp import ht_model, ht_xml
 from pychpp import ht_user, ht_player, ht_arena
 from pychpp.ht_date import HTDate
 
 
-class HTCoreTeam:
+class HTCoreTeam(ht_model.HTModel):
     """
     Core Hattrick team
     Used to create HTTeam and HTYouthTeam classes
     """
 
-    _SOURCE_FILE = "teamdetails"
-    _SOURCE_FILE_VERSION = "3.4"
-    _REQUEST_ARGS = {}
-
-    def __init__(self, chpp, ht_id=None):
+    def __init__(self, ht_id=None, **kwargs):
         """
         Initialize HTCoreTeam instance
 
@@ -21,40 +18,14 @@ class HTCoreTeam:
         :type chpp: CHPP
         :type ht_id: int, optional
         """
-        self._chpp = chpp
+        super().__init__(**kwargs)
 
         # If set, check ht_id integrity and add to request arguments
         # If not set, request will fetch team of current user
-        if ht_id is not None:
-            if not isinstance(ht_id, int):
-                raise ValueError("ht_id must be an integer")
-            else:
-                if "youthTeamId" not in self._REQUEST_ARGS:
-                    self._REQUEST_ARGS["teamID"] = ht_id
-                else:
-                    self._REQUEST_ARGS["youthTeamId"] = ht_id
+        if not isinstance(ht_id, int) and ht_id is not None:
+            raise ValueError("ht_id must be an integer")
 
-        data = chpp.request(file=self._SOURCE_FILE,
-                            version=self._SOURCE_FILE_VERSION,
-                            **self._REQUEST_ARGS,
-                            )
-
-        # team_data depends on team type (senior or youth)
-        if data.find("Teams") is not None:
-            team_data = data.find("Teams").find("Team")
-        else:
-            team_data = data.find("YouthTeam")
-
-        self._data = data
-        self._team_data = team_data
-
-        # Assign common attributes
-        self.ht_id = 0
-        self.name = ""
-        self.short_name = team_data.find("ShortTeamName").text
-
-    def __repr__(self):
-        return f"<{self.__class__.__name__} object : {self.name} ({self.ht_id})>"
+        self.ht_id = ht_id
 
 
 class HTTeam(HTCoreTeam):
@@ -62,30 +33,62 @@ class HTTeam(HTCoreTeam):
     Hattrick team
     """
 
-    def __init__(self, **kwargs):
-        """
-        Initialize HTTeam instance
+    _SOURCE_FILE = "teamdetails"
+    _SOURCE_FILE_VERSION = "3.4"
 
-        :key chpp: CHPP instance of connected user
-        :key ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
-        :type chpp: CHPP
-        :type ht_id: int, optional
-        """
+    _HT_ATTRIBUTES = [("ht_id", "Teams/Team/TeamID", ht_xml.HTXml.ht_int),
+                      # General team information
+                      ("name", "Teams/Team/TeamName", ht_xml.HTXml.ht_str),
+                      ("short_name", "Teams/Team/ShortTeamName", ht_xml.HTXml.ht_str),
+                      ("is_primary_club", "Teams/Team/IsPrimaryClub", ht_xml.HTXml.ht_bool),
+                      ("founded_date", "Teams/Team/FoundedDate", ht_xml.HTXml.ht_date_from_text),
+                      # Arena
+                      ("arena_ht_id", "Teams/Team/Arena/ArenaID", ht_xml.HTXml.ht_int),
+                      ("arena_name", "Teams/Team/Arena/ArenaName", ht_xml.HTXml.ht_str),
+                      # Country
+                      ("country_ht_id", "Teams/Team/Country/CountryID", ht_xml.HTXml.ht_int),
+                      ("country_name", "Teams/Team/Country/CountryName", ht_xml.HTXml.ht_str),
+                      # Region
+                      ("region_ht_id", "Teams/Team/Region/RegionID", ht_xml.HTXml.ht_int),
+                      ("region_name", "Teams/Team/Region/RegionID", ht_xml.HTXml.ht_str),
+                      # Trainer
+                      ("trainer_ht_id", "Teams/Team/Trainer/PlayerID", ht_xml.HTXml.ht_int),
+                      # Homepage
+                      ("homepage", "Teams/Team/HomePage", ht_xml.HTXml.ht_str),
+                      # Cup
+                      ("still_in_cup", "Teams/Team/Cup/StillinCup", ht_xml.HTXml.ht_bool),
+                      ("cup_ht_id", "Teams/Team/Cup/CupID", ht_xml.HTXml.ht_int),
+                      ("cup_name", "Teams/Team/Cup/CupName", ht_xml.HTXml.ht_str),
+                      ("cup_league_level", "Teams/Team/Cup/CupLeagueLevel", ht_xml.HTXml.ht_int),
+                      ("cup_level", "Teams/Team/Cup/CupLevel", ht_xml.HTXml.ht_int),
+                      ("cup_level_index", "Teams/Team/Cup/CupLevelIndex", ht_xml.HTXml.ht_int),
+                      ("cup_match_round", "Teams/Team/Cup/MatchRound", ht_xml.HTXml.ht_int),
+                      ("cup_match_rounds_left", "Teams/Team/Cup/MatchRoundsLeft", ht_xml.HTXml.ht_int),
+                      # User
+                      ("user_ht_id", "User/UserID", ht_xml.HTXml.ht_int),
+                      ("supporter_tier", "User/SupporterTier", ht_xml.HTXml.ht_str),
+                      ("user_login", "User/Loginname", ht_xml.HTXml.ht_str),
+                      ("user_fullname", "User/Name", ht_xml.HTXml.ht_str),
+                      ("user_icq", "User/ICQ", ht_xml.HTXml.ht_str),
+                      ("user_signup_date", "User/SignupDate", ht_xml.HTXml.ht_date_from_text),
+                      ("user_activation_date", "User/ActivationDate", ht_xml.HTXml.ht_date_from_text),
+                      ("user_last_login_date", "User/LastLoginDate", ht_xml.HTXml.ht_date_from_text),
+                      ("user_has_manager_license", "User/HasManagerLicese", ht_xml.HTXml.ht_bool),
+                      # Youth team
+                      ("youth_team_ht_id", "Teams/Team/YouthTeamID", ht_xml.HTXml.ht_int),
+                      ("youth_team_name", "Teams/Team/YouthTeamName", ht_xml.HTXml.ht_str),
+                      ]
+
+    def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.ht_id = int(self._team_data.find("TeamID").text)
-
-        self._user_data = self._data.find("User")
-        self._user_ht_id = int(self._user_data.find("UserID").text)
-
-        self.name = self._team_data.find("TeamName").text
-        self.founded_date = HTDate.from_ht(self._team_data.find("FoundedDate").text)
-        self.is_primary_club = True if self._team_data.find("IsPrimaryClub").text == "True" else False
+        if self.ht_id is not None:
+            self._REQUEST_ARGS['teamID'] = self.ht_id
 
     @property
     def user(self):
         """Owner of the current team"""
-        return ht_user.HTUser(chpp=self._chpp, ht_id=self._user_ht_id)
+        return ht_user.HTUser(chpp=self._chpp, ht_id=self.user_ht_id)
 
     @property
     def players(self):
@@ -102,14 +105,14 @@ class HTTeam(HTCoreTeam):
     @property
     def youth_team(self):
         """Youth team of current team"""
-        yt_id = int(self._team_data.find("YouthTeamID").text)
-        return HTYouthTeam(chpp=self._chpp, ht_id=yt_id) if yt_id != 0 else None
+        return HTYouthTeam(chpp=self._chpp,
+                           ht_id=self.youth_team_ht_id,
+                           ) if self.youth_team_ht_id != 0 else None
 
     @property
     def arena(self):
         """Team arena"""
-        ht_id = int(self._team_data.find(f"Arena").find("ArenaID").text)
-        return ht_arena.HTArena(chpp=self._chpp, ht_id=ht_id)
+        return ht_arena.HTArena(chpp=self._chpp, ht_id=self.arena_ht_id)
 
 
 class HTYouthTeam(HTCoreTeam):
@@ -119,7 +122,34 @@ class HTYouthTeam(HTCoreTeam):
 
     _SOURCE_FILE = "youthteamdetails"
     _SOURCE_FILE_VERSION = "1.1"
-    _REQUEST_ARGS = {"youthTeamId": None}
+
+    _HT_ATTRIBUTES = [("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
+                      # General information
+                      ("name", "YouthTeam/YouthTeamName", ht_xml.HTXml.ht_str,),
+                      ("short_name", "YouthTeam/ShortTeamName", ht_xml.HTXml.ht_str,),
+                      ("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
+                      ("created_date", "YouthTeam/CreatedDate", ht_xml.HTXml.ht_date_from_text,),
+                      # Country
+                      ("country_id", "YouthTeam/Country/CountryID", ht_xml.HTXml.ht_int,),
+                      ("country_name", "YouthTeam/Country/CountryName", ht_xml.HTXml.ht_str,),
+                      # Region
+                      ("region_id", "YouthTeam/Region/RegionID", ht_xml.HTXml.ht_int,),
+                      ("region_name", "YouthTeam/Region/RegionName", ht_xml.HTXml.ht_str,),
+                      # Arena
+                      ("arena_id", "YouthTeam/YouthArena/YouthArenaID", ht_xml.HTXml.ht_int,),
+                      ("arena_name", "YouthTeam/YouthArena/YouthArenaName", ht_xml.HTXml.ht_str,),
+                      # League
+                      ("league_id", "YouthTeam/YouthLeague/YouthLeagueID", ht_xml.HTXml.ht_int,),
+                      ("league_name", "YouthTeam/YouthLeague/YouthLeagueName", ht_xml.HTXml.ht_str,),
+                      ("league_status", "YouthTeam/YouthLeague/YouthLeagueStatus", ht_xml.HTXml.ht_int,),
+                      # Senior team
+                      ("senior_team_id", "YouthTeam/OwningTeam/MotherTeamID", ht_xml.HTXml.ht_int,),
+                      ("senior_team_name", "YouthTeam/OwningTeam/MotherTeamName", ht_xml.HTXml.ht_str,),
+                      # Trainer
+                      ("trainer_id", "YouthTeam/YouthTrainer/YouthPlayerID", ht_xml.HTXml.ht_int,),
+                      # Next training match date
+                      ("next_training_match_date", "YouthTeam/NextTrainingMatchDate", ht_xml.HTXml.ht_date_from_text,),
+                      ]
 
     def __init__(self, **kwargs):
         """
@@ -132,9 +162,8 @@ class HTYouthTeam(HTCoreTeam):
         """
         super().__init__(**kwargs)
 
-        self.ht_id = int(self._team_data.find("YouthTeamID").text)
-        self.name = self._team_data.find("YouthTeamName").text
-        self.created_date = HTDate.from_ht(self._team_data.find("CreatedDate").text)
+        if self.ht_id is not None:
+            self._REQUEST_ARGS["youthTeamId"] = self.ht_id
 
     @property
     def players(self):

@@ -24,6 +24,7 @@ class HTMatchesArchive(ht_model.HTModel):
                  last_match_date=None, season=None, hto=False, **kwargs):
         super().__init__(**kwargs)
 
+        # Check parameters integrity
         if not isinstance(ht_id, int) and ht_id is not None:
             raise ValueError("ht_id must be None or an integer")
         elif not isinstance(youth, bool):
@@ -37,6 +38,7 @@ class HTMatchesArchive(ht_model.HTModel):
         elif not isinstance(hto, bool):
             raise ValueError("hto must be a boolean")
 
+        # Define request arguments
         self._REQUEST_ARGS["teamID"] = str(ht_id) if ht_id is not None else ""
         self._REQUEST_ARGS["isYouth"] = "true" if youth is True else "false"
         self._REQUEST_ARGS["FirstMatchDate"] = (ht_xml.HTXml.ht_date_to_text(first_match_date)

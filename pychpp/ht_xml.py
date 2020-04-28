@@ -12,6 +12,10 @@ class HTXml:
         return int(data.text)
 
     @staticmethod
+    def ht_bool(data):
+        return True if data.text.capitalize() == "True" else False
+
+    @staticmethod
     def ht_goals(data):
         goals = list()
         for goal in data.findall('Goal'):

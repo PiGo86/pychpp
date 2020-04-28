@@ -32,6 +32,9 @@ class HTModel:
             self._fetch()
         return object.__getattribute__(self, item)
 
+    def __repr__(self):
+        return f"<{self.__class__.__name__} object>"
+
     def _fetch(self):
 
         self._data = self._chpp.request(file=self._SOURCE_FILE,
