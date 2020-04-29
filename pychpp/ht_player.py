@@ -1,22 +1,18 @@
 import xml.etree.ElementTree
 
+from pychpp import ht_model, ht_xml
 from pychpp import ht_team
-from pychpp.ht_date import HTDate
 from pychpp.ht_skill import HTSkill, HTSkillYouth, youth_skills_tag, senior_skills_tag
 from pychpp.ht_age import HTAge
 
 
-class HTCorePlayer:
+class HTCorePlayer(ht_model.HTModel):
     """
     Core Hattrick player
     Used to create HTPlayer and HTYouthPlayer classes
     """
 
-    _SOURCE_FILE = "playerdetails"
-    _SOURCE_FILE_VERSION = "2.8"
-    _REQUEST_ARGS = {"actionType": "view", "playerID": None}
-
-    def __init__(self, chpp, ht_id=None, data=None, team_ht_id=None):
+    def __init__(self, ht_id=None, team_ht_id=None, **kwargs):
         """
         Initialize HTCorePlayer instance
 
@@ -29,74 +25,27 @@ class HTCorePlayer:
         :type data: xml.ElementTree.Element, optional
         :type team_ht_id: int, optional
         """
-        self._chpp = chpp
 
         # Init depends on given parameters
         # If data is not defined, ht_id has to be defined
-        if data is None:
-
+        if kwargs.get("data", None) is None:
             # Check ht_id integrity as data is not defined
             if ht_id is None:
                 raise ValueError("ht_id have to be defined when data is not defined")
-
             elif not isinstance(ht_id, int):
                 raise ValueError("ht_id parameter have to be a integer")
-
-            # If ht_id is well defined, data is fetched and self.team_ht_id defined
             else:
+                self.ht_id = ht_id
 
-                # Request arguments depends on player type (senior or youth)
-                if "playerID" in self._REQUEST_ARGS:
-                    self._REQUEST_ARGS["playerID"] = ht_id
-                else:
-                    self._REQUEST_ARGS["youthPlayerId"] = ht_id
-
-                data = chpp.request(file=self._SOURCE_FILE,
-                                    version=self._SOURCE_FILE_VERSION,
-                                    **self._REQUEST_ARGS,
-                                    )
-
-                # Xml main tag depends on player type (senior or youth)
-                if "playerID" in self._REQUEST_ARGS:
-                    data = data.find("Player")
-                else:
-                    data = data.find("YouthPlayer")
-
-        elif not (isinstance(data, xml.etree.ElementTree.Element) and data.tag == "Player"):
-            raise ValueError("data parameter has to be an ElementTree.Element instance")
+        elif kwargs["data"].tag not in ("Player", "YouthPlayer"):
+            raise ValueError("data's root tag must be equal to 'Player' or 'YouthPlayer'")
 
         elif team_ht_id is None:
             raise ValueError("team_ht_id must be defined as data is defined")
 
-        # Skills
-        if ht_id is None:
-            skill_data = data
-        else:
-            skill_data = data.find("PlayerSkills")
+        self.team_ht_id = team_ht_id
 
-        # Internal attributes
-        self._data = data
-        self._skill_data = skill_data
-        self.ht_id = ht_id
-
-        # Assign attributes
-        self.first_name = data.find("FirstName").text
-        self.nick_name = data.find("NickName").text
-        self.last_name = data.find("LastName").text
-
-        self.age = HTAge(age=int(data.find("Age").text), age_days=int(data.find("AgeDays").text))
-        self.arrival_date = HTDate.from_ht(data.find("ArrivalDate").text)
-        self.statement = data.find("Statement").text
-
-        self.league_goals = int(data.find("LeagueGoals").text)
-        self.career_goals = int(data.find("CareerGoals").text)
-        self.career_hattricks = int(data.find("CareerHattricks").text)
-        self.specialty = int(data.find("Specialty").text)
-
-        self.cards = int(data.find("Cards").text)
-        self.injury_level = int(data.find("InjuryLevel").text)
-
-        self.skills = dict()
+        super().__init__(**kwargs)
 
     def __str__(self):
         """
@@ -120,6 +69,57 @@ class HTPlayer(HTCorePlayer):
     Hattrick senior player
     """
 
+    _SOURCE_FILE = "playerdetails"
+    _SOURCE_FILE_VERSION = "2.8"
+    _REQUEST_ARGS = dict()
+
+    _HT_ATTRIBUTES = [("ht_id", ".//PlayerID", ht_xml.HTXml.ht_int,),
+                      ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),
+                      ("nick_name", ".//NickName", ht_xml.HTXml.ht_str,),
+                      ("last_name", ".//LastName", ht_xml.HTXml.ht_str,),
+                      ("number", ".//PlayerNumber", ht_xml.HTXml.ht_int,),
+                      ("category_id", ".//PlayerCategoryID", ht_xml.HTXml.ht_int,),
+                      ("owner_notes", ".//OwnerNotes", ht_xml.HTXml.ht_str,),
+                      ("age_years", ".//Age", ht_xml.HTXml.ht_int,),
+                      ("age_days", ".//AgeDays", ht_xml.HTXml.ht_int,),
+                      ("age", ".//Age/..", ht_xml.HTXml.ht_age,),
+                      ("next_birthday", ".//NextBirthDay", ht_xml.HTXml.ht_date_from_text,),
+                      ("arrival_date", ".//ArrivalDate", ht_xml.HTXml.ht_date_from_text,),
+                      ("form", ".//PlayerForm", ht_xml.HTXml.ht_int,),
+                      ("cards", ".//Cards", ht_xml.HTXml.ht_int,),
+                      ("injury_level", ".//InjuryLevel", ht_xml.HTXml.ht_int,),
+                      ("statement", ".//Statement", ht_xml.HTXml.ht_str,),
+                      ("language", ".//PlayerLanguage", ht_xml.HTXml.ht_str,),
+                      ("language_id", ".//PlayerLanguageID", ht_xml.HTXml.ht_int,),
+                      ("agreeability", ".//Agreeability", ht_xml.HTXml.ht_int,),
+                      ("aggressiveness", ".//Aggressiveness", ht_xml.HTXml.ht_int,),
+                      ("honesty", ".//Honesty", ht_xml.HTXml.ht_int,),
+                      ("experience", ".//Experience", ht_xml.HTXml.ht_int,),
+                      ("loyalty", ".//Loyalty", ht_xml.HTXml.ht_int,),
+                      ("aggressiveness", ".//Aggressiveness", ht_xml.HTXml.ht_int,),
+                      ("specialty", ".//Specialty", ht_xml.HTXml.ht_int,),
+                      ("native_country_id", ".//NativeCountryID", ht_xml.HTXml.ht_int,),
+                      ("native_league_id", ".//NativeLeagueID", ht_xml.HTXml.ht_int,),
+                      ("native_league_name", ".//NativeLeagueName", ht_xml.HTXml.ht_str,),
+                      ("tsi", ".//TSI", ht_xml.HTXml.ht_int,),
+                      ("salary", ".//Salary", ht_xml.HTXml.ht_int,),
+                      ("is_abroad", ".//IsAbroad", ht_xml.HTXml.ht_bool,),
+                      ("caps", ".//Caps", ht_xml.HTXml.ht_int,),
+                      ("caps_u20", ".//CapsU20", ht_xml.HTXml.ht_int,),
+                      ("career_goals", ".//CareerGoals", ht_xml.HTXml.ht_int,),
+                      ("career_hattricks", ".//CareerHattricks", ht_xml.HTXml.ht_int,),
+                      ("league_goals", ".//LeagueGoals", ht_xml.HTXml.ht_int,),
+                      ("cup_goals", ".//CupGoals", ht_xml.HTXml.ht_int,),
+                      ("friendly_goals", ".//FriendliesGoals", ht_xml.HTXml.ht_int,),
+                      ("current_team_matches", ".//MatchesCurrentTeam", ht_xml.HTXml.ht_int,),
+                      ("current_team_goals", ".//GoalsCurrentTeam", ht_xml.HTXml.ht_int,),
+                      ("national_team_id", ".//NationalTeamID", ht_xml.HTXml.ht_int,),
+                      ("national_team_name", ".//NationalTeamName", ht_xml.HTXml.ht_str,),
+                      ("is_transfer_listed", ".//TransferListed", ht_xml.HTXml.ht_bool,),
+                      ("team_id", ".//OwningTeam/TeamID", ht_xml.HTXml.ht_int,),
+                      ("skills", ".//StaminaSkill/..", ht_xml.HTXml.ht_skills,)
+                      ]
+
     def __init__(self, **kwargs):
         """
         Initialize HTPlayer instance
@@ -133,46 +133,9 @@ class HTPlayer(HTCorePlayer):
         :type data: xml.ElementTree.Element, optional
         :type team_ht_id: int, optional
         """
+        if kwargs.get("ht_id", None) is not None:
+            self._REQUEST_ARGS["playerID"] = kwargs["ht_id"]
         super().__init__(**kwargs)
-
-        # team_ht_id is defined by arguments or inside xml data
-        if kwargs.get("data", None) is not None:
-            self.team_ht_id = kwargs["team_ht_id"]
-        else:
-            self.team_ht_id = int(self._data.find("OwningTeam").find("TeamID").text)
-
-        # Assign specific senior player attributes
-        self.ht_id = int(self._data.find("PlayerID").text)
-        self.player_number = int(self._data.find("PlayerNumber").text)
-        self.tsi = int(self._data.find("TSI").text)
-        self.player_form = int(self._data.find("PlayerForm").text)
-        self.experience = int(self._data.find("Experience").text)
-        self.loyalty = int(self._data.find("Loyalty").text)
-        self.mother_club_bonus = True if self._data.find("MotherClubBonus").text == "True" else False
-        self.leadership = int(self._data.find("Leadership").text)
-        self.salary = int(self._data.find("Salary").text)
-        self.is_abroad = True if self._data.find("IsAbroad").text == "True" else False
-        self.agreeability = int(self._data.find("Agreeability").text)
-        self.aggressiveness = int(self._data.find("Aggressiveness").text)
-        self.honesty = int(self._data.find("Honesty").text)
-        self.friendlies_goals = int(self._data.find("FriendliesGoals").text)
-        self.cup_goals = int(self._data.find("CupGoals").text)
-        self.goals_current_team = int(self._data.find("GoalsCurrentTeam").text)
-        self.matches_current_team = int(self._data.find("MatchesCurrentTeam").text)
-        self.transfer_listed = True if self._data.find("TransferListed").text == "True" else False
-
-        self.caps = int(self._data.find("Caps").text)
-        self.caps_u20 = int(self._data.find("CapsU20").text)
-
-        # attributes only visible for team of current user
-        self.owner_notes = (self._data.find("OwnerNotes").text
-                            if self._data.find("OwnerNotes") is not None else None)
-
-        # Skills attributes
-        self.skills = {k: HTSkill(name=k,
-                                  level=int(self._skill_data.find(v).text)
-                                  if self._skill_data.find(v) is not None else None)
-                       for k, v in senior_skills_tag.items()}
 
     @property
     def team(self):
@@ -186,7 +149,31 @@ class HTYouthPlayer(HTCorePlayer):
 
     _SOURCE_FILE = "youthplayerdetails"
     _SOURCE_FILE_VERSION = "1.1"
-    _REQUEST_ARGS = {"actionType": "view", "youthPlayerId": None}
+    _REQUEST_ARGS = dict()
+
+    _HT_ATTRIBUTES = [("ht_id", ".//YouthPlayerID", ht_xml.HTXml.ht_int,),
+                      ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),
+                      ("nick_name", ".//NickName", ht_xml.HTXml.ht_str,),
+                      ("last_name", ".//LastName", ht_xml.HTXml.ht_str,),
+                      ("number", ".//PlayerNumber", ht_xml.HTXml.ht_int,),
+                      ("category_id", ".//PlayerCategoryID", ht_xml.HTXml.ht_int,),
+                      ("owner_notes", ".//OwnerNotes", ht_xml.HTXml.ht_str,),
+                      ("age_years", ".//Age", ht_xml.HTXml.ht_int,),
+                      ("age_days", ".//AgeDays", ht_xml.HTXml.ht_int,),
+                      ("age", ".//Age/..", ht_xml.HTXml.ht_age,),
+                      ("arrival_date", ".//ArrivalDate", ht_xml.HTXml.ht_date_from_text,),
+                      ("can_be_promoted_in", ".//CanBePromotedIn", ht_xml.HTXml.ht_int,),
+                      ("cards", ".//Cards", ht_xml.HTXml.ht_int,),
+                      ("injury_level", ".//InjuryLevel", ht_xml.HTXml.ht_int,),
+                      ("statement", ".//Statement", ht_xml.HTXml.ht_str,),
+                      ("specialty", ".//Specialty", ht_xml.HTXml.ht_int,),
+                      ("career_goals", ".//CareerGoals", ht_xml.HTXml.ht_int,),
+                      ("career_hattricks", ".//CareerHattricks", ht_xml.HTXml.ht_int,),
+                      ("league_goals", ".//LeagueGoals", ht_xml.HTXml.ht_int,),
+                      ("friendly_goals", ".//FriendliesGoals", ht_xml.HTXml.ht_int,),
+                      ("team_id", ".//OwningYouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
+                      ("skills", ".//KeeperSkill/..", ht_xml.HTXml.ht_youth_skills,)
+                      ]
 
     def __init__(self, **kwargs):
         """
@@ -201,30 +188,12 @@ class HTYouthPlayer(HTCorePlayer):
         :type data: xml.ElementTree.Element, optional
         :type team_ht_id: int, optional
         """
-        super().__init__(**kwargs)
+
+        if kwargs.get("ht_id", None) is not None:
+            self._REQUEST_ARGS["youthPlayerId"] = kwargs["ht_id"]
 
         # team_ht_id is defined by arguments or inside xml data
         if kwargs.get("data", None) is not None:
-            self.team_ht_id = kwargs["ht_id"]
-        else:
-            self.team_ht_id = int(self._data.find("OwningYouthTeam").find("YouthTeamID").text)
+            self.team_ht_id = kwargs["team_ht_id"]
 
-        # Assign specific youth player attributes
-        self.ht_id = int(self._data.find("YouthPlayerID").text)
-        self.can_be_promoted_in = int(self._data.find("CanBePromotedIn").text)
-        self.player_number = (int(self._data.find("PlayerNumber").text)
-                              if self._data.find("PlayerNumber") is not None
-                              else None)
-        self.player_category_id = (int(self._data.find("PlayerCategoryID").text)
-                                   if self._data.find("PlayerCategoryID") is not None
-                                   else None)
-        self.friendlies_goals = int(self._data.find("FriendlyGoals").text)
-
-        # Skills attributes
-        self.skills = {k: HTSkillYouth(name=k,
-                                       level=(int(self._skill_data.find(v[0]).text)
-                                              if self._skill_data.find(v[0]) is not None else None),
-                                       maximum=(int(self._skill_data.find(v[1]).text)
-                                                if self._skill_data.find(v[1]) is not None else None),
-                                       maximum_reached=bool(self._skill_data.find(v[0]).attrib["IsMaxReached"]))
-                       for k, v in youth_skills_tag.items()}
+        super().__init__(**kwargs)

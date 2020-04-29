@@ -10,6 +10,7 @@ from pychpp.ht_player import HTPlayer
 from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
 from pychpp.ht_match import HTMatch
+from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
 from pychpp.ht_challenge import HTChallenge
 
 PYCHPP_CONSUMER_KEY = os.environ['PYCHPP_CONSUMER_KEY']
@@ -52,9 +53,8 @@ def test_get_current_team(chpp):
     team = chpp.team()
 
     assert isinstance(team, HTTeam)
-    assert team.ht_id is None
-    assert isinstance(team.name, str)
     assert isinstance(team.ht_id, int)
+    assert isinstance(team.name, str)
 
     youth_team = team.youth_team
     assert isinstance(youth_team, HTYouthTeam) or youth_team is None
@@ -165,9 +165,9 @@ def test_launch_challenge(chpp):
 
 def test_get_current_user_matches_archive(chpp):
     ma = chpp.matches_archive()
-    assert isinstance(ma, list)
+    assert isinstance(ma, HTMatchesArchive)
     m = ma[0]
-    assert isinstance(m, HTMatch)
+    assert isinstance(m, HTMatchesArchiveItem)
     assert isinstance(m.home_team, HTTeam)
 
 

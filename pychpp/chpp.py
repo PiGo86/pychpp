@@ -250,7 +250,7 @@ class CHPP:
         return ht_match.HTMatch(chpp=self, **kwargs)
 
     def matches_archive(self, **kwargs):
-        return ht_matches_archive.HTMatchesArchive(chpp=self, **kwargs).search()
+        return ht_matches_archive.HTMatchesArchive(chpp=self, **kwargs)
 
     def get_matches_archive(self, team_id, start_date=(datetime.datetime.now() - datetime.timedelta(days=30)),
                             end_date=(datetime.datetime.now()), season=None):

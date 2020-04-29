@@ -1,5 +1,7 @@
 import datetime
 
+from pychpp import ht_skill, ht_age
+
 
 class HTXml:
 
@@ -82,3 +84,36 @@ class HTXml:
             capacity["total"] = int(data.find("Total").text)
 
         return capacity if capacity else None
+
+    @staticmethod
+    def ht_skills(data):
+        skills = {k: ht_skill.HTSkill(name=k,
+                                      level=int(data.find(v).text)
+                                      if data.find(v) is not None else None)
+                  for k, v in ht_skill.senior_skills_tag.items()}
+
+        return skills
+
+    @staticmethod
+    def ht_youth_skills(data):
+        skills = {k: ht_skill.HTSkillYouth(name=k,
+                                           level=(int(data.find(v[0]).text)
+                                                  if data.find(v[0]).attrib["IsAvailable"] == "True" else None),
+                                           maximum=(int(data.find(v[1]).text)
+                                                    if data.find(v[1]).attrib["IsAvailable"] == "True" else None),
+                                           maximum_reached=bool(data.find(v[0]).attrib["IsMaxReached"]))
+                  for k, v in ht_skill.youth_skills_tag.items()}
+
+        return skills
+
+    @staticmethod
+    def ht_age(data):
+        return ht_age.HTAge(age=int(data.find("Age").text), age_days=int(data.find("AgeDays").text))
+
+    @staticmethod
+    def ht_last_logins(data):
+        return [login.text for login in data.findall("LoginTime")]
+
+    @staticmethod
+    def ht_teams_ht_id(data):
+        return [int(t.find("TeamId").text) for t in data.findall("Team")]

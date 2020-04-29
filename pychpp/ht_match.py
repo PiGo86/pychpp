@@ -9,6 +9,7 @@ class HTMatch(ht_model.HTModel):
 
     _SOURCE_FILE = "matchdetails"
     _SOURCE_FILE_VERSION = "3.0"
+    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "Match/MatchID", ht_xml.HTXml.ht_int),
 
@@ -88,8 +89,6 @@ class HTMatch(ht_model.HTModel):
 
     def __init__(self, ht_id, events=False, source="hattrick", **kwargs):
 
-        super().__init__(**kwargs)
-
         if not isinstance(ht_id, int):
             raise ValueError("ht_id must be an integer")
         elif not isinstance(events, bool):
@@ -101,10 +100,10 @@ class HTMatch(ht_model.HTModel):
         self._REQUEST_ARGS["matchEvents"] = "true" if events is True else "false"
         self._REQUEST_ARGS["sourceSystem"] = source
 
-        self.ht_id = ht_id
+        super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<HTMatch object : ({self.ht_id})>"
+        return f"<HTMatch object : {self.home_team_name} - {self.away_team_name} ({self.ht_id})>"
 
     @property
     def home_team(self):

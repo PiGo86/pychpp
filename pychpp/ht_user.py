@@ -1,12 +1,28 @@
+from pychpp import ht_model, ht_xml
 from pychpp import ht_team
 
 
-class HTUser:
+class HTUser(ht_model.HTModel):
     """
     Hattrick user
     """
 
-    def __init__(self, chpp, ht_id=None):
+    _SOURCE_FILE = "managercompendium"
+    _SOURCE_FILE_VERSION = "1.2"
+    _REQUEST_ARGS = dict()
+    _HT_ATTRIBUTES = [("ht_id", "Manager/UserId", ht_xml.HTXml.ht_int,),
+                      ("username", "Manager/Loginname", ht_xml.HTXml.ht_str,),
+                      ("supporter_tier", "Manager/SupporterTier", ht_xml.HTXml.ht_str,),
+                      ("last_logins", "Manager/LastLogins", ht_xml.HTXml.ht_last_logins,),
+                      ("language_id", "Manager/LanguageId", ht_xml.HTXml.ht_int,),
+                      ("language_name", "Manager/LanguageName", ht_xml.HTXml.ht_str,),
+                      ("country_id", "Manager/CountryId", ht_xml.HTXml.ht_int,),
+                      ("country_name", "Manager/CountryName", ht_xml.HTXml.ht_str,),
+                      ("_teams_ht_id", "Manager/Teams", ht_xml.HTXml.ht_teams_ht_id,),
+
+                      ]
+
+    def __init__(self, ht_id=None, **kwargs):
         """
         Initialize HTUser instance
 
@@ -15,28 +31,10 @@ class HTUser:
         :type chpp: CHPP
         :type ht_id: int, optional
         """
-        self._chpp = chpp
-        kwargs = {}
-
         if ht_id is not None:
-            kwargs["userid"] = ht_id
+            self._REQUEST_ARGS["userId"] = ht_id
 
-        data = chpp.request(file="managercompendium",
-                            version="1.2",
-                            **kwargs,
-                            ).find("Manager")
-
-        teams_data = data.find("Teams")
-
-        self.teams_data = teams_data
-
-        # Assign attributes
-        self.ht_id = int(data.find("UserId").text)
-        self.username = data.find("Loginname").text
-        self.supporter_tier = data.find("SupporterTier").text
-        self.last_logins = [login.text for login in data.find("LastLogins").findall("LoginTime")]
-
-        self._teams_ht_id = [int(team.find("TeamId").text) for team in teams_data.findall("Team")]
+        super().__init__(**kwargs)
 
     def __repr__(self):
         return f"<HTUser object : {self.username} ({self.ht_id})>"

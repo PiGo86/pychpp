@@ -9,6 +9,7 @@ class HTArena(ht_model.HTModel):
 
     _SOURCE_FILE = "arenadetails"
     _SOURCE_FILE_VERSION = "1.5"
+    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
                       # General information
@@ -37,13 +38,11 @@ class HTArena(ht_model.HTModel):
         :type chpp: CHPP
         :type ht_id: int
         """
-
-        super().__init__(**kwargs)
         self._REQUEST_ARGS["arenaID"] = ht_id if ht_id is not None else ""
-        self.ht_id = ht_id
+        super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<{self.__class__.__name__} object>"
+        return f"<{self.__class__.__name__} object : {self.name} ({self.ht_id})>"
 
     @property
     def team(self):

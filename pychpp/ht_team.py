@@ -18,14 +18,15 @@ class HTCoreTeam(ht_model.HTModel):
         :type chpp: CHPP
         :type ht_id: int, optional
         """
-        super().__init__(**kwargs)
-
         # If set, check ht_id integrity and add to request arguments
         # If not set, request will fetch team of current user
         if not isinstance(ht_id, int) and ht_id is not None:
             raise ValueError("ht_id must be an integer")
 
-        self.ht_id = ht_id
+        super().__init__(**kwargs)
+
+    def __repr__(self):
+        return f"<{str(self.__class__.__name__)} object : {self.name} ({self.ht_id}) >"
 
 
 class HTTeam(HTCoreTeam):
@@ -35,6 +36,7 @@ class HTTeam(HTCoreTeam):
 
     _SOURCE_FILE = "teamdetails"
     _SOURCE_FILE_VERSION = "3.4"
+    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "Teams/Team/TeamID", ht_xml.HTXml.ht_int),
                       # General team information
@@ -80,10 +82,11 @@ class HTTeam(HTCoreTeam):
                       ]
 
     def __init__(self, **kwargs):
-        super().__init__(**kwargs)
 
-        if self.ht_id is not None:
-            self._REQUEST_ARGS['teamID'] = self.ht_id
+        if kwargs.get("ht_id", None) is not None:
+            self._REQUEST_ARGS["teamID"] = kwargs["ht_id"]
+
+        super().__init__(**kwargs)
 
     @property
     def user(self):
@@ -122,6 +125,7 @@ class HTYouthTeam(HTCoreTeam):
 
     _SOURCE_FILE = "youthteamdetails"
     _SOURCE_FILE_VERSION = "1.1"
+    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
                       # General information
@@ -160,10 +164,11 @@ class HTYouthTeam(HTCoreTeam):
         :type chpp: CHPP
         :type ht_id: int, optional
         """
-        super().__init__(**kwargs)
 
-        if self.ht_id is not None:
-            self._REQUEST_ARGS["youthTeamId"] = self.ht_id
+        if kwargs.get("ht_id", None) is not None:
+            self._REQUEST_ARGS["youthTeamId"] = kwargs["ht_id"]
+
+        super().__init__(**kwargs)
 
     @property
     def players(self):
@@ -172,6 +177,10 @@ class HTYouthTeam(HTCoreTeam):
                                   version="2.4",
                                   actionType="details",
                                   youthTeamID=self.ht_id).find("PlayerList")
+
+        # Force fetch if ht_id is None
+        if self._data is None:
+            self._fetch()
 
         return [ht_player.HTYouthPlayer(chpp=self._chpp,
                                         data=p_data,
