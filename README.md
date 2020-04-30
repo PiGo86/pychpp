@@ -60,7 +60,6 @@ best_team_ever # <HTTeam object : Les Poitevins de La Chapelle (1165592)>
 
 best_team_arena = best_team_ever.arena
 best_team_arena # <HTArena object : Stade de La Chapelle (1162154)>
-
 best_team_arena.name # 'Stade de La Chapelle'
 
 worth_team_ever = chpp.team(ht_id=1750803)
@@ -68,8 +67,11 @@ worth_team_ever # <HTTeam object : Capdenaguet (1750803)>
 
 player = chpp.player(ht_id=6993859)
 player # <HTPlayer object : Pedro Zurita (6993859)>
-
 player.career_goals # 1163
+
+match = chpp.match(ht_id=68599186)
+match # <HTMatch object : Skou United - FC Barentin (68599186)>
+match.date # datetime.datetime(2006, 2, 23, 20, 0)
 ```
 ## License
 pyCHPP is licensed under the Apache License 2.0.
