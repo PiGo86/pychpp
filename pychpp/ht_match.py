@@ -21,7 +21,7 @@ class HTMatch(ht_model.HTModel):
                       ("cup_level_index", "Match/CupLevelIndex", ht_xml.HTXml.ht_int),
                       ("date", "Match/MatchDate", ht_xml.HTXml.ht_date_from_text),
                       ("finished_date", "Match/FinishedDate", ht_xml.HTXml.ht_date_from_text),
-                      ("added_minutes", "Match/AddedMinutes", ht_xml.HTXml.ht_str),
+                      ("added_minutes", "Match/AddedMinutes", ht_xml.HTXml.ht_int),
 
                       # Home team
                       ("home_team_id", "Match/HomeTeam/HomeTeamID", ht_xml.HTXml.ht_int),

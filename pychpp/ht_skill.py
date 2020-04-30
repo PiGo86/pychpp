@@ -28,7 +28,7 @@ class HTSkill(HTCoreSkill):
     :ivar name: Name of skill (one of "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
     :type name: str
     :ivar level: Level (from 0 to 30, knowing that player can be divin+1, divin+2, etc...)
-    :type level: int
+    :type level: int, None
     
     Initialize instance with parameter  :
     :param name: Name of the skill

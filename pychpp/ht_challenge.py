@@ -1,7 +1,7 @@
 import xml.etree.ElementTree
 
 from pychpp import chpp as _chpp
-from pychpp import ht_date
+from pychpp import ht_xml
 
 
 class HTChallengeManager:
@@ -104,7 +104,7 @@ class HTChallengeManager:
                     challenges.append(
                         HTChallenge(author="own_team" if child.tag == "ChallengesByMe" else "other_teams",
                                     training_match_id=int(c.find("TrainingMatchID").text),
-                                    match_date=ht_date.HTDate.from_ht(c.find("MatchTime").text),
+                                    match_date=ht_xml.HTXml.ht_date_from_text(c.find("MatchTime").text),
                                     match_type=c.find("FriendlyType").text,
                                     opponent_team_ht_id=int(c.find("Opponent").find("TeamID").text),
                                     arena_ht_id=int(c.find("Arena").find("ArenaID").text),

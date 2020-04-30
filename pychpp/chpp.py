@@ -3,7 +3,6 @@ from rauth import OAuth1Session
 from rauth.oauth import HmacSha1Signature
 
 import xml.etree.ElementTree
-import datetime
 
 from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge, ht_match, ht_matches_archive
 from pychpp import ht_error
@@ -64,7 +63,10 @@ class CHPP:
 
         error_code = int(xml_data.find("ErrorCode").text)
 
-        if error_code == 59:
+        if error_code == 56:
+            raise ht_error.HTUnknownTeamIdError("The requested team id is unknown")
+
+        elif error_code == 59:
             raise ht_error.HTNotOwnedTeamError("The requested team is not owned by the connected user")
 
         elif error_code == 70:

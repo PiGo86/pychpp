@@ -1,6 +1,5 @@
 from pychpp import ht_model, ht_xml
 from pychpp import ht_user, ht_player, ht_arena
-from pychpp.ht_date import HTDate
 
 
 class HTCoreTeam(ht_model.HTModel):

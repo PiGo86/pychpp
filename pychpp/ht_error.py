@@ -2,6 +2,10 @@ class HTError(Exception):
     """Base Hattrick error"""
 
 
+class HTUnknownTeamIdError(HTError):
+    """Raise when the request team id is unknown"""
+
+
 class HTNotOwnedTeamError(HTError):
     """Raise when the request concerns a team not owned by the connected user"""
 

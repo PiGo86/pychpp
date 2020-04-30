@@ -1,5 +1,5 @@
 import os
-
+import datetime
 import pytest
 
 from pychpp import __version__
@@ -11,7 +11,6 @@ from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
 from pychpp.ht_match import HTMatch
 from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
-from pychpp.ht_challenge import HTChallenge
 
 PYCHPP_CONSUMER_KEY = os.environ['PYCHPP_CONSUMER_KEY']
 PYCHPP_CONSUMER_SECRET = os.environ['PYCHPP_CONSUMER_SECRET']
@@ -157,19 +156,60 @@ def test_get_specific_region(chpp):
     assert isinstance(region.tomorrow_weather, int)
 
 
-def test_launch_challenge(chpp):
-    # HTChallenge.launch(chpp=chpp, team_ht_id=1165592, opponent_team_ht_id=1165592,
-    #                    match_type='normal', match_place='home')
-    pass
-
-
 def test_get_current_user_matches_archive(chpp):
-    ma = chpp.matches_archive()
-    assert isinstance(ma, HTMatchesArchive)
-    m = ma[0]
+    ma1 = chpp.matches_archive()
+    assert isinstance(ma1, HTMatchesArchive)
+    m = ma1[0]
     assert isinstance(m, HTMatchesArchiveItem)
     assert isinstance(m.home_team, HTTeam)
 
+    ma2 = chpp.matches_archive(first_match_date=datetime.datetime(2020, 1, 1),
+                               last_match_date=datetime.datetime(2020, 3, 31), )
 
-def test_get_other_user_matches_archives():
-    pass
+    assert ma2[0].ht_id == 652913955
+    assert ma2[0].home_team_name == "Les Poitevins de La Chapelle"
+    assert ma2[0].away_team_name == "FC Traversonne"
+    assert ma2[0].date == datetime.datetime(2020, 1, 1, 15, 10)
+    assert ma2[0].type == 5
+    assert ma2[0].context_id == 0
+    assert ma2[0].rule_id == 0
+    assert ma2[0].cup_level == 0
+    assert ma2[0].cup_level_index == 0
+    assert ma2[0].home_goals == 2
+    assert ma2[0].away_goals == 0
+
+    for m in ma2:
+        assert datetime.datetime(2020, 1, 1) <= m.date <= datetime.datetime(2020, 3, 31)
+
+
+def test_get_other_user_matches_archives(chpp):
+    ma1 = chpp.matches_archive(ht_id=1755906,
+                               first_match_date=datetime.datetime(2018, 4, 10),
+                               last_match_date=datetime.datetime(2018, 4, 30),
+                               )
+
+    for m in ma1:
+        assert datetime.datetime(2018, 4, 10) <= m.date <= datetime.datetime(2018, 6, 30)
+        assert 1755906 in (m.home_team_id, m.away_team_id)
+
+    ma2 = chpp.matches_archive(ht_id=1755906,
+                               season=60,
+                               )
+
+    for m in ma2:
+        assert datetime.datetime(2015, 10, 26) <= m.date <= datetime.datetime(2016, 2, 14)
+        assert 1755906 in (m.home_team_id, m.away_team_id)
+
+
+def test_get_match(chpp):
+    m = chpp.match(ht_id=547513790)
+
+    assert isinstance(m, HTMatch)
+    assert m.ht_id == 547513790
+    assert m.date == datetime.datetime(2015, 12, 19, 21, 0)
+    assert m.home_team_name == "Olympique Mig"
+    assert m.away_team_name == "Camden County Jerks"
+    assert m.added_minutes == 0
+    assert m.arena_id == 1162154
+
+
