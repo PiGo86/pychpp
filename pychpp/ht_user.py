@@ -26,10 +26,10 @@ class HTUser(ht_model.HTModel):
         """
         Initialize HTUser instance
 
-        :param chpp: CHPP instance of connected user
         :param ht_id: user Hattrick ID (if none, fetch the connected user), defaults to None
-        :type chpp: CHPP
+        :key chpp: CHPP instance of connected user
         :type ht_id: int, optional
+        :type chpp: CHPP
         """
         if ht_id is not None:
             self._REQUEST_ARGS["userId"] = ht_id

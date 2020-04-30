@@ -4,7 +4,9 @@ from pychpp import ht_skill, ht_age
 
 
 class HTXml:
-
+    """
+    Gather different method to parse xml files fetched on Hattrick
+    """
     @staticmethod
     def ht_str(data):
         return str(data.text)

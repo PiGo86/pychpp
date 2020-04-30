@@ -53,10 +53,13 @@ class CHPP:
             signature_obj=HmacSha1Signature,
         )
 
-    # noinspection PyMethodMayBeStatic
-    def _analyze_error(self, xml_data):
+    @staticmethod
+    def _analyze_error(xml_data):
         """
         Parse xml data returned by Hattrick and raise relevant exception
+
+        :param xml_data: xml data to analyze
+        :type xml_data: xml.etree.ElementTree.Element
         """
 
         error_code = int(xml_data.find("ErrorCode").text)
@@ -146,6 +149,9 @@ class CHPP:
         return access_token
 
     def open_session(self):
+        """
+        Open OAuth session
+        """
         return OAuth1Session(self.consumer_key,
                              self.consumer_secret,
                              access_token=self.access_token_key,
@@ -157,7 +163,7 @@ class CHPP:
         Send a request via the CHPP API
 
         :return: xml data fetched on Hattrick
-        :rtype: ElementTree
+        :rtype: xml.etree.ElementTree
         """
         session = self.open_session()
         query = session.get(self.base_url, params=kwargs)
@@ -244,10 +250,35 @@ class CHPP:
         return ht_region.HTRegion(chpp=self, **kwargs)
 
     def challenge_manager(self, **kwargs):
+        """
+                Get a challenge manager object
+
+                :key team_ht_id: Hattrick ID of the concerned team, must be an int
+                :key period: concerned period, must be equal to 'week' or 'weekend'
+                :rtype: ht_challenge.HTChallengeManager
+                """
         return ht_challenge.HTChallengeManager(chpp=self, **kwargs)
 
     def match(self, **kwargs):
+        """
+        Get a match from his Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested match, must be an int
+        :rtype: ht_match.HTMatch
+        """
         return ht_match.HTMatch(chpp=self, **kwargs)
 
     def matches_archive(self, **kwargs):
+        """
+        Get a matches archive
+
+        :key ht_id: Hattrick ID of team to search matches
+        :key youth: is requested mathes archive concerns a youth team, must be a boolean
+        :key first_match_date: begin date to search matches, must be a datetime.datetime object
+        :key last_match_date: end date to search matches, must be a datetime.datetime object
+        :key season: season to search matches, must be an integer
+        :key hto: including or not tounaments matches, must be a boolean
+        :return: a ht_matches_archive.HTMatchesArchive object
+        :rtype: ht_matches_archive.HTMatchesArchive
+        """
         return ht_matches_archive.HTMatchesArchive(chpp=self, **kwargs)

@@ -13,10 +13,10 @@ class HTCoreTeam(ht_model.HTModel):
         """
         Initialize HTCoreTeam instance
 
-        :param chpp: CHPP instance of connected user
         :param ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
-        :type chpp: CHPP
+        :key chpp: CHPP instance of connected user
         :type ht_id: int, optional
+        :type chpp: CHPP
         """
         # If set, check ht_id integrity and add to request arguments
         # If not set, request will fetch team of current user
@@ -82,7 +82,14 @@ class HTTeam(HTCoreTeam):
                       ]
 
     def __init__(self, **kwargs):
+        """
+        Initialize HTTeam instance
 
+        :key ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
+        :key chpp: CHPP instance of connected user
+        :type ht_id: int, optional
+        :type chpp: CHPP
+        """
         if kwargs.get("ht_id", None) is not None:
             self._REQUEST_ARGS["teamID"] = kwargs["ht_id"]
 

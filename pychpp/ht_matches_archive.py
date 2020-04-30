@@ -22,6 +22,29 @@ class HTMatchesArchive(ht_model.HTModel):
 
     def __init__(self, ht_id=None, youth=False, first_match_date=None,
                  last_match_date=None, season=None, hto=False, **kwargs):
+        """
+        Initialization of a HTMatchesArchive instance
+
+        :param ht_id: Hattrick ID of team
+        :param youth: define if requested team is youth or not
+        :param first_match_date: begin date to search matches
+        :param last_match_date: end date to search matches
+        :param season: season to search matches
+        :param hto: including or not tounaments matches
+        :type ht_id: int
+        :type youth: bool
+        :type first_match_date: datetime.datetime
+        :type last_match_date: datetime.datetime
+        :type season: int
+        :type hto: bool
+        :return: a ht_matches_archive.HTMatchesArchive object
+        :rtype: ht_matches_archive.HTMatchesArchive
+        :param source: hattrick source to request ('hattrick', 'youth' or 'hto')
+        :type ht_id: int
+        :type events: bool
+        :type source: str
+        :key chpp: CHPP instance of connected user, must be a chpp.CHPP object
+        """
 
         # Check parameters integrity
         if not isinstance(ht_id, int) and ht_id is not None:

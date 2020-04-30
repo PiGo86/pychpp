@@ -1,9 +1,5 @@
-import xml.etree.ElementTree
-
 from pychpp import ht_model, ht_xml
 from pychpp import ht_team
-from pychpp.ht_skill import HTSkill, HTSkillYouth, youth_skills_tag, senior_skills_tag
-from pychpp.ht_age import HTAge
 
 
 class HTCorePlayer(ht_model.HTModel):
@@ -16,14 +12,12 @@ class HTCorePlayer(ht_model.HTModel):
         """
         Initialize HTCorePlayer instance
 
-        :param chpp: CHPP instance of connected user
         :param ht_id: player Hattrick ID (have to be defined if data is None), defaults to None
-        :param data: ElementTree data to serialize (have to be defined if ht_id is None), defaults to None
         :param team_ht_id: team Hattrick ID of player's team (have to be defined if ht_id is None), defaults to None
-        :type chpp: CHPP
         :type ht_id: int, optional
-        :type data: xml.ElementTree.Element, optional
         :type team_ht_id: int, optional
+        :key chpp: CHPP instance of connected user, must be a chpp.CHPP object
+        :key data: xml data to serialize (have to be defined if ht_id is None), defaults to None
         """
 
         # Init depends on given parameters

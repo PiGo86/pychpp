@@ -33,10 +33,9 @@ class HTArena(ht_model.HTModel):
         """
         Initialization of a HTArena instance
 
-        :param chpp: CHPP instance of connected user
         :param ht_id: Hattrick ID of arena
-        :type chpp: CHPP
         :type ht_id: int
+        :key chpp: CHPP instance of connected user, must be a chpp.CHPP object
         """
         self._REQUEST_ARGS["arenaID"] = ht_id if ht_id is not None else ""
         super().__init__(**kwargs)

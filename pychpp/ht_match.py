@@ -88,7 +88,17 @@ class HTMatch(ht_model.HTModel):
                       ]
 
     def __init__(self, ht_id, events=False, source="hattrick", **kwargs):
+        """
+        Initialization of a HTArena instance
 
+        :param ht_id: Hattrick ID of match
+        :param events: define if match events have to be requested
+        :param source: hattrick source to request ('hattrick', 'youth' or 'hto')
+        :type ht_id: int
+        :type events: bool
+        :type source: str
+        :key chpp: CHPP instance of connected user, must be a chpp.CHPP object
+        """
         if not isinstance(ht_id, int):
             raise ValueError("ht_id must be an integer")
         elif not isinstance(events, bool):
