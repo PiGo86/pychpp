@@ -116,6 +116,12 @@ class CHPP:
         :return: {"request_token": ..., "request_token_secret":..., "url": ...}
         :rtype: dict
         """
+        if not isinstance(callback_url, str):
+            raise ValueError("callback_url must be an url or equal to 'oob'")
+        elif scope not in ("", "manage_challenges", "set_matchorder", "manage_youthplayers"):
+            raise ValueError("scope must be empty or equal to 'manage_challenges', 'set_matchorder',"
+                             "'manage_youthplayers'")
+
         auth = dict()
 
         request_token, request_token_secret = self.service.get_request_token(params={"oauth_callback": callback_url})
@@ -138,6 +144,13 @@ class CHPP:
                      send to callback_url by Hattrick or shown direclty on Hattrick if callback_url was ""
         :return: {"key": ..., "secret": ...}
         """
+        if not isinstance(request_token, str):
+            raise ValueError("request_token must be a string")
+        elif not isinstance(request_token_secret, str):
+            raise ValueError("request_token_secret must be a string")
+        elif not isinstance(code, str):
+            raise ValueError("code must be a string")
+
         access_token_query = self.service.get_access_token(request_token,
                                                            request_token_secret,
                                                            params={"oauth_verifier": code},
