@@ -1,8 +1,4 @@
-youth_skills_names = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces"}
-senior_skills_names = youth_skills_names | {"stamina"}
-youth_skills_tag = {i: (i.title().replace("_", "") + "Skill",
-                        i.title().replace("_", "") + "SkillMax") for i in youth_skills_names}
-senior_skills_tag = {i: (i.title().replace("_", "") + "Skill") for i in youth_skills_names}
+from pychpp.ht_error import HTSkillError
 
 
 class HTCoreSkill:
@@ -10,37 +6,36 @@ class HTCoreSkill:
     Core Hattrick skill
     Used to create HTSkill and HTSkillYouth classes
     """
+
     def __init__(self, name):
-        # Name attribute
-        if not {name} < senior_skills_names:
-            raise HTSkillError("Skill name must be one of : " + ", ".join(senior_skills_names))
+        """See HTSkill or HTSkillYouth init"""
+        if not {name} < self._SKILLS_NAME:
+            raise HTSkillError("Skill name must be one of : " + ", ".join(self._SKILLS_NAME))
 
         self.name = name
 
     def __repr__(self):
-        """Represent an HTSkill or HTSkillYouth"""
+        """HTSkill or HTSkillYouth representation"""
         return f"<{self.__class__.__name__} object : {self.name}>"
 
 
 class HTSkill(HTCoreSkill):
     """
-    Class that defines a skill with :
-    :ivar name: Name of skill (one of "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
-    :type name: str
-    :ivar level: Level (from 0 to 30, knowing that player can be divin+1, divin+2, etc...)
-    :type level: int, None
-    
-    Initialize instance with parameter  :
-    :param name: Name of the skill
-    :type name: str
-    :param level: Level
-    :type level: int
-    :returns: Hattrick single skill
-    :rtype: HTSkill
+    Hattrick senior skill
     """
+    _SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces", "stamina"}
+    _SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill") for i in _SKILLS_NAME}
 
     def __init__(self, name, level):
-
+        """
+        Initialization of a HTSkill instance :
+        :param name: Name of skill (one of "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
+        :param level: Level (from 0 to 30, knowing that player can be divin+1, divin+2, etc...)
+        :type name: str
+        :type level: int, None
+        :return: Hattrick skill for senior player
+        :rtype: HTSkill
+        """
         super().__init__(name=name)
 
         # Level attribute
@@ -52,32 +47,39 @@ class HTSkill(HTCoreSkill):
         self.level = level
 
     def __str__(self):
-        """Print an HTSkill"""
+        """Pretty print an HTSkill"""
         if self.level is None:
             return f"{self.name.title().replace('_', ' '):<12} : 'unknown' (?)"
         else:
             return f"{self.name.title().replace('_', ' '):<12} : {'=' * int(self.level):<20} ({int(self.level)})"
 
     def __int__(self):
+        """Return level (integer)"""
         return self.level
 
 
 class HTSkillYouth(HTCoreSkill):
     """
-    Class HTSkillYouth inherits from HTSkill.
-    It has 1 other attribute :
-    :ivar maximum: Maximum level skill can reach.
-    :type maximum: int
-
-    Need one further parameter to initialize instance  :
-    :param maximum: Maximum level. If unknown then None
-    :type maximum: int
-    :returns: Hattrick single youth skill
-    :rtype: HTSkillYouth
+    Hattrick Youth skill
     """
 
-    def __init__(self, name, level=None, maximum=None, maximum_reached=None):
+    _SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces"}
+    _SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill", i.title().replace("_", "") + "SkillMax") for i in _SKILLS_NAME}
 
+    def __init__(self, name, level=None, maximum=None, maximum_reached=None):
+        """
+        Initialization of a HTSkillYouth instance :
+        :param name: Name of skill (one of "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
+        :param level: Level (from 0 to 8) (None if unknown)
+        :param maximum: Maximum level (None if unknown)
+        :param maximum_reached: If maximum is reached or not
+        :type name: str
+        :type level: int, None
+        :type maximum: int
+        :type maximum_reached: boolean
+        :return: Hattrick skill for senior player
+        :rtype: HTSkill
+        """
         super().__init__(name=name)
 
         # Set maximum
@@ -106,7 +108,7 @@ class HTSkillYouth(HTCoreSkill):
 
     def __str__(self):
         """
-        Represent an HTSkillYouth, 4 different cases possibles :
+        Pretty print and HTSkillYouth, 4 differents cases possible :
          - (?/?)
          - (2/?)
          - (?/2)
@@ -132,5 +134,4 @@ class HTSkillYouth(HTCoreSkill):
         return f"{header} {diag} {sumup(self.level, self.maximum)}"
 
 
-class HTSkillError(Exception):
-    pass
+

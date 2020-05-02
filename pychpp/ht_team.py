@@ -35,7 +35,6 @@ class HTTeam(HTCoreTeam):
 
     _SOURCE_FILE = "teamdetails"
     _SOURCE_FILE_VERSION = "3.4"
-    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "Teams/Team/TeamID", ht_xml.HTXml.ht_int),
                       # General team information
@@ -89,6 +88,8 @@ class HTTeam(HTCoreTeam):
         :type ht_id: int, optional
         :type chpp: CHPP
         """
+        self._REQUEST_ARGS = dict()
+
         if kwargs.get("ht_id", None) is not None:
             self._REQUEST_ARGS["teamID"] = kwargs["ht_id"]
 
@@ -131,7 +132,6 @@ class HTYouthTeam(HTCoreTeam):
 
     _SOURCE_FILE = "youthteamdetails"
     _SOURCE_FILE_VERSION = "1.1"
-    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
                       # General information
@@ -170,6 +170,7 @@ class HTYouthTeam(HTCoreTeam):
         :type chpp: CHPP
         :type ht_id: int, optional
         """
+        self._REQUEST_ARGS = dict()
 
         if kwargs.get("ht_id", None) is not None:
             self._REQUEST_ARGS["youthTeamId"] = kwargs["ht_id"]

@@ -6,11 +6,12 @@ from pychpp import __version__
 from pychpp import CHPP
 from pychpp.ht_team import HTTeam, HTYouthTeam
 from pychpp.ht_user import HTUser
-from pychpp.ht_player import HTPlayer
+from pychpp.ht_player import HTPlayer, HTYouthPlayer
 from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
 from pychpp.ht_match import HTMatch
 from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
+from pychpp.ht_skill import HTSkill, HTSkillYouth
 
 PYCHPP_CONSUMER_KEY = os.environ['PYCHPP_CONSUMER_KEY']
 PYCHPP_CONSUMER_SECRET = os.environ['PYCHPP_CONSUMER_SECRET']
@@ -82,9 +83,9 @@ def test_get_specific_team(chpp):
     assert user.username == 'thekiki76'
     assert user.supporter_tier == 'platinum'
 
-    youth_team = team.youth_team
-    assert isinstance(youth_team, HTYouthTeam)
-    assert youth_team.name == 'thebabykikis'
+    youthteam = team.youth_team
+    assert isinstance(youthteam, HTYouthTeam)
+    assert youthteam.name == 'thebabykikis'
 
     arena = team.arena
     assert isinstance(arena, HTArena)
@@ -104,6 +105,7 @@ def test_get_player(chpp):
 
     assert isinstance(player, HTPlayer)
     assert isinstance(player.skills, dict)
+    assert {i for i in player.skills.keys()}.issubset(HTSkill._SKILLS_NAME)
     assert player.owner_notes is None
 
     assert player.ht_id == 432002549
@@ -113,6 +115,15 @@ def test_get_player(chpp):
 
     assert isinstance(player.tsi, int)
     assert isinstance(player.injury_level, int)
+
+
+def test_get_youth_player(chpp):
+    youthteam = chpp.youth_team()
+    assert isinstance(youthteam, HTYouthTeam)
+    if youthteam.ht_id != 0:
+        youthplayer = youthteam.players[0]
+        assert isinstance(youthplayer, HTYouthPlayer)
+        assert {i for i in youthplayer.skills.keys()}.issubset(HTSkillYouth._SKILLS_TAG)
 
 
 def test_get_current_user_arena(chpp):
@@ -163,7 +174,8 @@ def test_get_current_user_matches_archive(chpp):
     assert isinstance(m, HTMatchesArchiveItem)
     assert isinstance(m.home_team, HTTeam)
 
-    ma2 = chpp.matches_archive(first_match_date=datetime.datetime(2020, 1, 1),
+    ma2 = chpp.matches_archive(ht_id=1165592,
+                               first_match_date=datetime.datetime(2020, 1, 1),
                                last_match_date=datetime.datetime(2020, 3, 31), )
 
     assert ma2[0].ht_id == 652913955

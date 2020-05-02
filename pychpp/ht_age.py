@@ -1,35 +1,30 @@
 import xml.etree.ElementTree
+from pychpp.ht_error import HTAgeError
 
 
 class HTAge:
+    """
+    Hattrick Age
+    """
     def __init__(self, age=None, age_days=None):
         """
-        Class that defines an HTAge with :
-        :ivar age: Years
-        :type age: int
-        :ivar age_days: Days
-        :type age_days: int
-        :ivar days: Total number of days (=age*112 + age_days)
-        :type days: int
-
+        Initialization of a HTAge instance
         There are 2 ways to initialize instance.
 
         First one with integers
         :param age: Years
-        :type age: int
         :param age_days: Days
+        :type age: int
         :type age_days: int
-        :returns: Hattrick age
-        :rtype: HTAge
 
         Second one with ElementTree.Element
         :param age: Element with tag "Age"
         :type age: ElementTree.Element
         :param age_days: Element with tag "AgeDays"
         :type age_days: ElementTree.Element
+
         :returns: Hattrick age
         :rtype: HTAge
-
         """
         if isinstance(age, int) and isinstance(age_days, int):
             self.days = age * 112 + age_days
@@ -46,11 +41,11 @@ class HTAge:
             raise HTAgeError("age & age_days must be either int or Element")
 
     def __str__(self):
+        """Pretty print an HTAge"""
         return f"{self.age} years and {self.age_days} days"
 
     def __repr__(self):
+        """HTAge representation"""
         return f"<HTAge object : {self.__str__()}>"
 
 
-class HTAgeError(Exception):
-    pass

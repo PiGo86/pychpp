@@ -50,7 +50,7 @@ class HTCorePlayer(ht_model.HTModel):
         """
         lines = [f"{self.first_name} {self.last_name} ({self.ht_id})",
                  self.age.__str__(),
-                 "\n".join([i.__str__() for i in self.skills.values()])
+                 "\n".join([self.skills[i].__str__() for i in self._PRETTY_PRINT_ORDER])
                  ]
         return "\n".join(lines)
 
@@ -66,6 +66,7 @@ class HTPlayer(HTCorePlayer):
     _SOURCE_FILE = "playerdetails"
     _SOURCE_FILE_VERSION = "2.8"
     _REQUEST_ARGS = dict()
+    _PRETTY_PRINT_ORDER = ["stamina", "keeper", "defender", "playmaker", "winger", "passing", "scorer", "set_pieces"]
 
     _HT_ATTRIBUTES = [("ht_id", ".//PlayerID", ht_xml.HTXml.ht_int,),
                       ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),
@@ -144,6 +145,7 @@ class HTYouthPlayer(HTCorePlayer):
     _SOURCE_FILE = "youthplayerdetails"
     _SOURCE_FILE_VERSION = "1.1"
     _REQUEST_ARGS = dict()
+    _PRETTY_PRINT_ORDER = ["keeper", "defender", "playmaker", "winger", "passing", "scorer", "set_pieces"]
 
     _HT_ATTRIBUTES = [("ht_id", ".//YouthPlayerID", ht_xml.HTXml.ht_int,),
                       ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),

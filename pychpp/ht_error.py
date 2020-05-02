@@ -44,3 +44,11 @@ class HTChallengesNotOpenedError(HTChallengeError):
 
 class HTUndefinedError(HTError):
     """Raise when error occurs with Hattrick request"""
+
+
+class HTSkillError(HTError):
+    """Raise when skill can't be well defined"""
+
+
+class HTAgeError(HTError):
+    """Raise when age can't be well defined"""
