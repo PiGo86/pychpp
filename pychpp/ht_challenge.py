@@ -13,11 +13,6 @@ class HTChallengeManager:
     _SOURCE_FILE_VERSION = "1.6"
     _ACTION_TYPE = "view"
 
-    _REQUEST_ARGS = {"file": _SOURCE_FILE,
-                     "version": _SOURCE_FILE_VERSION,
-                     "action_type": _ACTION_TYPE,
-                     }
-
     def __init__(self, chpp, team_ht_id=None, match_period="week"):
         """
         Initialize a HTChallengeManager instance
@@ -36,7 +31,9 @@ class HTChallengeManager:
         elif match_period not in ("week", "weekend"):
             raise ValueError("match_period must be equal to 'week' or 'weekend'")
 
+
         self._chpp = chpp
+        self._REQUEST_ARGS = {"file": self._SOURCE_FILE, "version": self._SOURCE_FILE_VERSION}
         self._REQUEST_ARGS["teamId"] = str(team_ht_id) if team_ht_id is not None else ""
         self._REQUEST_ARGS["isWeekendFriendly"] = {"week": "0", "weekend": "1"}[match_period]
 

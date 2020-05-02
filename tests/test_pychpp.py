@@ -12,6 +12,8 @@ from pychpp.ht_region import HTRegion
 from pychpp.ht_match import HTMatch
 from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
 from pychpp.ht_skill import HTSkill, HTSkillYouth
+from pychpp.ht_challenge import HTChallengeManager
+from pychpp.ht_error import HTUndefinedError
 
 PYCHPP_CONSUMER_KEY = os.environ['PYCHPP_CONSUMER_KEY']
 PYCHPP_CONSUMER_SECRET = os.environ['PYCHPP_CONSUMER_SECRET']
@@ -223,3 +225,14 @@ def test_get_match(chpp):
     assert m.away_team_name == "Camden County Jerks"
     assert m.added_minutes == 0
     assert m.arena_id == 1162154
+
+
+def test_is_challengeable(chpp):
+    challenge = HTChallengeManager(chpp)
+    try:
+        ich = challenge.is_challengeable(team_ht_id=1750803)
+        assert isinstance(ich, bool)
+    except HTUndefinedError:
+        pass
+
+

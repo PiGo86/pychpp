@@ -9,7 +9,6 @@ class HTArena(ht_model.HTModel):
 
     _SOURCE_FILE = "arenadetails"
     _SOURCE_FILE_VERSION = "1.5"
-    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
                       # General information
@@ -38,6 +37,7 @@ class HTArena(ht_model.HTModel):
         :key chpp: CHPP instance of connected user
         :type chpp: chpp.CHPP
         """
+        self._REQUEST_ARGS = dict()
         self._REQUEST_ARGS["arenaID"] = ht_id if ht_id is not None else ""
         super().__init__(**kwargs)
 

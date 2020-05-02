@@ -185,7 +185,10 @@ class CHPP:
         query.encoding = "UTF-8"
 
         data = xml.etree.ElementTree.fromstring(query.text)
-        file_name = data.find("FileName").text
+        if data.find("FileName") is None:
+            raise ht_error.HTUndefinedError("Cannot get data from Hattrick (maybe credentials errors)")
+        else:
+            file_name = data.find("FileName").text
 
         # If Hattrick returns an error, an exception is raised
         if file_name == "chpperror.xml":
