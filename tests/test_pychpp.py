@@ -211,5 +211,3 @@ def test_get_match(chpp):
     assert m.away_team_name == "Camden County Jerks"
     assert m.added_minutes == 0
     assert m.arena_id == 1162154
-
-
