@@ -12,7 +12,6 @@ class HTMatchesArchive(ht_model.HTModel):
 
     _SOURCE_FILE = "matchesarchive"
     _SOURCE_FILE_VERSION = "1.4"
-    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
                       ("team_name", "Team/TeamName", ht_xml.HTXml.ht_str),
@@ -61,6 +60,7 @@ class HTMatchesArchive(ht_model.HTModel):
             raise ValueError("hto must be a boolean")
 
         # Define request arguments
+        self._REQUEST_ARGS = dict()
         self._REQUEST_ARGS["teamID"] = str(ht_id) if ht_id is not None else ""
         self._REQUEST_ARGS["isYouth"] = "true" if youth is True else "false"
         self._REQUEST_ARGS["FirstMatchDate"] = (ht_xml.HTXml.ht_date_to_text(first_match_date)

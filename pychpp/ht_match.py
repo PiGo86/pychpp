@@ -9,7 +9,6 @@ class HTMatch(ht_model.HTModel):
 
     _SOURCE_FILE = "matchdetails"
     _SOURCE_FILE_VERSION = "3.0"
-    _REQUEST_ARGS = dict()
 
     _HT_ATTRIBUTES = [("ht_id", "Match/MatchID", ht_xml.HTXml.ht_int),
 
@@ -106,6 +105,7 @@ class HTMatch(ht_model.HTModel):
         elif source not in ("hattrick", "youth", "htointegrated"):
             raise ValueError("source must be equal to 'hattrick, 'youth' or 'htointegrated'")
 
+        self._REQUEST_ARGS = dict()
         self._REQUEST_ARGS["matchID"] = str(ht_id)
         self._REQUEST_ARGS["matchEvents"] = "true" if events is True else "false"
         self._REQUEST_ARGS["sourceSystem"] = source

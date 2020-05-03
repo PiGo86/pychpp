@@ -65,7 +65,6 @@ class HTPlayer(HTCorePlayer):
 
     _SOURCE_FILE = "playerdetails"
     _SOURCE_FILE_VERSION = "2.8"
-    _REQUEST_ARGS = dict()
     _PRETTY_PRINT_ORDER = ["stamina", "keeper", "defender", "playmaker", "winger", "passing", "scorer", "set_pieces"]
 
     _HT_ATTRIBUTES = [("ht_id", ".//PlayerID", ht_xml.HTXml.ht_int,),
@@ -128,6 +127,7 @@ class HTPlayer(HTCorePlayer):
         :type data: xml.ElementTree.Element, optional
         :type team_ht_id: int, optional
         """
+        self._REQUEST_ARGS = dict()
         if kwargs.get("ht_id", None) is not None:
             self._REQUEST_ARGS["playerID"] = kwargs["ht_id"]
         super().__init__(**kwargs)
@@ -144,7 +144,6 @@ class HTYouthPlayer(HTCorePlayer):
 
     _SOURCE_FILE = "youthplayerdetails"
     _SOURCE_FILE_VERSION = "1.1"
-    _REQUEST_ARGS = dict()
     _PRETTY_PRINT_ORDER = ["keeper", "defender", "playmaker", "winger", "passing", "scorer", "set_pieces"]
 
     _HT_ATTRIBUTES = [("ht_id", ".//YouthPlayerID", ht_xml.HTXml.ht_int,),
@@ -184,6 +183,8 @@ class HTYouthPlayer(HTCorePlayer):
         :type data: xml.ElementTree.Element, optional
         :type team_ht_id: int, optional
         """
+
+        self._REQUEST_ARGS = dict()
 
         if kwargs.get("ht_id", None) is not None:
             self._REQUEST_ARGS["youthPlayerId"] = kwargs["ht_id"]

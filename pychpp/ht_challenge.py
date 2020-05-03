@@ -31,11 +31,13 @@ class HTChallengeManager:
         elif match_period not in ("week", "weekend"):
             raise ValueError("match_period must be equal to 'week' or 'weekend'")
 
-
         self._chpp = chpp
-        self._REQUEST_ARGS = {"file": self._SOURCE_FILE, "version": self._SOURCE_FILE_VERSION}
-        self._REQUEST_ARGS["teamId"] = str(team_ht_id) if team_ht_id is not None else ""
-        self._REQUEST_ARGS["isWeekendFriendly"] = {"week": "0", "weekend": "1"}[match_period]
+
+        self._REQUEST_ARGS = {"file": self._SOURCE_FILE,
+                              "version": self._SOURCE_FILE_VERSION,
+                              "teamId": str(team_ht_id) if team_ht_id is not None else "",
+                              "isWeekendFriendly": {"week": "0", "weekend": "1"}[match_period],
+                              }
 
     def _set_tm_ht_id(self, training_match_ht_id):
         if not isinstance(training_match_ht_id, int):
@@ -51,16 +53,19 @@ class HTChallengeManager:
         :return: a dictionnary with keys equal to every tested team_ht_id and values equal to booleans
         :rtype: dict
         """
+
+        self._REQUEST_ARGS["suggestedTeamIds"] = str()
+
         # Check team_ht_id integrity
         if isinstance(team_ht_id, int):
-            self._REQUEST_ARGS['suggestedTeamIds'] = str(team_ht_id)
+            self._REQUEST_ARGS["suggestedTeamIds"] = str(team_ht_id)
         elif (isinstance(team_ht_id, list)
               and all(isinstance(i, int) and type(i) != bool for i in team_ht_id)):
-            self._REQUEST_ARGS['suggestedTeamIds'] = ','.join(str(ht_id) for ht_id in team_ht_id)
+            self._REQUEST_ARGS["suggestedTeamIds"] = ",".join(str(ht_id) for ht_id in team_ht_id)
         else:
             raise ValueError("team_ht_id must be an int or a list of int")
 
-        self._REQUEST_ARGS['actionType'] = "challengeable"
+        self._REQUEST_ARGS["actionType"] = "challengeable"
         data = self._chpp.request(**self._REQUEST_ARGS).find("Team").find("ChallengeableResult")
 
         result_dict = {int(i.find("TeamId").text):

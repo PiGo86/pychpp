@@ -9,7 +9,7 @@ class HTUser(ht_model.HTModel):
 
     _SOURCE_FILE = "managercompendium"
     _SOURCE_FILE_VERSION = "1.2"
-    _REQUEST_ARGS = dict()
+
     _HT_ATTRIBUTES = [("ht_id", "Manager/UserId", ht_xml.HTXml.ht_int,),
                       ("username", "Manager/Loginname", ht_xml.HTXml.ht_str,),
                       ("supporter_tier", "Manager/SupporterTier", ht_xml.HTXml.ht_str,),
@@ -31,6 +31,8 @@ class HTUser(ht_model.HTModel):
         :type ht_id: int, optional
         :type chpp: CHPP
         """
+        self._REQUEST_ARGS = dict()
+
         if ht_id is not None:
             self._REQUEST_ARGS["userId"] = ht_id
 
