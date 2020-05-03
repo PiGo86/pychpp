@@ -42,6 +42,10 @@ class HTChallengesNotOpenedError(HTChallengeError):
     """Raise when challenges can't be organized yet (to soon)"""
 
 
+class HTUnauthorizedAction(HTError):
+    """Raise when CHPP request returns a 401 error code"""
+
+
 class HTUndefinedError(HTError):
     """Raise when error occurs with Hattrick request"""
 

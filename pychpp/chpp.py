@@ -184,11 +184,12 @@ class CHPP:
         query = session.get(self.base_url, params=kwargs)
         query.encoding = "UTF-8"
 
+        if query.status_code == 401:
+            raise ht_error.HTUnauthorizedAction("The requested action seems to be unauthorized (401 error code). "
+                                                "Please heck your credentials scope.")
+
         data = xml.etree.ElementTree.fromstring(query.text)
-        if data.find("FileName") is None:
-            raise ht_error.HTUndefinedError("Cannot get data from Hattrick (maybe credentials errors)")
-        else:
-            file_name = data.find("FileName").text
+        file_name = data.find("FileName").text
 
         # If Hattrick returns an error, an exception is raised
         if file_name == "chpperror.xml":
