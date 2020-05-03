@@ -108,7 +108,7 @@ def test_get_player(chpp):
 
     assert isinstance(player, HTPlayer)
     assert isinstance(player.skills, dict)
-    assert {i for i in player.skills.keys()}.issubset(HTSkill._SKILLS_NAME)
+    assert {i for i in player.skills.keys()}.issubset(HTSkill.SKILLS_NAME)
     assert player.owner_notes is None
 
     assert player.ht_id == 432002549
@@ -131,7 +131,7 @@ def test_get_youth_player(chpp):
     if youthteam.ht_id != 0:
         youthplayer = youthteam.players[0]
         assert isinstance(youthplayer, HTYouthPlayer)
-        assert {i for i in youthplayer.skills.keys()}.issubset(HTSkillYouth._SKILLS_TAG)
+        assert {i for i in youthplayer.skills.keys()}.issubset(HTSkillYouth.SKILLS_TAG)
 
 
 def test_get_current_user_arena(chpp):

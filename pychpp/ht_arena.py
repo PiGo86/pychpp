@@ -53,4 +53,3 @@ class HTArena(ht_model.HTModel):
     def region(self):
         return ht_region.HTRegion(chpp=self._chpp,
                                   ht_id=self.region_ht_id)
-

@@ -6,11 +6,13 @@ class HTCoreSkill:
     Core Hattrick skill
     Used to create HTSkill and HTSkillYouth classes
     """
+    SKILLS_NAME = set()
+    SKILLS_TAG = set()
 
     def __init__(self, name):
         """See HTSkill or HTSkillYouth init"""
-        if not {name} < self._SKILLS_NAME:
-            raise HTSkillError("Skill name must be one of : " + ", ".join(self._SKILLS_NAME))
+        if not {name} < self.SKILLS_NAME:
+            raise HTSkillError("Skill name must be one of : " + ", ".join(self.SKILLS_NAME))
 
         self.name = name
 
@@ -23,13 +25,14 @@ class HTSkill(HTCoreSkill):
     """
     Hattrick senior skill
     """
-    _SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces", "stamina"}
-    _SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill") for i in _SKILLS_NAME}
+    SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces", "stamina"}
+    SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill") for i in SKILLS_NAME}
 
     def __init__(self, name, level):
         """
         Initialization of a HTSkill instance :
-        :param name: Name of skill (one of "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
+        :param name: Name of skill (one of "keeper", "defender", "playmaker",
+                                    "winger", "scorer", "passing", "set_pieces")
         :param level: Level (from 0 to 30, knowing that player can be divin+1, divin+2, etc...)
         :type name: str
         :type level: int, None
@@ -63,13 +66,15 @@ class HTSkillYouth(HTCoreSkill):
     Hattrick Youth skill
     """
 
-    _SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces"}
-    _SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill", i.title().replace("_", "") + "SkillMax") for i in _SKILLS_NAME}
+    SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces"}
+    SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill",
+                      i.title().replace("_", "") + "SkillMax") for i in SKILLS_NAME}
 
     def __init__(self, name, level=None, maximum=None, maximum_reached=None):
         """
         Initialization of a HTSkillYouth instance :
-        :param name: Name of skill (one of "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
+        :param name: Name of skill (one of "keeper", "defender", "playmaker",
+                                    "winger", "scorer", "passing", "set_pieces")
         :param level: Level (from 0 to 8) (None if unknown)
         :param maximum: Maximum level (None if unknown)
         :param maximum_reached: If maximum is reached or not
@@ -126,12 +131,9 @@ class HTSkillYouth(HTCoreSkill):
             diag = "?" * 8
         elif self.level is None:
             diag = "?" * self.maximum + "X" * (8 - self.maximum)
-        elif self.maximum is None:
+        elif self.level is not None and self.maximum is None:
             diag = "=" * int(self.level) + "?" * (8 - int(self.level))
         else:
             diag = "=" * int(self.level) + " " * (self.maximum - int(self.level)) + "X" * (8 - self.maximum)
 
         return f"{header} {diag} {sumup(self.level, self.maximum)}"
-
-
-

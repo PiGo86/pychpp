@@ -92,7 +92,7 @@ class HTXml:
         skills = {k: ht_skill.HTSkill(name=k,
                                       level=int(data.find(v).text)
                                       if data.find(v) is not None else None)
-                  for k, v in ht_skill.HTSkill._SKILLS_TAG.items()}
+                  for k, v in ht_skill.HTSkill.SKILLS_TAG.items()}
 
         return skills
 
@@ -104,7 +104,7 @@ class HTXml:
                                            maximum=(int(data.find(v[1]).text)
                                                     if data.find(v[1]).attrib["IsAvailable"] == "True" else None),
                                            maximum_reached=bool(data.find(v[0]).attrib["IsMaxReached"]))
-                  for k, v in ht_skill.HTSkillYouth._SKILLS_TAG.items()}
+                  for k, v in ht_skill.HTSkillYouth.SKILLS_TAG.items()}
 
         return skills
 
