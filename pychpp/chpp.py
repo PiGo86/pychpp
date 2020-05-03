@@ -63,8 +63,23 @@ class CHPP:
 
         error_code = int(xml_data.find("ErrorCode").text)
 
-        if error_code == 56:
+        if error_code == 50:
             raise ht_error.HTUnknownTeamIdError("The requested team id is unknown")
+
+        elif error_code == 51:
+            raise ht_error.HTUnknownMatchIdError("The requested match id is unknown")
+
+        elif error_code == 52:
+            raise ht_error.HTUnknownActionTypeError("The requested action is unknown")
+
+        elif error_code == 54:
+            raise ht_error.HTUnknownYouthTeamIdError("The requested youth team id is unknown")
+
+        elif error_code == 55:
+            raise ht_error.HTUnknownYouthPlayerIdError("The requested youth player id is unknown")
+
+        if error_code == 56:
+            raise ht_error.HTUnknownPlayerIdError("The requested player id is unknown")
 
         elif error_code == 59:
             raise ht_error.HTNotOwnedTeamError("The requested team is not owned by the connected user")

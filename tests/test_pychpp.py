@@ -116,6 +116,11 @@ def test_get_player(chpp):
     assert player.aggressiveness == 3
     assert player.honesty == 3
 
+    assert isinstance(player.skills, dict)
+    assert len(player.skills) == 8
+    for i in player.skills.keys():
+        assert i in ("stamina", "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
+
     assert isinstance(player.tsi, int)
     assert isinstance(player.injury_level, int)
 

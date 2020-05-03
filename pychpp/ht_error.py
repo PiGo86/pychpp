@@ -2,8 +2,28 @@ class HTError(Exception):
     """Base Hattrick error"""
 
 
+class HTUnknownMatchIdError(HTError):
+    """Raise when the requested match id is unknown"""
+
+
 class HTUnknownTeamIdError(HTError):
-    """Raise when the request team id is unknown"""
+    """Raise when the requested team id is unknown"""
+
+
+class HTUnknownYouthTeamIdError(HTError):
+    """Raise when the requested youth team id is unknown"""
+
+
+class HTUnknownPlayerIdError(HTError):
+    """Raise when the requested player id is unknown"""
+
+
+class HTUnknownYouthPlayerIdError(HTError):
+    """Raise when the requested youth player id is unknown"""
+
+
+class HTUnknownActionTypeError(HTError):
+    """Raise when the requested action type is unknown"""
 
 
 class HTNotOwnedTeamError(HTError):
