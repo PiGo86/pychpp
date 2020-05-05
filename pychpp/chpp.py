@@ -124,18 +124,37 @@ class CHPP:
 
         :param callback_url: url that have to be request by Hattrick after the user have fill his credentials
         :param scope: authorization granted by user to the application
-                      can be "", "manage_challenges", "set_matchorder", "manage_youthplayers",
+                      can be one or more from "", "manage_challenges", "set_matchorder", "manage_youthplayers",
                       "set_training", "place_bid"
         :type callback_url: str
-        :type scope: str
+        :type scope: str, list
         :return: {"request_token": ..., "request_token_secret":..., "url": ...}
         :rtype: dict
         """
+
+        # Check callback_url and scope parameters integrity
         if not isinstance(callback_url, str):
             raise ValueError("callback_url must be an url or equal to 'oob'")
-        elif scope not in ("", "manage_challenges", "set_matchorder", "manage_youthplayers"):
-            raise ValueError("scope must be empty or equal to 'manage_challenges', 'set_matchorder',"
-                             "'manage_youthplayers'")
+
+        # Scope can be a string (no or one scope) or a list (one or more scopes)
+        if isinstance(scope, str):
+            if scope not in ("", "manage_challenges", "set_matchorder", "manage_youthplayers",
+                             "set_training", "place_bid"):
+                raise ValueError("As scope is a string, it must be empty or equal to 'manage_challenges', "
+                                 "'set_matchorder', 'manage_youthplayers','set_training' or 'place_bid'")
+
+        elif isinstance(scope, list):
+            if not set(scope) <= {"manage_challenges", "set_matchorder", "manage_youthplayers",
+                                  "set_training", "place_bid"}:
+                raise ValueError("As scope is a list, its items must be equal to 'manage_challenges', "
+                                 "'set_matchorder', 'manage_youthplayers','set_training' or 'place_bid'")
+
+            # If scope is a list and its items are correct, it is converted into a string
+            else:
+                scope = ",".join(scope)
+
+        else:
+            raise ValueError("Scope parameter must be a string a or list")
 
         auth = dict()
 
