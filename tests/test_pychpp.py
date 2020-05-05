@@ -23,7 +23,7 @@ PYCHPP_SCOPE = os.environ["PYCHPP_SCOPE"]
 
 
 def test_version():
-    assert __version__ == '0.2.0'
+    assert __version__ == '0.2.1'
 
 
 def test_request_token():
