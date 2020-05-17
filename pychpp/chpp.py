@@ -4,7 +4,8 @@ from rauth.oauth import HmacSha1Signature
 
 import xml.etree.ElementTree
 
-from pychpp import ht_user, ht_team, ht_player, ht_arena, ht_region, ht_challenge, ht_match, ht_matches_archive
+from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
+                    ht_challenge, ht_match, ht_matches_archive, ht_league)
 from pychpp import ht_error
 
 
@@ -335,3 +336,12 @@ class CHPP:
         :rtype: ht_matches_archive.HTMatchesArchive
         """
         return ht_matches_archive.HTMatchesArchive(chpp=self, **kwargs)
+
+    def league(self, **kwargs):
+        """
+        Get a league from his Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested league, must be an int
+        :rtype: ht_league.HTLeague
+        """
+        return ht_league.HTLeague(chpp=self, **kwargs)
