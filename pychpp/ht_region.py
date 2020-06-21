@@ -9,7 +9,7 @@ class HTRegion(ht_model.HTModel):
     _SOURCE_FILE = "regiondetails"
     _SOURCE_FILE_VERSION = "1.2"
 
-    _HT_ATTRIBUTES = [("ht_id", "League/Region/RegionID", ht_xml.HTXml.ht_int,),
+    _ht_attributes = [("ht_id", "League/Region/RegionID", ht_xml.HTXml.ht_int,),
                       ("name", "League/Region/RegionName", ht_xml.HTXml.ht_str,),
                       ("number_of_users", "League/Region/NumberOfUsers", ht_xml.HTXml.ht_int,),
                       ("number_of_online", "League/Region/NumberOfOnline", ht_xml.HTXml.ht_int,),

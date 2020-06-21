@@ -9,7 +9,7 @@ class HTLeague(ht_model.HTModel):
     _SOURCE_FILE = "leaguedetails"
     _SOURCE_FILE_VERSION = "1.5"
 
-    _HT_ATTRIBUTES = [("ht_id", "LeagueLevelUnitID", ht_xml.HTXml.ht_int),
+    _ht_attributes = [("ht_id", "LeagueLevelUnitID", ht_xml.HTXml.ht_int),
                       # General information
                       ("level", "LeagueLevel", ht_xml.HTXml.ht_int),
                       ("name", "LeagueLevelUnitName", ht_xml.HTXml.ht_str),

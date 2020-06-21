@@ -37,7 +37,7 @@ class HTTeam(HTCoreTeam):
     _SOURCE_FILE_VERSION = "3.4"
 
     @property
-    def _HT_ATTRIBUTES(self):
+    def _ht_attributes(self):
 
         ht_filter = f"[TeamID='{self._REQUEST_ARGS.get('teamID', '')}']" if (
             self._REQUEST_ARGS.get("teamID", "")) else ""
@@ -139,7 +139,7 @@ class HTYouthTeam(HTCoreTeam):
     _SOURCE_FILE = "youthteamdetails"
     _SOURCE_FILE_VERSION = "1.1"
 
-    _HT_ATTRIBUTES = [("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
+    _ht_attributes = [("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
                       # General information
                       ("name", "YouthTeam/YouthTeamName", ht_xml.HTXml.ht_str,),
                       ("short_name", "YouthTeam/ShortTeamName", ht_xml.HTXml.ht_str,),

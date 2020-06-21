@@ -11,7 +11,7 @@ class HTModel:
     _SOURCE_FILE = str()
     _SOURCE_FILE_VERSION = str()
 
-    _HT_ATTRIBUTES = list()
+    _ht_attributes = list()
 
     def __init__(self, chpp, data=None):
 
@@ -29,14 +29,6 @@ class HTModel:
 
         self._fill_ht_attributes()
 
-    # def __getattribute__(self, item):
-    #     if (object.__getattribute__(self, "_data") is None
-    #             and item != "ht_id"
-    #             and item in (a[0] for a in object.__getattribute__(self, "_HT_ATTRIBUTES"))):
-    #         self._fetch()
-    #         self._fill_ht_attributes()
-    #     return object.__getattribute__(self, item)
-
     def __repr__(self):
         return f"<{self.__class__.__name__} object>"
 
@@ -48,8 +40,8 @@ class HTModel:
                                         )
 
     def _fill_ht_attributes(self):
-        # Set attributes according to self._HT_ATTRIBUTES list
-        for attr_tuple in self._HT_ATTRIBUTES:
+        # Set attributes according to self._ht_attributes list
+        for attr_tuple in self._ht_attributes:
             setattr(self,
                     attr_tuple[0],
                     (attr_tuple[2](self._data.find(attr_tuple[1]))

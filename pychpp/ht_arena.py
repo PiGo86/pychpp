@@ -10,7 +10,7 @@ class HTArena(ht_model.HTModel):
     _SOURCE_FILE = "arenadetails"
     _SOURCE_FILE_VERSION = "1.5"
 
-    _HT_ATTRIBUTES = [("ht_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
+    _ht_attributes = [("ht_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
                       # General information
                       ("name", "Arena/ArenaName", ht_xml.HTXml.ht_str),
                       # Team

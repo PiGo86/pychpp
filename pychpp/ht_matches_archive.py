@@ -13,7 +13,7 @@ class HTMatchesArchive(ht_model.HTModel):
     _SOURCE_FILE = "matchesarchive"
     _SOURCE_FILE_VERSION = "1.4"
 
-    _HT_ATTRIBUTES = [("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
+    _ht_attributes = [("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
                       ("team_name", "Team/TeamName", ht_xml.HTXml.ht_str),
                       ("first_match_date", "Team/FirstMatchDate", ht_xml.HTXml.ht_date_from_text),
                       ("last_match_date", "Team/LastMatchDate", ht_xml.HTXml.ht_date_from_text),
@@ -90,7 +90,7 @@ class HTMatchesArchiveItem(ht_model.HTModel):
     Object returned by HTMatchesArchve.search method
     """
 
-    _HT_ATTRIBUTES = [("ht_id", "MatchID", ht_xml.HTXml.ht_int,),
+    _ht_attributes = [("ht_id", "MatchID", ht_xml.HTXml.ht_int,),
                       ("home_team_id", "HomeTeam/HomeTeamID", ht_xml.HTXml.ht_int,),
                       ("home_team_name", "HomeTeam/HomeTeamName", ht_xml.HTXml.ht_str,),
                       ("away_team_id", "AwayTeam/AwayTeamID", ht_xml.HTXml.ht_int,),

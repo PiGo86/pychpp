@@ -10,7 +10,7 @@ class HTMatch(ht_model.HTModel):
     _SOURCE_FILE = "matchdetails"
     _SOURCE_FILE_VERSION = "3.0"
 
-    _HT_ATTRIBUTES = [("ht_id", "Match/MatchID", ht_xml.HTXml.ht_int),
+    _ht_attributes = [("ht_id", "Match/MatchID", ht_xml.HTXml.ht_int),
 
                       # General information
                       ("type", "Match/MatchType", ht_xml.HTXml.ht_str),

@@ -67,7 +67,7 @@ class HTPlayer(HTCorePlayer):
     _SOURCE_FILE_VERSION = "2.8"
     _PRETTY_PRINT_ORDER = ["stamina", "keeper", "defender", "playmaker", "winger", "passing", "scorer", "set_pieces"]
 
-    _HT_ATTRIBUTES = [("ht_id", ".//PlayerID", ht_xml.HTXml.ht_int,),
+    _ht_attributes = [("ht_id", ".//PlayerID", ht_xml.HTXml.ht_int,),
                       ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),
                       ("nick_name", ".//NickName", ht_xml.HTXml.ht_str,),
                       ("last_name", ".//LastName", ht_xml.HTXml.ht_str,),
@@ -146,7 +146,7 @@ class HTYouthPlayer(HTCorePlayer):
     _SOURCE_FILE_VERSION = "1.1"
     _PRETTY_PRINT_ORDER = ["keeper", "defender", "playmaker", "winger", "passing", "scorer", "set_pieces"]
 
-    _HT_ATTRIBUTES = [("ht_id", ".//YouthPlayerID", ht_xml.HTXml.ht_int,),
+    _ht_attributes = [("ht_id", ".//YouthPlayerID", ht_xml.HTXml.ht_int,),
                       ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),
                       ("nick_name", ".//NickName", ht_xml.HTXml.ht_str,),
                       ("last_name", ".//LastName", ht_xml.HTXml.ht_str,),
