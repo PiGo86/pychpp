@@ -81,8 +81,8 @@ class HTTeam(HTCoreTeam):
                 ("user_last_login_date", "User/LastLoginDate", ht_xml.HTXml.ht_date_from_text),
                 ("user_has_manager_license", "User/HasManagerLicese", ht_xml.HTXml.ht_bool),
                 # Youth team
-                ("youth_team_ht_id", "Teams/Team/YouthTeamID", ht_xml.HTXml.ht_int),
-                ("youth_team_name", "Teams/Team/YouthTeamName", ht_xml.HTXml.ht_str),
+                ("youth_team_ht_id", f"Teams/Team{ht_filter}/YouthTeamID", ht_xml.HTXml.ht_int),
+                ("youth_team_name", f"Teams/Team{ht_filter}/YouthTeamName", ht_xml.HTXml.ht_str),
                 ]
 
     def __init__(self, **kwargs):
