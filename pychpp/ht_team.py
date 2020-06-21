@@ -36,48 +36,54 @@ class HTTeam(HTCoreTeam):
     _SOURCE_FILE = "teamdetails"
     _SOURCE_FILE_VERSION = "3.4"
 
-    _HT_ATTRIBUTES = [("ht_id", "Teams/Team/TeamID", ht_xml.HTXml.ht_int),
-                      # General team information
-                      ("name", "Teams/Team/TeamName", ht_xml.HTXml.ht_str),
-                      ("short_name", "Teams/Team/ShortTeamName", ht_xml.HTXml.ht_str),
-                      ("is_primary_club", "Teams/Team/IsPrimaryClub", ht_xml.HTXml.ht_bool),
-                      ("founded_date", "Teams/Team/FoundedDate", ht_xml.HTXml.ht_date_from_text),
-                      # Arena
-                      ("arena_ht_id", "Teams/Team/Arena/ArenaID", ht_xml.HTXml.ht_int),
-                      ("arena_name", "Teams/Team/Arena/ArenaName", ht_xml.HTXml.ht_str),
-                      # Country
-                      ("country_ht_id", "Teams/Team/Country/CountryID", ht_xml.HTXml.ht_int),
-                      ("country_name", "Teams/Team/Country/CountryName", ht_xml.HTXml.ht_str),
-                      # Region
-                      ("region_ht_id", "Teams/Team/Region/RegionID", ht_xml.HTXml.ht_int),
-                      ("region_name", "Teams/Team/Region/RegionID", ht_xml.HTXml.ht_str),
-                      # Trainer
-                      ("trainer_ht_id", "Teams/Team/Trainer/PlayerID", ht_xml.HTXml.ht_int),
-                      # Homepage
-                      ("homepage", "Teams/Team/HomePage", ht_xml.HTXml.ht_str),
-                      # Cup
-                      ("still_in_cup", "Teams/Team/Cup/StillinCup", ht_xml.HTXml.ht_bool),
-                      ("cup_ht_id", "Teams/Team/Cup/CupID", ht_xml.HTXml.ht_int),
-                      ("cup_name", "Teams/Team/Cup/CupName", ht_xml.HTXml.ht_str),
-                      ("cup_league_level", "Teams/Team/Cup/CupLeagueLevel", ht_xml.HTXml.ht_int),
-                      ("cup_level", "Teams/Team/Cup/CupLevel", ht_xml.HTXml.ht_int),
-                      ("cup_level_index", "Teams/Team/Cup/CupLevelIndex", ht_xml.HTXml.ht_int),
-                      ("cup_match_round", "Teams/Team/Cup/MatchRound", ht_xml.HTXml.ht_int),
-                      ("cup_match_rounds_left", "Teams/Team/Cup/MatchRoundsLeft", ht_xml.HTXml.ht_int),
-                      # User
-                      ("user_ht_id", "User/UserID", ht_xml.HTXml.ht_int),
-                      ("supporter_tier", "User/SupporterTier", ht_xml.HTXml.ht_str),
-                      ("user_login", "User/Loginname", ht_xml.HTXml.ht_str),
-                      ("user_fullname", "User/Name", ht_xml.HTXml.ht_str),
-                      ("user_icq", "User/ICQ", ht_xml.HTXml.ht_str),
-                      ("user_signup_date", "User/SignupDate", ht_xml.HTXml.ht_date_from_text),
-                      ("user_activation_date", "User/ActivationDate", ht_xml.HTXml.ht_date_from_text),
-                      ("user_last_login_date", "User/LastLoginDate", ht_xml.HTXml.ht_date_from_text),
-                      ("user_has_manager_license", "User/HasManagerLicese", ht_xml.HTXml.ht_bool),
-                      # Youth team
-                      ("youth_team_ht_id", "Teams/Team/YouthTeamID", ht_xml.HTXml.ht_int),
-                      ("youth_team_name", "Teams/Team/YouthTeamName", ht_xml.HTXml.ht_str),
-                      ]
+    @property
+    def _HT_ATTRIBUTES(self):
+
+        ht_filter = f"[TeamID='{self._REQUEST_ARGS.get('teamID', '')}']" if (
+            self._REQUEST_ARGS.get("teamID", "")) else ""
+
+        return [("ht_id", f"Teams/Team{ht_filter}/TeamID", ht_xml.HTXml.ht_int),
+                # General team information
+                ("name", f"Teams/Team{ht_filter}/TeamName", ht_xml.HTXml.ht_str),
+                ("short_name", f"Teams/Team{ht_filter}/ShortTeamName", ht_xml.HTXml.ht_str),
+                ("is_primary_club", f"Teams/Team{ht_filter}/IsPrimaryClub", ht_xml.HTXml.ht_bool),
+                ("founded_date", f"Teams/Team{ht_filter}/FoundedDate", ht_xml.HTXml.ht_date_from_text),
+                # Arena
+                ("arena_ht_id", f"Teams/Team{ht_filter}/Arena/ArenaID", ht_xml.HTXml.ht_int),
+                ("arena_name", f"Teams/Team{ht_filter}/Arena/ArenaName", ht_xml.HTXml.ht_str),
+                # Country
+                ("country_ht_id", f"Teams/Team{ht_filter}/Country/CountryID", ht_xml.HTXml.ht_int),
+                ("country_name", f"Teams/Team{ht_filter}/Country/CountryName", ht_xml.HTXml.ht_str),
+                # Region
+                ("region_ht_id", f"Teams/Team{ht_filter}/Region/RegionID", ht_xml.HTXml.ht_int),
+                ("region_name", f"Teams/Team{ht_filter}/Region/RegionID", ht_xml.HTXml.ht_str),
+                # Trainer
+                ("trainer_ht_id", f"Teams/Team{ht_filter}/Trainer/PlayerID", ht_xml.HTXml.ht_int),
+                # Homepage
+                ("homepage", f"Teams/Team{ht_filter}/HomePage", ht_xml.HTXml.ht_str),
+                # Cup
+                ("still_in_cup", f"Teams/Team{ht_filter}/Cup/StillinCup", ht_xml.HTXml.ht_bool),
+                ("cup_ht_id", f"Teams/Team{ht_filter}/Cup/CupID", ht_xml.HTXml.ht_int),
+                ("cup_name", f"Teams/Team{ht_filter}/Cup/CupName", ht_xml.HTXml.ht_str),
+                ("cup_league_level", f"Teams/Team{ht_filter}/Cup/CupLeagueLevel", ht_xml.HTXml.ht_int),
+                ("cup_level", f"Teams/Team{ht_filter}/Cup/CupLevel", ht_xml.HTXml.ht_int),
+                ("cup_level_index", f"Teams/Team{ht_filter}/Cup/CupLevelIndex", ht_xml.HTXml.ht_int),
+                ("cup_match_round", f"Teams/Team{ht_filter}/Cup/MatchRound", ht_xml.HTXml.ht_int),
+                ("cup_match_rounds_left", f"Teams/Team{ht_filter}/Cup/MatchRoundsLeft", ht_xml.HTXml.ht_int),
+                # User
+                ("user_ht_id", "User/UserID", ht_xml.HTXml.ht_int),
+                ("supporter_tier", "User/SupporterTier", ht_xml.HTXml.ht_str),
+                ("user_login", "User/Loginname", ht_xml.HTXml.ht_str),
+                ("user_fullname", "User/Name", ht_xml.HTXml.ht_str),
+                ("user_icq", "User/ICQ", ht_xml.HTXml.ht_str),
+                ("user_signup_date", "User/SignupDate", ht_xml.HTXml.ht_date_from_text),
+                ("user_activation_date", "User/ActivationDate", ht_xml.HTXml.ht_date_from_text),
+                ("user_last_login_date", "User/LastLoginDate", ht_xml.HTXml.ht_date_from_text),
+                ("user_has_manager_license", "User/HasManagerLicese", ht_xml.HTXml.ht_bool),
+                # Youth team
+                ("youth_team_ht_id", "Teams/Team/YouthTeamID", ht_xml.HTXml.ht_int),
+                ("youth_team_name", "Teams/Team/YouthTeamName", ht_xml.HTXml.ht_str),
+                ]
 
     def __init__(self, **kwargs):
         """
