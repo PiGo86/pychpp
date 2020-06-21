@@ -25,7 +25,7 @@ PYCHPP_SCOPE = os.environ["PYCHPP_SCOPE"]
 
 
 def test_version():
-    assert __version__ == '0.2.2'
+    assert __version__ == '0.2.3'
 
 
 def test_request_token():
@@ -95,6 +95,29 @@ def test_get_specific_team(chpp):
     arena = team.arena
     assert isinstance(arena, HTArena)
     assert arena.name == "thekiki's evil"
+
+
+def test_get_secondary_team(chpp):
+    team = chpp.team(ht_id=44307)
+
+    assert isinstance(team, HTTeam)
+    assert team.ht_id == 44307
+    assert team.name == "Grynvalla IK"
+    assert team.short_name == 'Grynvalla'
+    assert team.is_primary_club is False
+
+    user = team.user
+    assert isinstance(user, HTUser)
+    assert user.ht_id == 182085
+    assert user.username == "Kvarak"
+
+    youthteam = team.youth_team
+    assert isinstance(youthteam, HTYouthTeam)
+    assert youthteam.name == "Grynets pojkar"
+
+    arena = team.arena
+    assert isinstance(arena, HTArena)
+    assert arena.name == "Grynvallen"
 
 
 def test_get_current_user(chpp):
