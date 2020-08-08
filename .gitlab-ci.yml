@@ -1,6 +1,13 @@
+image: "python:3.6"
+
+before_script:
+  - pip install poetry
+  - poetry config virtualenvs.create false
+  - poetry install
+
 stages:
   - test
 
 test:
   stage: test
-  script: pytest
+  script: poetry run pytest
