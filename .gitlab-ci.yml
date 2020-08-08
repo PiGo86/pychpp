@@ -1,6 +1,11 @@
 image: "python:3.6"
 
 before_script:
+  - echo PYCHPP_CONSUMER_KEY=$PYCHPP_CONSUMER_KEY >> .env
+  - echo PYCHPP_CONSUMER_SECRET=$PYCHPP_CONSUMER_SECRET >> .env
+  - echo PYCHPP_ACCESS_TOKEN_KEY=$PYCHPP_ACCESS_TOKEN_KEY >> .env
+  - echo PYCHPP_ACCESS_TOKEN_SECRET=$PYCHPP_ACCESS_TOKEN_SECRET >> .env
+  - echo PYCHPP_SCOPE=$PYCHPP_SCOPE >> .env
   - pip install poetry
   - poetry config virtualenvs.create false
   - poetry install
