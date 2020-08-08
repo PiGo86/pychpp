@@ -73,5 +73,23 @@ match = chpp.match(ht_id=68599186)
 match # <HTMatch object : Skou United - FC Barentin (68599186)>
 match.date # datetime.datetime(2006, 2, 23, 20, 0)
 ```
+
+## Mapping table between classes and CHPP XML files
+The following table shows the relationships between pyCHPP classes and CHPP XML files :
+
+|pyCHPP class|CHPP XML files|
+|:---:|:---:|
+|HTArena|`arenadetails.xml`|
+|HTChallengeManager|`challenges.xml`|
+|HTLeague|`leaguedetails.xml`|
+|HTMatch|`matchdetails.xml`|
+|HTMatchesArchive|`matchesarchive.xml`|
+|HTPlayer|`playerdetails.xml`|
+|HTRegion|`regiondetails.xml`|
+|HTTeam|`teamdetails.xml`|
+|HTUser|`managercompendium.xml`|
+|HTYouthPlayer|`youthplayerdetails.xml`|
+|HTYouthTeam|`youthteamdetails.xml`|
+
 ## License
 pyCHPP is licensed under the Apache License 2.0.
