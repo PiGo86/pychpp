@@ -81,6 +81,7 @@ def test_get_specific_team(chpp):
     assert team.name == "thekiki's"
     assert team.short_name == 'thekikis'
     assert team.is_primary_club is True
+    assert team.power_rating > 0
 
     user = team.user
     assert isinstance(user, HTUser)

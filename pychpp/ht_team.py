@@ -70,6 +70,12 @@ class HTTeam(HTCoreTeam):
                 ("cup_level_index", f"Teams/Team{ht_filter}/Cup/CupLevelIndex", ht_xml.HTXml.ht_int),
                 ("cup_match_round", f"Teams/Team{ht_filter}/Cup/MatchRound", ht_xml.HTXml.ht_int),
                 ("cup_match_rounds_left", f"Teams/Team{ht_filter}/Cup/MatchRoundsLeft", ht_xml.HTXml.ht_int),
+                # PowerRating
+                ("power_rating_global_ranking", f"Teams/Team{ht_filter}/PowerRating/GlobalRanking", ht_xml.HTXml.ht_int),
+                ("power_rating_league_ranking", f"Teams/Team{ht_filter}/PowerRating/LeagueRanking", ht_xml.HTXml.ht_int),
+                ("power_rating_region_ranking", f"Teams/Team{ht_filter}/PowerRating/RegionRanking", ht_xml.HTXml.ht_int),
+                ("power_rating", f"Teams/Team{ht_filter}/PowerRating/PowerRating", ht_xml.HTXml.ht_int),
+
                 # User
                 ("user_ht_id", "User/UserID", ht_xml.HTXml.ht_int),
                 ("supporter_tier", "User/SupporterTier", ht_xml.HTXml.ht_str),
