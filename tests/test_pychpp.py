@@ -258,7 +258,14 @@ def test_get_match(chpp):
     assert m.added_minutes == 0
     assert m.arena_id == 1162154
     assert len(m.events) >= 0
-
+    assert m.events[14]["minute"] == 72
+    assert m.events[14]["match_part"] == 2
+    assert m.events[14]["id"] == 285
+    assert m.events[14]["variation"] == 3
+    assert m.events[14]["subject_team_id"] == 292366
+    assert m.events[14]["subject_player_id"] == 373737451
+    assert m.events[14]["object_player_id"] == 314946894
+    assert "free kick" in m.events[14]["description"]
 
 
 
