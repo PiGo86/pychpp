@@ -34,6 +34,21 @@ class HTXml:
         return goals
 
     @staticmethod
+    def ht_match_events(data):
+        events = list()
+        for event in data.findall('Event'):
+            events.append({"minute":            int(event.find("Minute").text),
+                          "match_part":         int(event.find("MatchPart").text),
+                          "id":                 int(event.find("EventTypeID").text),
+                          "variation":          int(event.find("EventVariation").text),
+                          "description":        event.find("EventText").text,
+                          "subject_team_id":    int(event.find("SubjectTeamID").text),
+                          "subject_player_id":  int(event.find("SubjectPlayerID").text),
+                          "object_player_id":   int(event.find("ObjectPlayerID").text),
+                          })
+        return events
+
+    @staticmethod
     def ht_date_from_text(data):
         """
         Converting strings from xml data to datetime objects

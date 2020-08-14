@@ -84,6 +84,9 @@ class HTMatch(ht_model.HTModel):
 
                       # Goals
                       ("goals", "Match/Scorers", ht_xml.HTXml.ht_goals),
+
+                      # Events
+                      ("events", "Match/EventList", ht_xml.HTXml.ht_match_events),
                       ]
 
     def __init__(self, ht_id, events=False, source="hattrick", **kwargs):
