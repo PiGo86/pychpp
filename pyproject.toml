@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "pychpp"
-version = "0.2.4"
+version = "0.2.5"
 description = "framework created to use the API provided by the online game Hattrick"
 license = "Apache-2.0"
-authors = ["Pierre Gobin <contact@pierregobin.fr>"]
+authors = ["Pierre Gobin <dev@pierregobin.fr>"]
 readme = "README.md"
 homepage = "https://framagit.org/Pierre86/pychpp"
 
