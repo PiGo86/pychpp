@@ -10,6 +10,8 @@ class HTUser(ht_model.HTModel):
     _SOURCE_FILE = "managercompendium"
     _SOURCE_FILE_VERSION = "1.2"
 
+    _URL_PATH = "/Club/Manager/?userId="
+
     _ht_attributes = [("ht_id", "Manager/UserId", ht_xml.HTXml.ht_int,),
                       ("username", "Manager/Loginname", ht_xml.HTXml.ht_str,),
                       ("supporter_tier", "Manager/SupporterTier", ht_xml.HTXml.ht_str,),

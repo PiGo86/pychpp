@@ -9,6 +9,8 @@ class HTRegion(ht_model.HTModel):
     _SOURCE_FILE = "regiondetails"
     _SOURCE_FILE_VERSION = "1.2"
 
+    _URL_PATH = "/World/Regions/Region.aspx?RegionID="
+
     _ht_attributes = [("ht_id", "League/Region/RegionID", ht_xml.HTXml.ht_int,),
                       ("name", "League/Region/RegionName", ht_xml.HTXml.ht_str,),
                       ("number_of_users", "League/Region/NumberOfUsers", ht_xml.HTXml.ht_int,),

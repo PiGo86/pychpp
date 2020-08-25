@@ -10,6 +10,8 @@ class HTMatchLineup(ht_model.HTModel):
     _SOURCE_FILE = "matchlineup"
     _SOURCE_FILE_VERSION = "2.0"
 
+    _URL_PATH = "/Club/Matches/Match.aspx?matchID="
+
     _ht_attributes = [("ht_id", "MatchID", ht_xml.HTXml.ht_int),
 
                       # General information

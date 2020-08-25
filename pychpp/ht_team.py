@@ -36,6 +36,8 @@ class HTTeam(HTCoreTeam):
     _SOURCE_FILE = "teamdetails"
     _SOURCE_FILE_VERSION = "3.4"
 
+    _URL_PATH = "/Club/?TeamID="
+
     @property
     def _ht_attributes(self):
 
@@ -144,6 +146,8 @@ class HTYouthTeam(HTCoreTeam):
 
     _SOURCE_FILE = "youthteamdetails"
     _SOURCE_FILE_VERSION = "1.1"
+
+    _URL_PATH = "/Club/Youth/?YouthTeamID="
 
     _ht_attributes = [("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
                       # General information
