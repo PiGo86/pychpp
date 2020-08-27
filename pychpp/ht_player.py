@@ -194,3 +194,63 @@ class HTYouthPlayer(HTCorePlayer):
             self.team_ht_id = kwargs["team_ht_id"]
 
         super().__init__(**kwargs)
+
+
+class HTLineupPlayer(HTCorePlayer):
+    """
+    Hattrick lineup player
+    """
+
+    _ht_attributes = [("ht_id", ".//PlayerID", ht_xml.HTXml.ht_int,),
+                      ("role_id", ".//RoleID", ht_xml.HTXml.ht_int,),
+                      ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),
+                      ("nick_name", ".//NickName", ht_xml.HTXml.ht_str,),
+                      ("last_name", ".//LastName", ht_xml.HTXml.ht_str,),
+                      ("rating_stars", ".//RatingStars", ht_xml.HTXml.ht_float,),
+                      ("rating_stars_eom", ".//RatingStarsEndOfMatch", ht_xml.HTXml.ht_float,),
+                      ("behaviour", ".//Behaviour", ht_xml.HTXml.ht_int,)
+                      ]
+
+    def __init__(self, **kwargs):
+        """
+        Initialize HTLineupPlayer instance
+
+        :key chpp: CHPP instance of connected user
+        :key ht_id: player Hattrick ID (have to be defined if data is None), defaults to None
+        :key data: ElementTree data to serialize (have to be defined if ht_id is None), defaults to None
+        :key team_ht_id: team Hattrick ID of player's team (have to be defined if ht_id is None), defaults to None
+        :type chpp: CHPP
+        :type ht_id: int, optional
+        :type data: xml.ElementTree.Element, optional
+        :type team_ht_id: int, optional
+        """
+        super().__init__(**kwargs)
+
+    @property
+    def role_name(self):
+        role_names = {100: 'Keeper', 101: 'Right back',
+                      102: 'Right central defender', 103: 'Middle central defender',
+                      104: 'Left central defender', 105: 'Left back',
+                      106: 'Right winger', 107: 'Right inner midfield',
+                      108: 'Middle inner midfield', 109: 'Left inner midfield',
+                      110: 'Left winger', 111: 'Right forward',
+                      112: 'Middle forward', 113: 'Left forward',
+                      114: 'Substitution (Keeper)', 115: 'Substitution (Defender)',
+                      116: 'Substitution (Inner midfield)', 117: 'Substitution (Winger)',
+                      118: 'Substitution (Forward)', 200: 'Substitution (Keeper)',
+                      201: 'Substitution (Central defender)', 202: 'Substitution (Wing back)',
+                      203: 'Substitution (Inner midfielder)', 204: 'Substitution (Forward)',
+                      205: 'Substitution (Winger)', 206: 'Substitution (Extra)',
+                      207: 'Backup (Keeper)', 208: 'Backup (Central defender)',
+                      209: 'Backup (Wing back)', 210: 'Backup (Inner midfielder)',
+                      211: 'Backup (Forward)', 212: 'Backup (Winger)',
+                      213: 'Backup (Extra)', 17: 'Set pieces',
+                      18: 'Captain', 19: 'Replaced Player #1',
+                      20: 'Replaced Player #2', 21: 'Replaced Player #3',
+                      22: 'Penalty taker (1)', 23: 'Penalty taker (2)',
+                      24: 'Penalty taker (3)', 25: 'Penalty taker (4)',
+                      26: 'Penalty taker (5)', 27: 'Penalty taker (6)',
+                      28: 'Penalty taker (7)', 29: 'Penalty taker (8)',
+                      30: 'Penalty taker (9)', 31: 'Penalty taker (10)',
+                      32: 'Penalty taker (11)'}
+        return role_names[self.role_id]
