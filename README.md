@@ -83,6 +83,7 @@ The following table shows the relationships between pyCHPP classes and CHPP XML 
 |HTChallengeManager|`challenges.xml`|
 |HTLeague|`leaguedetails.xml`|
 |HTMatch|`matchdetails.xml`|
+|HTMatchLineup|`matchlineup.xml`|
 |HTMatchesArchive|`matchesarchive.xml`|
 |HTPlayer|`playerdetails.xml`|
 |HTRegion|`regiondetails.xml`|
@@ -90,7 +91,6 @@ The following table shows the relationships between pyCHPP classes and CHPP XML 
 |HTUser|`managercompendium.xml`|
 |HTYouthPlayer|`youthplayerdetails.xml`|
 |HTYouthTeam|`youthteamdetails.xml`|
-|HTMatchLineup|`matchlineup.xml`|
 
 ## License
 pyCHPP is licensed under the Apache License 2.0.
