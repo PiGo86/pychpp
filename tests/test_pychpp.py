@@ -304,8 +304,8 @@ def test_get_match_lineup(chpp):
 
     assert isinstance(match_lineup, HTMatchLineup)
     assert match_lineup.ht_id == 660688698
-    assert match_lineup.home_team_id == 86324
     assert match_lineup.home_team_name == "Gazela.f.c"
+    assert match_lineup.away_team_id == 86324
     assert match_lineup.away_team_name == "Apanha Bolas FC"
     assert match_lineup.arena_id == 1420520
     assert match_lineup.game_type == 1
