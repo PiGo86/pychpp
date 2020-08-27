@@ -17,6 +17,10 @@ class HTXml:
         return int(data.text)
 
     @staticmethod
+    def ht_float(data):
+        return float(data.text)
+
+    @staticmethod
     def ht_bool(data):
         return True if data.text.capitalize() == "True" else False
 
