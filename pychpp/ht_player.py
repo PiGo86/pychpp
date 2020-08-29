@@ -253,4 +253,4 @@ class HTLineupPlayer(HTCorePlayer):
                       28: 'Penalty taker (7)', 29: 'Penalty taker (8)',
                       30: 'Penalty taker (9)', 31: 'Penalty taker (10)',
                       32: 'Penalty taker (11)'}
-        return role_names[self.role_id]
+        return role_names.get(self.role_id, default="Unknown role")
