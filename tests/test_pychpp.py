@@ -303,13 +303,23 @@ def test_get_match_lineup(chpp):
     match_lineup = chpp.match_lineup(ht_id=660688698, team_id=86324)
 
     assert isinstance(match_lineup, HTMatchLineup)
+    assert isinstance(match_lineup.match, HTMatch)
+
     assert match_lineup.ht_id == 660688698
     assert match_lineup.home_team_name == "Gazela.f.c"
     assert match_lineup.away_team_id == 86324
     assert match_lineup.away_team_name == "Apanha Bolas FC"
     assert match_lineup.arena_id == 1420520
     assert match_lineup.game_type == 1
+
+    assert isinstance(match_lineup.arena, HTArena)
+
     assert len(match_lineup.lineup_players) == 20
     assert isinstance(match_lineup.lineup_players[0], HTLineupPlayer)
+    assert isinstance(match_lineup.lineup_players[0].player, HTPlayer)
     assert match_lineup.lineup_players[0].ht_id == 453372825
     assert match_lineup.lineup_players[0].first_name == "Teodoro"
+    assert match_lineup.lineup_players[0].role_id == 100
+    assert match_lineup.lineup_players[0].role_name == "Keeper"
+    assert match_lineup.lineup_players[15].role_id == 120
+    assert match_lineup.lineup_players[15].role_name == "Unknown role"
