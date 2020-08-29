@@ -1,5 +1,5 @@
 from pychpp import ht_model
-from pychpp import ht_arena, ht_player, ht_team, ht_xml
+from pychpp import ht_arena, ht_match, ht_player, ht_team, ht_xml
 
 
 class HTMatchLineup(ht_model.HTModel):
@@ -74,6 +74,10 @@ class HTMatchLineup(ht_model.HTModel):
     @property
     def arena(self):
         return ht_arena.HTArena(chpp=self._chpp, ht_id=self.arena_id)
+
+    @property
+    def match(self):
+        return ht_match.HTMatch(chpp=self._chpp, ht_id=self.ht_id)
 
     @property
     def lineup_players(self):
