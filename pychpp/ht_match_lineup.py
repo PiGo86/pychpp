@@ -61,7 +61,7 @@ class HTMatchLineup(ht_model.HTModel):
         super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<HTMatch object : {self.home_team_name} - {self.away_team_name} ({self.ht_id})>"
+        return f"<HTMatchLineup object : {self.home_team_name} - {self.away_team_name} ({self.ht_id})>"
 
     @property
     def home_team(self):
