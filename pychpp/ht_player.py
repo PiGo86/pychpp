@@ -215,7 +215,7 @@ class HTLineupPlayer(HTCorePlayer):
                       ("behaviour", ".//Behaviour", ht_xml.HTXml.ht_int,)
                       ]
 
-    def __init__(self, **kwargs):
+    def __init__(self, is_youth:bool = False, **kwargs):
         """
         Initialize HTLineupPlayer instance
 
@@ -229,6 +229,7 @@ class HTLineupPlayer(HTCorePlayer):
         :type team_ht_id: int, optional
         """
         super().__init__(**kwargs)
+        self.is_youth = is_youth
 
     @property
     def role_name(self):
@@ -261,7 +262,7 @@ class HTLineupPlayer(HTCorePlayer):
 
     @property
     def player(self):
-        return HTPlayer(chpp=self._chpp, ht_id=self.ht_id)
+        return HTYouthPlayer(chpp=self._chpp, ht_id=self.ht_id) if self.is_youth else HTPlayer(chpp=self._chpp, ht_id=self.ht_id)
 
     @property
     def url(self):

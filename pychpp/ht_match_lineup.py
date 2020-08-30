@@ -16,6 +16,7 @@ class HTMatchLineup(ht_model.HTModel):
 
                       # General information
                       ("game_type", "MatchType", ht_xml.HTXml.ht_int),
+                      ("is_youth", "IsYouth", ht_xml.HTXml.ht_bool),
 
                       # Home team
                       ("home_team_id", "HomeTeam/HomeTeamID", ht_xml.HTXml.ht_int),
@@ -85,4 +86,5 @@ class HTMatchLineup(ht_model.HTModel):
     def lineup_players(self):
         return [ht_player.HTLineupPlayer(chpp=self._chpp,
                                          data=p_data,
-                                         team_ht_id=self.team_id) for p_data in self._data.find("Team").find("Lineup").findall("Player")]
+                                         team_ht_id=self.team_id,
+                                         is_youth=self.is_youth) for p_data in self._data.find("Team").find("Lineup").findall("Player")]
