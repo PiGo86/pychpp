@@ -6,10 +6,11 @@ from pychpp import __version__
 from pychpp import CHPP
 from pychpp.ht_team import HTTeam, HTYouthTeam
 from pychpp.ht_user import HTUser
-from pychpp.ht_player import HTPlayer, HTYouthPlayer
+from pychpp.ht_player import HTPlayer, HTYouthPlayer, HTLineupPlayer
 from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
 from pychpp.ht_match import HTMatch
+from pychpp.ht_match_lineup import HTMatchLineup
 from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
 from pychpp.ht_skill import HTSkill, HTSkillYouth
 from pychpp.ht_challenge import HTChallengeManager
@@ -269,7 +270,6 @@ def test_get_match(chpp):
     # assert "free kick" in m.events[14]["description"]
 
 
-
 def test_is_challengeable(chpp):
     challenge = HTChallengeManager(chpp)
 
@@ -297,3 +297,29 @@ def test_league(chpp):
         assert isinstance(r, HTRank)
 
     assert league.ranks[3].position == 4
+
+
+def test_get_match_lineup(chpp):
+    match_lineup = chpp.match_lineup(ht_id=660688698, team_id=86324)
+
+    assert isinstance(match_lineup, HTMatchLineup)
+    assert isinstance(match_lineup.match, HTMatch)
+
+    assert match_lineup.ht_id == 660688698
+    assert match_lineup.home_team_name == "Gazela.f.c"
+    assert match_lineup.away_team_id == 86324
+    assert match_lineup.away_team_name == "Apanha Bolas FC"
+    assert match_lineup.arena_id == 1420520
+    assert match_lineup.game_type == 1
+
+    assert isinstance(match_lineup.arena, HTArena)
+
+    assert len(match_lineup.lineup_players) == 20
+    assert isinstance(match_lineup.lineup_players[0], HTLineupPlayer)
+    assert isinstance(match_lineup.lineup_players[0].player, HTPlayer)
+    assert match_lineup.lineup_players[0].ht_id == 453372825
+    assert match_lineup.lineup_players[0].first_name == "Teodoro"
+    assert match_lineup.lineup_players[0].role_id == 100
+    assert match_lineup.lineup_players[0].role_name == "Keeper"
+    assert match_lineup.lineup_players[15].role_id == 120
+    assert match_lineup.lineup_players[15].role_name == "Unknown role"

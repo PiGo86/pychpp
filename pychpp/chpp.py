@@ -5,7 +5,8 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree
 
 from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
-                    ht_challenge, ht_match, ht_matches_archive, ht_league)
+                    ht_challenge, ht_match, ht_matches_archive,
+                    ht_match_lineup, ht_league)
 from pychpp import ht_error
 
 
@@ -345,3 +346,6 @@ class CHPP:
         :rtype: ht_league.HTLeague
         """
         return ht_league.HTLeague(chpp=self, **kwargs)
+
+    def match_lineup(self, **kwargs):
+        return ht_match_lineup.HTMatchLineup(chpp=self, **kwargs)
