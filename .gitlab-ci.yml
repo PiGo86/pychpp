@@ -21,10 +21,10 @@ test:
 
 build:
   stage: build
-  only: master
+  only: [master]
   script: poetry build
 
 deploy:
   stage: deploy
-  only: master
+  only: [master]
   script: poetry publish -u PYCHPP_PYPI_USERNAME -p PYCHPP_PYPI_PASSWORD
