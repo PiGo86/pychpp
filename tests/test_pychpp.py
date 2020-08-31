@@ -31,7 +31,7 @@ YOUTH_TEAM_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Youth/\?Yo
 ARENA_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Arena/\?ArenaID=(\d+)"
 USER_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Manager/\?userId=(\d+)"
 REGION_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/World/Regions/Region.aspx\?RegionID=(\d+)"
-MATCH_ARCHIVE_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Matches/Archive.aspx\?(TeamID=(\d*))?&?(season=(\d*))?"
+MATCH_ARCHIVE_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=%2FClub%2FMatches%2FArchive.aspx%3F(TeamID%3D(\d*))?(%26)?(season%3D(\d*))?"
 MATCH_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Matches/Match.aspx\?matchID=(\d+)"
 
 
@@ -373,10 +373,10 @@ def test_get_match_lineup(chpp):
     assert match_lineup.lineup_players[0].role_name == "Keeper"
     assert match_lineup.lineup_players[15].role_id == 120
     assert match_lineup.lineup_players[15].role_name == "Unknown role"
-    assert  re.match(PLAYER_PATTERN, match_lineup.lineup_players[15].url)
+    assert re.match(PLAYER_PATTERN, match_lineup.lineup_players[15].url)
 
-    match_lineup = chpp.match_lineup(ht_id=116104524, team_id=2828377, source='youth')
+    match_lineup = chpp.match_lineup(
+        ht_id=116104524, team_id=2828377, source='youth')
     assert isinstance(match_lineup.lineup_players[0], HTLineupPlayer)
     assert isinstance(match_lineup.lineup_players[0].player, HTYouthPlayer)
-    assert  re.match(YOUTH_PLAYER_PATTERN, match_lineup.lineup_players[0].url)
-
+    assert re.match(YOUTH_PLAYER_PATTERN, match_lineup.lineup_players[0].url)
