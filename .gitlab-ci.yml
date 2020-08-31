@@ -21,4 +21,4 @@ test:
 deploy:
   stage: deploy
   only: [master]
-  script: poetry publish --build -u PYCHPP_PYPI_USERNAME -p PYCHPP_PYPI_PASSWORD
+  script: poetry publish --build -u $PYCHPP_PYPI_USERNAME -p $PYCHPP_PYPI_PASSWORD
