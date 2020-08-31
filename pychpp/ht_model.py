@@ -11,6 +11,9 @@ class HTModel:
     _SOURCE_FILE = str()
     _SOURCE_FILE_VERSION = str()
 
+    _BASE_URL = "https://www.hattrick.org/goto.ashx?path="
+    _URL_PATH = str()
+
     _ht_attributes = list()
 
     def __init__(self, chpp, data=None):
@@ -28,6 +31,7 @@ class HTModel:
             self._fetch()
 
         self._fill_ht_attributes()
+
 
     def __repr__(self):
         return f"<{self.__class__.__name__} object>"
@@ -48,3 +52,8 @@ class HTModel:
                      if self._data.find(attr_tuple[1]) is not None
                      else None),
                     )
+
+    @property
+    def url(self):
+        return f"{self._BASE_URL}{self._URL_PATH}{self.ht_id}" if getattr(
+        self, "ht_id", None) else ""

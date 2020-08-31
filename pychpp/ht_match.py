@@ -10,6 +10,8 @@ class HTMatch(ht_model.HTModel):
     _SOURCE_FILE = "matchdetails"
     _SOURCE_FILE_VERSION = "3.0"
 
+    _URL_PATH = "/Club/Matches/Match.aspx?matchID="
+
     _ht_attributes = [("ht_id", "Match/MatchID", ht_xml.HTXml.ht_int),
 
                       # General information

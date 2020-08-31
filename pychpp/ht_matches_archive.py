@@ -13,6 +13,8 @@ class HTMatchesArchive(ht_model.HTModel):
     _SOURCE_FILE = "matchesarchive"
     _SOURCE_FILE_VERSION = "1.4"
 
+    _URL_PATH = "/Club/Matches/Archive.aspx?"
+
     _ht_attributes = [("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
                       ("team_name", "Team/TeamName", ht_xml.HTXml.ht_str),
                       ("first_match_date", "Team/FirstMatchDate", ht_xml.HTXml.ht_date_from_text),
@@ -84,11 +86,23 @@ class HTMatchesArchive(ht_model.HTModel):
     def __repr__(self):
         return self.matches_list.__repr__()
 
+    @property
+    def url(self):
+        url_args = []
+        if self.team_id:
+            url_args.append(f'TeamID={self.team_id}')
+        if self._REQUEST_ARGS["season"]:
+            url_args.append(f'season={self._REQUEST_ARGS["season"]}')
+        
+        return f'{self._BASE_URL}{self._URL_PATH}{"&".join(url_args)}'
+
 
 class HTMatchesArchiveItem(ht_model.HTModel):
     """
     Object returned by HTMatchesArchve.search method
     """
+
+    _URL_PATH="/Club/Matches/Match.aspx?matchID="
 
     _ht_attributes = [("ht_id", "MatchID", ht_xml.HTXml.ht_int,),
                       ("home_team_id", "HomeTeam/HomeTeamID", ht_xml.HTXml.ht_int,),

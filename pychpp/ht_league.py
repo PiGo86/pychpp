@@ -9,6 +9,8 @@ class HTLeague(ht_model.HTModel):
     _SOURCE_FILE = "leaguedetails"
     _SOURCE_FILE_VERSION = "1.5"
 
+    _URL_PATH = "/World/Series/?LeagueLevelUnitID="
+
     _ht_attributes = [("ht_id", "LeagueLevelUnitID", ht_xml.HTXml.ht_int),
                       # General information
                       ("level", "LeagueLevel", ht_xml.HTXml.ht_int),

@@ -1,6 +1,7 @@
 import os
 import datetime
 import pytest
+import re
 
 from pychpp import __version__
 from pychpp import CHPP
@@ -24,6 +25,15 @@ PYCHPP_ACCESS_TOKEN_KEY = os.environ["PYCHPP_ACCESS_TOKEN_KEY"]
 PYCHPP_ACCESS_TOKEN_SECRET = os.environ["PYCHPP_ACCESS_TOKEN_SECRET"]
 PYCHPP_SCOPE = os.environ["PYCHPP_SCOPE"]
 
+YOUTH_PLAYER_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Players/YouthPlayer.aspx\?YouthPlayerID=(\d+)"
+PLAYER_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Players/Player.aspx\?playerId=(\d+)"
+YOUTH_TEAM_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Youth/\?YouthTeamID=(\d+)"
+ARENA_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Arena/\?ArenaID=(\d+)"
+USER_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Manager/\?userId=(\d+)"
+REGION_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/World/Regions/Region.aspx\?RegionID=(\d+)"
+MATCH_ARCHIVE_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Matches/Archive.aspx\?(TeamID=(\d*))?&?(season=(\d*))?"
+MATCH_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Matches/Match.aspx\?matchID=(\d+)"
+
 
 def test_version():
     assert __version__ == '0.2.5'
@@ -41,7 +51,8 @@ def test_request_token():
         assert key in ('request_token', 'request_token_secret', 'url',)
 
     assert isinstance(auth['request_token'], str) and auth['request_token']
-    assert isinstance(auth['request_token_secret'], str) and auth['request_token_secret']
+    assert isinstance(auth['request_token_secret'],
+                      str) and auth['request_token_secret']
     assert (isinstance(auth['url'], str)
             and 'https://chpp.hattrick.org/oauth/authorize.aspx?scope=&oauth_token=' in auth['url'])
 
@@ -61,6 +72,7 @@ def test_get_current_team(chpp):
     assert isinstance(team, HTTeam)
     assert isinstance(team.ht_id, int)
     assert isinstance(team.name, str)
+    assert isinstance(team.url, str)
 
     youth_team = team.youth_team
     assert isinstance(youth_team, HTYouthTeam) or youth_team is None
@@ -83,20 +95,24 @@ def test_get_specific_team(chpp):
     assert team.short_name == 'thekikis'
     assert team.is_primary_club is True
     assert team.power_rating > 0
+    assert team.url == "https://www.hattrick.org/goto.ashx?path=/Club/?TeamID=591993"
 
     user = team.user
     assert isinstance(user, HTUser)
     assert user.ht_id == 6336642
     assert user.username == 'thekiki76'
     assert user.supporter_tier == 'platinum'
+    assert user.url == "https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=6336642"
 
     youthteam = team.youth_team
     assert isinstance(youthteam, HTYouthTeam)
     assert youthteam.name == 'thebabykikis'
+    assert re.match(YOUTH_TEAM_PATTERN, youthteam.url)
 
     arena = team.arena
     assert isinstance(arena, HTArena)
     assert arena.name == "thekiki's evil"
+    assert re.match(ARENA_PATTERN, arena.url)
 
 
 def test_get_secondary_team(chpp):
@@ -107,19 +123,23 @@ def test_get_secondary_team(chpp):
     assert team.name == "Grynvalla IK"
     assert team.short_name == 'Grynvalla'
     assert team.is_primary_club is False
+    assert team.url == "https://www.hattrick.org/goto.ashx?path=/Club/?TeamID=44307"
 
     user = team.user
     assert isinstance(user, HTUser)
     assert user.ht_id == 182085
     assert user.username == "Kvarak"
+    assert user.url == "https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=182085"
 
     youthteam = team.youth_team
     assert isinstance(youthteam, HTYouthTeam)
     assert youthteam.name == "Grynets pojkar"
+    assert re.match(YOUTH_TEAM_PATTERN, youthteam.url)
 
     arena = team.arena
     assert isinstance(arena, HTArena)
     assert arena.name == "Grynvallen"
+    assert re.match(ARENA_PATTERN, arena.url)
 
 
 def test_get_current_user(chpp):
@@ -128,6 +148,8 @@ def test_get_current_user(chpp):
     assert isinstance(user, HTUser)
     assert isinstance(user.ht_id, int)
     assert isinstance(user.username, str)
+    assert isinstance(user.url, str)
+    assert re.match(USER_PATTERN, user.url)
 
 
 def test_get_player(chpp):
@@ -142,11 +164,13 @@ def test_get_player(chpp):
     assert player.agreeability == 2
     assert player.aggressiveness == 3
     assert player.honesty == 3
+    assert player.url == "https://www.hattrick.org/goto.ashx?path=/Club/Players/Player.aspx?playerId=432002549"
 
     assert isinstance(player.skills, dict)
     assert len(player.skills) == 8
     for i in player.skills.keys():
-        assert i in ("stamina", "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces")
+        assert i in ("stamina", "keeper", "defender", "playmaker",
+                     "winger", "scorer", "passing", "set_pieces")
 
     assert isinstance(player.tsi, int)
     assert isinstance(player.injury_level, int)
@@ -158,7 +182,9 @@ def test_get_youth_player(chpp):
     if youthteam.ht_id != 0:
         youthplayer = youthteam.players[0]
         assert isinstance(youthplayer, HTYouthPlayer)
-        assert {i for i in youthplayer.skills.keys()}.issubset(HTSkillYouth.SKILLS_TAG)
+        assert {i for i in youthplayer.skills.keys()}.issubset(
+            HTSkillYouth.SKILLS_TAG)
+        assert re.match(YOUTH_PLAYER_PATTERN, youthplayer.url)
 
 
 def test_get_current_user_arena(chpp):
@@ -166,6 +192,8 @@ def test_get_current_user_arena(chpp):
     assert isinstance(arena, HTArena)
     assert isinstance(arena.ht_id, int) or arena.ht_id is None
     assert isinstance(arena.name, str)
+    assert isinstance(arena.url, str)
+    assert re.match(ARENA_PATTERN, arena.url)
 
 
 def test_get_specific_arena(chpp):
@@ -173,11 +201,13 @@ def test_get_specific_arena(chpp):
     assert isinstance(arena, HTArena)
     assert arena.ht_id == 295023
     assert arena.name == 'Les piments verts Arena'
+    assert arena.url == "https://www.hattrick.org/goto.ashx?path=/Club/Arena/?ArenaID=295023"
 
     team = arena.team
     assert isinstance(team, HTTeam)
     assert team.ht_id == 295023
     assert team.name == 'Les piments verts'
+    assert team.url == "https://www.hattrick.org/goto.ashx?path=/Club/?TeamID=295023"
 
 
 def test_get_current_user_region(chpp):
@@ -189,6 +219,8 @@ def test_get_current_user_region(chpp):
     assert isinstance(region.number_of_online, int)
     assert isinstance(region.weather, int)
     assert isinstance(region.tomorrow_weather, int)
+    assert isinstance(region.url, str)
+    assert re.match(REGION_PATTERN, region.url)
 
 
 def test_get_specific_region(chpp):
@@ -200,14 +232,19 @@ def test_get_specific_region(chpp):
     assert isinstance(region.number_of_online, int)
     assert isinstance(region.weather, int)
     assert isinstance(region.tomorrow_weather, int)
+    assert region.url == "https://www.hattrick.org/goto.ashx?path=/World/Regions/Region.aspx?RegionID=149"
 
 
 def test_get_current_user_matches_archive(chpp):
     ma1 = chpp.matches_archive()
     assert isinstance(ma1, HTMatchesArchive)
+    assert isinstance(ma1.url, str)
+    assert re.match(MATCH_ARCHIVE_PATTERN, ma1.url)
     m = ma1[0]
     assert isinstance(m, HTMatchesArchiveItem)
     assert isinstance(m.home_team, HTTeam)
+    assert isinstance(m.url, str)
+    assert re.match(MATCH_PATTERN, m.url)
 
     ma2 = chpp.matches_archive(ht_id=1165592,
                                first_match_date=datetime.datetime(2020, 1, 1),
@@ -224,9 +261,11 @@ def test_get_current_user_matches_archive(chpp):
     assert ma2[0].cup_level_index == 0
     assert ma2[0].home_goals == 2
     assert ma2[0].away_goals == 0
+    assert ma2[0].url == "https://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=652913955"
 
     for m in ma2:
-        assert datetime.datetime(2020, 1, 1) <= m.date <= datetime.datetime(2020, 3, 31)
+        assert datetime.datetime(
+            2020, 1, 1) <= m.date <= datetime.datetime(2020, 3, 31)
 
 
 def test_get_other_user_matches_archives(chpp):
@@ -235,17 +274,25 @@ def test_get_other_user_matches_archives(chpp):
                                last_match_date=datetime.datetime(2018, 4, 30),
                                )
 
+    assert re.match(MATCH_ARCHIVE_PATTERN, ma1.url)
+
     for m in ma1:
-        assert datetime.datetime(2018, 4, 10) <= m.date <= datetime.datetime(2018, 6, 30)
+        assert datetime.datetime(
+            2018, 4, 10) <= m.date <= datetime.datetime(2018, 6, 30)
         assert 1755906 in (m.home_team_id, m.away_team_id)
+        assert re.match(MATCH_PATTERN, m.url)
 
     ma2 = chpp.matches_archive(ht_id=1755906,
                                season=60,
                                )
 
+    assert re.match(MATCH_ARCHIVE_PATTERN, ma2.url)
+
     for m in ma2:
-        assert datetime.datetime(2015, 10, 26) <= m.date <= datetime.datetime(2016, 2, 14)
+        assert datetime.datetime(
+            2015, 10, 26) <= m.date <= datetime.datetime(2016, 2, 14)
         assert 1755906 in (m.home_team_id, m.away_team_id)
+        assert re.match(MATCH_PATTERN, m.url)
 
 
 def test_get_match(chpp):
@@ -253,6 +300,7 @@ def test_get_match(chpp):
 
     assert isinstance(m, HTMatch)
     assert m.ht_id == 547513790
+    assert m.url == "https://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=547513790"
     assert m.date == datetime.datetime(2015, 12, 19, 21, 0)
     assert m.home_team_name == "Olympique Mig"
     assert m.away_team_name == "Camden County Jerks"
@@ -290,6 +338,7 @@ def test_league(chpp):
     assert league.ht_id == 36378
     assert league.name == "VI.390"
     assert league.country_id == 5
+    assert league.url == "https://www.hattrick.org/goto.ashx?path=/World/Series/?LeagueLevelUnitID=36378"
 
     assert isinstance(league.ranks, list)
 
@@ -311,6 +360,7 @@ def test_get_match_lineup(chpp):
     assert match_lineup.away_team_name == "Apanha Bolas FC"
     assert match_lineup.arena_id == 1420520
     assert match_lineup.game_type == 1
+    assert re.match(MATCH_PATTERN, match_lineup.url)
 
     assert isinstance(match_lineup.arena, HTArena)
 
@@ -323,3 +373,10 @@ def test_get_match_lineup(chpp):
     assert match_lineup.lineup_players[0].role_name == "Keeper"
     assert match_lineup.lineup_players[15].role_id == 120
     assert match_lineup.lineup_players[15].role_name == "Unknown role"
+    assert  re.match(PLAYER_PATTERN, match_lineup.lineup_players[15].url)
+
+    match_lineup = chpp.match_lineup(ht_id=116104524, team_id=2828377, source='youth')
+    assert isinstance(match_lineup.lineup_players[0], HTLineupPlayer)
+    assert isinstance(match_lineup.lineup_players[0].player, HTYouthPlayer)
+    assert  re.match(YOUTH_PLAYER_PATTERN, match_lineup.lineup_players[0].url)
+
