@@ -13,7 +13,8 @@ class HTMatchesArchive(ht_model.HTModel):
     _SOURCE_FILE = "matchesarchive"
     _SOURCE_FILE_VERSION = "1.4"
 
-    _URL_PATH = "/Club/Matches/Archive.aspx?"
+    # URL PATH with several params available should be urlencoded
+    _URL_PATH = "%2FClub%2FMatches%2FArchive.aspx%3F"
 
     _ht_attributes = [("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
                       ("team_name", "Team/TeamName", ht_xml.HTXml.ht_str),
@@ -90,11 +91,11 @@ class HTMatchesArchive(ht_model.HTModel):
     def url(self):
         url_args = []
         if self.team_id:
-            url_args.append(f'TeamID={self.team_id}')
+            url_args.append(f'TeamID%3D{self.team_id}')
         if self._REQUEST_ARGS["season"]:
-            url_args.append(f'season={self._REQUEST_ARGS["season"]}')
+            url_args.append(f'season%3D{self._REQUEST_ARGS["season"]}')
         
-        return f'{self._BASE_URL}{self._URL_PATH}{"&".join(url_args)}'
+        return f'{self._BASE_URL}{self._URL_PATH}{"%26".join(url_args)}'
 
 
 class HTMatchesArchiveItem(ht_model.HTModel):
