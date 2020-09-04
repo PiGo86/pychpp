@@ -73,6 +73,7 @@ def test_get_current_team(chpp):
     assert isinstance(team.ht_id, int)
     assert isinstance(team.name, str)
     assert isinstance(team.url, str)
+    assert isinstance(team.is_bot, bool)
 
     youth_team = team.youth_team
     assert isinstance(youth_team, HTYouthTeam) or youth_team is None
@@ -94,6 +95,7 @@ def test_get_specific_team(chpp):
     assert team.name == "thekiki's"
     assert team.short_name == 'thekikis'
     assert team.is_primary_club is True
+    assert team.is_bot is False
     assert team.power_rating > 0
     assert team.url == "https://www.hattrick.org/goto.ashx?path=/Club/?TeamID=591993"
 

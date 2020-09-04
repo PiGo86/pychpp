@@ -50,6 +50,7 @@ class HTTeam(HTCoreTeam):
                 ("short_name", f"Teams/Team{ht_filter}/ShortTeamName", ht_xml.HTXml.ht_str),
                 ("is_primary_club", f"Teams/Team{ht_filter}/IsPrimaryClub", ht_xml.HTXml.ht_bool),
                 ("founded_date", f"Teams/Team{ht_filter}/FoundedDate", ht_xml.HTXml.ht_date_from_text),
+                ("is_bot", f"Teams/Team{ht_filter}/BotStatus/IsBot", ht_xml.HTXml.ht_bool),
                 # Arena
                 ("arena_ht_id", f"Teams/Team{ht_filter}/Arena/ArenaID", ht_xml.HTXml.ht_int),
                 ("arena_name", f"Teams/Team{ht_filter}/Arena/ArenaName", ht_xml.HTXml.ht_str),
