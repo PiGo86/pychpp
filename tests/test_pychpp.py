@@ -6,7 +6,7 @@ import re
 
 from pychpp import __version__
 from pychpp import CHPP
-from pychpp.ht_team import HTTeam, HTYouthTeam
+from pychpp.ht_team import HTTeam, HTYouthTeam, HTTeamRank
 from pychpp.ht_user import HTUser
 from pychpp.ht_player import HTPlayer, HTYouthPlayer, HTLineupPlayer
 from pychpp.ht_arena import HTArena
@@ -17,7 +17,6 @@ from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
 from pychpp.ht_skill import HTSkill, HTSkillYouth
 from pychpp.ht_challenge import HTChallengeManager
 from pychpp.ht_league import HTLeague
-from pychpp.ht_rank import HTRank
 from pychpp.ht_world import (HTCountry, HTCup, HTCountryLeague,
                              HTRegionItem, HTWorld)
 from pychpp.ht_datetime import HTDatetime
@@ -285,7 +284,7 @@ def test_get_current_user_matches_archive(chpp):
         ht_id=1165592,
         first_match_date=HTDatetime.from_calendar(2020, 1, 1),
         last_match_date=HTDatetime.from_calendar(2020, 3, 31),
-        )
+    )
 
     assert ma2[0].ht_id == 652913955
     assert ma2[0].home_team_name == "Les Poitevins de La Chapelle"
@@ -312,7 +311,7 @@ def test_get_other_user_matches_archives(chpp):
         ht_id=1755906,
         first_match_date=HTDatetime.from_calendar(2018, 4, 10),
         last_match_date=HTDatetime.from_calendar(2018, 4, 30),
-        )
+    )
 
     assert re.match(MATCH_ARCHIVE_PATTERN, ma1.url)
 
@@ -384,12 +383,12 @@ def test_league(chpp):
     assert league.url == "https://www.hattrick.org/goto.ashx" \
                          "?path=/World/Series/?LeagueLevelUnitID=36378"
 
-    assert isinstance(league.ranks, list)
+    assert isinstance(league.teams, list)
 
-    for r in league.ranks:
-        assert isinstance(r, HTRank)
+    for r in league.teams:
+        assert isinstance(r, HTTeamRank)
 
-    assert league.ranks[3].position == 4
+    assert league.teams[3].position == 4
 
 
 def test_get_match_lineup(chpp):

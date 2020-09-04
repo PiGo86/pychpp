@@ -1,5 +1,6 @@
 from pychpp import ht_model, ht_xml
 from pychpp import ht_user, ht_player, ht_arena
+from werkzeug.utils import cached_property
 
 
 class HTCoreTeam(ht_model.HTModel):
@@ -236,8 +237,6 @@ class HTYouthTeam(HTCoreTeam):
                        ht_xml.HTXml.ht_str,),
                       ("short_name", "YouthTeam/ShortTeamName",
                        ht_xml.HTXml.ht_str,),
-                      ("ht_id", "YouthTeam/YouthTeamID",
-                       ht_xml.HTXml.ht_int,),
                       ("created_date", "YouthTeam/CreatedDate",
                        ht_xml.HTXml.ht_datetime_from_text,),
                       # Country
@@ -313,3 +312,31 @@ class HTYouthTeam(HTCoreTeam):
                                         data=p_data,
                                         team_ht_id=self.ht_id)
                 for p_data in data.findall("YouthPlayer")]
+
+
+class HTTeamRank(HTCoreTeam):
+
+    _URL_PATH = "/Club/?TeamID="
+
+    _ht_attributes = [
+        ("user_ht_id", "UserId", ht_xml.HTXml.ht_int,),
+        ("team_ht_id", "TeamID", ht_xml.HTXml.ht_int,),
+        ("team_name", "TeamName", ht_xml.HTXml.ht_str,),
+        ("position", "Position", ht_xml.HTXml.ht_int,),
+        ("position_change", "PositionChange", ht_xml.HTXml.ht_int,),
+        ("matches", "Matches", ht_xml.HTXml.ht_int,),
+        ("goals_for", "GoalsFor", ht_xml.HTXml.ht_int,),
+        ("goals_against", "GoalsAgainst", ht_xml.HTXml.ht_int,),
+        ("points", "Points", ht_xml.HTXml.ht_int,),
+        ("won", "Won", ht_xml.HTXml.ht_int,),
+        ("draws", "Draws", ht_xml.HTXml.ht_int,),
+        ("lost", "Lost", ht_xml.HTXml.ht_int,),
+    ]
+
+    @cached_property
+    def details(self):
+        return self._chpp.team(ht_id=self.team_ht_id)
+
+    def __repr__(self):
+        return f"<{str(self.__class__.__name__)} object : " \
+               f"#{self.position} {self.team_name} ({self.team_ht_id}) >"
