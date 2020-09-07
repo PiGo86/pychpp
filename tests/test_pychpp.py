@@ -17,7 +17,8 @@ from pychpp.ht_skill import HTSkill, HTSkillYouth
 from pychpp.ht_challenge import HTChallengeManager
 from pychpp.ht_league import HTLeague
 from pychpp.ht_rank import HTRank
-from pychpp.ht_error import HTUnauthorizedAction
+from pychpp.ht_world import HTCountry, HTCup, HTCountryLeague, HTRegionItem, HTWorld
+from pychpp.ht_error import HTUnauthorizedAction, UnknownLeagueError
 
 PYCHPP_CONSUMER_KEY = os.environ["PYCHPP_CONSUMER_KEY"]
 PYCHPP_CONSUMER_SECRET = os.environ["PYCHPP_CONSUMER_SECRET"]
@@ -33,6 +34,8 @@ USER_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Manager/\?userId
 REGION_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/World/Regions/Region.aspx\?RegionID=(\d+)"
 MATCH_ARCHIVE_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=%2FClub%2FMatches%2FArchive.aspx%3F(TeamID%3D(\d*))?(%26)?(season%3D(\d*))?"
 MATCH_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/Club/Matches/Match.aspx\?matchID=(\d+)"
+COUNTRY_LEAGUE_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/World/Leagues/League.aspx\?LeagueID=(\d+)"
+CUP_PATTERN = r"https://www.hattrick.org/goto.ashx\?path=/World/Cup/Cup.aspx\?CupID=(\d+)"
 
 
 def test_version():
@@ -382,3 +385,35 @@ def test_get_match_lineup(chpp):
     assert isinstance(match_lineup.lineup_players[0], HTLineupPlayer)
     assert isinstance(match_lineup.lineup_players[0].player, HTYouthPlayer)
     assert re.match(YOUTH_PLAYER_PATTERN, match_lineup.lineup_players[0].url)
+
+
+def test_get_world_details(chpp):
+    portugal_details = chpp.world(ht_id=25, include_regions=True)
+
+    assert isinstance(portugal_details, HTWorld)
+    assert isinstance(portugal_details.leagues[0], HTCountryLeague)
+    assert isinstance(portugal_details.leagues[0].country, HTCountry)
+    assert isinstance(portugal_details.leagues[0].cups[0], HTCup)
+
+    assert len(portugal_details.leagues) == 1
+    assert portugal_details.league(ht_id=25).league_name == "Portugal"
+    assert portugal_details.league(name="portugal").ht_id == 25
+    assert portugal_details.league(ht_id=25).country.country_name == "Portugal"
+
+    portugal_regions = portugal_details.league(ht_id=25).country.regions
+    assert len(portugal_regions) >= 1
+    assert isinstance(portugal_regions[0], HTRegionItem)
+    assert isinstance(portugal_regions[0].region, HTRegion)
+    assert len(portugal_details.league(ht_id=25).cups) >= 1
+
+    with pytest.raises(UnknownLeagueError):
+        portugal_details.league(ht_id=26)
+
+    world_details = chpp.world()
+
+    assert len(world_details.leagues) > 1
+    assert world_details.leagues[0].country.regions is None
+
+    assert re.match(COUNTRY_LEAGUE_PATTERN, portugal_details.league(ht_id=25).url)
+    assert re.match(REGION_PATTERN, portugal_regions[0].region.url)
+    assert re.match(CUP_PATTERN, portugal_details.league(ht_id=25).cups[0].url)
