@@ -76,3 +76,7 @@ class HTSkillError(HTError):
 
 class HTAgeError(HTError):
     """Raise when age can't be well defined"""
+
+
+class UnknownLeagueError(Exception):
+    """Raise when world league doesn't exist in the list"""

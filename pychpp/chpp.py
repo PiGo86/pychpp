@@ -6,7 +6,7 @@ import xml.etree.ElementTree
 
 from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
                     ht_challenge, ht_match, ht_matches_archive,
-                    ht_match_lineup, ht_league)
+                    ht_match_lineup, ht_league, ht_world)
 from pychpp import ht_error
 
 
@@ -348,4 +348,21 @@ class CHPP:
         return ht_league.HTLeague(chpp=self, **kwargs)
 
     def match_lineup(self, **kwargs):
+        """
+        Get a match lineup from its Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested match, must be an int
+        :key team_id: Hattrick ID of the team for each the lineup is requested, must be an int
+        :rtype: ht_match_lineup.HTMatchLineup
+        """
         return ht_match_lineup.HTMatchLineup(chpp=self, **kwargs)
+
+    def world(self, **kwargs):
+        """
+        Get a world details
+
+        :key ht_id: Hattrick ID of the requested country league, must be an int (optional)
+        :key include_regions: Whether or not to include regions for the countries, must be an bool (optional, default=False)
+        :rtype: ht_world.HTWorld
+        """
+        return ht_world.HTWorld(chpp=self, **kwargs)
