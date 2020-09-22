@@ -41,15 +41,18 @@ class HTXml:
     def ht_match_events(data):
         events = list()
         for event in data.findall('Event'):
-            events.append({"minute":            int(event.find("Minute").text),
-                          "match_part":         int(event.find("MatchPart").text),
-                          "id":                 int(event.find("EventTypeID").text),
-                          "variation":          int(event.find("EventVariation").text),
-                          "description":        event.find("EventText").text,
-                          "subject_team_id":    int(event.find("SubjectTeamID").text),
-                          "subject_player_id":  int(event.find("SubjectPlayerID").text),
-                          "object_player_id":   int(event.find("ObjectPlayerID").text),
-                          })
+            events.append({"minute": int(event.find("Minute").text),
+                           "match_part": int(event.find("MatchPart").text),
+                           "id": int(event.find("EventTypeID").text),
+                           "variation": int(event.find("EventVariation").text),
+                           "description": event.find("EventText").text,
+                           "subject_team_id":
+                               int(event.find("SubjectTeamID").text),
+                           "subject_player_id":
+                               int(event.find("SubjectPlayerID").text),
+                           "object_player_id":
+                               int(event.find("ObjectPlayerID").text),
+                           })
         return events
 
     @staticmethod
@@ -97,15 +100,22 @@ class HTXml:
         capacity = dict()
 
         if data.tag not in ("CurrentCapacity", "ExpandedCapacity"):
-            raise ValueError("root tag must be equal to 'CurrentCapacity or 'ExpandedCapacity'")
+            raise ValueError(
+                "root tag must be equal to 'CurrentCapacity "
+                "or 'ExpandedCapacity'")
 
         elif (data.tag == "CurrentCapacity"
-              or (data.tag == "ExpandedCapacity" and data.attrib["Available"] == "True")):
+              or (data.tag == "ExpandedCapacity"
+                  and data.attrib["Available"] == "True")):
 
-            if data.find("RebuiltDate") is not None and data.find("RebuiltDate").attrib["Available"] == "True":
-                capacity['rebuilt_date'] = cls.ht_datetime_from_text(data.find("RebuiltDate"))
-            elif data.find("ExpandedDate") is not None and data.find("ExpandedDate").attrib["Available"] == "True":
-                capacity['expanded_date'] = cls.ht_datetime_from_text(data.find("ExpandedDate"))
+            if data.find("RebuiltDate") is not None and (
+                    data.find("RebuiltDate").attrib["Available"] == "True"):
+                capacity['rebuilt_date'] = cls.ht_datetime_from_text(
+                    data.find("RebuiltDate"))
+            elif data.find("ExpandedDate") is not None and (
+                    data.find("ExpandedDate").attrib["Available"] == "True"):
+                capacity['expanded_date'] = cls.ht_datetime_from_text(
+                    data.find("ExpandedDate"))
 
             capacity["terraces"] = int(data.find("Terraces").text)
             capacity["basic"] = int(data.find("Basic").text)
@@ -126,19 +136,24 @@ class HTXml:
 
     @staticmethod
     def ht_youth_skills(data):
-        skills = {k: ht_skill.HTSkillYouth(name=k,
-                                           level=(int(data.find(v[0]).text)
-                                                  if data.find(v[0]).attrib["IsAvailable"] == "True" else None),
-                                           maximum=(int(data.find(v[1]).text)
-                                                    if data.find(v[1]).attrib["IsAvailable"] == "True" else None),
-                                           maximum_reached=bool(data.find(v[0]).attrib["IsMaxReached"]))
-                  for k, v in ht_skill.HTSkillYouth.SKILLS_TAG.items()}
+        skills = {k: ht_skill.HTSkillYouth(
+            name=k,
+            level=(int(data.find(v[0]).text)
+                   if data.find(v[0]).attrib["IsAvailable"] == "True"
+                   else None),
+            maximum=(int(data.find(v[1]).text)
+                     if data.find(v[1]).attrib["IsAvailable"] == "True"
+                     else None),
+            maximum_reached=bool(data.find(v[0]).attrib["IsMaxReached"])
+        )
+            for k, v in ht_skill.HTSkillYouth.SKILLS_TAG.items()}
 
         return skills
 
     @staticmethod
     def ht_age(data):
-        return ht_age.HTAge(age=int(data.find("Age").text), age_days=int(data.find("AgeDays").text))
+        return ht_age.HTAge(age=int(data.find("Age").text),
+                            age_days=int(data.find("AgeDays").text))
 
     @staticmethod
     def ht_last_logins(data):
@@ -150,17 +165,18 @@ class HTXml:
 
     @staticmethod
     def ht_ranks(data):
-        return [ht_rank.HTRank(user_ht_id=int(i.find("UserId").text),
-                               team_ht_id=int(i.find("TeamID").text),
-                               team_name=i.find("TeamName").text,
-                               position=int(i.find("Position").text),
-                               position_change=int(i.find("PositionChange").text),
-                               matches=int(i.find("Matches").text),
-                               goals_for=int(i.find("GoalsFor").text),
-                               goals_against=int(i.find("GoalsAgainst").text),
-                               points=int(i.find("Points").text),
-                               won=int(i.find("Won").text),
-                               draws=int(i.find("Draws").text),
-                               lost=int(i.find("Lost").text),
-                               )
-                for i in data.findall("Team")]
+        return [ht_rank.HTRank(
+            user_ht_id=int(i.find("UserId").text),
+            team_ht_id=int(i.find("TeamID").text),
+            team_name=i.find("TeamName").text,
+            position=int(i.find("Position").text),
+            position_change=int(i.find("PositionChange").text),
+            matches=int(i.find("Matches").text),
+            goals_for=int(i.find("GoalsFor").text),
+            goals_against=int(i.find("GoalsAgainst").text),
+            points=int(i.find("Points").text),
+            won=int(i.find("Won").text),
+            draws=int(i.find("Draws").text),
+            lost=int(i.find("Lost").text),
+            )
+            for i in data.findall("Team")]

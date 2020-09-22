@@ -10,25 +10,28 @@ class HTArena(ht_model.HTModel):
     _SOURCE_FILE = "arenadetails"
     _SOURCE_FILE_VERSION = "1.5"
 
-    _URL_PATH= "/Club/Arena/?ArenaID="
+    _URL_PATH = "/Club/Arena/?ArenaID="
 
-    _ht_attributes = [("ht_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
-                      # General information
-                      ("name", "Arena/ArenaName", ht_xml.HTXml.ht_str),
-                      # Team
-                      ("team_ht_id", "Arena/Team/TeamID", ht_xml.HTXml.ht_int),
-                      ("team_name", "Arena/Team/TeamName", ht_xml.HTXml.ht_str),
-                      # Country
-                      ("country_ht_id", "Arena/League/LeagueID", ht_xml.HTXml.ht_int),
-                      ("country_name", "Arena/League/LeagueName", ht_xml.HTXml.ht_str),
-                      # Region
-                      ("region_ht_id", "Arena/Region/RegionID", ht_xml.HTXml.ht_int),
-                      ("region_name", "Arena/Region/RegionName", ht_xml.HTXml.ht_str),
-                      # Current capacity
-                      ("current_capacity", "Arena/CurrentCapacity", ht_xml.HTXml.ht_arena_capacity),
-                      # Expanded capacity
-                      ("expanded_capacity", "Arena/ExpandedCapacity", ht_xml.HTXml.ht_arena_capacity),
-                      ]
+    _ht_attributes = [
+        ("ht_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
+        # General information
+        ("name", "Arena/ArenaName", ht_xml.HTXml.ht_str),
+        # Team
+        ("team_ht_id", "Arena/Team/TeamID", ht_xml.HTXml.ht_int),
+        ("team_name", "Arena/Team/TeamName", ht_xml.HTXml.ht_str),
+        # Country
+        ("country_ht_id", "Arena/League/LeagueID", ht_xml.HTXml.ht_int),
+        ("country_name", "Arena/League/LeagueName", ht_xml.HTXml.ht_str),
+        # Region
+        ("region_ht_id", "Arena/Region/RegionID", ht_xml.HTXml.ht_int),
+        ("region_name", "Arena/Region/RegionName", ht_xml.HTXml.ht_str),
+        # Current capacity
+        ("current_capacity", "Arena/CurrentCapacity",
+         ht_xml.HTXml.ht_arena_capacity),
+        # Expanded capacity
+        ("expanded_capacity", "Arena/ExpandedCapacity",
+         ht_xml.HTXml.ht_arena_capacity),
+    ]
 
     def __init__(self, ht_id=None, **kwargs):
         """
@@ -44,7 +47,8 @@ class HTArena(ht_model.HTModel):
         super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<{self.__class__.__name__} object : {self.name} ({self.ht_id})>"
+        return f"<{self.__class__.__name__} object : " \
+               f"{self.name} ({self.ht_id})>"
 
     @property
     def team(self):

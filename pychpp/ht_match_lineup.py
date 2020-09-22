@@ -19,12 +19,16 @@ class HTMatchLineup(ht_model.HTModel):
                       ("is_youth", "IsYouth", ht_xml.HTXml.ht_bool),
 
                       # Home team
-                      ("home_team_id", "HomeTeam/HomeTeamID", ht_xml.HTXml.ht_int),
-                      ("home_team_name", "HomeTeam/HomeTeamName", ht_xml.HTXml.ht_str),
+                      ("home_team_id", "HomeTeam/HomeTeamID",
+                       ht_xml.HTXml.ht_int),
+                      ("home_team_name", "HomeTeam/HomeTeamName",
+                       ht_xml.HTXml.ht_str),
 
                       # Away team
-                      ("away_team_id", "AwayTeam/AwayTeamID", ht_xml.HTXml.ht_int),
-                      ("away_team_name", "AwayTeam/AwayTeamName", ht_xml.HTXml.ht_str),
+                      ("away_team_id", "AwayTeam/AwayTeamID",
+                       ht_xml.HTXml.ht_int),
+                      ("away_team_name", "AwayTeam/AwayTeamName",
+                       ht_xml.HTXml.ht_str),
 
                       # Arena
                       ("arena_id", "Arena/ArenaID", ht_xml.HTXml.ht_int),
@@ -34,7 +38,8 @@ class HTMatchLineup(ht_model.HTModel):
                       ("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
                       ("team_name", "Team/TeamName", ht_xml.HTXml.ht_str),
                       ("team_xp", "Team/ExperienceLevel", ht_xml.HTXml.ht_int),
-                      ("team_play_style", "Team/StyleOfPlay", ht_xml.HTXml.ht_int),
+                      ("team_play_style", "Team/StyleOfPlay",
+                       ht_xml.HTXml.ht_int),
                       ]
 
     def __init__(self, ht_id, team_id, source="hattrick", **kwargs):
@@ -43,7 +48,8 @@ class HTMatchLineup(ht_model.HTModel):
 
         :param ht_id: Hattrick ID of match
         :param team_id: Hattrick ID of team
-        :param source: hattrick source to request ('hattrick', 'youth' or 'hto')
+        :param source: hattrick source to request
+                       ('hattrick', 'youth' or 'hto')
         :type ht_id: int
         :type team_id: int
         :type source: str
@@ -54,7 +60,8 @@ class HTMatchLineup(ht_model.HTModel):
         if not isinstance(team_id, int):
             raise ValueError("team_id must be an integer")
         elif source not in ("hattrick", "youth", "htointegrated"):
-            raise ValueError("source must be equal to 'hattrick, 'youth' or 'htointegrated'")
+            raise ValueError("source must be equal "
+                             "to 'hattrick, 'youth' or 'htointegrated'")
 
         self._REQUEST_ARGS = dict()
         self._REQUEST_ARGS["matchID"] = str(ht_id)
@@ -64,7 +71,8 @@ class HTMatchLineup(ht_model.HTModel):
         super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<HTMatchLineup object : {self.home_team_name} - {self.away_team_name} ({self.ht_id})>"
+        return f"<HTMatchLineup object : " \
+               f"{self.home_team_name} - {self.away_team_name} ({self.ht_id})>"
 
     @property
     def home_team(self):
@@ -87,4 +95,6 @@ class HTMatchLineup(ht_model.HTModel):
         return [ht_player.HTLineupPlayer(chpp=self._chpp,
                                          data=p_data,
                                          team_ht_id=self.team_id,
-                                         is_youth=self.is_youth) for p_data in self._data.find("Team").find("Lineup").findall("Player")]
+                                         is_youth=self.is_youth)
+                for p_data
+                in self._data.find("Team").find("Lineup").findall("Player")]

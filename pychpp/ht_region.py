@@ -11,12 +11,18 @@ class HTRegion(ht_model.HTModel):
 
     _URL_PATH = "/World/Regions/Region.aspx?RegionID="
 
-    _ht_attributes = [("ht_id", "League/Region/RegionID", ht_xml.HTXml.ht_int,),
-                      ("name", "League/Region/RegionName", ht_xml.HTXml.ht_str,),
-                      ("number_of_users", "League/Region/NumberOfUsers", ht_xml.HTXml.ht_int,),
-                      ("number_of_online", "League/Region/NumberOfOnline", ht_xml.HTXml.ht_int,),
-                      ("weather", "League/Region/WeatherID", ht_xml.HTXml.ht_int,),
-                      ("tomorrow_weather", "League/Region/TomorrowWeatherID", ht_xml.HTXml.ht_int,),
+    _ht_attributes = [("ht_id", "League/Region/RegionID",
+                       ht_xml.HTXml.ht_int,),
+                      ("name", "League/Region/RegionName",
+                       ht_xml.HTXml.ht_str,),
+                      ("number_of_users", "League/Region/NumberOfUsers",
+                       ht_xml.HTXml.ht_int,),
+                      ("number_of_online", "League/Region/NumberOfOnline",
+                       ht_xml.HTXml.ht_int,),
+                      ("weather", "League/Region/WeatherID",
+                       ht_xml.HTXml.ht_int,),
+                      ("tomorrow_weather", "League/Region/TomorrowWeatherID",
+                       ht_xml.HTXml.ht_int,),
 
                       ]
 
@@ -24,7 +30,9 @@ class HTRegion(ht_model.HTModel):
         """
         Initialize HTRegion instance
 
-        :param ht_id: arena Hattrick ID (if none, fetch the primary club arena of connected user), defaults to None
+        :param ht_id: arena Hattrick ID (if none,
+                      fetch the primary club arena of connected user),
+                      defaults to None
         :key chpp: CHPP instance of connected user
         :type ht_id: int, optional
         :type chpp: CHPP
@@ -37,4 +45,5 @@ class HTRegion(ht_model.HTModel):
         super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<{self.__class__.__name__} object : {self.name} ({self.ht_id})>"
+        return f"<{self.__class__.__name__} object : " \
+               f"{self.name} ({self.ht_id})>"

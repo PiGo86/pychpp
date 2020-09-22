@@ -12,7 +12,8 @@ class HTCoreTeam(ht_model.HTModel):
         """
         Initialize HTCoreTeam instance
 
-        :param ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
+        :param ht_id: team Hattrick ID
+        (if none, fetch the primary club of connected user), defaults to None
         :key chpp: CHPP instance of connected user
         :type ht_id: int, optional
         :type chpp: CHPP
@@ -25,7 +26,8 @@ class HTCoreTeam(ht_model.HTModel):
         super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<{str(self.__class__.__name__)} object : {self.name} ({self.ht_id}) >"
+        return f"<{str(self.__class__.__name__)} object : " \
+               f"{self.name} ({self.ht_id}) >"
 
 
 class HTTeam(HTCoreTeam):
@@ -44,61 +46,136 @@ class HTTeam(HTCoreTeam):
         ht_filter = f"[TeamID='{self._REQUEST_ARGS.get('teamID', '')}']" if (
             self._REQUEST_ARGS.get("teamID", "")) else ""
 
-        return [("ht_id", f"Teams/Team{ht_filter}/TeamID", ht_xml.HTXml.ht_int),
+        return [("ht_id",
+                 f"Teams/Team{ht_filter}/TeamID",
+                 ht_xml.HTXml.ht_int),
                 # General team information
-                ("name", f"Teams/Team{ht_filter}/TeamName", ht_xml.HTXml.ht_str),
-                ("short_name", f"Teams/Team{ht_filter}/ShortTeamName", ht_xml.HTXml.ht_str),
-                ("is_primary_club", f"Teams/Team{ht_filter}/IsPrimaryClub", ht_xml.HTXml.ht_bool),
-                ("founded_date", f"Teams/Team{ht_filter}/FoundedDate", ht_xml.HTXml.ht_datetime_from_text),
-                ("is_bot", f"Teams/Team{ht_filter}/BotStatus/IsBot", ht_xml.HTXml.ht_bool),
+                ("name",
+                 f"Teams/Team{ht_filter}/TeamName",
+                 ht_xml.HTXml.ht_str),
+                ("short_name",
+                 f"Teams/Team{ht_filter}/ShortTeamName",
+                 ht_xml.HTXml.ht_str),
+                ("is_primary_club",
+                 f"Teams/Team{ht_filter}/IsPrimaryClub",
+                 ht_xml.HTXml.ht_bool),
+                ("founded_date",
+                 f"Teams/Team{ht_filter}/FoundedDate",
+                 ht_xml.HTXml.ht_datetime_from_text),
+                ("is_bot",
+                 f"Teams/Team{ht_filter}/BotStatus/IsBot",
+                 ht_xml.HTXml.ht_bool),
                 # Arena
-                ("arena_ht_id", f"Teams/Team{ht_filter}/Arena/ArenaID", ht_xml.HTXml.ht_int),
-                ("arena_name", f"Teams/Team{ht_filter}/Arena/ArenaName", ht_xml.HTXml.ht_str),
+                ("arena_ht_id",
+                 f"Teams/Team{ht_filter}/Arena/ArenaID",
+                 ht_xml.HTXml.ht_int),
+                ("arena_name",
+                 f"Teams/Team{ht_filter}/Arena/ArenaName",
+                 ht_xml.HTXml.ht_str),
                 # Country
-                ("country_ht_id", f"Teams/Team{ht_filter}/Country/CountryID", ht_xml.HTXml.ht_int),
-                ("country_name", f"Teams/Team{ht_filter}/Country/CountryName", ht_xml.HTXml.ht_str),
+                ("country_ht_id",
+                 f"Teams/Team{ht_filter}/Country/CountryID",
+                 ht_xml.HTXml.ht_int),
+                ("country_name",
+                 f"Teams/Team{ht_filter}/Country/CountryName",
+                 ht_xml.HTXml.ht_str),
                 # Region
-                ("region_ht_id", f"Teams/Team{ht_filter}/Region/RegionID", ht_xml.HTXml.ht_int),
-                ("region_name", f"Teams/Team{ht_filter}/Region/RegionID", ht_xml.HTXml.ht_str),
+                ("region_ht_id",
+                 f"Teams/Team{ht_filter}/Region/RegionID",
+                 ht_xml.HTXml.ht_int),
+                ("region_name",
+                 f"Teams/Team{ht_filter}/Region/RegionID",
+                 ht_xml.HTXml.ht_str),
                 # Trainer
-                ("trainer_ht_id", f"Teams/Team{ht_filter}/Trainer/PlayerID", ht_xml.HTXml.ht_int),
+                ("trainer_ht_id",
+                 f"Teams/Team{ht_filter}/Trainer/PlayerID",
+                 ht_xml.HTXml.ht_int),
                 # Homepage
-                ("homepage", f"Teams/Team{ht_filter}/HomePage", ht_xml.HTXml.ht_str),
+                ("homepage",
+                 f"Teams/Team{ht_filter}/HomePage",
+                 ht_xml.HTXml.ht_str),
                 # Cup
-                ("still_in_cup", f"Teams/Team{ht_filter}/Cup/StillinCup", ht_xml.HTXml.ht_bool),
-                ("cup_ht_id", f"Teams/Team{ht_filter}/Cup/CupID", ht_xml.HTXml.ht_int),
-                ("cup_name", f"Teams/Team{ht_filter}/Cup/CupName", ht_xml.HTXml.ht_str),
-                ("cup_league_level", f"Teams/Team{ht_filter}/Cup/CupLeagueLevel", ht_xml.HTXml.ht_int),
-                ("cup_level", f"Teams/Team{ht_filter}/Cup/CupLevel", ht_xml.HTXml.ht_int),
-                ("cup_level_index", f"Teams/Team{ht_filter}/Cup/CupLevelIndex", ht_xml.HTXml.ht_int),
-                ("cup_match_round", f"Teams/Team{ht_filter}/Cup/MatchRound", ht_xml.HTXml.ht_int),
-                ("cup_match_rounds_left", f"Teams/Team{ht_filter}/Cup/MatchRoundsLeft", ht_xml.HTXml.ht_int),
+                ("still_in_cup",
+                 f"Teams/Team{ht_filter}/Cup/StillinCup",
+                 ht_xml.HTXml.ht_bool),
+                ("cup_ht_id",
+                 f"Teams/Team{ht_filter}/Cup/CupID",
+                 ht_xml.HTXml.ht_int),
+                ("cup_name",
+                 f"Teams/Team{ht_filter}/Cup/CupName",
+                 ht_xml.HTXml.ht_str),
+                ("cup_league_level",
+                 f"Teams/Team{ht_filter}/Cup/CupLeagueLevel",
+                 ht_xml.HTXml.ht_int),
+                ("cup_level",
+                 f"Teams/Team{ht_filter}/Cup/CupLevel",
+                 ht_xml.HTXml.ht_int),
+                ("cup_level_index",
+                 f"Teams/Team{ht_filter}/Cup/CupLevelIndex",
+                 ht_xml.HTXml.ht_int),
+                ("cup_match_round",
+                 f"Teams/Team{ht_filter}/Cup/MatchRound",
+                 ht_xml.HTXml.ht_int),
+                ("cup_match_rounds_left",
+                 f"Teams/Team{ht_filter}/Cup/MatchRoundsLeft",
+                 ht_xml.HTXml.ht_int),
                 # PowerRating
-                ("power_rating_global_ranking", f"Teams/Team{ht_filter}/PowerRating/GlobalRanking", ht_xml.HTXml.ht_int),
-                ("power_rating_league_ranking", f"Teams/Team{ht_filter}/PowerRating/LeagueRanking", ht_xml.HTXml.ht_int),
-                ("power_rating_region_ranking", f"Teams/Team{ht_filter}/PowerRating/RegionRanking", ht_xml.HTXml.ht_int),
-                ("power_rating", f"Teams/Team{ht_filter}/PowerRating/PowerRating", ht_xml.HTXml.ht_int),
+                ("power_rating_global_ranking",
+                 f"Teams/Team{ht_filter}/PowerRating/GlobalRanking",
+                 ht_xml.HTXml.ht_int),
+                ("power_rating_league_ranking",
+                 f"Teams/Team{ht_filter}/PowerRating/LeagueRanking",
+                 ht_xml.HTXml.ht_int),
+                ("power_rating_region_ranking",
+                 f"Teams/Team{ht_filter}/PowerRating/RegionRanking",
+                 ht_xml.HTXml.ht_int),
+                ("power_rating",
+                 f"Teams/Team{ht_filter}/PowerRating/PowerRating",
+                 ht_xml.HTXml.ht_int),
 
                 # User
-                ("user_ht_id", "User/UserID", ht_xml.HTXml.ht_int),
-                ("supporter_tier", "User/SupporterTier", ht_xml.HTXml.ht_str),
-                ("user_login", "User/Loginname", ht_xml.HTXml.ht_str),
-                ("user_fullname", "User/Name", ht_xml.HTXml.ht_str),
-                ("user_icq", "User/ICQ", ht_xml.HTXml.ht_str),
-                ("user_signup_date", "User/SignupDate", ht_xml.HTXml.ht_datetime_from_text),
-                ("user_activation_date", "User/ActivationDate", ht_xml.HTXml.ht_datetime_from_text),
-                ("user_last_login_date", "User/LastLoginDate", ht_xml.HTXml.ht_datetime_from_text),
-                ("user_has_manager_license", "User/HasManagerLicese", ht_xml.HTXml.ht_bool),
+                ("user_ht_id",
+                 "User/UserID",
+                 ht_xml.HTXml.ht_int),
+                ("supporter_tier",
+                 "User/SupporterTier",
+                 ht_xml.HTXml.ht_str),
+                ("user_login",
+                 "User/Loginname",
+                 ht_xml.HTXml.ht_str),
+                ("user_fullname",
+                 "User/Name",
+                 ht_xml.HTXml.ht_str),
+                ("user_icq",
+                 "User/ICQ",
+                 ht_xml.HTXml.ht_str),
+                ("user_signup_date",
+                 "User/SignupDate",
+                 ht_xml.HTXml.ht_datetime_from_text),
+                ("user_activation_date",
+                 "User/ActivationDate",
+                 ht_xml.HTXml.ht_datetime_from_text),
+                ("user_last_login_date",
+                 "User/LastLoginDate",
+                 ht_xml.HTXml.ht_datetime_from_text),
+                ("user_has_manager_license",
+                 "User/HasManagerLicese",
+                 ht_xml.HTXml.ht_bool),
                 # Youth team
-                ("youth_team_ht_id", f"Teams/Team{ht_filter}/YouthTeamID", ht_xml.HTXml.ht_int),
-                ("youth_team_name", f"Teams/Team{ht_filter}/YouthTeamName", ht_xml.HTXml.ht_str),
+                ("youth_team_ht_id",
+                 f"Teams/Team{ht_filter}/YouthTeamID",
+                 ht_xml.HTXml.ht_int),
+                ("youth_team_name",
+                 f"Teams/Team{ht_filter}/YouthTeamName",
+                 ht_xml.HTXml.ht_str),
                 ]
 
     def __init__(self, **kwargs):
         """
         Initialize HTTeam instance
 
-        :key ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
+        :key ht_id: team Hattrick ID
+        (if none, fetch the primary club of connected user), defaults to None
         :key chpp: CHPP instance of connected user
         :type ht_id: int, optional
         :type chpp: CHPP
@@ -118,14 +195,16 @@ class HTTeam(HTCoreTeam):
     @property
     def players(self):
         """Players list of current team"""
-        data = self._chpp.request(file="players",
-                                  version="2.4",
-                                  actionType="view",
-                                  teamID=self.ht_id).find("Team").find("PlayerList")
+        data = self._chpp.request(
+            file="players",
+            version="2.4",
+            actionType="view",
+            teamID=self.ht_id).find("Team").find("PlayerList")
 
         return [ht_player.HTPlayer(chpp=self._chpp,
                                    data=p_data,
-                                   team_ht_id=self.ht_id) for p_data in data.findall("Player")]
+                                   team_ht_id=self.ht_id)
+                for p_data in data.findall("Player")]
 
     @property
     def youth_team(self):
@@ -150,32 +229,55 @@ class HTYouthTeam(HTCoreTeam):
 
     _URL_PATH = "/Club/Youth/?YouthTeamID="
 
-    _ht_attributes = [("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
+    _ht_attributes = [("ht_id", "YouthTeam/YouthTeamID",
+                       ht_xml.HTXml.ht_int,),
                       # General information
-                      ("name", "YouthTeam/YouthTeamName", ht_xml.HTXml.ht_str,),
-                      ("short_name", "YouthTeam/ShortTeamName", ht_xml.HTXml.ht_str,),
-                      ("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
-                      ("created_date", "YouthTeam/CreatedDate", ht_xml.HTXml.ht_datetime_from_text,),
+                      ("name", "YouthTeam/YouthTeamName",
+                       ht_xml.HTXml.ht_str,),
+                      ("short_name", "YouthTeam/ShortTeamName",
+                       ht_xml.HTXml.ht_str,),
+                      ("ht_id", "YouthTeam/YouthTeamID",
+                       ht_xml.HTXml.ht_int,),
+                      ("created_date", "YouthTeam/CreatedDate",
+                       ht_xml.HTXml.ht_datetime_from_text,),
                       # Country
-                      ("country_id", "YouthTeam/Country/CountryID", ht_xml.HTXml.ht_int,),
-                      ("country_name", "YouthTeam/Country/CountryName", ht_xml.HTXml.ht_str,),
+                      ("country_id", "YouthTeam/Country/CountryID",
+                       ht_xml.HTXml.ht_int,),
+                      ("country_name", "YouthTeam/Country/CountryName",
+                       ht_xml.HTXml.ht_str,),
                       # Region
-                      ("region_id", "YouthTeam/Region/RegionID", ht_xml.HTXml.ht_int,),
-                      ("region_name", "YouthTeam/Region/RegionName", ht_xml.HTXml.ht_str,),
+                      ("region_id", "YouthTeam/Region/RegionID",
+                       ht_xml.HTXml.ht_int,),
+                      ("region_name", "YouthTeam/Region/RegionName",
+                       ht_xml.HTXml.ht_str,),
                       # Arena
-                      ("arena_id", "YouthTeam/YouthArena/YouthArenaID", ht_xml.HTXml.ht_int,),
-                      ("arena_name", "YouthTeam/YouthArena/YouthArenaName", ht_xml.HTXml.ht_str,),
+                      ("arena_id", "YouthTeam/YouthArena/YouthArenaID",
+                       ht_xml.HTXml.ht_int,),
+                      ("arena_name", "YouthTeam/YouthArena/YouthArenaName",
+                       ht_xml.HTXml.ht_str,),
                       # League
-                      ("league_id", "YouthTeam/YouthLeague/YouthLeagueID", ht_xml.HTXml.ht_int,),
-                      ("league_name", "YouthTeam/YouthLeague/YouthLeagueName", ht_xml.HTXml.ht_str,),
-                      ("league_status", "YouthTeam/YouthLeague/YouthLeagueStatus", ht_xml.HTXml.ht_int,),
+                      ("league_id", "YouthTeam/YouthLeague/YouthLeagueID",
+                       ht_xml.HTXml.ht_int,),
+                      ("league_name", "YouthTeam/YouthLeague/YouthLeagueName",
+                       ht_xml.HTXml.ht_str,),
+                      ("league_status",
+                       "YouthTeam/YouthLeague/YouthLeagueStatus",
+                       ht_xml.HTXml.ht_int,),
                       # Senior team
-                      ("senior_team_id", "YouthTeam/OwningTeam/MotherTeamID", ht_xml.HTXml.ht_int,),
-                      ("senior_team_name", "YouthTeam/OwningTeam/MotherTeamName", ht_xml.HTXml.ht_str,),
+                      ("senior_team_id",
+                       "YouthTeam/OwningTeam/MotherTeamID",
+                       ht_xml.HTXml.ht_int,),
+                      ("senior_team_name",
+                       "YouthTeam/OwningTeam/MotherTeamName",
+                       ht_xml.HTXml.ht_str,),
                       # Trainer
-                      ("trainer_id", "YouthTeam/YouthTrainer/YouthPlayerID", ht_xml.HTXml.ht_int,),
+                      ("trainer_id",
+                       "YouthTeam/YouthTrainer/YouthPlayerID",
+                       ht_xml.HTXml.ht_int,),
                       # Next training match date
-                      ("next_training_match_date", "YouthTeam/NextTrainingMatchDate", ht_xml.HTXml.ht_datetime_from_text,),
+                      ("next_training_match_date",
+                       "YouthTeam/NextTrainingMatchDate",
+                       ht_xml.HTXml.ht_datetime_from_text,),
                       ]
 
     def __init__(self, **kwargs):
@@ -183,7 +285,8 @@ class HTYouthTeam(HTCoreTeam):
         Initialize HTYouthTeam instance
 
         :key chpp: CHPP instance of connected user
-        :key ht_id: team Hattrick ID (if none, fetch the primary club of connected user), defaults to None
+        :key ht_id: team Hattrick ID
+        (if none, fetch the primary club of connected user), defaults to None
         :type chpp: CHPP
         :type ht_id: int, optional
         """
@@ -208,4 +311,5 @@ class HTYouthTeam(HTCoreTeam):
 
         return [ht_player.HTYouthPlayer(chpp=self._chpp,
                                         data=p_data,
-                                        team_ht_id=self.ht_id) for p_data in data.findall("YouthPlayer")]
+                                        team_ht_id=self.ht_id)
+                for p_data in data.findall("YouthPlayer")]
