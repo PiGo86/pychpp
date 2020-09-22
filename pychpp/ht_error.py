@@ -27,7 +27,8 @@ class HTUnknownActionTypeError(HTError):
 
 
 class HTNotOwnedTeamError(HTError):
-    """Raise when the request concerns a team not owned by the connected user"""
+    """Raise when the request concerns a team
+    not owned by the connected user"""
 
 
 class HTChallengeError(HTError):

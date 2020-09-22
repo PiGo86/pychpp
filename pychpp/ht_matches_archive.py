@@ -18,8 +18,10 @@ class HTMatchesArchive(ht_model.HTModel):
 
     _ht_attributes = [("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
                       ("team_name", "Team/TeamName", ht_xml.HTXml.ht_str),
-                      ("first_match_date", "Team/FirstMatchDate", ht_xml.HTXml.ht_datetime_from_text),
-                      ("last_match_date", "Team/LastMatchDate", ht_xml.HTXml.ht_datetime_from_text),
+                      ("first_match_date", "Team/FirstMatchDate",
+                       ht_xml.HTXml.ht_datetime_from_text),
+                      ("last_match_date", "Team/LastMatchDate",
+                       ht_xml.HTXml.ht_datetime_from_text),
                       ]
 
     def __init__(self, ht_id=None, youth=False, first_match_date=None,
@@ -41,7 +43,8 @@ class HTMatchesArchive(ht_model.HTModel):
         :type hto: bool
         :return: a ht_matches_archive.HTMatchesArchive object
         :rtype: ht_matches_archive.HTMatchesArchive
-        :param source: hattrick source to request ('hattrick', 'youth' or 'hto')
+        :param source: hattrick source to request
+        ('hattrick', 'youth' or 'hto')
         :type ht_id: int
         :type events: bool
         :type source: str
@@ -72,17 +75,21 @@ class HTMatchesArchive(ht_model.HTModel):
         self._REQUEST_ARGS = dict()
         self._REQUEST_ARGS["teamID"] = str(ht_id) if ht_id is not None else ""
         self._REQUEST_ARGS["isYouth"] = "true" if youth is True else "false"
-        self._REQUEST_ARGS["FirstMatchDate"] = (ht_xml.HTXml.ht_datetime_to_text(first_match_date)
-                                                if first_match_date is not None else "")
-        self._REQUEST_ARGS["LastMatchDate"] = (ht_xml.HTXml.ht_datetime_to_text(last_match_date)
-                                               if last_match_date is not None else "")
-        self._REQUEST_ARGS["season"] = str(season) if season is not None else ""
+        self._REQUEST_ARGS["FirstMatchDate"] = (
+            ht_xml.HTXml.ht_datetime_to_text(first_match_date)
+            if first_match_date is not None else "")
+        self._REQUEST_ARGS["LastMatchDate"] = (
+            ht_xml.HTXml.ht_datetime_to_text(last_match_date)
+            if last_match_date is not None else "")
+        self._REQUEST_ARGS["season"] = (
+            str(season) if season is not None else "")
         self._REQUEST_ARGS["HTO"] = "true" if hto is True else "false"
 
         super().__init__(**kwargs)
 
-        self.matches_list = [HTMatchesArchiveItem(chpp=self._chpp, data=data)
-                             for data in self._data.findall("Team/MatchList/Match")]
+        self.matches_list = [
+            HTMatchesArchiveItem(chpp=self._chpp, data=data)
+            for data in self._data.findall("Team/MatchList/Match")]
 
     def __getitem__(self, item):
         return self.matches_list[item]
@@ -100,7 +107,7 @@ class HTMatchesArchive(ht_model.HTModel):
             url_args.append(f'TeamID%3D{self.team_id}')
         if self._REQUEST_ARGS["season"]:
             url_args.append(f'season%3D{self._REQUEST_ARGS["season"]}')
-        
+
         return f'{self._BASE_URL}{self._URL_PATH}{"%26".join(url_args)}'
 
 
@@ -109,25 +116,33 @@ class HTMatchesArchiveItem(ht_model.HTModel):
     Object returned by HTMatchesArchve.search method
     """
 
-    _URL_PATH="/Club/Matches/Match.aspx?matchID="
+    _URL_PATH = "/Club/Matches/Match.aspx?matchID="
 
     _ht_attributes = [("ht_id", "MatchID", ht_xml.HTXml.ht_int,),
-                      ("home_team_id", "HomeTeam/HomeTeamID", ht_xml.HTXml.ht_int,),
-                      ("home_team_name", "HomeTeam/HomeTeamName", ht_xml.HTXml.ht_str,),
-                      ("away_team_id", "AwayTeam/AwayTeamID", ht_xml.HTXml.ht_int,),
-                      ("away_team_name", "AwayTeam/AwayTeamName", ht_xml.HTXml.ht_str,),
-                      ("datetime", "MatchDate", ht_xml.HTXml.ht_datetime_from_text,),
-                      ("type", "MatchType", ht_xml.HTXml.ht_int,),
+                      ("home_team_id", "HomeTeam/HomeTeamID",
+                       ht_xml.HTXml.ht_int,),
+                      ("home_team_name", "HomeTeam/HomeTeamName",
+                       ht_xml.HTXml.ht_str,),
+                      ("away_team_id", "AwayTeam/AwayTeamID",
+                       ht_xml.HTXml.ht_int,),
+                      ("away_team_name", "AwayTeam/AwayTeamName",
+                       ht_xml.HTXml.ht_str,),
+                      ("datetime", "MatchDate",
+                       ht_xml.HTXml.ht_datetime_from_text,),
+                      ("type", "MatchType",
+                       ht_xml.HTXml.ht_int,),
                       ("context_id", "MatchContextId", ht_xml.HTXml.ht_int,),
                       ("rule_id", "MatchRuleId", ht_xml.HTXml.ht_int,),
                       ("cup_level", "CupLevel", ht_xml.HTXml.ht_int,),
-                      ("cup_level_index", "CupLevelIndex", ht_xml.HTXml.ht_int,),
+                      ("cup_level_index", "CupLevelIndex",
+                       ht_xml.HTXml.ht_int,),
                       ("home_goals", "HomeGoals", ht_xml.HTXml.ht_int,),
                       ("away_goals", "AwayGoals", ht_xml.HTXml.ht_int,),
                       ]
 
     def __repr__(self):
-        return f"<{self.__class__.__name__} object : {self.home_team_name} - {self.away_team_name} ({self.ht_id})>"
+        return f"<{self.__class__.__name__} object : " \
+               f"{self.home_team_name} - {self.away_team_name} ({self.ht_id})>"
 
     @property
     def details(self):

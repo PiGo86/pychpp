@@ -30,9 +30,11 @@ class HTAge:
             self.days = age * 112 + age_days
             self.age = age
             self.age_days = age_days
-        elif isinstance(age, xml.etree.ElementTree.Element) and isinstance(age_days, xml.etree.ElementTree.Element):
+        elif (isinstance(age, xml.etree.ElementTree.Element)
+              and isinstance(age_days, xml.etree.ElementTree.Element)):
             if age.tag != "Age" or age_days.tag != "AgeDays":
-                raise HTAgeError("age must have tag 'Age' and age_days must have tag 'AgeDays'")
+                raise HTAgeError("age must have tag 'Age' "
+                                 "and age_days must have tag 'AgeDays'")
             else:
                 self.days = int(age.text) * 112 + int(age_days.text)
                 self.age = int(age.text)
@@ -47,5 +49,3 @@ class HTAge:
     def __repr__(self):
         """HTAge representation"""
         return f"<HTAge object : {self.__str__()}>"
-
-

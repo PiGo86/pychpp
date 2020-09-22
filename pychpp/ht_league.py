@@ -15,7 +15,8 @@ class HTLeague(ht_model.HTModel):
                       # General information
                       ("level", "LeagueLevel", ht_xml.HTXml.ht_int),
                       ("name", "LeagueLevelUnitName", ht_xml.HTXml.ht_str),
-                      ("current_match_round", "CurrentMatchRound", ht_xml.HTXml.ht_str),
+                      ("current_match_round", "CurrentMatchRound",
+                       ht_xml.HTXml.ht_str),
                       # Country name
                       ("country_id", "LeagueID", ht_xml.HTXml.ht_int),
                       ("country_name", "LeagueName", ht_xml.HTXml.ht_str),
@@ -33,8 +34,10 @@ class HTLeague(ht_model.HTModel):
         :type chpp: chpp.CHPP
         """
         self._REQUEST_ARGS = dict()
-        self._REQUEST_ARGS["leagueLevelUnitID"] = ht_id if ht_id is not None else ""
+        self._REQUEST_ARGS["leagueLevelUnitID"] = (
+            ht_id if ht_id is not None else "")
         super().__init__(**kwargs)
 
     def __repr__(self):
-        return f"<{self.__class__.__name__} object : {self.name} ({self.ht_id})>"
+        return f"<{self.__class__.__name__} object : " \
+               f"{self.name} ({self.ht_id})>"

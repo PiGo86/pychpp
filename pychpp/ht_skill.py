@@ -12,7 +12,8 @@ class HTCoreSkill:
     def __init__(self, name):
         """See HTSkill or HTSkillYouth init"""
         if not {name} < self.SKILLS_NAME:
-            raise HTSkillError("Skill name must be one of : " + ", ".join(self.SKILLS_NAME))
+            raise HTSkillError(
+                "Skill name must be one of : " + ", ".join(self.SKILLS_NAME))
 
         self.name = name
 
@@ -25,15 +26,18 @@ class HTSkill(HTCoreSkill):
     """
     Hattrick senior skill
     """
-    SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces", "stamina"}
-    SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill") for i in SKILLS_NAME}
+    SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer",
+                   "passing", "set_pieces", "stamina"}
+    SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill")
+                  for i in SKILLS_NAME}
 
     def __init__(self, name, level):
         """
         Initialization of a HTSkill instance :
         :param name: Name of skill (one of "keeper", "defender", "playmaker",
-                                    "winger", "scorer", "passing", "set_pieces")
-        :param level: Level (from 0 to 30, knowing that player can be divin+1, divin+2, etc...)
+                     "winger", "scorer", "passing", "set_pieces")
+        :param level: Level (from 0 to 30, knowing that player can be divin+1,
+                      divin+2, etc...)
         :type name: str
         :type level: int, None
         :return: Hattrick skill for senior player
@@ -54,7 +58,8 @@ class HTSkill(HTCoreSkill):
         if self.level is None:
             return f"{self.name.title().replace('_', ' '):<12} : 'unknown' (?)"
         else:
-            return f"{self.name.title().replace('_', ' '):<12} : {'=' * int(self.level):<20} ({int(self.level)})"
+            return f"{self.name.title().replace('_', ' '):<12} : " \
+                   f"{'=' * int(self.level):<20} ({int(self.level)})"
 
     def __int__(self):
         """Return level (integer)"""
@@ -66,15 +71,17 @@ class HTSkillYouth(HTCoreSkill):
     Hattrick Youth skill
     """
 
-    SKILLS_NAME = {"keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces"}
+    SKILLS_NAME = {"keeper", "defender", "playmaker", "winger",
+                   "scorer", "passing", "set_pieces"}
     SKILLS_TAG = {i: (i.title().replace("_", "") + "Skill",
-                      i.title().replace("_", "") + "SkillMax") for i in SKILLS_NAME}
+                      i.title().replace("_", "") + "SkillMax")
+                  for i in SKILLS_NAME}
 
     def __init__(self, name, level=None, maximum=None, maximum_reached=None):
         """
         Initialization of a HTSkillYouth instance :
         :param name: Name of skill (one of "keeper", "defender", "playmaker",
-                                    "winger", "scorer", "passing", "set_pieces")
+                     "winger", "scorer", "passing", "set_pieces")
         :param level: Level (from 0 to 8) (None if unknown)
         :param maximum: Maximum level (None if unknown)
         :param maximum_reached: If maximum is reached or not
@@ -90,7 +97,8 @@ class HTSkillYouth(HTCoreSkill):
         # Set maximum
         if maximum is not None and isinstance(maximum, int):
             if maximum > 8 or maximum < 0:
-                raise HTSkillError("maximum must be postive and inferior than 9")
+                raise HTSkillError(
+                    "maximum must be postive and inferior than 9")
             self.maximum = maximum
         else:
             self.maximum = None
@@ -134,6 +142,9 @@ class HTSkillYouth(HTCoreSkill):
         elif self.level is not None and self.maximum is None:
             diag = "=" * int(self.level) + "?" * (8 - int(self.level))
         else:
-            diag = "=" * int(self.level) + " " * (self.maximum - int(self.level)) + "X" * (8 - self.maximum)
+            diag = ("=" * int(self.level)
+                    + " " * (self.maximum - int(self.level))
+                    + "X" * (8 - self.maximum)
+                    )
 
         return f"{header} {diag} {sumup(self.level, self.maximum)}"

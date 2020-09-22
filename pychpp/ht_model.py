@@ -20,8 +20,10 @@ class HTModel:
 
         if not isinstance(chpp, _chpp.CHPP):
             raise ValueError("chpp must be a CHPP instance")
-        elif not isinstance(data, xml.etree.ElementTree.Element) and data is not None:
-            raise ValueError("data must be an xml.etree.ElementTree.Element instance")
+        elif (not isinstance(data, xml.etree.ElementTree.Element)
+              and data is not None):
+            raise ValueError("data must be an"
+                             "xml.etree.ElementTree.Element instance")
 
         self._chpp = chpp
         self._data = data
@@ -31,7 +33,6 @@ class HTModel:
             self._fetch()
 
         self._fill_ht_attributes()
-
 
     def __repr__(self):
         return f"<{self.__class__.__name__} object>"
@@ -55,5 +56,5 @@ class HTModel:
 
     @property
     def url(self):
-        return f"{self._BASE_URL}{self._URL_PATH}{self.ht_id}" if getattr(
-        self, "ht_id", None) else ""
+        return (f"{self._BASE_URL}{self._URL_PATH}{self.ht_id}"
+                if getattr(self, "ht_id", None) else "")
