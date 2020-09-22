@@ -49,7 +49,7 @@ class HTTeam(HTCoreTeam):
                 ("name", f"Teams/Team{ht_filter}/TeamName", ht_xml.HTXml.ht_str),
                 ("short_name", f"Teams/Team{ht_filter}/ShortTeamName", ht_xml.HTXml.ht_str),
                 ("is_primary_club", f"Teams/Team{ht_filter}/IsPrimaryClub", ht_xml.HTXml.ht_bool),
-                ("founded_date", f"Teams/Team{ht_filter}/FoundedDate", ht_xml.HTXml.ht_date_from_text),
+                ("founded_date", f"Teams/Team{ht_filter}/FoundedDate", ht_xml.HTXml.ht_datetime_from_text),
                 ("is_bot", f"Teams/Team{ht_filter}/BotStatus/IsBot", ht_xml.HTXml.ht_bool),
                 # Arena
                 ("arena_ht_id", f"Teams/Team{ht_filter}/Arena/ArenaID", ht_xml.HTXml.ht_int),
@@ -85,9 +85,9 @@ class HTTeam(HTCoreTeam):
                 ("user_login", "User/Loginname", ht_xml.HTXml.ht_str),
                 ("user_fullname", "User/Name", ht_xml.HTXml.ht_str),
                 ("user_icq", "User/ICQ", ht_xml.HTXml.ht_str),
-                ("user_signup_date", "User/SignupDate", ht_xml.HTXml.ht_date_from_text),
-                ("user_activation_date", "User/ActivationDate", ht_xml.HTXml.ht_date_from_text),
-                ("user_last_login_date", "User/LastLoginDate", ht_xml.HTXml.ht_date_from_text),
+                ("user_signup_date", "User/SignupDate", ht_xml.HTXml.ht_datetime_from_text),
+                ("user_activation_date", "User/ActivationDate", ht_xml.HTXml.ht_datetime_from_text),
+                ("user_last_login_date", "User/LastLoginDate", ht_xml.HTXml.ht_datetime_from_text),
                 ("user_has_manager_license", "User/HasManagerLicese", ht_xml.HTXml.ht_bool),
                 # Youth team
                 ("youth_team_ht_id", f"Teams/Team{ht_filter}/YouthTeamID", ht_xml.HTXml.ht_int),
@@ -155,7 +155,7 @@ class HTYouthTeam(HTCoreTeam):
                       ("name", "YouthTeam/YouthTeamName", ht_xml.HTXml.ht_str,),
                       ("short_name", "YouthTeam/ShortTeamName", ht_xml.HTXml.ht_str,),
                       ("ht_id", "YouthTeam/YouthTeamID", ht_xml.HTXml.ht_int,),
-                      ("created_date", "YouthTeam/CreatedDate", ht_xml.HTXml.ht_date_from_text,),
+                      ("created_date", "YouthTeam/CreatedDate", ht_xml.HTXml.ht_datetime_from_text,),
                       # Country
                       ("country_id", "YouthTeam/Country/CountryID", ht_xml.HTXml.ht_int,),
                       ("country_name", "YouthTeam/Country/CountryName", ht_xml.HTXml.ht_str,),
@@ -175,7 +175,7 @@ class HTYouthTeam(HTCoreTeam):
                       # Trainer
                       ("trainer_id", "YouthTeam/YouthTrainer/YouthPlayerID", ht_xml.HTXml.ht_int,),
                       # Next training match date
-                      ("next_training_match_date", "YouthTeam/NextTrainingMatchDate", ht_xml.HTXml.ht_date_from_text,),
+                      ("next_training_match_date", "YouthTeam/NextTrainingMatchDate", ht_xml.HTXml.ht_datetime_from_text,),
                       ]
 
     def __init__(self, **kwargs):
