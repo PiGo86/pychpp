@@ -1,5 +1,5 @@
 from pychpp import ht_model
-from pychpp import ht_arena, ht_error, ht_match, ht_player, ht_region, ht_team, ht_xml
+from pychpp import ht_error, ht_region, ht_xml
 
 
 class HTWorld(ht_model.HTModel):
@@ -83,9 +83,9 @@ class HTCountryLeague(ht_model.HTModel):
                       ("active_teams", ".//ActiveTeams", ht_xml.HTXml.ht_int,),
                       ("active_users", ".//ActiveUsers", ht_xml.HTXml.ht_int,),
                       ("waiting_users", ".//WaitingUsers", ht_xml.HTXml.ht_int,),
-                      ("training_date", ".//TrainingDate", ht_xml.HTXml.ht_date_from_text,),
-                      ("cup_match_date", ".//CupMatchDate", ht_xml.HTXml.ht_date_from_text,),
-                      ("series_match_date", ".//SeriesMatchDate", ht_xml.HTXml.ht_date_from_text,),
+                      ("training_date", ".//TrainingDate", ht_xml.HTXml.ht_datetime_from_text,),
+                      ("cup_match_date", ".//CupMatchDate", ht_xml.HTXml.ht_datetime_from_text,),
+                      ("series_match_date", ".//SeriesMatchDate", ht_xml.HTXml.ht_datetime_from_text,),
                       ("number_of_levels", ".//NumberOfLevels", ht_xml.HTXml.ht_int,)
                       ]
 

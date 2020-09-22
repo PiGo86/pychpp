@@ -2,7 +2,7 @@ import datetime
 
 from pychpp import ht_model
 from pychpp import ht_xml
-from pychpp import ht_team, ht_match
+from pychpp import ht_team, ht_match, ht_datetime
 
 
 class HTMatchesArchive(ht_model.HTModel):
@@ -18,8 +18,8 @@ class HTMatchesArchive(ht_model.HTModel):
 
     _ht_attributes = [("team_id", "Team/TeamID", ht_xml.HTXml.ht_int),
                       ("team_name", "Team/TeamName", ht_xml.HTXml.ht_str),
-                      ("first_match_date", "Team/FirstMatchDate", ht_xml.HTXml.ht_date_from_text),
-                      ("last_match_date", "Team/LastMatchDate", ht_xml.HTXml.ht_date_from_text),
+                      ("first_match_date", "Team/FirstMatchDate", ht_xml.HTXml.ht_datetime_from_text),
+                      ("last_match_date", "Team/LastMatchDate", ht_xml.HTXml.ht_datetime_from_text),
                       ]
 
     def __init__(self, ht_id=None, youth=False, first_match_date=None,
@@ -53,10 +53,16 @@ class HTMatchesArchive(ht_model.HTModel):
             raise ValueError("ht_id must be None or an integer")
         elif not isinstance(youth, bool):
             raise ValueError("youth must be a boolean")
-        elif not isinstance(first_match_date, datetime.datetime) and first_match_date is not None:
-            raise ValueError("first_match_date must be a datetime instance")
-        elif not isinstance(last_match_date, datetime.datetime) and last_match_date is not None:
-            raise ValueError("last_match_date must be a datetime instance")
+        elif (not (isinstance(first_match_date, datetime.datetime)
+                   or isinstance(first_match_date, ht_datetime.HTDatetime))
+              and first_match_date is not None):
+            raise ValueError("first_match_date must be a datetime "
+                             "or HTDatetime instance")
+        elif (not (isinstance(last_match_date, datetime.datetime)
+                   or isinstance(last_match_date, ht_datetime.HTDatetime))
+              and last_match_date is not None):
+            raise ValueError("last_match_date must be a datetime "
+                             "or HTDatetime instance")
         elif not isinstance(season, int) and season is not None:
             raise ValueError("season must be a integer")
         elif not isinstance(hto, bool):
@@ -66,9 +72,9 @@ class HTMatchesArchive(ht_model.HTModel):
         self._REQUEST_ARGS = dict()
         self._REQUEST_ARGS["teamID"] = str(ht_id) if ht_id is not None else ""
         self._REQUEST_ARGS["isYouth"] = "true" if youth is True else "false"
-        self._REQUEST_ARGS["FirstMatchDate"] = (ht_xml.HTXml.ht_date_to_text(first_match_date)
+        self._REQUEST_ARGS["FirstMatchDate"] = (ht_xml.HTXml.ht_datetime_to_text(first_match_date)
                                                 if first_match_date is not None else "")
-        self._REQUEST_ARGS["LastMatchDate"] = (ht_xml.HTXml.ht_date_to_text(last_match_date)
+        self._REQUEST_ARGS["LastMatchDate"] = (ht_xml.HTXml.ht_datetime_to_text(last_match_date)
                                                if last_match_date is not None else "")
         self._REQUEST_ARGS["season"] = str(season) if season is not None else ""
         self._REQUEST_ARGS["HTO"] = "true" if hto is True else "false"
@@ -110,7 +116,7 @@ class HTMatchesArchiveItem(ht_model.HTModel):
                       ("home_team_name", "HomeTeam/HomeTeamName", ht_xml.HTXml.ht_str,),
                       ("away_team_id", "AwayTeam/AwayTeamID", ht_xml.HTXml.ht_int,),
                       ("away_team_name", "AwayTeam/AwayTeamName", ht_xml.HTXml.ht_str,),
-                      ("date", "MatchDate", ht_xml.HTXml.ht_date_from_text,),
+                      ("datetime", "MatchDate", ht_xml.HTXml.ht_datetime_from_text,),
                       ("type", "MatchType", ht_xml.HTXml.ht_int,),
                       ("context_id", "MatchContextId", ht_xml.HTXml.ht_int,),
                       ("rule_id", "MatchRuleId", ht_xml.HTXml.ht_int,),

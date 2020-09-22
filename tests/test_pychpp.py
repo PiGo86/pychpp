@@ -1,5 +1,6 @@
 import os
-import datetime
+import datetime as dt
+import pytz
 import pytest
 import re
 
@@ -18,6 +19,7 @@ from pychpp.ht_challenge import HTChallengeManager
 from pychpp.ht_league import HTLeague
 from pychpp.ht_rank import HTRank
 from pychpp.ht_world import HTCountry, HTCup, HTCountryLeague, HTRegionItem, HTWorld
+from pychpp.ht_datetime import HTDatetime
 from pychpp.ht_error import HTUnauthorizedAction, UnknownLeagueError
 
 PYCHPP_CONSUMER_KEY = os.environ["PYCHPP_CONSUMER_KEY"]
@@ -101,6 +103,12 @@ def test_get_specific_team(chpp):
     assert team.is_bot is False
     assert team.power_rating > 0
     assert team.url == "https://www.hattrick.org/goto.ashx?path=/Club/?TeamID=591993"
+    assert team.founded_date == HTDatetime(year=2007,
+                                           month=5,
+                                           day=8,
+                                           hour=2,
+                                           minute=58,
+                                           )
 
     user = team.user
     assert isinstance(user, HTUser)
@@ -251,14 +259,16 @@ def test_get_current_user_matches_archive(chpp):
     assert isinstance(m.url, str)
     assert re.match(MATCH_PATTERN, m.url)
 
-    ma2 = chpp.matches_archive(ht_id=1165592,
-                               first_match_date=datetime.datetime(2020, 1, 1),
-                               last_match_date=datetime.datetime(2020, 3, 31), )
+    ma2 = chpp.matches_archive(
+        ht_id=1165592,
+        first_match_date=HTDatetime.from_calendar(2020, 1, 1),
+        last_match_date=HTDatetime.from_calendar(2020, 3, 31),
+        )
 
     assert ma2[0].ht_id == 652913955
     assert ma2[0].home_team_name == "Les Poitevins de La Chapelle"
     assert ma2[0].away_team_name == "FC Traversonne"
-    assert ma2[0].date == datetime.datetime(2020, 1, 1, 15, 10)
+    assert ma2[0].datetime == HTDatetime.from_calendar(2020, 1, 1, 15, 10, 0)
     assert ma2[0].type == 5
     assert ma2[0].context_id == 0
     assert ma2[0].rule_id == 0
@@ -269,21 +279,24 @@ def test_get_current_user_matches_archive(chpp):
     assert ma2[0].url == "https://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=652913955"
 
     for m in ma2:
-        assert datetime.datetime(
-            2020, 1, 1) <= m.date <= datetime.datetime(2020, 3, 31)
+        assert (HTDatetime.from_calendar(2020, 1, 1)
+                <= m.datetime <=
+                HTDatetime.from_calendar(2020, 3, 31))
 
 
 def test_get_other_user_matches_archives(chpp):
-    ma1 = chpp.matches_archive(ht_id=1755906,
-                               first_match_date=datetime.datetime(2018, 4, 10),
-                               last_match_date=datetime.datetime(2018, 4, 30),
-                               )
+    ma1 = chpp.matches_archive(
+        ht_id=1755906,
+        first_match_date=HTDatetime.from_calendar(2018, 4, 10),
+        last_match_date=HTDatetime.from_calendar(2018, 4, 30),
+        )
 
     assert re.match(MATCH_ARCHIVE_PATTERN, ma1.url)
 
     for m in ma1:
-        assert datetime.datetime(
-            2018, 4, 10) <= m.date <= datetime.datetime(2018, 6, 30)
+        assert (HTDatetime.from_calendar(2018, 4, 10)
+                <= m.datetime <=
+                HTDatetime.from_calendar(2018, 6, 30))
         assert 1755906 in (m.home_team_id, m.away_team_id)
         assert re.match(MATCH_PATTERN, m.url)
 
@@ -294,8 +307,9 @@ def test_get_other_user_matches_archives(chpp):
     assert re.match(MATCH_ARCHIVE_PATTERN, ma2.url)
 
     for m in ma2:
-        assert datetime.datetime(
-            2015, 10, 26) <= m.date <= datetime.datetime(2016, 2, 14)
+        assert (HTDatetime.from_calendar(2015, 10, 26)
+                <= m.datetime <=
+                HTDatetime.from_calendar(2016, 2, 14))
         assert 1755906 in (m.home_team_id, m.away_team_id)
         assert re.match(MATCH_PATTERN, m.url)
 
@@ -306,7 +320,7 @@ def test_get_match(chpp):
     assert isinstance(m, HTMatch)
     assert m.ht_id == 547513790
     assert m.url == "https://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=547513790"
-    assert m.date == datetime.datetime(2015, 12, 19, 21, 0)
+    assert m.datetime == HTDatetime.from_calendar(2015, 12, 19, 21, 0)
     assert m.home_team_name == "Olympique Mig"
     assert m.away_team_name == "Camden County Jerks"
     assert m.added_minutes == 0
@@ -417,3 +431,31 @@ def test_get_world_details(chpp):
     assert re.match(COUNTRY_LEAGUE_PATTERN, portugal_details.league(ht_id=25).url)
     assert re.match(REGION_PATTERN, portugal_regions[0].region.url)
     assert re.match(CUP_PATTERN, portugal_details.league(ht_id=25).cups[0].url)
+
+
+def test_use_ht_datetime():
+
+    ht_d = HTDatetime(datetime=dt.datetime(year=2020, month=9, day=7))
+    assert (ht_d.season, ht_d.week, ht_d.weekday) == (75, 15, 1)
+    assert ht_d.league == ""
+
+    ht_d.league = "Brazil"
+    assert ht_d.season == 63
+    assert ht_d.league == "Brazil"
+
+    ht_d = ht_d + dt.timedelta(days=900)
+    assert (ht_d.season, ht_d.week, ht_d.weekday) == (71, 15, 5)
+    cet = pytz.timezone("CET")
+    date = cet.localize(dt.datetime(year=2023, month=2, day=24))
+    assert ht_d.datetime == date
+    assert ht_d.league == "Brazil"
+
+    ht_d.timezone = "America/Belize"
+    assert ht_d == HTDatetime.from_calendar(2023, 2, 23, 17,
+                                            timezone="America/Belize")
+    assert (ht_d.season, ht_d.week, ht_d.weekday) == (71, 15, 4)
+
+    ht_d = HTDatetime.from_calendar(2020, 9, 21, 1, 30)
+    assert (ht_d.season, ht_d.week, ht_d.weekday) == (76, 1, 1)
+    ht_d.timezone = "America/Bahia"
+    assert (ht_d.season, ht_d.week, ht_d.weekday) == (75, 16, 7)

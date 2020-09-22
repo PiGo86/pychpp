@@ -11,6 +11,7 @@ homepage = "https://framagit.org/Pierre86/pychpp"
 [tool.poetry.dependencies]
 python = "^3.6"
 rauth = "^0.7.3"
+pytz = "^2020.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

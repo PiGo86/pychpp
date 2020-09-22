@@ -20,8 +20,8 @@ class HTMatch(ht_model.HTModel):
                       ("rule", "Match/MatchRuleId", ht_xml.HTXml.ht_str),
                       ("cup_level", "Match/CupLevel", ht_xml.HTXml.ht_int),
                       ("cup_level_index", "Match/CupLevelIndex", ht_xml.HTXml.ht_int),
-                      ("date", "Match/MatchDate", ht_xml.HTXml.ht_date_from_text),
-                      ("finished_date", "Match/FinishedDate", ht_xml.HTXml.ht_date_from_text),
+                      ("datetime", "Match/MatchDate", ht_xml.HTXml.ht_datetime_from_text),
+                      ("finished_date", "Match/FinishedDate", ht_xml.HTXml.ht_datetime_from_text),
                       ("added_minutes", "Match/AddedMinutes", ht_xml.HTXml.ht_int),
 
                       # Home team

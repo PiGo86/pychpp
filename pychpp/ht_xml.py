@@ -1,6 +1,6 @@
 import datetime
 
-from pychpp import ht_skill, ht_age, ht_rank
+from pychpp import ht_skill, ht_age, ht_rank, ht_datetime
 
 
 class HTXml:
@@ -53,28 +53,36 @@ class HTXml:
         return events
 
     @staticmethod
-    def ht_date_from_text(data):
+    def ht_datetime_from_text(data):
         """
-        Converting strings from xml data to datetime objects
+        Converting strings from xml data to HTDatetime objects
 
         :param data: xml data representing a date and a time
         :type data: ElementTree.Element
         :return: a datetime object
-        :rtype: datetime.datetime
+        :rtype: ht_datetime.HTDatetime
         """
-        return datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+        _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+        return ht_datetime.HTDatetime(datetime=_datetime)
 
     @staticmethod
-    def ht_date_to_text(_date):
+    def ht_datetime_to_text(_datetime):
         """
-        Converting strings from xml data to datetime objects
+        Converting HTDatetime objects to string
 
-        :param _date: a datetime object
-        :type _date: datetime.datetime
+        :param _datetime: a datetime object
+        :type _datetime: datetime.datetime or ht_datetime.HTDatetime
         :return: a string representing a date and a time
         :rtype: str
         """
-        return _date.strftime("%Y-%m-%d %H:%M:%S")
+
+        # if a datetime instance is given
+        # convert it to HTDatetime in CET timezone
+        if isinstance(_datetime, datetime.datetime):
+            _datetime = ht_datetime.HTDatetime(datetime=_datetime)
+
+        _datetime.timezone = "CET"
+        return _datetime.datetime.strftime("%Y-%m-%d %H:%M:%S")
 
     @staticmethod
     def ht_match_list(data):
@@ -95,9 +103,9 @@ class HTXml:
               or (data.tag == "ExpandedCapacity" and data.attrib["Available"] == "True")):
 
             if data.find("RebuiltDate") is not None and data.find("RebuiltDate").attrib["Available"] == "True":
-                capacity['rebuilt_date'] = cls.ht_date_from_text(data.find("RebuiltDate"))
+                capacity['rebuilt_date'] = cls.ht_datetime_from_text(data.find("RebuiltDate"))
             elif data.find("ExpandedDate") is not None and data.find("ExpandedDate").attrib["Available"] == "True":
-                capacity['expanded_date'] = cls.ht_date_from_text(data.find("ExpandedDate"))
+                capacity['expanded_date'] = cls.ht_datetime_from_text(data.find("ExpandedDate"))
 
             capacity["terraces"] = int(data.find("Terraces").text)
             capacity["basic"] = int(data.find("Basic").text)
