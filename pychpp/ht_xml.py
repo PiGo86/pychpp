@@ -1,6 +1,6 @@
 import datetime
 
-from pychpp import ht_skill, ht_age, ht_rank, ht_datetime
+from pychpp import ht_skill, ht_age, ht_datetime
 
 
 class HTXml:
@@ -162,21 +162,3 @@ class HTXml:
     @staticmethod
     def ht_teams_ht_id(data):
         return [int(t.find("TeamId").text) for t in data.findall("Team")]
-
-    @staticmethod
-    def ht_ranks(data):
-        return [ht_rank.HTRank(
-            user_ht_id=int(i.find("UserId").text),
-            team_ht_id=int(i.find("TeamID").text),
-            team_name=i.find("TeamName").text,
-            position=int(i.find("Position").text),
-            position_change=int(i.find("PositionChange").text),
-            matches=int(i.find("Matches").text),
-            goals_for=int(i.find("GoalsFor").text),
-            goals_against=int(i.find("GoalsAgainst").text),
-            points=int(i.find("Points").text),
-            won=int(i.find("Won").text),
-            draws=int(i.find("Draws").text),
-            lost=int(i.find("Lost").text),
-            )
-            for i in data.findall("Team")]

@@ -1,4 +1,4 @@
-from pychpp import ht_model, ht_xml
+from pychpp import ht_model, ht_xml, ht_team
 
 
 class HTLeague(ht_model.HTModel):
@@ -20,8 +20,6 @@ class HTLeague(ht_model.HTModel):
                       # Country name
                       ("country_id", "LeagueID", ht_xml.HTXml.ht_int),
                       ("country_name", "LeagueName", ht_xml.HTXml.ht_str),
-                      # Ranks
-                      ("ranks", ".", ht_xml.HTXml.ht_ranks),
                       ]
 
     def __init__(self, ht_id=None, **kwargs):
@@ -37,6 +35,8 @@ class HTLeague(ht_model.HTModel):
         self._REQUEST_ARGS["leagueLevelUnitID"] = (
             ht_id if ht_id is not None else "")
         super().__init__(**kwargs)
+        self.teams = [ht_team.HTTeamRank(chpp=self._chpp, data=team)
+                      for team in self._data.findall("Team")]
 
     def __repr__(self):
         return f"<{self.__class__.__name__} object : " \
