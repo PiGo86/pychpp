@@ -69,6 +69,24 @@ class HTXml:
         return ht_datetime.HTDatetime(datetime=_datetime)
 
     @staticmethod
+    def opt_ht_datetime_from_text(data):
+        """
+        Converting strings from xml data to HTDatetime objects optionnaly
+
+        :param data: xml data representing a date and a time
+        :type data: ElementTree.Element
+        :return: a datetime object or None
+        :rtype: ht_datetime.HTDatetime | None
+        """
+        _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+        try:
+            _ht_date = ht_datetime.HTDatetime(datetime=_datetime)
+        except ValueError:
+            _ht_date = None
+
+        return _ht_date
+
+    @staticmethod
     def ht_datetime_to_text(_datetime):
         """
         Converting HTDatetime objects to string
