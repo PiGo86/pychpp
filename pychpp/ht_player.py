@@ -99,6 +99,13 @@ class HTPlayer(HTCorePlayer):
                       ("language", ".//PlayerLanguage", ht_xml.HTXml.ht_str,),
                       ("language_id", ".//PlayerLanguageID",
                        ht_xml.HTXml.ht_int,),
+
+                      # Trainer
+                      ("trainer_type", ".//TrainerData/TrainerType",
+                       ht_xml.HTXml.ht_int,),
+                      ("trainer_skill", ".//TrainerData/TrainerSkill",
+                       ht_xml.HTXml.ht_int,),
+
                       ("agreeability", ".//Agreeability",
                        ht_xml.HTXml.ht_int,),
                       ("aggressiveness", ".//Aggressiveness",
@@ -106,8 +113,9 @@ class HTPlayer(HTCorePlayer):
                       ("honesty", ".//Honesty", ht_xml.HTXml.ht_int,),
                       ("experience", ".//Experience", ht_xml.HTXml.ht_int,),
                       ("loyalty", ".//Loyalty", ht_xml.HTXml.ht_int,),
-                      ("aggressiveness", ".//Aggressiveness",
-                       ht_xml.HTXml.ht_int,),
+                      ("mother_club_bonus", ".//MotherClubBonus",
+                       ht_xml.HTXml.ht_bool,),
+                      ("leadership", ".//Leadership", ht_xml.HTXml.ht_int,),
                       ("specialty", ".//Specialty", ht_xml.HTXml.ht_int,),
                       ("native_country_id", ".//NativeCountryID",
                        ht_xml.HTXml.ht_int,),
@@ -118,6 +126,8 @@ class HTPlayer(HTCorePlayer):
                       ("tsi", ".//TSI", ht_xml.HTXml.ht_int,),
                       ("salary", ".//Salary", ht_xml.HTXml.ht_int,),
                       ("is_abroad", ".//IsAbroad", ht_xml.HTXml.ht_bool,),
+                      ("skills", ".//StaminaSkill/..",
+                       ht_xml.HTXml.ht_skills,),
                       ("caps", ".//Caps", ht_xml.HTXml.ht_int,),
                       ("caps_u20", ".//CapsU20", ht_xml.HTXml.ht_int,),
                       ("career_goals", ".//CareerGoals", ht_xml.HTXml.ht_int,),
@@ -139,7 +149,6 @@ class HTPlayer(HTCorePlayer):
                        ht_xml.HTXml.ht_bool,),
                       ("team_id", ".//OwningTeam/TeamID",
                        ht_xml.HTXml.ht_int,),
-                      ("skills", ".//StaminaSkill/..", ht_xml.HTXml.ht_skills,)
                       ]
 
     def __init__(self, **kwargs):
