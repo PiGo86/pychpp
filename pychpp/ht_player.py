@@ -1,5 +1,6 @@
 from pychpp import ht_model, ht_xml
 from pychpp import ht_team
+from pychpp import ht_transfer
 
 
 class HTCorePlayer(ht_model.HTModel):
@@ -170,7 +171,25 @@ class HTPlayer(HTCorePlayer):
         self._REQUEST_ARGS = dict()
         if kwargs.get("ht_id", None) is not None:
             self._REQUEST_ARGS["playerID"] = kwargs["ht_id"]
+
         super().__init__(**kwargs)
+
+        # Add transfer_details attribute
+        # By default, set it to None
+        # Filled if player is transfer listed
+        self.transfer_details = None
+
+        if self.is_transfer_listed is True:
+            self.transfer_details = (
+                ht_transfer.HTTransferDetails(chpp=self._chpp,
+                                              data=self._data,
+                                              ))
+
+            # If HTTransfertDetails.asking_price is None,
+            # it means that transfer details is not available
+            # In this, set transfer_details attribute to None
+            if self.transfer_details.asking_price is None:
+                self.transfer_details = None
 
     @property
     def team(self):

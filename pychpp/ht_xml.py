@@ -22,7 +22,10 @@ class HTXml:
 
     @staticmethod
     def ht_bool(data):
-        return True if data.text.capitalize() == "True" else False
+        if data.text in ("0", "1"):
+            return bool(int(data.text))
+        else:
+            return True if data.text.capitalize() == "True" else False
 
     @staticmethod
     def ht_goals(data):
