@@ -148,7 +148,7 @@ class HTPlayer(HTCorePlayer):
                        ht_xml.HTXml.ht_str,),
                       ("is_transfer_listed", ".//TransferListed",
                        ht_xml.HTXml.ht_bool,),
-                      ("team_id", ".//OwningTeam/TeamID",
+                      ("team_ht_id", ".//OwningTeam/TeamID",
                        ht_xml.HTXml.ht_int,),
                       ]
 
