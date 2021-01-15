@@ -3,6 +3,8 @@ import datetime as dt
 import pytz
 import pytest
 import re
+import pathlib
+import xml.etree.ElementTree
 
 from pychpp import __version__
 from pychpp import CHPP
@@ -84,6 +86,42 @@ def chpp():
                 )
 
 
+@pytest.fixture
+def mocked_chpp(monkeypatch):
+
+    ht_id_dict = {"arenadetails": ("arenaID",),
+                  "leaguedetails": ("leagueLevelUnitID",),
+                  "managercompendium": ("userId",),
+                  "matchesarchive": ("",),
+                  "matchdetails": ("matchID",),
+                  "matchlineup": ("matchID",),
+                  "playerdetails": ("playerID",),
+                  "regiondetails": ("regionID",),
+                  "teamdetails": ("teamID",),
+                  "youthplayerdetails": ("youthPlayerId",),
+                  "youthteamdetails": ("youthTeamId",),
+                  "worlddetails": ("leagueID",),
+                  }
+
+    def mock_request(*args, **kwargs):
+
+        filename = kwargs["file"]
+        suffix = "_".join([f"{i}_{kwargs[i]}" for i in ht_id_dict[filename]])
+
+        path = (pathlib.Path(__file__).parent / "test_resources"
+                / f"{filename}_{suffix}.xml"
+                )
+
+        with open(path) as f:
+            txt = f.read()
+
+        return xml.etree.ElementTree.fromstring(txt)
+
+    monkeypatch.setattr(CHPP, "request", mock_request)
+
+    return CHPP(consumer_key=None, consumer_secret=None)
+
+
 def test_get_current_team(chpp):
     team = chpp.team()
 
@@ -106,13 +144,55 @@ def test_get_current_team(chpp):
         assert isinstance(p, HTPlayer)
 
 
-def test_get_specific_team(chpp):
-    team = chpp.team(ht_id=591993)
+def test_get_specific_team(mocked_chpp):
+
+    team = mocked_chpp.team(ht_id=591993)
     assert isinstance(team, HTTeam)
+
+    assert team.user_ht_id == 6336642
+    assert team.supporter_tier == "platinium"
+    assert team.user_login == "thekiki76"
+    assert team.user_fullname == "HIDDEN"
+    assert team.user_icq == ""
+    assert team.user_signup_date == HTDatetime.from_calendar(2007, 5, 4,
+                                                             11, 49, 34)
+    assert team.user_activation_date == HTDatetime.from_calendar(2007, 5, 8,
+                                                             2, 58, 0)
+    assert team.user_last_login_date == HTDatetime.from_calendar(2021, 1, 14,
+                                                             20, 53, 41)
+    assert team.user_has_manager_license is True
+
     assert team.ht_id == 591993
     assert team.name == "thekiki's"
     assert team.short_name == 'thekikis'
     assert team.is_primary_club is True
+    assert team.founded_date == HTDatetime.from_calendar(2007, 5, 8,
+                                                         2, 58, 0)
+
+    assert team.arena_ht_id == 591993
+    assert team.arena_name == "thekiki's evil"
+
+    assert team.league_id == 5
+    assert team.league_name == "France"
+
+    assert team.country_id == 5
+    assert team.country_name == "France"
+
+    assert team.region_id == 139
+    assert team.region_name == "Haute-Normandie"
+
+    assert team.trainer_id == 336956746
+
+    assert team.homepage == "coupe-des-regions.forumpro.fr/index.htm"
+    assert team.dress_uri == "//res.hattrick.org/kits/27/261/2606/2605185/" \
+                             "matchKitSmall.png"
+    assert team.dress_alternate_uri == "//res.hattrick.org/kits/27/261/2606/" \
+                                       "2605184/matchKitSmall.png"
+
+    assert team.league_level_unit_id == 21672
+    assert team.league_level_unit_name == "V.96"
+    assert team.league_level == 5
+
     assert team.is_bot is False
     assert team.power_rating > 0
     assert team.url == "https://www.hattrick.org/goto.ashx" \
