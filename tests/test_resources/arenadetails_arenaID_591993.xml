@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>arenadetails.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-01-14 23:12:48</FetchedDate>
+  <Arena>
+    <ArenaID>591993</ArenaID>
+    <ArenaName>thekiki's evil</ArenaName>
+    <Team>
+      <TeamID>591993</TeamID>
+      <TeamName>thekiki's</TeamName>
+    </Team>
+    <League>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+    </League>
+    <Region>
+      <RegionID>139</RegionID>
+      <RegionName>Haute-Normandie</RegionName>
+    </Region>
+    <CurrentCapacity>
+      <RebuiltDate Available="True">2020-02-20 09:42:11</RebuiltDate>
+      <Terraces>33100</Terraces>
+      <Basic>14100</Basic>
+      <Roof>8200</Roof>
+      <VIP>1600</VIP>
+      <Total>57000</Total>
+    </CurrentCapacity>
+    <ExpandedCapacity Available="False" />
+  </Arena>
+</HattrickData>

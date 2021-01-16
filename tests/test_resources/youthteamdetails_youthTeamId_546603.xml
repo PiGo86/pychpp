@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>youthteam.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-01-14 23:09:51</FetchedDate>
+  <YouthTeam>
+    <YouthTeamID>546603</YouthTeamID>
+    <YouthTeamName>thebabykikis</YouthTeamName>
+    <ShortTeamName>TBK</ShortTeamName>
+    <CreatedDate>2007-05-22 14:59:00</CreatedDate>
+    <Country>
+      <CountryID>5</CountryID>
+      <CountryName>France</CountryName>
+    </Country>
+    <Region>
+      <RegionID>139</RegionID>
+      <RegionName>Haute-Normandie</RegionName>
+    </Region>
+    <YouthArena>
+      <YouthArenaID>546573</YouthArenaID>
+      <YouthArenaName>baby kikis stadium</YouthArenaName>
+    </YouthArena>
+    <YouthLeague>
+      <YouthLeagueID>594456</YouthLeagueID>
+      <YouthLeagueName>CdR Gambardella S31 poule 2</YouthLeagueName>
+      <YouthLeagueStatus>3</YouthLeagueStatus>
+    </YouthLeague>
+    <OwningTeam>
+      <MotherTeamID>591993</MotherTeamID>
+      <MotherTeamName>thekiki's</MotherTeamName>
+    </OwningTeam>
+    <YouthTrainer>
+      <YouthPlayerID>15823026</YouthPlayerID>
+    </YouthTrainer>
+    <NextTrainingMatchDate>2021-01-25 23:20:00</NextTrainingMatchDate>
+  </YouthTeam>
+</HattrickData>
