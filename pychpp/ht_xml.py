@@ -10,7 +10,10 @@ class HTXml:
 
     @staticmethod
     def ht_str(data):
-        return str(data.text)
+        if data.text is not None:
+            return str(data.text)
+        else:
+            return str()
 
     @staticmethod
     def ht_int(data):
