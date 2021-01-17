@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>arenadetails.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-01-17 14:34:14</FetchedDate>
+  <Arena>
+    <ArenaID>1956561</ArenaID>
+    <ArenaName>Red and White</ArenaName>
+    <Team>
+      <TeamID>1959999</TeamID>
+      <TeamName>Polonka</TeamName>
+    </Team>
+    <League>
+      <LeagueID>91</LeagueID>
+      <LeagueName>Bélarus</LeagueName>
+    </League>
+    <Region>
+      <RegionID>1723</RegionID>
+      <RegionName>Grodno</RegionName>
+    </Region>
+    <CurrentCapacity>
+      <RebuiltDate Available="True">2019-10-27 22:41:25</RebuiltDate>
+      <Terraces>45000</Terraces>
+      <Basic>17625</Basic>
+      <Roof>10500</Roof>
+      <VIP>1875</VIP>
+      <Total>75000</Total>
+    </CurrentCapacity>
+    <ExpandedCapacity Available="False" />
+  </Arena>
+</HattrickData>

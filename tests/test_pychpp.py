@@ -157,7 +157,7 @@ def test_get_specific_team(mocked_chpp):
     assert team.supporter_tier == "platinum"
     assert team.user_loginname == "thekiki76"
     assert team.user_name == "HIDDEN"
-    assert team.user_icq == ""
+    assert team.user_icq is None
     assert team.user_signup_date == HTDatetime.from_calendar(2007, 5, 4,
                                                              11, 49, 34)
     assert team.user_activation_date == HTDatetime.from_calendar(2007, 5, 8,
@@ -266,6 +266,125 @@ def test_get_specific_team(mocked_chpp):
     assert isinstance(youth_team, HTYouthTeam)
     assert youth_team.url == 'https://www.hattrick.org/goto.ashx?path=' \
                              '/Club/Youth/?YouthTeamID=546603'
+
+
+def test_get_specific_team_currently_playing(mocked_chpp):
+
+    team = mocked_chpp.team(ht_id=1959999)
+    assert isinstance(team, HTTeam)
+
+    assert team.ht_id == 1959999
+
+    assert team.user_ht_id == 13011389
+    assert team.user_language_id == 14
+    assert team.user_language_name == "Russian"
+    assert team.supporter_tier == "none"
+    assert team.user_loginname == "braslet"
+    assert team.user_name == "HIDDEN"
+    assert team.user_icq is None
+    assert team.user_signup_date == HTDatetime.from_calendar(2014, 9, 9,
+                                                             6, 54, 1)
+    assert team.user_activation_date == HTDatetime.from_calendar(2014, 9, 9,
+                                                                 12, 11, 0)
+    assert team.user_last_login_date == HTDatetime.from_calendar(2021, 1, 17,
+                                                                 4, 51, 59)
+    assert team.user_has_manager_license is True
+
+    assert team.name == "Polonka"
+    assert team.short_name == 'Polonka'
+    assert team.is_primary_club is True
+    assert team.founded_date == HTDatetime.from_calendar(2014, 9, 9,
+                                                         12, 11, 0)
+
+    assert team.arena_ht_id == 1956561
+    assert team.arena_name == "Red and White"
+
+    assert team.league_ht_id == 91
+    assert team.league_name == "Bélarus"
+
+    assert team.country_ht_id == 87
+    assert team.country_name == "Bélarus"
+
+    assert team.region_ht_id == 1723
+    assert team.region_name == "Grodno"
+
+    assert team.trainer_ht_id == 444145675
+
+    assert team.homepage is None
+
+    assert team.still_in_cup is None
+    assert team.cup_ht_id is None
+    assert team.cup_name is None
+    assert team.cup_league_level is None
+    assert team.cup_level is None
+    assert team.cup_level_index is None
+    assert team.cup_match_round is None
+    assert team.cup_match_rounds_left is None
+
+    assert team.power_rating_global_ranking == 768
+    assert team.power_rating_league_ranking == 5
+    assert team.power_rating_region_ranking == 1
+    assert team.power_rating == 1139
+
+    assert team.friendly_team_ht_id is None
+
+    assert team.league_level_unit_id == 60146
+    assert team.league_level_unit_name == "Vyshejshaja Liga"
+    assert team.league_level == 1
+
+    assert team.number_of_victories is None
+    assert team.number_of_undefeated is None
+
+    assert team.fan_club_ht_id == 0
+    assert team.fan_club_name is None
+    assert team.fan_club_size == 3592
+
+    assert team.logo_url == "//res.hattrick.org/teamlogo/20/196/" \
+                            "1960/1959999/1959999.png"
+
+    assert team.guestbook_items is None
+
+    assert team.press_announcement_subject is None
+    assert team.press_announcement_body is None
+    assert team.press_announcement_send_date is None
+
+    assert team.background_color is None
+    assert team.color is None
+
+    assert team.dress_uri == "//res.hattrick.org/kits/1/1/1/1/" \
+                             "matchKitSmall.png"
+    assert team.dress_alternate_uri == "//res.hattrick.org/kits/1/1/1/2/" \
+                                       "matchKitSmall.png"
+
+    assert team.is_bot is False
+
+    assert team.rank is None
+
+    assert team.youth_team_ht_id == 2544501
+    assert team.youth_team_name == "Polonka Stars"
+
+    assert team.number_of_visits == 5
+
+    assert team.url == "https://www.hattrick.org/goto.ashx" \
+                       "?path=/Club/?TeamID=1959999"
+
+    user = team.user
+    assert isinstance(user, HTUser)
+    assert user.ht_id == 13011389
+    assert user.username == 'braslet'
+    assert user.supporter_tier == 'none'
+    assert user.url == "https://www.hattrick.org/goto.ashx" \
+                       "?path=/Club/Manager/?userId=13011389"
+
+    arena = team.arena
+    assert isinstance(arena, HTArena)
+    assert arena.name == "Red and White"
+    assert re.match(ARENA_PATTERN, arena.url)
+
+    youth_team = team.youth_team
+    assert isinstance(youth_team, HTYouthTeam)
+    assert youth_team.url == 'https://www.hattrick.org/goto.ashx?path=' \
+                             '/Club/Youth/?YouthTeamID=2544501'
 
 
 def test_get_secondary_team(chpp):
