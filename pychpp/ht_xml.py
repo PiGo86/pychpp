@@ -10,22 +10,21 @@ class HTXml:
 
     @staticmethod
     def ht_str(data):
-        if data.text is not None:
-            return str(data.text)
-        else:
-            return str()
+        return str(data.text) if data.text is not None else None
 
     @staticmethod
     def ht_int(data):
-        return int(data.text)
+        return int(data.text) if data.text is not None else None
 
     @staticmethod
     def ht_float(data):
-        return float(data.text)
+        return float(data.text) if data.text is not None else None
 
     @staticmethod
     def ht_bool(data):
-        if data.text in ("0", "1"):
+        if data.text is None:
+            return None
+        elif data.text in ("0", "1"):
             return bool(int(data.text))
         else:
             return True if data.text.capitalize() == "True" else False

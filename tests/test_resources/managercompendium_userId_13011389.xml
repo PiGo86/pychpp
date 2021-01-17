@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>managercompendium.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-01-17 14:31:53</FetchedDate>
+  <Manager>
+    <UserId>13011389</UserId>
+    <Loginname>braslet</Loginname>
+    <SupporterTier>none</SupporterTier>
+    <Language>
+      <LanguageId>14</LanguageId>
+      <LanguageName>Russian</LanguageName>
+    </Language>
+    <Country>
+      <CountryId>87</CountryId>
+      <CountryName>Belarus</CountryName>
+    </Country>
+    <Teams>
+      <Team>
+        <TeamId>1959999</TeamId>
+        <TeamName>Polonka</TeamName>
+        <Arena>
+          <ArenaId>1956561</ArenaId>
+          <ArenaName>Red and White</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>91</LeagueId>
+          <LeagueName>Bélarus</LeagueName>
+        </League>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>60146</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Vyshejshaja Liga</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>1723</RegionId>
+          <RegionName>Grodno</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2544501</YouthTeamId>
+          <YouthTeamName>Polonka Stars</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>692374</YouthLeagueId>
+            <YouthLeagueName>kiitos12</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+    </Teams>
+    <NationalTeamCoach />
+  </Manager>
+</HattrickData>
