@@ -21,8 +21,11 @@ from pychpp.ht_challenge import HTChallengeManager
 from pychpp.ht_league import HTLeague
 from pychpp.ht_world import (HTCountry, HTCup, HTCountryLeague,
                              HTRegionItem, HTWorld)
+from pychpp.ht_national_teams import (HTNationalTeam, HTNationalTeams,
+                                      HTNationalTeamEntry)
 from pychpp.ht_datetime import HTDatetime
-from pychpp.ht_error import HTUnauthorizedAction, UnknownLeagueError
+from pychpp.ht_error import (HTUnauthorizedAction, UnknownLeagueError,
+                             HTUnknownTeamIdError)
 
 PYCHPP_CONSUMER_KEY = os.environ["PYCHPP_CONSUMER_KEY"]
 PYCHPP_CONSUMER_SECRET = os.environ["PYCHPP_CONSUMER_SECRET"]
@@ -728,3 +731,34 @@ def test_use_ht_datetime():
     assert (ht_d.season, ht_d.week, ht_d.weekday) == (76, 1, 1)
     ht_d.timezone = "America/Bahia"
     assert (ht_d.season, ht_d.week, ht_d.weekday) == (75, 16, 7)
+
+
+def test_get_nt_details(chpp):
+    portugal_details = chpp.national_team(ht_id=3014)
+
+    assert isinstance(portugal_details, HTNationalTeam)
+
+    assert portugal_details.ht_id == 3014
+    assert portugal_details.league_id == 25
+    assert portugal_details.league_name == "Portugal"
+    assert portugal_details.team_name == "Portugal"
+
+    with pytest.raises(HTUnknownTeamIdError):
+        chpp.national_team(ht_id=1000000)
+
+
+def test_get_nts(chpp):
+    national_teams = chpp.national_teams(ht_id=2)
+
+    assert isinstance(national_teams, HTNationalTeams)
+    assert len(national_teams.teams) > 0
+    assert national_teams.url == "https://www.hattrick.org/goto.ashx?path=" + \
+                                 "/World/NationalTeams/NationalTeams.aspx?" + \
+                                 "viewType=1&leagueOfficeTypeId=2"
+
+    portugal_entry = list(
+        filter(lambda k: k.ht_id == 3014, national_teams.teams)
+    )[0]
+    assert isinstance(portugal_entry, HTNationalTeamEntry)
+    assert portugal_entry.ht_id == 3014
+    assert portugal_entry.team_name == "Portugal"

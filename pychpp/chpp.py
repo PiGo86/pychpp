@@ -6,7 +6,8 @@ import xml.etree.ElementTree
 
 from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
                     ht_challenge, ht_match, ht_matches_archive,
-                    ht_match_lineup, ht_league, ht_world)
+                    ht_match_lineup, ht_league, ht_world,
+                    ht_national_teams)
 from pychpp import ht_error
 
 
@@ -416,3 +417,23 @@ class CHPP:
         :rtype: ht_world.HTWorld
         """
         return ht_world.HTWorld(chpp=self, **kwargs)
+
+    def national_team(self, **kwargs):
+        """
+        Get a national team from its ID
+
+        :key ht_id: Hattrick ID of the requested national team,
+        must be an int (optional)
+        :rtype: ht_national_teams.HTNationalTeam
+        """
+        return ht_national_teams.HTNationalTeam(chpp=self, **kwargs)
+
+    def national_teams(self, **kwargs):
+        """
+        Get a national team from its ID
+
+        :key ht_id: ID of NT type teams to get
+                    (2 = National teams, 4 = U-20 Teams)
+        :rtype: ht_national_teams.HTNationalTeams
+        """
+        return ht_national_teams.HTNationalTeams(chpp=self, **kwargs)
