@@ -37,7 +37,7 @@ class HTTeam(HTCoreTeam):
     """
 
     _SOURCE_FILE = "teamdetails"
-    _SOURCE_FILE_VERSION = "3.4"
+    _SOURCE_FILE_VERSION = "3.5"
 
     _URL_PATH = "/Club/?TeamID="
 
