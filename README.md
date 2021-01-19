@@ -92,6 +92,8 @@ The following table shows the relationships between pyCHPP classes and CHPP XML 
 |HTTeam|`teamdetails.xml`|
 |HTUser|`managercompendium.xml`|
 |HTWorld|`worlddetails.xml`|
+|HTWorldCupGroups|`worldcup.xml`|
+|HTWorldCupMatches|`worldcup.xml`|
 |HTYouthPlayer|`youthplayerdetails.xml`|
 |HTYouthTeam|`youthteamdetails.xml`|
 

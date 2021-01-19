@@ -83,7 +83,11 @@ class HTXml:
         :return: a datetime object or None
         :rtype: ht_datetime.HTDatetime | None
         """
+        if data.text is None:
+            return None
+
         _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+
         try:
             _ht_date = ht_datetime.HTDatetime(datetime=_datetime)
         except ValueError:
