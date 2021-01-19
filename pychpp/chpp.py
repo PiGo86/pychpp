@@ -7,7 +7,7 @@ import xml.etree.ElementTree
 from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
                     ht_challenge, ht_match, ht_matches_archive,
                     ht_match_lineup, ht_league, ht_world,
-                    ht_national_teams)
+                    ht_national_teams, ht_world_cup)
 from pychpp import ht_error
 
 
@@ -437,3 +437,30 @@ class CHPP:
         :rtype: ht_national_teams.HTNationalTeams
         """
         return ht_national_teams.HTNationalTeams(chpp=self, **kwargs)
+
+    def world_cup_groups(self, **kwargs):
+        """
+        Get the World Cup groups (AA or U-20)
+
+        :key season: global Hattrick season
+        :key cup_id: unique cup ID
+                     (137 = World Cup, 149 = U-20 World Cup)
+        :rtype: ht_world_cup.HTWorldCupGroups
+        """
+        return ht_world_cup.HTWorldCupGroups(chpp=self, **kwargs)
+
+    def world_cup_matches(self, **kwargs):
+        """
+        Get the World Cup matches (AA or U-20)
+
+        :key season: global Hattrick season
+        :key cup_id: unique cup ID
+                     (137 = World Cup, 149 = U-20 World Cup)
+        :key cup_series_unit_id: global ID of a World Cup group
+        :key match_round: key that indicates a certain round
+                          (1 = qualification round, 15 = round II,
+                          18 = round III, 21 = round IV,
+                          24 = semi-finals, 25 = final)
+        :rtype: ht_world_cup.HTWorldCupMatches
+        """
+        return ht_world_cup.HTWorldCupMatches(chpp=self, **kwargs)

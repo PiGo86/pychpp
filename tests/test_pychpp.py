@@ -23,6 +23,9 @@ from pychpp.ht_world import (HTCountry, HTCup, HTCountryLeague,
                              HTRegionItem, HTWorld)
 from pychpp.ht_national_teams import (HTNationalTeam, HTNationalTeams,
                                       HTNationalTeamEntry)
+from pychpp.ht_world_cup import (HTWorldCupGroups, HTWorldCupMatches,
+                                 HTWorldCupScore, HTWorldCupRound,
+                                 HTWorldCupMatch)
 from pychpp.ht_datetime import HTDatetime
 from pychpp.ht_error import (HTUnauthorizedAction, UnknownLeagueError,
                              HTUnknownTeamIdError)
@@ -762,3 +765,39 @@ def test_get_nts(chpp):
     assert isinstance(portugal_entry, HTNationalTeamEntry)
     assert portugal_entry.ht_id == 3014
     assert portugal_entry.team_name == "Portugal"
+
+
+def test_get_world_cup_rounds(chpp):
+    wc_groups = chpp.world_cup_groups(season=76)
+
+    assert isinstance(wc_groups, HTWorldCupGroups)
+    assert wc_groups.cup_id == 137
+    assert wc_groups.cup_name == "World Cup"
+    assert wc_groups.season == 76
+    assert isinstance(wc_groups.scores[0], HTWorldCupScore)
+    assert len(wc_groups.rounds) == 6
+    assert isinstance(wc_groups.rounds[0], HTWorldCupRound)
+
+    wc_groups_u20 = chpp.world_cup_groups(season=76, cup_id=149)
+
+    assert wc_groups_u20.cup_name == "U-20 World Cup"
+
+
+def test_get_world_cup_matches(chpp):
+    wc_matches = chpp.world_cup_matches(season=76, cup_series_unit_id=1697)
+
+    assert isinstance(wc_matches, HTWorldCupMatches)
+    assert wc_matches.cup_id == 137
+    assert wc_matches.cup_name == "World Cup"
+    assert wc_matches.season == 76
+    assert wc_matches.cup_series_unit_id == 1697
+    assert wc_matches.match_round == 1
+
+    assert len(wc_matches.matches) == 6
+    assert isinstance(wc_matches.matches[0], HTWorldCupMatch)
+    assert wc_matches.matches[0].home_team_id == 3002
+    assert wc_matches.matches[0].home_team_name == "Deutschland"
+    assert wc_matches.matches[0].match_id == 669657311
+
+    assert len(wc_matches.rounds) == 6
+    assert isinstance(wc_matches.rounds[0], HTWorldCupRound)
