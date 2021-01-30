@@ -18,7 +18,7 @@ from pychpp.ht_match_lineup import HTMatchLineup
 from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
 from pychpp.ht_skill import HTSkill, HTSkillYouth
 from pychpp.ht_challenge import HTChallengeManager
-from pychpp.ht_league import HTLeague
+from pychpp.ht_league import HTLeague, HTLeagueFixtures, HTLeagueFixturesMatch
 from pychpp.ht_world import (HTCountry, HTCup, HTCountryLeague,
                              HTRegionItem, HTWorld)
 from pychpp.ht_national_teams import (HTNationalTeam, HTNationalTeams,
@@ -801,3 +801,16 @@ def test_get_world_cup_matches(chpp):
 
     assert len(wc_matches.rounds) == 6
     assert isinstance(wc_matches.rounds[0], HTWorldCupRound)
+
+
+def test_get_league_fixtures(chpp):
+    l_fixtures = chpp.league_fixtures(ht_id=36378, season=76)
+
+    assert isinstance(l_fixtures, HTLeagueFixtures)
+    assert l_fixtures.ht_id == 36378
+    assert l_fixtures.season == 76
+    assert l_fixtures.name == "VI.390"
+
+    assert isinstance(l_fixtures.matches, list)
+    assert len(l_fixtures.matches) == 56
+    assert isinstance(l_fixtures.matches[10], HTLeagueFixturesMatch)
