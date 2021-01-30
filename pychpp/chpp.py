@@ -395,6 +395,16 @@ class CHPP:
         """
         return ht_league.HTLeague(chpp=self, **kwargs)
 
+    def league_fixtures(self, **kwargs):
+        """
+        Get a league from his Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested league, must be an int
+        :key season: season to fetch, must be an int
+        :rtype: ht_league.HTLeague
+        """
+        return ht_league.HTLeagueFixtures(chpp=self, **kwargs)
+
     def match_lineup(self, **kwargs):
         """
         Get a match lineup from its Hattrick ID

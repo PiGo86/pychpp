@@ -82,6 +82,7 @@ The following table shows the relationships between pyCHPP classes and CHPP XML 
 |HTArena|`arenadetails.xml`|
 |HTChallengeManager|`challenges.xml`|
 |HTLeague|`leaguedetails.xml`|
+|HTLeagueFixtures|`leaguefixtures.xml`|
 |HTMatch|`matchdetails.xml`|
 |HTMatchLineup|`matchlineup.xml`|
 |HTMatchesArchive|`matchesarchive.xml`|
