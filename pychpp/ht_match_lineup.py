@@ -78,11 +78,13 @@ class HTMatchLineup(ht_model.HTModel):
 
     @property
     def home_team(self):
-        return ht_team.HTTeam(chpp=self._chpp, ht_id=self.home_team_id)
+        team_cls = ht_team.HTTeam if not self.is_youth else ht_team.HTYouthTeam
+        return team_cls(chpp=self._chpp, ht_id=self.home_team_id)
 
     @property
     def away_team(self):
-        return ht_team.HTTeam(chpp=self._chpp, ht_id=self.away_team_id)
+        team_cls = ht_team.HTTeam if not self.is_youth else ht_team.HTYouthTeam
+        return team_cls(chpp=self._chpp, ht_id=self.away_team_id)
 
     @property
     def arena(self):
