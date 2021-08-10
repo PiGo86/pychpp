@@ -68,6 +68,8 @@ class HTMatchLineup(ht_model.HTModel):
         self._REQUEST_ARGS["teamID"] = str(team_id)
         self._REQUEST_ARGS["sourceSystem"] = source
 
+        self.source = source
+
         super().__init__(**kwargs)
 
     def __repr__(self):
@@ -88,7 +90,8 @@ class HTMatchLineup(ht_model.HTModel):
 
     @property
     def match(self):
-        return ht_match.HTMatch(chpp=self._chpp, ht_id=self.ht_id)
+        return ht_match.HTMatch(chpp=self._chpp, ht_id=self.ht_id,
+                                source=self.source)
 
     @property
     def lineup_players(self):
