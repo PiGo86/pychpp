@@ -117,3 +117,48 @@ class HTMatchLineup(ht_model.HTModel):
     @property
     def starting_lineup_players(self):
         return self._base_lineup_players(start=True)
+
+    @property
+    def substitutions(self):
+        return [HTSubstitution(chpp=self._chpp,
+                               data=s_data,
+                               )
+                for s_data
+                in self._data.find("Team") \
+                             .find("Substitutions")
+                             .findall("Substitution")
+                ]
+
+
+class HTSubstitution(ht_model.HTModel):
+    """
+    Player substitution
+    """
+
+    _ht_attributes = [("team_id", "TeamID", ht_xml.HTXml.ht_int),
+                      ("subject_player_id", "SubjectPlayerID",
+                       ht_xml.HTXml.ht_int),
+                      ("object_player_id", "ObjectPlayerID",
+                       ht_xml.HTXml.ht_int),
+                      ("order_type", "OrderType",
+                       ht_xml.HTXml.ht_int),
+                      ("new_position_id", "NewPositionId",
+                       ht_xml.HTXml.ht_int),
+                      ("new_position_behaviour", "NewPositionBehaviour",
+                       ht_xml.HTXml.ht_int),
+                      ("match_minute", "MatchMinute",
+                       ht_xml.HTXml.ht_int),
+                      ("match_part", "MatchPart", ht_xml.HTXml.ht_int),
+                      ]
+
+    @property
+    def subject_player(self):
+        return ht_player.HTPlayer(chpp=self._chpp,
+                                  ht_id=self.subject_player_id,
+                                  )
+
+    @property
+    def object_player(self):
+        return ht_player.HTPlayer(chpp=self._chpp,
+                                  ht_id=self.object_player_id,
+                                  )
