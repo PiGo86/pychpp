@@ -42,6 +42,10 @@ class HTMatchLineup(ht_model.HTModel):
                        ht_xml.HTXml.ht_int),
                       ]
 
+    _DEFENDERS_ROLES = {101, 102, 103, 104, 105}
+    _MIDFIELDS_ROLES = {106, 107, 108, 109, 110}
+    _FORWARDS_ROLES = {111, 112, 113}
+
     def __init__(self, ht_id, team_id, source="hattrick", **kwargs):
         """
         Initialization of a HTMatchLineup instance
@@ -95,11 +99,21 @@ class HTMatchLineup(ht_model.HTModel):
         return ht_match.HTMatch(chpp=self._chpp, ht_id=self.ht_id,
                                 source=self.source)
 
-    @property
-    def lineup_players(self):
+    def _base_lineup_players(self, start=False):
+
+        lineup_key = "Lineup" if not start else "StartingLineup"
+
         return [ht_player.HTLineupPlayer(chpp=self._chpp,
                                          data=p_data,
                                          team_ht_id=self.team_id,
                                          is_youth=self.is_youth)
                 for p_data
-                in self._data.find("Team").find("Lineup").findall("Player")]
+                in self._data.find("Team").find(lineup_key).findall("Player")]
+
+    @property
+    def lineup_players(self):
+        return self._base_lineup_players(start=False)
+
+    @property
+    def starting_lineup_players(self):
+        return self._base_lineup_players(start=True)
