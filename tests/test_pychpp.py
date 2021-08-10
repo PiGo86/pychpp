@@ -393,32 +393,32 @@ def test_get_specific_team_currently_playing(mocked_chpp):
                              '/Club/Youth/?YouthTeamID=2544501'
 
 
-def test_get_secondary_team(chpp):
-    team = chpp.team(ht_id=44307)
+def test_get_secondary_team(mocked_chpp):
+    team = mocked_chpp.team(ht_id=1755350)
 
     assert isinstance(team, HTTeam)
-    assert team.ht_id == 44307
-    assert team.name == "Grynvalla IK"
-    assert team.short_name == 'Grynvalla'
+    assert team.ht_id == 1755350
+    assert team.name == "Projet NUL Breton"
+    assert team.short_name == 'Projet'
     assert team.is_primary_club is False
     assert team.url == "https://www.hattrick.org/goto.ashx" \
-                       "?path=/Club/?TeamID=44307"
+                       "?path=/Club/?TeamID=1755350"
 
     user = team.user
     assert isinstance(user, HTUser)
-    assert user.ht_id == 182085
-    assert user.username == "Kvarak"
+    assert user.ht_id == 9638716
+    assert user.username == "Cochonstar-UHS"
     assert user.url == "https://www.hattrick.org/goto.ashx" \
-                       "?path=/Club/Manager/?userId=182085"
+                       "?path=/Club/Manager/?userId=9638716"
 
     youthteam = team.youth_team
     assert isinstance(youthteam, HTYouthTeam)
-    assert youthteam.name == "Grynets pojkar"
+    assert youthteam.name == "Les Petits Pédëstres"
     assert re.match(YOUTH_TEAM_PATTERN, youthteam.url)
 
     arena = team.arena
     assert isinstance(arena, HTArena)
-    assert arena.name == "Grynvallen"
+    assert arena.name == "Stade Walery Boczoń"
     assert re.match(ARENA_PATTERN, arena.url)
 
 
