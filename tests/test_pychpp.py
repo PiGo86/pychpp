@@ -24,7 +24,7 @@ from pychpp.ht_world import (HTCountry, HTCup, HTCountryLeague,
 from pychpp.ht_national_teams import (HTNationalTeam, HTNationalTeams,
                                       HTNationalTeamEntry)
 from pychpp.ht_world_cup import (HTWorldCupGroups, HTWorldCupMatches,
-                                 HTWorldCupScore, HTWorldCupRound,
+                                 HTWorldCupRound,
                                  HTWorldCupMatch)
 from pychpp.ht_datetime import HTDatetime
 from pychpp.ht_error import (HTUnauthorizedAction, UnknownLeagueError,
