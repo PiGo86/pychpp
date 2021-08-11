@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>managercompendium.xml</FileName>
+  <Version>1.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-08-10 23:59:19</FetchedDate>
+  <Manager>
+    <UserId>9638716</UserId>
+    <Loginname>Cochonstar-UHS</Loginname>
+    <SupporterTier>platinum</SupporterTier>
+    <LastLogins>
+      <LoginTime>2021-08-10 22:38:28 : 109.130.***.***</LoginTime>
+      <LoginTime>2021-08-10 11:38:46 : 37.185.***.***</LoginTime>
+      <LoginTime>2021-08-10 08:44:36 : 37.185.***.***</LoginTime>
+      <LoginTime>2021-08-10 03:06:40 : 109.130.***.***</LoginTime>
+      <LoginTime>2021-08-10 02:40:51 : 109.130.***.***</LoginTime>
+      <LoginTime>2021-08-10 02:40:51 : 109.130.***.***</LoginTime>
+    </LastLogins>
+    <Language>
+      <LanguageId>5</LanguageId>
+      <LanguageName>Français</LanguageName>
+    </Language>
+    <Country>
+      <CountryId>38</CountryId>
+      <CountryName>Belgium</CountryName>
+    </Country>
+    <Teams>
+      <Team>
+        <TeamId>190343</TeamId>
+        <TeamName>Projet NUL</TeamName>
+        <Arena>
+          <ArenaId>190343</ArenaId>
+          <ArenaName>Stade Jean-Pierre Foutre</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>44</LeagueId>
+          <LeagueName>Belgique</LeagueName>
+        </League>
+        <Country>
+          <CountryId>38</CountryId>
+          <CountryName>Belgique</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>23919</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.935</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>882</RegionId>
+          <RegionName>Liège</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2558557</YouthTeamId>
+          <YouthTeamName>Djeunes NULS</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>413095</YouthLeagueId>
+            <YouthLeagueName>Nullist International Comitee</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+      <Team>
+        <TeamId>1755350</TeamId>
+        <TeamName>Projet NUL Breton</TeamName>
+        <Arena>
+          <ArenaId>1751912</ArenaId>
+          <ArenaName>Stade Walery Boczoń</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>5</LeagueId>
+          <LeagueName>France</LeagueName>
+        </League>
+        <Country>
+          <CountryId>5</CountryId>
+          <CountryName>France</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>36640</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.652</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>134</RegionId>
+          <RegionName>Bretagne</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2745926</YouthTeamId>
+          <YouthTeamName>Les Petits Pédëstres</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>574775</YouthLeagueId>
+            <YouthLeagueName>Ligue Grenobloise La Vieille Furia Roja Copa</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+      <Team>
+        <TeamId>2015749</TeamId>
+        <TeamName>Projet NUL Africain</TeamName>
+        <Arena>
+          <ArenaId>2012310</ArenaId>
+          <ArenaName>Projet NUL Africain Arena</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>77</LeagueId>
+          <LeagueName>Maroc</LeagueName>
+        </League>
+        <Country>
+          <CountryId>72</CountryId>
+          <CountryName>Maroc</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>208321</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.60</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>1381</RegionId>
+          <RegionName>Bou Arfa</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2827873</YouthTeamId>
+          <YouthTeamName>Afros NUL</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>53008</YouthLeagueId>
+            <YouthLeagueName>Ligue projet NUL grenoblois</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+    </Teams>
+    <NationalTeamCoach />
+    <NationalTeamAssistant />
+    <Avatar>
+      <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/bodies/f2man1a.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/faces/f2l.png</Image>
+      </Layer>
+      <Layer x="25" y="26">
+        <Image>/Img/Avatar/eyes/e4c.png</Image>
+      </Layer>
+      <Layer x="31" y="68">
+        <Image>/Img/Avatar/mouths/m37c.png</Image>
+      </Layer>
+      <Layer x="20" y="29">
+        <Image>/Img/Avatar/noses/n18.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/hair/f2h14i.png</Image>
+      </Layer>
+    </Avatar>
+  </Manager>
+</HattrickData>

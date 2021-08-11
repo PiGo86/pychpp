@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>arenadetails.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-08-11 00:05:01</FetchedDate>
+  <Arena>
+    <ArenaID>1751912</ArenaID>
+    <ArenaName>Stade Walery Boczoń</ArenaName>
+    <Team>
+      <TeamID>1755350</TeamID>
+      <TeamName>Projet NUL Breton</TeamName>
+    </Team>
+    <League>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+    </League>
+    <Region>
+      <RegionID>134</RegionID>
+      <RegionName>Bretagne</RegionName>
+    </Region>
+    <CurrentCapacity>
+      <RebuiltDate Available="True">2021-08-08 12:17:53</RebuiltDate>
+      <Terraces>34900</Terraces>
+      <Basic>11000</Basic>
+      <Roof>6500</Roof>
+      <VIP>1264</VIP>
+      <Total>53664</Total>
+    </CurrentCapacity>
+    <ExpandedCapacity Available="False" />
+  </Arena>
+</HattrickData>

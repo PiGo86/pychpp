@@ -304,6 +304,11 @@ class HTLineupPlayer(HTCorePlayer):
         super().__init__(**kwargs)
         self.is_youth = is_youth
 
+    def __str__(self):
+        # HTLineupPlayer object has no age attribute so that
+        # __str__() special method from HTCorePlayer has to be override
+        return super().__repr__()
+
     @property
     def role_name(self):
         role_names = {100: 'Keeper', 101: 'Right back',
@@ -350,4 +355,8 @@ class HTLineupPlayer(HTCorePlayer):
 
     @property
     def url(self):
-        return self.player.url
+        return (f"{self._BASE_URL}"
+                f"/Club/Players/YouthPlayer.aspx?YouthPlayerID={self.ht_id}"
+                if self.is_youth
+                else f"{self._BASE_URL}"
+                     f"/Club/Players/Player.aspx?playerId={self.ht_id}")
