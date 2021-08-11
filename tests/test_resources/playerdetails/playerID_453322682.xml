@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>playerdetails.xml</FileName>
+  <Version>2.8</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-08-11 20:51:16</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Player>
+    <PlayerID>453372825</PlayerID>
+    <FirstName>Teodoro</FirstName>
+    <NickName></NickName>
+    <LastName>Xavier</LastName>
+    <PlayerNumber>1</PlayerNumber>
+    <Age>25</Age>
+    <AgeDays>38</AgeDays>
+    <NextBirthDay>2021-10-24 23:40:00</NextBirthDay>
+    <ArrivalDate>2020-07-13 23:40:00</ArrivalDate>
+    <PlayerForm>5</PlayerForm>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Statement></Statement>
+    <PlayerLanguage>Português</PlayerLanguage>
+    <PlayerLanguageID>11</PlayerLanguageID>
+    <TrainerData />
+    <OwningTeam>
+      <TeamID>86324</TeamID>
+      <TeamName>Apanha Bolas FC</TeamName>
+      <LeagueID>25</LeagueID>
+    </OwningTeam>
+    <Salary>9900</Salary>
+    <IsAbroad>False</IsAbroad>
+    <Agreeability>2</Agreeability>
+    <Aggressiveness>4</Aggressiveness>
+    <Honesty>3</Honesty>
+    <Experience>4</Experience>
+    <Loyalty>20</Loyalty>
+    <MotherClubBonus>True</MotherClubBonus>
+    <Leadership>6</Leadership>
+    <Specialty>2</Specialty>
+    <NativeCountryID>23</NativeCountryID>
+    <NativeLeagueID>25</NativeLeagueID>
+    <NativeLeagueName>Portugal</NativeLeagueName>
+    <TSI>1950</TSI>
+    <PlayerSkills>
+      <StaminaSkill>7</StaminaSkill>
+    </PlayerSkills>
+    <Caps>0</Caps>
+    <CapsU20>0</CapsU20>
+    <CareerGoals>0</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <CupGoals>0</CupGoals>
+    <FriendliesGoals>0</FriendliesGoals>
+    <MatchesCurrentTeam>56</MatchesCurrentTeam>
+    <GoalsCurrentTeam>0</GoalsCurrentTeam>
+    <TransferListed>False</TransferListed>
+    <TransferDetails />
+  </Player>
+</HattrickData>

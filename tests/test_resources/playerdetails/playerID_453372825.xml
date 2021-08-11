@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>playerdetails.xml</FileName>
+  <Version>2.8</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-08-11 21:08:43</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Player>
+    <PlayerID>453322682</PlayerID>
+    <FirstName>Kuisma</FirstName>
+    <NickName></NickName>
+    <LastName>Peltomaa</LastName>
+    <PlayerNumber>82</PlayerNumber>
+    <Age>20</Age>
+    <AgeDays>61</AgeDays>
+    <NextBirthDay>2021-10-01 00:00:00</NextBirthDay>
+    <ArrivalDate>2020-09-06 19:53:00</ArrivalDate>
+    <PlayerForm>5</PlayerForm>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Statement></Statement>
+    <PlayerLanguage>Suomi</PlayerLanguage>
+    <PlayerLanguageID>9</PlayerLanguageID>
+    <TrainerData />
+    <OwningTeam>
+      <TeamID>257327</TeamID>
+      <TeamName>Lappeen Potku</TeamName>
+      <LeagueID>12</LeagueID>
+    </OwningTeam>
+    <Salary>55100</Salary>
+    <IsAbroad>False</IsAbroad>
+    <Agreeability>3</Agreeability>
+    <Aggressiveness>1</Aggressiveness>
+    <Honesty>2</Honesty>
+    <Experience>3</Experience>
+    <Loyalty>20</Loyalty>
+    <MotherClubBonus>False</MotherClubBonus>
+    <Leadership>2</Leadership>
+    <Specialty>0</Specialty>
+    <NativeCountryID>11</NativeCountryID>
+    <NativeLeagueID>12</NativeLeagueID>
+    <NativeLeagueName>Suomi</NativeLeagueName>
+    <TSI>22280</TSI>
+    <PlayerSkills>
+      <StaminaSkill>7</StaminaSkill>
+    </PlayerSkills>
+    <Caps>0</Caps>
+    <CapsU20>0</CapsU20>
+    <CareerGoals>20</CareerGoals>
+    <CareerHattricks>1</CareerHattricks>
+    <LeagueGoals>3</LeagueGoals>
+    <CupGoals>0</CupGoals>
+    <FriendliesGoals>0</FriendliesGoals>
+    <MatchesCurrentTeam>49</MatchesCurrentTeam>
+    <GoalsCurrentTeam>18</GoalsCurrentTeam>
+    <TransferListed>False</TransferListed>
+    <TransferDetails />
+  </Player>
+</HattrickData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>youthplayerdetails.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-08-11 09:54:31</FetchedDate>
+  <YouthPlayer>
+    <YouthPlayerID>282977457</YouthPlayerID>
+    <FirstName>和人 (Kazuto)</FirstName>
+    <NickName />
+    <LastName>古川 (Furukawa)</LastName>
+    <Age>17</Age>
+    <AgeDays>74</AgeDays>
+    <ArrivalDate>2021-04-18 05:20:00</ArrivalDate>
+    <CanBePromotedIn>-3</CanBePromotedIn>
+    <PlayerNumber>100</PlayerNumber>
+    <Statement />
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Specialty>0</Specialty>
+    <CareerGoals>0</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <FriendlyGoals>0</FriendlyGoals>
+    <OwningYouthTeam>
+      <YouthTeamID>2854893</YouthTeamID>
+      <YouthTeamName>Palao Young City</YouthTeamName>
+      <YouthTeamLeagueID>612471</YouthTeamLeagueID>
+      <SeniorTeam>
+        <SeniorTeamID>691985</SeniorTeamID>
+        <SeniorTeamName>Palao City F.C.</SeniorTeamName>
+      </SeniorTeam>
+    </OwningYouthTeam>
+  </YouthPlayer>
+</HattrickData>

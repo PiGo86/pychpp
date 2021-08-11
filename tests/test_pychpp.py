@@ -14,7 +14,7 @@ from pychpp.ht_player import HTPlayer, HTYouthPlayer, HTLineupPlayer
 from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
 from pychpp.ht_match import HTMatch
-from pychpp.ht_match_lineup import HTMatchLineup
+from pychpp.ht_match_lineup import HTMatchLineup, HTSubstitution
 from pychpp.ht_matches_archive import HTMatchesArchive, HTMatchesArchiveItem
 from pychpp.ht_skill import HTSkill, HTSkillYouth
 from pychpp.ht_challenge import HTChallengeManager
@@ -99,8 +99,8 @@ def mocked_chpp(monkeypatch):
                   "leaguedetails": ("leagueLevelUnitID",),
                   "managercompendium": ("userId",),
                   "matchesarchive": ("",),
-                  "matchdetails": ("matchID",),
-                  "matchlineup": ("matchID",),
+                  "matchdetails": ("matchID", "sourceSystem"),
+                  "matchlineup": ("matchID", "teamID", "sourceSystem"),
                   "playerdetails": ("playerID",),
                   "regiondetails": ("regionID",),
                   "teamdetails": ("teamID",),
@@ -115,7 +115,8 @@ def mocked_chpp(monkeypatch):
         suffix = "_".join([f"{i}_{kwargs[i]}" for i in ht_id_dict[filename]])
 
         path = (pathlib.Path(__file__).parent / "test_resources"
-                / f"{filename}_{suffix}.xml"
+                / f"{filename}"
+                / f"{suffix}.xml"
                 )
 
         with open(path) as f:
@@ -641,8 +642,8 @@ def test_league(chpp):
     assert league.teams[3].position == 4
 
 
-def test_get_match_lineup(chpp):
-    match_lineup = chpp.match_lineup(ht_id=660688698, team_id=86324)
+def test_get_match_lineup(mocked_chpp):
+    match_lineup = mocked_chpp.match_lineup(ht_id=660688698, team_id=86324)
 
     assert isinstance(match_lineup, HTMatchLineup)
     assert isinstance(match_lineup.match, HTMatch)
@@ -657,6 +658,7 @@ def test_get_match_lineup(chpp):
 
     assert isinstance(match_lineup.arena, HTArena)
 
+    # Ending lineup
     assert len(match_lineup.lineup_players) == 20
     assert isinstance(match_lineup.lineup_players[0], HTLineupPlayer)
     assert isinstance(match_lineup.lineup_players[0].player, HTPlayer)
@@ -668,10 +670,47 @@ def test_get_match_lineup(chpp):
     assert match_lineup.lineup_players[15].role_name == "Unknown role"
     assert re.match(PLAYER_PATTERN, match_lineup.lineup_players[15].url)
 
-    match_lineup = chpp.match_lineup(
-        ht_id=116104524, team_id=2828377, source='youth')
+    # Starting lineup
+    assert len(match_lineup.starting_lineup_players) == 13
+    assert isinstance(match_lineup.starting_lineup_players[2], HTLineupPlayer)
+    assert isinstance(match_lineup.starting_lineup_players[2].player, HTPlayer)
+    assert match_lineup.starting_lineup_players[2].ht_id == 453372830
+    assert match_lineup.starting_lineup_players[2].first_name == "Gaspar"
+    assert match_lineup.starting_lineup_players[2].role_id == 105
+    assert match_lineup.starting_lineup_players[2].role_name == "Left back"
+    assert match_lineup.starting_lineup_players[10].role_id == 113
+    assert match_lineup.starting_lineup_players[10].role_name == "Left forward"
+    assert re.match(PLAYER_PATTERN,
+                    match_lineup.starting_lineup_players[10].url)
+
+    # Substitutions
+    substitutions = match_lineup.substitutions
+    assert len(substitutions) == 2
+    sub = substitutions[1]
+    assert isinstance(sub, HTSubstitution)
+    assert sub.team_id == 86324
+    assert sub.subject_player_id == 453372834
+    assert sub.object_player_id == 453372838
+    assert sub.order_type == 1
+    assert sub.new_position_id == 108
+    assert sub.new_position_behaviour == 0
+    assert sub.match_minute == 73
+    assert sub.match_part == 2
+
+
+def test_get_youth_match_lineup(mocked_chpp):
+    match_lineup = mocked_chpp.match_lineup(ht_id=120287045,
+                                            team_id=2854893,
+                                            source='youth')
+
     assert isinstance(match_lineup.lineup_players[0], HTLineupPlayer)
-    assert isinstance(match_lineup.lineup_players[0].player, HTYouthPlayer)
+
+    youth_player = match_lineup.lineup_players[0].player
+    assert isinstance(youth_player, HTYouthPlayer)
+    assert youth_player.ht_id == 282977457
+    assert youth_player.first_name == "和人 (Kazuto)"
+    assert youth_player.last_name == "古川 (Furukawa)"
+
     assert re.match(YOUTH_PLAYER_PATTERN, match_lineup.lineup_players[0].url)
 
 
