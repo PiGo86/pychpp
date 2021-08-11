@@ -360,5 +360,3 @@ class HTLineupPlayer(HTCorePlayer):
                 if self.is_youth
                 else f"{self._BASE_URL}"
                      f"/Club/Players/Player.aspx?playerId={self.ht_id}")
-
-

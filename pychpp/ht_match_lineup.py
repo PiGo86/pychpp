@@ -124,7 +124,7 @@ class HTMatchLineup(ht_model.HTModel):
                                data=s_data,
                                )
                 for s_data
-                in self._data.find("Team") \
+                in self._data.find("Team")
                              .find("Substitutions")
                              .findall("Substitution")
                 ]
