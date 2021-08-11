@@ -171,7 +171,7 @@ class HTXml:
             maximum=(int(data.find(v[1]).text)
                      if data.find(v[1]).attrib["IsAvailable"] == "True"
                      else None),
-            maximum_reached=bool(data.find(v[0]).attrib["IsMaxReached"])
+            maximum_reached=(data.find(v[0]).attrib["IsMaxReached"] == "True")
         )
             for k, v in ht_skill.HTSkillYouth.SKILLS_TAG.items()}
 
