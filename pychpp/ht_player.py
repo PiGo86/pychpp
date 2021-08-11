@@ -273,6 +273,12 @@ class HTLineupPlayer(HTCorePlayer):
     Hattrick lineup player
     """
 
+    @property
+    def _URL_PATH(self):
+        return ("/Club/Players/YouthPlayer.aspx?YouthPlayerID="
+                if self.is_youth
+                else "/Club/Players/Player.aspx?playerId=")
+
     _ht_attributes = [("ht_id", ".//PlayerID", ht_xml.HTXml.ht_int,),
                       ("role_id", ".//RoleID", ht_xml.HTXml.ht_int,),
                       ("first_name", ".//FirstName", ht_xml.HTXml.ht_str,),
@@ -353,6 +359,4 @@ class HTLineupPlayer(HTCorePlayer):
                 if self.is_youth
                 else HTPlayer(chpp=self._chpp, ht_id=self.ht_id))
 
-    @property
-    def url(self):
-        return self.player.url
+
