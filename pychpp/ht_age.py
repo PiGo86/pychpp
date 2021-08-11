@@ -42,6 +42,38 @@ class HTAge:
         else:
             raise HTAgeError("age & age_days must be either int or Element")
 
+    def __lt__(self, other):
+        if isinstance(other, HTAge):
+            if not self.age == other.age:
+                return self.age < other.age
+            else:
+                return self.age_days < other.age_days
+
+    def __le__(self, other):
+        if isinstance(other, HTAge):
+            if not self.age == other.age:
+                return self.age <= other.age
+            else:
+                return self.age_days <= other.age_days
+
+    def __gt__(self, other):
+        if isinstance(other, HTAge):
+            if not self.age == other.age:
+                return self.age > other.age
+            else:
+                return self.age_days > other.age_days
+
+    def __ge__(self, other):
+        if isinstance(other, HTAge):
+            if not self.age == other.age:
+                return self.age >= other.age
+            else:
+                return self.age_days >= other.age_days
+
+    def __eq__(self, other):
+        if isinstance(other, HTAge):
+            return self.age == other.age and self.age_days == other.age_days
+
     def __str__(self):
         """Pretty print an HTAge"""
         return f"{self.age} years and {self.age_days} days"
