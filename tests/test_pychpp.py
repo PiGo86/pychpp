@@ -27,6 +27,7 @@ from pychpp.ht_national_teams import (HTNationalTeam, HTNationalTeams,
 from pychpp.ht_world_cup import (HTWorldCupGroups, HTWorldCupMatches,
                                  HTWorldCupRound,
                                  HTWorldCupMatch)
+from pychpp.ht_training import HTTraining
 from pychpp.ht_datetime import HTDatetime
 from pychpp.ht_error import (HTUnauthorizedAction, UnknownLeagueError,
                              HTUnknownTeamIdError)
@@ -105,6 +106,7 @@ def mocked_chpp(monkeypatch):
                   "playerdetails": ("playerID",),
                   "regiondetails": ("regionID",),
                   "teamdetails": ("teamID",),
+                  "training": ("actionType", "teamId"),
                   "youthplayerdetails": ("youthPlayerId",),
                   "youthteamdetails": ("youthTeamId",),
                   "worlddetails": ("leagueID",),
@@ -898,3 +900,40 @@ def test_get_league_fixtures(chpp):
     assert isinstance(l_fixtures.matches, list)
     assert len(l_fixtures.matches) == 56
     assert isinstance(l_fixtures.matches[10], HTLeagueFixturesMatch)
+
+
+def test_get_training(mocked_chpp):
+
+    training = mocked_chpp.training(team_ht_id=1165592)
+
+    assert isinstance(training, HTTraining)
+
+    assert training.team_ht_id == 1165592
+    assert training.team_name == "Les Poitevins de La Chapelle"
+
+    assert training.training_level == 98
+    assert training.new_training_level is None
+    assert training.training_type == 3
+    assert training.stamina_training_part == 25
+    assert training.last_training_training_type == 5
+    assert training.last_training_training_level == 95
+    assert training.last_training_stamina_training_part == 16
+
+    assert training.trainer_ht_id == 421746800
+    assert training.trainer_name == "Quentin Lavigne"
+    assert training.trainer_arrival_date == HTDatetime.from_calendar(
+        2018, 3, 23, 19, 44, 0)
+
+    assert training.morale == 4
+    assert training.self_confidence == 5
+
+    assert training.experience_442 == 7
+    assert training.experience_433 == 4
+    assert training.experience_451 == 3
+    assert training.experience_352 == 8
+    assert training.experience_532 == 4
+    assert training.experience_343 == 3
+    assert training.experience_541 == 6
+    assert training.experience_523 == 9
+    assert training.experience_550 == 5
+    assert training.experience_253 == 10
