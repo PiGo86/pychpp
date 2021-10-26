@@ -6,7 +6,7 @@ import xml.etree.ElementTree
 
 from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
                     ht_challenge, ht_match, ht_matches_archive,
-                    ht_match_lineup, ht_league, ht_world,
+                    ht_match_lineup, ht_league, ht_training, ht_world,
                     ht_national_teams, ht_world_cup)
 from pychpp import ht_error
 
@@ -447,6 +447,23 @@ class CHPP:
         :rtype: ht_national_teams.HTNationalTeams
         """
         return ht_national_teams.HTNationalTeams(chpp=self, **kwargs)
+
+    def training(self, **kwargs):
+        """
+        Get training data or manage training
+
+        :key action_type: action to perform
+        (can be "view", "stats", "set_training"), defaults to "view"
+        :key team_ht_id: team Hattrick ID
+        (if none, fetch the primary club of connected user), defaults to None
+        :key training_type: selected training type, defaults to None
+        :key training_level: selected training level, defaults to None
+        :key training_level_stamina: selected training level,
+        defaults to None
+        :rtype: ht_training.HTTraining
+        """
+
+        return ht_training.HTTraining(chpp=self, **kwargs)
 
     def world_cup_groups(self, **kwargs):
         """
