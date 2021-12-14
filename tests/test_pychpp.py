@@ -64,7 +64,7 @@ CUP_PATTERN = r"https://www.hattrick.org/goto.ashx" \
 
 
 def test_version():
-    assert __version__ == '0.3.2'
+    assert __version__ == '0.3.3'
 
 
 def test_request_token():
