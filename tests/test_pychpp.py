@@ -741,6 +741,21 @@ def test_get_match_lineup(mocked_chpp):
     assert sub.match_minute == 73
     assert sub.match_part == 2
 
+    ml2 = mocked_chpp.match_lineup(ht_id=685566813, team_id=1750803)
+
+    assert ml2.ht_id == 685566813
+    assert ml2.home_team_name == "Capdenaguet"
+    assert ml2.away_team_id == 1165592
+    assert ml2.away_team_name == "Les Poitevins de La Chapelle"
+    assert ml2.arena_id == 960796
+    assert ml2.game_type == 5
+
+    assert ml2.formations == [(0, "451"),
+                              (50, "442"),
+                              (50, "433"),
+                              (50, "523"),
+                              ]
+
 
 def test_get_youth_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(ht_id=120287045,
