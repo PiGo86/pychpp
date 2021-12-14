@@ -88,9 +88,13 @@ class HTXml:
 
         _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
 
+        # ValueError happens if text cannot be serialized
+        # OverflowError happens with special datetimes
+        # as 0001-01-01 9999-12-31 due to pytz limitations
+        # In these cases, return None
         try:
             _ht_date = ht_datetime.HTDatetime(datetime=_datetime)
-        except ValueError:
+        except (ValueError, OverflowError):
             _ht_date = None
 
         return _ht_date

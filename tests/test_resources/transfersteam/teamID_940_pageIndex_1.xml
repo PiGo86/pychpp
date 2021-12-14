@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>transfersteam.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2021-11-10 23:25:50</FetchedDate>
+  <Team>
+    <TeamID>940</TeamID>
+    <TeamName>FC Vanilla</TeamName>
+    <ActivatedDate>2003-02-01 03:15:00</ActivatedDate>
+  </Team>
+  <Stats>
+    <TotalSumOfBuys>572579730</TotalSumOfBuys>
+    <TotalSumOfSales>569274290</TotalSumOfSales>
+    <NumberOfBuys>65</NumberOfBuys>
+    <NumberOfSales>144</NumberOfSales>
+  </Stats>
+  <Transfers>
+    <PageIndex>1</PageIndex>
+    <Pages>9</Pages>
+    <StartDate>2008-10-11 16:05:00</StartDate>
+    <EndDate>2009-10-31 09:44:00</EndDate>
+    <Transfer>
+      <TransferID>188627366</TransferID>
+      <Deadline>2009-10-31 09:44:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>25800000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>José de Jesús Álvarez</PlayerName>
+        <TSI>38150</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>515487</SellerTeamID>
+        <SellerTeamName>Osaga Satellite FC</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>188456007</TransferID>
+      <Deadline>2009-10-28 20:43:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>30000000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Cláudio Leão</PlayerName>
+        <TSI>139820</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>88275</BuyerTeamID>
+        <BuyerTeamName>SuperDragoes86 FC</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>187200706</TransferID>
+      <Deadline>2009-10-12 23:34:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>32200000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Axel Riedesel</PlayerName>
+        <TSI>39160</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>738023</SellerTeamID>
+        <SellerTeamName>e-_Team</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>187182114</TransferID>
+      <Deadline>2009-10-12 19:44:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>20700000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Peter Klangbom</PlayerName>
+        <TSI>5370</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>628257</BuyerTeamID>
+        <BuyerTeamName>Chiro F.C</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>187182056</TransferID>
+      <Deadline>2009-10-12 19:40:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>641110</Price>
+      <Player>
+        <PlayerID>261956246</PlayerID>
+        <PlayerName>Per Fredriksson</PlayerName>
+        <TSI>810</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>1520436</BuyerTeamID>
+        <BuyerTeamName>chetepossino</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>184815582</TransferID>
+      <Deadline>2009-09-12 21:50:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>260000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Fredrik Läfskog</PlayerName>
+        <TSI>2360</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>93426</BuyerTeamID>
+        <BuyerTeamName>Gyn Futebol Clube</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>180605843</TransferID>
+      <Deadline>2009-07-29 20:34:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>250000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Kalle Mathiasson</PlayerName>
+        <TSI>560</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>1585007</BuyerTeamID>
+        <BuyerTeamName>forxiñas</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>178419482</TransferID>
+      <Deadline>2009-07-02 00:18:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>7750000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Rolando Mena</PlayerName>
+        <TSI>1680</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>690197</SellerTeamID>
+        <SellerTeamName>Intimos FC</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>178233414</TransferID>
+      <Deadline>2009-06-29 22:28:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>12000000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Lars Almstål</PlayerName>
+        <TSI>10880</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>161190</BuyerTeamID>
+        <BuyerTeamName>Vodka på vannflaska</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>178143306</TransferID>
+      <Deadline>2009-06-28 20:37:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>5000000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Addi Stirling</PlayerName>
+        <TSI>1380</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>1247944</SellerTeamID>
+        <SellerTeamName>Werder 1899</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>177997172</TransferID>
+      <Deadline>2009-06-26 21:21:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>10000000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>André da Costa</PlayerName>
+        <TSI>10260</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>494228</BuyerTeamID>
+        <BuyerTeamName>LOS CARA DEPERCHAS</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>177997115</TransferID>
+      <Deadline>2009-06-26 21:19:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>2040000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Pier Giorgio Tubridy</PlayerName>
+        <TSI>1020</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>988331</BuyerTeamID>
+        <BuyerTeamName>F. C. Dorki</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>177686495</TransferID>
+      <Deadline>2009-06-23 11:33:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>32500000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Ilija Čolić</PlayerName>
+        <TSI>50580</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>168154</SellerTeamID>
+        <SellerTeamName>Basel Tigers</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>177677991</TransferID>
+      <Deadline>2009-06-23 09:38:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>5100000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Francisco Manuel Vázquez</PlayerName>
+        <TSI>1240</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>779251</SellerTeamID>
+        <SellerTeamName>TeleGIS</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>177559331</TransferID>
+      <Deadline>2009-06-21 19:01:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>1500000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Ulf Säfskog</PlayerName>
+        <TSI>1880</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>1591597</BuyerTeamID>
+        <BuyerTeamName>Los del Mas dels Plans</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>177465334</TransferID>
+      <Deadline>2009-06-20 14:57:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>120000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Fredrik Sörensson</PlayerName>
+        <TSI>270</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>1188744</BuyerTeamID>
+        <BuyerTeamName>Fc.Steaua Rodniciei</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>162250918</TransferID>
+      <Deadline>2008-12-30 13:12:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>4890000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Petri Helala</PlayerName>
+        <TSI>1380</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>553492</SellerTeamID>
+        <SellerTeamName>Fc Homer's</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>162251362</TransferID>
+      <Deadline>2008-12-30 13:05:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>3190000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Pier Giorgio Tubridy</PlayerName>
+        <TSI>830</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>45783</SellerTeamID>
+        <SellerTeamName>Chimboraze</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>161266825</TransferID>
+      <Deadline>2008-12-17 17:03:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>27580000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Johan Davidsson</PlayerName>
+        <TSI>16830</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>804263</BuyerTeamID>
+        <BuyerTeamName>Havanna Muchachos</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>156866503</TransferID>
+      <Deadline>2008-10-26 19:32:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>20000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Jan P. Johansson</PlayerName>
+        <TSI>340</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>16023</BuyerTeamID>
+        <BuyerTeamName>FC Carlström</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>156866336</TransferID>
+      <Deadline>2008-10-26 19:29:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>460000</Price>
+      <Player>
+        <PlayerID>221433775</PlayerID>
+        <PlayerName>Mattias Olsson</PlayerName>
+        <TSI>800</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>843117</BuyerTeamID>
+        <BuyerTeamName>italia campioni</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>156866411</TransferID>
+      <Deadline>2008-10-26 19:28:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>400000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Gunnar Karl</PlayerName>
+        <TSI>680</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>692</BuyerTeamID>
+        <BuyerTeamName>OAK FC</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>156641792</TransferID>
+      <Deadline>2008-10-23 19:38:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>41620000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Gian Carlo Della Morte</PlayerName>
+        <TSI>70680</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>236215</SellerTeamID>
+        <SellerTeamName>jume </SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>155820653</TransferID>
+      <Deadline>2008-10-14 15:12:00</Deadline>
+      <TransferType>S</TransferType>
+      <Price>3880000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>András V&amp;#337;neki</PlayerName>
+        <TSI>1420</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>571125</BuyerTeamID>
+        <BuyerTeamName>AC Ravnkilde</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>940</SellerTeamID>
+        <SellerTeamName>FC Vanilla</SellerTeamName>
+      </Seller>
+    </Transfer>
+    <Transfer>
+      <TransferID>155563015</TransferID>
+      <Deadline>2008-10-11 16:05:00</Deadline>
+      <TransferType>B</TransferType>
+      <Price>75900000</Price>
+      <Player>
+        <PlayerID>0</PlayerID>
+        <PlayerName>Cláudio Leão</PlayerName>
+        <TSI>107950</TSI>
+      </Player>
+      <Buyer>
+        <BuyerTeamID>940</BuyerTeamID>
+        <BuyerTeamName>FC Vanilla</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>859562</SellerTeamID>
+        <SellerTeamName>CF Porto</SellerTeamName>
+      </Seller>
+    </Transfer>
+  </Transfers>
+</HattrickData>

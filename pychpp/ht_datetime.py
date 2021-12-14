@@ -268,10 +268,8 @@ class HTDatetime:
                     f"month : {month.__class__.__name__} was given\n"
                     f"day : {day.__class__.__name__} was given"
                 )
-            elif year < 1997 or not (1 <= month <= 12) or not (1 <= day <= 31):
-                raise ValueError(f"wrong value for year, month or day : "
-                                 f"year : {year} "
-                                 f"(must be equal or greater than 1997), "
+            elif not (1 <= month <= 12) or not (1 <= day <= 31):
+                raise ValueError(f"wrong value for month or day : "
                                  f"month : {month} "
                                  f"(must be between 1 and 12), "
                                  f"day : {day} "
