@@ -28,6 +28,7 @@ from pychpp.ht_world_cup import (HTWorldCupGroups, HTWorldCupMatches,
                                  HTWorldCupRound,
                                  HTWorldCupMatch)
 from pychpp.ht_training import HTTraining
+from pychpp.ht_transfers_team import HTTransfersTeam, HTTransfersTeamItem
 from pychpp.ht_datetime import HTDatetime
 from pychpp.ht_error import (HTUnauthorizedAction, UnknownLeagueError,
                              HTUnknownTeamIdError)
@@ -107,6 +108,7 @@ def mocked_chpp(monkeypatch):
                   "regiondetails": ("regionID",),
                   "teamdetails": ("teamID",),
                   "training": ("actionType", "teamId"),
+                  "transfersteam": ("teamID", "pageIndex"),
                   "youthplayerdetails": ("youthPlayerId",),
                   "youthteamdetails": ("youthTeamId",),
                   "worlddetails": ("leagueID",),
@@ -937,3 +939,44 @@ def test_get_training(mocked_chpp):
     assert training.experience_523 == 9
     assert training.experience_550 == 5
     assert training.experience_253 == 10
+
+
+def test_get_team_transfers(mocked_chpp):
+
+    transfers_team = mocked_chpp.transfers_team(ht_id=940, page_index=1)
+
+    assert isinstance(transfers_team, HTTransfersTeam)
+
+    assert transfers_team.ht_id == 940
+    assert transfers_team.name == "FC Vanilla"
+    assert transfers_team.activated_date == (
+        HTDatetime.from_calendar(2003, 2, 1, 3, 15, 0))
+    assert transfers_team.total_sum_of_buys == 572_579_730
+    assert transfers_team.total_sum_of_sales == 569_274_290
+    assert transfers_team.number_of_buys == 65
+    assert transfers_team.number_of_sales == 144
+
+    assert transfers_team.page_index == 1
+    assert transfers_team.pages == 9
+    assert transfers_team.start_date == HTDatetime.from_calendar(2008, 10, 11,
+                                                                 16, 5, 0)
+    assert transfers_team.end_date == HTDatetime.from_calendar(2009, 10, 31,
+                                                               9, 44, 0)
+
+    assert isinstance(transfers_team.transfer_list, list)
+    assert len(transfers_team.transfer_list) == 25
+
+    transfer_item = transfers_team.transfer_list[10]
+    assert isinstance(transfer_item, HTTransfersTeamItem)
+    assert transfer_item.ht_id == 177997172
+    assert transfer_item.deadline == HTDatetime.from_calendar(2009, 6, 26,
+                                                              21, 21, 0)
+    assert transfer_item.transfer_type == "S"
+    assert transfer_item.price == 10_000_000
+    assert transfer_item.player_id == 0
+    assert transfer_item.player_name == "André da Costa"
+    assert transfer_item.tsi == 10_260
+    assert transfer_item.buyer_team_id == 494228
+    assert transfer_item.buyer_team_name == "LOS CARA DEPERCHAS"
+    assert transfer_item.seller_team_id == 940
+    assert transfer_item.seller_team_name == "FC Vanilla"
