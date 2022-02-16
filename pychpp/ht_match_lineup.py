@@ -166,9 +166,11 @@ class HTMatchLineup(ht_model.HTModel):
             player_2 = self._player_from_lineup(
                 ht_id=s.object_player_id,
                 lineup=end_lineup,
-            )
-            pos_2_id = s.new_position_id
-            player_2.role_id = pos_2_id
+            ) if s.object_player_id != 0 else None
+
+            if player_2 is not None:
+                pos_2_id = s.new_position_id
+                player_2.role_id = pos_2_id
 
             # if replacement of order change
             # remove old player from old position
