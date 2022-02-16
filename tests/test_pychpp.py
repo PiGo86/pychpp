@@ -758,6 +758,13 @@ def test_get_match_lineup(mocked_chpp):
                               (50, "523"),
                               ]
 
+    # specific case : injured player is not replaced
+    ml3 = mocked_chpp.match_lineup(ht_id=690094305, team_id=296272)
+
+    assert ml3.formations == [(0, "433"),
+                              (63, "333"),
+                              ]
+
 
 def test_get_youth_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(ht_id=120287045,
