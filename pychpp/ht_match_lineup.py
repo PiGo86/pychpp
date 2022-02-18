@@ -177,7 +177,9 @@ class HTMatchLineup(ht_model.HTModel):
             # and add new player to new position
             if s.order_type == 1:
                 lineup[self.position(pos_1_id)][pos_1_id] = None
-                lineup[self.position(pos_2_id)][pos_2_id] = player_2
+
+                if player_2 is not None:
+                    lineup[self.position(pos_2_id)][pos_2_id] = player_2
 
             # if position swap, swap players in lineup
             elif s.order_type == 3:
