@@ -771,6 +771,12 @@ def test_get_match_lineup(mocked_chpp):
                               (8, "153"),
                               ]
 
+    # test swap substitution
+    ml5 = mocked_chpp.match_lineup(ht_id=685860616, team_id=113143)
+
+    assert ml5.formations == [(0, "352"),
+                              ]
+
 
 def test_get_youth_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(ht_id=120287045,

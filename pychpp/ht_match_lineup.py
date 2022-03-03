@@ -157,38 +157,68 @@ class HTMatchLineup(ht_model.HTModel):
         # update lineup copy at each substitution
         for s in self.substitutions:
 
-            player_1 = self._player_from_lineup(
-                ht_id=s.subject_player_id,
-                lineup=lineup,
-            )
-            pos_1_id = player_1.role_id
-
-            player_2 = self._player_from_lineup(
-                ht_id=s.object_player_id,
-                lineup=end_lineup,
-            ) if s.object_player_id != 0 else None
-
-            if player_2 is not None:
-                pos_2_id = s.new_position_id
-                player_2.role_id = pos_2_id
+            player_1 = None
+            player_2 = None
 
             # if replacement of order change
             # remove old player from old position
             # and add new player to new position
             if s.order_type == 1:
+
+                # get player_1 from current lineup
+                player_1 = self._player_from_lineup(
+                    ht_id=s.subject_player_id,
+                    lineup=lineup,
+                )
+
+                # get player_2 from end lineup (because substitute players
+                # are not available in starting lineup
+                # player_2 is None if no player replace player_1
+                player_2 = self._player_from_lineup(
+                    ht_id=s.object_player_id,
+                    lineup=end_lineup,
+                ) if s.object_player_id != 0 else None
+
+                # remove player_1 from lineup
+                pos_1_id = player_1.role_id
                 lineup[self.position(pos_1_id)][pos_1_id] = None
 
+                # if player_2 exists
+                # update lineup and player_2 role_id
                 if player_2 is not None:
+                    pos_2_id = s.new_position_id
+                    player_2.role_id = pos_2_id
                     lineup[self.position(pos_2_id)][pos_2_id] = player_2
 
             # if position swap, swap players in lineup
+            # and swap players role_id
             elif s.order_type == 3:
+
+                # get player_1 from current lineup
+                player_1 = self._player_from_lineup(
+                    ht_id=s.subject_player_id,
+                    lineup=lineup,
+                )
+                pos_1_id = player_1.role_id
+
+                # get player_2 from current lineup too
+                # (because player_2 is already in lineup as it is swap)
+                player_2 = self._player_from_lineup(
+                    ht_id=s.object_player_id,
+                    lineup=lineup,
+                ) if s.object_player_id != 0 else None
+                pos_2_id = player_2.role_id
+
                 (
                     lineup[self.position(pos_1_id)][pos_1_id],
-                    lineup[self.position(pos_2_id)][pos_2_id]
+                    player_1.role_id,
+                    lineup[self.position(pos_2_id)][pos_2_id],
+                    player_2.role_id,
                 ) = (
                     lineup[self.position(pos_2_id)][pos_2_id],
-                    lineup[self.position(pos_1_id)][pos_1_id]
+                    player_2.role_id,
+                    lineup[self.position(pos_1_id)][pos_1_id],
+                    player_1.role_id,
                 )
 
             # calculate formation according to new lineup
