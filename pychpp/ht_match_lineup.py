@@ -281,8 +281,17 @@ class HTMatchLineup(ht_model.HTModel):
         return self._formation_from_lineup(lineup)
 
     def _player_from_lineup(self, ht_id, lineup):
-        return [p for d in lineup.values()
-                for p in d.values() if getattr(p, "ht_id", None) == ht_id][0]
+
+        player_list = [p for d in lineup.values()
+                       for p in d.values()
+                       if getattr(p, "ht_id", None) == ht_id]
+
+        if len(player_list):
+            return player_list[0]
+
+        else:
+            return ht_player.HTLineupGhostPlayer(ht_id=ht_id,
+                                                 is_youth=self.is_youth)
 
     def _base_lineup(self, start):
 

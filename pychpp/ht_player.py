@@ -371,3 +371,19 @@ class HTLineupPlayer(HTCorePlayer):
                 if self.is_youth
                 else f"{self._BASE_URL}"
                      f"/Club/Players/Player.aspx?playerId={self.ht_id}")
+
+
+class HTLineupGhostPlayer(HTLineupPlayer):
+
+    def __init__(self, ht_id, is_youth: bool = False, role_id=0, behaviour=0):
+        """
+        Initialize HTLineupGhostPlayer instance
+        Used when HTLineupPlayer data is not available through CHPP
+        """
+        self.ht_id = ht_id
+        self.is_youth = is_youth
+        self.role_id = role_id
+        self.behaviour = behaviour
+
+    def __repr__(self):
+        return f"<{self.__class__.__name__} object : ({self.ht_id})>"
