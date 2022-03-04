@@ -777,6 +777,13 @@ def test_get_match_lineup(mocked_chpp):
     assert ml5.formations == [(0, "352"),
                               ]
 
+    # other unreplaced player
+    ml6 = mocked_chpp.match_lineup(ht_id=690328642, team_id=773670)
+
+    assert ml6.formations == [(0, "532"),
+                              (81, "432"),
+                              ]
+
 
 def test_get_youth_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(ht_id=120287045,
