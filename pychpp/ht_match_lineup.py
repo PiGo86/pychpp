@@ -55,6 +55,7 @@ class HTMatchLineup(ht_model.HTModel):
     _CAPTAIN_ROLE = {18, }
     _REPLACED_ROLES = {19, 20, 21, }
     _PENALTY_TAKERS_ROLES = {22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, }
+    _RED_CARDED_PLAYERS_ROLES = {33, 34, 35, }
 
     def __init__(self, ht_id, team_id=None, source="hattrick", **kwargs):
         """
@@ -252,6 +253,8 @@ class HTMatchLineup(ht_model.HTModel):
             pos = "replaced"
         elif role_id in self._PENALTY_TAKERS_ROLES:
             pos = "penalty taker"
+        elif role_id in self._RED_CARDED_PLAYERS_ROLES:
+            pos = "red carded player"
         else:
             raise ValueError(f"unknown role id {role_id}")
 
@@ -325,6 +328,8 @@ class HTMatchLineup(ht_model.HTModel):
                                     26: None, 27: None, 28: None, 29: None,
                                     30: None, 31: None, 32: None,
                                     },
+                  "red carded player": {33: None, 34: None, 35: None,
+                                        },
                   }
 
         for p in lineup_players:
