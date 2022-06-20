@@ -528,7 +528,7 @@ def test_get_specific_arena(chpp):
     arena = chpp.arena(ht_id=295023)
     assert isinstance(arena, HTArena)
     assert arena.ht_id == 295023
-    assert arena.name == 'Les piments verts Arena'
+    assert arena.name == 'Le Piquant'
     assert arena.url == "https://www.hattrick.org/goto.ashx" \
                         "?path=/Club/Arena/?ArenaID=295023"
 
