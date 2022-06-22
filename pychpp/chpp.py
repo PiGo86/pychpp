@@ -9,6 +9,7 @@ from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
                     ht_match_lineup, ht_league, ht_training, ht_transfers_team,
                     ht_world, ht_national_teams, ht_world_cup)
 from pychpp import ht_error
+from pychpp.ht_xml import HTXml
 
 
 class CHPP:
@@ -49,6 +50,10 @@ class CHPP:
             "https://chpp.hattrick.org/oauth/authorize.aspx")
         self.base_url = (
             "https://chpp.hattrick.org/chppxml.ashx")
+        self.check_token_url = (
+            "https://chpp.hattrick.org/oauth/check_token.ashx")
+        self.invalidate_token_url = (
+            "https://chpp.hattrick.org/oauth/invalidate_token.ashx")
 
         self.service = OAuth1Service(
             consumer_key=self.consumer_key,
@@ -249,15 +254,17 @@ class CHPP:
                              access_token_secret=self.access_token_secret,
                              )
 
-    def request(self, **kwargs):
+    def _base_request(self, url, parse_data=True, **kwargs):
         """
-        Send a request via the CHPP API
+        Base method for sending a request via the CHPP API
 
+        :param url: url to fetch
+        :param parse_data: parse or not returned data as xml
         :return: xml data fetched on Hattrick
         :rtype: xml.etree.ElementTree
         """
         session = self.open_session()
-        query = session.get(self.base_url, params=kwargs)
+        query = session.get(url, params=kwargs)
         query.encoding = "UTF-8"
 
         if query.status_code == 401:
@@ -265,14 +272,77 @@ class CHPP:
                 "The requested action seems to be unauthorized "
                 "(401 error code). Please heck your credentials scope.")
 
-        data = xml.etree.ElementTree.fromstring(query.text)
-        file_name = data.find("FileName").text
+        if not parse_data:
+            return query.text
 
-        # If Hattrick returns an error, an exception is raised
-        if file_name == "chpperror.xml":
-            self._analyze_error(data)
+        else:
+            data = xml.etree.ElementTree.fromstring(query.text)
+            file_name = data.find("FileName").text
 
-        return data
+            # If Hattrick returns an error, an exception is raised
+            if file_name == "chpperror.xml":
+                self._analyze_error(data)
+
+            return data
+
+    def check_token(self):
+        """
+        Check token key and secret validity
+
+        :return: validity and other information about current tolen
+        :rtype: dict
+        """
+
+        data = None
+
+        try:
+            data = self._base_request(url=self.check_token_url,
+                                      parse_data=True)
+            token_is_valid = True
+
+        except ht_error.HTUnauthorizedAction:
+            token_is_valid = False
+
+        finally:
+            token_data = {
+                "is_valid": token_is_valid,
+                "user_id": None,
+                "fetched_date": None,
+                "key": None,
+                "created_date": None,
+            }
+
+            if data is not None:
+                token_data["user_id"] = HTXml.ht_int(data.find("UserID"))
+                token_data["fetched_date"] = HTXml.ht_datetime_from_text(
+                    data.find("FetchedDate"))
+                token_data["key"] = HTXml.ht_str(data.find("Token"))
+                token_data["created_date"] = HTXml.ht_datetime_from_text(
+                    data.find("Created"))
+
+            return token_data
+
+    def invalidate_token(self):
+        """
+        Invalidate current token
+
+        :return: information about invalidated token
+        :rtype: str
+        """
+        try:
+            return self._base_request(url=self.invalidate_token_url,
+                                      parse_data=False)
+        except ht_error.HTUnauthorizedAction:
+            return "token is already invalid"
+
+    def request(self, **kwargs):
+        """
+        Send a request via the CHPP API
+
+        :return: xml data fetched on Hattrick
+        :rtype: xml.etree.ElementTree
+        """
+        return self._base_request(url=self.base_url, parse_data=True, **kwargs)
 
     def user(self, **kwargs):
         """
