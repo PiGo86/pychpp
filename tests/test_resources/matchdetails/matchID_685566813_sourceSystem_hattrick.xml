@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2022-06-26 22:13:09</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>685566813</MatchID>
+    <MatchType>5</MatchType>
+    <MatchContextId>0</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2021-12-11 21:00:00</MatchDate>
+    <FinishedDate>2021-12-11 22:47:00</FinishedDate>
+    <AddedMinutes>2</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>1750803</HomeTeamID>
+      <HomeTeamName>Capdenaguet</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/3/matchKitSmall.png</DressURI>
+      <Formation>4-5-1</Formation>
+      <HomeGoals>0</HomeGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>9</RatingMidfield>
+      <RatingRightDef>19</RatingRightDef>
+      <RatingMidDef>23</RatingMidDef>
+      <RatingLeftDef>30</RatingLeftDef>
+      <RatingRightAtt>16</RatingRightAtt>
+      <RatingMidAtt>9</RatingMidAtt>
+      <RatingLeftAtt>19</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>20</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>21</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>0</NrOfChancesLeft>
+      <NrOfChancesCenter>3</NrOfChancesCenter>
+      <NrOfChancesRight>0</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>0</NrOfChancesOther>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressURI>
+      <Formation>4-3-3</Formation>
+      <AwayGoals>6</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>12</RatingMidfield>
+      <RatingRightDef>34</RatingRightDef>
+      <RatingMidDef>24</RatingMidDef>
+      <RatingLeftDef>30</RatingLeftDef>
+      <RatingRightAtt>22</RatingRightAtt>
+      <RatingMidAtt>19</RatingMidAtt>
+      <RatingLeftAtt>21</RatingLeftAtt>
+      <TeamAttitude>0</TeamAttitude>
+      <RatingIndirectSetPiecesDef>28</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>29</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>1</NrOfChancesLeft>
+      <NrOfChancesCenter>6</NrOfChancesCenter>
+      <NrOfChancesRight>1</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>3</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>1</NrOfChancesOther>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>960796</ArenaID>
+      <ArenaName>Susan Boyle</ArenaName>
+      <WeatherID>2</WeatherID>
+      <SoldTotal>2001</SoldTotal>
+      <SoldTerraces>1228</SoldTerraces>
+      <SoldBasic>513</SoldBasic>
+      <SoldRoof>214</SoldRoof>
+      <SoldVIP>46</SoldVIP>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>402192371</RefereeId>
+        <RefereeName>Abdulsaboor Basil Al-Ghariby</RefereeName>
+        <RefereeCountryId>134</RefereeCountryId>
+        <RefereeCountryName>Oman</RefereeCountryName>
+        <RefereeTeamId>2021208</RefereeTeamId>
+        <RefereeTeamname>Sparta Cvrcek Oman</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>377088957</RefereeId>
+        <RefereeName>Vittorio Kemna</RefereeName>
+        <RefereeCountryId>3</RefereeCountryId>
+        <RefereeCountryName>Deutschland</RefereeCountryName>
+        <RefereeTeamId>462937</RefereeTeamId>
+        <RefereeTeamname>Dffc Ägypten</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>440466055</RefereeId>
+        <RefereeName>Marvin Wells</RefereeName>
+        <RefereeCountryId>7</RefereeCountryId>
+        <RefereeCountryName>Argentina</RefereeCountryName>
+        <RefereeTeamId>71401</RefereeTeamId>
+        <RefereeTeamname>FC Dauntless</RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>443482564</ScorerPlayerID>
+        <ScorerPlayerName>Rahmi Erdi</ScorerPlayerName>
+        <ScorerTeamID>1165592</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>22</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="1">
+        <ScorerPlayerID>420216286</ScorerPlayerID>
+        <ScorerPlayerName>Pierre Chamayou</ScorerPlayerName>
+        <ScorerTeamID>1165592</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>2</ScorerAwayGoals>
+        <ScorerMinute>24</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>427072094</ScorerPlayerID>
+        <ScorerPlayerName>David Idier</ScorerPlayerName>
+        <ScorerTeamID>1165592</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>3</ScorerAwayGoals>
+        <ScorerMinute>33</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="3">
+        <ScorerPlayerID>427072094</ScorerPlayerID>
+        <ScorerPlayerName>David Idier</ScorerPlayerName>
+        <ScorerTeamID>1165592</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>4</ScorerAwayGoals>
+        <ScorerMinute>34</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="4">
+        <ScorerPlayerID>427947863</ScorerPlayerID>
+        <ScorerPlayerName>Batıkan Gündoğan</ScorerPlayerName>
+        <ScorerTeamID>1165592</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>5</ScorerAwayGoals>
+        <ScorerMinute>43</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="5">
+        <ScorerPlayerID>420216286</ScorerPlayerID>
+        <ScorerPlayerName>Pierre Chamayou</ScorerPlayerName>
+        <ScorerTeamID>1165592</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>6</ScorerAwayGoals>
+        <ScorerMinute>48</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings />
+    <Injuries />
+    <PossessionFirstHalfHome>46</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>54</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>38</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>62</PossessionSecondHalfAway>
+    <EventList>
+      <Event Index="0">
+        <Minute>0</Minute>
+        <SubjectPlayerID>960796</SubjectPlayerID>
+        <SubjectTeamID>41512</SubjectTeamID>
+        <ObjectPlayerID>2001</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>32</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>La météo était plutôt bonne et 2001 spectateurs étaient venus au &lt;a href="/Club/Arena/?ArenaID=960796"&gt;Susan Boyle&lt;/a&gt; pour assister au match. &lt;a href="/Club/HallOfFame/Player.aspx?playerId=402192371"&gt;Abdulsaboor Basil Al-Ghariby&lt;/a&gt; fut l'arbitre retenu pour le match, assisté par &lt;a href="/Club/HallOfFame/Player.aspx?playerId=377088957"&gt;Vittorio Kemna&lt;/a&gt; et &lt;a href="/Club/HallOfFame/Player.aspx?playerId=440466055"&gt;Marvin Wells&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="1">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>26</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Le match avait lieu sur terrain neutre.</EventText>
+      </Event>
+      <Event Index="2">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>19</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="3">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Voici la liste des joueurs de &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; qui débutèrent la rencontre : &lt;a href="/Club/Players/Player.aspx?playerId=412554932" title="Soydin&amp;#231;" class="homeplayer"&gt;Soydinç&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=438331347" title="Bernard" class="homeplayer"&gt;Bernard&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=459272935" title="Neveux" class="homeplayer"&gt;Neveux&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=438916286" title="Obry" class="homeplayer"&gt;Obry&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=442906082" title="Kuusk" class="homeplayer"&gt;Kuusk&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=449838314" title="Drevet" class="homeplayer"&gt;Drevet&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=454641616" title="Attoh" class="homeplayer"&gt;Attoh&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=422673507" title="Zijp" class="homeplayer"&gt;Zijp&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=410582992" title="Mamochkin" class="homeplayer"&gt;Mamochkin&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=448517327" title="Hunter" class="homeplayer"&gt;Hunter&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=415400436" title="Eisgruber" class="homeplayer"&gt;Eisgruber&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="4">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Ce fut le moment d’écouter le speaker annoncer la composition d’équipe de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; : &lt;a href="/Club/Players/Player.aspx?playerId=430759322" title="Rivi&amp;#232;re" class="awayplayer"&gt;Rivière&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=447229162" title="Beck" class="awayplayer"&gt;Beck&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=430759325" title="Fouquet" class="awayplayer"&gt;Fouquet&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=422716826" title="Dupont" class="awayplayer"&gt;Dupont&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=446137405" title="Julie" class="awayplayer"&gt;Julie&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=442907656" title="Nigsch" class="awayplayer"&gt;Nigsch&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=416987127" title="Youssfi" class="awayplayer"&gt;Youssfi&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=443482564" title="Erdi" class="awayplayer"&gt;Erdi&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=427072094" title="Idier" class="awayplayer"&gt;Idier&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=427947863" title="G&amp;#252;ndoğan" class="awayplayer"&gt;Gündoğan&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=420216286" title="Chamayou" class="awayplayer"&gt;Chamayou&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="5">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1040501</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>1040303</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>24</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Les équipes avaient choisi des formations différentes pour ce match. Les locaux de &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; se positionnèrent en 4-5-1 alors que &lt;span class="awayteam"&gt;Les Poitevins de La Chapelle&lt;/span&gt; décida de jouer en 4-3-3.</EventText>
+      </Event>
+      <Event Index="6">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>598</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="7">
+        <Minute>16</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>1040303</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>481</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="8">
+        <Minute>21</Minute>
+        <SubjectPlayerID>95</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>61</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Après 21 minutes, la confusion régnait sur le terrain à cause de la formation utilisée. Les joueurs de &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; n’étaient pas tous à leur place et le degré d’organisation de l’équipe devint rapidement &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=7#skill" class="skill"&gt;honorable&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="9">
+        <Minute>22</Minute>
+        <SubjectPlayerID>443482564</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>412554932</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>170</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Après 22 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=443482564" title="Rahmi Erdi" class="awayplayer"&gt;Rahmi Erdi&lt;/a&gt; de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; réussit à profiter d'un espace dans le mur pour marquer sur coup franc. 0 - 1.</EventText>
+      </Event>
+      <Event Index="10">
+        <Minute>24</Minute>
+        <SubjectPlayerID>420216286</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>443482564</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>119</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=420216286" title="Pierre Chamayou" class="awayplayer"&gt;Pierre Chamayou&lt;/a&gt; s’éleva plus haut que les défenseurs adverses et porta le score à 0 - 2 en reprenant le ballon de la tête sur un corner tiré par &lt;a href="/Club/Players/Player.aspx?playerId=443482564" title="Rahmi Erdi" class="awayplayer"&gt;Rahmi Erdi&lt;/a&gt; après 24 minutes de jeu.</EventText>
+      </Event>
+      <Event Index="11">
+        <Minute>27</Minute>
+        <SubjectPlayerID>47</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>471</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="12">
+        <Minute>29</Minute>
+        <SubjectPlayerID>427072094</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>412554932</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>281</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Après 29 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=427072094" title="David Idier" class="awayplayer"&gt;David Idier&lt;/a&gt; fit une belle percée au centre du terrain et faillit inscrire un nouveau but pour les visiteurs mais son tir passa trop à droite du poteau.</EventText>
+      </Event>
+      <Event Index="13">
+        <Minute>33</Minute>
+        <SubjectPlayerID>427072094</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>443482564</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>116</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=443482564" title="Rahmi Erdi" class="awayplayer"&gt;Rahmi Erdi&lt;/a&gt; de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; désorganisa la défense par sa vitesse et réussit à faire une passe parfaite à &lt;a href="/Club/Players/Player.aspx?playerId=427072094" title="David Idier" class="awayplayer"&gt;David Idier&lt;/a&gt; qui, complètement seul, marqua sans difficulté le but du 0 - 3.</EventText>
+      </Event>
+      <Event Index="14">
+        <Minute>34</Minute>
+        <SubjectPlayerID>427072094</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>412554932</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>181</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Après 34 minutes, le jeu collectif de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; fut récompensé : sur une belle combinaison au centre du terrain, &lt;a href="/Club/Players/Player.aspx?playerId=427072094" title="David Idier" class="awayplayer"&gt;David Idier&lt;/a&gt; augmenta l'avance de son équipe à 0 - 4.</EventText>
+      </Event>
+      <Event Index="16">
+        <Minute>43</Minute>
+        <SubjectPlayerID>427947863</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>412554932</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>181</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=427947863" title="Batıkan G&amp;#252;ndoğan" class="awayplayer"&gt;Batıkan Gündoğan&lt;/a&gt; de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; réussit à esquiver les défenseurs centraux adverses après 43 minutes, pour porter le score à 0 - 5. Ce but ne fit vraiment pas plaisir aux supporters de l’équipe locale.</EventText>
+      </Event>
+      <Event Index="18">
+        <Minute>44</Minute>
+        <SubjectPlayerID>427072094</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>412554932</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>281</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Les supporters locaux furent ravis de voir leur gardien stopper la charge plein axe de &lt;a href="/Club/Players/Player.aspx?playerId=427072094" title="David Idier" class="awayplayer"&gt;David Idier&lt;/a&gt; après 44 minutes. Il s’agissait d’un de ses plus beaux arrêts du match, qui empêchait les visiteurs de prendre le large au tableau d’affichage.</EventText>
+      </Event>
+      <Event Index="19">
+        <Minute>44</Minute>
+        <SubjectPlayerID>448517327</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>430759322</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>241</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>En se regroupant à l’arrière pour former un bloc défensif de qualité, &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; reprit le contrôle du ballon. Cela permit à &lt;a href="/Club/Players/Player.aspx?playerId=448517327" title="Forrest Hunter" class="homeplayer"&gt;Forrest Hunter&lt;/a&gt; de se projeter rapidement vers l’avant en contre-attaque après 44 minutes. Seul face au gardien pour la conclure, il dévissa complètement sa frappe.</EventText>
+      </Event>
+      <Event Index="20">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>45</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Le score était de 0 - 5 à la pause.</EventText>
+      </Event>
+      <Event Index="21">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>54</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; domina cette période, avec 54 % de possession de balle.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="22">
+        <Minute>46</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>597</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="23">
+        <Minute>46</Minute>
+        <SubjectPlayerID>440626601</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>99</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>64</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>L’entraineur de &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; donna de nouvelles recommandations à ses joueurs pendant la pause. Leur niveau d'organisation devint alors &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=7#skill" class="skill"&gt;honorable&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="24">
+        <Minute>46</Minute>
+        <SubjectPlayerID>415400436</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>407173138</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Après 46 minutes de jeu, &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; souhaita apporter un nouveau souffle à son match. &lt;a href="/Club/Players/Player.aspx?playerId=415400436" title="Henning Eisgruber" class="homeplayer"&gt;Henning Eisgruber&lt;/a&gt; reçut une tape amicale sur l’épaule de la part de &lt;a href="/Club/Players/Player.aspx?playerId=407173138" title="Peter Hornberg" class="homeplayer"&gt;Peter Hornberg&lt;/a&gt; au moment où ce dernier prit sa place sur le terrain.</EventText>
+      </Event>
+      <Event Index="25">
+        <Minute>46</Minute>
+        <SubjectPlayerID>415400436</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>412554932</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>80</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Comme le capitaine n'était plus sur le terrain, &lt;a href="/Club/Players/Player.aspx?playerId=412554932" title="Serdar Soydin&amp;#231;" class="homeplayer"&gt;Serdar Soydinç&lt;/a&gt; prit le brassard pour &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="26">
+        <Minute>48</Minute>
+        <SubjectPlayerID>420216286</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>443482564</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>137</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Le bon centre de &lt;a href="/Club/Players/Player.aspx?playerId=443482564" title="Rahmi Erdi" class="awayplayer"&gt;Rahmi Erdi&lt;/a&gt; de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; trouva la tête plongeante de &lt;a href="/Club/Players/Player.aspx?playerId=420216286" title="Pierre Chamayou" class="awayplayer"&gt;Pierre Chamayou&lt;/a&gt;. Le ballon heurta l’intérieur du poteau mais finit tout de même sa course au fond des filets. 0 - 6 au tableau d’affichage.</EventText>
+      </Event>
+      <Event Index="28">
+        <Minute>50</Minute>
+        <SubjectPlayerID>410582992</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>360</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>L’entraineur de &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; désespérait de voir venir un retournement de situation. Il ordonna donc à son équipe de changer de stratégie.</EventText>
+      </Event>
+      <Event Index="29">
+        <Minute>50</Minute>
+        <SubjectPlayerID>454641616</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>360</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Après 50 minutes de jeu, l’équipe &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; mit à profit un temps mort dans le match pour écouter les nouvelles instructions de l’entraineur.</EventText>
+      </Event>
+      <Event Index="30">
+        <Minute>50</Minute>
+        <SubjectPlayerID>422673507</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>360</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Comme le match échappait au contrôle de &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt;, son entraineur décida de modifier la tactique de jeu de l’équipe.</EventText>
+      </Event>
+      <Event Index="31">
+        <Minute>50</Minute>
+        <SubjectPlayerID>90</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>61</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>50 minutes s’étaient écoulées et l’entraineur de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt;, dépité, regardait assis sur sa glacière ses joueurs courir sur le terrain comme des poulets sans tête. Le niveau d’organisation de l’équipe chuta à &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=6#skill" class="skill"&gt;passable&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="32">
+        <Minute>55</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>2001</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>464</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="35">
+        <Minute>69</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>495</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="36">
+        <Minute>81</Minute>
+        <SubjectPlayerID>420216286</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>412554932</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>282</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Après 81 minutes, &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; réussit presque à conforter son avance sur cette percée de &lt;a href="/Club/Players/Player.aspx?playerId=420216286" title="Pierre Chamayou" class="awayplayer"&gt;Pierre Chamayou&lt;/a&gt; sur le côté gauche. Heureusement pour les locaux, le gardien s’interposa efficacement.</EventText>
+      </Event>
+      <Event Index="37">
+        <Minute>89</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>75</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>L'arbitre assistant indiqua 2 minutes de temps additionnel, laissant l'espoir aux supporters que leur équipe puisse obtenir une action supplémentaire avant la fin.</EventText>
+      </Event>
+      <Event Index="38">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>599</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Le match se termina sur le score de 0 - 6.</EventText>
+      </Event>
+      <Event Index="39">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>601</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="40">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>62</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;span class="awayteam"&gt;Poitevins&lt;/span&gt; monopolisait le ballon, avec 62 % de possession.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="41">
+        <Minute>92</Minute>
+        <SubjectPlayerID>442906082</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Le joueur le plus performant de &lt;span class="hometeam"&gt;Capdenaguet&lt;/span&gt; fut clairement &lt;a href="/Club/Players/Player.aspx?playerId=442906082" title="Lauri Kuusk" class="homeplayer"&gt;Lauri Kuusk&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="42">
+        <Minute>92</Minute>
+        <SubjectPlayerID>407173138</SubjectPlayerID>
+        <SubjectTeamID>1750803</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=407173138" title="Peter Hornberg" class="homeplayer"&gt;Peter Hornberg&lt;/a&gt;, quant à lui, fut très décevant.</EventText>
+      </Event>
+      <Event Index="43">
+        <Minute>92</Minute>
+        <SubjectPlayerID>427072094</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=427072094" title="David Idier" class="awayplayer"&gt;David Idier&lt;/a&gt; se fit remarquer du côté de &lt;span class="awayteam"&gt;Poitevins&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="44">
+        <Minute>92</Minute>
+        <SubjectPlayerID>422716826</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>En revanche, &lt;a href="/Club/Players/Player.aspx?playerId=422716826" title="Florian Dupont" class="awayplayer"&gt;Florian Dupont&lt;/a&gt; était dans un mauvais jour.</EventText>
+      </Event>
+    </EventList>
+  </Match>
+</HattrickData>

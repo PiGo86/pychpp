@@ -784,6 +784,14 @@ def test_get_match_lineup(mocked_chpp):
                               (81, "432"),
                               ]
 
+    # goalkeeper replaced by field player
+    ml7 = mocked_chpp.match_lineup(ht_id=693127128, team_id=291394)
+
+    assert ml7.formations == [(0, "352"),
+                              (77, "252"),
+                              (81, "152"),
+                              ]
+
 
 def test_get_youth_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(ht_id=120287045,
