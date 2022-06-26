@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2022-06-26 22:17:09</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>685860616</MatchID>
+    <MatchType>1</MatchType>
+    <MatchContextId>11417</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2022-02-26 09:00:00</MatchDate>
+    <FinishedDate>2022-02-26 10:48:00</FinishedDate>
+    <AddedMinutes>3</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>113143</HomeTeamID>
+      <HomeTeamName>Persatuan aja</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>3-5-2</Formation>
+      <HomeGoals>4</HomeGoals>
+      <TacticType>4</TacticType>
+      <TacticSkill>14</TacticSkill>
+      <RatingMidfield>26</RatingMidfield>
+      <RatingRightDef>41</RatingRightDef>
+      <RatingMidDef>46</RatingMidDef>
+      <RatingLeftDef>29</RatingLeftDef>
+      <RatingRightAtt>20</RatingRightAtt>
+      <RatingMidAtt>30</RatingMidAtt>
+      <RatingLeftAtt>22</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>30</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>22</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>6</NrOfChancesLeft>
+      <NrOfChancesCenter>1</NrOfChancesCenter>
+      <NrOfChancesRight>2</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>1</NrOfChancesOther>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>112907</AwayTeamID>
+      <AwayTeamName>lands united</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressURI>
+      <Formation>4-3-3</Formation>
+      <AwayGoals>1</AwayGoals>
+      <TacticType>7</TacticType>
+      <TacticSkill>12</TacticSkill>
+      <RatingMidfield>14</RatingMidfield>
+      <RatingRightDef>28</RatingRightDef>
+      <RatingMidDef>32</RatingMidDef>
+      <RatingLeftDef>25</RatingLeftDef>
+      <RatingRightAtt>16</RatingRightAtt>
+      <RatingMidAtt>26</RatingMidAtt>
+      <RatingLeftAtt>16</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>28</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>23</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>0</NrOfChancesLeft>
+      <NrOfChancesCenter>0</NrOfChancesCenter>
+      <NrOfChancesRight>0</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>1</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>0</NrOfChancesOther>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>113143</ArenaID>
+      <ArenaName>Bersatulah</ArenaName>
+      <WeatherID>1</WeatherID>
+      <SoldTotal>60100</SoldTotal>
+      <SoldTerraces>35500</SoldTerraces>
+      <SoldBasic>15100</SoldBasic>
+      <SoldRoof>8000</SoldRoof>
+      <SoldVIP>1500</SoldVIP>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>380793946</RefereeId>
+        <RefereeName>John Shackleton</RefereeName>
+        <RefereeCountryId>2</RefereeCountryId>
+        <RefereeCountryName>England</RefereeCountryName>
+        <RefereeTeamId>64193</RefereeTeamId>
+        <RefereeTeamname>Septics Arrows</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>433419285</RefereeId>
+        <RefereeName>Scott Smithyman</RefereeName>
+        <RefereeCountryId>26</RefereeCountryId>
+        <RefereeCountryName>Scotland</RefereeCountryName>
+        <RefereeTeamId>241998</RefereeTeamId>
+        <RefereeTeamname>Legio XII Gemina</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>418703570</RefereeId>
+        <RefereeName>Alex Kolbe</RefereeName>
+        <RefereeCountryId>3</RefereeCountryId>
+        <RefereeCountryName>Deutschland</RefereeCountryName>
+        <RefereeTeamId>825702</RefereeTeamId>
+        <RefereeTeamname>Bergische Löwen Hagen 06</RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>455616646</ScorerPlayerID>
+        <ScorerPlayerName>Abid Nachtu</ScorerPlayerName>
+        <ScorerTeamID>112907</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>10</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="1">
+        <ScorerPlayerID>464924825</ScorerPlayerID>
+        <ScorerPlayerName>Kenzie Putra</ScorerPlayerName>
+        <ScorerTeamID>113143</ScorerTeamID>
+        <ScorerHomeGoals>1</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>16</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>449525062</ScorerPlayerID>
+        <ScorerPlayerName>Robin Nagireddy</ScorerPlayerName>
+        <ScorerTeamID>113143</ScorerTeamID>
+        <ScorerHomeGoals>2</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>27</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="3">
+        <ScorerPlayerID>437344777</ScorerPlayerID>
+        <ScorerPlayerName>Wulf Schoerwerth</ScorerPlayerName>
+        <ScorerTeamID>113143</ScorerTeamID>
+        <ScorerHomeGoals>3</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>55</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="4">
+        <ScorerPlayerID>437304688</ScorerPlayerID>
+        <ScorerPlayerName>Aias Chatzipetros</ScorerPlayerName>
+        <ScorerTeamID>113143</ScorerTeamID>
+        <ScorerHomeGoals>4</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>58</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings>
+      <Booking Index="0">
+        <BookingPlayerID>441288376</BookingPlayerID>
+        <BookingPlayerName>Miguel Ángel Herrerías</BookingPlayerName>
+        <BookingTeamID>112907</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>72</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+    </Bookings>
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>434635235</InjuryPlayerID>
+        <InjuryPlayerName>Gabriel Maranzoni</InjuryPlayerName>
+        <InjuryTeamID>113143</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>84</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>66</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>34</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>63</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>37</PossessionSecondHalfAway>
+    <EventList>
+      <Event Index="0">
+        <Minute>0</Minute>
+        <SubjectPlayerID>113143</SubjectPlayerID>
+        <SubjectTeamID>60100</SubjectTeamID>
+        <ObjectPlayerID>60100</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>31</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Au &lt;a href="/Club/Arena/?ArenaID=113143"&gt;Bersatulah&lt;/a&gt;, 60100 spectateurs assistèrent au match et, malgré la présence de nuages très menaçants, la pluie ne fit pas son apparition. &lt;a href="/Club/HallOfFame/Player.aspx?playerId=380793946"&gt;John Shackleton&lt;/a&gt; fut l'arbitre retenu pour le match, assisté par &lt;a href="/Club/HallOfFame/Player.aspx?playerId=433419285"&gt;Scott Smithyman&lt;/a&gt; et &lt;a href="/Club/HallOfFame/Player.aspx?playerId=418703570"&gt;Alex Kolbe&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="1">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>1033</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>25</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Les supporters des deux équipes attendaient impatiemment ce derby de &lt;a href="/World/Regions/Region.aspx?RegionID=1033" title="Jawa Barat"&gt;Jawa Barat&lt;/a&gt; et ils faisaient de leur mieux pour faire plus de bruit que leurs adversaires.</EventText>
+      </Event>
+      <Event Index="2">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>19</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="3">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Ce fut le moment d’écouter le speaker annoncer la composition d’équipe de &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; : &lt;a href="/Club/Players/Player.aspx?playerId=452065348" title="Passos" class="homeplayer"&gt;Passos&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=437344777" title="Schoerwerth" class="homeplayer"&gt;Schoerwerth&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=448226076" title="Rost&amp;#225;s" class="homeplayer"&gt;Rostás&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=437677901" title="Marjam&amp;#228;ki" class="homeplayer"&gt;Marjamäki&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=464924825" title="Putra" class="homeplayer"&gt;Putra&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=435971761" title="Cardoso" class="homeplayer"&gt;Cardoso&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=434635235" title="Maranzoni" class="homeplayer"&gt;Maranzoni&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=439863803" title="Chodzik" class="homeplayer"&gt;Chodzik&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=449525062" title="Nagireddy" class="homeplayer"&gt;Nagireddy&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=437304688" title="Chatzipetros" class="homeplayer"&gt;Chatzipetros&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=444886759" title="Karaağa&amp;#231;lı" class="homeplayer"&gt;Karaağaçlı&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="4">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Sur une musique de gladiateurs, les joueurs suivants de &lt;span class="awayteam"&gt;united&lt;/span&gt; prirent place sur le terrain : &lt;a href="/Club/Players/Player.aspx?playerId=458667806" title="G&amp;#243;rlicki" class="awayplayer"&gt;Górlicki&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=431190829" title="Angelov" class="awayplayer"&gt;Angelov&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=438989632" title="Mutafov" class="awayplayer"&gt;Mutafov&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=441810806" title="Becourt" class="awayplayer"&gt;Becourt&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=441288376" title="Herrer&amp;#237;as" class="awayplayer"&gt;Herrerías&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=436005932" title="Nonchev" class="awayplayer"&gt;Nonchev&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=447283086" title="山平 (Yamahira)" class="awayplayer"&gt;山平 (Yamahira)&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=445746231" title="Chiariello" class="awayplayer"&gt;Chiariello&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=447024090" title="Ali" class="awayplayer"&gt;Ali&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=455616646" title="Nachtu" class="awayplayer"&gt;Nachtu&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=430519778" title="Snow" class="awayplayer"&gt;Snow&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="5">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1030502</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>1040303</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>24</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Persatuan aja&lt;/span&gt; débuta le match en 3-5-2, tandis que &lt;span class="awayteam"&gt;lands united&lt;/span&gt; s'organisait en 4-3-3.</EventText>
+      </Event>
+      <Event Index="6">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>598</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="7">
+        <Minute>0</Minute>
+        <SubjectPlayerID>191</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>334</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; avait décidé d'attaquer sur les ailes étant donné leur niveau &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=14#skill" class="skill"&gt;surnaturel&lt;/a&gt; dans cette tactique, c'est pourquoi la plupart de leurs passes se dirigeaient vers les côtés du terrain.</EventText>
+      </Event>
+      <Event Index="8">
+        <Minute>0</Minute>
+        <SubjectPlayerID>166</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>335</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Les joueurs de &lt;span class="awayteam"&gt;united&lt;/span&gt; choisirent de montrer leur niveau &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=12#skill" class="skill"&gt;inoubliable&lt;/a&gt; à développer un jeu créatif.</EventText>
+      </Event>
+      <Event Index="9">
+        <Minute>4</Minute>
+        <SubjectPlayerID>435971761</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>455</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="10">
+        <Minute>8</Minute>
+        <SubjectPlayerID>437304688</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>223</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; tenta de prendre l'avantage, mais &lt;a href="/Club/Players/Player.aspx?playerId=437304688" title="Aias Chatzipetros" class="homeplayer"&gt;Aias Chatzipetros&lt;/a&gt;, qui se retrouva absolument seul face à &lt;a href="/Club/Players/Player.aspx?playerId=458667806" title="Hubert G&amp;#243;rlicki" class="awayplayer"&gt;Hubert Górlicki&lt;/a&gt;, ne parvint pas à garder son sang froid et manqua sa reprise sur un centre provenant de son aile droite.</EventText>
+      </Event>
+      <Event Index="11">
+        <Minute>10</Minute>
+        <SubjectPlayerID>455616646</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>436005932</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>116</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Après 10 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=436005932" title="Vasil Nonchev" class="awayplayer"&gt;Vasil Nonchev&lt;/a&gt; de &lt;span class="awayteam"&gt;united&lt;/span&gt; fit une belle accélération avant de passer la balle à &lt;a href="/Club/Players/Player.aspx?playerId=455616646" title="Abid Nachtu" class="awayplayer"&gt;Abid Nachtu&lt;/a&gt;, qui glissa le ballon entre les jambes du gardien. Le score était maintenant de 0 à 1.</EventText>
+      </Event>
+      <Event Index="12">
+        <Minute>12</Minute>
+        <SubjectPlayerID>66</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>471</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="13">
+        <Minute>16</Minute>
+        <SubjectPlayerID>464924825</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>112</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=464924825" title="Kenzie Putra" class="homeplayer"&gt;Kenzie Putra&lt;/a&gt; reprit brutalement de la tête un ballon qui venait de la gauche, ce qui laissa le gardien adverse sans réaction. 1 - 1 après 16 minutes.</EventText>
+      </Event>
+      <Event Index="14">
+        <Minute>19</Minute>
+        <SubjectPlayerID>438989632</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>29</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>812</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="15">
+        <Minute>21</Minute>
+        <SubjectPlayerID>439863803</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>223</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>21 minutes s’étaient écoulées lorsque &lt;a href="/Club/Players/Player.aspx?playerId=439863803" title="Władysław Chodzik" class="homeplayer"&gt;Władysław Chodzik&lt;/a&gt; fut à deux doigts de permettre à son équipe de prendre l’avantage à la suite d’une action bien menée sur le flanc droit, mais son tir heurta la barre transversale.</EventText>
+      </Event>
+      <Event Index="16">
+        <Minute>26</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>344</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Le choix du jour s’était porté sur les attaques sur les ailes pour &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; ; ils firent passer la balle du centre aux ailes avec succès.</EventText>
+      </Event>
+      <Event Index="17">
+        <Minute>27</Minute>
+        <SubjectPlayerID>449525062</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>122</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; prit l’avantage après 27 minutes lorsque &lt;a href="/Club/Players/Player.aspx?playerId=449525062" title="Robin Nagireddy" class="homeplayer"&gt;Robin Nagireddy&lt;/a&gt; plaça une attaque sur le flanc gauche et inscrivit le but du 2 - 1 sur une frappe imparable.</EventText>
+      </Event>
+      <Event Index="18">
+        <Minute>28</Minute>
+        <SubjectPlayerID>435971761</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>232</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Alors que le match se jouait depuis 28 minutes, un superbe arrêt de &lt;a href="/Club/Players/Player.aspx?playerId=458667806" title="Hubert G&amp;#243;rlicki" class="awayplayer"&gt;Hubert Górlicki&lt;/a&gt; empêcha &lt;a href="/Club/Players/Player.aspx?playerId=435971761" title="Filipe Cardoso" class="homeplayer"&gt;Filipe Cardoso&lt;/a&gt; d’augmenter encore l’avance de son équipe sur ce boulet de canon tiré depuis l’aile gauche.</EventText>
+      </Event>
+      <Event Index="19">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>45</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>2 - 1 à la mi-temps.</EventText>
+      </Event>
+      <Event Index="20">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>66</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; domina cette période, avec 66 % de possession de balle.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="21">
+        <Minute>46</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>597</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="22">
+        <Minute>46</Minute>
+        <SubjectPlayerID>445746231</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>436005932</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>370</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Après 46 minutes de match, l’entraineur de &lt;span class="awayteam"&gt;united&lt;/span&gt; espérait toujours pouvoir renverser la vapeur. Il ordonna à &lt;a href="/Club/Players/Player.aspx?playerId=436005932" title="Vasil Nonchev" class="awayplayer"&gt;Vasil Nonchev&lt;/a&gt; de changer de place sur le terrain. Il prit la place de &lt;a href="/Club/Players/Player.aspx?playerId=445746231" title="Paolo Chiariello" class="awayplayer"&gt;Paolo Chiariello&lt;/a&gt; qui, quant à lui, prit celle de son coéquipier.</EventText>
+      </Event>
+      <Event Index="23">
+        <Minute>49</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>60100</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>464</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="24">
+        <Minute>49</Minute>
+        <SubjectPlayerID>448982364</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>45</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="25">
+        <Minute>55</Minute>
+        <SubjectPlayerID>437344777</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>130</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=437344777" title="Wulf Schoerwerth" class="homeplayer"&gt;Wulf Schoerwerth&lt;/a&gt; marqua sur coup franc après 55 minutes : 3 - 1 pour &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="26">
+        <Minute>55</Minute>
+        <SubjectPlayerID>437344777</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>7</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>457</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="27">
+        <Minute>55</Minute>
+        <SubjectPlayerID>430519778</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>448982364</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Au bout de 55 minutes, le 4e arbitre leva son panneau pour signaler un remplacement pour &lt;span class="awayteam"&gt;united&lt;/span&gt;. &lt;a href="/Club/Players/Player.aspx?playerId=448982364" title="Mehmet Hadice" class="awayplayer"&gt;Mehmet Hadice&lt;/a&gt; succéda à &lt;a href="/Club/Players/Player.aspx?playerId=430519778" title="Morgan Snow" class="awayplayer"&gt;Morgan Snow&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="28">
+        <Minute>56</Minute>
+        <SubjectPlayerID>437304688</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>232</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Après 56 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=437304688" title="Aias Chatzipetros" class="homeplayer"&gt;Aias Chatzipetros&lt;/a&gt; aurait pu enfoncer le clou pour &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; sur ce centre-tir depuis l’aile gauche mais la balle passa juste au-dessus de la barre.</EventText>
+      </Event>
+      <Event Index="29">
+        <Minute>57</Minute>
+        <SubjectPlayerID>94</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>61</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>57 minutes s’étaient écoulées et &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; semblait souffrir d’une certaine confusion. Au bout d’un moment, le degré d’organisation de l’équipe n’était plus que &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=6#skill" class="skill"&gt;passable&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="30">
+        <Minute>58</Minute>
+        <SubjectPlayerID>437304688</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>131</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Les choses se compliquèrent pour les visiteurs, lorsque &lt;a href="/Club/Players/Player.aspx?playerId=437304688" title="Aias Chatzipetros" class="homeplayer"&gt;Aias Chatzipetros&lt;/a&gt; esquiva tous les défenseurs adverses au centre du terrain après 58 minutes de jeu, pour finalement porter le score à 4 - 1.</EventText>
+      </Event>
+      <Event Index="31">
+        <Minute>60</Minute>
+        <SubjectPlayerID>437677901</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>434635235</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>371</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Après 60 minutes, &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; se sentit suffisamment en sécurité pour effectuer un changement tactique. &lt;a href="/Club/Players/Player.aspx?playerId=434635235" title="Gabriel Maranzoni" class="homeplayer"&gt;Gabriel Maranzoni&lt;/a&gt; et  &lt;a href="/Club/Players/Player.aspx?playerId=437677901" title="Niko Marjam&amp;#228;ki" class="homeplayer"&gt;Niko Marjamäki&lt;/a&gt; interchangèrent leur place sur le terrain.</EventText>
+      </Event>
+      <Event Index="32">
+        <Minute>62</Minute>
+        <SubjectPlayerID>437677901</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>464837414</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=437677901" title="Niko Marjam&amp;#228;ki" class="homeplayer"&gt;Niko Marjamäki&lt;/a&gt; aurait préféré continuer à jouer, mais son entraineur en décida autrement. Alors que le chronomètre indiquait 62 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=464837414" title="Sandi Soekarnoputra" class="homeplayer"&gt;Sandi Soekarnoputra&lt;/a&gt; fit son entrée dans le match pour le remplacer.</EventText>
+      </Event>
+      <Event Index="33">
+        <Minute>65</Minute>
+        <SubjectPlayerID>464924825</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>454273437</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>351</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=464924825" title="Kenzie Putra" class="homeplayer"&gt;Kenzie Putra&lt;/a&gt; fut déçu d’être remplacé, mais l’avantage pris par son équipe était réconfortant. &lt;a href="/Club/Players/Player.aspx?playerId=454273437" title="Ladislav Luk&amp;#225;cs" class="homeplayer"&gt;Ladislav Lukács&lt;/a&gt; lui succéda sur le terrain après 65 minutes.</EventText>
+      </Event>
+      <Event Index="34">
+        <Minute>67</Minute>
+        <SubjectPlayerID>444886759</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>458667806</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>232</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Après 67 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=444886759" title="Hakan Karaağa&amp;#231;lı" class="homeplayer"&gt;Hakan Karaağaçlı&lt;/a&gt; aurait pu permettre à &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; de creuser l’écart sur cette attaque sur le côté gauche, mais son tir n’était pas cadré.</EventText>
+      </Event>
+      <Event Index="35">
+        <Minute>72</Minute>
+        <SubjectPlayerID>441288376</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>510</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>L’arbitre donna un carton jaune à &lt;a href="/Club/Players/Player.aspx?playerId=441288376" title="Miguel &amp;#193;ngel Herrer&amp;#237;as" class="awayplayer"&gt;Miguel Ángel Herrerías&lt;/a&gt; de &lt;span class="awayteam"&gt;united&lt;/span&gt; pour un tacle particulièrement agressif.</EventText>
+      </Event>
+      <Event Index="36">
+        <Minute>77</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>493</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="37">
+        <Minute>82</Minute>
+        <SubjectPlayerID>82</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>61</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>82 minutes s’étaient écoulées et l’escapade en boite de nuit d’une partie des joueurs de &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; la veille se fit cruellement sentir. Le degré d’organisation de l’équipe chuta à &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=4#skill" class="skill"&gt;faible&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="39">
+        <Minute>84</Minute>
+        <SubjectPlayerID>434635235</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>408</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>La cheville droite de &lt;a href="/Club/Players/Player.aspx?playerId=434635235" title="Gabriel Maranzoni" class="homeplayer"&gt;Gabriel Maranzoni&lt;/a&gt; tourna après 84 minutes, ce qui le contraignit à regarder la suite du match depuis le banc.</EventText>
+      </Event>
+      <Event Index="40">
+        <Minute>84</Minute>
+        <SubjectPlayerID>434635235</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>441569173</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>424</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Cela donna à &lt;a href="/Club/Players/Player.aspx?playerId=441569173" title="Yakim Dudev" class="homeplayer"&gt;Yakim Dudev&lt;/a&gt; l'occasion de prendre sa place sur le terrain.</EventText>
+      </Event>
+      <Event Index="41">
+        <Minute>86</Minute>
+        <SubjectPlayerID>434635235</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>1</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>454</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="42">
+        <Minute>89</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>75</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>A l'approche de la fin du match, l'arbitre estima le temps additionnel à 3 minutes.</EventText>
+      </Event>
+      <Event Index="43">
+        <Minute>93</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>599</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Le match se termina sur le score de 4 - 1.</EventText>
+      </Event>
+      <Event Index="44">
+        <Minute>93</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>601</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="45">
+        <Minute>93</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>63</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Persatuan&lt;/span&gt; monopolisait le ballon, avec 63 % de possession.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="46">
+        <Minute>93</Minute>
+        <SubjectPlayerID>437304688</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=437304688" title="Aias Chatzipetros" class="homeplayer"&gt;Aias Chatzipetros&lt;/a&gt; se fit remarquer du côté de &lt;span class="hometeam"&gt;Persatuan&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="47">
+        <Minute>93</Minute>
+        <SubjectPlayerID>437344777</SubjectPlayerID>
+        <SubjectTeamID>113143</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=437344777" title="Wulf Schoerwerth" class="homeplayer"&gt;Wulf Schoerwerth&lt;/a&gt; fut particulièrement mauvais, en revanche.</EventText>
+      </Event>
+      <Event Index="48">
+        <Minute>93</Minute>
+        <SubjectPlayerID>436005932</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Le joueur le plus performant de &lt;span class="awayteam"&gt;united&lt;/span&gt; fut clairement &lt;a href="/Club/Players/Player.aspx?playerId=436005932" title="Vasil Nonchev" class="awayplayer"&gt;Vasil Nonchev&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="49">
+        <Minute>93</Minute>
+        <SubjectPlayerID>447024090</SubjectPlayerID>
+        <SubjectTeamID>112907</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=447024090" title="Abdul Hamid Ali" class="awayplayer"&gt;Abdul Hamid Ali&lt;/a&gt;, quant à lui, fut très décevant.</EventText>
+      </Event>
+    </EventList>
+  </Match>
+</HattrickData>

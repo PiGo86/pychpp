@@ -155,20 +155,50 @@ class HTMatchLineup(ht_model.HTModel):
         end_lineup = self.lineup
         formations = [(0, self._formation_from_lineup(lineup)), ]
 
+        # looking for red cards
+        red_card_codes = (512, 513, 514)
+        no_replaced_codes = (93, 96, 97, 425, 426)
+        substitution_codes = (91, 92, 95,
+                              350, 351, 352, 360, 361, 362, 370, 371, 372,
+                              424)
+        match = self._chpp.match(ht_id=self.ht_id, events=True)
+        events_list = [
+            e for e in match.events
+            if (e['id'] in (red_card_codes
+                            + no_replaced_codes
+                            + substitution_codes)
+                and e.get('subject_team_id', 0) == self.team_id)]
+
+        changes_list = deepcopy(self.substitutions)
+
+        for i, e in enumerate(events_list):
+            if e["id"] in red_card_codes:
+                changes_list.insert(i, e)
+
         # update lineup copy at each substitution
-        for s in self.substitutions:
+        for change in changes_list:
 
             player_1 = None
             player_2 = None
 
-            # if replacement of order change
+            # if change is not a substitution, it is a red card
+            # remove the corresponding player from lineup
+            if not isinstance(change, HTSubstitution):
+                player_1 = self._player_from_lineup(
+                    ht_id=change["subject_player_id"],
+                    lineup=lineup,
+                )
+                pos_1_id = player_1.role_id
+                lineup[self.position(pos_1_id)][pos_1_id] = None
+
+            # if replacement or order change
             # remove old player from old position
             # and add new player to new position
-            if s.order_type == 1:
+            elif change.order_type == 1:
 
                 # get player_1 from current lineup
                 player_1 = self._player_from_lineup(
-                    ht_id=s.subject_player_id,
+                    ht_id=change.subject_player_id,
                     lineup=lineup,
                 )
 
@@ -176,28 +206,41 @@ class HTMatchLineup(ht_model.HTModel):
                 # are not available in starting lineup
                 # player_2 is None if no player replace player_1
                 player_2 = self._player_from_lineup(
-                    ht_id=s.object_player_id,
+                    ht_id=change.object_player_id,
                     lineup=end_lineup,
-                ) if s.object_player_id != 0 else None
+                ) if change.object_player_id != 0 else None
 
                 # remove player_1 from lineup
                 pos_1_id = player_1.role_id
                 lineup[self.position(pos_1_id)][pos_1_id] = None
 
-                # if player_2 exists
+                # if player_2 exists in ending lineup
                 # update lineup and player_2 role_id
                 if player_2 is not None:
-                    pos_2_id = s.new_position_id
+
+                    # if player_2 is found is current lineup
+                    # (case when field player replaces goalkeeper)
+                    # remove it from its current position before affecting it
+                    if not isinstance(
+                            self._player_from_lineup(
+                                ht_id=player_2.ht_id,
+                                lineup=lineup,
+                            ),
+                            ht_player.HTLineupGhostPlayer):
+                        lineup[self.position(
+                            player_2.role_id)][player_2.role_id] = None
+
+                    pos_2_id = change.new_position_id
                     player_2.role_id = pos_2_id
                     lineup[self.position(pos_2_id)][pos_2_id] = player_2
 
             # if position swap, swap players in lineup
             # and swap players role_id
-            elif s.order_type == 3:
+            elif change.order_type == 3:
 
                 # get player_1 from current lineup
                 player_1 = self._player_from_lineup(
-                    ht_id=s.subject_player_id,
+                    ht_id=change.subject_player_id,
                     lineup=lineup,
                 )
                 pos_1_id = player_1.role_id
@@ -205,9 +248,9 @@ class HTMatchLineup(ht_model.HTModel):
                 # get player_2 from current lineup too
                 # (because player_2 is already in lineup as it is swap)
                 player_2 = self._player_from_lineup(
-                    ht_id=s.object_player_id,
+                    ht_id=change.object_player_id,
                     lineup=lineup,
-                ) if s.object_player_id != 0 else None
+                ) if change.object_player_id != 0 else None
                 pos_2_id = player_2.role_id
 
                 (
@@ -227,7 +270,13 @@ class HTMatchLineup(ht_model.HTModel):
 
             # add entry in formations list if formation change is detected
             if new_formation != formations[-1][1]:
-                formations.append((s.match_minute, new_formation))
+                formations.append((
+                    (change.match_minute
+                     if isinstance(change, HTSubstitution)
+                     else change["minute"]),
+                    new_formation,
+                    )
+                )
 
         return formations
 
