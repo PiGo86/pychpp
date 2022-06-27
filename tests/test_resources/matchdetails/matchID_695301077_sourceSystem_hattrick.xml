@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2022-06-27 22:32:35</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>695301077</MatchID>
+    <MatchType>3</MatchType>
+    <MatchContextId>6</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>1</CupLevel>
+    <CupLevelIndex>1</CupLevelIndex>
+    <MatchDate>2022-04-20 15:00:00</MatchDate>
+    <FinishedDate>2022-04-20 16:48:00</FinishedDate>
+    <AddedMinutes>3</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>1160671</HomeTeamID>
+      <HomeTeamName>olympic do brazil</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>4-5-1</Formation>
+      <HomeGoals>2</HomeGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>39</RatingMidfield>
+      <RatingRightDef>42</RatingRightDef>
+      <RatingMidDef>52</RatingMidDef>
+      <RatingLeftDef>42</RatingLeftDef>
+      <RatingRightAtt>30</RatingRightAtt>
+      <RatingMidAtt>9</RatingMidAtt>
+      <RatingLeftAtt>8</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>26</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>17</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>1</NrOfChancesLeft>
+      <NrOfChancesCenter>4</NrOfChancesCenter>
+      <NrOfChancesRight>3</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>0</NrOfChancesOther>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>294798</AwayTeamID>
+      <AwayTeamName>FC Fromage &amp; Lucarne</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/26/259/2585/2584320/matchKitSmall.png</DressURI>
+      <Formation>3-4-3</Formation>
+      <AwayGoals>0</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>30</RatingMidfield>
+      <RatingRightDef>20</RatingRightDef>
+      <RatingMidDef>22</RatingMidDef>
+      <RatingLeftDef>19</RatingLeftDef>
+      <RatingRightAtt>39</RatingRightAtt>
+      <RatingMidAtt>48</RatingMidAtt>
+      <RatingLeftAtt>40</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>21</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>29</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>0</NrOfChancesLeft>
+      <NrOfChancesCenter>0</NrOfChancesCenter>
+      <NrOfChancesRight>2</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>0</NrOfChancesOther>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>1157233</ArenaID>
+      <ArenaName>Gone's Stars Arena</ArenaName>
+      <WeatherID>2</WeatherID>
+      <SoldTotal>39400</SoldTotal>
+      <SoldTerraces>23838</SoldTerraces>
+      <SoldBasic>10292</SoldBasic>
+      <SoldRoof>4322</SoldRoof>
+      <SoldVIP>948</SoldVIP>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>440036547</RefereeId>
+        <RefereeName>Manuel Figueiredo</RefereeName>
+        <RefereeCountryId>149</RefereeCountryId>
+        <RefereeCountryName>São Tomé e Príncipe</RefereeCountryName>
+        <RefereeTeamId>2063050</RefereeTeamId>
+        <RefereeTeamname>Princess from Angkor Wat</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>444931002</RefereeId>
+        <RefereeName>Cornel Ţiglar</RefereeName>
+        <RefereeCountryId>37</RefereeCountryId>
+        <RefereeCountryName>România</RefereeCountryName>
+        <RefereeTeamId>180223</RefereeTeamId>
+        <RefereeTeamname>AS Zimbrul Siret</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>377572891</RefereeId>
+        <RefereeName>Philipp Carsten Wyremba</RefereeName>
+        <RefereeCountryId>3</RefereeCountryId>
+        <RefereeCountryName>Deutschland</RefereeCountryName>
+        <RefereeTeamId>649787</RefereeTeamId>
+        <RefereeTeamname>Kickers Neu-Ehrenfeld 2012</RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>449760498</ScorerPlayerID>
+        <ScorerPlayerName>Mick ten Hove</ScorerPlayerName>
+        <ScorerTeamID>1160671</ScorerTeamID>
+        <ScorerHomeGoals>1</ScorerHomeGoals>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
+        <ScorerMinute>48</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="1">
+        <ScorerPlayerID>450002454</ScorerPlayerID>
+        <ScorerPlayerName>Marc-Pascal Stolp</ScorerPlayerName>
+        <ScorerTeamID>1160671</ScorerTeamID>
+        <ScorerHomeGoals>2</ScorerHomeGoals>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
+        <ScorerMinute>83</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings />
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>444866136</InjuryPlayerID>
+        <InjuryPlayerName>Louis Ménard</InjuryPlayerName>
+        <InjuryTeamID>294798</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>24</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+      <Injury Index="1">
+        <InjuryPlayerID>433915544</InjuryPlayerID>
+        <InjuryPlayerName>Célian Brun</InjuryPlayerName>
+        <InjuryTeamID>294798</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>33</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+      <Injury Index="2">
+        <InjuryPlayerID>454254737</InjuryPlayerID>
+        <InjuryPlayerName>Yannick Buffet</InjuryPlayerName>
+        <InjuryTeamID>294798</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>74</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>56</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>44</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>56</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>44</PossessionSecondHalfAway>
+    <EventList>
+      <Event Index="0">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1157233</SubjectPlayerID>
+        <SubjectTeamID>57000</SubjectTeamID>
+        <ObjectPlayerID>39400</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>32</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Un ciel clément accueillit les 39400 spectateurs qui étaient venus au &lt;a href="/Club/Arena/?ArenaID=1157233"&gt;Gone's Stars Arena&lt;/a&gt;. &lt;a href="/Club/HallOfFame/Player.aspx?playerId=440036547"&gt;Manuel Figueiredo&lt;/a&gt; fut l'arbitre retenu pour le match, assisté par &lt;a href="/Club/HallOfFame/Player.aspx?playerId=444931002"&gt;Cornel Ţiglar&lt;/a&gt; et &lt;a href="/Club/HallOfFame/Player.aspx?playerId=377572891"&gt;Philipp Carsten Wyremba&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="1">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>19</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="2">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>L’entraineur de &lt;span class="hometeam"&gt;olympic&lt;/span&gt; aligna les joueurs suivants : &lt;a href="/Club/Players/Player.aspx?playerId=453238558" title="Heep" class="homeplayer"&gt;Heep&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=452916206" title="Verdure" class="homeplayer"&gt;Verdure&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=452707919" title="Per&amp;#228;kasari" class="homeplayer"&gt;Peräkasari&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=449540442" title="Mill&amp;#246;cker" class="homeplayer"&gt;Millöcker&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=448306838" title="Hentgen" class="homeplayer"&gt;Hentgen&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=460673979" title="Ras" class="homeplayer"&gt;Ras&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=444764310" title="Fontaine" class="homeplayer"&gt;Fontaine&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=449760498" title="ten Hove" class="homeplayer"&gt;ten Hove&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=450002454" title="Stolp" class="homeplayer"&gt;Stolp&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=446993074" title="Oświeciński" class="homeplayer"&gt;Oświeciński&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=458427642" title="S&amp;#233;n&amp;#233;gas" class="homeplayer"&gt;Sénégas&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="3">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Ce fut le moment d’écouter le speaker annoncer la composition d’équipe de &lt;span class="awayteam"&gt;FCFL&lt;/span&gt; : &lt;a href="/Club/Players/Player.aspx?playerId=437008626" title="Grabher" class="awayplayer"&gt;Grabher&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=443750239" title="Chantepie" class="awayplayer"&gt;Chantepie&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=435279263" title="Snoek" class="awayplayer"&gt;Snoek&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=445470281" title="Mass&amp;#233;" class="awayplayer"&gt;Massé&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=455108377" title="Lecerf" class="awayplayer"&gt;Lecerf&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=444866136" title="M&amp;#233;nard" class="awayplayer"&gt;Ménard&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=454254737" title="Buffet" class="awayplayer"&gt;Buffet&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=445484071" title="Vincent" class="awayplayer"&gt;Vincent&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=449323103" title="Tomas" class="awayplayer"&gt;Tomas&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=450051951" title="M&amp;#233;rigot" class="awayplayer"&gt;Mérigot&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=445312949" title="Lepez" class="awayplayer"&gt;Lepez&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="4">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1040501</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>1030403</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>24</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;olympic do brazil&lt;/span&gt; présenta une composition en 4-5-1. Pour &lt;span class="awayteam"&gt;FC Fromage &amp; Lucarne&lt;/span&gt;, le choix s'est porté pour un 3-4-3. </EventText>
+      </Event>
+      <Event Index="5">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>598</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="7">
+        <Minute>4</Minute>
+        <SubjectPlayerID>448306838</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>453</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="8">
+        <Minute>9</Minute>
+        <SubjectPlayerID>445470281</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>453238558</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>273</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;span class="awayteam"&gt;FCFL&lt;/span&gt; eut une bonne occasion de mener au tableau d’affichage sur cette attaque sur le côté droit mais &lt;a href="/Club/Players/Player.aspx?playerId=453238558" title="Norman Heep" class="homeplayer"&gt;Norman Heep&lt;/a&gt; gagna son duel face à &lt;a href="/Club/Players/Player.aspx?playerId=445470281" title="Dominique Mass&amp;#233;" class="awayplayer"&gt;Dominique Massé&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="9">
+        <Minute>12</Minute>
+        <SubjectPlayerID>55</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>471</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="10">
+        <Minute>24</Minute>
+        <SubjectPlayerID>444866136</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>410</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Une légère blessure au mollet droit contraignit &lt;a href="/Club/Players/Player.aspx?playerId=444866136" title="Louis M&amp;#233;nard" class="awayplayer"&gt;Louis Ménard&lt;/a&gt; à quitter le match prématurément. On jouait alors la 24e minute. </EventText>
+      </Event>
+      <Event Index="11">
+        <Minute>24</Minute>
+        <SubjectPlayerID>444866136</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>433915544</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>424</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Cela donna à &lt;a href="/Club/Players/Player.aspx?playerId=433915544" title="C&amp;#233;lian Brun" class="awayplayer"&gt;Célian Brun&lt;/a&gt; l'occasion de prendre sa place sur le terrain.</EventText>
+      </Event>
+      <Event Index="12">
+        <Minute>24</Minute>
+        <SubjectPlayerID>444866136</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>433915544</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>81</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=444866136" title="Louis M&amp;#233;nard" class="awayplayer"&gt;Louis Ménard&lt;/a&gt; n’étant plus sur le terrain, l’entraineur signala à &lt;a href="/Club/Players/Player.aspx?playerId=433915544" title="C&amp;#233;lian Brun" class="awayplayer"&gt;Célian Brun&lt;/a&gt; qu’il tirerait les coups de pied arrêtés.</EventText>
+      </Event>
+      <Event Index="13">
+        <Minute>26</Minute>
+        <SubjectPlayerID>444866136</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>1</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>454</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="15">
+        <Minute>33</Minute>
+        <SubjectPlayerID>446993074</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>437008626</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>223</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Après 33 minutes de jeu, &lt;a href="/Club/Players/Player.aspx?playerId=446993074" title="Dominik Oświeciński" class="homeplayer"&gt;Dominik Oświeciński&lt;/a&gt; s’échappa sur l’aile droite avec la ferme intention de permettre à &lt;span class="hometeam"&gt;olympic&lt;/span&gt; de mener au score mais sa frappe puissante s’écrasa contre la barre transversale.</EventText>
+      </Event>
+      <Event Index="16">
+        <Minute>33</Minute>
+        <SubjectPlayerID>433915544</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>405</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Malgré un choc au pied gauche alors que le panneau affichait 33 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=433915544" title="C&amp;#233;lian Brun" class="awayplayer"&gt;Célian Brun&lt;/a&gt; poursuivit le match.</EventText>
+      </Event>
+      <Event Index="18">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>45</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Le score était de 0 - 0 à la pause.</EventText>
+      </Event>
+      <Event Index="19">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>56</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Les 45 minutes furent dominées par &lt;span class="hometeam"&gt;olympic&lt;/span&gt;, avec  56 % de possession de balle.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="20">
+        <Minute>46</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>597</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="21">
+        <Minute>48</Minute>
+        <SubjectPlayerID>449760498</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>437008626</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>123</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=449760498" title="Mick ten Hove" class="homeplayer"&gt;Mick ten Hove&lt;/a&gt; de &lt;span class="hometeam"&gt;olympic&lt;/span&gt; donna l’avantage à son équipe après 48 minutes de jeu, à la suite d’une belle attaque sur la droite : 1 - 0.</EventText>
+      </Event>
+      <Event Index="22">
+        <Minute>50</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>39400</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>464</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="23">
+        <Minute>65</Minute>
+        <SubjectPlayerID>442997631</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>65</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="25">
+        <Minute>69</Minute>
+        <SubjectPlayerID>463926697</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>65</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="26">
+        <Minute>74</Minute>
+        <SubjectPlayerID>454254737</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>402</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Après 74 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=454254737" title="Yannick Buffet" class="awayplayer"&gt;Yannick Buffet&lt;/a&gt; se retrouva à masser son genou droit, l'air inquiet, mais il put finalement se relever.</EventText>
+      </Event>
+      <Event Index="27">
+        <Minute>75</Minute>
+        <SubjectPlayerID>435279263</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>442997631</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>350</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Sur le banc des remplaçants, les joueurs commençaient à s’agiter, et au bout de 75 minutes, l’entraineur de &lt;span class="awayteam"&gt;FCFL&lt;/span&gt; donna à &lt;a href="/Club/Players/Player.aspx?playerId=442997631" title="Jean-Fran&amp;#231;ois Gibaud" class="awayplayer"&gt;Jean-François Gibaud&lt;/a&gt; l’occasion qu’il attendait de montrer son talent. &lt;a href="/Club/Players/Player.aspx?playerId=435279263" title="Steijn Snoek" class="awayplayer"&gt;Steijn Snoek&lt;/a&gt; quitta le terrain à contre-cœur.</EventText>
+      </Event>
+      <Event Index="28">
+        <Minute>75</Minute>
+        <SubjectPlayerID>435279263</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>442997631</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>80</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=442997631" title="Jean-Fran&amp;#231;ois Gibaud" class="awayplayer"&gt;Jean-François Gibaud&lt;/a&gt; devenait alors le nouveau capitaine de &lt;span class="awayteam"&gt;FCFL&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="29">
+        <Minute>75</Minute>
+        <SubjectPlayerID>460673979</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>463926697</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>L’entraineur de &lt;span class="hometeam"&gt;olympic&lt;/span&gt; estima après 75 minutes qu’il était temps d’effectuer un changement. &lt;a href="/Club/Players/Player.aspx?playerId=460673979" title="Jean Ras" class="homeplayer"&gt;Jean Ras&lt;/a&gt; céda à regret sa place sur le terrain à &lt;a href="/Club/Players/Player.aspx?playerId=463926697" title="Jakob Johannes Hohlstein" class="homeplayer"&gt;Jakob Johannes Hohlstein&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="30">
+        <Minute>76</Minute>
+        <SubjectPlayerID>450051951</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>442997631</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>370</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>En sentant la défaite approcher, l’entraineur de &lt;span class="awayteam"&gt;FCFL&lt;/span&gt; ordonna à &lt;a href="/Club/Players/Player.aspx?playerId=442997631" title="Jean-Fran&amp;#231;ois Gibaud" class="awayplayer"&gt;Jean-François Gibaud&lt;/a&gt; et à &lt;a href="/Club/Players/Player.aspx?playerId=450051951" title="Patrick M&amp;#233;rigot" class="awayplayer"&gt;Patrick Mérigot&lt;/a&gt; d’interchanger leur place après 76 minutes de match.</EventText>
+      </Event>
+      <Event Index="32">
+        <Minute>81</Minute>
+        <SubjectPlayerID>443750239</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>453238558</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>263</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Après 81 minutes, sur une belle estocade sur le flanc droit, &lt;a href="/Club/Players/Player.aspx?playerId=443750239" title="Cyrille Chantepie" class="awayplayer"&gt;Cyrille Chantepie&lt;/a&gt; avait dans ses pieds le ballon de l’égalisation mais la défense réussit à contrer l’attaque du joueur de &lt;span class="awayteam"&gt;FCFL&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="33">
+        <Minute>83</Minute>
+        <SubjectPlayerID>450002454</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>437008626</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>133</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Après 83 minutes de jeu, &lt;a href="/Club/Players/Player.aspx?playerId=450002454" title="Marc-Pascal Stolp" class="homeplayer"&gt;Marc-Pascal Stolp&lt;/a&gt; de &lt;span class="hometeam"&gt;olympic&lt;/span&gt; éclata de joie lorsque, après une belle attaque sur le flanc droit, il vit son ballon passer entre les jambes du gardien et finir au fond des filets, portant ainsi le score à 2 - 0.</EventText>
+      </Event>
+      <Event Index="34">
+        <Minute>84</Minute>
+        <SubjectPlayerID>448492822</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>79</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="35">
+        <Minute>87</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>774</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>451</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="36">
+        <Minute>89</Minute>
+        <SubjectPlayerID>458427642</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>448492822</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Après 89 minutes de jeu, &lt;span class="hometeam"&gt;olympic&lt;/span&gt; souhaita apporter un nouveau souffle à son match. &lt;a href="/Club/Players/Player.aspx?playerId=458427642" title="Thibault S&amp;#233;n&amp;#233;gas" class="homeplayer"&gt;Thibault Sénégas&lt;/a&gt; reçut une tape amicale sur l’épaule de la part de &lt;a href="/Club/Players/Player.aspx?playerId=448492822" title="L&amp;#233;o Mestrallet" class="homeplayer"&gt;Léo Mestrallet&lt;/a&gt; au moment où ce dernier prit sa place sur le terrain.</EventText>
+      </Event>
+      <Event Index="37">
+        <Minute>89</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>75</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>L'arbitre assistant indiqua 3 minutes de temps additionnel, laissant l'espoir aux supporters que leur équipe puisse obtenir une action supplémentaire avant la fin.</EventText>
+      </Event>
+      <Event Index="38">
+        <Minute>93</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>599</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Le match se termina sur le score de 2 - 0.</EventText>
+      </Event>
+      <Event Index="39">
+        <Minute>93</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>601</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="40">
+        <Minute>93</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>774</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>603</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText></EventText>
+      </Event>
+      <Event Index="41">
+        <Minute>93</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>56</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Cette mi-temps fut dominée par &lt;span class="hometeam"&gt;olympic&lt;/span&gt;, qui garda le contrôle du ballon pendant 56 % du temps.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="42">
+        <Minute>93</Minute>
+        <SubjectPlayerID>449540442</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=449540442" title="Marco Mill&amp;#246;cker" class="homeplayer"&gt;Marco Millöcker&lt;/a&gt; se fit remarquer du côté de &lt;span class="hometeam"&gt;olympic&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="43">
+        <Minute>93</Minute>
+        <SubjectPlayerID>453238558</SubjectPlayerID>
+        <SubjectTeamID>1160671</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=453238558" title="Norman Heep" class="homeplayer"&gt;Norman Heep&lt;/a&gt; fut particulièrement mauvais, en revanche.</EventText>
+      </Event>
+      <Event Index="44">
+        <Minute>93</Minute>
+        <SubjectPlayerID>442997631</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=442997631" title="Jean-Fran&amp;#231;ois Gibaud" class="awayplayer"&gt;Jean-François Gibaud&lt;/a&gt; fut le meilleur joueur de &lt;span class="awayteam"&gt;FCFL&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="45">
+        <Minute>93</Minute>
+        <SubjectPlayerID>437008626</SubjectPlayerID>
+        <SubjectTeamID>294798</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Par contre, &lt;a href="/Club/Players/Player.aspx?playerId=437008626" title="Kristian Grabher" class="awayplayer"&gt;Kristian Grabher&lt;/a&gt; fut sans conteste le pire joueur. Ses frères se demandèrent s’il ne fallait pas changer de nom.</EventText>
+      </Event>
+    </EventList>
+  </Match>
+</HattrickData>
