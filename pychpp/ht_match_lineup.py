@@ -225,6 +225,10 @@ class HTMatchLineup(ht_model.HTModel):
                             self._player_from_lineup(
                                 ht_id=player_2.ht_id,
                                 lineup=lineup,
+                                included_positions=["defender",
+                                                    "midfield",
+                                                    "forward",
+                                                    ]
                             ),
                             ht_player.HTLineupGhostPlayer):
                         lineup[self.position(
@@ -332,7 +336,13 @@ class HTMatchLineup(ht_model.HTModel):
         lineup = self.starting_lineup if start else self.lineup
         return self._formation_from_lineup(lineup)
 
-    def _player_from_lineup(self, ht_id, lineup):
+    def _player_from_lineup(self, ht_id, lineup, included_positions=None):
+
+        if included_positions is not None:
+            new_lineup = dict()
+            for p in included_positions:
+                new_lineup[p] = lineup[p]
+            lineup = new_lineup
 
         player_list = [p for d in lineup.values()
                        for p in d.values()

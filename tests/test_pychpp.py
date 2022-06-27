@@ -792,6 +792,13 @@ def test_get_match_lineup(mocked_chpp):
                               (81, "152"),
                               ]
 
+    # substitute player become captain and is swapped
+    ml8 = mocked_chpp.match_lineup(ht_id=695301077, team_id=294798)
+
+    assert ml8.formations == [(0, "343"),
+                              (75, "253"),
+                              ]
+
 
 def test_get_youth_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(ht_id=120287045,
