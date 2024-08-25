@@ -19,6 +19,11 @@ class HTModel(ABC):
     LAST_VERSION: str
     URL_PATH: Optional[str] = None
 
+    @classmethod
+    def is_optional_attrib(cls, attrib: str) -> bool:
+        typehint = get_type_hints(cls).get(attrib)
+        return get_origin(typehint) is Union and type(None) in get_args(typehint)
+
     def __init__(self,
                  chpp: '_chpp.CHPP',
                  data: Optional[ElementTree.Element] = None,
@@ -50,12 +55,17 @@ class HTModel(ABC):
 
         self._requests_args = dict()
 
-        for attr in (a for a in dir(self) if isinstance(getattr(self, a), HTInitVar)):
-            init_var = getattr(self, attr)
-            init_var.value = kwargs.get(attr, None)
+        for attr in (a for a in self.__class__.__dict__.keys() if isinstance(getattr(self, a), HTInitVar)):
+            init_var: HTInitVar = getattr(self, attr)
 
-            if init_var.value is None:
-                init_var.value = init_var.default
+            try:
+                init_var.value = kwargs[init_var.init_arg]
+
+            except KeyError:
+                if not self.is_optional_attrib(attr):
+                    raise ValueError(f"{init_var.init_arg} argument has to be set as {attr} is not optional")
+                else:
+                    init_var.value = init_var.default
 
             if init_var.value is not None:
                 self._requests_args[init_var.param] = init_var.value
@@ -69,9 +79,6 @@ class HTModel(ABC):
 
     def _transform_fields(self):
 
-        def is_optional(x: Type) -> bool:
-            return get_origin(x) is Union and type(None) in get_args(x)
-
         # Fill attributes according to class attributes referencing a HTBaseField instance
         for attr in (a for a in self.__class__.__dict__.keys() if isinstance(getattr(self, a), HTBaseField)):
             field = getattr(self, attr)
@@ -83,7 +90,7 @@ class HTModel(ABC):
 
                 # get attribute type hint
                 # if it is optional (Union[None|...]), get the first type which is not NoneType
-                if is_optional(typehint):
+                if self.is_optional_attrib(attr):
                     field.type = [t for t in get_args(typehint) if t is not None][0]
                 else:
                     field.type = typehint
@@ -114,7 +121,7 @@ class HTModel(ABC):
                     setattr(self, attr, HTXml.ht_float(xml_node, attrib=field.attrib))
                 elif field.type is bool:
                     setattr(self, attr, HTXml.ht_bool(xml_node, attrib=field.attrib))
-                elif field.type is datetime and is_optional(typehint):
+                elif field.type is datetime and self.is_optional_attrib(attr):
                     setattr(self, attr, HTXml.ht_datetime_from_text(xml_node, attrib=field.attrib))
                 elif field.type is datetime:
                     setattr(self, attr, HTXml.opt_ht_datetime_from_text(xml_node, attrib=field.attrib))
@@ -139,4 +146,21 @@ class HTModel(ABC):
                 return f"{self._BASE_URL}{self.URL_PATH}"
 
     def __repr__(self):
-        return f"<{self.__class__.__name__} object>"
+        desc = ''
+
+        if getattr(self, 'name', None) is not None:
+            desc+= f"{getattr(self, 'name')} "
+        elif getattr(self, 'login_name', None) is not None:
+            desc+= f"{getattr(self, 'login_name')} "
+
+        if getattr(self, 'ht_id', None) is not None:
+            desc += f"({getattr(self, 'ht_id')})"
+        elif getattr(self, 'id', None) is not None:
+            desc += f"({getattr(self, 'id')})"
+
+        desc = desc.strip()
+
+        if desc:
+            desc = f" - {desc}"
+
+        return f"<{self.__class__.__name__} object{desc}>"

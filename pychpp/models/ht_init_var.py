@@ -6,3 +6,4 @@ from typing import Any
 class HTInitVar:
     param: str
     default: Any = None
+    init_arg: str = None

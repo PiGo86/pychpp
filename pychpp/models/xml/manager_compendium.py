@@ -1,10 +1,9 @@
 from typing import List, Optional
 
-from pychpp.models import ht_model
-from pychpp.models.ht_model import HTField, HTInitVar, HTAliasField
+from pychpp.models.ht_model import HTField, HTInitVar, HTAliasField, HTModel
 
 
-class ManagerCompendium(ht_model.HTModel):
+class ManagerCompendium(HTModel):
     """
     Manager Compendium
     """
@@ -13,8 +12,9 @@ class ManagerCompendium(ht_model.HTModel):
     LAST_VERSION = "1.5"
     URL_PATH = "/Club/Manager"
 
-    ht_id: int = HTInitVar(param='userId')
+    _r_id: int = HTInitVar(param='userId', init_arg='id')
 
+    id: int = HTField(path='Manager/UserId')
     login_name: str = HTField(path='Manager/Loginname')
     username: str = HTAliasField(target='login_name')
     supporter_tier: str = HTField(path='Manager/SupporterTier')
@@ -28,7 +28,7 @@ class ManagerCompendium(ht_model.HTModel):
     avatar: 'Avatar' = HTField(path='Manager/Avatar')
 
 
-class Language(ht_model.HTModel):
+class Language(HTModel):
     """
     managercompendium -> Language
     """
@@ -36,7 +36,7 @@ class Language(ht_model.HTModel):
     name: str = HTField(path='LanguageName')
 
 
-class Country(ht_model.HTModel):
+class Country(HTModel):
     """
     managercompendium -> Country
     """
@@ -44,7 +44,7 @@ class Country(ht_model.HTModel):
     name: str = HTField(path='CountryName')
 
 
-class Currency(ht_model.HTModel):
+class Currency(HTModel):
     """
     managercompendium -> Currency
     """
@@ -52,7 +52,7 @@ class Currency(ht_model.HTModel):
     rate: float = HTField(path='CurrencyRate')
 
 
-class TeamItem(ht_model.HTModel):
+class TeamItem(HTModel):
     """
     managercompendium -> Teams -> Team item
     """
@@ -66,7 +66,7 @@ class TeamItem(ht_model.HTModel):
     youth_team: Optional['TeamItemYouthTeam'] = HTField(path='YouthTeam')
 
 
-class TeamItemArena(ht_model.HTModel):
+class TeamItemArena(HTModel):
     """
     managercompendium -> Teams -> Team item -> Arena
     """
@@ -74,7 +74,7 @@ class TeamItemArena(ht_model.HTModel):
     name: str = HTField(path='ArenaName')
 
 
-class TeamItemLeague(ht_model.HTModel):
+class TeamItemLeague(HTModel):
     """
     managercompendium -> Teams -> Team item -> League
     """
@@ -83,7 +83,7 @@ class TeamItemLeague(ht_model.HTModel):
     season: int = HTField(path='Season')
 
 
-class TeamItemCountry(ht_model.HTModel):
+class TeamItemCountry(HTModel):
     """
     managercompendium -> Teams -> Team item -> Country
     """
@@ -91,7 +91,7 @@ class TeamItemCountry(ht_model.HTModel):
     name: str = HTField(path='CountryName')
 
 
-class TeamItemLeagueLevelUnit(ht_model.HTModel):
+class TeamItemLeagueLevelUnit(HTModel):
     """
     managercompendium -> Teams -> Team item -> League Level Unit
     """
@@ -99,7 +99,7 @@ class TeamItemLeagueLevelUnit(ht_model.HTModel):
     name: str = HTField(path='LeagueLevelUnitName')
 
 
-class TeamItemRegion(ht_model.HTModel):
+class TeamItemRegion(HTModel):
     """
     managercompendium -> Teams -> Team item -> Region
     """
@@ -107,7 +107,7 @@ class TeamItemRegion(ht_model.HTModel):
     name: str = HTField(path='RegionName')
 
 
-class TeamItemYouthTeam(ht_model.HTModel):
+class TeamItemYouthTeam(HTModel):
     """
     managercompendium -> Teams -> Team item -> Youth team
     """
@@ -116,7 +116,7 @@ class TeamItemYouthTeam(ht_model.HTModel):
     league: 'TeamItemYouthTeamLeague' = HTField(path='YouthLeague')
 
 
-class TeamItemYouthTeamLeague(ht_model.HTModel):
+class TeamItemYouthTeamLeague(HTModel):
     """
     managercompendium -> Teams -> Team item -> Youth team -> League
     """
@@ -124,7 +124,7 @@ class TeamItemYouthTeamLeague(ht_model.HTModel):
     name: str = HTField(path='YouthLeagueName')
 
 
-class NationalTeamItem(ht_model.HTModel):
+class NationalTeamItem(HTModel):
     """
     managercompendium -> National teams (coach or assistant) -> National team item
     """
@@ -132,7 +132,7 @@ class NationalTeamItem(ht_model.HTModel):
     name: str = HTField(path='NationalTeamName')
 
 
-class Avatar(ht_model.HTModel):
+class Avatar(HTModel):
     """
     managercompendium -> Avatar
     """
@@ -140,7 +140,7 @@ class Avatar(ht_model.HTModel):
     layers: List['AvatarLayer'] = HTField(path='../..', items='Layer')
 
 
-class AvatarLayer(ht_model.HTModel):
+class AvatarLayer(HTModel):
     """
     managercompendium -> Avatar -> Layers -> Layer item
     """
