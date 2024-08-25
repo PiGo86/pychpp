@@ -1,4 +1,5 @@
 import datetime
+from xml.etree import ElementTree
 
 from pychpp import ht_skill, ht_age, ht_datetime
 
@@ -9,25 +10,47 @@ class HTXml:
     """
 
     @staticmethod
-    def ht_str(data):
-        return str(data.text) if data.text is not None else None
-
-    @staticmethod
-    def ht_int(data):
-        return int(data.text) if data.text is not None else None
-
-    @staticmethod
-    def ht_float(data):
-        return float(data.text) if data.text is not None else None
-
-    @staticmethod
-    def ht_bool(data):
-        if data.text is None:
-            return None
-        elif data.text in ("0", "1"):
-            return bool(int(data.text))
+    def ht_str(data: ElementTree.Element, attrib:str = None):
+        if attrib is not None:
+            return str(data.attrib.get(attrib, None))
         else:
-            return True if data.text.capitalize() == "True" else False
+            return str(data.text) if data.text is not None else None
+
+    @staticmethod
+    def ht_str_items(data: ElementTree.Element, item_tag: str):
+        return [item.text for item in data.findall(item_tag)]
+
+    @staticmethod
+    def ht_int(data: ElementTree.Element, attrib:str = None):
+        if attrib is not None:
+            return int(data.attrib.get(attrib, None))
+        else:
+            return int(data.text) if data.text is not None else None
+
+    @staticmethod
+    def ht_float(data: ElementTree.Element, attrib: str = None):
+        if attrib is not None:
+            return float(data.attrib.get(attrib, None))
+        else:
+            return float(data.text) if data.text is not None else None
+
+    @staticmethod
+    def ht_bool(data: ElementTree.Element, attrib: str = None):
+        if attrib is not None:
+            return bool(data.attr.get(attrib, None))
+        else:
+            if data.text is None:
+                return None
+            elif data.text in ("0", "1"):
+                return bool(int(data.text))
+            else:
+                return True if data.text.capitalize() == "True" else False
+
+    @staticmethod
+    def iter_data_items(data, item_tag):
+        if data is not None:
+            for item in data.findall(item_tag):
+                yield item
 
     @staticmethod
     def ht_goals(data):
@@ -61,43 +84,51 @@ class HTXml:
         return events
 
     @staticmethod
-    def ht_datetime_from_text(data):
+    def ht_datetime_from_text(data: ElementTree.Element, attrib: str = None):
         """
         Converting strings from xml data to HTDatetime objects
 
         :param data: xml data representing a date and a time
-        :type data: ElementTree.Element
+        :param attrib: attr to fetch
         :return: a datetime object
         :rtype: ht_datetime.HTDatetime
         """
-        _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+        if attrib is not None:
+            _datetime = datetime.datetime.strptime(data.attrib.get(attrib), "%Y-%m-%d %H:%M:%S")
+        else:
+            _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
         return ht_datetime.HTDatetime(datetime=_datetime)
 
     @staticmethod
-    def opt_ht_datetime_from_text(data):
+    def opt_ht_datetime_from_text(data: ElementTree.Element, attrib: str = None):
         """
         Converting strings from xml data to HTDatetime objects optionnaly
 
         :param data: xml data representing a date and a time
-        :type data: ElementTree.Element
+        :param attrib: attr to fetch
         :return: a datetime object or None
         :rtype: ht_datetime.HTDatetime | None
         """
-        if data.text is None:
+        if attrib is not None:
+            _data = data.attrib.get(attrib)
+        else:
+            _data = data.text
+
+        if _data is None:
             return None
+        else:
+            _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
 
-        _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+            # ValueError happens if text cannot be serialized
+            # OverflowError happens with special datetimes
+            # as 0001-01-01 9999-12-31 due to pytz limitations
+            # In these cases, return None
+            try:
+                _ht_date = ht_datetime.HTDatetime(datetime=_datetime)
+            except (ValueError, OverflowError):
+                _ht_date = None
 
-        # ValueError happens if text cannot be serialized
-        # OverflowError happens with special datetimes
-        # as 0001-01-01 9999-12-31 due to pytz limitations
-        # In these cases, return None
-        try:
-            _ht_date = ht_datetime.HTDatetime(datetime=_datetime)
-        except (ValueError, OverflowError):
-            _ht_date = None
-
-        return _ht_date
+            return _ht_date
 
     @staticmethod
     def ht_datetime_to_text(_datetime):
