@@ -10,7 +10,7 @@ from pychpp import __version__
 from pychpp import CHPP
 from pychpp.ht_age import HTAge
 from pychpp.ht_team import HTTeam, HTYouthTeam, HTTeamRank
-from pychpp.ht_user import HTUser
+from pychpp.models.xml.manager_compendium import ManagerCompendium
 from pychpp.ht_player import HTPlayer, HTYouthPlayer, HTLineupPlayer
 from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
@@ -262,7 +262,7 @@ def test_get_specific_team(mocked_chpp):
                        "?path=/Club/?TeamID=591993"
 
     user = team.user
-    assert isinstance(user, HTUser)
+    assert isinstance(user, ManagerCompendium)
     assert user.ht_id == 6336642
     assert user.username == 'thekiki76'
     assert user.supporter_tier == 'platinum'
@@ -381,7 +381,7 @@ def test_get_specific_team_currently_playing(mocked_chpp):
                        "?path=/Club/?TeamID=1959999"
 
     user = team.user
-    assert isinstance(user, HTUser)
+    assert isinstance(user, ManagerCompendium)
     assert user.ht_id == 13011389
     assert user.username == 'braslet'
     assert user.supporter_tier == 'none'
@@ -411,7 +411,7 @@ def test_get_secondary_team(mocked_chpp):
                        "?path=/Club/?TeamID=1755350"
 
     user = team.user
-    assert isinstance(user, HTUser)
+    assert isinstance(user, ManagerCompendium)
     assert user.ht_id == 9638716
     assert user.username == "Cochonstar-UHS"
     assert user.url == "https://www.hattrick.org/goto.ashx" \
@@ -431,7 +431,7 @@ def test_get_secondary_team(mocked_chpp):
 def test_get_current_user(chpp):
     user = chpp.user()
 
-    assert isinstance(user, HTUser)
+    assert isinstance(user, ManagerCompendium)
     assert isinstance(user.ht_id, int)
     assert isinstance(user.username, str)
     assert isinstance(user.url, str)

@@ -4,10 +4,11 @@ from rauth.oauth import HmacSha1Signature
 
 import xml.etree.ElementTree
 
-from pychpp import (ht_user, ht_team, ht_player, ht_arena, ht_region,
+from pychpp import (ht_team, ht_player, ht_arena, ht_region,
                     ht_challenge, ht_match, ht_matches_archive,
                     ht_match_lineup, ht_league, ht_training, ht_transfers_team,
                     ht_world, ht_national_teams, ht_world_cup)
+from pychpp.models.xml import manager_compendium
 from pychpp import ht_error
 from pychpp.ht_xml import HTXml
 
@@ -289,19 +290,22 @@ class CHPP:
         """
         Check token key and secret validity
 
-        :return: validity and other information about current tolen
+        :return: validity and other information about current token
         :rtype: dict
         """
 
         data = None
+        token_is_valid = None
 
         try:
             data = self._base_request(url=self.check_token_url,
                                       parse_data=True)
-            token_is_valid = True
 
         except ht_error.HTUnauthorizedAction:
             token_is_valid = False
+
+        else:
+            token_is_valid = True
 
         finally:
             token_data = {
@@ -344,16 +348,21 @@ class CHPP:
         """
         return self._base_request(url=self.base_url, parse_data=True, **kwargs)
 
-    def user(self, **kwargs):
+    def user(self, ht_id: int = None, **kwargs) -> manager_compendium.ManagerCompendium:
         """
         Get a user from its Hattrick ID
 
         If not ht_id is defined, return the connected user.
 
         :key ht_id: Hattrick ID of the requested user, must be an int
-        :rtype: ht_user.HTUser
         """
-        return ht_user.HTUser(chpp=self, **kwargs)
+        return manager_compendium.ManagerCompendium(chpp=self, ht_id=ht_id, **kwargs)
+
+    def manager_compendium(self, ht_id: int = None, **kwargs) -> manager_compendium.ManagerCompendium:
+        """
+        Alias for user method
+        """
+        return self.user(ht_id=ht_id, **kwargs)
 
     def team(self, **kwargs):
         """
