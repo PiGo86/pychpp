@@ -12,11 +12,10 @@ class ManagerCompendium(HTModel):
     LAST_VERSION = "1.5"
     URL_PATH = "/Club/Manager"
 
-    _r_id: int = HTInitVar(param='userId', init_arg='id')
+    _r_id: Optional[int] = HTInitVar(param='userId', init_arg='id')
 
     id: int = HTField(path='Manager/UserId')
     login_name: str = HTField(path='Manager/Loginname')
-    username: str = HTAliasField(target='login_name')
     supporter_tier: str = HTField(path='Manager/SupporterTier')
     last_logins: List[str] = HTField(path='Manager/LastLogins', items='LoginTime')
     language: 'Language' = HTField(path='Manager/Language')
@@ -137,7 +136,7 @@ class Avatar(HTModel):
     managercompendium -> Avatar
     """
     background_image: str = HTField(path='BackgroundImage')
-    layers: List['AvatarLayer'] = HTField(path='../..', items='Layer')
+    layers: Optional[List['AvatarLayer']] = HTField(path='../..', items='Layer')
 
 
 class AvatarLayer(HTModel):

@@ -32,19 +32,21 @@ class HTXml:
         if attrib is not None:
             return float(data.attrib.get(attrib, None))
         else:
-            return float(data.text) if data.text is not None else None
+            return float(data.text.replace(',', '.')) if data.text is not None else None
 
     @staticmethod
     def ht_bool(data: ElementTree.Element, attrib: str = None):
         if attrib is not None:
-            return bool(data.attr.get(attrib, None))
+            value = data.attrib.get(attrib, None)
         else:
-            if data.text is None:
-                return None
-            elif data.text in ("0", "1"):
-                return bool(int(data.text))
-            else:
-                return True if data.text.capitalize() == "True" else False
+            value = data.text
+
+        if value is None:
+            return None
+        elif value in ("0", "1"):
+            return bool(int(value))
+        else:
+            return True if value.capitalize() == "True" else False
 
     @staticmethod
     def iter_data_items(data, item_tag):

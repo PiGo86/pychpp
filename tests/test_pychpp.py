@@ -9,9 +9,11 @@ import xml.etree.ElementTree
 from pychpp import __version__
 from pychpp import CHPP
 from pychpp.ht_age import HTAge
-from pychpp.ht_team import HTTeam, HTYouthTeam, HTTeamRank
+from pychpp.models.custom import ht_team, ht_player, ht_youth_team
+from pychpp.ht_team import HTTeamRank
+from pychpp.models.xml import team_details
 from pychpp.models.xml.manager_compendium import ManagerCompendium
-from pychpp.ht_player import HTPlayer, HTYouthPlayer, HTLineupPlayer
+from pychpp.ht_player import HTYouthPlayer, HTLineupPlayer
 from pychpp.ht_arena import HTArena
 from pychpp.ht_region import HTRegion
 from pychpp.ht_match import HTMatch
@@ -32,6 +34,7 @@ from pychpp.ht_transfers_team import HTTransfersTeam, HTTransfersTeamItem
 from pychpp.ht_datetime import HTDatetime
 from pychpp.ht_error import (HTUnauthorizedAction, UnknownLeagueError,
                              HTUnknownTeamIdError)
+from pychpp.models.xml.team_details import User
 
 PYCHPP_CONSUMER_KEY = os.environ["PYCHPP_CONSUMER_KEY"]
 PYCHPP_CONSUMER_SECRET = os.environ["PYCHPP_CONSUMER_SECRET"]
@@ -131,52 +134,56 @@ def mocked_chpp(monkeypatch):
 
     monkeypatch.setattr(CHPP, "request", mock_request)
 
-    return CHPP(consumer_key=None, consumer_secret=None)
+    return CHPP(consumer_key='', consumer_secret='')
 
 
-def test_get_current_team(chpp):
+def test_get_current_team(chpp: 'CHPP'):
     team = chpp.team()
 
-    assert isinstance(team, HTTeam)
-    assert isinstance(team.ht_id, int)
+    assert isinstance(team, ht_team.HTTeam)
+    assert isinstance(team.id, int)
     assert isinstance(team.name, str)
     assert isinstance(team.url, str)
     assert isinstance(team.is_bot, bool)
 
-    youth_team = team.youth_team
-    assert isinstance(youth_team, HTYouthTeam) or youth_team is None
+    youth_team = team.youth_team()
+    assert isinstance(youth_team, ht_youth_team.HTYouthTeam) or youth_team is None
 
-    user = team.user
+    user = team.user()
     test_user = chpp.user()
-    assert user.ht_id == test_user.ht_id
+    assert user.id == test_user.id
 
-    players = team.players
+    players = team.players()
     assert isinstance(players, list)
     for p in players:
-        assert isinstance(p, HTPlayer)
+        assert isinstance(p, ht_player.HTLightPlayer)
 
 
-def test_get_specific_team(mocked_chpp):
+def test_get_specific_team(mocked_chpp: 'CHPP'):
 
-    team = mocked_chpp.team(ht_id=591993)
-    assert isinstance(team, HTTeam)
+    id_ = 591993
+    xml_team_details = mocked_chpp.xml_team_details(id=id_)
+    team = [t for t in xml_team_details.teams if t.id == id_][0]
+    assert isinstance(team, team_details.TeamItem)
 
-    assert team.ht_id == 591993
+    assert team.id == 591993
 
-    assert team.user_ht_id == 6336642
-    assert team.user_language_id == 5
-    assert team.user_language_name == "Français"
-    assert team.supporter_tier == "platinum"
-    assert team.user_loginname == "thekiki76"
-    assert team.user_name == "HIDDEN"
-    assert team.user_icq is None
-    assert team.user_signup_date == HTDatetime.from_calendar(2007, 5, 4,
+    user = xml_team_details.user
+    assert isinstance(user, User)
+    assert user.id == 6336642
+    assert user.language.id == 5
+    assert user.language.name == "Français"
+    assert user.supporter_tier == "platinum"
+    assert user.login_name == "thekiki76"
+    assert user.name == "HIDDEN"
+    assert user.icq is None
+    assert user.signup_date == HTDatetime.from_calendar(2007, 5, 4,
                                                              11, 49, 34)
-    assert team.user_activation_date == HTDatetime.from_calendar(2007, 5, 8,
+    assert user.activation_date == HTDatetime.from_calendar(2007, 5, 8,
                                                                  2, 58, 0)
-    assert team.user_last_login_date == HTDatetime.from_calendar(2021, 1, 14,
+    assert user.last_login_date == HTDatetime.from_calendar(2021, 1, 14,
                                                                  20, 53, 41)
-    assert team.user_has_manager_license is True
+    assert user.has_manager_license is True
 
     assert team.name == "thekiki's"
     assert team.short_name == 'thekikis'
@@ -184,76 +191,76 @@ def test_get_specific_team(mocked_chpp):
     assert team.founded_date == HTDatetime.from_calendar(2007, 5, 8,
                                                          2, 58, 0)
 
-    assert team.arena_ht_id == 591993
-    assert team.arena_name == "thekiki's evil"
+    assert team.arena.id == 591993
+    assert team.arena.name == "thekiki's evil"
 
-    assert team.league_ht_id == 5
-    assert team.league_name == "France"
+    assert team.league.id == 5
+    assert team.league.name == "France"
 
-    assert team.country_ht_id == 5
-    assert team.country_name == "France"
+    assert team.country.id == 5
+    assert team.country.name == "France"
 
-    assert team.region_ht_id == 139
-    assert team.region_name == "Haute-Normandie"
+    assert team.region.id == 139
+    assert team.region.name == "Haute-Normandie"
 
-    assert team.trainer_ht_id == 336956746
+    assert team.trainer.id == 336956746
 
     assert team.homepage == "coupe-des-regions.forumpro.fr/index.htm"
 
-    assert team.still_in_cup is True
-    assert team.cup_ht_id == 6
-    assert team.cup_name == "Coupe de France"
-    assert team.cup_league_level == 0
-    assert team.cup_level == 1
-    assert team.cup_level_index == 1
-    assert team.cup_match_round == 2
-    assert team.cup_match_rounds_left == 13
+    assert team.cup.still_in_cup is True
+    assert team.cup.id == 6
+    assert team.cup.name == "Coupe de France"
+    assert team.cup.league_level == 0
+    assert team.cup.level == 1
+    assert team.cup.level_index == 1
+    assert team.cup.match_round == 2
+    assert team.cup.match_rounds_left == 13
 
-    assert team.power_rating_global_ranking == 13632
-    assert team.power_rating_league_ranking == 599
-    assert team.power_rating_region_ranking == 19
-    assert team.power_rating == 990
+    assert team.power_rating.global_ranking == 13632
+    assert team.power_rating.league_ranking == 599
+    assert team.power_rating.region_ranking == 19
+    assert team.power_rating.value == 990
 
-    assert team.friendly_team_ht_id == 0
+    assert team.friendly_team_id == 0
 
-    assert team.league_level_unit_id == 21672
-    assert team.league_level_unit_name == "V.96"
-    assert team.league_level == 5
+    assert team.league_level_unit.id == 21672
+    assert team.league_level_unit.name == "V.96"
+    assert team.league_level_unit.level == 5
 
     assert team.number_of_victories == 5
     assert team.number_of_undefeated == 5
 
-    assert team.fan_club_ht_id == 339929
-    assert team.fan_club_name == "the bad kiki's fanatic"
-    assert team.fan_club_size == 2419
+    assert team.fan_club.id == 339929
+    assert team.fan_club.name == "the bad kiki's fanatic"
+    assert team.fan_club.size == 2419
 
     assert team.logo_url == "//res.hattrick.org/teamlogo/6/60/592/591993/" \
                             "591993.jpg"
 
-    assert team.guestbook_items == 239
+    assert team.guestbook.number_of_items == 239
 
-    assert team.press_announcement_subject == "retour vers le fu..heu " \
+    assert team.press_announcement.subject == "retour vers le fu..heu " \
                                               "vers la V.96"
-    assert team.press_announcement_body == (
+    assert team.press_announcement.body == (
         "Aprés une relégation de DIV IV Thekiki's reviennent voir les copains "
         "de la V.96, pour mettre le bazar ;)\n"
         "bonne saison les gars ca va bagarrer !!!")
-    assert team.press_announcement_send_date == (
+    assert team.press_announcement.send_date == (
         HTDatetime.from_calendar(2020, 9, 17, 11, 55, 0))
 
-    assert team.background_color == "000000"
-    assert team.color == "ffffff"
+    assert team.colors.background_color == "000000"
+    assert team.colors.color == "ffffff"
 
     assert team.dress_uri == "//res.hattrick.org/kits/27/261/2606/2605185/" \
                              "matchKitSmall.png"
     assert team.dress_alternate_uri == "//res.hattrick.org/kits/27/261/2606/" \
                                        "2605184/matchKitSmall.png"
 
-    assert team.is_bot is False
+    assert team.bot_status.is_bot is False
 
-    assert team.rank == 1182
+    assert team.team_rank == 1182
 
-    assert team.youth_team_ht_id == 546603
+    assert team.youth_team_id == 546603
     assert team.youth_team_name == 'thebabykikis'
 
     assert team.number_of_visits == 2
@@ -261,23 +268,16 @@ def test_get_specific_team(mocked_chpp):
     assert team.url == "https://www.hattrick.org/goto.ashx" \
                        "?path=/Club/?TeamID=591993"
 
-    user = team.user
-    assert isinstance(user, ManagerCompendium)
-    assert user.ht_id == 6336642
-    assert user.username == 'thekiki76'
+    assert isinstance(user, team_details.User)
+    assert user.id == 6336642
+    assert user.login_name == 'thekiki76'
     assert user.supporter_tier == 'platinum'
     assert user.url == "https://www.hattrick.org/goto.ashx" \
                        "?path=/Club/Manager/?userId=6336642"
 
     arena = team.arena
-    assert isinstance(arena, HTArena)
+    assert isinstance(arena, team_details.TeamItemArena)
     assert arena.name == "thekiki's evil"
-    assert re.match(ARENA_PATTERN, arena.url)
-
-    youth_team = team.youth_team
-    assert isinstance(youth_team, HTYouthTeam)
-    assert youth_team.url == 'https://www.hattrick.org/goto.ashx?path=' \
-                             '/Club/Youth/?YouthTeamID=546603'
 
 
 def test_get_specific_team_currently_playing(mocked_chpp):

@@ -1,5 +1,5 @@
 from pychpp import ht_model, ht_xml
-from pychpp import ht_user, ht_player, ht_arena
+from pychpp import ht_player, ht_arena
 from werkzeug.utils import cached_property
 
 
@@ -235,7 +235,7 @@ class HTTeam(HTCoreTeam):
     @property
     def user(self):
         """Owner of the current team"""
-        return ht_user.HTUser(chpp=self._chpp, ht_id=self.user_ht_id)
+        return self._chpp(ht_id=self.user_ht_id)
 
     @property
     def players(self):

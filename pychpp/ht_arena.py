@@ -1,5 +1,5 @@
-from pychpp import ht_model, ht_xml
-from pychpp import ht_team, ht_region
+from pychpp import ht_model, ht_xml, ht_team
+from pychpp import ht_region
 
 
 class HTArena(ht_model.HTModel):

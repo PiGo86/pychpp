@@ -1,5 +1,5 @@
-from pychpp import ht_model
-from pychpp import ht_arena, ht_match, ht_player, ht_team, ht_xml
+from pychpp import ht_model, ht_team
+from pychpp import ht_arena, ht_match, ht_player, ht_xml
 
 from copy import deepcopy
 

@@ -1,8 +1,8 @@
 import datetime
 
-from pychpp import ht_model
+from pychpp import ht_model, ht_team
 from pychpp import ht_xml
-from pychpp import ht_team, ht_match, ht_datetime
+from pychpp import ht_match, ht_datetime
 
 
 class HTMatchesArchive(ht_model.HTModel):
