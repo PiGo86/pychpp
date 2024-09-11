@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
 from pychpp.models.ht_init_var import HTInitVar
@@ -13,7 +13,7 @@ class LeagueDetails(HTModel):
     SOURCE_FILE = 'leaguedetails'
     LAST_VERSION = '1.6'
 
-    _r_league_level_unit_id: int = HTInitVar('leagueLevelUnitID', init_arg='league_level_unit_id')
+    _r_league_level_unit_id: Optional[int] = HTInitVar('leagueLevelUnitID', init_arg='league_level_unit_id')
 
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')

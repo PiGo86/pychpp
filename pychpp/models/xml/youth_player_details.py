@@ -43,7 +43,7 @@ class YouthPlayerDetails(RequestYouthPlayerDetails):
     injury_level: int = HTField('InjuryLevel')
     specialty: int = HTField('Specialty')
     career_goals: int = HTField('CareerGoals')
-    careerHattricks: int = HTField('CareerHattricks')
+    career_hattricks: int = HTField('CareerHattricks')
     league_goals: int = HTField('LeagueGoals')
     friendly_goals: int = HTField('FriendlyGoals')
     owning_youth_team: 'OwningYouthTeam' = HTField('OwningYouthTeam')

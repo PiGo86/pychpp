@@ -9,13 +9,13 @@ from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree
 
 from pychpp import (ht_challenge, ht_match, ht_matches_archive,
-                    ht_match_lineup, ht_league, ht_training, ht_transfers_team,
+                    ht_match_lineup, ht_training, ht_transfers_team,
                     ht_world, ht_national_teams, ht_world_cup)
 from pychpp.models.xml import manager_compendium, team_details, achievements, arena_details, challenges, region_details, \
     league_details, league_fixtures, match_lineup, national_teams, national_team_details, player_details, training, \
     transfers_team, world_details, world_cup, players, youth_player_details, youth_team_details, youth_player_list
 from pychpp.models.custom import ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player, ht_league_unit, \
-    ht_youth_player
+    ht_youth_player, ht_league
 from pychpp import ht_error
 from pychpp.ht_xml import HTXml
 
@@ -704,6 +704,7 @@ class CHPPXml(CHPPBase):
 
 class CHPP(CHPPXml):
 
+
     def arena(self, id_=None, **kwargs) -> ht_arena.HTArena:
         """
         Get an arena from its Hattrick ID
@@ -715,6 +716,16 @@ class CHPP(CHPPXml):
         """
         return ht_arena.HTArena(chpp=self, arena_id=id_, **kwargs)
 
+
+    def league(self, id_: int, **kwargs) -> ht_league.HTLeague:
+        """
+        Get a league from his Hattrick ID
+
+        :param id_: Hattrick ID of the requested league
+        """
+        return ht_league.HTLeague(chpp=self, league_id=id_, **kwargs)
+
+
     def league_unit(self, id_=None, **kwargs) -> ht_league_unit.HTLeagueUnit:
         """
         Get a league unit from its Hattrick ID
@@ -724,7 +735,8 @@ class CHPP(CHPPXml):
 
         :param id_: Hattrick ID of the requested league unit
         """
-        return ht_league_unit.HTLeagueUnit(chpp=self, id=id_, **kwargs)
+        return ht_league_unit.HTLeagueUnit(chpp=self, league_level_unit_id=id_, **kwargs)
+
 
     def user(self, id_: int = None, **kwargs) -> ht_user.HTUser:
         """
@@ -734,7 +746,8 @@ class CHPP(CHPPXml):
 
         :param id_: Hattrick ID of the requested user
         """
-        return ht_user.HTUser(chpp=self, id=id_, **kwargs)
+        return ht_user.HTUser(chpp=self, user_id=id_, **kwargs)
+
 
     def team(self, id_: int = None, user_id: int = None, **kwargs) -> ht_team.HTTeam:
         """
@@ -749,6 +762,7 @@ class CHPP(CHPPXml):
         """
         return ht_team.HTTeam(chpp=self, team_id=id_, user_id=user_id, **kwargs)
 
+
     def youth_team(self, id_=None, **kwargs) -> ht_youth_team.HTYouthTeam:
         """
         Get a youth team from its Hattrick ID
@@ -759,7 +773,8 @@ class CHPP(CHPPXml):
         :key ht_id: Hattrick ID of the requested youth team, must be an int
         :rtype: ht_team.HTYouthTeam
         """
-        return ht_youth_team.HTYouthTeam(chpp=self, id=id_, **kwargs)
+        return ht_youth_team.HTYouthTeam(chpp=self, youth_team_id=id_, **kwargs)
+
 
     def player(self, id_: int, **kwargs) -> ht_player.HTPlayer:
         """
@@ -767,7 +782,8 @@ class CHPP(CHPPXml):
 
         :key ht_id: Hattrick ID of the requested player
         """
-        return ht_player.HTPlayer(chpp=self, id=id_, **kwargs)
+        return ht_player.HTPlayer(chpp=self, player_id=id_, **kwargs)
+
 
     def light_player(self, team_id: int, id_: int, **kwargs) -> ht_player.HTLightPlayer:
         """
@@ -777,6 +793,7 @@ class CHPP(CHPPXml):
         """
         return ht_player.HTLightPlayer(chpp=self, team_id=team_id, id_=id_, **kwargs)
 
+
     def light_youth_player(self, youth_team_id: int, id_: int, **kwargs) -> ht_youth_player.HTLightYouthPlayer:
         """
         Get a youth player (light version) from its Hattrick ID
@@ -785,6 +802,7 @@ class CHPP(CHPPXml):
         """
         return ht_youth_player.HTLightYouthPlayer(chpp=self, youth_team_id=youth_team_id, id_=id_, **kwargs)
 
+
     def youth_player(self, id_: int, **kwargs) -> ht_youth_player.HTYouthPlayer:
         """
         Get a youth player from its Hattrick ID
@@ -792,7 +810,8 @@ class CHPP(CHPPXml):
         :key ht_id: Hattrick ID of the requested youth player, must be an int
         :rtype: ht_player.HTYouthPlayer
         """
-        return ht_youth_player.HTYouthPlayer(chpp=self, id=id_, **kwargs)
+        return ht_youth_player.HTYouthPlayer(chpp=self, youth_player_id=id_, **kwargs)
+
 
     def region(self, id_: int = None, **kwargs) -> ht_region.HTRegion:
         """
@@ -801,19 +820,19 @@ class CHPP(CHPPXml):
         :key ht_id: Hattrick ID of the requested region, must be an int
         :rtype: ht_region.HTRegion
         """
-        return ht_region.HTRegion(chpp=self, id=id_, **kwargs)
+        return ht_region.HTRegion(chpp=self, region_id=id_, **kwargs)
+
 
     def challenge_manager(self, **kwargs):
         """
-                Get a challenge manager object
+        Get a challenge manager object
 
-                :key team_ht_id: Hattrick ID of the concerned team,
-                                 must be an int
-                :key period: concerned period,
-                             must be equal to 'week' or 'weekend'
-                :rtype: ht_challenge.HTChallengeManager
-                """
+        :key team_ht_id: Hattrick ID of the concerned team, must be an int
+        :key period: concerned period, must be equal to 'week' or 'weekend'
+        :rtype: ht_challenge.HTChallengeManager
+        """
         return ht_challenge.HTChallengeManager(chpp=self, **kwargs)
+
 
     def match(self, **kwargs):
         """
@@ -823,6 +842,7 @@ class CHPP(CHPPXml):
         :rtype: ht_match.HTMatch
         """
         return ht_match.HTMatch(chpp=self, **kwargs)
+
 
     def matches_archive(self, **kwargs):
         """
@@ -842,14 +862,6 @@ class CHPP(CHPPXml):
         """
         return ht_matches_archive.HTMatchesArchive(chpp=self, **kwargs)
 
-    def league(self, **kwargs):
-        """
-        Get a league from his Hattrick ID
-
-        :key ht_id: Hattrick ID of the requested league, must be an int
-        :rtype: ht_league.HTLeague
-        """
-        return ht_league.HTLeague(chpp=self, **kwargs)
 
     def league_fixtures(self, **kwargs):
         """
@@ -861,6 +873,7 @@ class CHPP(CHPPXml):
         """
         return ht_league.HTLeagueFixtures(chpp=self, **kwargs)
 
+
     def match_lineup(self, **kwargs):
         """
         Get a match lineup from its Hattrick ID
@@ -871,6 +884,7 @@ class CHPP(CHPPXml):
         :rtype: ht_match_lineup.HTMatchLineup
         """
         return ht_match_lineup.HTMatchLineup(chpp=self, **kwargs)
+
 
     def world(self, **kwargs):
         """
@@ -884,6 +898,7 @@ class CHPP(CHPPXml):
         """
         return ht_world.HTWorld(chpp=self, **kwargs)
 
+
     def national_team(self, **kwargs):
         """
         Get a national team from its ID
@@ -894,6 +909,7 @@ class CHPP(CHPPXml):
         """
         return ht_national_teams.HTNationalTeam(chpp=self, **kwargs)
 
+
     def national_teams(self, **kwargs):
         """
         Get a national team from its ID
@@ -903,6 +919,7 @@ class CHPP(CHPPXml):
         :rtype: ht_national_teams.HTNationalTeams
         """
         return ht_national_teams.HTNationalTeams(chpp=self, **kwargs)
+
 
     def training(self, **kwargs):
         """
@@ -918,8 +935,8 @@ class CHPP(CHPPXml):
         defaults to None
         :rtype: ht_training.HTTraining
         """
-
         return ht_training.HTTraining(chpp=self, **kwargs)
+
 
     def world_cup_groups(self, **kwargs):
         """
@@ -931,6 +948,7 @@ class CHPP(CHPPXml):
         :rtype: ht_world_cup.HTWorldCupGroups
         """
         return ht_world_cup.HTWorldCupGroups(chpp=self, **kwargs)
+
 
     def world_cup_matches(self, **kwargs):
         """
@@ -947,6 +965,7 @@ class CHPP(CHPPXml):
         :rtype: ht_world_cup.HTWorldCupMatches
         """
         return ht_world_cup.HTWorldCupMatches(chpp=self, **kwargs)
+
 
     def transfers_team(self, **kwargs):
         """

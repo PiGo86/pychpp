@@ -18,7 +18,7 @@ class RequestArenaDetails(CommonArenaDetails):
     """
     Base requests args for Arena Details
     """
-    _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='arena_id')
+    _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='arena_id', fill_with='id')
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
 
 
@@ -91,7 +91,7 @@ class ArenaDetailsMyArena(CommonArenaDetails):
     """
     Arena Details - My Arena
     """
-    _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='id')
+    _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='id', fill_with='id')
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
     _r_match_type: Optional[str] = HTInitVar('MatchType', init_arg='match_type')
     _r_first_date: Optional[datetime] = HTInitVar('FirstDate', init_arg='first_date')

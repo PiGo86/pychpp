@@ -1,0 +1,52 @@
+<HattrickData>
+  <FileName>youthplayerdetails.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-11 22:28:46</FetchedDate>
+  <YouthPlayer>
+    <YouthPlayerID>301741211</YouthPlayerID>
+    <FirstName>Akpa</FirstName>
+    <NickName />
+    <LastName>Tao</LastName>
+    <Age>24</Age>
+    <AgeDays>35</AgeDays>
+    <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+    <CanBePromotedIn>-819</CanBePromotedIn>
+    <PlayerNumber>100</PlayerNumber>
+    <Statement />
+    <NativeCountryID>5</NativeCountryID>
+    <NativeCountryName>France</NativeCountryName>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Specialty>0</Specialty>
+    <CareerGoals>0</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <FriendlyGoals>0</FriendlyGoals>
+    <OwningYouthTeam>
+      <YouthTeamID>2942691</YouthTeamID>
+      <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+      <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+      <SeniorTeam>
+        <SeniorTeamID>1165592</SeniorTeamID>
+        <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+      </SeniorTeam>
+    </OwningYouthTeam>
+    <PlayerSkills>
+      <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+      <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+      <DefenderSkill IsAvailable="True" IsMaxReached="True">3</DefenderSkill>
+      <DefenderSkillMax IsAvailable="True">3</DefenderSkillMax>
+      <PlaymakerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="True" />
+      <PlaymakerSkillMax IsAvailable="False" MayUnlock="True" />
+      <WingerSkill IsAvailable="True" IsMaxReached="False">1</WingerSkill>
+      <WingerSkillMax IsAvailable="False" MayUnlock="True" />
+      <PassingSkill IsAvailable="False" IsMaxReached="False" MayUnlock="True" />
+      <PassingSkillMax IsAvailable="False" MayUnlock="True" />
+      <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+      <ScorerSkillMax IsAvailable="True">3</ScorerSkillMax>
+      <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+      <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+    </PlayerSkills>
+  </YouthPlayer>
+</HattrickData>

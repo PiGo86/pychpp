@@ -1,4 +1,5 @@
 from pychpp.models.custom import CustomModel
+from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.xml.player_details import PlayerDetails
 from pychpp.models.xml.players import PlayersViewTeamPlayerItem, RequestPlayers
 
@@ -13,6 +14,10 @@ class HTLightPlayer(BaseHTPlayer, RequestPlayers, PlayersViewTeamPlayerItem):
     """
     Hattrick Player (light version)
     """
+
+    # not used for fetching data, but to allow url property to work correctly
+    _r_id = HTInitVar(param='PlayerID', init_arg='id_', fill_with='id')
+
     XML_PREFIX = 'Team/PlayerList/Player/'
 
     def _pre_init(self, id_, **kwargs):

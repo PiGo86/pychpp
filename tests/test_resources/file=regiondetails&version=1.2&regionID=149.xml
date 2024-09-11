@@ -1,0 +1,18 @@
+<HattrickData>
+  <FileName>regionDetails.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-11 23:52:05</FetchedDate>
+  <League>
+    <LeagueID>5</LeagueID>
+    <LeagueName>France</LeagueName>
+    <Region>
+      <RegionID>149</RegionID>
+      <RegionName>Provence-Alpes-Côte d'Azur</RegionName>
+      <WeatherID>2</WeatherID>
+      <TomorrowWeatherID>1</TomorrowWeatherID>
+      <NumberOfUsers>895</NumberOfUsers>
+      <NumberOfOnline>34</NumberOfOnline>
+    </Region>
+  </League>
+</HattrickData>

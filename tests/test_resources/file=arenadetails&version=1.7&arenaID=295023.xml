@@ -1,0 +1,33 @@
+<HattrickData>
+  <FileName>arenadetails.xml</FileName>
+  <Version>1.7</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-11 22:54:54</FetchedDate>
+  <Arena>
+    <ArenaID>295023</ArenaID>
+    <ArenaName>Le Piquant</ArenaName>
+    <ArenaImage>//res.hattrick.org/arenas/3/30/296/295023/custom-220-100.jpg</ArenaImage>
+    <ArenaFallbackImage>//res.hattrick.org/arenas/default/50000/custom-220-100.jpg</ArenaFallbackImage>
+    <Team>
+      <TeamID>295023</TeamID>
+      <TeamName>Les piments verts</TeamName>
+    </Team>
+    <League>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+    </League>
+    <Region>
+      <RegionID>130</RegionID>
+      <RegionName>Aquitaine</RegionName>
+    </Region>
+    <CurrentCapacity>
+      <RebuiltDate Available="True">2024-02-27 09:22:41</RebuiltDate>
+      <Terraces>27500</Terraces>
+      <Basic>14500</Basic>
+      <Roof>11000</Roof>
+      <VIP>3000</VIP>
+      <Total>56000</Total>
+    </CurrentCapacity>
+    <ExpandedCapacity Available="False" />
+  </Arena>
+</HattrickData>
