@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <HattrickData>
   <FileName>youthteam.xml</FileName>
-  <Version>1.1</Version>
+  <Version>1.2</Version>
   <UserID>1728698</UserID>
-  <FetchedDate>2021-08-10 23:54:24</FetchedDate>
+  <FetchedDate>2024-09-09 19:19:26</FetchedDate>
   <YouthTeam>
     <YouthTeamID>2745926</YouthTeamID>
     <YouthTeamName>Les Petits Pédëstres</YouthTeamName>
     <ShortTeamName>NULS</ShortTeamName>
     <CreatedDate>2019-01-18 04:44:00</CreatedDate>
+    <UserId>9638716</UserId>
     <Country>
       <CountryID>5</CountryID>
       <CountryName>France</CountryName>
@@ -19,20 +19,20 @@
     </Region>
     <YouthArena>
       <YouthArenaID>2745593</YouthArenaID>
-      <YouthArenaName>Stade "Coucou" Couturier</YouthArenaName>
+      <YouthArenaName>Stade Ange Pantelis</YouthArenaName>
     </YouthArena>
     <YouthLeague>
-      <YouthLeagueID>574775</YouthLeagueID>
-      <YouthLeagueName>Ligue Grenobloise La Vieille Furia Roja Copa</YouthLeagueName>
+      <YouthLeagueID>163726</YouthLeagueID>
+      <YouthLeagueName>Youth League</YouthLeagueName>
       <YouthLeagueStatus>3</YouthLeagueStatus>
     </YouthLeague>
     <OwningTeam>
       <MotherTeamID>1755350</MotherTeamID>
-      <MotherTeamName>Projet NUL Breton</MotherTeamName>
+      <MotherTeamName>Projet NUL Bot Breton</MotherTeamName>
     </OwningTeam>
     <YouthTrainer>
       <YouthPlayerID>240128774</YouthPlayerID>
     </YouthTrainer>
-    <NextTrainingMatchDate>2021-08-16 21:00:00</NextTrainingMatchDate>
+    <NextTrainingMatchDate>2023-12-25 04:00:00</NextTrainingMatchDate>
   </YouthTeam>
 </HattrickData>

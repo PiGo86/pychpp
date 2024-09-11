@@ -13,8 +13,9 @@ from pychpp import (ht_challenge, ht_match, ht_matches_archive,
                     ht_world, ht_national_teams, ht_world_cup)
 from pychpp.models.xml import manager_compendium, team_details, achievements, arena_details, challenges, region_details, \
     league_details, league_fixtures, match_lineup, national_teams, national_team_details, player_details, training, \
-    transfers_team, world_details, world_cup, players, youth_player_details, youth_team_details
-from pychpp.models.custom import ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player
+    transfers_team, world_details, world_cup, players, youth_player_details, youth_team_details, youth_player_list
+from pychpp.models.custom import ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player, ht_league_unit, \
+    ht_youth_player
 from pychpp import ht_error
 from pychpp.ht_xml import HTXml
 
@@ -363,384 +364,341 @@ class CHPPBase:
 class CHPPXml(CHPPBase):
 
     def xml_achievements(self, user_id: int = None) -> achievements.Achievements:
-        return achievements.Achievements(chpp=self,
-                                         user_id=user_id,
-                                         )
 
-    def xml_arena_details(self, stats_type: str = None,
-                          arena_id: int = None, team_id: int = None,
-                          match_type: str = None,
-                          first_date: datetime = None,
-                          last_date: datetime = None,
-                          stats_league_id: int = None,
-                      ) -> Union[arena_details.ArenaDetails,
-                                 arena_details.ArenaDetailsMyArena,
-                                 arena_details.ArenaDetailsLeagueArenaStats]:
+        return achievements.Achievements(chpp=self, user_id=user_id)
+
+
+    def xml_arena_details(
+            self, stats_type: str = None, arena_id: int = None, team_id: int = None,
+            match_type: str = None, first_date: datetime = None,
+            last_date: datetime = None, stats_league_id: int = None,
+    ) -> Union[arena_details.ArenaDetails,
+               arena_details.ArenaDetailsMyArena,
+               arena_details.ArenaDetailsLeagueArenaStats]:
+
         if stats_type is None:
             return arena_details.ArenaDetails(
-                chpp=self,
-                stats_type=stats_type,
-                arena_id=arena_id,
-                team_id=team_id,
+                chpp=self, stats_type=stats_type, arena_id=arena_id, team_id=team_id,
             )
+
         elif stats_type == 'MyArena':
             return arena_details.ArenaDetailsMyArena(
-                chpp=self,
-                stats_type=stats_type,
-                arena_id=arena_id,
-                team_id=team_id,
-                match_type=match_type,
-                first_date=first_date,
-                last_date=last_date,
+                chpp=self, stats_type=stats_type, arena_id=arena_id, team_id=team_id,
+                match_type=match_type, first_date=first_date, last_date=last_date,
             )
+
         elif stats_type == 'OtherArenas':
             return arena_details.ArenaDetailsLeagueArenaStats(
-                chpp=self,
-                stats_league_id=stats_league_id,
+                chpp=self, stats_league_id=stats_league_id,
             )
 
         else:
             raise ValueError(f"'stats_type' argument must be None, "
                              f"or equal to 'MyArena' or 'OtherArenas'")
 
-    def xml_challenges(self,
-                       action_type: str = 'view',
-                       team_id: Optional[int] = None,
-                       is_weekend_friendly: int = 0,
-                       suggested_team_ids: str = None,
-                       opponent_team_id: int = None,
-                       match_type: int = None,
-                       match_place: int = None,
-                       neutral_arena_id: int = None,
-                       training_match_id: int = None,
-                       **kwargs,
-                       ) -> Union[challenges.ChallengesView,
-                                  challenges.ChallengesChallengeable,
-                                  challenges.ChallengesChallenge,
-                                  challenges.ChallengesAccept,
-                                  challenges.ChallengesDecline,
-                                  challenges.ChallengesWithdraw,
-                                  ]:
+
+    def xml_challenges(
+            self, action_type: str = 'view', team_id: Optional[int] = None,
+            is_weekend_friendly: int = 0, suggested_team_ids: str = None,
+            opponent_team_id: int = None, match_type: int = None,
+            match_place: int = None, neutral_arena_id: int = None,
+            training_match_id: int = None, **kwargs,
+    ) -> Union[challenges.ChallengesView,
+               challenges.ChallengesChallengeable,
+               challenges.ChallengesChallenge,
+               challenges.ChallengesAccept,
+               challenges.ChallengesDecline,
+               challenges.ChallengesWithdraw]:
+
         if action_type == 'view':
             return challenges.ChallengesView(
-                chpp=self,
-                action_type=action_type,
-                team_id=team_id,
-                is_weekend_friendly=is_weekend_friendly,
-                **kwargs,
+                chpp=self, action_type=action_type, team_id=team_id,
+                is_weekend_friendly=is_weekend_friendly, **kwargs,
             )
+
         elif action_type == 'challengeable':
             return challenges.ChallengesChallengeable(
-                chpp=self,
-                action_type=action_type,
-                team_id=team_id,
+                chpp=self, action_type=action_type, team_id=team_id,
                 is_weekend_friendly=is_weekend_friendly,
-                suggested_team_ids=suggested_team_ids,
-                **kwargs,
+                suggested_team_ids=suggested_team_ids, **kwargs,
             )
+
         elif action_type == 'challenge':
             return challenges.ChallengesChallenge(
-                chpp=self,
-                action_type=action_type,
-                team_id=team_id,
-                is_weekend_friendly=is_weekend_friendly,
-                opponent_team_id=opponent_team_id,
-                match_type=match_type,
-                match_place=match_place,
-                neutral_arena_id=neutral_arena_id,
+                chpp=self, action_type=action_type, team_id=team_id,
+                is_weekend_friendly=is_weekend_friendly, opponent_team_id=opponent_team_id,
+                match_type=match_type, match_place=match_place, neutral_arena_id=neutral_arena_id,
+                **kwargs,
             )
+
         elif action_type == 'accept':
             return challenges.ChallengesAccept(
-                chpp=self,
-                action_type=action_type,
-                team_id=team_id,
-                is_weekend_friendly=is_weekend_friendly,
-                training_match_id=training_match_id,
+                chpp=self, action_type=action_type, team_id=team_id,
+                is_weekend_friendly=is_weekend_friendly, training_match_id=training_match_id,
+                **kwargs,
             )
+
         elif action_type == 'decline':
             return challenges.ChallengesDecline(
-                chpp=self,
-                action_type=action_type,
-                team_id=team_id,
+                chpp=self, action_type=action_type, team_id=team_id,
                 is_weekend_friendly=is_weekend_friendly,
                 training_match_id=training_match_id,
+                **kwargs,
             )
+
         elif action_type == 'withdraw':
             return challenges.ChallengesWithdraw(
-                chpp=self,
-                action_type=action_type,
-                training_match_id=training_match_id,
+                chpp=self, action_type=action_type, training_match_id=training_match_id,
+                **kwargs,
             )
+
         else:
             raise ValueError(f"if set, 'action_type' must be equal to"
                              f"'view', 'challengeable', 'challenge', "
                              f"'accept', 'decline' or 'withdraw'")
 
-    def xml_league_details(self,
-                           id_: int = None,
-                           **kwargs,
-                           ) -> league_details.LeagueDetails:
-        return league_details.LeagueDetails(chpp=self,
-                                            id=id_,
-                                            **kwargs
-                                            )
 
-    def xml_league_fixtures(self,
-                            id_: int = None,
-                            season: int = None,
-                            **kwargs,
-                            ) -> league_fixtures.LeagueFixtures:
-        return league_fixtures.LeagueFixtures(chpp=self,
-                                              id=id_,
-                                              season=season,
-                                              **kwargs,
-                                              )
+    def xml_league_details(
+            self, league_level_unit_id: int = None, **kwargs,
+    ) -> league_details.LeagueDetails:
 
-    def xml_manager_compendium(self,
-                               id_: int = None,
-                               **kwargs,
-                               ) -> manager_compendium.ManagerCompendium:
-        return manager_compendium.ManagerCompendium(chpp=self,
-                                                    id=id_,
-                                                    **kwargs,
-                                                    )
-
-    def xml_match_lineup(self,
-                         match_id: int = None,
-                         team_id: int = None,
-                         source_system: str = None,
-                         **kwargs,
-                         ) -> match_lineup.MatchLineup:
-        return match_lineup.MatchLineup(chpp=self,
-                                        match_id=match_id,
-                                        team_id=team_id,
-                                        source_system=source_system,
-                                        **kwargs
-                                        )
-
-    def xml_national_teams(self,
-                           league_office_type_id: int = None,
-                           **kwargs,
-                           ) -> national_teams.NationalTeams:
-        return national_teams.NationalTeams(chpp=self,
-                                            league_office_type_id=league_office_type_id,
-                                            **kwargs,
-                                            )
-
-    def xml_national_team_details(self, id_: int, **kwargs,
-            ) -> national_team_details.NationalTeamDetails:
-        return national_team_details.NationalTeamDetails(
-            chpp=self, id=id_, **kwargs,
+        return league_details.LeagueDetails(
+            chpp=self, league_level_unit_id=league_level_unit_id, **kwargs,
         )
 
-    def xml_players(self,
-                    action_type: str = 'view',
-                    order_by: str = None,
-                    team_id: int = None,
-                    include_match_info: bool = None,
-                    **kwargs,
+
+    def xml_league_fixtures(
+            self, league_level_unit_id: int = None, season: int = None, **kwargs,
+    ) -> league_fixtures.LeagueFixtures:
+
+        return league_fixtures.LeagueFixtures(
+            chpp=self, league_level_unit_id=league_level_unit_id, season=season, **kwargs,
+        )
+
+
+    def xml_manager_compendium(
+            self, user_id: int = None, **kwargs,
+    ) -> manager_compendium.ManagerCompendium:
+
+        return manager_compendium.ManagerCompendium(
+            chpp=self, user_id=user_id, **kwargs,
+        )
+
+
+    def xml_match_lineup(
+            self, match_id: int = None, team_id: int = None,
+            source_system: str = None, **kwargs,
+    ) -> match_lineup.MatchLineup:
+
+        return match_lineup.MatchLineup(
+            chpp=self, match_id=match_id, team_id=team_id,
+            source_system=source_system, **kwargs,
+        )
+
+
+    def xml_national_teams(
+            self, league_office_type_id: int = None, **kwargs,
+    ) -> national_teams.NationalTeams:
+
+        return national_teams.NationalTeams(
+            chpp=self, league_office_type_id=league_office_type_id, **kwargs,
+        )
+
+
+    def xml_national_team_details(
+            self, team_id: int, **kwargs,
+    ) -> national_team_details.NationalTeamDetails:
+
+        return national_team_details.NationalTeamDetails(
+            chpp=self, team_id=team_id, **kwargs,
+        )
+
+
+    def xml_players(self, action_type: str = 'view', order_by: str = None,
+                    team_id: int = None, include_match_info: bool = None, **kwargs,
                     ) -> Union[players.PlayersView,
                                players.PlayersViewOldies,
                                players.PlayersViewOldCoaches]:
 
         if action_type == 'view':
             return players.PlayersView(
-                chpp=self,
-                action_type=action_type,
-                order_by=order_by,
-                team_id=team_id,
-                include_match_info=include_match_info,
-                **kwargs,
+                chpp=self, action_type=action_type, order_by=order_by,
+                team_id=team_id, include_match_info=include_match_info, **kwargs,
             )
+
         elif action_type == 'viewOldies':
             return players.PlayersViewOldies(
-                chpp=self,
-                action_type=action_type,
-                order_by=order_by,
-                team_id=team_id,
-                include_match_info=include_match_info,
-                **kwargs,
+                chpp=self, action_type=action_type, order_by=order_by,
+                team_id=team_id, include_match_info=include_match_info, **kwargs,
             )
+
         elif action_type == 'viewOldCoaches':
             return players.PlayersViewOldCoaches(
-                chpp=self,
-                action_type=action_type,
-                order_by=order_by,
-                team_id=team_id,
-                include_match_info=include_match_info,
-                **kwargs,
+                chpp=self, action_type=action_type, order_by=order_by,
+                team_id=team_id, include_match_info=include_match_info, **kwargs,
             )
+
         else:
             raise ValueError(f"if set, 'action_type' must be equal to"
                              f"'view', 'viewOldies' or 'viewOldCoaches'")
 
 
-    def xml_player_details(self,
-                           action_type: str = None,
-                           id_: int = None,
-                           include_match_info: bool = None,
-                           team_id: int = None,
-                           bid_amount: int = None,
-                           max_bid_amount: int = None,
-                           **kwargs,
-                           ) -> player_details.PlayerDetails:
+    def xml_player_details(
+            self, action_type: str = None, player_id: int = None,
+            include_match_info: bool = None, team_id: int = None,
+            bid_amount: int = None, max_bid_amount: int = None, **kwargs,
+    ) -> player_details.PlayerDetails:
+
         return player_details.PlayerDetails(
-            chpp=self,
-            action_type=action_type,
-            id=id_,
-            include_match_info=include_match_info,
-            team_id=team_id,
-            bid_amount=bid_amount,
-            max_bid_amount=max_bid_amount,
-            **kwargs,
+            chpp=self, action_type=action_type, player_id=player_id,
+            include_match_info=include_match_info, team_id=team_id,
+            bid_amount=bid_amount, max_bid_amount=max_bid_amount, **kwargs,
         )
 
-    def xml_region_details(self,
-                           region_id: int = None,
-                           **kwargs,
-                           ) -> region_details.RegionDetails:
+
+    def xml_region_details(
+            self, region_id: int = None, **kwargs,
+    ) -> region_details.RegionDetails:
         return region_details.RegionDetails(
-            chpp=self,
-            region_id=region_id,
-            **kwargs,
+            chpp=self, region_id=region_id, **kwargs,
         )
 
-    def xml_team_details(self, team_id: int = None, user_id: int = None,
-                     include_domestics_flags: bool = False,
-                     include_flags: bool = False, include_supporters: bool = False,
-                     **kwargs,
-                     ) -> team_details.TeamDetails:
-        return team_details.TeamDetails(chpp=self,
-                                        team_id=team_id,
-                                        user_id=user_id,
-                                        include_domestics_flags=include_domestics_flags,
-                                        include_flags=include_flags,
-                                        include_supporters=include_supporters,
-                                        ** kwargs,
-                                        )
 
-    def xml_training(self,
-                     action_type: str = 'view',
-                     team_id: int = None,
-                     training_type: int = None,
-                     training_level: int = None,
-                     training_level_stamina: int = None,
-                     league_id: int = None,
-                     **kwargs,
-                     ) -> Union[training.TrainingView,
-                                training.TrainingSetTraining,
-                                training.TrainingStats]:
+    def xml_team_details(
+            self, team_id: int = None, user_id: int = None,
+            include_domestics_flags: bool = None, include_flags: bool = None,
+            include_supporters: bool = None, **kwargs,
+    ) -> team_details.TeamDetails:
+
+        return team_details.TeamDetails(
+            chpp=self, team_id=team_id, user_id=user_id,
+            include_domestics_flags=include_domestics_flags,
+            include_flags=include_flags, include_supporters=include_supporters,
+            ** kwargs,
+        )
+
+
+    def xml_training(
+            self, action_type: str = 'view', team_id: int = None,
+            training_type: int = None, training_level: int = None,
+            training_level_stamina: int = None, league_id: int = None,
+            **kwargs,
+    ) -> Union[training.TrainingView,
+               training.TrainingSetTraining,
+               training.TrainingStats]:
+
         if action_type == 'view':
             return training.TrainingView(
-                chpp=self,
-                action_type=action_type,
-                team_id=team_id,
-                **kwargs,
+                chpp=self, action_type=action_type,
+                team_id=team_id, **kwargs,
             )
+
         elif action_type == 'stats':
             return training.TrainingStats(
-                chpp=self,
-                action_type=action_type,
-                league_id=league_id,
-                **kwargs,
+                chpp=self, action_type=action_type,
+                league_id=league_id, **kwargs,
             )
+
         elif action_type == 'setTraining':
             return training.TrainingSetTraining(
-                chpp=self,
-                action_type=action_type,
-                team_id=team_id,
-                training_type=training_type,
-                training_level=training_level,
-                training_level_stamina=training_level_stamina,
-                **kwargs,
+                chpp=self, action_type=action_type, team_id=team_id,
+                training_type=training_type, training_level=training_level,
+                training_level_stamina=training_level_stamina, **kwargs,
             )
+
         else:
             raise ValueError(f"if set, 'action_type' must be equal to"
                              f"'view', 'setTraining' or 'stats'")
 
-    def xml_transfers_team(self,
-                           team_id: int = None,
-                           page_index: int = None,
-                           **kwargs,
-                           ) -> transfers_team.TransfersTeam:
+
+    def xml_transfers_team(
+            self, team_id: int = None, page_index: int = None, **kwargs,
+    ) -> transfers_team.TransfersTeam:
+
         return transfers_team.TransfersTeam(
-            chpp=self,
-            team_id=team_id,
-            page_index=page_index,
-            **kwargs,
+            chpp=self, team_id=team_id, page_index=page_index, **kwargs,
         )
 
-    def xml_world_cup(self,
-                      action_type: str = 'viewMatches',
-                      id_: int = None,
-                      season: int = None,
-                      match_round: int = None,
-                      cup_series_unit_id: int = None,
-                      **kwargs,
-                      ) -> Union[world_cup.WorldCupViewMatches,
-                                 world_cup.WorldCupViewGroups]:
+
+    def xml_world_cup(
+            self, action_type: str = 'viewMatches', cup_id: int = None,
+            season: int = None, match_round: int = None,
+            cup_series_unit_id: int = None, **kwargs,
+    ) -> Union[world_cup.WorldCupViewMatches, world_cup.WorldCupViewGroups]:
+
         if action_type == 'viewMatches':
             return world_cup.WorldCupViewMatches(
-                chpp=self,
-                action_type=action_type,
-                id=id_,
-                season=season,
-                match_round=match_round,
-                cup_series_unit_id=cup_series_unit_id,
-                **kwargs,
+                chpp=self, action_type=action_type, cup_id=cup_id,
+                season=season, match_round=match_round,
+                cup_series_unit_id=cup_series_unit_id, **kwargs,
             )
+
         elif action_type == 'viewGroups':
             return world_cup.WorldCupViewGroups(
-                chpp=self,
-                action_type=action_type,
-                id=id_,
-                season=season,
-                **kwargs,
+                chpp=self, action_type=action_type, cup_id=cup_id,
+                season=season, **kwargs,
             )
+
         else:
             raise ValueError(f"if set, 'action_type' must be equal to "
                              f"'viewMatches' or 'viewGroups'")
 
-    def xml_world_details(self,
-                          include_regions: bool = None,
-                          country_id: int = None,
-                          league_id: int = None,
-                          **kwargs,
-                          ) -> world_details.WorldDetails:
+
+    def xml_world_details(
+            self, include_regions: bool = None, country_id: int = None,
+            league_id: int = None, **kwargs,
+    ) -> world_details.WorldDetails:
+
         return world_details.WorldDetails(
-            chpp=self,
-            include_regions=include_regions,
-            country_id=country_id,
-            league_id=league_id,
-            **kwargs,
+            chpp=self, include_regions=include_regions, country_id=country_id,
+            league_id=league_id, **kwargs,
         )
 
-    def xml_youth_player_details(self,
-                                 action_type: str = None,
-                                 id_: int = None,
-                                 show_scout_call: bool = None,
-                                 show_last_match: bool = None,
-                                 **kwargs,
-                                 ) -> youth_player_details.YouthPlayerDetails:
+
+    def xml_youth_player_details(
+            self, action_type: str = None, youth_player_id: int = None,
+            show_scout_call: bool = None, show_last_match: bool = None,
+            **kwargs,
+    ) -> youth_player_details.YouthPlayerDetails:
+
         return youth_player_details.YouthPlayerDetails(
-            chpp=self,
-            action_type=action_type,
-            id=id_,
-            show_scout_call=show_scout_call,
-            show_last_match=show_last_match,
+            chpp=self, action_type=action_type, youth_player_id=youth_player_id,
+            show_scout_call=show_scout_call, show_last_match=show_last_match,
             **kwargs,
         )
 
-    def xml_youth_team_details(self,
-                               id_: int = None,
-                               show_scouts: bool = None,
-                               **kwargs,
-                               ) -> youth_team_details.YouthTeamDetails:
+
+    def xml_youth_player_list(
+            self, action_type: str = 'list', order_by: str = None,
+            youth_team_id: int = None, show_scout_call: bool = None,
+            show_last_match: bool = None, **kwargs,
+    ) -> Union[youth_player_list.YouthPlayerListList,
+               youth_player_list.YouthPlayerListDetails]:
+
+        if action_type == 'list':
+            return youth_player_list.YouthPlayerListList(
+                chpp=self, action_type=action_type, order_by=order_by, youth_team_id=youth_team_id,
+                show_scout_call=show_scout_call, show_last_match=show_last_match, **kwargs,
+            )
+
+        elif action_type in ('details', 'unlockskills'):
+            return youth_player_list.YouthPlayerListDetails(
+                chpp=self, action_type=action_type, order_by=order_by,
+                youth_team_id=youth_team_id, show_scout_call=show_scout_call,
+                show_last_match=show_last_match, **kwargs,
+            )
+
+        else:
+            raise ValueError(f"if set, 'action_type' must be equal to "
+                             f"'list', 'details' or 'unlockskills'")
+
+
+    def xml_youth_team_details(
+            self, youth_team_id: int = None, show_scouts: bool = None, **kwargs,
+    ) -> youth_team_details.YouthTeamDetails:
+
         return youth_team_details.YouthTeamDetails(
-            chpp=self,
-            id=id_,
-            show_scouts=show_scouts,
-            **kwargs,
+            chpp=self, youth_team_id=youth_team_id, show_scouts=show_scouts, **kwargs,
         )
 
 
@@ -753,9 +711,20 @@ class CHPP(CHPPXml):
         If no id is defined,
         return the primary team arena of connected user.
 
-        :param id_: Hattrick ID of the requested arena, must be an int
+        :param id_: Hattrick ID of the requested arena
         """
-        return ht_arena.HTArena(chpp=self, id=id_, **kwargs)
+        return ht_arena.HTArena(chpp=self, arena_id=id_, **kwargs)
+
+    def league_unit(self, id_=None, **kwargs) -> ht_league_unit.HTLeagueUnit:
+        """
+        Get a league unit from its Hattrick ID
+
+        If no id is defined,
+        return the primary team league unit of connected user.
+
+        :param id_: Hattrick ID of the requested league unit
+        """
+        return ht_league_unit.HTLeagueUnit(chpp=self, id=id_, **kwargs)
 
     def user(self, id_: int = None, **kwargs) -> ht_user.HTUser:
         """
@@ -778,7 +747,7 @@ class CHPP(CHPPXml):
         :param id_: Hattrick ID of the requested team
         :param user_id: Hattrick ID of the requested user
         """
-        return ht_team.HTTeam(chpp=self, id=id_, user_id=user_id, **kwargs)
+        return ht_team.HTTeam(chpp=self, team_id=id_, user_id=user_id, **kwargs)
 
     def youth_team(self, id_=None, **kwargs) -> ht_youth_team.HTYouthTeam:
         """
@@ -800,22 +769,30 @@ class CHPP(CHPPXml):
         """
         return ht_player.HTPlayer(chpp=self, id=id_, **kwargs)
 
-    def light_player(self, id_: int, **kwargs) -> ht_player.HTLightPlayer:
+    def light_player(self, team_id: int, id_: int, **kwargs) -> ht_player.HTLightPlayer:
         """
         Get a player (light version) from its Hattrick ID
 
         :key ht_id: Hattrick ID of the requested player
         """
-        return ht_player.HTLightPlayer(chpp=self, id_=id_, **kwargs)
+        return ht_player.HTLightPlayer(chpp=self, team_id=team_id, id_=id_, **kwargs)
 
-    def youth_player(self, **kwargs):
+    def light_youth_player(self, youth_team_id: int, id_: int, **kwargs) -> ht_youth_player.HTLightYouthPlayer:
+        """
+        Get a youth player (light version) from its Hattrick ID
+
+        :key ht_id: Hattrick ID of the requested youth player
+        """
+        return ht_youth_player.HTLightYouthPlayer(chpp=self, youth_team_id=youth_team_id, id_=id_, **kwargs)
+
+    def youth_player(self, id_: int, **kwargs) -> ht_youth_player.HTYouthPlayer:
         """
         Get a youth player from its Hattrick ID
 
         :key ht_id: Hattrick ID of the requested youth player, must be an int
         :rtype: ht_player.HTYouthPlayer
         """
-        return ht_player.HTYouthPlayer(chpp=self, **kwargs)
+        return ht_youth_player.HTYouthPlayer(chpp=self, id=id_, **kwargs)
 
     def region(self, id_: int = None, **kwargs) -> ht_region.HTRegion:
         """

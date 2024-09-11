@@ -2,13 +2,16 @@ from pychpp.models.ht_field import HTProxyField
 from pychpp.models.xml.arena_details import CurrentCapacity
 from pychpp.models.xml.arena_details import ExpandedCapacity
 from pychpp.models.xml.arena_details import RequestArenaDetails, ArenaDetails
-from pychpp.models.custom import ht_team, ht_region
+from pychpp.models.custom import ht_team, ht_region, CustomModel
 
 
-class HTArena(RequestArenaDetails):
+class HTArena(RequestArenaDetails, CustomModel):
     """
     Hattrick Arena
     """
+
+    URL_PATH = '/Club/Stadium/'
+
     id: int = HTProxyField(ArenaDetails, 'id')
     name: str = HTProxyField(ArenaDetails, 'name')
     image: str = HTProxyField(ArenaDetails, 'image')

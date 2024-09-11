@@ -15,7 +15,7 @@ class BaseWorldCup(HTModel):
     LAST_VERSION = '1.1'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
-    _r_cup_id: Optional[int] = HTInitVar('cupID', init_arg='id')
+    _r_cup_id: Optional[int] = HTInitVar('cupID', init_arg='cup_id')
     _r_season: int = HTInitVar('season', init_arg='season')
 
 

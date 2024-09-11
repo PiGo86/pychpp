@@ -15,7 +15,7 @@ class PlayerDetails(HTModel):
     LAST_VERSION = '3.0'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
-    _r_player_id: int = HTInitVar('playerID', init_arg='id')
+    _r_player_id: int = HTInitVar('playerID', init_arg='player_id')
     _r_include_match_info: Optional[bool] = HTInitVar('includeMatchInfo', init_arg='include_match_info')
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_bid_amount: Optional[int] = HTInitVar('bidAmount', init_arg='bid_amount')
@@ -105,13 +105,13 @@ class PlayerSkills(HTModel):
     Player Details -> Player skills
     """
     stamina: int = HTField('StaminaSkill')
-    keeper: int = HTField('KeeperSkill')
-    playmaker: int = HTField('PlaymakerSkill')
-    scorer: int = HTField('ScorerSkill')
-    passing: int = HTField('PassingSkill')
-    winger: int = HTField('WingerSkill')
-    defender: int = HTField('DefenderSkill')
-    set_pieces: int = HTField('SetPiecesSkill')
+    keeper: Optional[int] = HTField('KeeperSkill')
+    playmaker: Optional[int] = HTField('PlaymakerSkill')
+    scorer: Optional[int] = HTField('ScorerSkill')
+    passing: Optional[int] = HTField('PassingSkill')
+    winger: Optional[int] = HTField('WingerSkill')
+    defender: Optional[int] = HTField('DefenderSkill')
+    set_pieces: Optional[int] = HTField('SetPiecesSkill')
 
 
 class NationalTeam(HTModel):

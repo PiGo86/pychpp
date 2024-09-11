@@ -13,7 +13,7 @@ class NationalTeamDetails(HTModel):
     SOURCE_FILE = 'nationalteamdetails'
     LAST_VERSION = '1.9'
 
-    _r_team_id: int = HTInitVar('teamID', init_arg='id')
+    _r_team_id: int = HTInitVar('teamID', init_arg='team_id')
 
     user_supporter_tier: str = HTField('UserSupporterTier')
     is_playing_match: bool = HTField('IsPlayingMatch')

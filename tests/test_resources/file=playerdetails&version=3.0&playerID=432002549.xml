@@ -1,0 +1,66 @@
+<HattrickData>
+  <FileName>playerdetails.xml</FileName>
+  <Version>3.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-10 00:13:12</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Player>
+    <PlayerID>432002549</PlayerID>
+    <FirstName>Benoît</FirstName>
+    <NickName />
+    <LastName>Thomas</LastName>
+    <PlayerNumber>100</PlayerNumber>
+    <Age>39</Age>
+    <AgeDays>35</AgeDays>
+    <NextBirthDay>2024-11-26 00:00:00</NextBirthDay>
+    <ArrivalDate>2024-04-04 07:52:00</ArrivalDate>
+    <PlayerForm>5</PlayerForm>
+    <Cards>1</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Statement />
+    <PlayerLanguage>Français</PlayerLanguage>
+    <PlayerLanguageID>5</PlayerLanguageID>
+    <TrainerData>
+      <TrainerType>0</TrainerType>
+      <TrainerSkillLevel>5</TrainerSkillLevel>
+    </TrainerData>
+    <OwningTeam>
+      <TeamID>924535</TeamID>
+      <TeamName>FC Ausgefall Verléierer</TeamName>
+      <LeagueID>84</LeagueID>
+    </OwningTeam>
+    <Salary>5280</Salary>
+    <IsAbroad>True</IsAbroad>
+    <Agreeability>2</Agreeability>
+    <Aggressiveness>3</Aggressiveness>
+    <Honesty>3</Honesty>
+    <Experience>16</Experience>
+    <Loyalty>14</Loyalty>
+    <MotherClubBonus>False</MotherClubBonus>
+    <MotherClub>
+      <TeamID>586602</TeamID>
+      <TeamName>toujours 2.0</TeamName>
+    </MotherClub>
+    <Leadership>5</Leadership>
+    <Specialty>5</Specialty>
+    <NativeCountryID>5</NativeCountryID>
+    <NativeLeagueID>5</NativeLeagueID>
+    <NativeLeagueName>France</NativeLeagueName>
+    <TSI>230</TSI>
+    <PlayerSkills>
+      <StaminaSkill>3</StaminaSkill>
+    </PlayerSkills>
+    <Caps>0</Caps>
+    <CapsU20>0</CapsU20>
+    <CareerGoals>99</CareerGoals>
+    <CareerHattricks>2</CareerHattricks>
+    <LeagueGoals>1</LeagueGoals>
+    <CupGoals>1</CupGoals>
+    <FriendliesGoals>0</FriendliesGoals>
+    <MatchesCurrentTeam>23</MatchesCurrentTeam>
+    <GoalsCurrentTeam>2</GoalsCurrentTeam>
+    <TransferListed>False</TransferListed>
+    <TransferDetails />
+  </Player>
+</HattrickData>

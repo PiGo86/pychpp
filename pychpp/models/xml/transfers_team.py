@@ -14,7 +14,7 @@ class TransfersTeam(HTModel):
     SOURCE_FILE = 'transfersteam'
     LAST_VERSION = "1.2"
 
-    _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='id')
+    _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_page_index: Optional[int] = HTInitVar('pageIndex', init_arg='page_index')
 
     team: 'Team' = HTField('Team')

@@ -27,5 +27,5 @@ class HTAliasField(HTBaseField):
 @dataclass
 class HTProxyField(HTBaseField):
     cls: Type['ht_model.HTModel']
-    attr_name: str
+    attr_name: str = None
     xml_prefix: str = ''

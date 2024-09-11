@@ -1,3 +1,4 @@
+import pathlib
 from copy import copy
 from typing import Optional, Type, Dict, Any, List
 import xml.etree.ElementTree as ElementTree
@@ -35,8 +36,6 @@ class MetaHTModel(type):
         return super().__new__(cls, name, bases, dict_)
 
 class HTModel(metaclass=MetaHTModel):
-
-    _BASE_URL: str = "https://www.hattrick.org/goto.ashx?path="
 
     SOURCE_FILE: List[str]
     LAST_VERSION: str
@@ -107,8 +106,11 @@ class HTModel(metaclass=MetaHTModel):
 
         self._chpp = chpp
         self._data = data
+        self._url = ''
+        self._requests_args = dict()
         self.version = version
         self.xml_prefix = xml_prefix if xml_prefix is not None else self.XML_PREFIX
+
         # if data is not given, fetch data on Hattrick
         if self._data is None:
             self._fetch(version, **kwargs)
@@ -118,8 +120,6 @@ class HTModel(metaclass=MetaHTModel):
     def _fetch(self, version, **kwargs):
 
         self.version = version if version is not None else self.LAST_VERSION
-
-        self._requests_args = dict()
 
         for attr, ht_init_var in self._ht_init_vars.items():
 
@@ -143,99 +143,104 @@ class HTModel(metaclass=MetaHTModel):
 
     def _transform_fields(self):
 
+        proxy_path = ''
         # Fill attributes according to class attributes referencing a HTBaseField instance
 
         for field_name, field in self._ht_fields.items():
 
             if isinstance(field, HTProxyField):
                 field: HTProxyField
-                xml_path = field.xml_prefix
+
+                proxy_path = field.xml_prefix
                 target_cls = field.cls
                 target_field = copy(field)
+                if field.attr_name is None:
+                    field.attr_name = field_name
 
                 for level in field.attr_name.split('.'):
 
-                    typehint = get_type_hints(target_cls).get(level)
+                    type_ = target_cls.get_type(level)
                     target_field = getattr(target_cls, level)
-                    if xml_path and xml_path[-1] != '/':
-                        xml_path += '/'
-                    xml_path += target_field.path
+                    if proxy_path and proxy_path[-1] != '/':
+                        proxy_path += '/'
+                    proxy_path += target_field.path
 
-                    if issubclass(typehint, HTModel):
-                        target_cls = typehint
+                    if issubclass(type_, HTModel):
+                        target_cls = type_
 
                 field = target_field
-                field.path = xml_path
+                # field.path = xml_path
 
             if isinstance(field, HTField):
 
                 field: HTField
 
-                field.type = self.get_type(field_name)
-                field.item_type = self.get_item_type(field_name)
-                field.is_optional = True if self.is_optional_attrib(field_name) else False
+                f_type = self.get_type(field_name)
+                f_item_type = self.get_item_type(field_name)
+                f_is_optional = True if self.is_optional_attrib(field_name) else False
 
-                xml_path = self.xml_prefix + self.XML_FILTER + field.path
+                path = proxy_path if proxy_path else field.path
+                xml_path = self.xml_prefix + self.XML_FILTER + path
                 xml_node = self._data.find(xml_path)
 
                 # instance attribute set to transformed value
                 # according to type hint
-                if field.type is list:
+                if f_type is list:
 
                     if xml_node is None:
-                        if not field.is_optional:
+                        if not f_is_optional:
                             raise ValueError(f"{self.__class__} : non optional field {field} returned 'None'")
                         else:
                             setattr(self, field_name, list())
                             continue
 
-                    if field.item_type is str:
+                    if f_item_type is str:
                         setattr(self, field_name, HTXml.ht_str_items(xml_node, field.items))
-                    elif issubclass(field.item_type, HTModel):
-                        item_type: Type[HTModel]
+                    elif issubclass(f_item_type, HTModel):
+                        f_item_type: Type[HTModel]
                         setattr(self,
                                 field_name,
-                                [field.item_type(chpp=self._chpp, data=i)
+                                [f_item_type(chpp=self._chpp, data=i)
                                  for i in HTXml.iter_data_items(xml_node, field.items)])
                     else:
-                        raise ValueError(f"unsupported type '{field.item_type}' for list item")
+                        raise ValueError(f"unsupported type '{f_item_type}' for list item")
 
                 else:
 
                     if xml_node is None:
-                        if not field.is_optional:
+                        if not f_is_optional:
                             raise ValueError(f"{self.__class__} : non optional field {field} returned 'None'")
                         else:
                             setattr(self, field_name, None)
                             continue
 
-                    if field.type is int:
+                    if f_type is int:
                         setattr(self, field_name, HTXml.ht_int(xml_node, attrib=field.attrib))
 
-                    elif field.type is str:
+                    elif f_type is str:
                         setattr(self, field_name, HTXml.ht_str(xml_node, attrib=field.attrib))
 
-                    elif field.type is float:
+                    elif f_type is float:
                         setattr(self, field_name, HTXml.ht_float(xml_node, attrib=field.attrib))
 
-                    elif field.type is bool:
+                    elif f_type is bool:
                         setattr(self, field_name, HTXml.ht_bool(xml_node, attrib=field.attrib))
 
-                    elif field.type is datetime and self.is_optional_attrib(field_name):
+                    elif f_type is datetime and self.is_optional_attrib(field_name):
                         setattr(self, field_name, HTXml.ht_datetime_from_text(xml_node, attrib=field.attrib))
 
-                    elif field.type is datetime:
+                    elif f_type is datetime:
                         setattr(self, field_name, HTXml.opt_ht_datetime_from_text(xml_node, attrib=field.attrib))
 
-                    elif issubclass(field.type, HTModel):
+                    elif issubclass(f_type, HTModel):
 
-                        setattr(self, field_name, field.type(chpp=self._chpp,
-                                                             data=xml_node,
-                                                             xml_prefix=field.xml_prefix,
-                                                             ))
+                        setattr(self, field_name, f_type(chpp=self._chpp,
+                                                         data=xml_node,
+                                                         xml_prefix=field.xml_prefix,
+                                                         ))
 
                     else:
-                        raise ValueError(f"type hint '{field.type}' no implemented")
+                        raise ValueError(f"type hint '{f_type}' no implemented")
 
             elif isinstance(field, HTAliasField):
                 field: HTAliasField
@@ -247,17 +252,21 @@ class HTModel(metaclass=MetaHTModel):
         hook to make some stuff at the beginning of __init__ process
 
         """
-        pass
 
 
-    @property
-    def url(self):
-        if self.URL_PATH is not None:
-            params = urlencode(getattr(self, '_requests_args', ''))
-            if params:
-                return f"{self._BASE_URL}{self.URL_PATH}?{params}"
-            else:
-                return f"{self._BASE_URL}{self.URL_PATH}"
+    def _save_as_xml(self, path: pathlib.Path = None, filename: str = None):
+
+        if path is None:
+            path = pathlib.Path.cwd()
+
+        if filename is None:
+            args = {'file': self.SOURCE_FILE,'version': self.version}
+            args.update(sorted(self._requests_args.items()))
+            filename = '&'.join(f"{k}={v}" for k, v in args.items()) + '.xml'
+
+        with open(path / filename, mode='w') as f:
+            f.write(HTXml.to_string(self._data))
+
 
     def __repr__(self):
         desc = ''

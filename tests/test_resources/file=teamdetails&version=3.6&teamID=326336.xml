@@ -1,0 +1,285 @@
+<HattrickData>
+  <FileName>teamdetails.xml</FileName>
+  <Version>3.6</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-08 22:46:19</FetchedDate>
+  <User>
+    <UserID>8380636</UserID>
+    <Language>
+      <LanguageID>51</LanguageID>
+      <LanguageName>Español, Rioplatense</LanguageName>
+    </Language>
+    <SupporterTier>none</SupporterTier>
+    <Loginname>lpannese</Loginname>
+    <Name>HIDDEN</Name>
+    <ICQ />
+    <SignupDate>2008-08-18 20:52:09</SignupDate>
+    <ActivationDate>2008-08-20 02:53:00</ActivationDate>
+    <LastLoginDate>2024-09-08 05:02:47</LastLoginDate>
+    <HasManagerLicense>True</HasManagerLicense>
+    <NationalTeams />
+  </User>
+  <Teams>
+    <Team>
+      <TeamID>326336</TeamID>
+      <TeamName>La Resaka de S.</TeamName>
+      <ShortTeamName>Resaka</ShortTeamName>
+      <IsPrimaryClub>True</IsPrimaryClub>
+      <FoundedDate>2008-08-20 02:53:00</FoundedDate>
+      <Arena>
+        <ArenaID>326336</ArenaID>
+        <ArenaName>Silvina Rocha</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>7</LeagueID>
+        <LeagueName>Argentine</LeagueName>
+      </League>
+      <Country>
+        <CountryID>7</CountryID>
+        <CountryName>Argentine</CountryName>
+      </Country>
+      <Region>
+        <RegionID>66</RegionID>
+        <RegionName>Provincia de Buenos Aires</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>453291604</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit />
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup />
+      <PowerRating>
+        <GlobalRanking>254</GlobalRanking>
+        <LeagueRanking>4</LeagueRanking>
+        <RegionRanking>3</RegionRanking>
+        <PowerRating>1185</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID />
+      <NumberOfVictories />
+      <NumberOfUndefeated />
+      <TeamRank />
+      <Fanclub>
+        <FanclubID>0</FanclubID>
+        <FanclubName />
+        <FanclubSize>3778</FanclubSize>
+      </Fanclub>
+      <LogoURL>//res.hattrick.org/teamlogo/4/33/327/326336/326336.png</LogoURL>
+      <YouthTeamID>2534700</YouthTeamID>
+      <YouthTeamName>La Resaka de S</YouthTeamName>
+      <NumberOfVisits>16</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>88</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>342</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Primera División</LeagueLevelUnitName>
+          <GainedDate>2024-09-07 03:37:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/i.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>87</TrophySeason>
+          <LeagueLevel>2</LeagueLevel>
+          <LeagueLevelUnitId>346</LeagueLevelUnitId>
+          <LeagueLevelUnitName>II.4</LeagueLevelUnitName>
+          <GainedDate>2024-05-18 03:36:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/ii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>85</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>360</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.14</LeagueLevelUnitName>
+          <GainedDate>2023-10-07 03:36:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>83</TrophySeason>
+          <LeagueLevel>4</LeagueLevel>
+          <LeagueLevelUnitId>374</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.12</LeagueLevelUnitName>
+          <GainedDate>2023-02-25 03:36:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iv.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>82</TrophySeason>
+          <LeagueLevel>4</LeagueLevel>
+          <LeagueLevelUnitId>374</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.12</LeagueLevelUnitName>
+          <GainedDate>2022-11-05 03:36:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iv.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>81</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>13457</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.238</LeagueLevelUnitName>
+          <GainedDate>2022-07-16 03:36:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>78</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>27326</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.1014</LeagueLevelUnitName>
+          <GainedDate>2021-08-14 05:30:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>68</TrophySeason>
+          <LeagueLevel>2</LeagueLevel>
+          <LeagueLevelUnitId>345</LeagueLevelUnitId>
+          <LeagueLevelUnitName>II.3</LeagueLevelUnitName>
+          <GainedDate>2018-07-21 04:01:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/ii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>67</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>358</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.12</LeagueLevelUnitName>
+          <GainedDate>2018-03-31 04:04:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>64</TrophySeason>
+          <LeagueLevel>4</LeagueLevel>
+          <LeagueLevelUnitId>391</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.29</LeagueLevelUnitName>
+          <GainedDate>2017-04-29 03:53:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iv.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>63</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>13332</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.113</LeagueLevelUnitName>
+          <GainedDate>2017-01-07 04:22:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>61</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>26643</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.331</LeagueLevelUnitName>
+          <GainedDate>2016-05-28 03:54:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>59</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>26643</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.331</LeagueLevelUnitName>
+          <GainedDate>2015-10-17 03:47:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>51</TrophySeason>
+          <LeagueLevel>4</LeagueLevel>
+          <LeagueLevelUnitId>380</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.18</LeagueLevelUnitName>
+          <GainedDate>2013-05-04 03:41:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iv.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>48</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>13458</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.239</LeagueLevelUnitName>
+          <GainedDate>2012-06-02 03:39:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>45</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>27110</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.798</LeagueLevelUnitName>
+          <GainedDate>2011-07-02 06:12:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>41</TrophySeason>
+          <LeagueLevel>7</LeagueLevel>
+          <LeagueLevelUnitId>41033</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VII.949</LeagueLevelUnitName>
+          <GainedDate>2010-04-10 04:32:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+  </Teams>
+</HattrickData>

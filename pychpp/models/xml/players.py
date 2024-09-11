@@ -136,13 +136,13 @@ class PlayersViewTeamPlayerItemPlayerSkills(HTModel):
     Players - View -> Team -> Players -> Player item -> Skills
     """
     stamina: int = HTField('StaminaSkill')
-    keeper: int = HTField('KeeperSkill')
-    playmaker: int = HTField('PlaymakerSkill')
-    scorer: int = HTField('ScorerSkill')
-    passing: int = HTField('PassingSkill')
-    winger: int = HTField('WingerSkill')
-    defender: int = HTField('DefenderSkill')
-    set_pieces: int = HTField('SetPiecesSkill')
+    keeper: Optional[int] = HTField('KeeperSkill')
+    playmaker: Optional[int] = HTField('PlaymakerSkill')
+    scorer: Optional[int] = HTField('ScorerSkill')
+    passing: Optional[int] = HTField('PassingSkill')
+    winger: Optional[int] = HTField('WingerSkill')
+    defender: Optional[int] = HTField('DefenderSkill')
+    set_pieces: Optional[int] = HTField('SetPiecesSkill')
 
 
 class BasePlayersTeamPlayerItemLastMatch(HTModel):

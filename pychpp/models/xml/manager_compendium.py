@@ -10,9 +10,8 @@ class ManagerCompendium(HTModel):
 
     SOURCE_FILE = "managercompendium"
     LAST_VERSION = "1.5"
-    URL_PATH = "/Club/Manager"
 
-    _r_id: Optional[int] = HTInitVar(param='userId', init_arg='id')
+    _r_user_id: Optional[int] = HTInitVar(param='userId', init_arg='id', fill_with='user_id')
 
     id: int = HTField(path='Manager/UserId')
     login_name: str = HTField(path='Manager/Loginname')

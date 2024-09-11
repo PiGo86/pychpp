@@ -24,7 +24,6 @@ class TeamDetails(BaseTeamDetails):
     Team Details
     """
     user: 'User' = HTField('User')
-    national_teams: Optional[List['NationalTeamItem']] = HTField('NationalTeams', items='NationalTeam')
     teams: List['TeamItem'] = HTField('Teams', items='Team')
 
 
@@ -42,6 +41,7 @@ class User(HTModel):
     activation_date: datetime = HTField('ActivationDate')
     last_login_date: datetime = HTField('LastLoginDate')
     has_manager_license: bool = HTField('HasManagerLicense')
+    national_teams: Optional[List['NationalTeamItem']] = HTField('NationalTeams', items='NationalTeam')
 
 
 class UserLanguage(HTModel):
@@ -145,7 +145,7 @@ class TeamItemCup(HTModel):
     """
     Team Details -> Teams -> Team item -> Cup
     """
-    still_in_cup: bool = HTField('StillInCup')
+    still_in_cup: Optional[bool] = HTField('StillInCup')
     id: Optional[int] = HTField('CupID')
     name: Optional[str] = HTField('CupName')
     league_level: Optional[int] = HTField('CupLeagueLevel')
@@ -169,9 +169,9 @@ class TeamItemLeagueLevelUnit(HTModel):
     """
     Team Details -> Teams -> Team item -> League level unit
     """
-    id: int = HTField('LeagueLevelUnitID')
-    name: str = HTField('LeagueLevelUnitName')
-    level: int = HTField('LeagueLevel')
+    id: Optional[int] = HTField('LeagueLevelUnitID')
+    name: Optional[str] = HTField('LeagueLevelUnitName')
+    level: Optional[int] = HTField('LeagueLevel')
 
 
 class TeamItemFanClub(HTModel):
@@ -249,10 +249,10 @@ class TeamItemTrophyItem(HTModel):
     league_level_unit_id: int = HTField('LeagueLevelUnitId')
     league_level_unit_name: str = HTField('LeagueLevelUnitName')
     gained_date: datetime = HTField('GainedDate')
-    image_url: str = HTField('ImageUrl')
-    cup_league_level: int = HTField('CupLeagueLevel')
-    cup_level: int = HTField('CupLevel')
-    cup_level_index: int = HTField('CupLevelIndex')
+    image_url: Optional[str] = HTField('ImageUrl')
+    cup_league_level: Optional[int] = HTField('CupLeagueLevel')
+    cup_level: Optional[int] = HTField('CupLevel')
+    cup_level_index: Optional[int] = HTField('CupLevelIndex')
 
 
 class TeamItemSupportedTeams(HTModel):

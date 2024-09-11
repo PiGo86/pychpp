@@ -13,7 +13,7 @@ class LeagueDetails(HTModel):
     SOURCE_FILE = 'leaguedetails'
     LAST_VERSION = '1.6'
 
-    _r_id: int = HTInitVar('leagueLevelUnitID', init_arg='id')
+    _r_league_level_unit_id: int = HTInitVar('leagueLevelUnitID', init_arg='league_level_unit_id')
 
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')

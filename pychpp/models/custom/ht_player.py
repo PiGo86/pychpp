@@ -1,8 +1,9 @@
+from pychpp.models.custom import CustomModel
 from pychpp.models.xml.player_details import PlayerDetails
 from pychpp.models.xml.players import PlayersViewTeamPlayerItem, RequestPlayers
 
 
-class BaseHTPlayer:
+class BaseHTPlayer(CustomModel):
 
     def __repr__(self):
         return (f"<{self.__class__.__name__} object - "

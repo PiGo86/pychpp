@@ -15,7 +15,7 @@ class MatchDetails(HTModel):
     LAST_VERSION = '3.1'
 
     _r_match_events: bool = HTInitVar('matchEvents', init_arg='match_events')
-    _r_match_id: int = HTInitVar('matchID', init_arg='id')
+    _r_match_id: int = HTInitVar('matchID', init_arg='match_id')
     _r_source_system: str = HTInitVar('sourceSystem', init_arg='source_system')
 
     source_system: str = HTField('SourceSystem')

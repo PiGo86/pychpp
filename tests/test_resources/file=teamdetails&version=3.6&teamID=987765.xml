@@ -1,0 +1,670 @@
+<HattrickData>
+  <FileName>teamdetails.xml</FileName>
+  <Version>3.6</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-08 21:52:35</FetchedDate>
+  <User>
+    <UserID>12453550</UserID>
+    <Language>
+      <LanguageID>13</LanguageID>
+      <LanguageName>Polski</LanguageName>
+    </Language>
+    <SupporterTier>platinum</SupporterTier>
+    <Loginname>Praqol</Loginname>
+    <Name>HIDDEN</Name>
+    <ICQ />
+    <SignupDate>2012-11-05 15:42:59</SignupDate>
+    <ActivationDate>2012-11-10 10:50:00</ActivationDate>
+    <LastLoginDate>2024-09-08 21:43:45</LastLoginDate>
+    <HasManagerLicense>True</HasManagerLicense>
+    <NationalTeams />
+  </User>
+  <Teams>
+    <Team>
+      <TeamID>263018</TeamID>
+      <TeamName>Sojczanka Bytom</TeamName>
+      <ShortTeamName>Sojczanka</ShortTeamName>
+      <IsPrimaryClub>True</IsPrimaryClub>
+      <FoundedDate>2012-11-10 10:50:00</FoundedDate>
+      <Arena>
+        <ArenaID>263018</ArenaID>
+        <ArenaName>Dziura Stadium</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>24</LeagueID>
+        <LeagueName>Pologne</LeagueName>
+      </League>
+      <Country>
+        <CountryID>26</CountryID>
+        <CountryName>Pologne</CountryName>
+      </Country>
+      <Region>
+        <RegionID>453</RegionID>
+        <RegionName>Śląskie</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>408819892</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/29/285/2847/2846630/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/29/285/2847/2846633/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>9410</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.28</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup>
+        <StillInCup>False</StillInCup>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>41515</GlobalRanking>
+        <LeagueRanking>2040</LeagueRanking>
+        <RegionRanking>343</RegionRanking>
+        <PowerRating>946</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>987765</FriendlyTeamID>
+      <NumberOfVictories>2</NumberOfVictories>
+      <NumberOfUndefeated>6</NumberOfUndefeated>
+      <TeamRank>1973</TeamRank>
+      <Fanclub>
+        <FanclubID>669731</FanclubID>
+        <FanclubName>Kopalnioki</FanclubName>
+        <FanclubSize>2272</FanclubSize>
+      </Fanclub>
+      <LogoURL>//res.hattrick.org/teamlogo/3/27/264/263018/263018.png</LogoURL>
+      <Guestbook>
+        <NumberOfGuestbookItems>46</NumberOfGuestbookItems>
+      </Guestbook>
+      <PressAnnouncement>
+        <Subject>Jak w GTA</Subject>
+        <Body>[i]- I wygraliśmy, tak?
+- Tak[/i] - potwierdził trener.
+[i]- Wygraliśmy do tego wysoko, tak?[/i] - dopytywał nadal Prezes.
+[i]- Tak...[/i] - tracił rezon trener Onutu.
+[i]- Czyli awansowaliśmy bezpośrednio, tak?
+- Noooo... tak[/i] - to już nie brzmiało przekonująco.
+[i]- Krystian, czy Ty mi nie mówisz tego, co chcę usłyszeć?[/i] - Prezes ze swoim brakiem talentu do języków spolszczał nawet imiona zagranicznych pracowników klubu.
+[i]- Yyyy, tak.
+- No. Ej ej ej, co?!?[/i]
+Prezes wreszcie dowiedział się prawdy, znów spotkanie barażowe. Sezon temu skończyło się zdemolowaniem gabinetu Prezesa przez pseudokibica, przynajmniej taka informacja poszła do mediów. Tylko mecz był na wyjeździe, wszyscy pojechali do Biecza. Prezes nie wytrzymał po tamtym meczu...
+Po tak złych informacjach postanowił odprężyć się przy swojej ulubionej grze z młodzieńczych lat. Włączył podstarzałego peceta i kliknął w ikonę GTA:SA. I już na początku gry usłyszał:
+[i]Ah shit, here we go again...[/i].</Body>
+        <SendDate>2022-03-20 14:00:00</SendDate>
+      </PressAnnouncement>
+      <TeamColors>
+        <BackgroundColor>184466</BackgroundColor>
+        <Color>ffffff</Color>
+      </TeamColors>
+      <YouthTeamID>2555250</YouthTeamID>
+      <YouthTeamName>Sojczanka Bytom U-19</YouthTeamName>
+      <NumberOfVisits>5</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>75</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>32607</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.494</LeagueLevelUnitName>
+          <GainedDate>2024-05-20 12:06:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>74</TrophySeason>
+          <LeagueLevel>7</LeagueLevel>
+          <LeagueLevelUnitId>59367</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VII.763</LeagueLevelUnitName>
+          <GainedDate>2024-01-27 23:52:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5276719</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Ekstraklasa SPAMerów</LeagueLevelUnitName>
+          <GainedDate>2022-04-11 19:52:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>68</TrophySeason>
+          <LeagueLevel>4</LeagueLevel>
+          <LeagueLevelUnitId>3650</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.10</LeagueLevelUnitName>
+          <GainedDate>2022-03-27 08:24:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iv.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>67</TrophySeason>
+          <LeagueLevel>4</LeagueLevel>
+          <LeagueLevelUnitId>3650</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.10</LeagueLevelUnitName>
+          <GainedDate>2021-12-04 23:52:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iv.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>4945405</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Turniej Imienia Romana Ignatowskiego </LeagueLevelUnitName>
+          <GainedDate>2021-01-18 23:31:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>62</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>9402</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.20</LeagueLevelUnitName>
+          <GainedDate>2020-05-24 00:17:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>58</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>32663</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.550</LeagueLevelUnitName>
+          <GainedDate>2019-03-03 00:10:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>53</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>9427</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.45</LeagueLevelUnitName>
+          <GainedDate>2017-08-20 00:44:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>49</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>9464</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.82</LeagueLevelUnitName>
+          <GainedDate>2016-05-29 00:06:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>47</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>32281</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.168</LeagueLevelUnitName>
+          <GainedDate>2015-10-18 00:10:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>42</TrophySeason>
+          <LeagueLevel>7</LeagueLevel>
+          <LeagueLevelUnitId>59539</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VII.935</LeagueLevelUnitName>
+          <GainedDate>2014-04-06 00:05:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>41</TrophySeason>
+          <LeagueLevel>8</LeagueLevel>
+          <LeagueLevelUnitId>108208</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VIII.137</LeagueLevelUnitName>
+          <GainedDate>2013-12-15 00:14:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/viii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+    <Team>
+      <TeamID>987765</TeamID>
+      <TeamName>Deportivo Mato Grande</TeamName>
+      <ShortTeamName>Deportivo</ShortTeamName>
+      <IsPrimaryClub>False</IsPrimaryClub>
+      <FoundedDate>2018-10-12 19:00:00</FoundedDate>
+      <Arena>
+        <ArenaID>984327</ArenaID>
+        <ArenaName>Estádio da Folha</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>125</LeagueID>
+        <LeagueName>Cap-Vert</LeagueName>
+      </League>
+      <Country>
+        <CountryID>131</CountryID>
+        <CountryName>Cap-Vert</CountryName>
+      </Country>
+      <Region>
+        <RegionID>2197</RegionID>
+        <RegionName>Brava</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>443571477</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/29/285/2847/2846627/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/29/285/2847/2846628/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>123210</LeagueLevelUnitID>
+        <LeagueLevelUnitName>Campeonato Nacional</LeagueLevelUnitName>
+        <LeagueLevel>1</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup>
+        <StillInCup>False</StillInCup>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>347</GlobalRanking>
+        <LeagueRanking>1</LeagueRanking>
+        <RegionRanking>1</RegionRanking>
+        <PowerRating>1177</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>263018</FriendlyTeamID>
+      <NumberOfVictories>3</NumberOfVictories>
+      <NumberOfUndefeated>3</NumberOfUndefeated>
+      <TeamRank>1</TeamRank>
+      <Fanclub>
+        <FanclubID>0</FanclubID>
+        <FanclubName />
+        <FanclubSize>3642</FanclubSize>
+      </Fanclub>
+      <LogoURL>//res.hattrick.org/teamlogo/10/99/988/987765/987765.png</LogoURL>
+      <Guestbook>
+        <NumberOfGuestbookItems>23</NumberOfGuestbookItems>
+      </Guestbook>
+      <PressAnnouncement>
+        <Subject>Veni, Vidi, Vici</Subject>
+        <Body>Yeap, that team was made to win some trophy in Cabo Verde and let me challenge myself in Hattrick Masters. But in craziest dreams I didn't expect I'm going to win that trophy ;) Deportivo won Champions League! Can't believe it, that Easter will be sooo cheerful!
+
+[b]Enjoy![/b]</Body>
+        <SendDate>2024-03-29 00:05:00</SendDate>
+      </PressAnnouncement>
+      <TeamColors>
+        <BackgroundColor>a1a14c</BackgroundColor>
+        <Color>6B6B6B</Color>
+      </TeamColors>
+      <YouthTeamID>2725832</YouthTeamID>
+      <YouthTeamName>Deportivo Mato Pequeno</YouthTeamName>
+      <NumberOfVisits>7</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>61</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>123210</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Campeonato Nacional</LeagueLevelUnitName>
+          <GainedDate>2024-09-08 01:19:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/i.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>60</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>123210</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Campeonato Nacional</LeagueLevelUnitName>
+          <GainedDate>2024-05-20 12:10:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/i.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>91</TrophyTypeId>
+          <TrophySeason>87</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>183</LeagueLevelUnitId>
+          <LeagueLevelUnitName />
+          <GainedDate>2024-03-28 21:46:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/masters_1.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>59</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>123210</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Campeonato Nacional</LeagueLevelUnitName>
+          <GainedDate>2024-01-28 01:19:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/i.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5783460</LeagueLevelUnitId>
+          <LeagueLevelUnitName>EKSTRAKLASA LIGI SPAMERÓW</LeagueLevelUnitName>
+          <GainedDate>2023-12-04 21:50:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>58</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>123210</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Campeonato Nacional</LeagueLevelUnitName>
+          <GainedDate>2023-10-08 01:52:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/i.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5639982</LeagueLevelUnitId>
+          <LeagueLevelUnitName>MPHT 2023 Tarnów Reinkarnacja</LeagueLevelUnitName>
+          <GainedDate>2023-05-27 22:28:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>54</TrophySeason>
+          <LeagueLevel>2</LeagueLevel>
+          <LeagueLevelUnitId>123218</LeagueLevelUnitId>
+          <LeagueLevelUnitName>II.3</LeagueLevelUnitName>
+          <GainedDate>2022-07-17 01:27:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/ii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>16</TrophyTypeId>
+          <TrophySeason>54</TrophySeason>
+          <LeagueLevel>0</LeagueLevel>
+          <LeagueLevelUnitId>875</LeagueLevelUnitId>
+          <LeagueLevelUnitName />
+          <GainedDate>2022-05-25 20:55:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/leaguecup_0.png</ImageUrl>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>3</CupLevelIndex>
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5276724</LeagueLevelUnitId>
+          <LeagueLevelUnitName>2. Liga SPAMerów</LeagueLevelUnitName>
+          <GainedDate>2022-04-11 20:32:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>16</TrophyTypeId>
+          <TrophySeason>53</TrophySeason>
+          <LeagueLevel>0</LeagueLevel>
+          <LeagueLevelUnitId>746</LeagueLevelUnitId>
+          <LeagueLevelUnitName />
+          <GainedDate>2022-02-02 20:42:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/leaguecup_0.png</ImageUrl>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>2</CupLevelIndex>
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>3</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>4062050</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Campeonato Nacional beta </LeagueLevelUnitName>
+          <GainedDate>2021-11-15 20:47:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>50</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>123245</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.6</LeagueLevelUnitName>
+          <GainedDate>2021-04-25 01:31:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>49</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>123245</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.6</LeagueLevelUnitName>
+          <GainedDate>2021-01-03 01:31:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>48</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>123245</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.6</LeagueLevelUnitName>
+          <GainedDate>2020-09-13 01:43:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>47</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>123245</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.6</LeagueLevelUnitName>
+          <GainedDate>2020-05-24 02:50:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>46</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>123245</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.6</LeagueLevelUnitName>
+          <GainedDate>2020-02-02 01:27:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>45</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>123245</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.6</LeagueLevelUnitName>
+          <GainedDate>2019-10-13 01:24:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+    <Team>
+      <TeamID>2096863</TeamID>
+      <TeamName>SKS Bridgetown</TeamName>
+      <ShortTeamName>Bridgetown</ShortTeamName>
+      <IsPrimaryClub>False</IsPrimaryClub>
+      <FoundedDate>2022-03-22 08:10:00</FoundedDate>
+      <Arena>
+        <ArenaID>2093634</ArenaID>
+        <ArenaName>SKS Bridgetown Arena</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>1002</LeagueID>
+        <LeagueName>Ligue Anniversaire de Hattrick</LeagueName>
+      </League>
+      <Country>
+        <CountryID>130</CountryID>
+        <CountryName>La Barbade</CountryName>
+      </Country>
+      <Region>
+        <RegionID>2195</RegionID>
+        <RegionName>Bridgetown</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>431698458</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/28/276/2759/2758948/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/28/276/2760/2759016/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>260307</LeagueLevelUnitID>
+        <LeagueLevelUnitName>IV.22</LeagueLevelUnitName>
+        <LeagueLevel>4</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup>
+        <StillInCup>False</StillInCup>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>13469</GlobalRanking>
+        <LeagueRanking>553</LeagueRanking>
+        <RegionRanking>8</RegionRanking>
+        <PowerRating>1011</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>1326797</FriendlyTeamID>
+      <NumberOfVictories>2</NumberOfVictories>
+      <NumberOfUndefeated>4</NumberOfUndefeated>
+      <TeamRank>328</TeamRank>
+      <Fanclub>
+        <FanclubID>0</FanclubID>
+        <FanclubName />
+        <FanclubSize>2652</FanclubSize>
+      </Fanclub>
+      <LogoURL>http://res.hattrick.org/teamlogo/21/210/2097/2096863/2096863.png</LogoURL>
+      <Guestbook>
+        <NumberOfGuestbookItems>0</NumberOfGuestbookItems>
+      </Guestbook>
+      <TeamColors>
+        <BackgroundColor>870c1d</BackgroundColor>
+        <Color>ffffff</Color>
+      </TeamColors>
+      <YouthTeamID>0</YouthTeamID>
+      <YouthTeamName />
+      <NumberOfVisits>0</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5784128</LeagueLevelUnitId>
+          <LeagueLevelUnitName>II LIGA SPAMERÓW</LeagueLevelUnitName>
+          <GainedDate>2023-12-04 21:53:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>3</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>260420</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.71</LeagueLevelUnitName>
+          <GainedDate>2023-02-24 16:45:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>2</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>261275</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.670</LeagueLevelUnitName>
+          <GainedDate>2022-11-04 13:23:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>7</LeagueLevel>
+          <LeagueLevelUnitId>262519</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VII.890</LeagueLevelUnitName>
+          <GainedDate>2022-07-15 13:23:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+  </Teams>
+</HattrickData>

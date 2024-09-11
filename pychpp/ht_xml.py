@@ -152,6 +152,10 @@ class HTXml:
         return _datetime.datetime.strftime("%Y-%m-%d %H:%M:%S")
 
     @staticmethod
+    def to_string(data):
+        return ElementTree.tostring(data, encoding='unicode')
+
+    @staticmethod
     def ht_match_list(data):
         matches_id = list()
         for match in data.findall('Match'):
