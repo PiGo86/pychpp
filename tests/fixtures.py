@@ -15,16 +15,18 @@ PYCHPP_SCOPE = os.environ["PYCHPP_SCOPE"]
 
 BASE_PATTERN = r"https://www.hattrick.org/goto.ashx\?path="
 TEAM_PATTERN = BASE_PATTERN + r"/Club/\?teamID=(\d+)"
-YOUTH_PLAYER_PATTERN = BASE_PATTERN + r"/Club/Players/YouthPlayer.aspx/\?youthPlayerId=(\d+)"
-PLAYER_PATTERN = BASE_PATTERN + r"/Club/Players/Player.aspx\?playerId=(\d+)"
-YOUTH_TEAM_PATTERN = BASE_PATTERN + r"/Club/Youth/\?youthTeamId=(\d+)"
+YOUTH_PLAYER_PATTERN = BASE_PATTERN + r"/Club/Players/YouthPlayer.aspx\?.*youthPlayerID=(\d+).*"
+PLAYER_PATTERN = BASE_PATTERN + r"/Club/Players/Player.aspx\?playerID=(\d+)"
+YOUTH_TEAM_PATTERN = BASE_PATTERN + r"/Club/Youth/\?youthTeamID=(\d+)"
 ARENA_PATTERN = BASE_PATTERN + r"/Club/Stadium/\?arenaID=(\d+)"
-USER_PATTERN = BASE_PATTERN + r"/Club/Manager/\?userId=(\d+)"
-REGION_PATTERN = BASE_PATTERN + r"/World/Regions/Region.aspx/\?regionID=(\d+)"
-MATCH_ARCHIVE_PATTERN = BASE_PATTERN + r"%2FClub%2FMatches%2FArchive.aspx%3F(TeamID%3D(\d*))?(%26)\?(season%3D(\d*))?"
+USER_PATTERN = BASE_PATTERN + r"/Club/Manager/\?userID=(\d+)"
+REGION_PATTERN = BASE_PATTERN + r"/World/Regions/Region.aspx\?regionID=(\d+)"
+MATCH_ARCHIVE_PATTERN = BASE_PATTERN + r"/Club/Matches/Archive.aspx\?teamID=(\d+)(&season=(\d+))*"
 MATCH_PATTERN = BASE_PATTERN + r"/Club/Matches/Match.aspx\?matchID=(\d+)"
-COUNTRY_LEAGUE_PATTERN = BASE_PATTERN + r"/World/Leagues/League.aspx\?LeagueID=(\d+)"
-CUP_PATTERN = BASE_PATTERN + r"/World/Cup/Cup.aspx\?CupID=(\d+)"
+MATCH_LINEUP_PATTERN = BASE_PATTERN + r"/Club/Matches/Match.aspx\?matchID=(\d+)&teamID=(\d+)"
+LEAGUE_LEVEL_UNIT_PATTERN = BASE_PATTERN + r"/World/Series/\?leagueLevelUnitID=(\d+)"
+COUNTRY_LEAGUE_PATTERN = BASE_PATTERN + r"/World/Leagues/League.aspx\?.*leagueID=(\d+).*"
+CUP_PATTERN = BASE_PATTERN + r"/World/Cup/Cup.aspx\?cupID=(\d+)"
 
 
 @pytest.fixture
@@ -40,7 +42,6 @@ def chpp():
 def mocked_chpp(monkeypatch):
 
     def mock_request(*args, **kwargs):
-
         args_dict = {'file': kwargs.pop('file'), 'version': kwargs.pop('version')}
         args_dict.update(sorted(kwargs.items()))
         filename = '&'.join(f"{k}={v}" for k, v in args_dict.items()) + '.xml'

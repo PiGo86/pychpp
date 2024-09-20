@@ -8,14 +8,13 @@ from rauth.oauth import HmacSha1Signature
 
 import xml.etree.ElementTree
 
-from pychpp import (ht_challenge, ht_match, ht_matches_archive,
-                    ht_match_lineup, ht_training, ht_transfers_team,
-                    ht_world, ht_national_teams, ht_world_cup)
+from pychpp import ht_training, ht_transfers_team, ht_world, ht_national_teams, ht_world_cup
 from pychpp.models.xml import manager_compendium, team_details, achievements, arena_details, challenges, region_details, \
     league_details, league_fixtures, match_lineup, national_teams, national_team_details, player_details, training, \
-    transfers_team, world_details, world_cup, players, youth_player_details, youth_team_details, youth_player_list
+    transfers_team, world_details, world_cup, players, youth_player_details, youth_team_details, youth_player_list, \
+    matches_archive, match_details
 from pychpp.models.custom import ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player, ht_league_unit, \
-    ht_youth_player, ht_league
+    ht_youth_player, ht_league, ht_matches_archive, ht_match, ht_challenge, ht_match_lineup
 from pychpp import ht_error
 from pychpp.ht_xml import HTXml
 
@@ -37,7 +36,7 @@ class CHPPBase:
         It needs at least consumer_key and consumer_secret parameters.
 
         If access_token_key and access_token_secret parameters are not defined,
-        the instanciated object can be used to obtain them from Hattrick.
+        the instantiated object can be used to obtain them from Hattrick.
 
         :param consumer_key: Consumer Key of the application
         :param consumer_secret: Consumer Secret of the application
@@ -131,6 +130,10 @@ class CHPPBase:
             elif "Your team already has booked" in error_text:
                 raise ht_error.HTTeamNotAvailableError(
                     "The own team has already booked a friendly match")
+
+            elif "Your team is still in the cup" in error_text:
+                raise ht_error.HTTeamNotAvailableError(
+                    "The own team is still in cup")
 
             elif error_text[-10:] == "être défié":
                 raise ht_error.HTOpponentTeamNotAvailableError(
@@ -485,6 +488,17 @@ class CHPPXml(CHPPBase):
         )
 
 
+    def xml_match_details(
+            self, match_id: int, source_system: str = None,
+            match_events: bool = None, **kwargs,
+    ) -> match_details.MatchDetails:
+
+        return match_details.MatchDetails(
+            chpp=self, match_id=match_id, source_system=source_system,
+            match_events=match_events, **kwargs,
+        )
+
+
     def xml_match_lineup(
             self, match_id: int = None, team_id: int = None,
             source_system: str = None, **kwargs,
@@ -493,6 +507,19 @@ class CHPPXml(CHPPBase):
         return match_lineup.MatchLineup(
             chpp=self, match_id=match_id, team_id=team_id,
             source_system=source_system, **kwargs,
+        )
+
+
+    def xml_matches_archive(
+            self, team_id: int = None, is_youth: bool = None,
+            first_match_date: datetime = None, last_match_date: datetime = None,
+            season: int = None, include_hto: bool = None, **kwargs,
+    ) -> matches_archive.MatchesArchive:
+
+        return matches_archive.MatchesArchive(
+            chpp=self, team_id=team_id, is_youth=is_youth,
+            first_match_date=first_match_date, last_match_date=last_match_date,
+            season=season, include_hto=include_hto, **kwargs,
         )
 
 
@@ -645,8 +672,8 @@ class CHPPXml(CHPPBase):
 
 
     def xml_world_details(
-            self, include_regions: bool = None, country_id: int = None,
-            league_id: int = None, **kwargs,
+            self, league_id: int = None, country_id: int = None,
+            include_regions: bool = None, **kwargs,
     ) -> world_details.WorldDetails:
 
         return world_details.WorldDetails(
@@ -704,7 +731,6 @@ class CHPPXml(CHPPBase):
 
 class CHPP(CHPPXml):
 
-
     def arena(self, id_=None, **kwargs) -> ht_arena.HTArena:
         """
         Get an arena from its Hattrick ID
@@ -715,16 +741,6 @@ class CHPP(CHPPXml):
         :param id_: Hattrick ID of the requested arena
         """
         return ht_arena.HTArena(chpp=self, arena_id=id_, **kwargs)
-
-
-    def league(self, id_: int, **kwargs) -> ht_league.HTLeague:
-        """
-        Get a league from his Hattrick ID
-
-        :param id_: Hattrick ID of the requested league
-        """
-        return ht_league.HTLeague(chpp=self, league_id=id_, **kwargs)
-
 
     def league_unit(self, id_=None, **kwargs) -> ht_league_unit.HTLeagueUnit:
         """
@@ -737,7 +753,6 @@ class CHPP(CHPPXml):
         """
         return ht_league_unit.HTLeagueUnit(chpp=self, league_level_unit_id=id_, **kwargs)
 
-
     def user(self, id_: int = None, **kwargs) -> ht_user.HTUser:
         """
         Get a user from its Hattrick ID
@@ -747,7 +762,6 @@ class CHPP(CHPPXml):
         :param id_: Hattrick ID of the requested user
         """
         return ht_user.HTUser(chpp=self, user_id=id_, **kwargs)
-
 
     def team(self, id_: int = None, user_id: int = None, **kwargs) -> ht_team.HTTeam:
         """
@@ -762,7 +776,6 @@ class CHPP(CHPPXml):
         """
         return ht_team.HTTeam(chpp=self, team_id=id_, user_id=user_id, **kwargs)
 
-
     def youth_team(self, id_=None, **kwargs) -> ht_youth_team.HTYouthTeam:
         """
         Get a youth team from its Hattrick ID
@@ -775,7 +788,6 @@ class CHPP(CHPPXml):
         """
         return ht_youth_team.HTYouthTeam(chpp=self, youth_team_id=id_, **kwargs)
 
-
     def player(self, id_: int, **kwargs) -> ht_player.HTPlayer:
         """
         Get a player from its Hattrick ID
@@ -783,25 +795,6 @@ class CHPP(CHPPXml):
         :key ht_id: Hattrick ID of the requested player
         """
         return ht_player.HTPlayer(chpp=self, player_id=id_, **kwargs)
-
-
-    def light_player(self, team_id: int, id_: int, **kwargs) -> ht_player.HTLightPlayer:
-        """
-        Get a player (light version) from its Hattrick ID
-
-        :key ht_id: Hattrick ID of the requested player
-        """
-        return ht_player.HTLightPlayer(chpp=self, team_id=team_id, id_=id_, **kwargs)
-
-
-    def light_youth_player(self, youth_team_id: int, id_: int, **kwargs) -> ht_youth_player.HTLightYouthPlayer:
-        """
-        Get a youth player (light version) from its Hattrick ID
-
-        :key ht_id: Hattrick ID of the requested youth player
-        """
-        return ht_youth_player.HTLightYouthPlayer(chpp=self, youth_team_id=youth_team_id, id_=id_, **kwargs)
-
 
     def youth_player(self, id_: int, **kwargs) -> ht_youth_player.HTYouthPlayer:
         """
@@ -823,44 +816,63 @@ class CHPP(CHPPXml):
         return ht_region.HTRegion(chpp=self, region_id=id_, **kwargs)
 
 
-    def challenge_manager(self, **kwargs):
+    def challenge_manager(
+            self, team_id: int = None, is_weekend_friendly: bool = None, **kwargs,
+    ) -> ht_challenge.HTChallengeManager:
         """
         Get a challenge manager object
 
-        :key team_ht_id: Hattrick ID of the concerned team, must be an int
-        :key period: concerned period, must be equal to 'week' or 'weekend'
-        :rtype: ht_challenge.HTChallengeManager
+        :param team_id: Hattrick ID of the concerned team, must be an int
+        :param is_weekend_friendly: does the request concerns weekend or not
         """
-        return ht_challenge.HTChallengeManager(chpp=self, **kwargs)
+        return ht_challenge.HTChallengeManager(
+            chpp=self, team_id=team_id, is_weekend_friendly=is_weekend_friendly, **kwargs,
+        )
 
-
-    def match(self, **kwargs):
+    def league(
+            self, id_: int = None, country_id: int = None,
+            include_regions: bool = None, **kwargs,
+    ) -> ht_league.HTLeague:
         """
-        Get a match from his Hattrick ID
+        Get a league from its Hattrick ID or from its country ID
 
-        :key ht_id: Hattrick ID of the requested match, must be an int
-        :rtype: ht_match.HTMatch
+        :param id_: Hattrick ID of the requested league
+        :param country_id: Hattrick ID of the requested country
+        :param include_regions: include or no regions
         """
-        return ht_match.HTMatch(chpp=self, **kwargs)
+        return ht_league.HTLeague(chpp=self, league_id=id_, country_id=country_id,
+                                  include_regions=include_regions, **kwargs)
+
+    def match(self, id_: int, source_system: str = None, events: bool = None, **kwargs):
+        """
+        Get a match from its Hattrick ID
+
+        :param id_: Hattrick ID of the requested match
+        :param source_system: source system of the requested match
+        :param events: include or no match events
+        """
+        return ht_match.HTMatch(
+            chpp=self, match_id=id_, source_system=source_system, match_events=events, **kwargs,
+        )
 
 
-    def matches_archive(self, **kwargs):
+    def matches_archive(self, id_: int = None, is_youth: bool = None,
+                        first_match_date: datetime = None, last_match_date: datetime = None,
+                        season: int = None, include_hto: bool = None, **kwargs,
+                        ) -> ht_matches_archive.HTMatchesArchive:
         """
         Get a matches archive
 
-        :key ht_id: Hattrick ID of team to search matches
-        :key youth: is requested mathes archive concerns a youth team,
-                    must be a boolean
-        :key first_match_date: begin date to search matches,
-                               must be a datetime.datetime object
-        :key last_match_date: end date to search matches,
-                              must be a datetime.datetime object
-        :key season: season to search matches, must be an integer
-        :key hto: including or not tounaments matches, must be a boolean
-        :return: a ht_matches_archive.HTMatchesArchive object
-        :rtype: ht_matches_archive.HTMatchesArchive
+        :param id_: Hattrick ID of team to search matches
+        :param is_youth: is requested matches archive concerns a youth team
+        :param first_match_date: begin date to search matches
+        :param last_match_date: end date to search matches
+        :param season: season to search matches
+        :param include_hto: including or not tournaments matches
         """
-        return ht_matches_archive.HTMatchesArchive(chpp=self, **kwargs)
+        return ht_matches_archive.HTMatchesArchive(
+            chpp=self, team_id=id_, is_youth=is_youth, first_match_date=first_match_date,
+            last_match_date=last_match_date, season=season, include_hto=include_hto, **kwargs)
 
 
     def league_fixtures(self, **kwargs):
@@ -874,16 +886,20 @@ class CHPP(CHPPXml):
         return ht_league.HTLeagueFixtures(chpp=self, **kwargs)
 
 
-    def match_lineup(self, **kwargs):
+    def match_lineup(
+            self, match_id: int = None, team_id: int = None, source_system: str = None, **kwargs
+    ) -> ht_match_lineup.HTMatchLineup:
         """
         Get a match lineup from its Hattrick ID
 
-        :key ht_id: Hattrick ID of the requested match, must be an int
-        :key team_id: Hattrick ID of the team for each the lineup is requested,
-        must be an int
-        :rtype: ht_match_lineup.HTMatchLineup
+        :param match_id: Hattrick ID of the requested match
+        :param team_id: Hattrick ID of the team for which the lineup is requested
+        :param source_system: source system of the requested match
         """
-        return ht_match_lineup.HTMatchLineup(chpp=self, **kwargs)
+        return ht_match_lineup.HTMatchLineup(
+            chpp=self, match_id=match_id, team_id=team_id,
+            source_system=source_system, **kwargs,
+        )
 
 
     def world(self, **kwargs):

@@ -1,0 +1,2876 @@
+<HattrickData>
+  <FileName>nationalTeams.xml</FileName>
+  <Version>1.6</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-18 22:28:05</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <LeagueOfficeTypeID>2</LeagueOfficeTypeID>
+  <NationalTeams>
+    <NationalTeam>
+      <NationalTeamID>3038</NationalTeamID>
+      <NationalTeamName>Schweiz</NationalTeamName>
+      <Dress>N010301</Dress>
+      <RatingScores>15463</RatingScores>
+      <LeagueId>46</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3039</NationalTeamID>
+      <NationalTeamName>Österreich</NationalTeamName>
+      <Dress>N010301</Dress>
+      <RatingScores>11847</RatingScores>
+      <LeagueId>39</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3033</NationalTeamID>
+      <NationalTeamName>Türkiye</NationalTeamName>
+      <Dress>G010101</Dress>
+      <RatingScores>17378</RatingScores>
+      <LeagueId>32</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3247</NationalTeamID>
+      <NationalTeamName>Tanzania</NationalTeamName>
+      <Dress>N052004</Dress>
+      <RatingScores>20268</RatingScores>
+      <LeagueId>142</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3000</NationalTeamID>
+      <NationalTeamName>Sverige</NationalTeamName>
+      <Dress>N211616</Dress>
+      <RatingScores>11150</RatingScores>
+      <LeagueId>1</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3004</NationalTeamID>
+      <NationalTeamName>France</NationalTeamName>
+      <Dress>N160301</Dress>
+      <RatingScores>12488</RatingScores>
+      <LeagueId>5</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3150</NationalTeamID>
+      <NationalTeamName>Iran</NationalTeamName>
+      <Dress>B030303</Dress>
+      <RatingScores>18727</RatingScores>
+      <LeagueId>85</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3089</NationalTeamID>
+      <NationalTeamName>Hellas</NationalTeamName>
+      <Dress>E160316</Dress>
+      <RatingScores>10791</RatingScores>
+      <LeagueId>50</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3003</NationalTeamID>
+      <NationalTeamName>Italia</NationalTeamName>
+      <Dress>N050305</Dress>
+      <RatingScores>16549</RatingScores>
+      <LeagueId>4</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3116</NationalTeamID>
+      <NationalTeamName>Slovensko</NationalTeamName>
+      <Dress>N050503</Dress>
+      <RatingScores>16235</RatingScores>
+      <LeagueId>67</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3002</NationalTeamID>
+      <NationalTeamName>Deutschland</NationalTeamName>
+      <Dress>N030403</Dress>
+      <RatingScores>23600</RatingScores>
+      <LeagueId>3</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3023</NationalTeamID>
+      <NationalTeamName>Suomi</NationalTeamName>
+      <Dress>N030503</Dress>
+      <RatingScores>24794</RatingScores>
+      <LeagueId>12</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3224</NationalTeamID>
+      <NationalTeamName>Bangladesh</NationalTeamName>
+      <Dress>N020102</Dress>
+      <RatingScores>8653</RatingScores>
+      <LeagueId>132</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3010</NationalTeamID>
+      <NationalTeamName>Canada</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>19951</RatingScores>
+      <LeagueId>17</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3025</NationalTeamID>
+      <NationalTeamName>Nederland</NationalTeamName>
+      <Dress>N080308</Dress>
+      <RatingScores>21207</RatingScores>
+      <LeagueId>14</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3176</NationalTeamID>
+      <NationalTeamName>Moldova</NationalTeamName>
+      <Dress>N040404</Dress>
+      <RatingScores>6049</RatingScores>
+      <LeagueId>103</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3166</NationalTeamID>
+      <NationalTeamName>Panama</NationalTeamName>
+      <Dress>N010311</Dress>
+      <RatingScores>10787</RatingScores>
+      <LeagueId>96</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3006</NationalTeamID>
+      <NationalTeamName>Argentina</NationalTeamName>
+      <Dress>A070407</Dress>
+      <RatingScores>33156</RatingScores>
+      <LeagueId>7</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3022</NationalTeamID>
+      <NationalTeamName>Danmark</NationalTeamName>
+      <Dress>N010301</Dress>
+      <RatingScores>13409</RatingScores>
+      <LeagueId>11</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3106</NationalTeamID>
+      <NationalTeamName>Bulgaria</NationalTeamName>
+      <Dress>N030201</Dress>
+      <RatingScores>19090</RatingScores>
+      <LeagueId>62</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3110</NationalTeamID>
+      <NationalTeamName>Slovenija</NationalTeamName>
+      <Dress>H030202</Dress>
+      <RatingScores>5175</RatingScores>
+      <LeagueId>64</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3238</NationalTeamID>
+      <NationalTeamName>Prateh Kampuchea</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>10027</RatingScores>
+      <LeagueId>138</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3174</NationalTeamID>
+      <NationalTeamName>Malta</NationalTeamName>
+      <Dress>G191919</Dress>
+      <RatingScores>5655</RatingScores>
+      <LeagueId>101</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3108</NationalTeamID>
+      <NationalTeamName>Israel</NationalTeamName>
+      <Dress>N070303</Dress>
+      <RatingScores>16693</RatingScores>
+      <LeagueId>63</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3086</NationalTeamID>
+      <NationalTeamName>Eesti</NationalTeamName>
+      <Dress>N050403</Dress>
+      <RatingScores>17302</RatingScores>
+      <LeagueId>56</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3126</NationalTeamID>
+      <NationalTeamName>Nigeria</NationalTeamName>
+      <Dress>A020202</Dress>
+      <RatingScores>13905</RatingScores>
+      <LeagueId>75</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3021</NationalTeamID>
+      <NationalTeamName>Ísland</NationalTeamName>
+      <Dress>G050305</Dress>
+      <RatingScores>11438</RatingScores>
+      <LeagueId>38</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3026</NationalTeamID>
+      <NationalTeamName>Chile</NationalTeamName>
+      <Dress>N190503</Dress>
+      <RatingScores>15741</RatingScores>
+      <LeagueId>18</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3090</NationalTeamID>
+      <NationalTeamName>Česko</NationalTeamName>
+      <Dress>N010305</Dress>
+      <RatingScores>24226</RatingScores>
+      <LeagueId>52</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3029</NationalTeamID>
+      <NationalTeamName>Polska</NationalTeamName>
+      <Dress>E030103</Dress>
+      <RatingScores>15457</RatingScores>
+      <LeagueId>24</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3198</NationalTeamID>
+      <NationalTeamName>Senegal</NationalTeamName>
+      <Dress>C030206</Dress>
+      <RatingScores>11880</RatingScores>
+      <LeagueId>121</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3037</NationalTeamID>
+      <NationalTeamName>Belgium</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>28702</RatingScores>
+      <LeagueId>44</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3014</NationalTeamID>
+      <NationalTeamName>Portugal</NationalTeamName>
+      <Dress>N010201</Dress>
+      <RatingScores>10763</RatingScores>
+      <LeagueId>25</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3035</NationalTeamID>
+      <NationalTeamName>España</NationalTeamName>
+      <Dress>N011111</Dress>
+      <RatingScores>26677</RatingScores>
+      <LeagueId>36</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3160</NationalTeamID>
+      <NationalTeamName>Jamaica</NationalTeamName>
+      <Dress>H200420</Dress>
+      <RatingScores>8314</RatingScores>
+      <LeagueId>94</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3178</NationalTeamID>
+      <NationalTeamName>Shqiperia</NationalTeamName>
+      <Dress>N190419</Dress>
+      <RatingScores>6219</RatingScores>
+      <LeagueId>98</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3027</NationalTeamID>
+      <NationalTeamName>India</NationalTeamName>
+      <Dress>G070705</Dress>
+      <RatingScores>8073</RatingScores>
+      <LeagueId>20</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3156</NationalTeamID>
+      <NationalTeamName>Belarus</NationalTeamName>
+      <Dress>D030103</Dress>
+      <RatingScores>13601</RatingScores>
+      <LeagueId>91</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3012</NationalTeamID>
+      <NationalTeamName>Ireland</NationalTeamName>
+      <Dress>N020302</Dress>
+      <RatingScores>20838</RatingScores>
+      <LeagueId>21</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3130</NationalTeamID>
+      <NationalTeamName>Bolivia</NationalTeamName>
+      <Dress>H141414</Dress>
+      <RatingScores>20462</RatingScores>
+      <LeagueId>74</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3102</NationalTeamID>
+      <NationalTeamName>Hong Kong</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>7539</RatingScores>
+      <LeagueId>59</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3210</NationalTeamID>
+      <NationalTeamName>Cabo Verde</NationalTeamName>
+      <Dress>N160316</Dress>
+      <RatingScores>10944</RatingScores>
+      <LeagueId>125</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3034</NationalTeamID>
+      <NationalTeamName>China</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>17331</RatingScores>
+      <LeagueId>34</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3013</NationalTeamID>
+      <NationalTeamName>Perú</NationalTeamName>
+      <Dress>K030303</Dress>
+      <RatingScores>22172</RatingScores>
+      <LeagueId>23</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3113</NationalTeamID>
+      <NationalTeamName>Lietuva</NationalTeamName>
+      <Dress>N060206</Dress>
+      <RatingScores>14938</RatingScores>
+      <LeagueId>66</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3001</NationalTeamID>
+      <NationalTeamName>England</NationalTeamName>
+      <Dress>N030503</Dress>
+      <RatingScores>17694</RatingScores>
+      <LeagueId>2</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3112</NationalTeamID>
+      <NationalTeamName>Bosna i Hercegovina</NationalTeamName>
+      <Dress>G050503</Dress>
+      <RatingScores>11685</RatingScores>
+      <LeagueId>69</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3032</NationalTeamID>
+      <NationalTeamName>Hanguk</NationalTeamName>
+      <Dress>N010501</Dress>
+      <RatingScores>9789</RatingScores>
+      <LeagueId>30</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3170</NationalTeamID>
+      <NationalTeamName>Honduras</NationalTeamName>
+      <Dress>B110511</Dress>
+      <RatingScores>9906</RatingScores>
+      <LeagueId>99</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3082</NationalTeamID>
+      <NationalTeamName>Magyarország</NationalTeamName>
+      <Dress>N010302</Dress>
+      <RatingScores>6068</RatingScores>
+      <LeagueId>51</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3260</NationalTeamID>
+      <NationalTeamName>O'zbekiston</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>12568</RatingScores>
+      <LeagueId>145</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3016</NationalTeamID>
+      <NationalTeamName>Venezuela</NationalTeamName>
+      <Dress>N090303</Dress>
+      <RatingScores>9083</RatingScores>
+      <LeagueId>29</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3104</NationalTeamID>
+      <NationalTeamName>Cymru</NationalTeamName>
+      <Dress>N010301</Dress>
+      <RatingScores>4818</RatingScores>
+      <LeagueId>61</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3251</NationalTeamID>
+      <NationalTeamName>Dhivehi Raajje</NationalTeamName>
+      <Dress>K020201</Dress>
+      <RatingScores>10551</RatingScores>
+      <LeagueId>144</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3172</NationalTeamID>
+      <NationalTeamName>Kyrgyzstan</NationalTeamName>
+      <Dress>N010401</Dress>
+      <RatingScores>6136</RatingScores>
+      <LeagueId>102</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3182</NationalTeamID>
+      <NationalTeamName>Sakartvelo</NationalTeamName>
+      <Dress>N030301</Dress>
+      <RatingScores>7616</RatingScores>
+      <LeagueId>104</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3008</NationalTeamID>
+      <NationalTeamName>Norge</NationalTeamName>
+      <Dress>N010301</Dress>
+      <RatingScores>9541</RatingScores>
+      <LeagueId>9</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3088</NationalTeamID>
+      <NationalTeamName>Hrvatska</NationalTeamName>
+      <Dress>F010305</Dress>
+      <RatingScores>15722</RatingScores>
+      <LeagueId>58</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3128</NationalTeamID>
+      <NationalTeamName>Ecuador</NationalTeamName>
+      <Dress>N210501</Dress>
+      <RatingScores>8442</RatingScores>
+      <LeagueId>73</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3138</NationalTeamID>
+      <NationalTeamName>Costa Rica</NationalTeamName>
+      <Dress>N030501</Dress>
+      <RatingScores>8495</RatingScores>
+      <LeagueId>81</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3222</NationalTeamID>
+      <NationalTeamName>Angola</NationalTeamName>
+      <Dress>N200401</Dress>
+      <RatingScores>15616</RatingScores>
+      <LeagueId>130</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3190</NationalTeamID>
+      <NationalTeamName>Nicaragua</NationalTeamName>
+      <Dress>N050305</Dress>
+      <RatingScores>8890</RatingScores>
+      <LeagueId>111</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3120</NationalTeamID>
+      <NationalTeamName>Việt Nam</NationalTeamName>
+      <Dress>N012101</Dress>
+      <RatingScores>9256</RatingScores>
+      <LeagueId>70</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3024</NationalTeamID>
+      <NationalTeamName>Brasil</NationalTeamName>
+      <Dress>N061603</Dress>
+      <RatingScores>21691</RatingScores>
+      <LeagueId>16</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3146</NationalTeamID>
+      <NationalTeamName>Lëtzebuerg</NationalTeamName>
+      <Dress>N010307</Dress>
+      <RatingScores>6910</RatingScores>
+      <LeagueId>84</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3031</NationalTeamID>
+      <NationalTeamName>Uruguay</NationalTeamName>
+      <Dress>N070404</Dress>
+      <RatingScores>13053</RatingScores>
+      <LeagueId>28</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3019</NationalTeamID>
+      <NationalTeamName>Rossiya</NationalTeamName>
+      <Dress>N030501</Dress>
+      <RatingScores>8022</RatingScores>
+      <LeagueId>35</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3124</NationalTeamID>
+      <NationalTeamName>Paraguay</NationalTeamName>
+      <Dress>K030505</Dress>
+      <RatingScores>9434</RatingScores>
+      <LeagueId>72</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3083</NationalTeamID>
+      <NationalTeamName>Latvija</NationalTeamName>
+      <Dress>N090309</Dress>
+      <RatingScores>22148</RatingScores>
+      <LeagueId>53</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3030</NationalTeamID>
+      <NationalTeamName>Scotland</NationalTeamName>
+      <Dress>N110311</Dress>
+      <RatingScores>12110</RatingScores>
+      <LeagueId>26</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3242</NationalTeamID>
+      <NationalTeamName>Suriyah</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>9483</RatingScores>
+      <LeagueId>140</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3258</NationalTeamID>
+      <NationalTeamName>Palestine</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>12033</RatingScores>
+      <LeagueId>148</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3162</NationalTeamID>
+      <NationalTeamName>Kenya</NationalTeamName>
+      <Dress>N040404</Dress>
+      <RatingScores>9441</RatingScores>
+      <LeagueId>95</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3087</NationalTeamID>
+      <NationalTeamName>Srbija</NationalTeamName>
+      <Dress>N010503</Dress>
+      <RatingScores>14147</RatingScores>
+      <LeagueId>57</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3015</NationalTeamID>
+      <NationalTeamName>South Africa</NationalTeamName>
+      <Dress>N030221</Dress>
+      <RatingScores>10805</RatingScores>
+      <LeagueId>27</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3122</NationalTeamID>
+      <NationalTeamName>Pakistan</NationalTeamName>
+      <Dress>N140302</Dress>
+      <RatingScores>7111</RatingScores>
+      <LeagueId>71</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3158</NationalTeamID>
+      <NationalTeamName>Severna Makedonija</NationalTeamName>
+      <Dress>N010106</Dress>
+      <RatingScores>4841</RatingScores>
+      <LeagueId>97</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3180</NationalTeamID>
+      <NationalTeamName>Al Urdun</NationalTeamName>
+      <Dress>E020104</Dress>
+      <RatingScores>8791</RatingScores>
+      <LeagueId>106</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3208</NationalTeamID>
+      <NationalTeamName>Côte d'Ivoire</NationalTeamName>
+      <Dress>N080208</Dress>
+      <RatingScores>11949</RatingScores>
+      <LeagueId>126</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3214</NationalTeamID>
+      <NationalTeamName>Bahrain</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>8909</RatingScores>
+      <LeagueId>123</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3234</NationalTeamID>
+      <NationalTeamName>Brunei</NationalTeamName>
+      <Dress>G210421</Dress>
+      <RatingScores>6801</RatingScores>
+      <LeagueId>136</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3134</NationalTeamID>
+      <NationalTeamName>Al Maghrib </NationalTeamName>
+      <Dress>N030201</Dress>
+      <RatingScores>10066</RatingScores>
+      <LeagueId>77</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3188</NationalTeamID>
+      <NationalTeamName>Kazakhstan</NationalTeamName>
+      <Dress>I070706</Dress>
+      <RatingScores>7648</RatingScores>
+      <LeagueId>112</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3007</NationalTeamID>
+      <NationalTeamName>USA</NationalTeamName>
+      <Dress>K030514</Dress>
+      <RatingScores>20989</RatingScores>
+      <LeagueId>8</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3011</NationalTeamID>
+      <NationalTeamName>Colombia</NationalTeamName>
+      <Dress>N060501</Dress>
+      <RatingScores>11999</RatingScores>
+      <LeagueId>19</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3249</NationalTeamID>
+      <NationalTeamName>Uganda</NationalTeamName>
+      <Dress>K040420</Dress>
+      <RatingScores>11452</RatingScores>
+      <LeagueId>143</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3118</NationalTeamID>
+      <NationalTeamName>Ukraina</NationalTeamName>
+      <Dress>N060506</Dress>
+      <RatingScores>9904</RatingScores>
+      <LeagueId>68</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3018</NationalTeamID>
+      <NationalTeamName>Misr</NationalTeamName>
+      <Dress>D010304</Dress>
+      <RatingScores>5093</RatingScores>
+      <LeagueId>33</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3192</NationalTeamID>
+      <NationalTeamName>Suriname</NationalTeamName>
+      <Dress>N040404</Dress>
+      <RatingScores>13723</RatingScores>
+      <LeagueId>113</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3245</NationalTeamID>
+      <NationalTeamName>Dawlat Qatar</NationalTeamName>
+      <Dress>N090903</Dress>
+      <RatingScores>6121</RatingScores>
+      <LeagueId>141</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3254</NationalTeamID>
+      <NationalTeamName>Cameroon</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>13823</RatingScores>
+      <LeagueId>146</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3144</NationalTeamID>
+      <NationalTeamName>Saudi Arabia</NationalTeamName>
+      <Dress>G020302</Dress>
+      <RatingScores>5029</RatingScores>
+      <LeagueId>79</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3148</NationalTeamID>
+      <NationalTeamName>Tounes</NationalTeamName>
+      <Dress>N030301</Dress>
+      <RatingScores>6247</RatingScores>
+      <LeagueId>80</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3230</NationalTeamID>
+      <NationalTeamName>Oman</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>15189</RatingScores>
+      <LeagueId>134</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3202</NationalTeamID>
+      <NationalTeamName>Lubnan</NationalTeamName>
+      <Dress>N010301</Dress>
+      <RatingScores>13305</RatingScores>
+      <LeagueId>120</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3212</NationalTeamID>
+      <NationalTeamName>Barbados</NationalTeamName>
+      <Dress>N040404</Dress>
+      <RatingScores>7382</RatingScores>
+      <LeagueId>124</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3132</NationalTeamID>
+      <NationalTeamName>Føroyar</NationalTeamName>
+      <Dress>N030503</Dress>
+      <RatingScores>11076</RatingScores>
+      <LeagueId>76</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3164</NationalTeamID>
+      <NationalTeamName>Northern Ireland</NationalTeamName>
+      <Dress>N020302</Dress>
+      <RatingScores>7512</RatingScores>
+      <LeagueId>93</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3236</NationalTeamID>
+      <NationalTeamName>Ghana</NationalTeamName>
+      <Dress>N030303</Dress>
+      <RatingScores>7758</RatingScores>
+      <LeagueId>137</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3085</NationalTeamID>
+      <NationalTeamName>Pilipinas</NationalTeamName>
+      <Dress>N050505</Dress>
+      <RatingScores>10366</RatingScores>
+      <LeagueId>55</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3084</NationalTeamID>
+      <NationalTeamName>Indonesia</NationalTeamName>
+      <Dress>N010301</Dress>
+      <RatingScores>13673</RatingScores>
+      <LeagueId>54</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3020</NationalTeamID>
+      <NationalTeamName>România</NationalTeamName>
+      <Dress>N212101</Dress>
+      <RatingScores>20356</RatingScores>
+      <LeagueId>37</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3152</NationalTeamID>
+      <NationalTeamName>República Dominicana</NationalTeamName>
+      <Dress>J051911</Dress>
+      <RatingScores>20194</RatingScores>
+      <LeagueId>88</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3140</NationalTeamID>
+      <NationalTeamName>Cyprus</NationalTeamName>
+      <Dress>G060303</Dress>
+      <RatingScores>6248</RatingScores>
+      <LeagueId>89</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3036</NationalTeamID>
+      <NationalTeamName>Singapore</NationalTeamName>
+      <Dress>K010301</Dress>
+      <RatingScores>6418</RatingScores>
+      <LeagueId>47</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3186</NationalTeamID>
+      <NationalTeamName>Andorra</NationalTeamName>
+      <Dress>N050321</Dress>
+      <RatingScores>14676</RatingScores>
+      <LeagueId>105</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3256</NationalTeamID>
+      <NationalTeamName>Cuba</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>12101</RatingScores>
+      <LeagueId>147</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3184</NationalTeamID>
+      <NationalTeamName>Guatemala</NationalTeamName>
+      <Dress>G070707</Dress>
+      <RatingScores>12653</RatingScores>
+      <LeagueId>107</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3196</NationalTeamID>
+      <NationalTeamName>Algérie</NationalTeamName>
+      <Dress>N020302</Dress>
+      <RatingScores>11133</RatingScores>
+      <LeagueId>118</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3228</NationalTeamID>
+      <NationalTeamName>Al Yaman</NationalTeamName>
+      <Dress>N010304</Dress>
+      <RatingScores>12664</RatingScores>
+      <LeagueId>133</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3168</NationalTeamID>
+      <NationalTeamName>El Salvador</NationalTeamName>
+      <Dress>N050505</Dress>
+      <RatingScores>4428</RatingScores>
+      <LeagueId>100</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3220</NationalTeamID>
+      <NationalTeamName>Al Kuwayt</NationalTeamName>
+      <Dress>N050505</Dress>
+      <RatingScores>4999</RatingScores>
+      <LeagueId>127</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3194</NationalTeamID>
+      <NationalTeamName>Trinidad &amp; Tobago</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>8062</RatingScores>
+      <LeagueId>110</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3240</NationalTeamID>
+      <NationalTeamName>Bénin</NationalTeamName>
+      <Dress>H202001</Dress>
+      <RatingScores>8615</RatingScores>
+      <LeagueId>139</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3204</NationalTeamID>
+      <NationalTeamName>Liechtenstein</NationalTeamName>
+      <Dress>N050105</Dress>
+      <RatingScores>11537</RatingScores>
+      <LeagueId>117</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3009</NationalTeamID>
+      <NationalTeamName>Oceania</NationalTeamName>
+      <Dress>F160511</Dress>
+      <RatingScores>15622</RatingScores>
+      <LeagueId>15</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3200</NationalTeamID>
+      <NationalTeamName>Mongol Uls</NationalTeamName>
+      <Dress>N010501</Dress>
+      <RatingScores>5328</RatingScores>
+      <LeagueId>119</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3100</NationalTeamID>
+      <NationalTeamName>Chinese Taipei</NationalTeamName>
+      <Dress>N050105</Dress>
+      <RatingScores>13350</RatingScores>
+      <LeagueId>60</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3028</NationalTeamID>
+      <NationalTeamName>Nippon</NationalTeamName>
+      <Dress>N050305</Dress>
+      <RatingScores>15187</RatingScores>
+      <LeagueId>22</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3218</NationalTeamID>
+      <NationalTeamName>Azərbaycan</NationalTeamName>
+      <Dress>G050102</Dress>
+      <RatingScores>16725</RatingScores>
+      <LeagueId>129</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3226</NationalTeamID>
+      <NationalTeamName>Crna Gora</NationalTeamName>
+      <Dress>N010101</Dress>
+      <RatingScores>8241</RatingScores>
+      <LeagueId>131</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3216</NationalTeamID>
+      <NationalTeamName>Al Iraq</NationalTeamName>
+      <Dress>N030303</Dress>
+      <RatingScores>10008</RatingScores>
+      <LeagueId>128</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3232</NationalTeamID>
+      <NationalTeamName>Moçambique</NationalTeamName>
+      <Dress>N010401</Dress>
+      <RatingScores>9998</RatingScores>
+      <LeagueId>135</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3142</NationalTeamID>
+      <NationalTeamName>United Arab Emirates</NationalTeamName>
+      <Dress>G040404</Dress>
+      <RatingScores>10281</RatingScores>
+      <LeagueId>83</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3040</NationalTeamID>
+      <NationalTeamName>Malaysia</NationalTeamName>
+      <Dress>I060406</Dress>
+      <RatingScores>5870</RatingScores>
+      <LeagueId>45</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3206</NationalTeamID>
+      <NationalTeamName>Hayastan</NationalTeamName>
+      <Dress>K080501</Dress>
+      <RatingScores>18367</RatingScores>
+      <LeagueId>122</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3005</NationalTeamID>
+      <NationalTeamName>México</NationalTeamName>
+      <Dress>N020301</Dress>
+      <RatingScores>15924</RatingScores>
+      <LeagueId>6</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3017</NationalTeamID>
+      <NationalTeamName>Prathet Thai</NationalTeamName>
+      <Dress>N060606</Dress>
+      <RatingScores>12167</RatingScores>
+      <LeagueId>31</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3297</NationalTeamID>
+      <NationalTeamName>São Tomé e Príncipe</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>10354</RatingScores>
+      <LeagueId>149</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3299</NationalTeamID>
+      <NationalTeamName>Comoros</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>5971</RatingScores>
+      <LeagueId>151</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3300</NationalTeamID>
+      <NationalTeamName>Sri Lanka</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>9349</RatingScores>
+      <LeagueId>152</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3301</NationalTeamID>
+      <NationalTeamName>Curaçao</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>6953</RatingScores>
+      <LeagueId>153</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3302</NationalTeamID>
+      <NationalTeamName>Guam</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>16159</RatingScores>
+      <LeagueId>154</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3303</NationalTeamID>
+      <NationalTeamName>RD Congo</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>9281</RatingScores>
+      <LeagueId>155</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3298</NationalTeamID>
+      <NationalTeamName>Ītyōṗṗyā</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>3779</RatingScores>
+      <LeagueId>156</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3304</NationalTeamID>
+      <NationalTeamName>Saint Vincent and the Grenadines</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>8393</RatingScores>
+      <LeagueId>157</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3305</NationalTeamID>
+      <NationalTeamName>Belize</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>4014</RatingScores>
+      <LeagueId>158</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3306</NationalTeamID>
+      <NationalTeamName>Madagasikara</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>6355</RatingScores>
+      <LeagueId>159</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3307</NationalTeamID>
+      <NationalTeamName>Botswana</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>10398</RatingScores>
+      <LeagueId>160</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3308</NationalTeamID>
+      <NationalTeamName>Myanmar</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>3135</RatingScores>
+      <LeagueId>161</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3309</NationalTeamID>
+      <NationalTeamName>Zambia</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>4566</RatingScores>
+      <LeagueId>162</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3310</NationalTeamID>
+      <NationalTeamName>San Marino</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>5877</RatingScores>
+      <LeagueId>163</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3311</NationalTeamID>
+      <NationalTeamName>Haiti</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>3813</RatingScores>
+      <LeagueId>164</LeagueId>
+    </NationalTeam>
+    <NationalTeam>
+      <NationalTeamID>3312</NationalTeamID>
+      <NationalTeamName>Puerto Rico</NationalTeamName>
+      <Dress>N000000</Dress>
+      <RatingScores>2956</RatingScores>
+      <LeagueId>165</LeagueId>
+    </NationalTeam>
+  </NationalTeams>
+  <Cups>
+    <Cup>
+      <CupID>4892549</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3042</CupNationalTeamID>
+          <CupNationalTeamName>U21 England</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3043</CupNationalTeamID>
+          <CupNationalTeamName>U21 Deutschland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3044</CupNationalTeamID>
+          <CupNationalTeamName>U21 Italia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3045</CupNationalTeamID>
+          <CupNationalTeamName>U21 France</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3048</CupNationalTeamID>
+          <CupNationalTeamName>U21 USA</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3049</CupNationalTeamID>
+          <CupNationalTeamName>U21 Norge</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3050</CupNationalTeamID>
+          <CupNationalTeamName>U21 Oceania</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3051</CupNationalTeamID>
+          <CupNationalTeamName>U21 Canada</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3052</CupNationalTeamID>
+          <CupNationalTeamName>U21 Colombia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3053</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ireland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3054</CupNationalTeamID>
+          <CupNationalTeamName>U21 Perú</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3055</CupNationalTeamID>
+          <CupNationalTeamName>U21 Portugal</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3056</CupNationalTeamID>
+          <CupNationalTeamName>U21 South Africa</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3059</CupNationalTeamID>
+          <CupNationalTeamName>U21 Misr</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3060</CupNationalTeamID>
+          <CupNationalTeamName>U21 Rossiya</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3061</CupNationalTeamID>
+          <CupNationalTeamName>U21 România</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3063</CupNationalTeamID>
+          <CupNationalTeamName>U21 Danmark</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3064</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suomi</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3067</CupNationalTeamID>
+          <CupNationalTeamName>U21 Chile</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3068</CupNationalTeamID>
+          <CupNationalTeamName>U21 India</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3070</CupNationalTeamID>
+          <CupNationalTeamName>U21 Polska</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3071</CupNationalTeamID>
+          <CupNationalTeamName>U21 Scotland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3073</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hanguk</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3075</CupNationalTeamID>
+          <CupNationalTeamName>U21 China</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3076</CupNationalTeamID>
+          <CupNationalTeamName>U21 España</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3077</CupNationalTeamID>
+          <CupNationalTeamName>U21 Singapore</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3078</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belgium</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3079</CupNationalTeamID>
+          <CupNationalTeamName>U21 Schweiz</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3080</CupNationalTeamID>
+          <CupNationalTeamName>U21 Österreich</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3091</CupNationalTeamID>
+          <CupNationalTeamName>U21 Magyarország</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3092</CupNationalTeamID>
+          <CupNationalTeamName>U21 Latvija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3093</CupNationalTeamID>
+          <CupNationalTeamName>U21 Indonesia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3095</CupNationalTeamID>
+          <CupNationalTeamName>U21 Eesti</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3096</CupNationalTeamID>
+          <CupNationalTeamName>U21 Srbija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3097</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hrvatska</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3098</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hellas</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3099</CupNationalTeamID>
+          <CupNationalTeamName>U21 Česko</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3101</CupNationalTeamID>
+          <CupNationalTeamName>U21 Chinese Taipei</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3103</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hong Kong</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3107</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bulgaria</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3109</CupNationalTeamID>
+          <CupNationalTeamName>U21 Israel</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3111</CupNationalTeamID>
+          <CupNationalTeamName>U21 Slovenija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3114</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lietuva</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3123</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pakistan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3125</CupNationalTeamID>
+          <CupNationalTeamName>U21 Paraguay</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3127</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nigeria</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3129</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ecuador</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3131</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bolivia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3135</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Maghrib </CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3139</CupNationalTeamID>
+          <CupNationalTeamName>U21 Costa Rica</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3145</CupNationalTeamID>
+          <CupNationalTeamName>U21 Saudi Arabia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3147</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lëtzebuerg</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3151</CupNationalTeamID>
+          <CupNationalTeamName>U21 Iran</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3161</CupNationalTeamID>
+          <CupNationalTeamName>U21 Jamaica</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3163</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kenya</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3169</CupNationalTeamID>
+          <CupNationalTeamName>U21 El Salvador</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3175</CupNationalTeamID>
+          <CupNationalTeamName>U21 Malta</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3177</CupNationalTeamID>
+          <CupNationalTeamName>U21 Moldova</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3181</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Urdun</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3183</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sakartvelo</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3185</CupNationalTeamID>
+          <CupNationalTeamName>U21 Guatemala</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3187</CupNationalTeamID>
+          <CupNationalTeamName>U21 Andorra</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3189</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kazakhstan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3195</CupNationalTeamID>
+          <CupNationalTeamName>U21 Trinidad &amp; Tobago</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3205</CupNationalTeamID>
+          <CupNationalTeamName>U21 Liechtenstein</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3207</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hayastan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3211</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cabo Verde</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3213</CupNationalTeamID>
+          <CupNationalTeamName>U21 Barbados</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3217</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Iraq</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3221</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Kuwayt</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3223</CupNationalTeamID>
+          <CupNationalTeamName>U21 Angola</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3227</CupNationalTeamID>
+          <CupNationalTeamName>U21 Crna Gora</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3229</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Yaman</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3231</CupNationalTeamID>
+          <CupNationalTeamName>U21 Oman</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3237</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ghana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3239</CupNationalTeamID>
+          <CupNationalTeamName>U21 Prateh Kampuchea</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3243</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suriyah</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3248</CupNationalTeamID>
+          <CupNationalTeamName>U21 Tanzania</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3252</CupNationalTeamID>
+          <CupNationalTeamName>U21 Dhivehi Raajje</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3257</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cuba</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3259</CupNationalTeamID>
+          <CupNationalTeamName>U21 Palestine</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3261</CupNationalTeamID>
+          <CupNationalTeamName>U21 O'zbekiston</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3280</CupNationalTeamID>
+          <CupNationalTeamName>U21 São Tomé e Príncipe</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3282</CupNationalTeamID>
+          <CupNationalTeamName>U21 Comoros</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3283</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sri Lanka</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3284</CupNationalTeamID>
+          <CupNationalTeamName>U21 Curaçao</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3285</CupNationalTeamID>
+          <CupNationalTeamName>U21 Guam</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3286</CupNationalTeamID>
+          <CupNationalTeamName>U21 RD Congo</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3288</CupNationalTeamID>
+          <CupNationalTeamName>U21 Saint Vincent and the Grenadines</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3289</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belize</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3290</CupNationalTeamID>
+          <CupNationalTeamName>U21 Madagasikara</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3291</CupNationalTeamID>
+          <CupNationalTeamName>U21 Botswana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3293</CupNationalTeamID>
+          <CupNationalTeamName>U21 Zambia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3294</CupNationalTeamID>
+          <CupNationalTeamName>U21 San Marino</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3295</CupNationalTeamID>
+          <CupNationalTeamName>U21 Haiti</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3296</CupNationalTeamID>
+          <CupNationalTeamName>U21 Puerto Rico</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+    <Cup>
+      <CupID>4878483</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3041</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sverige</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3042</CupNationalTeamID>
+          <CupNationalTeamName>U21 England</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3043</CupNationalTeamID>
+          <CupNationalTeamName>U21 Deutschland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3044</CupNationalTeamID>
+          <CupNationalTeamName>U21 Italia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3045</CupNationalTeamID>
+          <CupNationalTeamName>U21 France</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3049</CupNationalTeamID>
+          <CupNationalTeamName>U21 Norge</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3053</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ireland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3055</CupNationalTeamID>
+          <CupNationalTeamName>U21 Portugal</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3060</CupNationalTeamID>
+          <CupNationalTeamName>U21 Rossiya</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3061</CupNationalTeamID>
+          <CupNationalTeamName>U21 România</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3062</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ísland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3063</CupNationalTeamID>
+          <CupNationalTeamName>U21 Danmark</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3064</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suomi</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3066</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nederland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3070</CupNationalTeamID>
+          <CupNationalTeamName>U21 Polska</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3071</CupNationalTeamID>
+          <CupNationalTeamName>U21 Scotland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3074</CupNationalTeamID>
+          <CupNationalTeamName>U21 Türkiye</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3076</CupNationalTeamID>
+          <CupNationalTeamName>U21 España</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3078</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belgium</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3079</CupNationalTeamID>
+          <CupNationalTeamName>U21 Schweiz</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3080</CupNationalTeamID>
+          <CupNationalTeamName>U21 Österreich</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3091</CupNationalTeamID>
+          <CupNationalTeamName>U21 Magyarország</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3092</CupNationalTeamID>
+          <CupNationalTeamName>U21 Latvija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3095</CupNationalTeamID>
+          <CupNationalTeamName>U21 Eesti</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3096</CupNationalTeamID>
+          <CupNationalTeamName>U21 Srbija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3097</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hrvatska</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3098</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hellas</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3099</CupNationalTeamID>
+          <CupNationalTeamName>U21 Česko</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3105</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cymru</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3107</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bulgaria</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3111</CupNationalTeamID>
+          <CupNationalTeamName>U21 Slovenija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3114</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lietuva</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3115</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bosna i Hercegovina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3117</CupNationalTeamID>
+          <CupNationalTeamName>U21 Slovensko</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3119</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ukraina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3133</CupNationalTeamID>
+          <CupNationalTeamName>U21 Føroyar</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3141</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cyprus</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3147</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lëtzebuerg</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3157</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belarus</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3159</CupNationalTeamID>
+          <CupNationalTeamName>U21 Severna Makedonija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3165</CupNationalTeamID>
+          <CupNationalTeamName>U21 Northern Ireland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3175</CupNationalTeamID>
+          <CupNationalTeamName>U21 Malta</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3177</CupNationalTeamID>
+          <CupNationalTeamName>U21 Moldova</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3179</CupNationalTeamID>
+          <CupNationalTeamName>U21 Shqiperia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3187</CupNationalTeamID>
+          <CupNationalTeamName>U21 Andorra</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3205</CupNationalTeamID>
+          <CupNationalTeamName>U21 Liechtenstein</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3227</CupNationalTeamID>
+          <CupNationalTeamName>U21 Crna Gora</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3294</CupNationalTeamID>
+          <CupNationalTeamName>U21 San Marino</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+    <Cup>
+      <CupID>4878490</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3046</CupNationalTeamID>
+          <CupNationalTeamName>U21 México</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3047</CupNationalTeamID>
+          <CupNationalTeamName>U21 Argentina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3048</CupNationalTeamID>
+          <CupNationalTeamName>U21 USA</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3051</CupNationalTeamID>
+          <CupNationalTeamName>U21 Canada</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3052</CupNationalTeamID>
+          <CupNationalTeamName>U21 Colombia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3054</CupNationalTeamID>
+          <CupNationalTeamName>U21 Perú</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3057</CupNationalTeamID>
+          <CupNationalTeamName>U21 Venezuela</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3065</CupNationalTeamID>
+          <CupNationalTeamName>U21 Brasil</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3067</CupNationalTeamID>
+          <CupNationalTeamName>U21 Chile</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3072</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uruguay</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3125</CupNationalTeamID>
+          <CupNationalTeamName>U21 Paraguay</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3129</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ecuador</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3131</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bolivia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3139</CupNationalTeamID>
+          <CupNationalTeamName>U21 Costa Rica</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3153</CupNationalTeamID>
+          <CupNationalTeamName>U21 República Dominicana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3161</CupNationalTeamID>
+          <CupNationalTeamName>U21 Jamaica</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3167</CupNationalTeamID>
+          <CupNationalTeamName>U21 Panama</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3169</CupNationalTeamID>
+          <CupNationalTeamName>U21 El Salvador</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3171</CupNationalTeamID>
+          <CupNationalTeamName>U21 Honduras</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3185</CupNationalTeamID>
+          <CupNationalTeamName>U21 Guatemala</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3191</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nicaragua</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3193</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suriname</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3195</CupNationalTeamID>
+          <CupNationalTeamName>U21 Trinidad &amp; Tobago</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3213</CupNationalTeamID>
+          <CupNationalTeamName>U21 Barbados</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3257</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cuba</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3284</CupNationalTeamID>
+          <CupNationalTeamName>U21 Curaçao</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3288</CupNationalTeamID>
+          <CupNationalTeamName>U21 Saint Vincent and the Grenadines</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3289</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belize</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3295</CupNationalTeamID>
+          <CupNationalTeamName>U21 Haiti</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3296</CupNationalTeamID>
+          <CupNationalTeamName>U21 Puerto Rico</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+    <Cup>
+      <CupID>4878492</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3056</CupNationalTeamID>
+          <CupNationalTeamName>U21 South Africa</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3059</CupNationalTeamID>
+          <CupNationalTeamName>U21 Misr</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3127</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nigeria</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3135</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Maghrib </CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3149</CupNationalTeamID>
+          <CupNationalTeamName>U21 Tounes</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3163</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kenya</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3197</CupNationalTeamID>
+          <CupNationalTeamName>U21 Algérie</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3199</CupNationalTeamID>
+          <CupNationalTeamName>U21 Senegal</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3209</CupNationalTeamID>
+          <CupNationalTeamName>U21 Côte d'Ivoire</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3211</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cabo Verde</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3223</CupNationalTeamID>
+          <CupNationalTeamName>U21 Angola</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3233</CupNationalTeamID>
+          <CupNationalTeamName>U21 Moçambique</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3237</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ghana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3241</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bénin</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3248</CupNationalTeamID>
+          <CupNationalTeamName>U21 Tanzania</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3250</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uganda</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3255</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cameroon</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3280</CupNationalTeamID>
+          <CupNationalTeamName>U21 São Tomé e Príncipe</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3282</CupNationalTeamID>
+          <CupNationalTeamName>U21 Comoros</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3286</CupNationalTeamID>
+          <CupNationalTeamName>U21 RD Congo</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3287</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ītyōṗṗyā</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3290</CupNationalTeamID>
+          <CupNationalTeamName>U21 Madagasikara</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3291</CupNationalTeamID>
+          <CupNationalTeamName>U21 Botswana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3293</CupNationalTeamID>
+          <CupNationalTeamName>U21 Zambia</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+    <Cup>
+      <CupID>4878493</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3050</CupNationalTeamID>
+          <CupNationalTeamName>U21 Oceania</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3058</CupNationalTeamID>
+          <CupNationalTeamName>U21 Prathet Thai</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3068</CupNationalTeamID>
+          <CupNationalTeamName>U21 India</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3069</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nippon</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3073</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hanguk</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3075</CupNationalTeamID>
+          <CupNationalTeamName>U21 China</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3077</CupNationalTeamID>
+          <CupNationalTeamName>U21 Singapore</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3081</CupNationalTeamID>
+          <CupNationalTeamName>U21 Malaysia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3093</CupNationalTeamID>
+          <CupNationalTeamName>U21 Indonesia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3094</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pilipinas</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3101</CupNationalTeamID>
+          <CupNationalTeamName>U21 Chinese Taipei</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3103</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hong Kong</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3109</CupNationalTeamID>
+          <CupNationalTeamName>U21 Israel</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3121</CupNationalTeamID>
+          <CupNationalTeamName>U21 Việt Nam</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3123</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pakistan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3143</CupNationalTeamID>
+          <CupNationalTeamName>U21 United Arab Emirates</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3145</CupNationalTeamID>
+          <CupNationalTeamName>U21 Saudi Arabia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3151</CupNationalTeamID>
+          <CupNationalTeamName>U21 Iran</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3173</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kyrgyzstan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3181</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Urdun</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3183</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sakartvelo</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3189</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kazakhstan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3201</CupNationalTeamID>
+          <CupNationalTeamName>U21 Mongol Uls</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3203</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lubnan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3207</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hayastan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3215</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bahrain</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3217</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Iraq</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3219</CupNationalTeamID>
+          <CupNationalTeamName>U21 Azərbaycan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3221</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Kuwayt</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3225</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bangladesh</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3229</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Yaman</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3231</CupNationalTeamID>
+          <CupNationalTeamName>U21 Oman</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3235</CupNationalTeamID>
+          <CupNationalTeamName>U21 Brunei</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3239</CupNationalTeamID>
+          <CupNationalTeamName>U21 Prateh Kampuchea</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3243</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suriyah</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3246</CupNationalTeamID>
+          <CupNationalTeamName>U21 Dawlat Qatar</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3252</CupNationalTeamID>
+          <CupNationalTeamName>U21 Dhivehi Raajje</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3259</CupNationalTeamID>
+          <CupNationalTeamName>U21 Palestine</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3261</CupNationalTeamID>
+          <CupNationalTeamName>U21 O'zbekiston</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3283</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sri Lanka</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3285</CupNationalTeamID>
+          <CupNationalTeamName>U21 Guam</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3292</CupNationalTeamID>
+          <CupNationalTeamName>U21 Myanmar</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+    <Cup>
+      <CupID>4892615</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3041</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sverige</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3046</CupNationalTeamID>
+          <CupNationalTeamName>U21 México</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3047</CupNationalTeamID>
+          <CupNationalTeamName>U21 Argentina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3057</CupNationalTeamID>
+          <CupNationalTeamName>U21 Venezuela</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3058</CupNationalTeamID>
+          <CupNationalTeamName>U21 Prathet Thai</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3062</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ísland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3065</CupNationalTeamID>
+          <CupNationalTeamName>U21 Brasil</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3066</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nederland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3069</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nippon</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3072</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uruguay</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3074</CupNationalTeamID>
+          <CupNationalTeamName>U21 Türkiye</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3081</CupNationalTeamID>
+          <CupNationalTeamName>U21 Malaysia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3094</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pilipinas</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3105</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cymru</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3115</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bosna i Hercegovina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3117</CupNationalTeamID>
+          <CupNationalTeamName>U21 Slovensko</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3119</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ukraina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3121</CupNationalTeamID>
+          <CupNationalTeamName>U21 Việt Nam</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3133</CupNationalTeamID>
+          <CupNationalTeamName>U21 Føroyar</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3141</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cyprus</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3143</CupNationalTeamID>
+          <CupNationalTeamName>U21 United Arab Emirates</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3149</CupNationalTeamID>
+          <CupNationalTeamName>U21 Tounes</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3153</CupNationalTeamID>
+          <CupNationalTeamName>U21 República Dominicana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3157</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belarus</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3159</CupNationalTeamID>
+          <CupNationalTeamName>U21 Severna Makedonija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3165</CupNationalTeamID>
+          <CupNationalTeamName>U21 Northern Ireland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3167</CupNationalTeamID>
+          <CupNationalTeamName>U21 Panama</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3171</CupNationalTeamID>
+          <CupNationalTeamName>U21 Honduras</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3173</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kyrgyzstan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3179</CupNationalTeamID>
+          <CupNationalTeamName>U21 Shqiperia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3191</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nicaragua</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3193</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suriname</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3197</CupNationalTeamID>
+          <CupNationalTeamName>U21 Algérie</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3199</CupNationalTeamID>
+          <CupNationalTeamName>U21 Senegal</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3201</CupNationalTeamID>
+          <CupNationalTeamName>U21 Mongol Uls</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3203</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lubnan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3209</CupNationalTeamID>
+          <CupNationalTeamName>U21 Côte d'Ivoire</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3215</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bahrain</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3219</CupNationalTeamID>
+          <CupNationalTeamName>U21 Azərbaycan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3225</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bangladesh</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3233</CupNationalTeamID>
+          <CupNationalTeamName>U21 Moçambique</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3235</CupNationalTeamID>
+          <CupNationalTeamName>U21 Brunei</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3241</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bénin</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3246</CupNationalTeamID>
+          <CupNationalTeamName>U21 Dawlat Qatar</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3250</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uganda</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3255</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cameroon</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3287</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ītyōṗṗyā</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3292</CupNationalTeamID>
+          <CupNationalTeamName>U21 Myanmar</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+    <Cup>
+      <CupID>4891573</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3047</CupNationalTeamID>
+          <CupNationalTeamName>U21 Argentina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3058</CupNationalTeamID>
+          <CupNationalTeamName>U21 Prathet Thai</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3072</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uruguay</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3075</CupNationalTeamID>
+          <CupNationalTeamName>U21 China</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3091</CupNationalTeamID>
+          <CupNationalTeamName>U21 Magyarország</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3094</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pilipinas</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3121</CupNationalTeamID>
+          <CupNationalTeamName>U21 Việt Nam</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3123</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pakistan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3159</CupNationalTeamID>
+          <CupNationalTeamName>U21 Severna Makedonija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3175</CupNationalTeamID>
+          <CupNationalTeamName>U21 Malta</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3179</CupNationalTeamID>
+          <CupNationalTeamName>U21 Shqiperia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3183</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sakartvelo</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3189</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kazakhstan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3197</CupNationalTeamID>
+          <CupNationalTeamName>U21 Algérie</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3221</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Kuwayt</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3223</CupNationalTeamID>
+          <CupNationalTeamName>U21 Angola</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3225</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bangladesh</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3241</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bénin</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3248</CupNationalTeamID>
+          <CupNationalTeamName>U21 Tanzania</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3250</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uganda</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3261</CupNationalTeamID>
+          <CupNationalTeamName>U21 O'zbekiston</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3280</CupNationalTeamID>
+          <CupNationalTeamName>U21 São Tomé e Príncipe</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+    <Cup>
+      <CupID>4894807</CupID>
+      <CupTeams>
+        <CupTeam>
+          <CupNationalTeamID>3041</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sverige</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3042</CupNationalTeamID>
+          <CupNationalTeamName>U21 England</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3043</CupNationalTeamID>
+          <CupNationalTeamName>U21 Deutschland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3044</CupNationalTeamID>
+          <CupNationalTeamName>U21 Italia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3045</CupNationalTeamID>
+          <CupNationalTeamName>U21 France</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3046</CupNationalTeamID>
+          <CupNationalTeamName>U21 México</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3047</CupNationalTeamID>
+          <CupNationalTeamName>U21 Argentina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3048</CupNationalTeamID>
+          <CupNationalTeamName>U21 USA</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3049</CupNationalTeamID>
+          <CupNationalTeamName>U21 Norge</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3050</CupNationalTeamID>
+          <CupNationalTeamName>U21 Oceania</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3051</CupNationalTeamID>
+          <CupNationalTeamName>U21 Canada</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3052</CupNationalTeamID>
+          <CupNationalTeamName>U21 Colombia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3053</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ireland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3054</CupNationalTeamID>
+          <CupNationalTeamName>U21 Perú</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3055</CupNationalTeamID>
+          <CupNationalTeamName>U21 Portugal</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3056</CupNationalTeamID>
+          <CupNationalTeamName>U21 South Africa</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3057</CupNationalTeamID>
+          <CupNationalTeamName>U21 Venezuela</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3058</CupNationalTeamID>
+          <CupNationalTeamName>U21 Prathet Thai</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3059</CupNationalTeamID>
+          <CupNationalTeamName>U21 Misr</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3060</CupNationalTeamID>
+          <CupNationalTeamName>U21 Rossiya</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3061</CupNationalTeamID>
+          <CupNationalTeamName>U21 România</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3062</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ísland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3063</CupNationalTeamID>
+          <CupNationalTeamName>U21 Danmark</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3064</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suomi</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3065</CupNationalTeamID>
+          <CupNationalTeamName>U21 Brasil</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3066</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nederland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3067</CupNationalTeamID>
+          <CupNationalTeamName>U21 Chile</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3068</CupNationalTeamID>
+          <CupNationalTeamName>U21 India</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3069</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nippon</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3070</CupNationalTeamID>
+          <CupNationalTeamName>U21 Polska</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3071</CupNationalTeamID>
+          <CupNationalTeamName>U21 Scotland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3072</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uruguay</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3073</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hanguk</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3074</CupNationalTeamID>
+          <CupNationalTeamName>U21 Türkiye</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3075</CupNationalTeamID>
+          <CupNationalTeamName>U21 China</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3076</CupNationalTeamID>
+          <CupNationalTeamName>U21 España</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3077</CupNationalTeamID>
+          <CupNationalTeamName>U21 Singapore</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3078</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belgium</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3079</CupNationalTeamID>
+          <CupNationalTeamName>U21 Schweiz</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3080</CupNationalTeamID>
+          <CupNationalTeamName>U21 Österreich</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3081</CupNationalTeamID>
+          <CupNationalTeamName>U21 Malaysia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3091</CupNationalTeamID>
+          <CupNationalTeamName>U21 Magyarország</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3092</CupNationalTeamID>
+          <CupNationalTeamName>U21 Latvija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3093</CupNationalTeamID>
+          <CupNationalTeamName>U21 Indonesia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3094</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pilipinas</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3095</CupNationalTeamID>
+          <CupNationalTeamName>U21 Eesti</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3096</CupNationalTeamID>
+          <CupNationalTeamName>U21 Srbija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3097</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hrvatska</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3098</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hellas</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3099</CupNationalTeamID>
+          <CupNationalTeamName>U21 Česko</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3101</CupNationalTeamID>
+          <CupNationalTeamName>U21 Chinese Taipei</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3103</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hong Kong</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3105</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cymru</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3107</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bulgaria</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3109</CupNationalTeamID>
+          <CupNationalTeamName>U21 Israel</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3111</CupNationalTeamID>
+          <CupNationalTeamName>U21 Slovenija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3114</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lietuva</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3115</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bosna i Hercegovina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3117</CupNationalTeamID>
+          <CupNationalTeamName>U21 Slovensko</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3119</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ukraina</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3121</CupNationalTeamID>
+          <CupNationalTeamName>U21 Việt Nam</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3123</CupNationalTeamID>
+          <CupNationalTeamName>U21 Pakistan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3125</CupNationalTeamID>
+          <CupNationalTeamName>U21 Paraguay</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3127</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nigeria</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3129</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ecuador</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3131</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bolivia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3133</CupNationalTeamID>
+          <CupNationalTeamName>U21 Føroyar</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3135</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Maghrib </CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3139</CupNationalTeamID>
+          <CupNationalTeamName>U21 Costa Rica</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3141</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cyprus</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3143</CupNationalTeamID>
+          <CupNationalTeamName>U21 United Arab Emirates</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3145</CupNationalTeamID>
+          <CupNationalTeamName>U21 Saudi Arabia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3147</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lëtzebuerg</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3149</CupNationalTeamID>
+          <CupNationalTeamName>U21 Tounes</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3151</CupNationalTeamID>
+          <CupNationalTeamName>U21 Iran</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3153</CupNationalTeamID>
+          <CupNationalTeamName>U21 República Dominicana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3157</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belarus</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3159</CupNationalTeamID>
+          <CupNationalTeamName>U21 Severna Makedonija</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3161</CupNationalTeamID>
+          <CupNationalTeamName>U21 Jamaica</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3163</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kenya</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3165</CupNationalTeamID>
+          <CupNationalTeamName>U21 Northern Ireland</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3167</CupNationalTeamID>
+          <CupNationalTeamName>U21 Panama</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3169</CupNationalTeamID>
+          <CupNationalTeamName>U21 El Salvador</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3171</CupNationalTeamID>
+          <CupNationalTeamName>U21 Honduras</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3173</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kyrgyzstan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3175</CupNationalTeamID>
+          <CupNationalTeamName>U21 Malta</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3177</CupNationalTeamID>
+          <CupNationalTeamName>U21 Moldova</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3179</CupNationalTeamID>
+          <CupNationalTeamName>U21 Shqiperia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3181</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Urdun</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3183</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sakartvelo</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3185</CupNationalTeamID>
+          <CupNationalTeamName>U21 Guatemala</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3187</CupNationalTeamID>
+          <CupNationalTeamName>U21 Andorra</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3189</CupNationalTeamID>
+          <CupNationalTeamName>U21 Kazakhstan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3191</CupNationalTeamID>
+          <CupNationalTeamName>U21 Nicaragua</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3193</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suriname</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3195</CupNationalTeamID>
+          <CupNationalTeamName>U21 Trinidad &amp; Tobago</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3197</CupNationalTeamID>
+          <CupNationalTeamName>U21 Algérie</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3199</CupNationalTeamID>
+          <CupNationalTeamName>U21 Senegal</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3201</CupNationalTeamID>
+          <CupNationalTeamName>U21 Mongol Uls</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3203</CupNationalTeamID>
+          <CupNationalTeamName>U21 Lubnan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3205</CupNationalTeamID>
+          <CupNationalTeamName>U21 Liechtenstein</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3207</CupNationalTeamID>
+          <CupNationalTeamName>U21 Hayastan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3209</CupNationalTeamID>
+          <CupNationalTeamName>U21 Côte d'Ivoire</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3211</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cabo Verde</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3213</CupNationalTeamID>
+          <CupNationalTeamName>U21 Barbados</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3215</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bahrain</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3217</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Iraq</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3219</CupNationalTeamID>
+          <CupNationalTeamName>U21 Azərbaycan</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3221</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Kuwayt</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3223</CupNationalTeamID>
+          <CupNationalTeamName>U21 Angola</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3225</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bangladesh</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3227</CupNationalTeamID>
+          <CupNationalTeamName>U21 Crna Gora</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3229</CupNationalTeamID>
+          <CupNationalTeamName>U21 Al Yaman</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3231</CupNationalTeamID>
+          <CupNationalTeamName>U21 Oman</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3233</CupNationalTeamID>
+          <CupNationalTeamName>U21 Moçambique</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3235</CupNationalTeamID>
+          <CupNationalTeamName>U21 Brunei</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3237</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ghana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3239</CupNationalTeamID>
+          <CupNationalTeamName>U21 Prateh Kampuchea</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3241</CupNationalTeamID>
+          <CupNationalTeamName>U21 Bénin</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3243</CupNationalTeamID>
+          <CupNationalTeamName>U21 Suriyah</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3246</CupNationalTeamID>
+          <CupNationalTeamName>U21 Dawlat Qatar</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3248</CupNationalTeamID>
+          <CupNationalTeamName>U21 Tanzania</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3250</CupNationalTeamID>
+          <CupNationalTeamName>U21 Uganda</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3252</CupNationalTeamID>
+          <CupNationalTeamName>U21 Dhivehi Raajje</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3255</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cameroon</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3257</CupNationalTeamID>
+          <CupNationalTeamName>U21 Cuba</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3259</CupNationalTeamID>
+          <CupNationalTeamName>U21 Palestine</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3261</CupNationalTeamID>
+          <CupNationalTeamName>U21 O'zbekiston</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3280</CupNationalTeamID>
+          <CupNationalTeamName>U21 São Tomé e Príncipe</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3282</CupNationalTeamID>
+          <CupNationalTeamName>U21 Comoros</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3283</CupNationalTeamID>
+          <CupNationalTeamName>U21 Sri Lanka</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3284</CupNationalTeamID>
+          <CupNationalTeamName>U21 Curaçao</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3285</CupNationalTeamID>
+          <CupNationalTeamName>U21 Guam</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3286</CupNationalTeamID>
+          <CupNationalTeamName>U21 RD Congo</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3287</CupNationalTeamID>
+          <CupNationalTeamName>U21 Ītyōṗṗyā</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3288</CupNationalTeamID>
+          <CupNationalTeamName>U21 Saint Vincent and the Grenadines</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3289</CupNationalTeamID>
+          <CupNationalTeamName>U21 Belize</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3290</CupNationalTeamID>
+          <CupNationalTeamName>U21 Madagasikara</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3291</CupNationalTeamID>
+          <CupNationalTeamName>U21 Botswana</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3292</CupNationalTeamID>
+          <CupNationalTeamName>U21 Myanmar</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3293</CupNationalTeamID>
+          <CupNationalTeamName>U21 Zambia</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3294</CupNationalTeamID>
+          <CupNationalTeamName>U21 San Marino</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3295</CupNationalTeamID>
+          <CupNationalTeamName>U21 Haiti</CupNationalTeamName>
+        </CupTeam>
+        <CupTeam>
+          <CupNationalTeamID>3296</CupNationalTeamID>
+          <CupNationalTeamName>U21 Puerto Rico</CupNationalTeamName>
+        </CupTeam>
+      </CupTeams>
+    </Cup>
+  </Cups>
+</HattrickData>

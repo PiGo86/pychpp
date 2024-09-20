@@ -1,5 +1,5 @@
-from dataclasses import dataclass
-from typing import Type, TypeVar
+from dataclasses import dataclass, field
+from typing import Type
 
 from pychpp.models import ht_model
 
@@ -15,7 +15,8 @@ class HTField(HTBaseField):
     version: str = None
     items: str = None
     attrib: str = None
-    xml_prefix: str = None
+    xml_prefix: str = ''
+    suppl_attrs: dict = field(default_factory=dict)
 
 
 
@@ -29,3 +30,4 @@ class HTProxyField(HTBaseField):
     cls: Type['ht_model.HTModel']
     attr_name: str = None
     xml_prefix: str = ''
+    suppl_attrs: dict = field(default_factory=dict)

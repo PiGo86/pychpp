@@ -10,10 +10,10 @@ def test_get_own_youth_player(mocked_chpp):
     assert yp.first_name == "Akpa"
     assert yp.last_name == "Tao"
     assert yp.age ==24
-    assert yp.age_days == 35
+    assert yp.age_days == 44
     assert yp.arrival_date == HTDatetime.from_calendar(year=2022, month=1, day=16,
                                                        hour=16, minute=17, second=0)
-    assert yp.can_be_promoted_in == -819
+    assert yp.can_be_promoted_in == -828
     assert yp.number == 100
     assert yp.statement is None
     assert yp.native_country_id == 5

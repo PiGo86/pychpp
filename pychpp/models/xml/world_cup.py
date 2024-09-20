@@ -18,6 +18,10 @@ class BaseWorldCup(HTModel):
     _r_cup_id: Optional[int] = HTInitVar('cupID', init_arg='cup_id')
     _r_season: int = HTInitVar('season', init_arg='season')
 
+    cup_id: int = HTField('CupID')
+    season: int = HTField('Season')
+    match_round: int = HTField('MatchRound')
+
 
 class WorldCupViewMatches(BaseWorldCup):
     """
@@ -26,6 +30,7 @@ class WorldCupViewMatches(BaseWorldCup):
     _r_match_round: Optional[int] = HTInitVar('matchRound', init_arg='match_round')
     _r_cup_series_unit_id: int = HTInitVar('cupSeriesUnitID', init_arg='cup_series_unit_id')
 
+    cup_series_unit_id: int = HTField('CupSeriesUnitID')
     matches: Optional[List['ViewMatchesMatchItem']] = HTField('Matches', items='Match')
     rounds: List['ViewMatchesRoundItem'] = HTField('Rounds', items='Round')
 

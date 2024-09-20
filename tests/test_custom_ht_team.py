@@ -21,7 +21,7 @@ def test_get_secondary_team(mocked_chpp):
     assert team_match is not None
     assert int(team_match.group(1)) == 1755350
 
-    user = team.user()
+    user = team.user.details()
     assert isinstance(user, HTUser)
     assert user.id == 9638716
     assert user.username == "Conteur_Merlin"
@@ -30,7 +30,7 @@ def test_get_secondary_team(mocked_chpp):
     assert user_match is not None
     assert int(user_match.group(1)) == 9638716
 
-    youth_team = team.youth_team()
+    youth_team = team.youth_team.details()
     assert isinstance(youth_team, HTYouthTeam)
     assert youth_team.id == 2745926
     assert youth_team.name == "Les Petits Pédëstres"
@@ -39,7 +39,7 @@ def test_get_secondary_team(mocked_chpp):
     assert youth_team_match is not None
     assert int(youth_team_match.group(1)) == 2745926
 
-    arena = team.arena()
+    arena = team.arena.details()
     assert isinstance(arena, HTArena)
     assert arena.name == "Stade Laurent Fièvre"
 

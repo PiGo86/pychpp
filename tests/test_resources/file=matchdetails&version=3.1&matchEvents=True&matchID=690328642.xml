@@ -1,0 +1,624 @@
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-17 11:54:33</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>690328642</MatchID>
+    <MatchType>9</MatchType>
+    <MatchContextId>0</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2022-03-02 12:25:00</MatchDate>
+    <FinishedDate>2022-03-02 14:12:00</FinishedDate>
+    <AddedMinutes>2</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>773670</HomeTeamID>
+      <HomeTeamName>Som-hi un altre cop!</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/28/274/2736/2735918/matchKitSmall.png</DressURI>
+      <Formation>5-3-2</Formation>
+      <HomeGoals>0</HomeGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>12</RatingMidfield>
+      <RatingRightDef>33</RatingRightDef>
+      <RatingMidDef>35</RatingMidDef>
+      <RatingLeftDef>30</RatingLeftDef>
+      <RatingRightAtt>15</RatingRightAtt>
+      <RatingMidAtt>10</RatingMidAtt>
+      <RatingLeftAtt>16</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>20</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>15</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>0</NrOfChancesLeft>
+      <NrOfChancesCenter>0</NrOfChancesCenter>
+      <NrOfChancesRight>1</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>0</NrOfChancesOther>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>17761</AwayTeamID>
+      <AwayTeamName>FC ColaBaren</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/19/185/1849/1848334/matchKitSmall.png</DressURI>
+      <Formation>2-5-3</Formation>
+      <AwayGoals>4</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>20</RatingMidfield>
+      <RatingRightDef>24</RatingRightDef>
+      <RatingMidDef>32</RatingMidDef>
+      <RatingLeftDef>31</RatingLeftDef>
+      <RatingRightAtt>27</RatingRightAtt>
+      <RatingMidAtt>39</RatingMidAtt>
+      <RatingLeftAtt>35</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>26</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>21</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>4</NrOfChancesLeft>
+      <NrOfChancesCenter>3</NrOfChancesCenter>
+      <NrOfChancesRight>2</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>1</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>1</NrOfChancesOther>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>777108</ArenaID>
+      <ArenaName>Nou WhalePlace</ArenaName>
+      <WeatherID>2</WeatherID>
+      <SoldTotal>2106</SoldTotal>
+      <SoldTerraces>1330</SoldTerraces>
+      <SoldBasic>529</SoldBasic>
+      <SoldRoof>208</SoldRoof>
+      <SoldVIP>39</SoldVIP>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>435820492</RefereeId>
+        <RefereeName>Nunzio Ruesser</RefereeName>
+        <RefereeCountryId>46</RefereeCountryId>
+        <RefereeCountryName>Schweiz</RefereeCountryName>
+        <RefereeTeamId>624733</RefereeTeamId>
+        <RefereeTeamname>Pambol FC</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>419285314</RefereeId>
+        <RefereeName>Jean-Frédéric Valiquette</RefereeName>
+        <RefereeCountryId>17</RefereeCountryId>
+        <RefereeCountryName>Canada</RefereeCountryName>
+        <RefereeTeamId>339954</RefereeTeamId>
+        <RefereeTeamname>RS Wormatia Worms</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>404615384</RefereeId>
+        <RefereeName>Jānis Ciemkalns</RefereeName>
+        <RefereeCountryId>53</RefereeCountryId>
+        <RefereeCountryName>Latvija</RefereeCountryName>
+        <RefereeTeamId>52782</RefereeTeamId>
+        <RefereeTeamname>FC Westfalia Eickel</RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>441233793</ScorerPlayerID>
+        <ScorerPlayerName>Thor Bank</ScorerPlayerName>
+        <ScorerTeamID>17761</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>20</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="1">
+        <ScorerPlayerID>442364733</ScorerPlayerID>
+        <ScorerPlayerName>Regner Storm</ScorerPlayerName>
+        <ScorerTeamID>17761</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>2</ScorerAwayGoals>
+        <ScorerMinute>38</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>462559350</ScorerPlayerID>
+        <ScorerPlayerName>Frode 'Freaky' Sinding</ScorerPlayerName>
+        <ScorerTeamID>17761</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>3</ScorerAwayGoals>
+        <ScorerMinute>52</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="3">
+        <ScorerPlayerID>429165281</ScorerPlayerID>
+        <ScorerPlayerName>Joona Karilahti</ScorerPlayerName>
+        <ScorerTeamID>17761</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>4</ScorerAwayGoals>
+        <ScorerMinute>72</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings />
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>441233793</InjuryPlayerID>
+        <InjuryPlayerName>Thor Bank</InjuryPlayerName>
+        <InjuryTeamID>17761</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>73</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+      <Injury Index="1">
+        <InjuryPlayerID>461762544</InjuryPlayerID>
+        <InjuryPlayerName>Roman Eckenroth</InjuryPlayerName>
+        <InjuryTeamID>773670</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>81</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>37</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>63</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>36</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>64</PossessionSecondHalfAway>
+    <EventList>
+      <Event Index="0">
+        <Minute>0</Minute>
+        <SubjectPlayerID>777108</SubjectPlayerID>
+        <SubjectTeamID>28000</SubjectTeamID>
+        <ObjectPlayerID>2106</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>32</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Un ciel clément accueillit les 2106 spectateurs qui étaient venus au &lt;a href="/Club/Stadium/?stadiumId=777108"&gt;Nou WhalePlace&lt;/a&gt;. &lt;a href="/Club/HallOfFame/Player.aspx?playerId=435820492"&gt;Nunzio Ruesser&lt;/a&gt; fut l'arbitre retenu pour le match, assisté par &lt;a href="/Club/HallOfFame/Player.aspx?playerId=419285314"&gt;Jean-Frédéric Valiquette&lt;/a&gt; et &lt;a href="/Club/HallOfFame/Player.aspx?playerId=404615384"&gt;Jānis Ciemkalns&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="1">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>19</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="2">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>L’entraineur de &lt;span class="hometeam"&gt;Som-hi&lt;/span&gt; aligna les joueurs suivants : &lt;a href="/Club/Players/Player.aspx?playerId=459220199" title="Duggan" class="homeplayer"&gt;Duggan&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=459761789" title="Hagelell" class="homeplayer"&gt;Hagelell&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=466005150" title="Urbina" class="homeplayer"&gt;Urbina&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=459220204" title="Cistue" class="homeplayer"&gt;Cistue&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=459220206" title="Figueras" class="homeplayer"&gt;Figueras&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=461559931" title="Todato" class="homeplayer"&gt;Todato&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=460525629" title="Boldog" class="homeplayer"&gt;Boldog&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=459220207" title="Comellas" class="homeplayer"&gt;Comellas&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=463510739" title="Godeke" class="homeplayer"&gt;Godeke&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=463731016" title="Marinas" class="homeplayer"&gt;Marinas&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=459220215" title="Cardell" class="homeplayer"&gt;Cardell&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="3">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Ce fut le moment d’écouter le speaker annoncer la composition d’équipe de &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt; : &lt;a href="/Club/Players/Player.aspx?playerId=450913733" title="Kapounek" class="awayplayer"&gt;Kapounek&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=407682421" title="P&amp;#252;rahenk" class="awayplayer"&gt;Pürahenk&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=442364733" title="Storm" class="awayplayer"&gt;Storm&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=461540306" title="Lynge" class="awayplayer"&gt;Lynge&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=466048856" title="Voigt" class="awayplayer"&gt;Voigt&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=429165281" title="Karilahti" class="awayplayer"&gt;Karilahti&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=441233793" title="Bank" class="awayplayer"&gt;Bank&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=463483102" title="Palmelund" class="awayplayer"&gt;Palmelund&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=462559350" title="Sinding" class="awayplayer"&gt;Sinding&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=444793199" title="Heyde" class="awayplayer"&gt;Heyde&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=459247967" title="Odder" class="awayplayer"&gt;Odder&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="4">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1050302</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>1020503</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>24</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Som-hi un altre cop!&lt;/span&gt; débuta le match en 5-3-2, tandis que &lt;span class="awayteam"&gt;FC ColaBaren&lt;/span&gt; s'organisait en 2-5-3.</EventText>
+      </Event>
+      <Event Index="5">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>598</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="6">
+        <Minute>17</Minute>
+        <SubjectPlayerID>461762544</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>17</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="7">
+        <Minute>20</Minute>
+        <SubjectPlayerID>441233793</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>461540306</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>119</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Et pan ! On l’attendait. Il fut pour &lt;a href="/Club/Players/Player.aspx?playerId=461540306" title="Villy Lynge" class="awayplayer"&gt;Villy Lynge&lt;/a&gt; du pied et du coin, et surtout pour &lt;a href="/Club/Players/Player.aspx?playerId=441233793" title="Thor Bank" class="awayplayer"&gt;Thor Bank&lt;/a&gt; qui reprit le ballon de la tête. Il n’eut plus d'autre choix que de trouer le filet ! 0 - 1 au tableau d’affichage après 20 minutes.</EventText>
+      </Event>
+      <Event Index="8">
+        <Minute>22</Minute>
+        <SubjectPlayerID>37</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>471</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="9">
+        <Minute>25</Minute>
+        <SubjectPlayerID>461540306</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>280</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Les visiteurs faillirent augmenter leur avance après 25 minutes sur un coup franc de &lt;a href="/Club/Players/Player.aspx?playerId=461540306" title="Villy Lynge" class="awayplayer"&gt;Villy Lynge&lt;/a&gt; mais &lt;a href="/Club/Players/Player.aspx?playerId=459220199" title="Ronny Duggan" class="homeplayer"&gt;Ronny Duggan&lt;/a&gt; fit un arrêt impeccable.</EventText>
+      </Event>
+      <Event Index="10">
+        <Minute>27</Minute>
+        <SubjectPlayerID>461559931</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>461762544</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>L’entraineur de &lt;span class="hometeam"&gt;Som-hi&lt;/span&gt; estima après 27 minutes qu’il était temps d’effectuer un changement. &lt;a href="/Club/Players/Player.aspx?playerId=461559931" title="Cesare Todato" class="homeplayer"&gt;Cesare Todato&lt;/a&gt; céda à regret sa place sur le terrain à &lt;a href="/Club/Players/Player.aspx?playerId=461762544" title="Roman Eckenroth" class="homeplayer"&gt;Roman Eckenroth&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="11">
+        <Minute>35</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>495</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="12">
+        <Minute>38</Minute>
+        <SubjectPlayerID>442364733</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>182</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Une attaque éclair sur le côté gauche après 38 minutes permit à &lt;a href="/Club/Players/Player.aspx?playerId=442364733" title="Regner Storm" class="awayplayer"&gt;Regner Storm&lt;/a&gt; d’inscrire un nouveau but pour &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt;, qui menait désormais 0 - 2.</EventText>
+      </Event>
+      <Event Index="13">
+        <Minute>39</Minute>
+        <SubjectPlayerID>462559350</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>281</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=462559350" title="Frode &amp;#39;Freaky&amp;#39; Sinding" class="awayplayer"&gt;Frode 'Freaky' Sinding&lt;/a&gt; fut à deux doigts de creuser l’écart pour les visiteurs après 39 minutes, mais sa tête plongeante sur une attaque au centre du terrain fut parfaitement captée par &lt;a href="/Club/Players/Player.aspx?playerId=459220199" title="Ronny Duggan" class="homeplayer"&gt;Ronny Duggan&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="14">
+        <Minute>40</Minute>
+        <SubjectPlayerID>429165281</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>283</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Un défenseur réussit à dégager le ballon sur sa ligne après 40 minutes, empêchant &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt; d’accroitre son avance au tableau d’affichage par un tir venant de la droite.</EventText>
+      </Event>
+      <Event Index="15">
+        <Minute>41</Minute>
+        <SubjectPlayerID>459247967</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>282</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Après 41 minutes, &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt; réussit presque à conforter son avance sur cette percée de &lt;a href="/Club/Players/Player.aspx?playerId=459247967" title="Bo &amp;#39;Brother&amp;#39; Odder" class="awayplayer"&gt;Bo 'Brother' Odder&lt;/a&gt; sur le côté gauche. Heureusement pour les locaux, le gardien s’interposa efficacement.</EventText>
+      </Event>
+      <Event Index="16">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>45</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Les deux équipes rentrèrent aux vestiaires sur le score de 0 - 2.</EventText>
+      </Event>
+      <Event Index="17">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>63</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Cette mi-temps fut dominée par &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt;, qui garda le contrôle du ballon pendant 63 % du temps.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="18">
+        <Minute>46</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>597</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="19">
+        <Minute>46</Minute>
+        <SubjectPlayerID>463731016</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>459220213</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Après 46 minutes de jeu, &lt;span class="hometeam"&gt;Som-hi&lt;/span&gt; souhaita apporter un nouveau souffle à son match. &lt;a href="/Club/Players/Player.aspx?playerId=463731016" title="Luis Marinas" class="homeplayer"&gt;Luis Marinas&lt;/a&gt; reçut une tape amicale sur l’épaule de la part de &lt;a href="/Club/Players/Player.aspx?playerId=459220213" title="Javier Viurra" class="homeplayer"&gt;Javier Viurra&lt;/a&gt; au moment où ce dernier prit sa place sur le terrain.</EventText>
+      </Event>
+      <Event Index="20">
+        <Minute>51</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>2106</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>464</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="21">
+        <Minute>52</Minute>
+        <SubjectPlayerID>462559350</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>181</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=462559350" title="Frode &amp;#39;Freaky&amp;#39; Sinding" class="awayplayer"&gt;Frode 'Freaky' Sinding&lt;/a&gt; saisit sa chance après 52 minutes de jeu sur une erreur de la défense centrale. 0 - 3 pour &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="22">
+        <Minute>53</Minute>
+        <SubjectPlayerID>462565823</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>50</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="23">
+        <Minute>56</Minute>
+        <SubjectPlayerID>429090582</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>56</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="24">
+        <Minute>60</Minute>
+        <SubjectPlayerID>466005150</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>462565823</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=466005150" title="Eustoquio Urbina" class="homeplayer"&gt;Eustoquio Urbina&lt;/a&gt; aurait préféré continuer à jouer, mais son entraineur en décida autrement. Alors que le chronomètre indiquait 60 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=462565823" title="Feliciano Lacima" class="homeplayer"&gt;Feliciano Lacima&lt;/a&gt; fit son entrée dans le match pour le remplacer.</EventText>
+      </Event>
+      <Event Index="25">
+        <Minute>65</Minute>
+        <SubjectPlayerID>409392593</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>65</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="26">
+        <Minute>66</Minute>
+        <SubjectPlayerID>407682421</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>429090582</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Alors que 66 minutes s’étaient écoulées, l’entraineur de &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt; estima qu’il était judicieux pour son équipe de se montrer sous un nouveau jour : il demanda la sortie de &lt;a href="/Club/Players/Player.aspx?playerId=407682421" title="Kunter P&amp;#252;rahenk" class="awayplayer"&gt;Kunter Pürahenk&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=429090582" title="Freerk Dirkx" class="awayplayer"&gt;Freerk Dirkx&lt;/a&gt; fit son entrée sur le terrain.</EventText>
+      </Event>
+      <Event Index="27">
+        <Minute>71</Minute>
+        <SubjectPlayerID>430892149</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>71</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>459</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="28">
+        <Minute>72</Minute>
+        <SubjectPlayerID>429165281</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>182</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Après 72 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=429165281" title="Joona Karilahti" class="awayplayer"&gt;Joona Karilahti&lt;/a&gt; réussit un magnifique ciseau-retourné sur un centre en provenance de la gauche du terrain. 0 - 4 pour les visiteurs !</EventText>
+      </Event>
+      <Event Index="29">
+        <Minute>73</Minute>
+        <SubjectPlayerID>441233793</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>401</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=441233793" title="Thor Bank" class="awayplayer"&gt;Thor Bank&lt;/a&gt; ne pouvait plus continuer à jouer, suite à une légère blessure au genou gauche, contractée après 73 minutes.</EventText>
+      </Event>
+      <Event Index="30">
+        <Minute>73</Minute>
+        <SubjectPlayerID>441233793</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>430892149</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>424</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=430892149" title="Wayne Flick" class="awayplayer"&gt;Wayne Flick&lt;/a&gt; était déjà à l'échauffement, il prit la place de &lt;a href="/Club/Players/Player.aspx?playerId=441233793" title="Thor Bank" class="awayplayer"&gt;Thor Bank&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="31">
+        <Minute>74</Minute>
+        <SubjectPlayerID>429090582</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>281</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=429090582" title="Freerk Dirkx" class="awayplayer"&gt;Freerk Dirkx&lt;/a&gt; aurait pu creuser l’écart pour les visiteurs, après la réception d’une passe dans l’axe. Il tenta de lober &lt;a href="/Club/Players/Player.aspx?playerId=459220199" title="Ronny Duggan" class="homeplayer"&gt;Ronny Duggan&lt;/a&gt;, mais sa petite balle piquée finit sa course sur la transversale.</EventText>
+      </Event>
+      <Event Index="32">
+        <Minute>75</Minute>
+        <SubjectPlayerID>442364733</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>409392593</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Au bout de 75 minutes, le 4e arbitre leva son panneau pour signaler un remplacement pour &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt;. &lt;a href="/Club/Players/Player.aspx?playerId=409392593" title="Marcellin Beaud" class="awayplayer"&gt;Marcellin Beaud&lt;/a&gt; succéda à &lt;a href="/Club/Players/Player.aspx?playerId=442364733" title="Regner Storm" class="awayplayer"&gt;Regner Storm&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="33">
+        <Minute>76</Minute>
+        <SubjectPlayerID>429090582</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>459220199</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>282</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Après 76 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=459220199" title="Ronny Duggan" class="homeplayer"&gt;Ronny Duggan&lt;/a&gt; détourna du bout des doigts une frappe de &lt;a href="/Club/Players/Player.aspx?playerId=429090582" title="Freerk Dirkx" class="awayplayer"&gt;Freerk Dirkx&lt;/a&gt; depuis l’aile gauche, empêchant ainsi les visiteurs d’inscrire un nouveau but.</EventText>
+      </Event>
+      <Event Index="35">
+        <Minute>80</Minute>
+        <SubjectPlayerID>462565823</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>450913733</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>243</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Seul sur la droite lors d’une rapide contre-attaque menée après 80 minutes de jeu, &lt;a href="/Club/Players/Player.aspx?playerId=462565823" title="Feliciano Lacima" class="homeplayer"&gt;Feliciano Lacima&lt;/a&gt; de &lt;span class="hometeam"&gt;Som-hi&lt;/span&gt; manqua totalement son contrôle, ce qui permit au gardien de s’emparer du ballon sans problème.</EventText>
+      </Event>
+      <Event Index="36">
+        <Minute>81</Minute>
+        <SubjectPlayerID>461762544</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>408</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Après 81 minutes, &lt;a href="/Club/Players/Player.aspx?playerId=461762544" title="Roman Eckenroth" class="homeplayer"&gt;Roman Eckenroth&lt;/a&gt; s'écroula de douleur, en tenant sa cheville droite. C'est une blessure récurrente pour lui, inutile de dire qu'il ne pouvait pas continuer le match.</EventText>
+      </Event>
+      <Event Index="37">
+        <Minute>81</Minute>
+        <SubjectPlayerID>461762544</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>425</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Gros problème pour l'équipe à ce moment-là, il n'y avait plus de joueur disponible sur le banc.</EventText>
+      </Event>
+      <Event Index="38">
+        <Minute>87</Minute>
+        <SubjectPlayerID>441233793</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>2</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>454</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="39">
+        <Minute>89</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>75</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Les joueurs étaient fatigués, mais quand l'arbitre indiqua 2 minutes de temps additionnel, ils accueillirent avec plaisir cette nouvelle opportunité d'influer sur le score.</EventText>
+      </Event>
+      <Event Index="40">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>599</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Le match se termina sur le score de 0 - 4.</EventText>
+      </Event>
+      <Event Index="41">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>601</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="42">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>64</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt; intimida suffisamment ses adversaires en imposant ses 64 % de possession de balle.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="43">
+        <Minute>92</Minute>
+        <SubjectPlayerID>459761789</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Le joueur le plus important de &lt;span class="hometeam"&gt;Som-hi&lt;/span&gt; fut &lt;a href="/Club/Players/Player.aspx?playerId=459761789" title="Per Hagelell" class="homeplayer"&gt;Per Hagelell&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="44">
+        <Minute>92</Minute>
+        <SubjectPlayerID>459220199</SubjectPlayerID>
+        <SubjectTeamID>773670</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=459220199" title="Ronny Duggan" class="homeplayer"&gt;Ronny Duggan&lt;/a&gt; fut particulièrement mauvais, en revanche.</EventText>
+      </Event>
+      <Event Index="45">
+        <Minute>92</Minute>
+        <SubjectPlayerID>430892149</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=430892149" title="Wayne Flick" class="awayplayer"&gt;Wayne Flick&lt;/a&gt; se fit remarquer du côté de &lt;span class="awayteam"&gt;ColaBaren&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="46">
+        <Minute>92</Minute>
+        <SubjectPlayerID>466048856</SubjectPlayerID>
+        <SubjectTeamID>17761</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>En revanche, &lt;a href="/Club/Players/Player.aspx?playerId=466048856" title="Kenny Voigt" class="awayplayer"&gt;Kenny Voigt&lt;/a&gt; était dans un mauvais jour.</EventText>
+      </Event>
+    </EventList>
+  </Match>
+</HattrickData>

@@ -4,7 +4,7 @@ from .fixtures import mocked_chpp
 
 
 def test_get_player(mocked_chpp):
-    player = mocked_chpp.xml_player_details(id_=432002549)
+    player = mocked_chpp.xml_player_details(player_id=432002549)
 
     assert isinstance(player, PlayerDetails)
     assert isinstance(player.skills, PlayerSkills)

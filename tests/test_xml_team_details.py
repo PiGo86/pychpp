@@ -14,7 +14,7 @@ def test_get_current_team(chpp: 'CHPP'):
     assert isinstance(xml_team.teams, list)
     assert isinstance(xml_team.teams[0].name, str)
     assert isinstance(xml_team.teams[0].bot_status.is_bot, bool)
-    assert isinstance(xml_team.teams[0].youth_team_id, int) or xml_team.teams[0].youth_team_id is None
+    assert isinstance(xml_team.teams[0].youth_team.id, int) or xml_team.teams[0].youth_team.id is None
 
 
 def test_get_specific_team(mocked_chpp: 'CHPP'):
@@ -73,8 +73,8 @@ def test_get_specific_team(mocked_chpp: 'CHPP'):
     assert xml_team.teams[0].guestbook.number_of_items == 46
     assert xml_team.teams[0].colors.background_color == '184466'
     assert xml_team.teams[0].colors.color == 'ffffff'
-    assert xml_team.teams[0].youth_team_id == 2555250
-    assert xml_team.teams[0].youth_team_name == 'Sojczanka Bytom U-19'
+    assert xml_team.teams[0].youth_team.id == 2555250
+    assert xml_team.teams[0].youth_team.name == 'Sojczanka Bytom U-19'
     assert xml_team.teams[0].number_of_visits == 5
     assert xml_team.teams[0].possible_to_challenge_midweek == False
     assert xml_team.teams[0].possible_to_challenge_weekend == False
@@ -150,8 +150,8 @@ def test_get_specific_team_currently_playing(mocked_chpp):
 
     assert team.logo_url == "//res.hattrick.org/teamlogo/4/33/327/326336/326336.png"
 
-    assert team.youth_team_id == 2534700
-    assert team.youth_team_name == "La Resaka de S"
+    assert team.youth_team.id == 2534700
+    assert team.youth_team.name == "La Resaka de S"
 
     assert team.guestbook is None
     assert team.press_announcement is None

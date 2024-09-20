@@ -27,7 +27,7 @@ def test_get_specific_arena(mocked_chpp):
     assert arena_match is not None
     assert int(arena_match.group(1)) == 295023
 
-    team = arena.team()
+    team = arena.team.details()
     assert isinstance(team, HTTeam)
     assert team.id == 295023
     assert team.name == 'Les piments verts'

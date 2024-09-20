@@ -1,27 +1,44 @@
-from datetime import datetime
-from typing import List
+from datetime import datetime, date
+from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
 from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class MatchesArchive(HTModel):
+class RequestMatchesArchive(HTModel):
+    """
+    Request arguments for Matches Archive
+    """
+    SOURCE_FILE = 'matchesarchive'
+    LAST_VERSION = '1.5'
+
+    _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id', fill_with='team_id')
+    _r_is_youth: Optional[bool] = HTInitVar('isYouth', init_arg='is_youth')
+    _r_first_match_date: Optional[date] = HTInitVar('FirstMatchDate', init_arg='first_match_date')
+    _r_last_match_date: Optional[date] = HTInitVar('LastMatchDate', init_arg='last_match_date')
+    _r_season: Optional[int] = HTInitVar('season', init_arg='season')
+    _r_include_hto: Optional[bool] = HTInitVar('includeHTO', init_arg='include_hto')
+
+    XML_PREFIX = 'Team/'
+
+
+class MatchesArchive(RequestMatchesArchive):
     """
     Matches Archive
     """
-    _r_team_id: int = HTInitVar('teamID', init_arg='team_id')
-    _r_is_youth: bool = HTInitVar('isYouth', init_arg='is_youth')
-    _r_first_match_date: datetime = HTInitVar('FirstMatchDate', init_arg='first_match_date')
-    _r_last_match_date: datetime = HTInitVar('LastMatchDate', init_arg='last_match_date')
-    _r_season: int = HTInitVar('season', init_arg='season')
-    _r_include_hto: bool = HTInitVar('includeHTO', init_arg='include_hto')
-
-    team_id: int = HTField('Team/TeamID')
-    team_name: str = HTField('Team/TeamName')
-    first_match_date: datetime = HTField('FirstMatchDate')
-    last_match_date: datetime = HTField('LastMatchDate')
+    team: 'Team' = HTField('.')
+    first_match_date: Optional[datetime] = HTField('FirstMatchDate')
+    last_match_date: Optional[datetime] = HTField('LastMatchDate')
     matches: List['MatchItem'] = HTField('MatchList', items='Match')
+
+
+class Team(HTModel):
+    """
+    Matches Archives -> Team
+    """
+    id: int = HTField('TeamID')
+    name: str = HTField('TeamName')
 
 
 class MatchItem(HTModel):
@@ -29,8 +46,8 @@ class MatchItem(HTModel):
     Matches Archives -> Matches -> Match item
     """
     id: int = HTField('MatchID')
-    home_team: 'MatchItemHomeTeam' = HTField('HomeTeam')
-    away_team: 'MatchItemAwayTeam' = HTField('AwayTeam')
+    home_team: 'MatchItemTeam' = HTField('HomeTeam', xml_prefix='Home')
+    away_team: 'MatchItemTeam' = HTField('AwayTeam', xml_prefix='Away')
     date: datetime = HTField('MatchDate')
     type_id: int = HTField('MatchType')
     context_id: int = HTField('MatchContextId')
@@ -41,20 +58,12 @@ class MatchItem(HTModel):
     away_goals: int = HTField('AwayGoals')
 
 
-class MatchItemHomeTeam(HTModel):
+class MatchItemTeam(HTModel):
     """
-    Matches Archives -> Matches -> Match item -> Home team
+    Matches Archives -> Matches -> Match item -> Team
     """
-    id: int = HTField('HomeTeamID')
-    name: str = HTField('HomeTeamName')
-
-
-class MatchItemAwayTeam(HTModel):
-    """
-    Matches Archives -> Matches -> Match item -> Away team
-    """
-    id: int = HTField('AwayTeamID')
-    name: str = HTField('AwayTeamName')
+    id: int = HTField('TeamID')
+    name: str = HTField('TeamName')
 
 
 class MatchItemCup(HTModel):

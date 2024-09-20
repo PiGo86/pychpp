@@ -91,8 +91,7 @@ class TeamItem(HTModel):
     dress_alternate_uri: str = HTField('DressAlternateURI')
     bot_status: 'TeamItemBotStatus' = HTField('BotStatus')
     team_rank: int = HTField('TeamRank')
-    youth_team_id: int = HTField('YouthTeamID')
-    youth_team_name: str = HTField('YouthTeamName')
+    youth_team: 'TeamItemYouthTeam' = HTField('.')
     number_of_visits: int = HTField('NumberOfVisits')
     flags: Optional['TeamItemFlags'] = HTField('Flags')
     trophies: List['TeamItemTrophyItem'] = HTField('TrophyList', items='Trophy')
@@ -221,6 +220,13 @@ class TeamItemBotStatus(HTModel):
     is_bot: bool = HTField('IsBot')
     bot_since: Optional[datetime] = HTField('BotSince')
 
+
+class TeamItemYouthTeam(HTModel):
+    """
+    Team Details -> Teams -> Team item -> Youth team
+    """
+    id: int = HTField('YouthTeamID')
+    name: str = HTField('YouthTeamName')
 
 class TeamItemFlags(HTModel):
     """

@@ -1,0 +1,389 @@
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-15 10:26:44</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>547513790</MatchID>
+    <MatchType>1</MatchType>
+    <MatchContextId>36740</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2015-12-19 21:00:00</MatchDate>
+    <FinishedDate>2015-12-19 22:45:00</FinishedDate>
+    <AddedMinutes>0</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Olympique Mig</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>4-4-2</Formation>
+      <HomeGoals>1</HomeGoals>
+      <TacticType>1</TacticType>
+      <TacticSkill>7</TacticSkill>
+      <RatingMidfield>22</RatingMidfield>
+      <RatingRightDef>38</RatingRightDef>
+      <RatingMidDef>50</RatingMidDef>
+      <RatingLeftDef>46</RatingLeftDef>
+      <RatingRightAtt>30</RatingRightAtt>
+      <RatingMidAtt>33</RatingMidAtt>
+      <RatingLeftAtt>32</RatingLeftAtt>
+      <TeamAttitude>0</TeamAttitude>
+      <RatingIndirectSetPiecesDef>26</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>23</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>1</NrOfChancesLeft>
+      <NrOfChancesCenter>2</NrOfChancesCenter>
+      <NrOfChancesRight>0</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>0</NrOfChancesOther>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>292366</AwayTeamID>
+      <AwayTeamName>Camden County Jerks</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/4/matchKitSmall.png</DressURI>
+      <Formation>3-5-2</Formation>
+      <AwayGoals>0</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>26</RatingMidfield>
+      <RatingRightDef>41</RatingRightDef>
+      <RatingMidDef>37</RatingMidDef>
+      <RatingLeftDef>41</RatingLeftDef>
+      <RatingRightAtt>35</RatingRightAtt>
+      <RatingMidAtt>44</RatingMidAtt>
+      <RatingLeftAtt>37</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>35</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>31</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>0</NrOfChancesLeft>
+      <NrOfChancesCenter>1</NrOfChancesCenter>
+      <NrOfChancesRight>3</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>1</NrOfChancesOther>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>1162154</ArenaID>
+      <ArenaName>Olymp. Mig Arena 5</ArenaName>
+      <WeatherID>2</WeatherID>
+      <SoldTotal>29750</SoldTotal>
+      <SoldTerraces>16000</SoldTerraces>
+      <SoldBasic>9567</SoldBasic>
+      <SoldRoof>3983</SoldRoof>
+      <SoldVIP>200</SoldVIP>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>44887340</RefereeId>
+        <RefereeName>Bjarne Skovsen</RefereeName>
+        <RefereeCountryId>11</RefereeCountryId>
+        <RefereeCountryName>Danmark</RefereeCountryName>
+        <RefereeTeamId>1528023</RefereeTeamId>
+        <RefereeTeamname>Mons Eniana Percoks</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>379554524</RefereeId>
+        <RefereeName>Timo Lameris</RefereeName>
+        <RefereeCountryId>14</RefereeCountryId>
+        <RefereeCountryName>Nederland</RefereeCountryName>
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname />
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>0</RefereeId>
+        <RefereeName> </RefereeName>
+        <RefereeCountryId>0</RefereeCountryId>
+        <RefereeCountryName />
+        <RefereeTeamId>0</RefereeTeamId>
+        <RefereeTeamname />
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>360082328</ScorerPlayerID>
+        <ScorerPlayerName>Eddy Knop</ScorerPlayerName>
+        <ScorerTeamID>1165592</ScorerTeamID>
+        <ScorerHomeGoals>1</ScorerHomeGoals>
+        <ScorerAwayGoals>0</ScorerAwayGoals>
+        <ScorerMinute>74</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings>
+      <Booking Index="0">
+        <BookingPlayerID>372190954</BookingPlayerID>
+        <BookingPlayerName>Alberto García</BookingPlayerName>
+        <BookingTeamID>1165592</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>78</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+    </Bookings>
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>299818212</InjuryPlayerID>
+        <InjuryPlayerName>Per Lohne</InjuryPlayerName>
+        <InjuryTeamID>292366</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>79</InjuryMinute>
+        <MatchPart>2</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>47</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>53</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>45</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>55</PossessionSecondHalfAway>
+    <EventList>
+      <Event Index="0">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1162154</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>29750</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>32</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>La météo était plutôt bonne et 29750 spectateurs étaient venus au &lt;a href="/Club/Stadium/?stadiumId=1162154"&gt;Olymp. Mig Arena 5&lt;/a&gt; pour assister au match. &lt;a href="/Club/HallOfFame/Player.aspx?playerId=44887340"&gt;Bjarne Skovsen&lt;/a&gt; fut l'arbitre retenu pour le match, assisté par &lt;a href="/Club/HallOfFame/Player.aspx?playerId=379554524"&gt;Timo Lameris&lt;/a&gt; et &lt;a href="/Club/HallOfFame/Player.aspx?playerId=271276114"&gt;&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="1">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>1040402</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>20</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Olympique&lt;/span&gt; débuta le match en 4-4-2.</EventText>
+      </Event>
+      <Event Index="2">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Ce fut le moment d’écouter le speaker annoncer la composition d’équipe de &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; : &lt;a href="/Club/Players/Player.aspx?playerId=314946894" title="K&amp;#246;hn" class="homeplayer"&gt;Köhn&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=332279391" title="Wohlmuth" class="homeplayer"&gt;Wohlmuth&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=342860438" title="Desax" class="homeplayer"&gt;Desax&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=372190954" title="Garc&amp;#237;a" class="homeplayer"&gt;García&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=310168644" title="van Kesteren" class="homeplayer"&gt;van Kesteren&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=286460242" title="Busi" class="homeplayer"&gt;Busi&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=275424219" title="Friis" class="homeplayer"&gt;Friis&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=280273858" title="Schnitzlbaumer" class="homeplayer"&gt;Schnitzlbaumer&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=360082328" title="Knop" class="homeplayer"&gt;Knop&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=388424578" title="Milojević" class="homeplayer"&gt;Milojević&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=398536262" title="Bodart" class="homeplayer"&gt;Bodart&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="3">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>1030502</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>20</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Pour cette rencontre, l’entraineur de &lt;span class="awayteam"&gt;Camden&lt;/span&gt; sortit un 3-5-2 de son chapeau. Est-ce que ce schéma tactique portera ses fruits ? </EventText>
+      </Event>
+      <Event Index="4">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Sur une musique de gladiateurs, les joueurs suivants de &lt;span class="awayteam"&gt;Camden&lt;/span&gt; prirent place sur le terrain : &lt;a href="/Club/Players/Player.aspx?playerId=319548682" title="Dovern" class="awayplayer"&gt;Dovern&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=299818212" title="Lohne" class="awayplayer"&gt;Lohne&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=286912123" title="Kloosterboer" class="awayplayer"&gt;Kloosterboer&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=299822616" title="Machado" class="awayplayer"&gt;Machado&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=372236020" title="Gaitatzis" class="awayplayer"&gt;Gaitatzis&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=399949146" title="Ernoult" class="awayplayer"&gt;Ernoult&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=397384942" title="Baradaran" class="awayplayer"&gt;Baradaran&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=396741814" title="Manzin" class="awayplayer"&gt;Manzin&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=373737451" title="Jehan" class="awayplayer"&gt;Jehan&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=296648298" title="Charuel" class="awayplayer"&gt;Charuel&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=297844490" title="Sw&amp;#228;rdborg" class="awayplayer"&gt;Swärdborg&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="5">
+        <Minute>1</Minute>
+        <SubjectPlayerID>98</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>331</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Il sembla clair dès le début de la rencontre que les joueurs de &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; allaient mettre en avant leur niveau &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=7#skill" class="skill"&gt;honorable&lt;/a&gt; pour presser leurs adversaires pendant tout le match.</EventText>
+      </Event>
+      <Event Index="6">
+        <Minute>9</Minute>
+        <SubjectPlayerID>286912123</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>314946894</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>273</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;span class="awayteam"&gt;Camden&lt;/span&gt; eut plusieurs occasions franches de prendre l’avantage au score, notamment après cette action rapide sur la droite, lorsque &lt;a href="/Club/Players/Player.aspx?playerId=286912123" title="Ralph Kloosterboer" class="awayplayer"&gt;Ralph Kloosterboer&lt;/a&gt; se retrouva seul face à &lt;a href="/Club/Players/Player.aspx?playerId=314946894" title="Christopher K&amp;#246;hn" class="homeplayer"&gt;Christopher Köhn&lt;/a&gt;, mais ce dernier réussit à dévier le ballon en corner au dernier moment.</EventText>
+      </Event>
+      <Event Index="7">
+        <Minute>17</Minute>
+        <SubjectPlayerID>297844490</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>314946894</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>273</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>Les visiteurs furent à deux doigts de mener au score sur cette attaque de &lt;a href="/Club/Players/Player.aspx?playerId=297844490" title="Vincent Sw&amp;#228;rdborg" class="awayplayer"&gt;Vincent Swärdborg&lt;/a&gt; sur l’aile droite après 17 minutes de jeu. Mais le ballon fut dévié par le poteau.</EventText>
+      </Event>
+      <Event Index="9">
+        <Minute>35</Minute>
+        <SubjectPlayerID>360082328</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>319548682</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>221</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Beaucoup pensèrent que &lt;a href="/Club/Players/Player.aspx?playerId=360082328" title="Eddy Knop" class="homeplayer"&gt;Eddy Knop&lt;/a&gt; aurait dû obtenir un pénalty pour l’équipe locale après 35 minutes. Il avait en effet été stoppé par &lt;a href="/Club/Players/Player.aspx?playerId=319548682" title="Christian Dovern" class="awayplayer"&gt;Christian Dovern&lt;/a&gt;, le gardien adverse, à la suite d’une pénétration dans l'axe, mais l’arbitre resta de marbre.</EventText>
+      </Event>
+      <Event Index="10">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>45</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Les deux équipes rentrèrent aux vestiaires sur le score de 0 - 0.</EventText>
+      </Event>
+      <Event Index="11">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>53</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;span class="awayteam"&gt;Camden&lt;/span&gt; intimida suffisamment ses adversaires en imposant ses 53 % de possession de balle.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="13">
+        <Minute>55</Minute>
+        <SubjectPlayerID>297844490</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>314946894</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>243</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Après 55 minutes de jeu, &lt;a href="/Club/Players/Player.aspx?playerId=297844490" title="Vincent Sw&amp;#228;rdborg" class="awayplayer"&gt;Vincent Swärdborg&lt;/a&gt; aurait pu permettre à &lt;span class="awayteam"&gt;Camden&lt;/span&gt; de marquer à la suite d’une superbe contre-attaque sur la droite du terrain, mais c’était sans compter sur la vigilance du gardien adverse.</EventText>
+      </Event>
+      <Event Index="14">
+        <Minute>56</Minute>
+        <SubjectPlayerID>97</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>68</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Les joueurs de &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; exerçaient un pressing efficace et réussissaient à bien gêner la circulation du ballon.</EventText>
+      </Event>
+      <Event Index="15">
+        <Minute>70</Minute>
+        <SubjectPlayerID>286460242</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>279748346</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>352</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Alors que 70 minutes s’étaient écoulées, l’entraineur de &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; estima qu’il était judicieux pour son équipe de se montrer sous un nouveau jour : il demanda la sortie de &lt;a href="/Club/Players/Player.aspx?playerId=286460242" title="Pietro Busi" class="homeplayer"&gt;Pietro Busi&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=279748346" title="Guillaume Bailleul" class="homeplayer"&gt;Guillaume Bailleul&lt;/a&gt; fit son entrée sur le terrain.</EventText>
+      </Event>
+      <Event Index="16">
+        <Minute>72</Minute>
+        <SubjectPlayerID>373737451</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>314946894</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>285</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Vu la position difficile pour tirer ce coup franc, &lt;span class="awayteam"&gt;Camden&lt;/span&gt; tenta une combinaison apprise à l’entrainement. Le ballon partit en direction de la surface et atterrit juste devant le gardien. Cependant, la défense était resserrée et ne laissa aucun espace pour conclure.</EventText>
+      </Event>
+      <Event Index="17">
+        <Minute>74</Minute>
+        <SubjectPlayerID>360082328</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>319548682</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>121</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Le public reprit en chœur le nom de &lt;a href="/Club/Players/Player.aspx?playerId=360082328" title="Eddy Knop" class="homeplayer"&gt;Eddy Knop&lt;/a&gt; quand celui-ci franchit la défense centrale adverse pour inscrire un but après 74 minutes ! &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; menait désormais 1 - 0.</EventText>
+      </Event>
+      <Event Index="18">
+        <Minute>78</Minute>
+        <SubjectPlayerID>372190954</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>510</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>L’arbitre donna un carton jaune à &lt;a href="/Club/Players/Player.aspx?playerId=372190954" title="Alberto Garc&amp;#237;a" class="homeplayer"&gt;Alberto García&lt;/a&gt; de &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; pour un tacle particulièrement agressif.</EventText>
+      </Event>
+      <Event Index="19">
+        <Minute>79</Minute>
+        <SubjectPlayerID>299818212</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>94</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Le joueur à terre était &lt;a href="/Club/Players/Player.aspx?playerId=299818212" title="Per Lohne" class="awayplayer"&gt;Per Lohne&lt;/a&gt;. Le banc de &lt;span class="awayteam"&gt;Camden&lt;/span&gt; fut très inquiet pendant un moment, mais le joueur réussit à se relever pour retrouver sa place sur le terrain.</EventText>
+      </Event>
+      <Event Index="20">
+        <Minute>80</Minute>
+        <SubjectPlayerID>398536262</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>406763490</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>351</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Satisfait de l’évolution du match, l’entraineur de &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; fit entrer &lt;a href="/Club/Players/Player.aspx?playerId=406763490" title="Ga&amp;#233;tan Bonnefous" class="homeplayer"&gt;Gaétan Bonnefous&lt;/a&gt; à la place de &lt;a href="/Club/Players/Player.aspx?playerId=398536262" title="Florian Bodart" class="homeplayer"&gt;Florian Bodart&lt;/a&gt; après 80 minutes.</EventText>
+      </Event>
+      <Event Index="21">
+        <Minute>90</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>55</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Cette mi-temps fut dominée par &lt;span class="awayteam"&gt;Camden&lt;/span&gt;, qui garda le contrôle du ballon pendant 55 % du temps.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="22">
+        <Minute>90</Minute>
+        <SubjectPlayerID>388424578</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Le meilleur joueur de &lt;span class="hometeam"&gt;Olympique&lt;/span&gt; fut sans aucun doute &lt;a href="/Club/Players/Player.aspx?playerId=388424578" title="Sava Milojević" class="homeplayer"&gt;Sava Milojević&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="23">
+        <Minute>90</Minute>
+        <SubjectPlayerID>279748346</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=279748346" title="Guillaume Bailleul" class="homeplayer"&gt;Guillaume Bailleul&lt;/a&gt;, quant à lui, fut très décevant.</EventText>
+      </Event>
+      <Event Index="24">
+        <Minute>90</Minute>
+        <SubjectPlayerID>297844490</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Le joueur le plus important de &lt;span class="awayteam"&gt;Camden&lt;/span&gt; fut &lt;a href="/Club/Players/Player.aspx?playerId=297844490" title="Vincent Sw&amp;#228;rdborg" class="awayplayer"&gt;Vincent Swärdborg&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="25">
+        <Minute>90</Minute>
+        <SubjectPlayerID>299822616</SubjectPlayerID>
+        <SubjectTeamID>292366</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>42</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>En revanche, &lt;a href="/Club/Players/Player.aspx?playerId=299822616" title="Bartolom&amp;#233; Isidro Machado" class="awayplayer"&gt;Bartolomé Isidro Machado&lt;/a&gt; était dans un mauvais jour.</EventText>
+      </Event>
+      <Event Index="28">
+        <Minute>90</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>599</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Le match se termina sur le score de 1 - 0.</EventText>
+      </Event>
+    </EventList>
+  </Match>
+</HattrickData>

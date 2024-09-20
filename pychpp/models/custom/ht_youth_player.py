@@ -9,7 +9,7 @@ from pychpp.models.xml.youth_player_list import YouthPlayerListList, YouthPlayer
 
 class BaseHTYouthPlayer(CustomModel):
 
-    URL_PATH = '/Club/Players/YouthPlayer.aspx/'
+    URL_PATH = '/Club/Players/YouthPlayer.aspx'
 
     def __repr__(self):
         return (f"<{self.__class__.__name__} object - "

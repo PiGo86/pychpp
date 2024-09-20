@@ -1,0 +1,125 @@
+<HattrickData>
+  <FileName>worldcup.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-18 22:45:57</FetchedDate>
+  <CupID>137</CupID>
+  <Season>76</Season>
+  <MatchRound>0</MatchRound>
+  <WorldCupScores>
+    <Team>
+      <TeamID>3033</TeamID>
+      <TeamName>Türkiye</TeamName>
+      <Place>1</Place>
+      <CupSeriesUnitID>1709</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 1</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>5</GoalsFor>
+      <GoalsAgainst>0</GoalsAgainst>
+      <Points>9</Points>
+    </Team>
+    <Team>
+      <TeamID>3247</TeamID>
+      <TeamName>Tanzania</TeamName>
+      <Place>2</Place>
+      <CupSeriesUnitID>1709</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 1</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>4</GoalsFor>
+      <GoalsAgainst>5</GoalsAgainst>
+      <Points>6</Points>
+    </Team>
+    <Team>
+      <TeamID>3000</TeamID>
+      <TeamName>Sverige</TeamName>
+      <Place>3</Place>
+      <CupSeriesUnitID>1709</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 1</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>5</GoalsFor>
+      <GoalsAgainst>4</GoalsAgainst>
+      <Points>3</Points>
+    </Team>
+    <Team>
+      <TeamID>3150</TeamID>
+      <TeamName>Iran</TeamName>
+      <Place>4</Place>
+      <CupSeriesUnitID>1709</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 1</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>2</GoalsFor>
+      <GoalsAgainst>7</GoalsAgainst>
+      <Points>0</Points>
+    </Team>
+    <Team>
+      <TeamID>3038</TeamID>
+      <TeamName>Schweiz</TeamName>
+      <Place>1</Place>
+      <CupSeriesUnitID>1710</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 2</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>6</GoalsFor>
+      <GoalsAgainst>1</GoalsAgainst>
+      <Points>9</Points>
+    </Team>
+    <Team>
+      <TeamID>3039</TeamID>
+      <TeamName>Österreich</TeamName>
+      <Place>2</Place>
+      <CupSeriesUnitID>1710</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 2</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>7</GoalsFor>
+      <GoalsAgainst>8</GoalsAgainst>
+      <Points>6</Points>
+    </Team>
+    <Team>
+      <TeamID>3004</TeamID>
+      <TeamName>France</TeamName>
+      <Place>3</Place>
+      <CupSeriesUnitID>1710</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 2</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>6</GoalsFor>
+      <GoalsAgainst>5</GoalsAgainst>
+      <Points>3</Points>
+    </Team>
+    <Team>
+      <TeamID>3116</TeamID>
+      <TeamName>Slovensko</TeamName>
+      <Place>4</Place>
+      <CupSeriesUnitID>1710</CupSeriesUnitID>
+      <CupSeriesUnitName>Round IV - Group 2</CupSeriesUnitName>
+      <MatchesPlayed>3</MatchesPlayed>
+      <GoalsFor>5</GoalsFor>
+      <GoalsAgainst>10</GoalsAgainst>
+      <Points>0</Points>
+    </Team>
+  </WorldCupScores>
+  <Rounds>
+    <Round>
+      <MatchRound>1</MatchRound>
+      <StartDate>2020-10-09 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>15</MatchRound>
+      <StartDate>2021-03-05 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>18</MatchRound>
+      <StartDate>2021-04-09 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>21</MatchRound>
+      <StartDate>2021-04-19 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>24</MatchRound>
+      <StartDate>2021-04-30 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>25</MatchRound>
+      <StartDate>2021-05-02 20:00:00</StartDate>
+    </Round>
+  </Rounds>
+</HattrickData>

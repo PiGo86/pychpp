@@ -5,41 +5,38 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class MatchLineup(HTModel):
+class RequestMatchLineup(HTModel):
     """
-    Match Lineup
+    Request arguments for Match Lineup
     """
     SOURCE_FILE = 'matchlineup'
     LAST_VERSION = '2.1'
 
-    _r_match_id = HTInitVar('matchID', init_arg='match_id')
-    _r_team_id = HTInitVar('teamID', init_arg='team_id')
-    _r_source_system = HTInitVar('sourceSystem', init_arg='source_system')
+    _r_match_id: int = HTInitVar('matchID', init_arg='match_id')
+    _r_team_id: int = HTInitVar('teamID', init_arg='team_id')
+    _r_source_system: Optional[int] = HTInitVar('sourceSystem', init_arg='source_system', fill_with='source_system')
 
-    id: int = HTField('MatchID')
+
+class MatchLineup(RequestMatchLineup):
+    """
+    Match Lineup
+    """
+    match_id: int = HTField('MatchID')
     source_system: str = HTField('SourceSystem')
-    home_team: 'HomeTeam' = HTField('HomeTeam')
-    away_team: 'AwayTeam' = HTField('AwayTeam')
-    type: int = HTField('MatchType')
-    context_id: int = HTField('MatchContextId')
+    home_team: 'Team' = HTField('HomeTeam', xml_prefix='Home')
+    away_team: 'Team' = HTField('AwayTeam', xml_prefix='Away')
+    match_type: int = HTField('MatchType')
+    match_context_id: Optional[int] = HTField('MatchContextId')
     arena: 'Arena' = HTField('Arena')
-    team: 'Team' = HTField('Team')
+    team: 'TeamLineup' = HTField('Team')
 
 
-class HomeTeam(HTModel):
+class Team(HTModel):
     """
-    Match Lineup -> Home team
+    Match Lineup -> Home/Away team
     """
-    id: int = HTField('HomeTeamID')
-    name: str = HTField('HomeTeamName')
-
-
-class AwayTeam(HTModel):
-    """
-    Match Lineup -> Away team
-    """
-    id: int = HTField('AwayTeamID')
-    name: str = HTField('AwayTeamName')
+    id: int = HTField('TeamID')
+    name: str = HTField('TeamName')
 
 
 class Arena(HTModel):
@@ -50,7 +47,7 @@ class Arena(HTModel):
     name: str = HTField('ArenaName')
 
 
-class Team(HTModel):
+class TeamLineup(HTModel):
     """
     Match Lineup -> Team
     """
@@ -68,7 +65,7 @@ class BaseTeamPlayerItem(HTModel):
     Match Lineup -> Team -> Starting Lineup / Lineup -> Base Player item
     """
     id: int = HTField('PlayerID')
-    role: int = HTField('RoleID')
+    role_id: int = HTField('RoleID')
     first_name: str = HTField('FirstName')
     last_name: str = HTField('LastName')
     nick_name: str  =HTField('NickName')
@@ -79,7 +76,6 @@ class TeamStartingLineupPlayerItem(BaseTeamPlayerItem):
     """
     Match Lineup -> Team -> Starting Lineup -> Player item
     """
-    pass
 
 
 class TeamLineupPlayerItem(BaseTeamPlayerItem):
@@ -100,5 +96,5 @@ class TeamSubstitutionItem(HTModel):
     order_type: int = HTField('OrderType')
     new_position_id: int = HTField('NewPositionId')
     new_position_behaviour: int = HTField('NewPositionBehaviour')
-    match_minute: int = HTField('MatchMinute')
+    minute: int = HTField('MatchMinute')
     match_part: int = HTField('MatchPart')

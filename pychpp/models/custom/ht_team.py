@@ -1,59 +1,33 @@
-from datetime import datetime
 from typing import List, Optional
 
+from pychpp.models.custom.base.ht_arena import HTLightArena
+from pychpp.models.custom.base.ht_country import HTLightCountry
+from pychpp.models.custom.base.ht_league import HTLightLeague
+from pychpp.models.custom.base.ht_league_unit import HTLightLeagueUnit
+from pychpp.models.custom.base.ht_player import HTLightPlayer
+from pychpp.models.custom.base.ht_region import HTLightRegion
+from pychpp.models.custom.base.ht_team import BaseHTTeam, HTLightYouthTeam
+from pychpp.models.custom.base.ht_user import HTLightUser
 from pychpp.models.ht_field import HTProxyField
 from pychpp.models.ht_init_var import HTInitVar
-from pychpp.models.xml.team_details import BaseTeamDetails, TeamItem, TeamDetails, TeamItemPowerRating, \
-    TeamItemLeagueLevelUnit, TeamItemFanClub, TeamItemGuestbook, TeamItemPressAnnouncement, TeamItemColors, \
-    TeamItemBotStatus, TeamItemFlags, TeamItemTrophyItem, TeamItemSupportedTeams, TeamItemSupporters
-from pychpp.models.custom import ht_youth_team, ht_player, ht_user, ht_arena, ht_region, ht_league_unit, CustomModel
+from pychpp.models.xml.players import PlayersViewTeamPlayerItem, PlayersViewTeam, RequestPlayers
+from pychpp.models.xml import team_details as td
 
 
-class HTTeam(BaseTeamDetails, CustomModel):
+class HTTeam(td.BaseTeamDetails, td.TeamItem, BaseHTTeam):
 
     XML_PREFIX = 'Teams/Team/'
     XML_FILTER = ''
-    URL_PATH = "/Club/"
 
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id', fill_with='id')
 
-    id: int = HTProxyField(TeamItem)
-    name: str = HTProxyField(TeamItem)
-    short_name: str = HTProxyField(TeamItem)
-    is_primary_club: bool = HTProxyField(TeamItem)
-    founded_date: datetime = HTProxyField(TeamItem)
-    # league: 'TeamItemLeague' = HTField('League')
-    # country: 'TeamItemCountry' = HTField('Country')
-    # trainer: 'TeamItemTrainer' = HTField('Trainer')
-    homepage: str = HTProxyField(TeamItem)
-    # cup: 'TeamItemCup' = HTField('Cup')
-    power_rating: 'TeamItemPowerRating' = HTProxyField(TeamItem)
-    friendly_team_id: int = HTProxyField(TeamItem)
-    number_of_victories: int = HTProxyField(TeamItem)
-    number_of_undefeated: int = HTProxyField(TeamItem)
-    fan_club: 'TeamItemFanClub' = HTProxyField(TeamItem)
-    logo_url: str = HTProxyField(TeamItem)
-    guestbook: Optional['TeamItemGuestbook'] = HTProxyField(TeamItem)
-    press_announcement: Optional['TeamItemPressAnnouncement'] = HTProxyField(TeamItem)
-    colors: Optional['TeamItemColors'] = HTProxyField(TeamItem)
-    dress_uri: str = HTProxyField(TeamItem)
-    dress_alternate_uri: str = HTProxyField(TeamItem)
-    bot_status: 'TeamItemBotStatus' = HTProxyField(TeamItem)
-    team_rank: int = HTProxyField(TeamItem)
-    youth_team_id: int = HTProxyField(TeamItem)
-    youth_team_name: str = HTProxyField(TeamItem)
-    number_of_visits: int = HTProxyField(TeamItem)
-    flags: Optional['TeamItemFlags'] = HTProxyField(TeamItem)
-    trophies: List['TeamItemTrophyItem'] = HTProxyField(TeamItem)
-    supported_teams: Optional['TeamItemSupportedTeams'] = HTProxyField(TeamItem)
-    supporters: Optional['TeamItemSupporters'] = HTProxyField(TeamItem)
-    possible_to_challenge_midweek: bool = HTProxyField(TeamItem)
-    possible_to_challenge_weekend: bool = HTProxyField(TeamItem)
-
-    user_id: int = HTProxyField(TeamDetails, 'user.id', xml_prefix='../../')
-    arena_id: int = HTProxyField(TeamItem, 'arena.id')
-    region_id: int = HTProxyField(TeamItem, 'region.id')
-    league_unit_id: int = HTProxyField(TeamItem, 'league_level_unit.id')
+    user: 'HTTeamUser' = HTProxyField(td.TeamDetails, xml_prefix='../../')
+    arena: 'HTTeamArena' = HTProxyField(td.TeamItem)
+    league: 'HTTeamLeague' = HTProxyField(td.TeamItem)
+    country: 'HTTeamCountry' = HTProxyField(td.TeamItem)
+    region: 'HTTeamRegion' = HTProxyField(td.TeamItem)
+    league_unit: 'HTTeamLeagueUnit' = HTProxyField(td.TeamItem, 'league_level_unit')
+    youth_team: 'HTTeamYouthTeam' = HTProxyField(td.TeamItem)
 
     def _pre_init(self, team_id=None, **kwargs):
         if team_id is not None:
@@ -65,23 +39,43 @@ class HTTeam(BaseTeamDetails, CustomModel):
     def is_bot(self) -> bool:
         return self.bot_status.is_bot
 
-    def arena(self) -> ht_arena.HTArena:
-        return self._chpp.arena(id_=self.arena_id)
+    def players(self) -> 'List[HTTeamPlayersItem]':
+        return HTTeamPlayers(chpp=self._chpp, team_id=self.id).list
 
-    def league_unit(self) -> ht_league_unit.HTLeagueUnit:
-        return self._chpp.league_unit(id_=self.league_unit_id)
 
-    def players(self) -> 'List[ht_player.HTLightPlayer]':
-        xml_players = self._chpp.xml_players(team_id=self.id)
-        return [self._chpp.light_player(team_id=self.id, id_=p.id, data=xml_players._data)
-                for p in xml_players.team.players]
+class HTTeamUser(HTLightUser, td.User):
+    username: str = HTProxyField(td.User, 'login_name')
 
-    def region(self) -> 'ht_region.HTRegion':
-        return self._chpp.region(id_=self.region_id)
 
-    def user(self) -> 'ht_user.HTUser':
-        return self._chpp.user(id_=self.user_id)
+class HTTeamArena(HTLightArena, td.TeamItemArena):
+    pass
 
-    def youth_team(self) -> 'ht_youth_team.HTYouthTeam':
-        return (self._chpp.youth_team(id_=self.youth_team_id)
-                if self.youth_team_id is not None else None)
+
+class HTTeamLeague(HTLightLeague, td.TeamItemLeague):
+    pass
+
+
+class HTTeamCountry(HTLightCountry, td.TeamItemCountry):
+    pass
+
+
+class HTTeamRegion(HTLightRegion, td.TeamItemRegion):
+    pass
+
+
+class HTTeamLeagueUnit(HTLightLeagueUnit, td.TeamItemLeagueLevelUnit):
+    pass
+
+
+class HTTeamYouthTeam(HTLightYouthTeam, td.TeamItemYouthTeam):
+    pass
+
+
+class HTTeamPlayers(RequestPlayers, PlayersViewTeam):
+    XML_PREFIX = 'Team/'
+    list: List['HTTeamPlayersItem'] = HTProxyField(PlayersViewTeam, 'players')
+
+class HTTeamPlayersItem(HTLightPlayer, PlayersViewTeamPlayerItem):
+    """
+    Hattrick light player for team
+    """

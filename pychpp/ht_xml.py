@@ -152,6 +152,25 @@ class HTXml:
         return _datetime.datetime.strftime("%Y-%m-%d %H:%M:%S")
 
     @staticmethod
+    def ht_date_to_text(_datetime):
+        """
+        Converting HTDatetime objects to string
+
+        :param _datetime: a datetime object
+        :type _datetime: datetime.datetime or ht_datetime.HTDatetime
+        :return: a string representing a date and a time
+        :rtype: str
+        """
+
+        # if a datetime instance is given
+        # convert it to HTDatetime in CET timezone
+        if isinstance(_datetime, datetime.datetime):
+            _datetime = ht_datetime.HTDatetime(datetime=_datetime)
+
+        _datetime.timezone = "CET"
+        return _datetime.datetime.strftime("%Y-%m-%d")
+
+    @staticmethod
     def to_string(data):
         return ElementTree.tostring(data, encoding='unicode')
 

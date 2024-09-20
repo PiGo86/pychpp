@@ -13,7 +13,7 @@ class BaseYouthTeamDetails(HTModel):
     SOURCE_FILE = 'youthteamdetails'
     LAST_VERSION = '1.2'
 
-    _r_youth_team_id: Optional[int] = HTInitVar('youthTeamId', init_arg='youth_team_id')
+    _r_youth_team_id: Optional[int] = HTInitVar('youthTeamID', init_arg='youth_team_id')
     _r_show_scouts: Optional[bool] = HTInitVar('showScouts', init_arg='show_scouts')
 
     XML_PREFIX = 'YouthTeam/'

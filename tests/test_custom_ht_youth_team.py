@@ -1,7 +1,7 @@
 import re
 
-from pychpp.models.custom.ht_youth_team import HTYouthTeam
-from pychpp.models.custom.ht_youth_player import HTLightYouthPlayer
+from pychpp.models.custom.ht_youth_team import HTYouthTeam, HTYouthTeamPlayerItem
+from pychpp.models.xml.youth_player_list import YouthPlayerListListPlayerItem
 
 from .fixtures import chpp, YOUTH_PLAYER_PATTERN
 
@@ -14,7 +14,7 @@ def test_get_own_team_youth_player(chpp):
     if youth_team.id != 0:
         light_youth_player = youth_team.players()[0]
 
-        assert isinstance(light_youth_player, HTLightYouthPlayer)
+        assert isinstance(light_youth_player, HTYouthTeamPlayerItem)
 
         youth_player = light_youth_player.details()
 

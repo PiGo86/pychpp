@@ -2,16 +2,16 @@
   <FileName>youthplayerdetails.xml</FileName>
   <Version>1.2</Version>
   <UserID>1728698</UserID>
-  <FetchedDate>2024-09-11 22:28:46</FetchedDate>
+  <FetchedDate>2024-09-20 00:24:38</FetchedDate>
   <YouthPlayer>
     <YouthPlayerID>301741211</YouthPlayerID>
     <FirstName>Akpa</FirstName>
     <NickName />
     <LastName>Tao</LastName>
     <Age>24</Age>
-    <AgeDays>35</AgeDays>
+    <AgeDays>44</AgeDays>
     <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
-    <CanBePromotedIn>-819</CanBePromotedIn>
+    <CanBePromotedIn>-828</CanBePromotedIn>
     <PlayerNumber>100</PlayerNumber>
     <Statement />
     <NativeCountryID>5</NativeCountryID>

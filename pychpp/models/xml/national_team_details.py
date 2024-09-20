@@ -25,7 +25,7 @@ class NationalTeamDetails(HTModel):
     home_page: str = HTField('Team/HomePage')
     logo: str = HTField('Team/Logo')
     dress_uri: str = HTField('Team/DressURI')
-    dress_alternative_uri: str = HTField('Team/DressAlternativeURI')
+    dress_alternate_uri: str = HTField('Team/DressAlternateURI')
     experience: 'Experience' = HTField('Team/.')
     morale: Optional[int] = HTField('Team/Morale')
     self_confidence: Optional[int] = HTField('Team/SelfConfidence')

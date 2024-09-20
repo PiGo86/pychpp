@@ -19,9 +19,16 @@ class RegionDetails(RequestRegionDetails):
     """
     Region Details
     """
-    league_id: int = HTField('League/LeagueID')
-    league_name: str = HTField('League/LeagueName')
+    league: 'League' = HTField('.')
     region: 'Region' = HTField('League/Region')
+
+
+class League(HTModel):
+    """
+    Region Details -> League
+    """
+    id: int = HTField('League/LeagueID')
+    name: str = HTField('League/LeagueName')
 
 
 class Region(HTModel):

@@ -14,6 +14,7 @@ class BaseTraining(HTModel):
     LAST_VERSION = '2.2'
 
     _r_action_type: str = HTInitVar('actionType', init_arg='action_type', default='view')
+    _r_team_id: int = HTInitVar('teamId', init_arg='team_id')
 
 
 class BaseTrainingView(HTModel):
@@ -27,7 +28,6 @@ class BaseTrainingSetTraining(HTModel):
     """
     Base Training - Set training
     """
-    _r_team_id: int = HTInitVar('teamId', init_arg='team_id')
     _r_training_type: str = HTInitVar('trainingType', init_arg='training_type')
     _r_training_level: int = HTInitVar('trainingLevel', init_arg='training_level')
     _r_training_level_stamina: int = HTInitVar('trainingLevelStamina', init_arg='training_level_stamina')

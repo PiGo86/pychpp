@@ -1,30 +1,27 @@
+from pychpp.models.custom.base.ht_arena import BaseHTArena
+from pychpp.models.custom.base.ht_league import HTLightLeague
+from pychpp.models.custom.base.ht_region import HTLightRegion
+from pychpp.models.custom.base.ht_team import HTLightTeam
 from pychpp.models.ht_field import HTProxyField
-from pychpp.models.xml.arena_details import CurrentCapacity
-from pychpp.models.xml.arena_details import ExpandedCapacity
-from pychpp.models.xml.arena_details import RequestArenaDetails, ArenaDetails
-from pychpp.models.custom import ht_team, ht_region, CustomModel
+from pychpp.models.xml import arena_details
 
 
-class HTArena(RequestArenaDetails, CustomModel):
+class HTArena(arena_details.ArenaDetails, BaseHTArena):
     """
     Hattrick Arena
     """
+    team: 'HTArenaTeam' = HTProxyField(arena_details.ArenaDetails)
+    league: 'HTArenaLeague' = HTProxyField(arena_details.ArenaDetails)
+    region: 'HTArenaRegion' = HTProxyField(arena_details.ArenaDetails)
 
-    URL_PATH = '/Club/Stadium/'
 
-    id: int = HTProxyField(ArenaDetails, 'id')
-    name: str = HTProxyField(ArenaDetails, 'name')
-    image: str = HTProxyField(ArenaDetails, 'image')
-    fallback_image: str = HTProxyField(ArenaDetails, 'fallback_image')
-    current_capacity: 'CurrentCapacity' = HTProxyField(ArenaDetails, 'current_capacity')
-    expanded_capacity: 'ExpandedCapacity' = HTProxyField(ArenaDetails, 'expanded_capacity')
+class HTArenaTeam(arena_details.Team, HTLightTeam):
+    pass
 
-    _team_id: int = HTProxyField(ArenaDetails, 'team.id')
-    _league_id: int = HTProxyField(ArenaDetails, 'league.id')
-    _region_id: int = HTProxyField(ArenaDetails, 'region.id')
 
-    def team(self, **kwargs):
-        return ht_team.HTTeam(self._chpp, team_id=self._team_id, **kwargs)
+class HTArenaLeague(arena_details.League, HTLightLeague):
+    pass
 
-    def region(self, **kwargs):
-        return ht_region.HTRegion(self._chpp, region_id=self._region_id, **kwargs)
+
+class HTArenaRegion(arena_details.Region, HTLightRegion):
+    pass

@@ -2,9 +2,8 @@ import pathlib
 from copy import copy
 from typing import Optional, Type, Dict, Any, List
 import xml.etree.ElementTree as ElementTree
-from datetime import datetime
+from datetime import datetime, date
 from typing import get_type_hints, get_origin, Union, get_args
-from urllib.parse import urlencode
 
 import pychpp.chpp as _chpp
 from pychpp.ht_xml import HTXml
@@ -29,9 +28,13 @@ class MetaHTModel(type):
 
         for attr_name, attr_value in dict_.items():
             if isinstance(attr_value, HTBaseField):
-                dict_['_ht_fields'].update({attr_name: attr_value})
+                # Remove then add to ensure that overridden attributes are at the end
+                dict_['_ht_fields'].pop(attr_name, None)
+                dict_['_ht_fields'][attr_name] = attr_value
             if isinstance(attr_value, HTInitVar):
-                dict_['_ht_init_vars'].update({attr_name: attr_value})
+                # Remove then add to ensure that overridden attributes are at the end
+                dict_['_ht_init_vars'].pop(attr_name, None)
+                dict_['_ht_init_vars'][attr_name] = attr_value
 
         return super().__new__(cls, name, bases, dict_)
 
@@ -90,6 +93,7 @@ class HTModel(metaclass=MetaHTModel):
                  data: Optional[ElementTree.Element] = None,
                  version: Optional[str] = None,
                  xml_prefix: str = None,
+                 suppl_attrs: dict = None,
                  **kwargs,
                  ):
 
@@ -110,6 +114,10 @@ class HTModel(metaclass=MetaHTModel):
         self._requests_args = dict()
         self.version = version
         self.xml_prefix = xml_prefix if xml_prefix is not None else self.XML_PREFIX
+
+        if suppl_attrs is not None:
+            for attr_name, attr_value in suppl_attrs.items():
+                setattr(self, attr_name, attr_value)
 
         # if data is not given, fetch data on Hattrick
         if self._data is None:
@@ -132,6 +140,15 @@ class HTModel(metaclass=MetaHTModel):
                 ht_init_var.value = ht_init_var.default
 
             if ht_init_var.value is not None:
+
+                type_ = self.get_type(attr)
+                if type_ in (str, int):
+                    ht_init_var.value = str(ht_init_var.value)
+                elif type_ == date:
+                    ht_init_var.value = HTXml.ht_date_to_text(ht_init_var.value)
+                elif type_ == datetime:
+                    ht_init_var.value = HTXml.ht_datetime_to_text(ht_init_var.value)
+
                 self._requests_args[ht_init_var.param] = ht_init_var.value
 
             setattr(self, attr, ht_init_var.value)
@@ -143,10 +160,11 @@ class HTModel(metaclass=MetaHTModel):
 
     def _transform_fields(self):
 
-        proxy_path = ''
         # Fill attributes according to class attributes referencing a HTBaseField instance
 
         for field_name, field in self._ht_fields.items():
+
+            proxy_path = ''
 
             if isinstance(field, HTProxyField):
                 field: HTProxyField
@@ -157,19 +175,20 @@ class HTModel(metaclass=MetaHTModel):
                 if field.attr_name is None:
                     field.attr_name = field_name
 
+                previous_xml_prefix = ''
                 for level in field.attr_name.split('.'):
-
                     type_ = target_cls.get_type(level)
                     target_field = getattr(target_cls, level)
                     if proxy_path and proxy_path[-1] != '/':
                         proxy_path += '/'
-                    proxy_path += target_field.path
+                    proxy_path += previous_xml_prefix + target_field.path
+                    previous_xml_prefix = target_field.xml_prefix
 
                     if issubclass(type_, HTModel):
                         target_cls = type_
 
+                target_field.suppl_attrs = field.suppl_attrs
                 field = target_field
-                # field.path = xml_path
 
             if isinstance(field, HTField):
 
@@ -178,10 +197,10 @@ class HTModel(metaclass=MetaHTModel):
                 f_type = self.get_type(field_name)
                 f_item_type = self.get_item_type(field_name)
                 f_is_optional = True if self.is_optional_attrib(field_name) else False
-
                 path = proxy_path if proxy_path else field.path
                 xml_path = self.xml_prefix + self.XML_FILTER + path
                 xml_node = self._data.find(xml_path)
+                suppl_attrs = {k: getattr(self, v) for k, v in field.suppl_attrs.items()}
 
                 # instance attribute set to transformed value
                 # according to type hint
@@ -200,7 +219,11 @@ class HTModel(metaclass=MetaHTModel):
                         f_item_type: Type[HTModel]
                         setattr(self,
                                 field_name,
-                                [f_item_type(chpp=self._chpp, data=i)
+                                [f_item_type(chpp=self._chpp,
+                                             data=i,
+                                             xml_prefix=field.xml_prefix,
+                                             suppl_attrs=suppl_attrs,
+                                             )
                                  for i in HTXml.iter_data_items(xml_node, field.items)])
                     else:
                         raise ValueError(f"unsupported type '{f_item_type}' for list item")
@@ -233,10 +256,10 @@ class HTModel(metaclass=MetaHTModel):
                         setattr(self, field_name, HTXml.opt_ht_datetime_from_text(xml_node, attrib=field.attrib))
 
                     elif issubclass(f_type, HTModel):
-
                         setattr(self, field_name, f_type(chpp=self._chpp,
                                                          data=xml_node,
                                                          xml_prefix=field.xml_prefix,
+                                                         suppl_attrs=suppl_attrs,
                                                          ))
 
                     else:

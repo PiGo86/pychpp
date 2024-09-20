@@ -6,11 +6,10 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class WorldDetails(HTModel):
+class RequestWorldDetails(HTModel):
     """
-    World Details
+    Request arguments for world details
     """
-
     SOURCE_FILE = 'worlddetails'
     LAST_VERSION = '1.9'
 
@@ -18,6 +17,11 @@ class WorldDetails(HTModel):
     _r_country_id: Optional[int] = HTInitVar('countryID', init_arg='country_id')
     _r_league_id: Optional[int] = HTInitVar('leagueID', init_arg='league_id')
 
+
+class WorldDetails(RequestWorldDetails):
+    """
+    World Details
+    """
     leagues: List['LeagueItem'] = HTField('LeagueList', items='League')
 
 

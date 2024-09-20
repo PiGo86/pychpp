@@ -14,7 +14,7 @@ class RequestYouthPlayerDetails(HTModel):
     LAST_VERSION = '1.2'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type', default='details')
-    _r_youth_player_id: int = HTInitVar('youthPlayerId', init_arg='youth_player_id')
+    _r_youth_player_id: int = HTInitVar('youthPlayerID', init_arg='youth_player_id')
     _r_show_scout_call: Optional[bool] = HTInitVar('showScoutCall', init_arg='show_scout_call', default=False)
     _r_show_last_match: Optional[bool] = HTInitVar('showLastMatch', init_arg='show_last_match', default=False)
 

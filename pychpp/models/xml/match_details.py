@@ -1,22 +1,27 @@
 from datetime import datetime
-from typing import List
+from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
 from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class MatchDetails(HTModel):
+class RequestMatchDetails(HTModel):
     """
-    Match Details
+    Request arguments for Match Details
     """
-
     SOURCE_FILE = 'matchdetails'
     LAST_VERSION = '3.1'
 
-    _r_match_events: bool = HTInitVar('matchEvents', init_arg='match_events')
     _r_match_id: int = HTInitVar('matchID', init_arg='match_id')
-    _r_source_system: str = HTInitVar('sourceSystem', init_arg='source_system')
+    _r_source_system: Optional[str] = HTInitVar('sourceSystem', init_arg='source_system')
+    _r_match_events: Optional[bool] = HTInitVar('matchEvents', init_arg='match_events')
+
+
+class MatchDetails(RequestMatchDetails):
+    """
+    Match Details
+    """
 
     source_system: str = HTField('SourceSystem')
     user_supporter_tier: str = HTField('UserSupporterTier')
@@ -44,7 +49,7 @@ class Match(HTModel):
     bookings: List['MatchBookingItem'] = HTField('Bookings', items='Booking')
     injuries: List['MatchInjuryItem'] = HTField('Injuries', items='Injury')
     possession: 'MatchPossession' = HTField('.')
-    events: List['MatchEventItem'] = HTField('EventList', items='Event')
+    events: Optional[List['MatchEventItem']] = HTField('EventList', items='Event')
 
 
 class BaseMatchTeam(HTModel):
@@ -56,7 +61,7 @@ class BaseMatchTeam(HTModel):
     tactic_type: int = HTField('TacticType')
     tactic_skill: int = HTField('TacticSkill')
     ratings: 'MatchTeamRatings' = HTField('.')
-    team_attitude: int = HTField('TeamAttitude')
+    team_attitude: Optional[int] = HTField('TeamAttitude')
     chances: 'MatchTeamChances' = HTField('.')
 
 
@@ -110,7 +115,7 @@ class MatchArena(HTModel):
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
     weather_id: int = HTField('WeatherID')
-    sold: 'MatchArenaSold' = HTField('')
+    sold: 'MatchArenaSold' = HTField('.')
 
 
 class MatchArenaSold(HTModel):

@@ -80,7 +80,7 @@ class ChallengesChallengeable(BaseChallenges):
     """
     _r_suggested_team_ids: str = HTInitVar('suggestedTeamIds', init_arg='suggested_team_ids')
 
-    challengeable_result: List['ChallengesChallengeableOpponentItem'] = HTField('ChallengeableResult', items='Opponent')
+    challengeable_result: List['ChallengesChallengeableOpponentItem'] = HTField('Team/ChallengeableResult', items='Opponent')
 
 
 class ChallengesChallengeableOpponentItem(HTModel):
@@ -89,9 +89,9 @@ class ChallengesChallengeableOpponentItem(HTModel):
     """
     is_challengeable: bool = HTField('IsChallengeable')
     user_id: int = HTField('UserId')
-    team_id: int = HTField('TeamID')
+    team_id: int = HTField('TeamId')
     team_name: str = HTField('TeamName')
-    logo_url: str  =HTField('LogoUrl')
+    logo_url: str  =HTField('LogoURL')
 
 
 class ChallengesChallenge(BaseChallenges):
@@ -99,9 +99,9 @@ class ChallengesChallenge(BaseChallenges):
     Challenges - Challenge
     """
     _r_opponent_team_id: int = HTInitVar('opponentTeamId', init_arg='opponent_team_id')
-    _r_match_type: int = HTInitVar('matchType', init_arg='match_type')
-    _r_match_place: int = HTInitVar('matchPlace', init_arg='match_place')
-    _r_neutral_arena_id: int = HTInitVar('neutralArenaId', init_arg='neutral_arena_id')
+    _r_match_type: Optional[int] = HTInitVar('matchType', init_arg='match_type')
+    _r_match_place: Optional[int] = HTInitVar('matchPlace', init_arg='match_place')
+    _r_neutral_arena_id: Optional[int] = HTInitVar('neutralArenaId', init_arg='neutral_arena_id')
 
 
 class BaseChallengesDecision(BaseChallenges):
