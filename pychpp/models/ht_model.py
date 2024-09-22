@@ -38,6 +38,7 @@ class MetaHTModel(type):
 
         return super().__new__(cls, name, bases, dict_)
 
+
 class HTModel(metaclass=MetaHTModel):
 
     SOURCE_FILE: List[str]
@@ -82,8 +83,8 @@ class HTModel(metaclass=MetaHTModel):
             list_arg = get_args(list_hint)
 
             if not list_arg or get_origin(list_arg[0]) in (Union, Optional):
-                raise ValueError(f"HTModel does not support list typehint without argument, "
-                                 f"nor Union or Optional arguments")
+                raise ValueError("HTModel does not support list typehint without argument, "
+                                 "nor Union or Optional arguments")
 
             else:
                 return list_arg[0]
@@ -208,7 +209,8 @@ class HTModel(metaclass=MetaHTModel):
 
                     if xml_node is None:
                         if not f_is_optional:
-                            raise ValueError(f"{self.__class__} : non optional field {field} returned 'None'")
+                            raise ValueError(f"{self.__class__} : "
+                                             f"non optional field {field} returned 'None'")
                         else:
                             setattr(self, field_name, list())
                             continue
@@ -232,7 +234,8 @@ class HTModel(metaclass=MetaHTModel):
 
                     if xml_node is None:
                         if not f_is_optional:
-                            raise ValueError(f"{self.__class__} : non optional field {field} returned 'None'")
+                            raise ValueError(f"{self.__class__} : "
+                                             f"non optional field {field} returned 'None'")
                         else:
                             setattr(self, field_name, None)
                             continue
@@ -250,10 +253,14 @@ class HTModel(metaclass=MetaHTModel):
                         setattr(self, field_name, HTXml.ht_bool(xml_node, attrib=field.attrib))
 
                     elif f_type is datetime and self.is_optional_attrib(field_name):
-                        setattr(self, field_name, HTXml.ht_datetime_from_text(xml_node, attrib=field.attrib))
+                        setattr(self,
+                                field_name,
+                                HTXml.ht_datetime_from_text(xml_node, attrib=field.attrib))
 
                     elif f_type is datetime:
-                        setattr(self, field_name, HTXml.opt_ht_datetime_from_text(xml_node, attrib=field.attrib))
+                        setattr(self,
+                                field_name,
+                                HTXml.opt_ht_datetime_from_text(xml_node, attrib=field.attrib))
 
                     elif issubclass(f_type, HTModel):
                         setattr(self, field_name, f_type(chpp=self._chpp,
@@ -269,13 +276,11 @@ class HTModel(metaclass=MetaHTModel):
                 field: HTAliasField
                 setattr(self, field_name, getattr(self, field.target))
 
-
     def _pre_init(self, **kwargs):
         """
         hook to make some stuff at the beginning of __init__ process
 
         """
-
 
     def _save_as_xml(self, path: pathlib.Path = None, filename: str = None):
 
@@ -283,21 +288,20 @@ class HTModel(metaclass=MetaHTModel):
             path = pathlib.Path.cwd()
 
         if filename is None:
-            args = {'file': self.SOURCE_FILE,'version': self.version}
+            args = {'file': self.SOURCE_FILE, 'version': self.version}
             args.update(sorted(self._requests_args.items()))
             filename = '&'.join(f"{k}={v}" for k, v in args.items()) + '.xml'
 
         with open(path / filename, mode='w') as f:
             f.write(HTXml.to_string(self._data))
 
-
     def __repr__(self):
         desc = ''
 
         if getattr(self, 'name', None) is not None:
-            desc+= f"{getattr(self, 'name')} "
+            desc += f"{getattr(self, 'name')} "
         elif getattr(self, 'login_name', None) is not None:
-            desc+= f"{getattr(self, 'login_name')} "
+            desc += f"{getattr(self, 'login_name')} "
 
         if getattr(self, 'ht_id', None) is not None:
             desc += f"({getattr(self, 'ht_id')})"

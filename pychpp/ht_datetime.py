@@ -586,6 +586,6 @@ class HTDatetime:
             return False
 
     def __repr__(self):
-        return f'<HTDatetime object : ' \
+        return f'<HTDatetime object - ' \
                f'{self._datetime.strftime("%Y-%m-%d %H:%M:%S %Z%z")} ' \
                f'(S{self._season}, W{self._week}, D{self._weekday})>'

@@ -6,7 +6,7 @@ from pychpp.models.custom.ht_match_lineup import HTMatchLineup, HTMLEndingLineup
     HTMLStartingLineupPlayersItem, HTMLSubstitutionItem, HTMLLineupPlayersItem
 from pychpp.models.custom.ht_player import HTPlayer
 
-from .fixtures import mocked_chpp, MATCH_LINEUP_PATTERN, PLAYER_PATTERN, YOUTH_PLAYER_PATTERN
+from .conftest import MATCH_LINEUP_PATTERN, PLAYER_PATTERN, YOUTH_PLAYER_PATTERN
 
 
 def test_get_match_lineup(mocked_chpp):

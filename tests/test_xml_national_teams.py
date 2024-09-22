@@ -1,7 +1,5 @@
 from pychpp.models.xml.national_teams import NationalTeams, NationalTeamItem
 
-from tests.fixtures import mocked_chpp
-
 
 def test_get_nts(mocked_chpp):
     national_teams = mocked_chpp.xml_national_teams(league_office_type_id=2)

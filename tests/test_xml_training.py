@@ -1,8 +1,6 @@
 from pychpp.models.xml.training import TrainingView
 from pychpp.ht_datetime import HTDatetime
 
-from .fixtures import mocked_chpp
-
 
 def test_get_training(mocked_chpp):
 

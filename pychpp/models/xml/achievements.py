@@ -24,11 +24,10 @@ class Achievement(HTModel):
     """
     type_id: int = HTField('AchievementTypeID')
     title: str = HTField('AchievementTitle')
-    text: str  =HTField('AchievementText')
+    text: str = HTField('AchievementText')
     category_id: int = HTField('CategoryID')
     event_date: datetime = HTField('EventDate')
     points: int = HTField('Points')
     multilevel: bool = HTField('MultiLevel')
     rank: int = HTField('Rank')
     number_of_events: int = HTField('NumberOfEvents')
-

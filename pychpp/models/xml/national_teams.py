@@ -12,7 +12,8 @@ class NationalTeams(HTModel):
     SOURCE_FILE = 'nationalteams'
     LAST_VERSION = '1.6'
 
-    _r_league_office_type_id: int = HTInitVar('LeagueOfficeTypeID', init_arg='league_office_type_id')
+    _r_league_office_type_id: int = HTInitVar('LeagueOfficeTypeID',
+                                              init_arg='league_office_type_id')
 
     user_supporter_tier: str = HTField('UserSupporterTier')
     league_office_type_id: int = HTField('LeagueOfficeTypeID')
@@ -28,7 +29,7 @@ class NationalTeamItem(HTModel):
     name: str = HTField('NationalTeamName')
     dress: str = HTField('Dress')
     rating_scores: int = HTField('RatingScores')
-    league_id : int = HTField('LeagueId')
+    league_id: int = HTField('LeagueId')
 
 
 class CupItem(HTModel):

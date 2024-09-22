@@ -16,7 +16,9 @@ class RequestPlayers(HTModel):
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
     _r_order_by: Optional[str] = HTInitVar('orderBy', init_arg='order_by')
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
-    _r_include_match_info: Optional[bool] = HTInitVar('includeMatchInfo', init_arg='include_match_info')
+    _r_include_match_info: Optional[bool] = HTInitVar('includeMatchInfo',
+                                                      init_arg='include_match_info')
+
 
 class BasePlayers(RequestPlayers):
     """
@@ -55,6 +57,7 @@ class BasePlayersTeam(HTModel):
     """
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
+
 
 class PlayersViewTeam(BasePlayersTeam):
     """
@@ -128,7 +131,7 @@ class PlayersViewTeamPlayerItem(BasePlayersTeamPlayerItem):
     goals_current_team: Optional[int] = HTField('GoalsCurrentTeam')
     player_skills: 'PlayersViewTeamPlayerItemPlayerSkills' = HTField('.')
     category_id: Optional[int] = HTField('PlayerCategoryID')
-    trainer_data: Optional['CommonPlayersViewPlayersViewOldCoachesTeamPlayerItemTrainerData'] = HTField('TrainerData')
+    trainer_data: Optional['CommonTeamPlayerItemTrainerData'] = HTField('TrainerData')
 
 
 class PlayersViewTeamPlayerItemPlayerSkills(HTModel):
@@ -157,7 +160,7 @@ class BasePlayersTeamPlayerItemLastMatch(HTModel):
     rating_end_of_game: float = HTField('RatingEndOfGame')
 
 
-class CommonPlayersViewPlayersViewOldCoachesTeamPlayerItemTrainerData(HTModel):
+class CommonTeamPlayerItemTrainerData(HTModel):
     """
     Players - View or View old coaches -> Team -> Players -> Player Item -> Trainer Data
     """
@@ -185,4 +188,4 @@ class PlayersViewOldCoachesTeamPlayerItem(BasePlayersTeamPlayerItem):
     """
     Players - View old coaches -> Team -> Players -> Player Item
     """
-    trainer_data: 'CommonPlayersViewPlayersViewOldCoachesTeamPlayerItemTrainerData' = HTField('TrainerData')
+    trainer_data: 'CommonTeamPlayerItemTrainerData' = HTField('TrainerData')

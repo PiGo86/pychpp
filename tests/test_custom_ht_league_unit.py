@@ -3,7 +3,8 @@ import re
 from pychpp.models.custom.ht_league_unit import HTLeagueUnit
 from pychpp.models.xml.league_details import TeamItem
 
-from .fixtures import chpp, LEAGUE_LEVEL_UNIT_PATTERN
+from .conftest import LEAGUE_LEVEL_UNIT_PATTERN
+
 
 def test_league(chpp):
     league_unit = chpp.league_unit(36378)

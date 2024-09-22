@@ -15,7 +15,8 @@ class CommonRequestChallenges(HTModel):
 
     _r_action_type: str = HTInitVar('actionType', init_arg='action_type')
     r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
-    r_is_weekend_friendly: Optional[int] = HTInitVar('isWeekendFriendly', init_arg='is_weekend_friendly')
+    r_is_weekend_friendly: Optional[int] = HTInitVar('isWeekendFriendly',
+                                                     init_arg='is_weekend_friendly')
 
 
 class BaseChallenges(CommonRequestChallenges):
@@ -48,7 +49,7 @@ class ChallengeItemOpponent(HTModel):
     """
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
-    logo_url: str  =HTField('LogoURL')
+    logo_url: str = HTField('LogoURL')
 
 
 class ChallengeArena(HTModel):
@@ -61,7 +62,8 @@ class ChallengeArena(HTModel):
 
 class ChallengeCountry(HTModel):
     """
-    Challenges - View -> Challenges by me / Offers by others -> Challenge item -> Opponent -> Country
+    Challenges - View -> Challenges by me / Offers by others -> Challenge item
+    -> Opponent -> Country
     """
     id: int = HTField('CountryID')
     name: str = HTField('CountryName')
@@ -80,7 +82,9 @@ class ChallengesChallengeable(BaseChallenges):
     """
     _r_suggested_team_ids: str = HTInitVar('suggestedTeamIds', init_arg='suggested_team_ids')
 
-    challengeable_result: List['ChallengesChallengeableOpponentItem'] = HTField('Team/ChallengeableResult', items='Opponent')
+    challengeable_result: List['ChallengesChallengeableOpponentItem'] = HTField(
+        'Team/ChallengeableResult', items='Opponent',
+    )
 
 
 class ChallengesChallengeableOpponentItem(HTModel):
@@ -91,7 +95,7 @@ class ChallengesChallengeableOpponentItem(HTModel):
     user_id: int = HTField('UserId')
     team_id: int = HTField('TeamId')
     team_name: str = HTField('TeamName')
-    logo_url: str  =HTField('LogoURL')
+    logo_url: str = HTField('LogoURL')
 
 
 class ChallengesChallenge(BaseChallenges):

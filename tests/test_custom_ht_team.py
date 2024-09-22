@@ -5,7 +5,7 @@ from pychpp.models.custom.ht_user import HTUser
 from pychpp.models.custom.ht_youth_team import HTYouthTeam
 from pychpp.models.custom.ht_arena import HTArena
 
-from .fixtures import TEAM_PATTERN, USER_PATTERN, YOUTH_TEAM_PATTERN, ARENA_PATTERN,mocked_chpp
+from .conftest import TEAM_PATTERN, USER_PATTERN, YOUTH_TEAM_PATTERN, ARENA_PATTERN
 
 
 def test_get_secondary_team(mocked_chpp):

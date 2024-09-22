@@ -2,13 +2,13 @@ import re
 
 from pychpp.models.custom.ht_region import HTRegion
 
-from .fixtures import chpp, mocked_chpp, REGION_PATTERN
+from .conftest import REGION_PATTERN
 
 
 def test_get_current_user_region(chpp):
     region = chpp.region()
     assert isinstance(region, HTRegion)
-    assert isinstance(region.id , int)
+    assert isinstance(region.id, int)
     assert isinstance(region.name, str)
     assert isinstance(region.number_of_users, int)
     assert isinstance(region.number_of_online, int)

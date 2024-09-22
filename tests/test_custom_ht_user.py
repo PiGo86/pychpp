@@ -1,7 +1,7 @@
 import re
 
 from pychpp.models.custom.ht_user import HTUser
-from .fixtures import chpp, USER_PATTERN
+from .conftest import USER_PATTERN
 
 
 def test_get_current_user(chpp):

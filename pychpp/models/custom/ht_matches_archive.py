@@ -53,10 +53,12 @@ class HTMAItem(HTCommonLightMatch, ma.MatchItem):
     home_goals: int = HTProxyField(ma.MatchItem)
     away_goals: int = HTProxyField(ma.MatchItem)
 
-    home_team: 'HTMAItemTeam' = HTField('HomeTeam', xml_prefix='Home',
-                                                     suppl_attrs={'source_system': 'source_system'})
-    away_team: 'HTMAItemTeam' = HTField('AwayTeam', xml_prefix='Away',
-                                                     suppl_attrs={'source_system': 'source_system'})
+    home_team: 'HTMAItemTeam' = HTField('HomeTeam',
+                                        xml_prefix='Home',
+                                        suppl_attrs={'source_system': 'source_system'})
+    away_team: 'HTMAItemTeam' = HTField('AwayTeam',
+                                        xml_prefix='Away',
+                                        suppl_attrs={'source_system': 'source_system'})
 
 
 class HTMAItemTeam(HTCommonLightTeam, ma.MatchItemTeam):

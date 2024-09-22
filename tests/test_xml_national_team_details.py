@@ -3,7 +3,6 @@ import pytest
 from pychpp.models.xml.national_team_details import NationalTeamDetails
 from pychpp.ht_error import HTUnknownTeamIdError
 
-from .fixtures import chpp, mocked_chpp
 
 def test_get_nt_details(mocked_chpp):
     portugal_details = mocked_chpp.xml_national_team_details(team_id=3014)

@@ -2,7 +2,7 @@ import re
 
 from pychpp.models.xml.world_details import LeagueItemCountryRegionItem
 
-from .fixtures import chpp, COUNTRY_LEAGUE_PATTERN, REGION_PATTERN, CUP_PATTERN
+from .conftest import COUNTRY_LEAGUE_PATTERN, REGION_PATTERN
 
 
 def test_get_league(chpp):

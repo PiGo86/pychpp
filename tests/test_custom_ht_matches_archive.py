@@ -2,7 +2,8 @@ import re
 
 from pychpp.ht_datetime import HTDatetime
 
-from .fixtures import chpp, MATCH_ARCHIVE_PATTERN, MATCH_PATTERN
+from .conftest import MATCH_ARCHIVE_PATTERN, MATCH_PATTERN
+
 
 def test_get_other_user_matches_archives(chpp):
     ma1 = chpp.matches_archive(

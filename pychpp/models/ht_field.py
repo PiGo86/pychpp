@@ -19,7 +19,6 @@ class HTField(HTBaseField):
     suppl_attrs: dict = field(default_factory=dict)
 
 
-
 @dataclass
 class HTAliasField(HTBaseField):
     target: str

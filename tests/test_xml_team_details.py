@@ -2,8 +2,6 @@ from pychpp import CHPP
 from pychpp.ht_datetime import HTDatetime
 from pychpp.models.xml.team_details import TeamDetails
 
-from .fixtures import chpp, mocked_chpp
-
 
 def test_get_current_team(chpp: 'CHPP'):
 
@@ -14,7 +12,8 @@ def test_get_current_team(chpp: 'CHPP'):
     assert isinstance(xml_team.teams, list)
     assert isinstance(xml_team.teams[0].name, str)
     assert isinstance(xml_team.teams[0].bot_status.is_bot, bool)
-    assert isinstance(xml_team.teams[0].youth_team.id, int) or xml_team.teams[0].youth_team.id is None
+    assert (isinstance(xml_team.teams[0].youth_team.id, int)
+            or xml_team.teams[0].youth_team.id is None)
 
 
 def test_get_specific_team(mocked_chpp: 'CHPP'):
@@ -28,10 +27,16 @@ def test_get_specific_team(mocked_chpp: 'CHPP'):
     assert xml_team.user.login_name == 'Praqol'
     assert xml_team.user.name == 'HIDDEN'
     assert xml_team.user.icq is None
-    assert xml_team.user.signup_date == HTDatetime.from_calendar(2012, 11, 5, 15, 42, 59)
-    assert xml_team.user.activation_date == HTDatetime.from_calendar(2012, 11, 10, 10, 50, 0)
-    assert xml_team.user.last_login_date == HTDatetime.from_calendar(2024, 9, 8, 21, 43, 45)
-    assert xml_team.user.has_manager_license == True
+    assert xml_team.user.signup_date == HTDatetime.from_calendar(
+        2012, 11, 5, 15, 42, 59,
+    )
+    assert xml_team.user.activation_date == HTDatetime.from_calendar(
+        2012, 11, 10, 10, 50, 0,
+    )
+    assert xml_team.user.last_login_date == HTDatetime.from_calendar(
+        2024, 9, 8, 21, 43, 45,
+    )
+    assert xml_team.user.has_manager_license is True
     assert xml_team.user.national_teams == []
 
     assert len(xml_team.teams) == 3
@@ -39,8 +44,10 @@ def test_get_specific_team(mocked_chpp: 'CHPP'):
     assert xml_team.teams[0].id == 263018
     assert xml_team.teams[0].name == 'Sojczanka Bytom'
     assert xml_team.teams[0].short_name == 'Sojczanka'
-    assert xml_team.teams[0].is_primary_club == True
-    assert xml_team.teams[0].founded_date == HTDatetime.from_calendar(2012, 11, 10, 10, 50, 0)
+    assert xml_team.teams[0].is_primary_club is True
+    assert xml_team.teams[0].founded_date == HTDatetime.from_calendar(
+        2012, 11, 10, 10, 50, 0,
+    )
     assert xml_team.teams[0].arena.id == 263018
     assert xml_team.teams[0].arena.name == 'Dziura Stadium'
     assert xml_team.teams[0].league.id == 24
@@ -51,13 +58,15 @@ def test_get_specific_team(mocked_chpp: 'CHPP'):
     assert xml_team.teams[0].region.name == 'Śląskie'
     assert xml_team.teams[0].trainer.id == 408819892
     assert xml_team.teams[0].homepage is None
-    assert xml_team.teams[0].dress_uri == '//res.hattrick.org/kits/29/285/2847/2846630/matchKitSmall.png'
-    assert xml_team.teams[0].dress_alternate_uri == '//res.hattrick.org/kits/29/285/2847/2846633/matchKitSmall.png'
+    assert xml_team.teams[0].dress_uri == ('//res.hattrick.org/kits/29/285/2847/'
+                                           '2846630/matchKitSmall.png')
+    assert xml_team.teams[0].dress_alternate_uri == ('//res.hattrick.org/kits/29/285/2847/'
+                                                     '2846633/matchKitSmall.png')
     assert xml_team.teams[0].league_level_unit.id == 9410
     assert xml_team.teams[0].league_level_unit.name == 'V.28'
     assert xml_team.teams[0].league_level_unit.level == 5
-    assert xml_team.teams[0].bot_status.is_bot == False
-    assert xml_team.teams[0].cup.still_in_cup == False
+    assert xml_team.teams[0].bot_status.is_bot is False
+    assert xml_team.teams[0].cup.still_in_cup is False
     assert xml_team.teams[0].power_rating.global_ranking == 41515
     assert xml_team.teams[0].power_rating.league_ranking == 2040
     assert xml_team.teams[0].power_rating.region_ranking == 343
@@ -76,8 +85,8 @@ def test_get_specific_team(mocked_chpp: 'CHPP'):
     assert xml_team.teams[0].youth_team.id == 2555250
     assert xml_team.teams[0].youth_team.name == 'Sojczanka Bytom U-19'
     assert xml_team.teams[0].number_of_visits == 5
-    assert xml_team.teams[0].possible_to_challenge_midweek == False
-    assert xml_team.teams[0].possible_to_challenge_weekend == False
+    assert xml_team.teams[0].possible_to_challenge_midweek is False
+    assert xml_team.teams[0].possible_to_challenge_weekend is False
 
 
 def test_get_specific_team_currently_playing(mocked_chpp):
@@ -92,7 +101,7 @@ def test_get_specific_team_currently_playing(mocked_chpp):
     assert xml_team.user.login_name == "lpannese"
     assert xml_team.user.name == "HIDDEN"
     assert xml_team.user.icq is None
-    assert xml_team.user.signup_date == HTDatetime.from_calendar(2008, 8, 18,20, 52, 9)
+    assert xml_team.user.signup_date == HTDatetime.from_calendar(2008, 8, 18, 20, 52, 9)
     assert xml_team.user.activation_date == HTDatetime.from_calendar(2008, 8, 20, 2, 53, 0)
     assert xml_team.user.last_login_date == HTDatetime.from_calendar(2024, 9, 8, 5, 2, 47)
     assert xml_team.user.has_manager_license is True

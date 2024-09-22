@@ -31,9 +31,9 @@ class HTTeam(td.BaseTeamDetails, td.TeamItem, BaseHTTeam):
 
     def _pre_init(self, team_id=None, **kwargs):
         if team_id is not None:
-            self.XML_FILTER=f".[TeamID='{team_id}']/"
+            self.XML_FILTER = f".[TeamID='{team_id}']/"
         else:
-            self.XML_FILTER=f".[IsPrimaryClub='True']/"
+            self.XML_FILTER = ".[IsPrimaryClub='True']/"
 
     @property
     def is_bot(self) -> bool:
@@ -74,6 +74,7 @@ class HTTeamYouthTeam(HTLightYouthTeam, td.TeamItemYouthTeam):
 class HTTeamPlayers(RequestPlayers, PlayersViewTeam):
     XML_PREFIX = 'Team/'
     list: List['HTTeamPlayersItem'] = HTProxyField(PlayersViewTeam, 'players')
+
 
 class HTTeamPlayersItem(HTLightPlayer, PlayersViewTeamPlayerItem):
     """

@@ -1,8 +1,6 @@
 from pychpp.models.xml.transfers_team import TransfersTeam, TransfersTransferItem
 from pychpp.ht_datetime import HTDatetime
 
-from .fixtures import mocked_chpp
-
 
 def test_get_team_transfers(mocked_chpp):
 
@@ -21,10 +19,12 @@ def test_get_team_transfers(mocked_chpp):
 
     assert transfers_team.transfers.page_index == 1
     assert transfers_team.transfers.pages == 9
-    assert transfers_team.transfers.start_date == HTDatetime.from_calendar(2008, 10, 11,
-                                                                 16, 5, 0)
-    assert transfers_team.transfers.end_date == HTDatetime.from_calendar(2009, 10, 31,
-                                                               9, 44, 0)
+    assert transfers_team.transfers.start_date == HTDatetime.from_calendar(
+        2008, 10, 11, 16, 5, 0,
+    )
+    assert transfers_team.transfers.end_date == HTDatetime.from_calendar(
+        2009, 10, 31, 9, 44, 0,
+    )
 
     assert isinstance(transfers_team.transfers.transfer_items, list)
     assert len(transfers_team.transfers.transfer_items) == 25

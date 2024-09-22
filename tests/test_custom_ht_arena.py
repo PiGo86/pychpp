@@ -3,7 +3,7 @@ import re
 from pychpp.models.custom.ht_arena import HTArena
 from pychpp.models.custom.ht_team import HTTeam
 
-from .fixtures import chpp, mocked_chpp, ARENA_PATTERN, TEAM_PATTERN
+from .conftest import ARENA_PATTERN, TEAM_PATTERN
 
 
 def test_get_current_user_arena(chpp):

@@ -1,20 +1,21 @@
 from datetime import datetime
 from typing import Union, Optional
-from xml.etree.ElementInclude import include
 
 from rauth import OAuth1Service
 from rauth import OAuth1Session
 from rauth.oauth import HmacSha1Signature
-
 import xml.etree.ElementTree
 
 from pychpp import ht_training, ht_transfers_team, ht_world, ht_national_teams, ht_world_cup
-from pychpp.models.xml import manager_compendium, team_details, achievements, arena_details, challenges, region_details, \
-    league_details, league_fixtures, match_lineup, national_teams, national_team_details, player_details, training, \
-    transfers_team, world_details, world_cup, players, youth_player_details, youth_team_details, youth_player_list, \
-    matches_archive, match_details
-from pychpp.models.custom import ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player, ht_league_unit, \
-    ht_youth_player, ht_league, ht_matches_archive, ht_match, ht_challenge, ht_match_lineup
+from pychpp.models.xml import (manager_compendium, team_details, achievements, arena_details,
+                               challenges, region_details, league_details, league_fixtures,
+                               match_lineup, national_teams, national_team_details, player_details,
+                               training, transfers_team, world_details, world_cup, players,
+                               youth_player_details, youth_team_details, youth_player_list,
+                               matches_archive, match_details, cup_matches)
+from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
+                                  ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
+                                  ht_match, ht_challenge, ht_match_lineup)
 from pychpp import ht_error
 from pychpp.ht_xml import HTXml
 
@@ -370,7 +371,6 @@ class CHPPXml(CHPPBase):
 
         return achievements.Achievements(chpp=self, user_id=user_id)
 
-
     def xml_arena_details(
             self, stats_type: str = None, arena_id: int = None, team_id: int = None,
             match_type: str = None, first_date: datetime = None,
@@ -396,9 +396,8 @@ class CHPPXml(CHPPBase):
             )
 
         else:
-            raise ValueError(f"'stats_type' argument must be None, "
-                             f"or equal to 'MyArena' or 'OtherArenas'")
-
+            raise ValueError("'stats_type' argument must be None, "
+                             "or equal to 'MyArena' or 'OtherArenas'")
 
     def xml_challenges(
             self, action_type: str = 'view', team_id: Optional[int] = None,
@@ -456,10 +455,19 @@ class CHPPXml(CHPPBase):
             )
 
         else:
-            raise ValueError(f"if set, 'action_type' must be equal to"
-                             f"'view', 'challengeable', 'challenge', "
-                             f"'accept', 'decline' or 'withdraw'")
+            raise ValueError("if set, 'action_type' must be equal to"
+                             "'view', 'challengeable', 'challenge', "
+                             "'accept', 'decline' or 'withdraw'")
 
+    def xml_cup_matches(
+            self, cup_id: int, season: int = None, cup_round: int = None,
+            start_after_match_id: int = None, **kwargs,
+    ) -> cup_matches.CupMatches:
+
+        return cup_matches.CupMatches(
+            chpp=self, cup_id=cup_id, season=season, cup_round=cup_round,
+            start_after_match_id=start_after_match_id, **kwargs,
+        )
 
     def xml_league_details(
             self, league_level_unit_id: int = None, **kwargs,
@@ -469,7 +477,6 @@ class CHPPXml(CHPPBase):
             chpp=self, league_level_unit_id=league_level_unit_id, **kwargs,
         )
 
-
     def xml_league_fixtures(
             self, league_level_unit_id: int = None, season: int = None, **kwargs,
     ) -> league_fixtures.LeagueFixtures:
@@ -478,7 +485,6 @@ class CHPPXml(CHPPBase):
             chpp=self, league_level_unit_id=league_level_unit_id, season=season, **kwargs,
         )
 
-
     def xml_manager_compendium(
             self, user_id: int = None, **kwargs,
     ) -> manager_compendium.ManagerCompendium:
@@ -486,7 +492,6 @@ class CHPPXml(CHPPBase):
         return manager_compendium.ManagerCompendium(
             chpp=self, user_id=user_id, **kwargs,
         )
-
 
     def xml_match_details(
             self, match_id: int, source_system: str = None,
@@ -498,7 +503,6 @@ class CHPPXml(CHPPBase):
             match_events=match_events, **kwargs,
         )
 
-
     def xml_match_lineup(
             self, match_id: int = None, team_id: int = None,
             source_system: str = None, **kwargs,
@@ -508,7 +512,6 @@ class CHPPXml(CHPPBase):
             chpp=self, match_id=match_id, team_id=team_id,
             source_system=source_system, **kwargs,
         )
-
 
     def xml_matches_archive(
             self, team_id: int = None, is_youth: bool = None,
@@ -522,7 +525,6 @@ class CHPPXml(CHPPBase):
             season=season, include_hto=include_hto, **kwargs,
         )
 
-
     def xml_national_teams(
             self, league_office_type_id: int = None, **kwargs,
     ) -> national_teams.NationalTeams:
@@ -531,7 +533,6 @@ class CHPPXml(CHPPBase):
             chpp=self, league_office_type_id=league_office_type_id, **kwargs,
         )
 
-
     def xml_national_team_details(
             self, team_id: int, **kwargs,
     ) -> national_team_details.NationalTeamDetails:
@@ -539,7 +540,6 @@ class CHPPXml(CHPPBase):
         return national_team_details.NationalTeamDetails(
             chpp=self, team_id=team_id, **kwargs,
         )
-
 
     def xml_players(self, action_type: str = 'view', order_by: str = None,
                     team_id: int = None, include_match_info: bool = None, **kwargs,
@@ -566,9 +566,8 @@ class CHPPXml(CHPPBase):
             )
 
         else:
-            raise ValueError(f"if set, 'action_type' must be equal to"
-                             f"'view', 'viewOldies' or 'viewOldCoaches'")
-
+            raise ValueError("if set, 'action_type' must be equal to"
+                             "'view', 'viewOldies' or 'viewOldCoaches'")
 
     def xml_player_details(
             self, action_type: str = None, player_id: int = None,
@@ -582,14 +581,12 @@ class CHPPXml(CHPPBase):
             bid_amount=bid_amount, max_bid_amount=max_bid_amount, **kwargs,
         )
 
-
     def xml_region_details(
             self, region_id: int = None, **kwargs,
     ) -> region_details.RegionDetails:
         return region_details.RegionDetails(
             chpp=self, region_id=region_id, **kwargs,
         )
-
 
     def xml_team_details(
             self, team_id: int = None, user_id: int = None,
@@ -603,7 +600,6 @@ class CHPPXml(CHPPBase):
             include_flags=include_flags, include_supporters=include_supporters,
             ** kwargs,
         )
-
 
     def xml_training(
             self, action_type: str = 'view', team_id: int = None,
@@ -634,9 +630,8 @@ class CHPPXml(CHPPBase):
             )
 
         else:
-            raise ValueError(f"if set, 'action_type' must be equal to"
-                             f"'view', 'setTraining' or 'stats'")
-
+            raise ValueError("if set, 'action_type' must be equal to"
+                             "'view', 'setTraining' or 'stats'")
 
     def xml_transfers_team(
             self, team_id: int = None, page_index: int = None, **kwargs,
@@ -645,7 +640,6 @@ class CHPPXml(CHPPBase):
         return transfers_team.TransfersTeam(
             chpp=self, team_id=team_id, page_index=page_index, **kwargs,
         )
-
 
     def xml_world_cup(
             self, action_type: str = 'viewMatches', cup_id: int = None,
@@ -667,9 +661,8 @@ class CHPPXml(CHPPBase):
             )
 
         else:
-            raise ValueError(f"if set, 'action_type' must be equal to "
-                             f"'viewMatches' or 'viewGroups'")
-
+            raise ValueError("if set, 'action_type' must be equal to "
+                             "'viewMatches' or 'viewGroups'")
 
     def xml_world_details(
             self, league_id: int = None, country_id: int = None,
@@ -680,7 +673,6 @@ class CHPPXml(CHPPBase):
             chpp=self, include_regions=include_regions, country_id=country_id,
             league_id=league_id, **kwargs,
         )
-
 
     def xml_youth_player_details(
             self, action_type: str = None, youth_player_id: int = None,
@@ -693,7 +685,6 @@ class CHPPXml(CHPPBase):
             show_scout_call=show_scout_call, show_last_match=show_last_match,
             **kwargs,
         )
-
 
     def xml_youth_player_list(
             self, action_type: str = 'list', order_by: str = None,
@@ -716,9 +707,8 @@ class CHPPXml(CHPPBase):
             )
 
         else:
-            raise ValueError(f"if set, 'action_type' must be equal to "
-                             f"'list', 'details' or 'unlockskills'")
-
+            raise ValueError("if set, 'action_type' must be equal to "
+                             "'list', 'details' or 'unlockskills'")
 
     def xml_youth_team_details(
             self, youth_team_id: int = None, show_scouts: bool = None, **kwargs,
@@ -805,7 +795,6 @@ class CHPP(CHPPXml):
         """
         return ht_youth_player.HTYouthPlayer(chpp=self, youth_player_id=id_, **kwargs)
 
-
     def region(self, id_: int = None, **kwargs) -> ht_region.HTRegion:
         """
         Get a region from his Hattrick ID
@@ -814,7 +803,6 @@ class CHPP(CHPPXml):
         :rtype: ht_region.HTRegion
         """
         return ht_region.HTRegion(chpp=self, region_id=id_, **kwargs)
-
 
     def challenge_manager(
             self, team_id: int = None, is_weekend_friendly: bool = None, **kwargs,
@@ -855,7 +843,6 @@ class CHPP(CHPPXml):
             chpp=self, match_id=id_, source_system=source_system, match_events=events, **kwargs,
         )
 
-
     def matches_archive(self, id_: int = None, is_youth: bool = None,
                         first_match_date: datetime = None, last_match_date: datetime = None,
                         season: int = None, include_hto: bool = None, **kwargs,
@@ -874,7 +861,6 @@ class CHPP(CHPPXml):
             chpp=self, team_id=id_, is_youth=is_youth, first_match_date=first_match_date,
             last_match_date=last_match_date, season=season, include_hto=include_hto, **kwargs)
 
-
     def league_fixtures(self, **kwargs):
         """
         Get a league from his Hattrick ID
@@ -884,7 +870,6 @@ class CHPP(CHPPXml):
         :rtype: ht_league.HTLeague
         """
         return ht_league.HTLeagueFixtures(chpp=self, **kwargs)
-
 
     def match_lineup(
             self, match_id: int = None, team_id: int = None, source_system: str = None, **kwargs
@@ -901,7 +886,6 @@ class CHPP(CHPPXml):
             source_system=source_system, **kwargs,
         )
 
-
     def world(self, **kwargs):
         """
         Get a world details
@@ -914,7 +898,6 @@ class CHPP(CHPPXml):
         """
         return ht_world.HTWorld(chpp=self, **kwargs)
 
-
     def national_team(self, **kwargs):
         """
         Get a national team from its ID
@@ -925,7 +908,6 @@ class CHPP(CHPPXml):
         """
         return ht_national_teams.HTNationalTeam(chpp=self, **kwargs)
 
-
     def national_teams(self, **kwargs):
         """
         Get a national team from its ID
@@ -935,7 +917,6 @@ class CHPP(CHPPXml):
         :rtype: ht_national_teams.HTNationalTeams
         """
         return ht_national_teams.HTNationalTeams(chpp=self, **kwargs)
-
 
     def training(self, **kwargs):
         """
@@ -953,7 +934,6 @@ class CHPP(CHPPXml):
         """
         return ht_training.HTTraining(chpp=self, **kwargs)
 
-
     def world_cup_groups(self, **kwargs):
         """
         Get the World Cup groups (AA or U-20)
@@ -964,7 +944,6 @@ class CHPP(CHPPXml):
         :rtype: ht_world_cup.HTWorldCupGroups
         """
         return ht_world_cup.HTWorldCupGroups(chpp=self, **kwargs)
-
 
     def world_cup_matches(self, **kwargs):
         """
@@ -981,7 +960,6 @@ class CHPP(CHPPXml):
         :rtype: ht_world_cup.HTWorldCupMatches
         """
         return ht_world_cup.HTWorldCupMatches(chpp=self, **kwargs)
-
 
     def transfers_team(self, **kwargs):
         """

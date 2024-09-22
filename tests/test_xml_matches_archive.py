@@ -1,8 +1,6 @@
 from pychpp.ht_datetime import HTDatetime
 from pychpp.models.xml.matches_archive import MatchesArchive, MatchItem, MatchItemTeam
 
-from .fixtures import chpp, mocked_chpp
-
 
 def test_get_current_user_matches_archive(chpp):
     ma1 = chpp.xml_matches_archive()

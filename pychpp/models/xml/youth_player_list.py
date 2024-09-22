@@ -19,6 +19,7 @@ class RequestYouthPlayerList(HTModel):
     _r_show_scout_call: Optional[bool] = HTInitVar('showScoutCall', init_arg='show_scout_call')
     _r_show_last_match: Optional[bool] = HTInitVar('showLastMatch', init_arg='show_last_match')
 
+
 class YouthPlayerListList(RequestYouthPlayerList):
     """
     Youth Player List - List
@@ -31,7 +32,6 @@ class YouthPlayerListDetails(RequestYouthPlayerList):
     Youth Player List - Details/Unlock skills
     """
     list: List['YouthPlayerListDetailsPlayerItem'] = HTField('PlayerList', items='YouthPlayer')
-
 
 
 class YouthPlayerListListPlayerItem(HTModel):

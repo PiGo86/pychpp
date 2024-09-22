@@ -1,7 +1,5 @@
 from pychpp.models.xml.league_fixtures import LeagueFixtures, MatchItem
 
-from .fixtures import mocked_chpp
-
 
 def test_get_league_fixtures(mocked_chpp):
     l_fixtures = mocked_chpp.xml_league_fixtures(league_level_unit_id=36378, season=76)

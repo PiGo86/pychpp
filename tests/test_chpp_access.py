@@ -1,14 +1,4 @@
-import os
-import datetime as dt
-import pytz
-import pytest
-import re
-import pathlib
-import xml.etree.ElementTree
-
 from pychpp import CHPP
-
-from .fixtures import chpp, mocked_chpp
 
 
 def test_request_token(chpp: CHPP):
@@ -25,4 +15,3 @@ def test_request_token(chpp: CHPP):
     assert (isinstance(auth['url'], str)
             and 'https://chpp.hattrick.org/oauth/authorize.aspx'
                 '?scope=&oauth_token=' in auth['url'])
-

@@ -29,7 +29,7 @@ class HTYouthTeam(ytd.BaseYouthTeamDetails, CustomModel):
     senior_team_id: int = HTProxyField(ytd.YouthTeamDetails, 'owning_team.id')
     league_id: int = HTProxyField(ytd.YouthTeamDetails, 'league.id')
 
-    def players(self) -> list[YouthPlayerListListPlayerItem]:
+    def players(self) -> List[YouthPlayerListListPlayerItem]:
         xml_players = HTYouthTeamPlayers(chpp=self._chpp,
                                          youth_team_id=self.id)
         return xml_players.list
@@ -43,6 +43,7 @@ class HTYouthTeam(ytd.BaseYouthTeamDetails, CustomModel):
 
 class HTYouthTeamPlayers(YouthPlayerListList):
     list: List['HTYouthTeamPlayerItem'] = HTProxyField(YouthPlayerListList)
+
 
 class HTYouthTeamPlayerItem(HTLightYouthPlayer, YouthPlayerListListPlayerItem):
     """

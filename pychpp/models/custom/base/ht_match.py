@@ -1,5 +1,6 @@
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
+from pychpp.models.xml.match_details import MatchHomeTeam, MatchAwayTeam
 
 
 class BaseHTMatch(CustomModel):
@@ -12,13 +13,13 @@ class BaseHTMatch(CustomModel):
     _r_source_system = HTInitVar('SourceSystem', fill_with='source_system')
 
     id: int
-    home_team_name: str
-    away_team_name: str
+    home_team: MatchHomeTeam
+    away_team: MatchAwayTeam
     source_system: str
 
     def __repr__(self):
         return (f"<{self.__class__.__name__} object - "
-                f"{self.home_team_name} - {self.away_team_name} ({self.id})>")
+                f"{self.home_team.name} - {self.away_team.name} ({self.id})>")
 
 
 class HTCommonLightMatch(BaseHTMatch):

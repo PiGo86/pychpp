@@ -30,7 +30,8 @@ class BaseTrainingSetTraining(HTModel):
     """
     _r_training_type: str = HTInitVar('trainingType', init_arg='training_type')
     _r_training_level: int = HTInitVar('trainingLevel', init_arg='training_level')
-    _r_training_level_stamina: int = HTInitVar('trainingLevelStamina', init_arg='training_level_stamina')
+    _r_training_level_stamina: int = HTInitVar('trainingLevelStamina',
+                                               init_arg='training_level_stamina')
 
 
 class CommonTrainingViewSetTraining(BaseTraining):

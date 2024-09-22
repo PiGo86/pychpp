@@ -3,7 +3,8 @@ import pytest
 from pychpp.models.custom.ht_challenge import HTChallengeManager
 from pychpp.ht_error import HTUnauthorizedAction
 
-from .fixtures import chpp, PYCHPP_SCOPE
+from .conftest import PYCHPP_SCOPE
+
 
 def test_is_challengeable(chpp):
 

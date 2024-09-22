@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from pychpp.models.ht_model import HTField, HTInitVar, HTAliasField, HTModel
+from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
 class ManagerCompendium(HTModel):
@@ -21,8 +21,11 @@ class ManagerCompendium(HTModel):
     country: 'Country' = HTField(path='Manager/Country')
     currency: 'Currency' = HTField(path='Manager/Currency')
     teams: List['TeamItem'] = HTField(path='Manager/Teams', items='Team')
-    national_teams_coach: List['NationalTeamItem'] = HTField(path='Manager/NationalTeamCoach', items='NationalTeam')
-    national_teams_assistant: List['NationalTeamItem'] = HTField(path='Manager/NationalTeamAssistant', items='NationalTeam')
+    national_teams_coach: List['NationalTeamItem'] = HTField(path='Manager/NationalTeamCoach',
+                                                             items='NationalTeam')
+    national_teams_assistant: List['NationalTeamItem'] = HTField(
+        path='Manager/NationalTeamAssistant', items='NationalTeam',
+    )
     avatar: 'Avatar' = HTField(path='Manager/Avatar')
 
 

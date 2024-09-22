@@ -10,7 +10,7 @@ class HTXml:
     """
 
     @staticmethod
-    def ht_str(data: ElementTree.Element, attrib:str = None):
+    def ht_str(data: ElementTree.Element, attrib: str = None):
         if attrib is not None:
             return str(data.attrib.get(attrib, None))
         else:
@@ -21,7 +21,7 @@ class HTXml:
         return [item.text for item in data.findall(item_tag)]
 
     @staticmethod
-    def ht_int(data: ElementTree.Element, attrib:str = None):
+    def ht_int(data: ElementTree.Element, attrib: str = None):
         if attrib is not None:
             return int(data.attrib.get(attrib, None))
         else:

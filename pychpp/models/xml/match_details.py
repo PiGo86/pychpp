@@ -73,6 +73,7 @@ class MatchHomeTeam(BaseMatchTeam):
     name: str = HTField('HomeTeamName')
     goals: int = HTField('HomeGoals')
 
+
 class MatchAwayTeam(BaseMatchTeam):
     """
     Match Details -> Match -> Away team
@@ -93,8 +94,8 @@ class MatchTeamRatings(HTModel):
     right_attack: int = HTField('RatingRightDef')
     mid_attack: int = HTField('RatingMidDef')
     left_attack: int = HTField('RatingLeftDef')
-    indirect_set_pieces_defense: int = HTField('RatingIndirectSetPiecesDef')
-    indirect_set_pieces_attack: int = HTField('RatingIndirectSetPiecesAtt')
+    indirect_set_pieces_defense: Optional[int] = HTField('RatingIndirectSetPiecesDef')
+    indirect_set_pieces_attack: Optional[int] = HTField('RatingIndirectSetPiecesAtt')
 
 
 class MatchTeamChances(HTModel):

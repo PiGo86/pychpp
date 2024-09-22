@@ -1,7 +1,5 @@
 from pychpp.models.xml.player_details import PlayerDetails, PlayerSkills
 
-from .fixtures import mocked_chpp
-
 
 def test_get_player(mocked_chpp):
     player = mocked_chpp.xml_player_details(player_id=432002549)
@@ -15,7 +13,8 @@ def test_get_player(mocked_chpp):
     assert player.aggressiveness == 3
     assert player.honesty == 3
 
-    for i in ("stamina", "keeper", "defender", "playmaker", "winger", "scorer", "passing", "set_pieces"):
+    for i in ("stamina", "keeper", "defender", "playmaker", "winger",
+              "scorer", "passing", "set_pieces"):
         assert getattr(player.skills, i) is None or isinstance(getattr(player.skills, i), int)
 
     assert player.tsi == 230

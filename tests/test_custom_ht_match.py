@@ -3,7 +3,7 @@ import re
 from pychpp.ht_datetime import HTDatetime
 from pychpp.models.custom.ht_match import HTMatch
 
-from .fixtures import mocked_chpp, MATCH_PATTERN
+from .conftest import MATCH_PATTERN
 
 
 def test_get_match(mocked_chpp):

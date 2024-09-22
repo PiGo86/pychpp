@@ -19,9 +19,11 @@ class CustomModel(HTModel):
 
         elif self.URL_PATH is not None:
             args = {
-                ivar.param: self._requests_args.get(ivar.param, getattr(self, str(ivar.fill_with), None))
+                ivar.param: self._requests_args.get(ivar.param,
+                                                    getattr(self, str(ivar.fill_with), None))
                 for ivar in self._ht_init_vars.values()
-                if self._requests_args.get(ivar.param, getattr(self, str(ivar.fill_with), None)) is not None
+                if self._requests_args.get(ivar.param,
+                                           getattr(self, str(ivar.fill_with), None)) is not None
             }
             params = urlencode(args)
             if params:

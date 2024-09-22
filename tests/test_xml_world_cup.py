@@ -1,7 +1,7 @@
-from pychpp.models.xml.world_cup import WorldCupViewGroups, ViewGroupsRoundItem, WorldCupViewMatches, \
-    ViewGroupsTeamItem, ViewMatchesMatchItem, ViewMatchesRoundItem
+from pychpp.models.xml.world_cup import (WorldCupViewGroups, ViewGroupsRoundItem,
+                                         WorldCupViewMatches, ViewGroupsTeamItem,
+                                         ViewMatchesMatchItem, ViewMatchesRoundItem)
 
-from .fixtures import mocked_chpp
 
 def test_get_world_cup_rounds(mocked_chpp):
     wc_groups = mocked_chpp.xml_world_cup(action_type='viewGroups', season=76)

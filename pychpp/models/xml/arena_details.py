@@ -139,7 +139,7 @@ class Arenas(HTModel):
     """
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
-    image: str  =HTField('ArenaImage')
+    image: str = HTField('ArenaImage')
     fallback_image: str = HTField('ArenaFallbackImage')
     arena_size: int = HTField('ArenaSize')
     arena_league_id: int = HTField('ArenaLeagueID')

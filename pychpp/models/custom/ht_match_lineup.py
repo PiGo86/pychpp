@@ -1,7 +1,7 @@
 from copy import deepcopy
 from dataclasses import dataclass
 from enum import Enum
-from typing import List, Optional, Union, Iterable
+from typing import List, Optional, Union, Iterable, Dict
 
 from pychpp.models.custom import CustomModel
 from pychpp.models.custom.base.ht_match import HTCommonLightMatch
@@ -24,10 +24,11 @@ class HTMatchLineup(CustomModel, ml.RequestMatchLineup):
     away_team: 'HTMatchLineupTeam' = HTProxyField(ml.MatchLineup)
 
     _match_id: int = HTProxyField(ml.MatchLineup, 'match_id')
-    team_lineup: 'HTMatchLineupTeamLineup' = HTProxyField(ml.MatchLineup, 'team',
-                                                          suppl_attrs={'_match_id': '_match_id',
-                                                                       'source_system': 'source_system',
-                                                                       })
+    team_lineup: 'HTMatchLineupTeamLineup' = HTProxyField(
+        ml.MatchLineup, 'team', suppl_attrs={'_match_id': '_match_id',
+                                             'source_system': 'source_system',
+                                             }
+    )
 
 
 class HTMatchLineupMatch(HTCommonLightMatch):
@@ -89,7 +90,12 @@ class HTMatchLineupTeamLineup(CustomModel):
         lineup_players = (self.starting_lineup_players if start
                           else self.ending_lineup_players)
 
-        lineup: dict[str, dict[int, Optional[Union['HTMLStartingLineupPlayersItem','HTMLEndingLineupPlayersItem', 'GhostPlayer']]]]
+        lineup: Dict[str,
+                     Dict[int,
+                          Optional[Union['HTMLStartingLineupPlayersItem',
+                                         'HTMLEndingLineupPlayersItem',
+                                         'GhostPlayer',
+                                         ]]]]
         lineup = {a.name: {v: None for v in a.value} for a in LineupGlobalRoles}
 
         for p in lineup_players:
@@ -104,8 +110,8 @@ class HTMatchLineupTeamLineup(CustomModel):
     @staticmethod
     def _player_from_lineup(
             id_: int,
-            lineup: dict[str, dict[[int, 'HTMLLineupPlayersItem']]],
-            included_positions:Optional[Iterable] = None):
+            lineup: Dict[str, Dict[int, 'HTMLLineupPlayersItem']],
+            included_positions: Optional[Iterable] = None):
 
         if included_positions is not None:
             new_lineup = dict()
@@ -228,7 +234,9 @@ class HTMatchLineupTeamLineup(CustomModel):
 
                         pos_2_id = change.new_position_id
                         player_2.role_id = pos_2_id
-                        lineup[LineupGlobalRoles.position_from_role_id(pos_2_id)][pos_2_id] = player_2
+                        lineup[
+                            LineupGlobalRoles.position_from_role_id(pos_2_id)
+                        ][pos_2_id] = player_2
 
                 # if position swap, swap players in lineup
                 # and swap players role_id
@@ -311,6 +319,7 @@ class HTMLEndingLineupPlayersItem(HTMLLineupPlayersItem, ml.TeamStartingLineupPl
     """
     Hattrick Match Lineup -> Team lineup -> Ending lineup -> -> Player item
     """
+
 
 @dataclass
 class GhostPlayer:
@@ -414,13 +423,13 @@ class LineupGlobalRoles(Enum):
                                     )}
 
     BACKUP = {i.value for i in (LineupRoles.BACKUP_KEEPER,
-                                    LineupRoles.BACKUP_CENTRAL_DEFENDER,
-                                    LineupRoles.BACKUP_INNER_MIDFIELD,
-                                    LineupRoles.BACKUP_WINGER,
-                                    LineupRoles.BACKUP_WINGER,
-                                    LineupRoles.BACKUP_WING_BACK,
-                                    LineupRoles.BACKUP_EXTRA,
-                                    )}
+                                LineupRoles.BACKUP_CENTRAL_DEFENDER,
+                                LineupRoles.BACKUP_INNER_MIDFIELD,
+                                LineupRoles.BACKUP_WINGER,
+                                LineupRoles.BACKUP_WINGER,
+                                LineupRoles.BACKUP_WING_BACK,
+                                LineupRoles.BACKUP_EXTRA,
+                                )}
 
     SET_PIECES_TAKER = {LineupRoles.SET_PIECES_TAKER.value}
 

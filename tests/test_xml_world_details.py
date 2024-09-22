@@ -1,5 +1,6 @@
-from pychpp.models.xml.world_details import WorldDetails, LeagueItem, LeagueItemCountry, LeagueItemCupItem
-from .fixtures import chpp
+from pychpp.models.xml.world_details import (WorldDetails, LeagueItem,
+                                             LeagueItemCountry, LeagueItemCupItem)
+
 
 def test_get_world_details(chpp):
     portugal_details = chpp.xml_world_details(league_id=25, include_regions=True)

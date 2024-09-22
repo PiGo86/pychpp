@@ -16,7 +16,8 @@ class PlayerDetails(HTModel):
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
     _r_player_id: int = HTInitVar('playerID', init_arg='player_id')
-    _r_include_match_info: Optional[bool] = HTInitVar('includeMatchInfo', init_arg='include_match_info')
+    _r_include_match_info: Optional[bool] = HTInitVar('includeMatchInfo',
+                                                      init_arg='include_match_info')
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_bid_amount: Optional[int] = HTInitVar('bidAmount', init_arg='bid_amount')
     _r_max_bid_amount: Optional[int] = HTInitVar('maxBidAmount', init_arg='max_bid_amount')

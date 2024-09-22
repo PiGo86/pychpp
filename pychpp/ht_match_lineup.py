@@ -3,6 +3,7 @@ from pychpp import ht_arena, ht_match, ht_player, ht_xml
 
 from copy import deepcopy
 
+
 class HTMatchLineup(ht_model.HTModel):
     """
     Hattrick match lineup

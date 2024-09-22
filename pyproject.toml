@@ -11,7 +11,7 @@ homepage = "https://framagit.org/Pierre86/pychpp"
 [tool.poetry.dependencies]
 python = "^3.8"
 rauth = "^0.7.3"
-pytz = "^2022.6"
+pytz = "^2024.2"
 Werkzeug = "^2.2.2"
 
 [tool.poetry.group.dev.dependencies]

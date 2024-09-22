@@ -1,9 +1,8 @@
 import re
 
 from pychpp.models.custom.ht_youth_team import HTYouthTeam, HTYouthTeamPlayerItem
-from pychpp.models.xml.youth_player_list import YouthPlayerListListPlayerItem
 
-from .fixtures import chpp, YOUTH_PLAYER_PATTERN
+from .conftest import YOUTH_PLAYER_PATTERN
 
 
 def test_get_own_team_youth_player(chpp):

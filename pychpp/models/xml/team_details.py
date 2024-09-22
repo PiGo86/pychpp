@@ -14,9 +14,11 @@ class BaseTeamDetails(HTModel):
 
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_user_id: Optional[int] = HTInitVar('userID', init_arg='user_id')
-    _r_include_domestics_flags: Optional[bool] = HTInitVar('includeDomesticFlags', init_arg='include_domestics_flags')
+    _r_include_domestics_flags: Optional[bool] = HTInitVar('includeDomesticFlags',
+                                                           init_arg='include_domestics_flags')
     _r_include_flags: Optional[bool] = HTInitVar('includeFlags', init_arg='include_flags')
-    _r_include_supporters: Optional[bool] = HTInitVar('includeSupporters', init_arg='include_supporters')
+    _r_include_supporters: Optional[bool] = HTInitVar('includeSupporters',
+                                                      init_arg='include_supporters')
 
 
 class TeamDetails(BaseTeamDetails):
@@ -41,7 +43,8 @@ class User(HTModel):
     activation_date: datetime = HTField('ActivationDate')
     last_login_date: datetime = HTField('LastLoginDate')
     has_manager_license: bool = HTField('HasManagerLicense')
-    national_teams: Optional[List['NationalTeamItem']] = HTField('NationalTeams', items='NationalTeam')
+    national_teams: Optional[List['NationalTeamItem']] = HTField('NationalTeams',
+                                                                 items='NationalTeam')
 
 
 class UserLanguage(HTModel):
@@ -227,6 +230,7 @@ class TeamItemYouthTeam(HTModel):
     """
     id: int = HTField('YouthTeamID')
     name: str = HTField('YouthTeamName')
+
 
 class TeamItemFlags(HTModel):
     """
