@@ -1,0 +1,190 @@
+<HattrickData>
+  <FileName>cupmatches.xml</FileName>
+  <Version>1.4</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-21 22:40:58</FetchedDate>
+  <Cup>
+    <CupID>183</CupID>
+    <CupSeason>88</CupSeason>
+    <CupRound>6</CupRound>
+    <CupName>Hattrick Masters</CupName>
+    <MatchList>
+      <Match>
+        <MatchID>736551976</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>1136434</TeamId>
+          <TeamName>1.FC Mittelsdorf</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>707568</TeamId>
+          <TeamName>Cleveland LeBroniers FC</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>1</HomeGoals>
+          <AwayGoals>0</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>3</HomeLeagueID>
+          <AwayLeagueID>18</AwayLeagueID>
+          <HomeLeagueName>Deutschland</HomeLeagueName>
+          <AwayLeagueName>Chile</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+      <Match>
+        <MatchID>736551977</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>1955570</TeamId>
+          <TeamName>MESUT OZIL IFC</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>299942</TeamId>
+          <TeamName>Torpedo Wien Amateure</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>2</HomeGoals>
+          <AwayGoals>1</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>85</HomeLeagueID>
+          <AwayLeagueID>39</AwayLeagueID>
+          <HomeLeagueName>Iran</HomeLeagueName>
+          <AwayLeagueName>Österreich</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+      <Match>
+        <MatchID>736551978</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>305963</TeamId>
+          <TeamName>Dude Linz</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>1850457</TeamId>
+          <TeamName>Awesenal</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>3</HomeGoals>
+          <AwayGoals>5</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>39</HomeLeagueID>
+          <AwayLeagueID>34</AwayLeagueID>
+          <HomeLeagueName>Österreich</HomeLeagueName>
+          <AwayLeagueName>China</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+      <Match>
+        <MatchID>736551980</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>987262</TeamId>
+          <TeamName>Rayo Vayacaño FC</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>2066118</TeamId>
+          <TeamName>Garbiñe Muguruza C.F.</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>2</HomeGoals>
+          <AwayGoals>1</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>122</HomeLeagueID>
+          <AwayLeagueID>164</AwayLeagueID>
+          <HomeLeagueName>Hayastan</HomeLeagueName>
+          <AwayLeagueName>Haiti</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+      <Match>
+        <MatchID>736551981</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>987924</TeamId>
+          <TeamName>loucogg team</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>114675</TeamId>
+          <TeamName>JP Traksid</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>8</HomeGoals>
+          <AwayGoals>7</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>126</HomeLeagueID>
+          <AwayLeagueID>56</AwayLeagueID>
+          <HomeLeagueName>Côte d’Ivoire</HomeLeagueName>
+          <AwayLeagueName>Eesti</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+      <Match>
+        <MatchID>736551979</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>2020680</TeamId>
+          <TeamName>Field of Hearts</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>1960986</TeamId>
+          <TeamName>VaroTeam</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>4</HomeGoals>
+          <AwayGoals>2</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>120</HomeLeagueID>
+          <AwayLeagueID>143</AwayLeagueID>
+          <HomeLeagueName>Lubnan</HomeLeagueName>
+          <AwayLeagueName>Uganda</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+      <Match>
+        <MatchID>736551982</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>1890590</TeamId>
+          <TeamName>Mondulkirin Kiri</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>717274</TeamId>
+          <TeamName>Igarapava Cabrito's</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>1</HomeGoals>
+          <AwayGoals>3</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>138</HomeLeagueID>
+          <AwayLeagueID>16</AwayLeagueID>
+          <HomeLeagueName>Kampuchea</HomeLeagueName>
+          <AwayLeagueName>Brasil</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+      <Match>
+        <MatchID>736551983</MatchID>
+        <MatchDate>2024-07-11 20:00:00</MatchDate>
+        <HomeTeam>
+          <TeamId>2016273</TeamId>
+          <TeamName>SC Pastinakken</TeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <TeamId>115884</TeamId>
+          <TeamName>Kapr Polni Brno</TeamName>
+        </AwayTeam>
+        <MatchResult Available="True">
+          <HomeGoals>2</HomeGoals>
+          <AwayGoals>5</AwayGoals>
+        </MatchResult>
+        <LeagueInfo Available="True">
+          <HomeLeagueID>106</HomeLeagueID>
+          <AwayLeagueID>52</AwayLeagueID>
+          <HomeLeagueName>Al Urdun</HomeLeagueName>
+          <AwayLeagueName>Česko</AwayLeagueName>
+        </LeagueInfo>
+      </Match>
+    </MatchList>
+  </Cup>
+</HattrickData>

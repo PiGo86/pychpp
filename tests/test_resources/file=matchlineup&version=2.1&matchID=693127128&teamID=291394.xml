@@ -1,0 +1,367 @@
+<HattrickData>
+  <FileName>matchlineup.xml</FileName>
+  <Version>2.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-17 11:54:51</FetchedDate>
+  <MatchID>693127128</MatchID>
+  <SourceSystem>Hattrick</SourceSystem>
+  <MatchType>1</MatchType>
+  <MatchContextId>36640</MatchContextId>
+  <MatchDate>2022-04-30 21:00:00</MatchDate>
+  <HomeTeam>
+    <HomeTeamID>291394</HomeTeamID>
+    <HomeTeamName>Les Tigres du 49</HomeTeamName>
+  </HomeTeam>
+  <AwayTeam>
+    <AwayTeamID>590056</AwayTeamID>
+    <AwayTeamName>Boucherie Grovilloise Agréée (gare aux genoux)</AwayTeamName>
+  </AwayTeam>
+  <Arena>
+    <ArenaID>291394</ArenaID>
+    <ArenaName>Tiger Arena</ArenaName>
+  </Arena>
+  <Team>
+    <TeamID>291394</TeamID>
+    <TeamName>Les Tigres du 49</TeamName>
+    <ExperienceLevel>3</ExperienceLevel>
+    <StyleOfPlay>-1000</StyleOfPlay>
+    <StartingLineup>
+      <Player>
+        <PlayerID>460469864</PlayerID>
+        <RoleID>100</RoleID>
+        <FirstName>Alfred</FirstName>
+        <LastName>Gomin</LastName>
+        <NickName />
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>430467302</PlayerID>
+        <RoleID>101</RoleID>
+        <FirstName>Lodovico</FirstName>
+        <LastName>Badii</LastName>
+        <NickName />
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>454199268</PlayerID>
+        <RoleID>103</RoleID>
+        <FirstName>Kalman</FirstName>
+        <LastName>Suleimanov</LastName>
+        <NickName />
+        <Behaviour>1</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>410234662</PlayerID>
+        <RoleID>105</RoleID>
+        <FirstName>Heru</FirstName>
+        <LastName>Rizki</LastName>
+        <NickName />
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>424075228</PlayerID>
+        <RoleID>106</RoleID>
+        <FirstName>Bastian</FirstName>
+        <LastName>Santamaria</LastName>
+        <NickName />
+        <Behaviour>3</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>458172019</PlayerID>
+        <RoleID>107</RoleID>
+        <FirstName>Lorenzo</FirstName>
+        <LastName>Assink</LastName>
+        <NickName />
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>462295308</PlayerID>
+        <RoleID>108</RoleID>
+        <FirstName>Didier</FirstName>
+        <LastName>Romanet</LastName>
+        <NickName />
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>460412769</PlayerID>
+        <RoleID>109</RoleID>
+        <FirstName>Mickaël</FirstName>
+        <LastName>Lamarque</LastName>
+        <NickName />
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>456842513</PlayerID>
+        <RoleID>110</RoleID>
+        <FirstName>Francesco</FirstName>
+        <LastName>Anastasio</LastName>
+        <NickName />
+        <Behaviour>3</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>460270352</PlayerID>
+        <RoleID>111</RoleID>
+        <FirstName>Adriaan</FirstName>
+        <LastName>Trustfull</LastName>
+        <NickName />
+        <Behaviour>2</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>419285238</PlayerID>
+        <RoleID>113</RoleID>
+        <FirstName>Sébastien</FirstName>
+        <LastName>Batteux</LastName>
+        <NickName />
+        <Behaviour>2</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>430467302</PlayerID>
+        <RoleID>17</RoleID>
+        <FirstName>Lodovico</FirstName>
+        <LastName>Badii</LastName>
+        <NickName />
+      </Player>
+      <Player>
+        <PlayerID>430467302</PlayerID>
+        <RoleID>18</RoleID>
+        <FirstName>Lodovico</FirstName>
+        <LastName>Badii</LastName>
+        <NickName />
+      </Player>
+    </StartingLineup>
+    <Substitutions>
+      <Substitution>
+        <TeamID>291394</TeamID>
+        <SubjectPlayerID>410234662</SubjectPlayerID>
+        <ObjectPlayerID>451380557</ObjectPlayerID>
+        <OrderType>1</OrderType>
+        <NewPositionId>105</NewPositionId>
+        <NewPositionBehaviour>0</NewPositionBehaviour>
+        <MatchMinute>35</MatchMinute>
+        <MatchPart>1</MatchPart>
+      </Substitution>
+      <Substitution>
+        <TeamID>291394</TeamID>
+        <SubjectPlayerID>419285238</SubjectPlayerID>
+        <ObjectPlayerID>456758745</ObjectPlayerID>
+        <OrderType>1</OrderType>
+        <NewPositionId>113</NewPositionId>
+        <NewPositionBehaviour>4</NewPositionBehaviour>
+        <MatchMinute>70</MatchMinute>
+        <MatchPart>2</MatchPart>
+      </Substitution>
+      <Substitution>
+        <TeamID>291394</TeamID>
+        <SubjectPlayerID>424075228</SubjectPlayerID>
+        <ObjectPlayerID>456698027</ObjectPlayerID>
+        <OrderType>1</OrderType>
+        <NewPositionId>106</NewPositionId>
+        <NewPositionBehaviour>1</NewPositionBehaviour>
+        <MatchMinute>75</MatchMinute>
+        <MatchPart>2</MatchPart>
+      </Substitution>
+      <Substitution>
+        <TeamID>291394</TeamID>
+        <SubjectPlayerID>456842513</SubjectPlayerID>
+        <ObjectPlayerID>456842513</ObjectPlayerID>
+        <OrderType>1</OrderType>
+        <NewPositionId>110</NewPositionId>
+        <NewPositionBehaviour>1</NewPositionBehaviour>
+        <MatchMinute>75</MatchMinute>
+        <MatchPart>2</MatchPart>
+      </Substitution>
+      <Substitution>
+        <TeamID>291394</TeamID>
+        <SubjectPlayerID>460469864</SubjectPlayerID>
+        <ObjectPlayerID>451380557</ObjectPlayerID>
+        <OrderType>1</OrderType>
+        <NewPositionId>100</NewPositionId>
+        <NewPositionBehaviour>0</NewPositionBehaviour>
+        <MatchMinute>81</MatchMinute>
+        <MatchPart>2</MatchPart>
+      </Substitution>
+    </Substitutions>
+    <Lineup>
+      <Player>
+        <PlayerID>451380557</PlayerID>
+        <RoleID>100</RoleID>
+        <FirstName>Emmanuel</FirstName>
+        <LastName>Garin</LastName>
+        <NickName />
+        <RatingStars>3.5</RatingStars>
+        <RatingStarsEndOfMatch>2</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>430467302</PlayerID>
+        <RoleID>101</RoleID>
+        <FirstName>Lodovico</FirstName>
+        <LastName>Badii</LastName>
+        <NickName />
+        <RatingStars>6</RatingStars>
+        <RatingStarsEndOfMatch>4.5</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>456698027</PlayerID>
+        <RoleID>106</RoleID>
+        <FirstName>Gael Mariano</FirstName>
+        <LastName>Laborinho</LastName>
+        <NickName />
+        <RatingStars>5</RatingStars>
+        <RatingStarsEndOfMatch>5</RatingStarsEndOfMatch>
+        <Behaviour>1</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>458172019</PlayerID>
+        <RoleID>107</RoleID>
+        <FirstName>Lorenzo</FirstName>
+        <LastName>Assink</LastName>
+        <NickName />
+        <RatingStars>5.5</RatingStars>
+        <RatingStarsEndOfMatch>4.5</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>462295308</PlayerID>
+        <RoleID>108</RoleID>
+        <FirstName>Didier</FirstName>
+        <LastName>Romanet</LastName>
+        <NickName />
+        <RatingStars>6</RatingStars>
+        <RatingStarsEndOfMatch>4.5</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>460412769</PlayerID>
+        <RoleID>109</RoleID>
+        <FirstName>Mickaël</FirstName>
+        <LastName>Lamarque</LastName>
+        <NickName />
+        <RatingStars>7</RatingStars>
+        <RatingStarsEndOfMatch>5.5</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>456842513</PlayerID>
+        <RoleID>110</RoleID>
+        <FirstName>Francesco</FirstName>
+        <LastName>Anastasio</LastName>
+        <NickName />
+        <RatingStars>4.5</RatingStars>
+        <RatingStarsEndOfMatch>4</RatingStarsEndOfMatch>
+        <Behaviour>1</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>460270352</PlayerID>
+        <RoleID>111</RoleID>
+        <FirstName>Adriaan</FirstName>
+        <LastName>Trustfull</LastName>
+        <NickName />
+        <RatingStars>5</RatingStars>
+        <RatingStarsEndOfMatch>4</RatingStarsEndOfMatch>
+        <Behaviour>2</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>456758745</PlayerID>
+        <RoleID>113</RoleID>
+        <FirstName>Damian</FirstName>
+        <LastName>Da Silva</LastName>
+        <NickName />
+        <RatingStars>7.5</RatingStars>
+        <RatingStarsEndOfMatch>7.5</RatingStarsEndOfMatch>
+        <Behaviour>4</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>398752475</PlayerID>
+        <RoleID>114</RoleID>
+        <FirstName>Roman</FirstName>
+        <LastName>Salin</LastName>
+        <NickName />
+        <RatingStars>0</RatingStars>
+        <RatingStarsEndOfMatch>0</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>456857071</PlayerID>
+        <RoleID>115</RoleID>
+        <FirstName>Jordan</FirstName>
+        <LastName>Conjaerts</LastName>
+        <NickName />
+        <RatingStars>0</RatingStars>
+        <RatingStarsEndOfMatch>0</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>457698346</PlayerID>
+        <RoleID>116</RoleID>
+        <FirstName>Min</FirstName>
+        <LastName>Phyo Aung</LastName>
+        <NickName />
+        <RatingStars>0</RatingStars>
+        <RatingStarsEndOfMatch>0</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>425562864</PlayerID>
+        <RoleID>118</RoleID>
+        <FirstName>Bruno</FirstName>
+        <LastName>Gennaro</LastName>
+        <NickName />
+        <RatingStars>0</RatingStars>
+        <RatingStarsEndOfMatch>0</RatingStarsEndOfMatch>
+        <Behaviour>0</Behaviour>
+      </Player>
+      <Player>
+        <PlayerID>430467302</PlayerID>
+        <RoleID>17</RoleID>
+        <FirstName>Lodovico</FirstName>
+        <LastName>Badii</LastName>
+        <NickName />
+      </Player>
+      <Player>
+        <PlayerID>430467302</PlayerID>
+        <RoleID>18</RoleID>
+        <FirstName>Lodovico</FirstName>
+        <LastName>Badii</LastName>
+        <NickName />
+      </Player>
+      <Player>
+        <PlayerID>410234662</PlayerID>
+        <RoleID>19</RoleID>
+        <FirstName>Heru</FirstName>
+        <LastName>Rizki</LastName>
+        <NickName />
+        <RatingStars>6</RatingStars>
+        <RatingStarsEndOfMatch>5</RatingStarsEndOfMatch>
+      </Player>
+      <Player>
+        <PlayerID>419285238</PlayerID>
+        <RoleID>20</RoleID>
+        <FirstName>Sébastien</FirstName>
+        <LastName>Batteux</LastName>
+        <NickName />
+        <RatingStars>9</RatingStars>
+        <RatingStarsEndOfMatch>7.5</RatingStarsEndOfMatch>
+      </Player>
+      <Player>
+        <PlayerID>424075228</PlayerID>
+        <RoleID>21</RoleID>
+        <FirstName>Bastian</FirstName>
+        <LastName>Santamaria</LastName>
+        <NickName />
+        <RatingStars>6</RatingStars>
+        <RatingStarsEndOfMatch>5</RatingStarsEndOfMatch>
+      </Player>
+      <Player>
+        <PlayerID>454199268</PlayerID>
+        <RoleID>33</RoleID>
+        <FirstName>Kalman</FirstName>
+        <LastName>Suleimanov</LastName>
+        <NickName />
+        <RatingStars>4.5</RatingStars>
+        <RatingStarsEndOfMatch>4</RatingStarsEndOfMatch>
+      </Player>
+    </Lineup>
+  </Team>
+</HattrickData>

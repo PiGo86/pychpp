@@ -3,15 +3,15 @@ name = "pychpp"
 version = "0.3.12"
 description = "framework created to use the API provided by the online game Hattrick"
 license = "Apache-2.0"
-authors = ["Pierre Gobin <dev@pierregobin.fr>"]
+authors = ["Pierre Gobin <p.dev@gobin.cc>"]
 readme = "README.md"
 homepage = "https://framagit.org/Pierre86/pychpp"
 
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 rauth = "^0.7.3"
-pytz = "^2022.6"
+pytz = "^2024.2"
 Werkzeug = "^2.2.2"
 
 [tool.poetry.group.dev.dependencies]

@@ -1,0 +1,128 @@
+<HattrickData>
+  <FileName>worldcup.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-18 23:28:57</FetchedDate>
+  <CupID>137</CupID>
+  <Season>76</Season>
+  <MatchRound>0</MatchRound>
+  <CupSeriesUnitID>1697</CupSeriesUnitID>
+  <Matches>
+    <Match>
+      <MatchID>669657311</MatchID>
+      <HomeTeam>
+        <TeamID>3002</TeamID>
+        <TeamName>Deutschland</TeamName>
+      </HomeTeam>
+      <AwayTeam>
+        <TeamID>3150</TeamID>
+        <TeamName>Iran</TeamName>
+      </AwayTeam>
+      <MatchDate>2021-03-05 20:00:00</MatchDate>
+      <FinishedDate>2021-03-05 21:48:00</FinishedDate>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>5</AwayGoals>
+    </Match>
+    <Match>
+      <MatchID>669657312</MatchID>
+      <HomeTeam>
+        <TeamID>3166</TeamID>
+        <TeamName>Panama</TeamName>
+      </HomeTeam>
+      <AwayTeam>
+        <TeamID>3160</TeamID>
+        <TeamName>Jamaica</TeamName>
+      </AwayTeam>
+      <MatchDate>2021-03-05 20:00:00</MatchDate>
+      <FinishedDate>2021-03-05 21:45:00</FinishedDate>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+    </Match>
+    <Match>
+      <MatchID>669657313</MatchID>
+      <HomeTeam>
+        <TeamID>3002</TeamID>
+        <TeamName>Deutschland</TeamName>
+      </HomeTeam>
+      <AwayTeam>
+        <TeamID>3160</TeamID>
+        <TeamName>Jamaica</TeamName>
+      </AwayTeam>
+      <MatchDate>2021-03-08 20:00:00</MatchDate>
+      <FinishedDate>2021-03-08 21:50:00</FinishedDate>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+    </Match>
+    <Match>
+      <MatchID>669657314</MatchID>
+      <HomeTeam>
+        <TeamID>3166</TeamID>
+        <TeamName>Panama</TeamName>
+      </HomeTeam>
+      <AwayTeam>
+        <TeamID>3150</TeamID>
+        <TeamName>Iran</TeamName>
+      </AwayTeam>
+      <MatchDate>2021-03-08 20:00:00</MatchDate>
+      <FinishedDate>2021-03-08 21:46:00</FinishedDate>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+    </Match>
+    <Match>
+      <MatchID>669657315</MatchID>
+      <HomeTeam>
+        <TeamID>3002</TeamID>
+        <TeamName>Deutschland</TeamName>
+      </HomeTeam>
+      <AwayTeam>
+        <TeamID>3166</TeamID>
+        <TeamName>Panama</TeamName>
+      </AwayTeam>
+      <MatchDate>2021-03-12 20:00:00</MatchDate>
+      <FinishedDate>2021-03-12 21:48:00</FinishedDate>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+    </Match>
+    <Match>
+      <MatchID>669657316</MatchID>
+      <HomeTeam>
+        <TeamID>3150</TeamID>
+        <TeamName>Iran</TeamName>
+      </HomeTeam>
+      <AwayTeam>
+        <TeamID>3160</TeamID>
+        <TeamName>Jamaica</TeamName>
+      </AwayTeam>
+      <MatchDate>2021-03-12 20:00:00</MatchDate>
+      <FinishedDate>2021-03-12 21:49:00</FinishedDate>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+    </Match>
+  </Matches>
+  <Rounds>
+    <Round>
+      <MatchRound>1</MatchRound>
+      <StartDate>2020-10-09 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>15</MatchRound>
+      <StartDate>2021-03-05 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>18</MatchRound>
+      <StartDate>2021-04-09 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>21</MatchRound>
+      <StartDate>2021-04-19 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>24</MatchRound>
+      <StartDate>2021-04-30 20:00:00</StartDate>
+    </Round>
+    <Round>
+      <MatchRound>25</MatchRound>
+      <StartDate>2021-05-02 20:00:00</StartDate>
+    </Round>
+  </Rounds>
+</HattrickData>

@@ -1,0 +1,33 @@
+<HattrickData>
+  <FileName>arenadetails.xml</FileName>
+  <Version>1.7</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-09 22:27:31</FetchedDate>
+  <Arena>
+    <ArenaID>1751912</ArenaID>
+    <ArenaName>Stade Laurent Fièvre</ArenaName>
+    <ArenaImage>//res.hattrick.org/arenas/18/176/1752/1751912/custom-220-100.jpg</ArenaImage>
+    <ArenaFallbackImage>//res.hattrick.org/arenas/default/50000/custom-220-100.jpg</ArenaFallbackImage>
+    <Team>
+      <TeamID>1755350</TeamID>
+      <TeamName>Projet NUL Bot Breton</TeamName>
+    </Team>
+    <League>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+    </League>
+    <Region>
+      <RegionID>134</RegionID>
+      <RegionName>Bretagne</RegionName>
+    </Region>
+    <CurrentCapacity>
+      <RebuiltDate Available="True">2023-03-15 20:10:26</RebuiltDate>
+      <Terraces>41000</Terraces>
+      <Basic>13000</Basic>
+      <Roof>8500</Roof>
+      <VIP>1664</VIP>
+      <Total>64164</Total>
+    </CurrentCapacity>
+    <ExpandedCapacity Available="False" />
+  </Arena>
+</HattrickData>

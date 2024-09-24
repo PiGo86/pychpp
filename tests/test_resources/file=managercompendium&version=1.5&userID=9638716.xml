@@ -1,0 +1,194 @@
+<HattrickData>
+  <FileName>managercompendium.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-09 19:06:13</FetchedDate>
+  <Manager>
+    <UserId>9638716</UserId>
+    <Loginname>Conteur_Merlin</Loginname>
+    <SupporterTier>diamond</SupporterTier>
+    <LastLogins>
+      <LoginTime>2024-09-01 10:01:48 : 46.178.***.***</LoginTime>
+      <LoginTime>2023-12-31 12:07:01 : 46.178.***.***</LoginTime>
+      <LoginTime>2023-12-31 11:28:59 : 46.178.***.***</LoginTime>
+      <LoginTime>2023-12-30 16:17:05 : 178.144.***.***</LoginTime>
+      <LoginTime>2023-12-30 16:17:05 : 178.144.***.***</LoginTime>
+      <LoginTime>2023-12-30 14:43:57 : 178.144.***.***</LoginTime>
+    </LastLogins>
+    <Language>
+      <LanguageId>5</LanguageId>
+      <LanguageName>Français</LanguageName>
+    </Language>
+    <Country>
+      <CountryId>38</CountryId>
+      <CountryName>Belgium</CountryName>
+    </Country>
+    <Currency>
+      <CurrencyName>€</CurrencyName>
+      <CurrencyRate>10</CurrencyRate>
+    </Currency>
+    <Teams>
+      <Team>
+        <TeamId>190343</TeamId>
+        <TeamName>Projet NUL</TeamName>
+        <Arena>
+          <ArenaId>190343</ArenaId>
+          <ArenaName>Stade Laurent Fièvre</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>44</LeagueId>
+          <LeagueName>Belgique</LeagueName>
+          <Season>75</Season>
+        </League>
+        <Country>
+          <CountryId>38</CountryId>
+          <CountryName>Belgique</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>23919</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.935</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>882</RegionId>
+          <RegionName>Liège</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2558557</YouthTeamId>
+          <YouthTeamName>Djeunes NULS</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>413095</YouthLeagueId>
+            <YouthLeagueName>Nullist International Comitee</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+      <Team>
+        <TeamId>1755350</TeamId>
+        <TeamName>Projet NUL Bot Breton</TeamName>
+        <Arena>
+          <ArenaId>1751912</ArenaId>
+          <ArenaName>Stade Laurent Fièvre</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>5</LeagueId>
+          <LeagueName>France</LeagueName>
+          <Season>88</Season>
+        </League>
+        <Country>
+          <CountryId>5</CountryId>
+          <CountryName>France</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>36640</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.652</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>134</RegionId>
+          <RegionName>Bretagne</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2745926</YouthTeamId>
+          <YouthTeamName>Les Petits Pédëstres</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>163726</YouthLeagueId>
+            <YouthLeagueName>Youth League</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+      <Team>
+        <TeamId>2015749</TeamId>
+        <TeamName>Projet NUL Africain</TeamName>
+        <Arena>
+          <ArenaId>2012310</ArenaId>
+          <ArenaName>Gloire au MdJ</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>77</LeagueId>
+          <LeagueName>Maroc</LeagueName>
+          <Season>68</Season>
+        </League>
+        <Country>
+          <CountryId>72</CountryId>
+          <CountryName>Maroc</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>252667</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.77</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>2485</RegionId>
+          <RegionName>L'Oriental</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2827873</YouthTeamId>
+          <YouthTeamName>Afros NUL</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>574775</YouthLeagueId>
+            <YouthLeagueName>Ligue Grenobloise La Vieille Furia Roja Copa</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+      <Team>
+        <TeamId>2090270</TeamId>
+        <TeamName>Projet NUL Béninois</TeamName>
+        <Arena>
+          <ArenaId>2087041</ArenaId>
+          <ArenaName>Sodabi Stadium</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>1002</LeagueId>
+          <LeagueName>Ligue Anniversaire de Hattrick</LeagueName>
+          <Season>8</Season>
+        </League>
+        <Country>
+          <CountryId>147</CountryId>
+          <CountryName>Bénin</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>261695</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VII.66</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>2452</RegionId>
+          <RegionName>Alibori</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>3064490</YouthTeamId>
+          <YouthTeamName>Bouses du Bénin </YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>623384</YouthLeagueId>
+            <YouthLeagueName>The Real Youth League</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+    </Teams>
+    <NationalTeamCoach />
+    <NationalTeamAssistant />
+    <Avatar>
+      <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/bodies/f2man4b.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/faces/f2l.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/beards/f2b1i.png</Image>
+      </Layer>
+      <Layer x="25" y="26">
+        <Image>/Img/Avatar/eyes/e4c.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/mouths/f2bem37c.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/noses/f2ben18.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/hair/f2h1i.png</Image>
+      </Layer>
+    </Avatar>
+  </Manager>
+</HattrickData>
