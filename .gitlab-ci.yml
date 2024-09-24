@@ -25,13 +25,4 @@ test:
 deploy:
   stage: deploy
   only: [master]
-  id_tokens:
-    PYPI_ID_TOKEN:
-      aud: pypi
-  script:
-    - apt update && apt install -y jq
-    - pip install id
-    - oidc_token=$(python -m id PYPI)
-    - resp=$(curl -X POST https://pypi.org/_/oidc/mint-token -d "{\"token\":\"${oidc_token}\"}")
-    - api_token=$(jq --raw-output '.token' <<< "${resp}")
-    - poetry publish --build -u __token__ -p "${api_token}"
+  script: poetry publish --build -u $PYCHPP_PYPI_USERNAME -p $PYCHPP_PYPI_PASSWORD
