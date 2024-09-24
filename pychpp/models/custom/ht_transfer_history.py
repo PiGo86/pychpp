@@ -1,9 +1,8 @@
 from typing import TYPE_CHECKING
 
-from pychpp.models.xml.transfers_team import TransfersTeam
-
 if TYPE_CHECKING:
     from pychpp.chpp import CHPP
+
 
 class HTTransferHistory:
 
@@ -40,9 +39,9 @@ class HTTransferHistory:
                                    else self.start_date
                                    )
                 self.end_date = (xml_transfers.transfers.end_date
-                                   if xml_transfers.transfers.end_date > self.end_date
-                                   else self.end_date
-                                   )
+                                 if xml_transfers.transfers.end_date > self.end_date
+                                 else self.end_date
+                                 )
 
         else:
             xml_transfers = self._chpp.xml_transfers_team(
