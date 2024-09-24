@@ -1,6 +1,6 @@
 import re
 
-from pychpp.ht_datetime import HTDatetime
+from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.custom.ht_match import HTMatch
 
 from .conftest import MATCH_PATTERN

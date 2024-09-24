@@ -1,3 +1,5 @@
+from pychpp.models.ht_field import HTProxyField
+
 # pyCHPP
 
 pyCHPP is an object-oriented python framework created to use the API provided by the online game Hattrick (www.hattrick.org).
@@ -8,7 +10,7 @@ pyCHPP can be installed using pip :
 
     pip install pychpp
 
-## Usage
+## Quick start
 
 ### First connection
 ```python-repl
@@ -84,9 +86,63 @@ pyCHPP can be installed using pip :
 
 ## Philosophy
 From 0.4.0 version, pyCHPP is build on two class families :
-- under `pychpp/models/xml`, you will find a class by CHPP XML file. These classes can be instantiated with a CHPP object, thanks to functions prefixed with 'xml_'. For example, `arenadetails.xml` file can be fetched with CHPP `xml_arena_details` method. These objects follows xml files as close as possible.
-- under `pychpp/models/custom`, pyCHPP moves further away from vanilla xml files, in order to offer a more consistent experience (in our opinion) and to add some convenient methods and attributes (as url), and to allow navigation between objects. 
+- under `pychpp/models/xml`, you will find a class by CHPP XML file. These classes can be instantiated with a CHPP object, thanks to functions prefixed with `xml_`. For example, `arenadetails.xml` file can be fetched through a CHPP instance with the `xml_arena_details` method.
+```python-repl
+>>> xml_arena = chpp.xml_arena_details(arena_id=294762)
+>>> xml_arena
+<ArenaDetails object - Stade Dimitri Liénard (294762)>
+```
+- under `pychpp/models/custom`, pyCHPP moves further away from vanilla xml files, in order to offer a more consistent experience (in our opinion) and to add some convenient methods and attributes (as url), and to allow navigation between objects. For example, you can instantiate a HTTeam object through a CHPP instance by calling the `team` method. From this `HTTeam` instance, you can get the list of this team players by calling its `players` method.
+```python-repl
+>>> team = chpp.team(294762)
+>>> team
+<HTTeam object - FC Mistral Gagnant (294762)>
+>>> players = team.players()
+>>> players[3]
+<HTTeamPlayersItem object - Massimiliano Carotta (453279129)>
+>>> players[3].first_name
+'Massimiliano'
+>>> players[3].last_name
+'Carotta'
+```
 
+## Customization
+
+The easiest way to use pyCHPP is to use the builtin methods of the CHPP object.
+
+However, for more advanced use, it is also possible to customize the framework's built-in templates.
+
+For example, if you need to perform a query on the arenadetails.xml file, but in reality only need the Arena/ArenaID, Arena/ArenaName and Arena/ArenaImage data, one way to proceed is to create a custom class inheriting from the RequestArenaDetails class, and use HTProxyField as follows:
+```python
+from pychpp.models.xml.arena_details import RequestArenaDetails, ArenaDetails
+from pychpp.models.ht_field import HTProxyField
+
+
+class MyCustomArenaClass(RequestArenaDetails):
+    id: int = HTProxyField(ArenaDetails)
+    name: str = HTProxyField(ArenaDetails)
+    image: str = HTProxyField(ArenaDetails)
+```
+
+Then, to use this new class:
+```python-repl
+>>> from pychpp.chpp import CHPPBase
+>>> chpp = CHPPBase(consumer_key, 
+                    consumer_secret,
+                    access_token['key'],
+                    access_token['secret'],
+                    )
+>>> arena = MyCustomArenaClass(chpp=chpp, arena_id=1747365)
+>>> arena
+<MyCustomArenaClass object - La grande taule (1747365)>
+>>> arena.id
+1747365
+>>> arena.name
+'La grande taule'
+>>> arena.image
+'//res.hattrick.org/arenas/18/175/1748/1747365/custom-220-100.jpg'
+```
+In this way, only the data you're really interested in is parsed, which can in some cases be interesting from a performance point of view.
 
 ## List of supported CHPP XML files
 The following table shows the CHPP XML files that are currently supported (23/57) :

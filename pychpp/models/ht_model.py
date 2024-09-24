@@ -6,7 +6,7 @@ from datetime import datetime, date
 from typing import get_type_hints, get_origin, Union, get_args
 
 import pychpp.chpp as _chpp
-from pychpp.ht_xml import HTXml
+from pychpp.models.ht_xml import HTXml
 from pychpp.models.ht_field import HTBaseField, HTField, HTAliasField, HTProxyField
 from pychpp.models.ht_init_var import HTInitVar
 
@@ -100,7 +100,7 @@ class HTModel(metaclass=MetaHTModel):
 
         self._pre_init(**kwargs)
 
-        if not isinstance(chpp, _chpp.CHPP):
+        if not isinstance(chpp, _chpp.CHPPBase):
             raise ValueError("chpp must be a CHPP instance")
 
         elif not isinstance(data, ElementTree.Element) and data is not None:

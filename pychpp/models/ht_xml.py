@@ -1,7 +1,7 @@
 import datetime
 from xml.etree import ElementTree
 
-from pychpp import ht_skill, ht_age, ht_datetime
+from pychpp.fixtures import ht_datetime
 
 
 class HTXml:

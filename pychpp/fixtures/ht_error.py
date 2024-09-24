@@ -72,12 +72,12 @@ class HTUndefinedError(HTError):
 
 
 class HTSkillError(HTError):
-    """Raise when skill can't be well defined"""
+    """Raise when skill can't be well-defined"""
 
 
 class HTAgeError(HTError):
-    """Raise when age can't be well defined"""
+    """Raise when age can't be well-defined"""
 
 
-class UnknownLeagueError(Exception):
+class UnknownLeagueError(HTError):
     """Raise when world league doesn't exist in the list"""

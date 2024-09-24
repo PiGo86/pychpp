@@ -1,7 +1,7 @@
 import pytest
 
 from pychpp.models.custom.ht_challenge import HTChallengeManager
-from pychpp.ht_error import HTUnauthorizedAction
+from pychpp.fixtures.ht_error import HTUnauthorizedAction
 
 from .conftest import PYCHPP_SCOPE
 

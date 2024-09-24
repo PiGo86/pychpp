@@ -6,17 +6,21 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class TransfersTeam(HTModel):
+class RequestTransfersTeam(HTModel):
     """
-    Transfers Team
+    Transfers Team - Request arguments
     """
-
     SOURCE_FILE = 'transfersteam'
     LAST_VERSION = "1.2"
 
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_page_index: Optional[int] = HTInitVar('pageIndex', init_arg='page_index')
 
+
+class TransfersTeam(RequestTransfersTeam):
+    """
+    Transfers Team
+    """
     team: 'Team' = HTField('Team')
     stats: 'Stats' = HTField('Stats')
     transfers: 'Transfers' = HTField('Transfers')

@@ -1,4 +1,4 @@
-from pychpp.ht_datetime import HTDatetime
+from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.matches_archive import MatchesArchive, MatchItem, MatchItemTeam
 
 

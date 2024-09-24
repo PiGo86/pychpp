@@ -1,7 +1,7 @@
 import pytest
 
 from pychpp.models.xml.national_team_details import NationalTeamDetails
-from pychpp.ht_error import HTUnknownTeamIdError
+from pychpp.fixtures.ht_error import HTUnknownTeamIdError
 
 
 def test_get_nt_details(mocked_chpp):

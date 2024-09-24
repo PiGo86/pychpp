@@ -6,7 +6,6 @@ from rauth import OAuth1Session
 from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree
 
-from pychpp import ht_training, ht_transfers_team, ht_world, ht_national_teams, ht_world_cup
 from pychpp.models.xml import (manager_compendium, team_details, achievements, arena_details,
                                challenges, region_details, league_details, league_fixtures,
                                match_lineup, national_teams, national_team_details, player_details,
@@ -15,9 +14,9 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches_archive, match_details, cup_matches)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
-                                  ht_match, ht_challenge, ht_match_lineup)
-from pychpp import ht_error
-from pychpp.ht_xml import HTXml
+                                  ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
+from pychpp.fixtures import ht_error
+from pychpp.models.ht_xml import HTXml
 
 
 class CHPPBase:
@@ -270,14 +269,15 @@ class CHPPBase:
                              access_token_secret=self.access_token_secret,
                              )
 
-    def _base_request(self, url, parse_data=True, **kwargs):
+    def _base_request(
+            self, url, parse_data=True, **kwargs,
+    ) -> xml.etree.ElementTree:
         """
         Base method for sending a request via the CHPP API
 
         :param url: url to fetch
         :param parse_data: parse or not returned data as xml
         :return: xml data fetched on Hattrick
-        :rtype: xml.etree.ElementTree
         """
         session = self.open_session()
         query = session.get(url, params=kwargs)
@@ -770,11 +770,10 @@ class CHPP(CHPPXml):
         """
         Get a youth team from its Hattrick ID
 
-        If not ht_id is defined,
-        return the youth primary team of connected user.
+        If no id_ is provided,
+        returns the youth primary team of connected user.
 
-        :key ht_id: Hattrick ID of the requested youth team, must be an int
-        :rtype: ht_team.HTYouthTeam
+        :param id_: Hattrick ID of the requested youth team
         """
         return ht_youth_team.HTYouthTeam(chpp=self, youth_team_id=id_, **kwargs)
 
@@ -782,7 +781,7 @@ class CHPP(CHPPXml):
         """
         Get a player from its Hattrick ID
 
-        :key ht_id: Hattrick ID of the requested player
+        :param id_: Hattrick ID of the requested player
         """
         return ht_player.HTPlayer(chpp=self, player_id=id_, **kwargs)
 
@@ -790,8 +789,7 @@ class CHPP(CHPPXml):
         """
         Get a youth player from its Hattrick ID
 
-        :key ht_id: Hattrick ID of the requested youth player, must be an int
-        :rtype: ht_player.HTYouthPlayer
+        :param id_: Hattrick ID of the requested youth player
         """
         return ht_youth_player.HTYouthPlayer(chpp=self, youth_player_id=id_, **kwargs)
 
@@ -799,8 +797,7 @@ class CHPP(CHPPXml):
         """
         Get a region from his Hattrick ID
 
-        :key ht_id: Hattrick ID of the requested region, must be an int
-        :rtype: ht_region.HTRegion
+        :param id_: Hattrick ID of the requested region
         """
         return ht_region.HTRegion(chpp=self, region_id=id_, **kwargs)
 
@@ -861,16 +858,6 @@ class CHPP(CHPPXml):
             chpp=self, team_id=id_, is_youth=is_youth, first_match_date=first_match_date,
             last_match_date=last_match_date, season=season, include_hto=include_hto, **kwargs)
 
-    def league_fixtures(self, **kwargs):
-        """
-        Get a league from his Hattrick ID
-
-        :key ht_id: Hattrick ID of the requested league, must be an int
-        :key season: season to fetch, must be an int
-        :rtype: ht_league.HTLeague
-        """
-        return ht_league.HTLeagueFixtures(chpp=self, **kwargs)
-
     def match_lineup(
             self, match_id: int = None, team_id: int = None, source_system: str = None, **kwargs
     ) -> ht_match_lineup.HTMatchLineup:
@@ -886,87 +873,14 @@ class CHPP(CHPPXml):
             source_system=source_system, **kwargs,
         )
 
-    def world(self, **kwargs):
+    def transfer_history(
+            self, team_id: int = None, page: int = None,
+            all_transfers: bool = None, **kwargs,
+    ) -> ht_transfer_history.HTTransferHistory:
         """
-        Get a world details
-
-        :key ht_id: Hattrick ID of the requested country league,
-        must be an int (optional)
-        :key include_regions: Whether or not to include regions
-        for the countries, must be an bool (optional, default=False)
-        :rtype: ht_world.HTWorld
+        Get transfer history for a team
         """
-        return ht_world.HTWorld(chpp=self, **kwargs)
-
-    def national_team(self, **kwargs):
-        """
-        Get a national team from its ID
-
-        :key ht_id: Hattrick ID of the requested national team,
-        must be an int (optional)
-        :rtype: ht_national_teams.HTNationalTeam
-        """
-        return ht_national_teams.HTNationalTeam(chpp=self, **kwargs)
-
-    def national_teams(self, **kwargs):
-        """
-        Get a national team from its ID
-
-        :key ht_id: ID of NT type teams to get
-                    (2 = National teams, 4 = U-20 Teams)
-        :rtype: ht_national_teams.HTNationalTeams
-        """
-        return ht_national_teams.HTNationalTeams(chpp=self, **kwargs)
-
-    def training(self, **kwargs):
-        """
-        Get training data or manage training
-
-        :key action_type: action to perform
-        (can be "view", "stats", "set_training"), defaults to "view"
-        :key team_ht_id: team Hattrick ID
-        (if none, fetch the primary club of connected user), defaults to None
-        :key training_type: selected training type, defaults to None
-        :key training_level: selected training level, defaults to None
-        :key training_level_stamina: selected training level,
-        defaults to None
-        :rtype: ht_training.HTTraining
-        """
-        return ht_training.HTTraining(chpp=self, **kwargs)
-
-    def world_cup_groups(self, **kwargs):
-        """
-        Get the World Cup groups (AA or U-20)
-
-        :key season: global Hattrick season
-        :key cup_id: unique cup ID
-                     (137 = World Cup, 149 = U-20 World Cup)
-        :rtype: ht_world_cup.HTWorldCupGroups
-        """
-        return ht_world_cup.HTWorldCupGroups(chpp=self, **kwargs)
-
-    def world_cup_matches(self, **kwargs):
-        """
-        Get the World Cup matches (AA or U-20)
-
-        :key season: global Hattrick season
-        :key cup_id: unique cup ID
-                     (137 = World Cup, 149 = U-20 World Cup)
-        :key cup_series_unit_id: global ID of a World Cup group
-        :key match_round: key that indicates a certain round
-                          (1 = qualification round, 15 = round II,
-                          18 = round III, 21 = round IV,
-                          24 = semi-finals, 25 = final)
-        :rtype: ht_world_cup.HTWorldCupMatches
-        """
-        return ht_world_cup.HTWorldCupMatches(chpp=self, **kwargs)
-
-    def transfers_team(self, **kwargs):
-        """
-        Get the team transfers
-
-        :key ht_id: Hattrick ID of requested team, must be an int
-        :key page_index: What page in the list to retrieve, must be an int
-        :rtype: ht_transfers_team.HTTransfersTeam
-        """
-        return ht_transfers_team.HTTransfersTeam(chpp=self, **kwargs)
+        return ht_transfer_history.HTTransferHistory(
+            chpp=self, team_id=team_id, page=page,
+            all_transfers=all_transfers, **kwargs,
+        )

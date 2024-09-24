@@ -1,5 +1,5 @@
 from pychpp.models.xml.transfers_team import TransfersTeam, TransfersTransferItem
-from pychpp.ht_datetime import HTDatetime
+from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_get_team_transfers(mocked_chpp):

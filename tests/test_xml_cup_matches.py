@@ -1,4 +1,4 @@
-from pychpp.ht_datetime import HTDatetime
+from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_get_hattrick_masters_matches(mocked_chpp):
