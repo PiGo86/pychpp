@@ -1,0 +1,33 @@
+<HattrickData>
+  <FileName>arenadetails.xml</FileName>
+  <Version>1.7</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-16 08:33:11</FetchedDate>
+  <Arena>
+    <ArenaID>1420520</ArenaID>
+    <ArenaName>Tomás Lucena Arena</ArenaName>
+    <ArenaImage>//res.hattrick.org/arenas/15/143/1421/1420520/custom-220-100.jpg</ArenaImage>
+    <ArenaFallbackImage>//res.hattrick.org/arenas/default/50000/custom-220-100.jpg</ArenaFallbackImage>
+    <Team>
+      <TeamID>1423958</TeamID>
+      <TeamName>Gazela.f.c</TeamName>
+    </Team>
+    <League>
+      <LeagueID>25</LeagueID>
+      <LeagueName>Portugal</LeagueName>
+    </League>
+    <Region>
+      <RegionID>679</RegionID>
+      <RegionName>Lisboa</RegionName>
+    </Region>
+    <CurrentCapacity>
+      <RebuiltDate Available="True">2010-02-17 18:50:14</RebuiltDate>
+      <Terraces>37000</Terraces>
+      <Basic>20000</Basic>
+      <Roof>10000</Roof>
+      <VIP>3000</VIP>
+      <Total>70000</Total>
+    </CurrentCapacity>
+    <ExpandedCapacity Available="False" />
+  </Arena>
+</HattrickData>

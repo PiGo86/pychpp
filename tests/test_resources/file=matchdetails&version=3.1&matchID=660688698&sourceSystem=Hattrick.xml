@@ -1,0 +1,171 @@
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-15 22:23:21</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>660688698</MatchID>
+    <MatchType>1</MatchType>
+    <MatchContextId>10260</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2020-08-22 22:00:00</MatchDate>
+    <FinishedDate>2020-08-22 23:47:00</FinishedDate>
+    <AddedMinutes>2</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>1423958</HomeTeamID>
+      <HomeTeamName>Gazela.f.c</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>3-5-2</Formation>
+      <HomeGoals>3</HomeGoals>
+      <TacticType>4</TacticType>
+      <TacticSkill>11</TacticSkill>
+      <RatingMidfield>16</RatingMidfield>
+      <RatingRightDef>32</RatingRightDef>
+      <RatingMidDef>45</RatingMidDef>
+      <RatingLeftDef>24</RatingLeftDef>
+      <RatingRightAtt>18</RatingRightAtt>
+      <RatingMidAtt>22</RatingMidAtt>
+      <RatingLeftAtt>17</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>28</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>17</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>1</NrOfChancesLeft>
+      <NrOfChancesCenter>1</NrOfChancesCenter>
+      <NrOfChancesRight>2</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>1</NrOfChancesOther>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>86324</AwayTeamID>
+      <AwayTeamName>Apanha Bolas FC</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/27/262/2615/2614824/matchKitSmall.png</DressURI>
+      <Formation>2-5-3</Formation>
+      <AwayGoals>1</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>16</RatingMidfield>
+      <RatingRightDef>19</RatingRightDef>
+      <RatingMidDef>17</RatingMidDef>
+      <RatingLeftDef>21</RatingLeftDef>
+      <RatingRightAtt>17</RatingRightAtt>
+      <RatingMidAtt>22</RatingMidAtt>
+      <RatingLeftAtt>23</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>19</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>17</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>1</NrOfChancesLeft>
+      <NrOfChancesCenter>1</NrOfChancesCenter>
+      <NrOfChancesRight>2</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>1</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>2</NrOfChancesOther>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>1420520</ArenaID>
+      <ArenaName>Tomás Lucena Arena</ArenaName>
+      <WeatherID>2</WeatherID>
+      <SoldTotal>35386</SoldTotal>
+      <SoldTerraces>21670</SoldTerraces>
+      <SoldBasic>9053</SoldBasic>
+      <SoldRoof>3837</SoldRoof>
+      <SoldVIP>826</SoldVIP>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>343035773</RefereeId>
+        <RefereeName>Antonio Varischetti</RefereeName>
+        <RefereeCountryId>4</RefereeCountryId>
+        <RefereeCountryName>Italia</RefereeCountryName>
+        <RefereeTeamId>1724857</RefereeTeamId>
+        <RefereeTeamname>Saval Maddalena</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>379051420</RefereeId>
+        <RefereeName>Ugo Pinzuti</RefereeName>
+        <RefereeCountryId>4</RefereeCountryId>
+        <RefereeCountryName>Italia</RefereeCountryName>
+        <RefereeTeamId>1526089</RefereeTeamId>
+        <RefereeTeamname>Giallorossi-Swissteam</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>395923047</RefereeId>
+        <RefereeName>Mirko Cardona</RefereeName>
+        <RefereeCountryId>4</RefereeCountryId>
+        <RefereeCountryName>Italia</RefereeCountryName>
+        <RefereeTeamId>1695008</RefereeTeamId>
+        <RefereeTeamname>AC Castelpagano</RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>453372840</ScorerPlayerID>
+        <ScorerPlayerName>Modesto Seguer</ScorerPlayerName>
+        <ScorerTeamID>86324</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>17</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="1">
+        <ScorerPlayerID>420413060</ScorerPlayerID>
+        <ScorerPlayerName>Virgílio António Nascimento Ferreira</ScorerPlayerName>
+        <ScorerTeamID>1423958</ScorerTeamID>
+        <ScorerHomeGoals>1</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>30</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>427494408</ScorerPlayerID>
+        <ScorerPlayerName>João Brás Ferreira</ScorerPlayerName>
+        <ScorerTeamID>1423958</ScorerTeamID>
+        <ScorerHomeGoals>2</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>48</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="3">
+        <ScorerPlayerID>436043387</ScorerPlayerID>
+        <ScorerPlayerName>Álvaro Agostinho Costa Rodrigues</ScorerPlayerName>
+        <ScorerTeamID>1423958</ScorerTeamID>
+        <ScorerHomeGoals>3</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>81</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings>
+      <Booking Index="0">
+        <BookingPlayerID>453372827</BookingPlayerID>
+        <BookingPlayerName>Luciano Lopes Rocha</BookingPlayerName>
+        <BookingTeamID>86324</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>31</BookingMinute>
+        <MatchPart>1</MatchPart>
+      </Booking>
+      <Booking Index="1">
+        <BookingPlayerID>427494408</BookingPlayerID>
+        <BookingPlayerName>João Brás Ferreira</BookingPlayerName>
+        <BookingTeamID>1423958</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>84</BookingMinute>
+        <MatchPart>2</MatchPart>
+      </Booking>
+    </Bookings>
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>453372840</InjuryPlayerID>
+        <InjuryPlayerName>Modesto Seguer</InjuryPlayerName>
+        <InjuryTeamID>86324</InjuryTeamID>
+        <InjuryType>2</InjuryType>
+        <InjuryMinute>29</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>48</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>52</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>49</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>51</PossessionSecondHalfAway>
+  </Match>
+</HattrickData>

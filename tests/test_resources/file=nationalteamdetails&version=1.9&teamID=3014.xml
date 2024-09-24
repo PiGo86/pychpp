@@ -1,0 +1,41 @@
+<HattrickData>
+  <FileName>nationalTeamDetails.xml</FileName>
+  <Version>1.9</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-18 22:18:58</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Team>
+    <TeamID>3014</TeamID>
+    <TeamName>Portugal</TeamName>
+    <ShortTeamName>Portugal</ShortTeamName>
+    <NationalCoach>
+      <NationalCoachUserID>2766638</NationalCoachUserID>
+      <NationalCoachLoginname>_JPaulo_</NationalCoachLoginname>
+    </NationalCoach>
+    <League>
+      <LeagueID>25</LeagueID>
+      <LeagueName>Portugal</LeagueName>
+    </League>
+    <HomePage>http://hattrickportal.pro/Tracker</HomePage>
+    <Logo>http://res.hattrick.org/ntteamlogo/1/1/4/3014/3014.jpg</Logo>
+    <DressURI>//res.hattrick.org/kits/23/229/2289/2288106/matchKitSmall.png</DressURI>
+    <DressAlternateURI>//res.hattrick.org/kits/23/221/2210/2209300/matchKitSmall.png</DressAlternateURI>
+    <Experience433>3</Experience433>
+    <Experience451>8</Experience451>
+    <Experience352>10</Experience352>
+    <Experience532>8</Experience532>
+    <Experience343>3</Experience343>
+    <Experience541>9</Experience541>
+    <Experience523>3</Experience523>
+    <Experience550>3</Experience550>
+    <Experience253>9</Experience253>
+    <Experience442>9</Experience442>
+    <Morale>7</Morale>
+    <SelfConfidence>5</SelfConfidence>
+    <SupportersPopularity>5</SupportersPopularity>
+    <RatingScore>10763</RatingScore>
+    <FanClubSize>2219</FanClubSize>
+    <Rank>74</Rank>
+  </Team>
+</HattrickData>

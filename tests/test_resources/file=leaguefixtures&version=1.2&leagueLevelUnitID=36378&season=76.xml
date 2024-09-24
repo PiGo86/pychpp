@@ -1,0 +1,849 @@
+<HattrickData>
+  <FileName>leaguefixtures.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-18 22:51:57</FetchedDate>
+  <LeagueLevelUnitID>36378</LeagueLevelUnitID>
+  <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+  <Season>76</Season>
+  <Match>
+    <MatchID>665953493</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1164581</HomeTeamID>
+      <HomeTeamName>Les gardes de l'empereur</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>46893</AwayTeamID>
+      <AwayTeamName>AS Tournan</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-09-26 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953494</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>964234</HomeTeamID>
+      <HomeTeamName>AS Calembour</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>588594</AwayTeamID>
+      <AwayTeamName>Pictave HT</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-09-26 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953495</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>591554</HomeTeamID>
+      <HomeTeamName>FC Traversonne</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1751295</AwayTeamID>
+      <AwayTeamName>ASBI</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-09-26 21:00:00</MatchDate>
+    <HomeGoals>7</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953496</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586063</HomeTeamID>
+      <HomeTeamName>6ril </HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586115</AwayTeamID>
+      <AwayTeamName>Winnerry FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-09-26 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953497</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>588594</HomeTeamID>
+      <HomeTeamName>Pictave HT</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1164581</AwayTeamID>
+      <AwayTeamName>Les gardes de l'empereur</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-03 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953498</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>46893</HomeTeamID>
+      <HomeTeamName>AS Tournan</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586063</AwayTeamID>
+      <AwayTeamName>6ril </AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-03 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953499</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586115</HomeTeamID>
+      <HomeTeamName>Winnerry FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>591554</AwayTeamID>
+      <AwayTeamName>FC Traversonne</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-03 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>5</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953500</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1751295</HomeTeamID>
+      <HomeTeamName>ASBI</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>964234</AwayTeamID>
+      <AwayTeamName>AS Calembour</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-03 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953501</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1164581</HomeTeamID>
+      <HomeTeamName>Les gardes de l'empereur</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586115</AwayTeamID>
+      <AwayTeamName>Winnerry FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-10 21:00:00</MatchDate>
+    <HomeGoals>3</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953502</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>964234</HomeTeamID>
+      <HomeTeamName>AS Calembour</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>591554</AwayTeamID>
+      <AwayTeamName>FC Traversonne</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-10 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953503</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>588594</HomeTeamID>
+      <HomeTeamName>Pictave HT</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>46893</AwayTeamID>
+      <AwayTeamName>AS Tournan</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-10 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>4</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953504</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586063</HomeTeamID>
+      <HomeTeamName>6ril </HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1751295</AwayTeamID>
+      <AwayTeamName>ASBI</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-10 21:00:00</MatchDate>
+    <HomeGoals>5</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953505</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1751295</HomeTeamID>
+      <HomeTeamName>ASBI</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1164581</AwayTeamID>
+      <AwayTeamName>Les gardes de l'empereur</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-17 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>5</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953506</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>46893</HomeTeamID>
+      <HomeTeamName>AS Tournan</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>964234</AwayTeamID>
+      <AwayTeamName>AS Calembour</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-17 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953507</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>591554</HomeTeamID>
+      <HomeTeamName>FC Traversonne</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586063</AwayTeamID>
+      <AwayTeamName>6ril </AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-17 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953508</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586115</HomeTeamID>
+      <HomeTeamName>Winnerry FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>588594</AwayTeamID>
+      <AwayTeamName>Pictave HT</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-17 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>5</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953509</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1164581</HomeTeamID>
+      <HomeTeamName>Les gardes de l'empereur</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586063</AwayTeamID>
+      <AwayTeamName>6ril </AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-24 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953510</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>588594</HomeTeamID>
+      <HomeTeamName>Pictave HT</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>591554</AwayTeamID>
+      <AwayTeamName>FC Traversonne</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-24 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953511</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>964234</HomeTeamID>
+      <HomeTeamName>AS Calembour</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586115</AwayTeamID>
+      <AwayTeamName>Winnerry FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-24 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953512</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>46893</HomeTeamID>
+      <HomeTeamName>AS Tournan</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1751295</AwayTeamID>
+      <AwayTeamName>ASBI</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-24 21:00:00</MatchDate>
+    <HomeGoals>8</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953513</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>591554</HomeTeamID>
+      <HomeTeamName>FC Traversonne</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1164581</AwayTeamID>
+      <AwayTeamName>Les gardes de l'empereur</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-31 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953514</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586063</HomeTeamID>
+      <HomeTeamName>6ril </HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>964234</AwayTeamID>
+      <AwayTeamName>AS Calembour</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-31 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>3</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953515</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1751295</HomeTeamID>
+      <HomeTeamName>ASBI</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>588594</AwayTeamID>
+      <AwayTeamName>Pictave HT</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-31 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>8</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953516</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586115</HomeTeamID>
+      <HomeTeamName>Winnerry FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>46893</AwayTeamID>
+      <AwayTeamName>AS Tournan</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-10-31 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>8</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953517</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1164581</HomeTeamID>
+      <HomeTeamName>Les gardes de l'empereur</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>964234</AwayTeamID>
+      <AwayTeamName>AS Calembour</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-07 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953518</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>46893</HomeTeamID>
+      <HomeTeamName>AS Tournan</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>591554</AwayTeamID>
+      <AwayTeamName>FC Traversonne</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-07 21:00:00</MatchDate>
+    <HomeGoals>3</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953519</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>588594</HomeTeamID>
+      <HomeTeamName>Pictave HT</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586063</AwayTeamID>
+      <AwayTeamName>6ril </AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-07 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953520</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1751295</HomeTeamID>
+      <HomeTeamName>ASBI</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586115</AwayTeamID>
+      <AwayTeamName>Winnerry FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-07 21:00:00</MatchDate>
+    <HomeGoals>3</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953521</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586115</HomeTeamID>
+      <HomeTeamName>Winnerry FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1751295</AwayTeamID>
+      <AwayTeamName>ASBI</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-14 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953522</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586063</HomeTeamID>
+      <HomeTeamName>6ril </HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>588594</AwayTeamID>
+      <AwayTeamName>Pictave HT</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-14 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>6</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953523</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>591554</HomeTeamID>
+      <HomeTeamName>FC Traversonne</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>46893</AwayTeamID>
+      <AwayTeamName>AS Tournan</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-14 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953524</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>964234</HomeTeamID>
+      <HomeTeamName>AS Calembour</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1164581</AwayTeamID>
+      <AwayTeamName>Les gardes de l'empereur</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-14 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953525</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>46893</HomeTeamID>
+      <HomeTeamName>AS Tournan</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586115</AwayTeamID>
+      <AwayTeamName>Winnerry FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-21 21:00:00</MatchDate>
+    <HomeGoals>7</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953526</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>588594</HomeTeamID>
+      <HomeTeamName>Pictave HT</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1751295</AwayTeamID>
+      <AwayTeamName>ASBI</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-21 21:00:00</MatchDate>
+    <HomeGoals>6</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953527</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>964234</HomeTeamID>
+      <HomeTeamName>AS Calembour</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586063</AwayTeamID>
+      <AwayTeamName>6ril </AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-21 21:00:00</MatchDate>
+    <HomeGoals>3</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953528</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1164581</HomeTeamID>
+      <HomeTeamName>Les gardes de l'empereur</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>591554</AwayTeamID>
+      <AwayTeamName>FC Traversonne</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-21 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953529</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1751295</HomeTeamID>
+      <HomeTeamName>ASBI</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>46893</AwayTeamID>
+      <AwayTeamName>AS Tournan</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-28 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>3</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953530</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586115</HomeTeamID>
+      <HomeTeamName>Winnerry FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>964234</AwayTeamID>
+      <AwayTeamName>AS Calembour</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-28 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>4</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953531</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>591554</HomeTeamID>
+      <HomeTeamName>FC Traversonne</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>588594</AwayTeamID>
+      <AwayTeamName>Pictave HT</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-28 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953533</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586063</HomeTeamID>
+      <HomeTeamName>6ril </HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1164581</AwayTeamID>
+      <AwayTeamName>Les gardes de l'empereur</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-11-28 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953534</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586063</HomeTeamID>
+      <HomeTeamName>6ril </HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>591554</AwayTeamID>
+      <AwayTeamName>FC Traversonne</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-05 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>6</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953535</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>964234</HomeTeamID>
+      <HomeTeamName>AS Calembour</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>46893</AwayTeamID>
+      <AwayTeamName>AS Tournan</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-05 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>3</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953536</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1164581</HomeTeamID>
+      <HomeTeamName>Les gardes de l'empereur</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1751295</AwayTeamID>
+      <AwayTeamName>ASBI</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-05 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953532</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>588594</HomeTeamID>
+      <HomeTeamName>Pictave HT</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586115</AwayTeamID>
+      <AwayTeamName>Winnerry FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-05 21:00:00</MatchDate>
+    <HomeGoals>8</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953537</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1751295</HomeTeamID>
+      <HomeTeamName>ASBI</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586063</AwayTeamID>
+      <AwayTeamName>6ril </AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-12 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953538</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>46893</HomeTeamID>
+      <HomeTeamName>AS Tournan</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>588594</AwayTeamID>
+      <AwayTeamName>Pictave HT</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-12 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953539</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>591554</HomeTeamID>
+      <HomeTeamName>FC Traversonne</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>964234</AwayTeamID>
+      <AwayTeamName>AS Calembour</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-12 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953540</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586115</HomeTeamID>
+      <HomeTeamName>Winnerry FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1164581</AwayTeamID>
+      <AwayTeamName>Les gardes de l'empereur</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-12 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>6</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953541</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>591554</HomeTeamID>
+      <HomeTeamName>FC Traversonne</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586115</AwayTeamID>
+      <AwayTeamName>Winnerry FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-19 21:00:00</MatchDate>
+    <HomeGoals>7</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953542</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>964234</HomeTeamID>
+      <HomeTeamName>AS Calembour</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1751295</AwayTeamID>
+      <AwayTeamName>ASBI</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-19 21:00:00</MatchDate>
+    <HomeGoals>4</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953543</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586063</HomeTeamID>
+      <HomeTeamName>6ril </HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>46893</AwayTeamID>
+      <AwayTeamName>AS Tournan</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-19 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953544</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1164581</HomeTeamID>
+      <HomeTeamName>Les gardes de l'empereur</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>588594</AwayTeamID>
+      <AwayTeamName>Pictave HT</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-19 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953545</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>586115</HomeTeamID>
+      <HomeTeamName>Winnerry FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>586063</AwayTeamID>
+      <AwayTeamName>6ril </AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-26 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953546</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1751295</HomeTeamID>
+      <HomeTeamName>ASBI</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>591554</AwayTeamID>
+      <AwayTeamName>FC Traversonne</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-26 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>8</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953547</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>588594</HomeTeamID>
+      <HomeTeamName>HC Limousine</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>964234</AwayTeamID>
+      <AwayTeamName>AS Calembour</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-26 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>5</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>665953548</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>46893</HomeTeamID>
+      <HomeTeamName>AS Tournan</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1164581</AwayTeamID>
+      <AwayTeamName>Les gardes de l'empereur</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2020-12-26 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+</HattrickData>

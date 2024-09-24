@@ -1,0 +1,63 @@
+<HattrickData>
+  <FileName>playerdetails.xml</FileName>
+  <Version>3.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-17 11:34:01</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Player>
+    <PlayerID>453276953</PlayerID>
+    <FirstName>Urho</FirstName>
+    <NickName />
+    <LastName>Porvari</LastName>
+    <PlayerNumber>9</PlayerNumber>
+    <Age>30</Age>
+    <AgeDays>99</AgeDays>
+    <NextBirthDay>2024-09-30 00:00:00</NextBirthDay>
+    <ArrivalDate>2023-12-05 23:56:00</ArrivalDate>
+    <PlayerForm>6</PlayerForm>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Statement />
+    <PlayerLanguage>Suomi</PlayerLanguage>
+    <PlayerLanguageID>9</PlayerLanguageID>
+    <TrainerData />
+    <OwningTeam>
+      <TeamID>2106214</TeamID>
+      <TeamName>18Fortuna95</TeamName>
+      <LeagueID>1002</LeagueID>
+    </OwningTeam>
+    <Salary>283560</Salary>
+    <IsAbroad>True</IsAbroad>
+    <Agreeability>2</Agreeability>
+    <Aggressiveness>1</Aggressiveness>
+    <Honesty>2</Honesty>
+    <Experience>10</Experience>
+    <Loyalty>18</Loyalty>
+    <MotherClubBonus>False</MotherClubBonus>
+    <MotherClub>
+      <TeamID>1514067</TeamID>
+      <TeamName>Eastfront Defenders</TeamName>
+    </MotherClub>
+    <Leadership>5</Leadership>
+    <Specialty>5</Specialty>
+    <NativeCountryID>11</NativeCountryID>
+    <NativeLeagueID>12</NativeLeagueID>
+    <NativeLeagueName>Suomi</NativeLeagueName>
+    <TSI>140070</TSI>
+    <PlayerSkills>
+      <StaminaSkill>7</StaminaSkill>
+    </PlayerSkills>
+    <Caps>0</Caps>
+    <CapsU20>0</CapsU20>
+    <CareerGoals>168</CareerGoals>
+    <CareerHattricks>12</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <CupGoals>0</CupGoals>
+    <FriendliesGoals>0</FriendliesGoals>
+    <MatchesCurrentTeam>75</MatchesCurrentTeam>
+    <GoalsCurrentTeam>39</GoalsCurrentTeam>
+    <TransferListed>False</TransferListed>
+    <TransferDetails />
+  </Player>
+</HattrickData>
