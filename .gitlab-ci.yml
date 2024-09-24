@@ -29,6 +29,7 @@ deploy:
     PYPI_ID_TOKEN:
       aud: pypi
   script:
+    - apt update && apt install -y jq
     - pip install id
     - oidc_token=$(python -m id PYPI)
     - resp=$(curl -X POST https://pypi.org/_/oidc/mint-token -d "{\"token\":\"${oidc_token}\"}")
