@@ -1,3 +1,6 @@
-from pychpp.chpp import CHPP  # noqa: F401
+import importlib.metadata
 
-__version__ = "0.3.12"
+from pychpp.chpp import CHPP
+
+
+__version__ = importlib.metadata.version("pychpp")
