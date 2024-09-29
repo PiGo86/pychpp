@@ -375,12 +375,12 @@ class CHPPXml(CHPPBase):
             self, stats_type: str = None, arena_id: int = None, team_id: int = None,
             match_type: str = None, first_date: datetime = None,
             last_date: datetime = None, stats_league_id: int = None,
-    ) -> Union[arena_details.ArenaDetails,
+    ) -> Union[arena_details.ArenaDetailsDefault,
                arena_details.ArenaDetailsMyArena,
                arena_details.ArenaDetailsLeagueArenaStats]:
 
         if stats_type is None:
-            return arena_details.ArenaDetails(
+            return arena_details.ArenaDetailsDefault(
                 chpp=self, stats_type=stats_type, arena_id=arena_id, team_id=team_id,
             )
 
