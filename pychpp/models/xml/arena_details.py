@@ -132,6 +132,7 @@ class RequestArenaDetailsLeagueArenaStats(CommonRequestArenaDetails):
     """
     _r_league_id: int = HTInitVar('StatsLeagueID', init_arg='league_id')
 
+
 class ArenaDetailsLeagueArenaStats(RequestArenaDetailsLeagueArenaStats):
     """
     Arena Details - League Arena Stats
