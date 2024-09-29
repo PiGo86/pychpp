@@ -7,7 +7,7 @@ from pychpp.models.ht_model import HTModel
 
 class RequestRegionDetails(HTModel):
     """
-    Request arguments for Region Details
+    Region Details - Request arguments
     """
     SOURCE_FILE = 'regiondetails'
     LAST_VERSION = '1.2'

@@ -6,11 +6,10 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class PlayerDetails(HTModel):
+class RequestPlayerDetails(HTModel):
     """
-    Player Details
+    Player Details - Request arguments
     """
-
     SOURCE_FILE = 'playerdetails'
     LAST_VERSION = '3.0'
 
@@ -22,6 +21,11 @@ class PlayerDetails(HTModel):
     _r_bid_amount: Optional[int] = HTInitVar('bidAmount', init_arg='bid_amount')
     _r_max_bid_amount: Optional[int] = HTInitVar('maxBidAmount', init_arg='max_bid_amount')
 
+
+class PlayerDetails(RequestPlayerDetails):
+    """
+    Player Details
+    """
     XML_PREFIX = 'Player/'
 
     user_supporter_tier: str = HTField('../UserSupporterTier')

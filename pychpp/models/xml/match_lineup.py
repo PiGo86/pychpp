@@ -7,7 +7,7 @@ from pychpp.models.ht_model import HTModel
 
 class RequestMatchLineup(HTModel):
     """
-    Request arguments for Match Lineup
+    Match Lineup - Request arguments
     """
     SOURCE_FILE = 'matchlineup'
     LAST_VERSION = '2.1'

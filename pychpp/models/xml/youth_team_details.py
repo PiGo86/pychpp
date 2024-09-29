@@ -6,9 +6,9 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class BaseYouthTeamDetails(HTModel):
+class RequestYouthTeamDetails(HTModel):
     """
-    Base Youth Team Details
+    Youth Team Details - Request arguments
     """
     SOURCE_FILE = 'youthteamdetails'
     LAST_VERSION = '1.2'
@@ -19,7 +19,7 @@ class BaseYouthTeamDetails(HTModel):
     XML_PREFIX = 'YouthTeam/'
 
 
-class YouthTeamDetails(BaseYouthTeamDetails):
+class YouthTeamDetails(RequestYouthTeamDetails):
     """
     Youth Team Details
     """

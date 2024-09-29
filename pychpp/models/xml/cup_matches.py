@@ -10,7 +10,6 @@ class RequestCupMatches(HTModel):
     """
     Cup Matches - Request arguments
     """
-
     SOURCE_FILE = "cupmatches"
     LAST_VERSION = "1.4"
 

@@ -3,16 +3,20 @@ from typing import List, Optional
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
-class ManagerCompendium(HTModel):
+class RequestManagerCompendium(HTModel):
     """
-    Manager Compendium
+    Manager Compendium - Request arguments
     """
-
     SOURCE_FILE = "managercompendium"
     LAST_VERSION = "1.5"
 
     _r_user_id: Optional[int] = HTInitVar(param='userID', init_arg='user_id', fill_with='id')
 
+
+class ManagerCompendium(RequestManagerCompendium):
+    """
+    Manager Compendium
+    """
     id: int = HTField(path='Manager/UserId')
     login_name: str = HTField(path='Manager/Loginname')
     supporter_tier: str = HTField(path='Manager/SupporterTier')

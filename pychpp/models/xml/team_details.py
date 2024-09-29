@@ -4,9 +4,9 @@ from typing import List, Optional
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
-class BaseTeamDetails(HTModel):
+class RequestTeamDetails(HTModel):
     """
-    Base Team Details
+    Team Details - Request arguments
     """
 
     SOURCE_FILE = "teamdetails"
@@ -21,7 +21,7 @@ class BaseTeamDetails(HTModel):
                                                       init_arg='include_supporters')
 
 
-class TeamDetails(BaseTeamDetails):
+class TeamDetails(RequestTeamDetails):
     """
     Team Details
     """

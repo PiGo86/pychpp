@@ -6,7 +6,7 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class BaseTraining(HTModel):
+class BaseRequestTraining(HTModel):
     """
     Base Training
     """
@@ -17,14 +17,14 @@ class BaseTraining(HTModel):
     _r_team_id: int = HTInitVar('teamId', init_arg='team_id')
 
 
-class BaseTrainingView(HTModel):
+class RequestTrainingView(HTModel):
     """
     Base Training - View
     """
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
 
 
-class BaseTrainingSetTraining(HTModel):
+class RequestTrainingSetTraining(HTModel):
     """
     Base Training - Set training
     """
@@ -34,11 +34,10 @@ class BaseTrainingSetTraining(HTModel):
                                                init_arg='training_level_stamina')
 
 
-class CommonTrainingViewSetTraining(BaseTraining):
+class CommonTrainingViewSetTraining(BaseRequestTraining):
     """
     Training View or Set Training
     """
-
     XML_PREFIX = 'Team/'
 
     user_supporter_tier: str = HTField('../UserSupporterTier')
@@ -107,28 +106,31 @@ class Experience(HTModel):
     _253: int = HTField('Experience253')
 
 
-class TrainingView(CommonTrainingViewSetTraining,
-                   BaseTraining):
+class TrainingView(CommonTrainingViewSetTraining):
     """
     Training - View
     """
     pass
 
 
-class TrainingSetTraining(CommonTrainingViewSetTraining,
-                          BaseTraining):
+class TrainingSetTraining(CommonTrainingViewSetTraining):
     """
     Training - Set training
     """
     training_set: bool = HTField('TrainingSet')
 
 
-class TrainingStats(BaseTraining):
+class RequestTrainingStats(BaseRequestTraining):
     """
-    Training - Stats
+    Training - Stats - Request arguments
     """
     _r_league_id: int = HTInitVar('leagueID', init_arg='league_id')
 
+
+class TrainingStats(RequestTrainingStats):
+    """
+    Training - Stats
+    """
     league_id: int = HTField('LeagueID')
     league_name: str = HTField('LeagueName')
     training_stats: List['TrainingStatItem'] = HTField('TrainingStatList')

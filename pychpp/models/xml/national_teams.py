@@ -5,9 +5,9 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class NationalTeams(HTModel):
+class RequestNationalTeams(HTModel):
     """
-    National Teams
+    National Teams - Request arguments
     """
     SOURCE_FILE = 'nationalteams'
     LAST_VERSION = '1.6'
@@ -15,6 +15,11 @@ class NationalTeams(HTModel):
     _r_league_office_type_id: int = HTInitVar('LeagueOfficeTypeID',
                                               init_arg='league_office_type_id')
 
+
+class NationalTeams(RequestNationalTeams):
+    """
+    National Teams
+    """
     user_supporter_tier: str = HTField('UserSupporterTier')
     league_office_type_id: int = HTField('LeagueOfficeTypeID')
     national_teams: List['NationalTeamItem'] = HTField('NationalTeams', items='NationalTeam')
