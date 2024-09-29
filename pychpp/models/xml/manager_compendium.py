@@ -35,7 +35,7 @@ class ManagerCompendium(RequestManagerCompendium):
 
 class Language(HTModel):
     """
-    managercompendium -> Language
+    Manager Compendium -> Language
     """
     id: int = HTField(path='LanguageId')
     name: str = HTField(path='LanguageName')
@@ -43,7 +43,7 @@ class Language(HTModel):
 
 class Country(HTModel):
     """
-    managercompendium -> Country
+    Manager Compendium -> Country
     """
     id: int = HTField(path='CountryId')
     name: str = HTField(path='CountryName')
@@ -51,7 +51,7 @@ class Country(HTModel):
 
 class Currency(HTModel):
     """
-    managercompendium -> Currency
+    Manager Compendium -> Currency
     """
     name: str = HTField(path='CurrencyName')
     rate: float = HTField(path='CurrencyRate')
@@ -59,7 +59,7 @@ class Currency(HTModel):
 
 class TeamItem(HTModel):
     """
-    managercompendium -> Teams -> Team item
+    Manager Compendium -> Teams -> Team item
     """
     id: int = HTField(path='TeamId')
     name: str = HTField(path='TeamName')
@@ -73,7 +73,7 @@ class TeamItem(HTModel):
 
 class TeamItemArena(HTModel):
     """
-    managercompendium -> Teams -> Team item -> Arena
+    Manager Compendium -> Teams -> Team item -> Arena
     """
     id: int = HTField(path='ArenaId')
     name: str = HTField(path='ArenaName')
@@ -81,7 +81,7 @@ class TeamItemArena(HTModel):
 
 class TeamItemLeague(HTModel):
     """
-    managercompendium -> Teams -> Team item -> League
+    Manager Compendium -> Teams -> Team item -> League
     """
     id: int = HTField(path='LeagueId')
     name: str = HTField(path='LeagueName')
@@ -90,7 +90,7 @@ class TeamItemLeague(HTModel):
 
 class TeamItemCountry(HTModel):
     """
-    managercompendium -> Teams -> Team item -> Country
+    Manager Compendium -> Teams -> Team item -> Country
     """
     id: int = HTField(path='CountryId')
     name: str = HTField(path='CountryName')
@@ -98,7 +98,7 @@ class TeamItemCountry(HTModel):
 
 class TeamItemLeagueLevelUnit(HTModel):
     """
-    managercompendium -> Teams -> Team item -> League Level Unit
+    Manager Compendium -> Teams -> Team item -> League Level Unit
     """
     id: int = HTField(path='LeagueLevelUnitId')
     name: str = HTField(path='LeagueLevelUnitName')
@@ -106,7 +106,7 @@ class TeamItemLeagueLevelUnit(HTModel):
 
 class TeamItemRegion(HTModel):
     """
-    managercompendium -> Teams -> Team item -> Region
+    Manager Compendium -> Teams -> Team item -> Region
     """
     id: int = HTField(path='RegionId')
     name: str = HTField(path='RegionName')
@@ -114,7 +114,7 @@ class TeamItemRegion(HTModel):
 
 class TeamItemYouthTeam(HTModel):
     """
-    managercompendium -> Teams -> Team item -> Youth team
+    Manager Compendium -> Teams -> Team item -> Youth team
     """
     id: int = HTField(path='YouthTeamId')
     name: str = HTField(path='YouthTeamName')
@@ -123,7 +123,7 @@ class TeamItemYouthTeam(HTModel):
 
 class TeamItemYouthTeamLeague(HTModel):
     """
-    managercompendium -> Teams -> Team item -> Youth team -> League
+    Manager Compendium -> Teams -> Team item -> Youth team -> League
     """
     id: int = HTField(path='YouthLeagueId')
     name: str = HTField(path='YouthLeagueName')
@@ -131,7 +131,7 @@ class TeamItemYouthTeamLeague(HTModel):
 
 class NationalTeamItem(HTModel):
     """
-    managercompendium -> National teams (coach or assistant) -> National team item
+    Manager Compendium -> National teams (coach or assistant) -> National team item
     """
     id: int = HTField(path='NationalTeamId')
     name: str = HTField(path='NationalTeamName')
@@ -139,7 +139,7 @@ class NationalTeamItem(HTModel):
 
 class Avatar(HTModel):
     """
-    managercompendium -> Avatar
+    Manager Compendium -> Avatar
     """
     background_image: str = HTField(path='BackgroundImage')
     layers: Optional[List['AvatarLayer']] = HTField(path='../..', items='Layer')
@@ -147,7 +147,7 @@ class Avatar(HTModel):
 
 class AvatarLayer(HTModel):
     """
-    managercompendium -> Avatar -> Layers -> Layer item
+    Manager Compendium -> Avatar -> Layers -> Layer item
     """
     x: int = HTField(path='../..', attrib='x')
     y: int = HTField(path='../..', attrib='y')

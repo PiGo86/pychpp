@@ -4,9 +4,9 @@ from typing import Optional, List
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
-class CommonArenaDetails(HTModel):
+class CommonRequestArenaDetails(HTModel):
     """
-    Common Arena Details
+    Arena Details - Common request arguments
     """
     SOURCE_FILE = "arenadetails"
     LAST_VERSION = "1.7"
@@ -14,15 +14,15 @@ class CommonArenaDetails(HTModel):
     _r_stats_type: Optional[str] = HTInitVar('StatsType', init_arg='stats_type')
 
 
-class RequestArenaDetails(CommonArenaDetails):
+class RequestArenaDetailsDefault(CommonRequestArenaDetails):
     """
-    Base requests args for Arena Details
+    Arena Details - Default - Request arguments
     """
     _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='arena_id', fill_with='id')
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
 
 
-class ArenaDetails(RequestArenaDetails):
+class ArenaDetailsDefault(RequestArenaDetailsDefault):
     """
     Arena Details
     """
@@ -87,7 +87,7 @@ class ExpandedCapacity(BaseCapacity):
     expansion_date: Optional[datetime] = HTField('ExpansionDate')
 
 
-class RequestArenaDetailsMyArena(CommonArenaDetails):
+class RequestArenaDetailsMyArena(CommonRequestArenaDetails):
     """
     Arena Details - My Arena - Request arguments
     """
@@ -126,7 +126,7 @@ class Visitors(HTModel):
     total: int = HTField('Total')
 
 
-class RequestArenaDetailsLeagueArenaStats(CommonArenaDetails):
+class RequestArenaDetailsLeagueArenaStats(CommonRequestArenaDetails):
     """
     Arena Details - League Arena Stats - Request arguments
     """

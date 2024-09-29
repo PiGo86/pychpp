@@ -8,7 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 class CommonRequestChallenges(HTModel):
     """
-    Common request for Challenges
+    Challenges - Common request arguments
     """
     SOURCE_FILE = 'challenges'
     LAST_VERSION = '1.6'
@@ -31,7 +31,7 @@ class BaseChallenges(CommonRequestChallenges):
 
 class ChallengeItem(HTModel):
     """
-    Challenges - View -> Challenges by me / Offers by others -> Challenge item
+    Challenges -> Challenges by me / Offers by others -> Challenge item
     """
     training_match_id: int = HTField('TrainingMatchID')
     match_time: datetime = HTField('MatchTime')
@@ -45,7 +45,7 @@ class ChallengeItem(HTModel):
 
 class ChallengeItemOpponent(HTModel):
     """
-    Challenges - View -> Challenges by me / Offers by others -> Challenge item -> Opponent
+    Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent
     """
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
@@ -54,7 +54,7 @@ class ChallengeItemOpponent(HTModel):
 
 class ChallengeArena(HTModel):
     """
-    Challenges - View -> Challenges by me / Offers by others -> Challenge item -> Opponent -> Arena
+    Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent -> Arena
     """
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
@@ -62,8 +62,7 @@ class ChallengeArena(HTModel):
 
 class ChallengeCountry(HTModel):
     """
-    Challenges - View -> Challenges by me / Offers by others -> Challenge item
-    -> Opponent -> Country
+    Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent -> Country
     """
     id: int = HTField('CountryID')
     name: str = HTField('CountryName')
@@ -71,7 +70,7 @@ class ChallengeCountry(HTModel):
 
 class ChallengesView(BaseChallenges):
     """
-    Challenges view
+    Challenges - View
     """
     pass
 
