@@ -1,5 +1,3 @@
-from pychpp.models.ht_field import HTProxyField
-
 # pyCHPP
 
 pyCHPP is an object-oriented python framework created to use the API provided by the online game Hattrick (www.hattrick.org).
