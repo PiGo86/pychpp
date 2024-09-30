@@ -1,6 +1,7 @@
 class HTVersion:
 
     def __init__(self, version: str):
+        self.as_string = version
         self.major = int(version.split('.')[0])
         self.minor = int(version.split('.')[1])
 

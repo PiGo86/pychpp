@@ -156,7 +156,7 @@ class HTModel(metaclass=MetaHTModel):
             setattr(self, attr, ht_init_var.value)
 
         self._data = self._chpp.request(file=self.SOURCE_FILE,
-                                        version=self.version,
+                                        version=self.version.as_string,
                                         **self._requests_args,
                                         )
 
@@ -227,6 +227,7 @@ class HTModel(metaclass=MetaHTModel):
                                     field_name,
                                     [f_item_type(chpp=self._chpp,
                                                  data=i,
+                                                 version=self.version.as_string,
                                                  xml_prefix=field.xml_prefix,
                                                  suppl_attrs=suppl_attrs,
                                                  )
@@ -269,12 +270,16 @@ class HTModel(metaclass=MetaHTModel):
                         elif issubclass(f_type, HTModel):
                             setattr(self, field_name, f_type(chpp=self._chpp,
                                                              data=xml_node,
+                                                             version=self.version.as_string,
                                                              xml_prefix=field.xml_prefix,
                                                              suppl_attrs=suppl_attrs,
                                                              ))
 
                         else:
                             raise ValueError(f"type hint '{f_type}' no implemented")
+
+                else:
+                    setattr(self, field_name, None)
 
             elif isinstance(field, HTAliasField):
                 field: HTAliasField
@@ -292,7 +297,7 @@ class HTModel(metaclass=MetaHTModel):
             path = pathlib.Path.cwd()
 
         if filename is None:
-            args = {'file': self.SOURCE_FILE, 'version': self.version}
+            args = {'file': self.SOURCE_FILE, 'version': self.version.as_string}
             args.update(sorted(self._requests_args.items()))
             filename = '&'.join(f"{k}={v}" for k, v in args.items()) + '.xml'
 
