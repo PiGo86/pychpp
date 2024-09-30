@@ -1,8 +1,8 @@
 <HattrickData>
   <FileName>teamdetails.xml</FileName>
-  <Version>3.6</Version>
+  <Version>3.7</Version>
   <UserID>1728698</UserID>
-  <FetchedDate>2024-09-11 22:58:57</FetchedDate>
+  <FetchedDate>2024-09-30 22:22:59</FetchedDate>
   <User>
     <UserID>1136671</UserID>
     <Language>
@@ -15,7 +15,7 @@
     <ICQ />
     <SignupDate>2004-03-28 15:50:49</SignupDate>
     <ActivationDate>2004-03-31 03:01:00</ActivationDate>
-    <LastLoginDate>2024-09-11 12:17:48</LastLoginDate>
+    <LastLoginDate>2024-09-30 17:59:55</LastLoginDate>
     <HasManagerLicense>True</HasManagerLicense>
     <NationalTeams />
   </User>
@@ -26,6 +26,7 @@
       <ShortTeamName>piments</ShortTeamName>
       <IsPrimaryClub>True</IsPrimaryClub>
       <FoundedDate>2004-03-31 03:01:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
       <Arena>
         <ArenaID>295023</ArenaID>
         <ArenaName>Le Piquant</ArenaName>
@@ -58,28 +59,28 @@
       </BotStatus>
       <Cup>
         <StillInCup>True</StillInCup>
-        <CupID>6</CupID>
-        <CupName>Coupe de France</CupName>
+        <CupID>645</CupID>
+        <CupName>Trophée Rubis</CupName>
         <CupLeagueLevel>0</CupLeagueLevel>
-        <CupLevel>1</CupLevel>
-        <CupLevelIndex>1</CupLevelIndex>
+        <CupLevel>2</CupLevel>
+        <CupLevelIndex>2</CupLevelIndex>
         <MatchRound>1</MatchRound>
-        <MatchRoundsLeft>14</MatchRoundsLeft>
+        <MatchRoundsLeft>13</MatchRoundsLeft>
       </Cup>
       <PowerRating>
-        <GlobalRanking>60667</GlobalRanking>
-        <LeagueRanking>2433</LeagueRanking>
-        <RegionRanking>141</RegionRanking>
-        <PowerRating>916</PowerRating>
+        <GlobalRanking>65972</GlobalRanking>
+        <LeagueRanking>2661</LeagueRanking>
+        <RegionRanking>151</RegionRanking>
+        <PowerRating>909</PowerRating>
       </PowerRating>
       <FriendlyTeamID>0</FriendlyTeamID>
-      <NumberOfVictories>0</NumberOfVictories>
-      <NumberOfUndefeated>0</NumberOfUndefeated>
-      <TeamRank>1374</TeamRank>
+      <NumberOfVictories>1</NumberOfVictories>
+      <NumberOfUndefeated>1</NumberOfUndefeated>
+      <TeamRank>821</TeamRank>
       <Fanclub>
         <FanclubID>160782</FanclubID>
         <FanclubName>   Les jardiniers sauvages </FanclubName>
-        <FanclubSize>2422</FanclubSize>
+        <FanclubSize>2426</FanclubSize>
       </Fanclub>
       <LogoURL>http://res.hattrick.org/teamlogo/3/30/296/295023/295023.png</LogoURL>
       <YouthTeamID>10563</YouthTeamID>
@@ -245,100 +246,6 @@
       </TrophyList>
       <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
       <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
-    </Team>
-    <Team>
-      <TeamID>2091056</TeamID>
-      <TeamName>Les Piments Rouges</TeamName>
-      <ShortTeamName>Piments</ShortTeamName>
-      <IsPrimaryClub>False</IsPrimaryClub>
-      <FoundedDate>2022-03-21 17:59:00</FoundedDate>
-      <Arena>
-        <ArenaID>2087827</ArenaID>
-        <ArenaName>La serre</ArenaName>
-      </Arena>
-      <League>
-        <LeagueID>1002</LeagueID>
-        <LeagueName>Ligue Anniversaire de Hattrick</LeagueName>
-      </League>
-      <Country>
-        <CountryID>5</CountryID>
-        <CountryName>France</CountryName>
-      </Country>
-      <Region>
-        <RegionID>130</RegionID>
-        <RegionName>Aquitaine</RegionName>
-      </Region>
-      <Trainer>
-        <PlayerID>467428334</PlayerID>
-      </Trainer>
-      <HomePage />
-      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
-      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
-      <LeagueLevelUnit>
-        <LeagueLevelUnitID>261497</LeagueLevelUnitID>
-        <LeagueLevelUnitName>VI.892</LeagueLevelUnitName>
-        <LeagueLevel>6</LeagueLevel>
-      </LeagueLevelUnit>
-      <BotStatus>
-        <IsBot>False</IsBot>
-      </BotStatus>
-      <Cup>
-        <StillInCup>True</StillInCup>
-        <CupID>1523</CupID>
-        <CupName>Hattrick Anniversary Cup</CupName>
-        <CupLeagueLevel>0</CupLeagueLevel>
-        <CupLevel>1</CupLevel>
-        <CupLevelIndex>1</CupLevelIndex>
-        <MatchRound>1</MatchRound>
-        <MatchRoundsLeft>15</MatchRoundsLeft>
-      </Cup>
-      <PowerRating>
-        <GlobalRanking>92145</GlobalRanking>
-        <LeagueRanking>6831</LeagueRanking>
-        <RegionRanking>217</RegionRanking>
-        <PowerRating>871</PowerRating>
-      </PowerRating>
-      <FriendlyTeamID>0</FriendlyTeamID>
-      <NumberOfVictories>0</NumberOfVictories>
-      <NumberOfUndefeated>0</NumberOfUndefeated>
-      <TeamRank>4784</TeamRank>
-      <Fanclub>
-        <FanclubID>677627</FanclubID>
-        <FanclubName>Les cactus</FanclubName>
-        <FanclubSize>2058</FanclubSize>
-      </Fanclub>
-      <LogoURL>http://res.hattrick.org/teamlogo/21/210/2092/2091056/2091056.png</LogoURL>
-      <YouthTeamID>2964655</YouthTeamID>
-      <YouthTeamName>Red Pepper</YouthTeamName>
-      <NumberOfVisits>0</NumberOfVisits>
-      <TrophyList>
-        <Trophy>
-          <TrophyTypeId>17</TrophyTypeId>
-          <TrophySeason>7</TrophySeason>
-          <LeagueLevel>6</LeagueLevel>
-          <LeagueLevelUnitId>261497</LeagueLevelUnitId>
-          <LeagueLevelUnitName>VI.892</LeagueLevelUnitName>
-          <GainedDate>2024-05-17 13:22:00</GainedDate>
-          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
-          <CupLeagueLevel />
-          <CupLevel />
-          <CupLevelIndex />
-        </Trophy>
-        <Trophy>
-          <TrophyTypeId>17</TrophyTypeId>
-          <TrophySeason>1</TrophySeason>
-          <LeagueLevel>7</LeagueLevel>
-          <LeagueLevelUnitId>261793</LeagueLevelUnitId>
-          <LeagueLevelUnitName>VII.164</LeagueLevelUnitName>
-          <GainedDate>2022-07-15 13:23:00</GainedDate>
-          <ImageUrl>/App_Themes/Standard/Images/Trophies/vii.png</ImageUrl>
-          <CupLeagueLevel />
-          <CupLevel />
-          <CupLevelIndex />
-        </Trophy>
-      </TrophyList>
-      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
-      <PossibleToChallengeWeekend>True</PossibleToChallengeWeekend>
     </Team>
   </Teams>
 </HattrickData>

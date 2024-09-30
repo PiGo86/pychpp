@@ -1,8 +1,8 @@
 <HattrickData>
   <FileName>teamdetails.xml</FileName>
-  <Version>3.6</Version>
+  <Version>3.7</Version>
   <UserID>1728698</UserID>
-  <FetchedDate>2024-09-09 18:46:15</FetchedDate>
+  <FetchedDate>2024-09-30 22:23:50</FetchedDate>
   <User>
     <UserID>9638716</UserID>
     <Language>
@@ -15,7 +15,7 @@
     <ICQ />
     <SignupDate>2016-02-25 11:30:01</SignupDate>
     <ActivationDate>2016-02-25 12:06:00</ActivationDate>
-    <LastLoginDate>2024-09-01 10:01:48</LastLoginDate>
+    <LastLoginDate>2024-09-29 11:01:06</LastLoginDate>
     <HasManagerLicense>True</HasManagerLicense>
     <NationalTeams />
   </User>
@@ -26,6 +26,7 @@
       <ShortTeamName>Nuls</ShortTeamName>
       <IsPrimaryClub>True</IsPrimaryClub>
       <FoundedDate>2016-02-25 12:06:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
       <Arena>
         <ArenaID>190343</ArenaID>
         <ArenaName>Stade Laurent Fièvre</ArenaName>
@@ -57,22 +58,29 @@
         <IsBot>False</IsBot>
       </BotStatus>
       <Cup>
-        <StillInCup>False</StillInCup>
+        <StillInCup>True</StillInCup>
+        <CupID>936</CupID>
+        <CupName>Belgium Consolation Cup</CupName>
+        <CupLeagueLevel>0</CupLeagueLevel>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <MatchRound>1</MatchRound>
+        <MatchRoundsLeft>12</MatchRoundsLeft>
       </Cup>
       <PowerRating>
-        <GlobalRanking>256749</GlobalRanking>
-        <LeagueRanking>7586</LeagueRanking>
-        <RegionRanking>239</RegionRanking>
-        <PowerRating>501</PowerRating>
+        <GlobalRanking>253933</GlobalRanking>
+        <LeagueRanking>7964</LeagueRanking>
+        <RegionRanking>260</RegionRanking>
+        <PowerRating>522</PowerRating>
       </PowerRating>
-      <FriendlyTeamID>463559</FriendlyTeamID>
-      <NumberOfVictories>1</NumberOfVictories>
-      <NumberOfUndefeated>1</NumberOfUndefeated>
-      <TeamRank>7579</TeamRank>
+      <FriendlyTeamID>0</FriendlyTeamID>
+      <NumberOfVictories>0</NumberOfVictories>
+      <NumberOfUndefeated>0</NumberOfUndefeated>
+      <TeamRank>8085</TeamRank>
       <Fanclub>
         <FanclubID>26527</FanclubID>
         <FanclubName>Les NULs</FanclubName>
-        <FanclubSize>1719</FanclubSize>
+        <FanclubSize>1727</FanclubSize>
       </Fanclub>
       <LogoURL />
       <Guestbook>
@@ -97,7 +105,7 @@ Mozambique  H</Body>
       </TeamColors>
       <YouthTeamID>2558557</YouthTeamID>
       <YouthTeamName>Djeunes NULS</YouthTeamName>
-      <NumberOfVisits>1</NumberOfVisits>
+      <NumberOfVisits>0</NumberOfVisits>
       <TrophyList>
         <Trophy>
           <TrophyTypeId>103</TrophyTypeId>
@@ -177,6 +185,7 @@ Mozambique  H</Body>
       <ShortTeamName>Bot Breton</ShortTeamName>
       <IsPrimaryClub>False</IsPrimaryClub>
       <FoundedDate>2019-01-18 04:38:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
       <Arena>
         <ArenaID>1751912</ArenaID>
         <ArenaName>Stade Laurent Fièvre</ArenaName>
@@ -208,22 +217,29 @@ Mozambique  H</Body>
         <IsBot>False</IsBot>
       </BotStatus>
       <Cup>
-        <StillInCup>False</StillInCup>
+        <StillInCup>True</StillInCup>
+        <CupID>516</CupID>
+        <CupName>Trophée Pantelis</CupName>
+        <CupLeagueLevel>0</CupLeagueLevel>
+        <CupLevel>2</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <MatchRound>2</MatchRound>
+        <MatchRoundsLeft>13</MatchRoundsLeft>
       </Cup>
       <PowerRating>
-        <GlobalRanking>226405</GlobalRanking>
-        <LeagueRanking>7912</LeagueRanking>
-        <RegionRanking>688</RegionRanking>
-        <PowerRating>591</PowerRating>
+        <GlobalRanking>225984</GlobalRanking>
+        <LeagueRanking>8026</LeagueRanking>
+        <RegionRanking>703</RegionRanking>
+        <PowerRating>604</PowerRating>
       </PowerRating>
-      <FriendlyTeamID>2066591</FriendlyTeamID>
-      <NumberOfVictories>1</NumberOfVictories>
-      <NumberOfUndefeated>1</NumberOfUndefeated>
-      <TeamRank>6502</TeamRank>
+      <FriendlyTeamID>0</FriendlyTeamID>
+      <NumberOfVictories>2</NumberOfVictories>
+      <NumberOfUndefeated>2</NumberOfUndefeated>
+      <TeamRank>7059</TeamRank>
       <Fanclub>
         <FanclubID>554732</FanclubID>
         <FanclubName>Les Bots Bretons</FanclubName>
-        <FanclubSize>1841</FanclubSize>
+        <FanclubSize>1815</FanclubSize>
       </Fanclub>
       <LogoURL />
       <Guestbook>
@@ -242,7 +258,7 @@ Mozambique  H</Body>
       </TeamColors>
       <YouthTeamID>2745926</YouthTeamID>
       <YouthTeamName>Les Petits Pédëstres</YouthTeamName>
-      <NumberOfVisits>1</NumberOfVisits>
+      <NumberOfVisits>0</NumberOfVisits>
       <TrophyList>
         <Trophy>
           <TrophyTypeId>103</TrophyTypeId>
@@ -287,6 +303,7 @@ Mozambique  H</Body>
       <ShortTeamName>Africain</ShortTeamName>
       <IsPrimaryClub>False</IsPrimaryClub>
       <FoundedDate>2020-04-22 00:10:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
       <Arena>
         <ArenaID>2012310</ArenaID>
         <ArenaName>Gloire au MdJ</ArenaName>
@@ -318,26 +335,33 @@ Mozambique  H</Body>
         <IsBot>False</IsBot>
       </BotStatus>
       <Cup>
-        <StillInCup>False</StillInCup>
+        <StillInCup>True</StillInCup>
+        <CupID>966</CupID>
+        <CupName>Consolante</CupName>
+        <CupLeagueLevel>0</CupLeagueLevel>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <MatchRound>1</MatchRound>
+        <MatchRoundsLeft>7</MatchRoundsLeft>
       </Cup>
       <PowerRating>
-        <GlobalRanking>257565</GlobalRanking>
-        <LeagueRanking>152</LeagueRanking>
-        <RegionRanking>10</RegionRanking>
-        <PowerRating>489</PowerRating>
+        <GlobalRanking>261960</GlobalRanking>
+        <LeagueRanking>153</LeagueRanking>
+        <RegionRanking>9</RegionRanking>
+        <PowerRating>498</PowerRating>
       </PowerRating>
-      <FriendlyTeamID>2099391</FriendlyTeamID>
+      <FriendlyTeamID>0</FriendlyTeamID>
       <NumberOfVictories>0</NumberOfVictories>
       <NumberOfUndefeated>0</NumberOfUndefeated>
-      <TeamRank>166</TeamRank>
+      <TeamRank>154</TeamRank>
       <Fanclub>
         <FanclubID>674149</FanclubID>
         <FanclubName>Les Gloires au MdJ</FanclubName>
-        <FanclubSize>1824</FanclubSize>
+        <FanclubSize>1809</FanclubSize>
       </Fanclub>
       <LogoURL />
       <Guestbook>
-        <NumberOfGuestbookItems>38</NumberOfGuestbookItems>
+        <NumberOfGuestbookItems>39</NumberOfGuestbookItems>
       </Guestbook>
       <PressAnnouncement>
         <Subject>Drapeau </Subject>
@@ -353,7 +377,7 @@ St Vincent H/A </Body>
       </TeamColors>
       <YouthTeamID>2827873</YouthTeamID>
       <YouthTeamName>Afros NUL</YouthTeamName>
-      <NumberOfVisits>0</NumberOfVisits>
+      <NumberOfVisits>1</NumberOfVisits>
       <TrophyList>
         <Trophy>
           <TrophyTypeId>17</TrophyTypeId>
@@ -526,98 +550,6 @@ St Vincent H/A </Body>
           <CupLevelIndex />
         </Trophy>
       </TrophyList>
-      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
-      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
-    </Team>
-    <Team>
-      <TeamID>2090270</TeamID>
-      <TeamName>Projet NUL Béninois</TeamName>
-      <ShortTeamName>Sodabi</ShortTeamName>
-      <IsPrimaryClub>False</IsPrimaryClub>
-      <FoundedDate>2022-03-21 16:42:00</FoundedDate>
-      <Arena>
-        <ArenaID>2087041</ArenaID>
-        <ArenaName>Sodabi Stadium</ArenaName>
-      </Arena>
-      <League>
-        <LeagueID>1002</LeagueID>
-        <LeagueName>Ligue Anniversaire de Hattrick</LeagueName>
-      </League>
-      <Country>
-        <CountryID>147</CountryID>
-        <CountryName>Bénin</CountryName>
-      </Country>
-      <Region>
-        <RegionID>2452</RegionID>
-        <RegionName>Alibori</RegionName>
-      </Region>
-      <Trainer>
-        <PlayerID>418076763</PlayerID>
-      </Trainer>
-      <HomePage />
-      <DressURI>//res.hattrick.org/kits/28/278/2778/2777320/matchKitSmall.png</DressURI>
-      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
-      <LeagueLevelUnit>
-        <LeagueLevelUnitID>261695</LeagueLevelUnitID>
-        <LeagueLevelUnitName>VII.66</LeagueLevelUnitName>
-        <LeagueLevel>7</LeagueLevel>
-      </LeagueLevelUnit>
-      <BotStatus>
-        <IsBot>False</IsBot>
-      </BotStatus>
-      <Cup>
-        <StillInCup>False</StillInCup>
-      </Cup>
-      <PowerRating>
-        <GlobalRanking>251570</GlobalRanking>
-        <LeagueRanking>21909</LeagueRanking>
-        <RegionRanking>22</RegionRanking>
-        <PowerRating>526</PowerRating>
-      </PowerRating>
-      <FriendlyTeamID>2090461</FriendlyTeamID>
-      <NumberOfVictories>1</NumberOfVictories>
-      <NumberOfUndefeated>1</NumberOfUndefeated>
-      <TeamRank>21786</TeamRank>
-      <Fanclub>
-        <FanclubID>680603</FanclubID>
-        <FanclubName>Les Sodabistes</FanclubName>
-        <FanclubSize>1424</FanclubSize>
-      </Fanclub>
-      <LogoURL />
-      <Guestbook>
-        <NumberOfGuestbookItems>28</NumberOfGuestbookItems>
-      </Guestbook>
-      <PressAnnouncement>
-        <Subject>4e !  4th !</Subject>
-        <Body>[b]4e avec mes béninois en HAL[/b]
-
-je suis content je pensais terminer dans le fond avec mon Owen Growing
-Mes premiers Owen vont bientôt arriver
-D'abord des Sodabi (j'avais renommé les joueurs de la team de base)
-Par contre la plupart des joueurs de recrutés ont été reprénommés Owen :) Quasi tous
-On a même un Sodabi non réel dont le frère est Videhouenou Sodabi (star de mon équipe première un gros NUL que j'adore) et .. qui avait été renommé Sodabi
-
-Et PAF son frère est un Sodabi d'origine
-[hr]
-[b]4th with my Beninese in HAL[/b]
-
-I’m glad I thought I’d finish in the background with my Owen Growing
-My first Owen’s coming soon
-First of the Sodabi (I had renamed the players of the base team)
-On the other hand, most of the players recruited were reworked Owen:) Almost all
-We even have a nonreal Sodabi whose brother is Videhouenou Sodabi (star of my first team a big DRAW that I love) and .. which had been renamed Sodabi
-
-And PAF his brother is a Sodabi of origin</Body>
-        <SendDate>2022-07-09 21:47:00</SendDate>
-      </PressAnnouncement>
-      <TeamColors>
-        <BackgroundColor>288032</BackgroundColor>
-        <Color>ffffff</Color>
-      </TeamColors>
-      <YouthTeamID>3064490</YouthTeamID>
-      <YouthTeamName>Bouses du Bénin </YouthTeamName>
-      <NumberOfVisits>0</NumberOfVisits>
-      <TrophyList />
       <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
       <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
     </Team>
