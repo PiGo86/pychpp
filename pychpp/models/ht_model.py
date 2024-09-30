@@ -197,7 +197,7 @@ class HTModel(metaclass=MetaHTModel):
                 field: HTField
 
                 if (field.version is None
-                    or HTVersionConstraint(field.version).is_valid(self.version)):
+                        or HTVersionConstraint(field.version).is_valid(self.version)):
 
                     f_type = self.get_type(field_name)
                     f_item_type = self.get_item_type(field_name)
@@ -252,7 +252,9 @@ class HTModel(metaclass=MetaHTModel):
                             setattr(self, field_name, HTXml.ht_str(xml_node, attrib=field.attrib))
 
                         elif f_type is float:
-                            setattr(self, field_name, HTXml.ht_float(xml_node, attrib=field.attrib))
+                            setattr(self,
+                                    field_name,
+                                    HTXml.ht_float(xml_node, attrib=field.attrib))
 
                         elif f_type is bool:
                             setattr(self, field_name, HTXml.ht_bool(xml_node, attrib=field.attrib))
