@@ -7,7 +7,7 @@ from pychpp.models.ht_model import HTModel
 
 class RequestLeagueDetails(HTModel):
     """
-    Request arguments for League Details
+    League Details - Request arguments
     """
     SOURCE_FILE = 'leaguedetails'
     LAST_VERSION = '1.6'

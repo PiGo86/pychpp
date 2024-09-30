@@ -8,7 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 class RequestPlayers(HTModel):
     """
-    Players - Request args
+    Players - Request arguments
     """
     SOURCE_FILE = 'players'
     LAST_VERSION = '2.6'

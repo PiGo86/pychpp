@@ -6,17 +6,21 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class LeagueFixtures(HTModel):
+class RequestLeagueFixtures(HTModel):
     """
-    League Fixtures
+    League Fixtures - Request arguments
     """
-
     SOURCE_FILE = 'leaguefixtures'
     LAST_VERSION = '1.2'
 
     _r_league_level_unit_id: int = HTInitVar('leagueLevelUnitID', init_arg='league_level_unit_id')
     _r_season: int = HTInitVar('season', init_arg='season')
 
+
+class LeagueFixtures(RequestLeagueFixtures):
+    """
+    League Fixtures
+    """
     id: int = HTField('LeagueLevelUnitID')
     name: str = HTField('LeagueLevelUnitName')
     season: int = HTField('Season')

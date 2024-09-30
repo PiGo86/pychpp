@@ -5,16 +5,20 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class NationalTeamDetails(HTModel):
+class RequestNationalTeamDetails(HTModel):
     """
-    National Team Details
+    National Team Details - Request arguments
     """
-
     SOURCE_FILE = 'nationalteamdetails'
     LAST_VERSION = '1.9'
 
     _r_team_id: int = HTInitVar('teamID', init_arg='team_id')
 
+
+class NationalTeamDetails(RequestNationalTeamDetails):
+    """
+    National Team Details
+    """
     user_supporter_tier: str = HTField('UserSupporterTier')
     is_playing_match: bool = HTField('IsPlayingMatch')
     id: int = HTField('Team/TeamID')

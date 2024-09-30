@@ -6,11 +6,10 @@ from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.ht_model import HTModel
 
 
-class BaseWorldCup(HTModel):
+class RequestBaseWorldCup(HTModel):
     """
-    BaseWorld Cup
+    Base World Cup - Request arguments
     """
-
     SOURCE_FILE = 'worldcup'
     LAST_VERSION = '1.1'
 
@@ -18,18 +17,28 @@ class BaseWorldCup(HTModel):
     _r_cup_id: Optional[int] = HTInitVar('cupID', init_arg='cup_id')
     _r_season: int = HTInitVar('season', init_arg='season')
 
+
+class BaseWorldCup(RequestBaseWorldCup):
+    """
+    Base World Cup
+    """
     cup_id: int = HTField('CupID')
     season: int = HTField('Season')
     match_round: int = HTField('MatchRound')
 
 
-class WorldCupViewMatches(BaseWorldCup):
+class RequestWorldCupViewMatches(RequestBaseWorldCup):
     """
-    World Cup - View matches
+    World Cup - View matches - Request arguments
     """
     _r_match_round: Optional[int] = HTInitVar('matchRound', init_arg='match_round')
     _r_cup_series_unit_id: int = HTInitVar('cupSeriesUnitID', init_arg='cup_series_unit_id')
 
+
+class WorldCupViewMatches(RequestWorldCupViewMatches, BaseWorldCup):
+    """
+    World Cup - View matches
+    """
     cup_series_unit_id: int = HTField('CupSeriesUnitID')
     matches: Optional[List['ViewMatchesMatchItem']] = HTField('Matches', items='Match')
     rounds: List['ViewMatchesRoundItem'] = HTField('Rounds', items='Round')
@@ -64,7 +73,13 @@ class ViewMatchesRoundItem(HTModel):
     start_date: datetime = HTField('StartDate')
 
 
-class WorldCupViewGroups(BaseWorldCup):
+class RequestWorldCupViewGroups(RequestBaseWorldCup):
+    """
+    World Cup - View groups - Request arguments
+    """
+
+
+class WorldCupViewGroups(RequestWorldCupViewGroups, BaseWorldCup):
     """
     World Cup - View groups
     """

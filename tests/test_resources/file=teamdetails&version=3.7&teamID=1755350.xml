@@ -1,0 +1,557 @@
+<HattrickData>
+  <FileName>teamdetails.xml</FileName>
+  <Version>3.7</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-09-30 22:23:50</FetchedDate>
+  <User>
+    <UserID>9638716</UserID>
+    <Language>
+      <LanguageID>5</LanguageID>
+      <LanguageName>Français</LanguageName>
+    </Language>
+    <SupporterTier>diamond</SupporterTier>
+    <Loginname>Conteur_Merlin</Loginname>
+    <Name>HIDDEN</Name>
+    <ICQ />
+    <SignupDate>2016-02-25 11:30:01</SignupDate>
+    <ActivationDate>2016-02-25 12:06:00</ActivationDate>
+    <LastLoginDate>2024-09-29 11:01:06</LastLoginDate>
+    <HasManagerLicense>True</HasManagerLicense>
+    <NationalTeams />
+  </User>
+  <Teams>
+    <Team>
+      <TeamID>190343</TeamID>
+      <TeamName>Projet NUL</TeamName>
+      <ShortTeamName>Nuls</ShortTeamName>
+      <IsPrimaryClub>True</IsPrimaryClub>
+      <FoundedDate>2016-02-25 12:06:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
+      <Arena>
+        <ArenaID>190343</ArenaID>
+        <ArenaName>Stade Laurent Fièvre</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>44</LeagueID>
+        <LeagueName>Belgique</LeagueName>
+      </League>
+      <Country>
+        <CountryID>38</CountryID>
+        <CountryName>Belgique</CountryName>
+      </Country>
+      <Region>
+        <RegionID>882</RegionID>
+        <RegionName>Liège</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>433546143</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/27/262/2615/2614881/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>23919</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.935</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup>
+        <StillInCup>True</StillInCup>
+        <CupID>936</CupID>
+        <CupName>Belgium Consolation Cup</CupName>
+        <CupLeagueLevel>0</CupLeagueLevel>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <MatchRound>1</MatchRound>
+        <MatchRoundsLeft>12</MatchRoundsLeft>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>253933</GlobalRanking>
+        <LeagueRanking>7964</LeagueRanking>
+        <RegionRanking>260</RegionRanking>
+        <PowerRating>522</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>0</FriendlyTeamID>
+      <NumberOfVictories>0</NumberOfVictories>
+      <NumberOfUndefeated>0</NumberOfUndefeated>
+      <TeamRank>8085</TeamRank>
+      <Fanclub>
+        <FanclubID>26527</FanclubID>
+        <FanclubName>Les NULs</FanclubName>
+        <FanclubSize>1727</FanclubSize>
+      </Fanclub>
+      <LogoURL />
+      <Guestbook>
+        <NumberOfGuestbookItems>206</NumberOfGuestbookItems>
+      </Guestbook>
+      <PressAnnouncement>
+        <Subject>Drapeau </Subject>
+        <Body>
+Angola  H
+Azerbaïdjan  H
+Bahreïn   H
+Bangladesh  H/A
+Iran  H
+Maldives  A Blueberry boys  ([teamid=1961022]) semaine 6
+Moldavie  H/ À
+Mozambique  H</Body>
+        <SendDate>2023-07-28 17:03:00</SendDate>
+      </PressAnnouncement>
+      <TeamColors>
+        <BackgroundColor>cc5669</BackgroundColor>
+        <Color>ffffff</Color>
+      </TeamColors>
+      <YouthTeamID>2558557</YouthTeamID>
+      <YouthTeamName>Djeunes NULS</YouthTeamName>
+      <NumberOfVisits>0</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>8</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>4938920</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Mémorial Robby Rensenbrink</LeagueLevelUnitName>
+          <GainedDate>2023-03-04 20:47:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5229172</LeagueLevelUnitId>
+          <LeagueLevelUnitName>COUPEur de tête</LeagueLevelUnitName>
+          <GainedDate>2021-11-16 00:28:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>65</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>23919</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.935</LeagueLevelUnitName>
+          <GainedDate>2021-08-15 01:01:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>62</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>24008</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.1024</LeagueLevelUnitName>
+          <GainedDate>2020-09-13 01:05:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>4833356</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Lecimy po Puchar</LeagueLevelUnitName>
+          <GainedDate>2020-08-12 20:40:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>2</LeagueLevel>
+          <LeagueLevelUnitId>4833976</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Turniej Plażowy</LeagueLevelUnitName>
+          <GainedDate>2020-08-11 22:40:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+    <Team>
+      <TeamID>1755350</TeamID>
+      <TeamName>Projet NUL Bot Breton</TeamName>
+      <ShortTeamName>Bot Breton</ShortTeamName>
+      <IsPrimaryClub>False</IsPrimaryClub>
+      <FoundedDate>2019-01-18 04:38:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
+      <Arena>
+        <ArenaID>1751912</ArenaID>
+        <ArenaName>Stade Laurent Fièvre</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>5</LeagueID>
+        <LeagueName>France</LeagueName>
+      </League>
+      <Country>
+        <CountryID>5</CountryID>
+        <CountryName>France</CountryName>
+      </Country>
+      <Region>
+        <RegionID>134</RegionID>
+        <RegionName>Bretagne</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>395869017</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/27/262/2615/2614882/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>36640</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.652</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup>
+        <StillInCup>True</StillInCup>
+        <CupID>516</CupID>
+        <CupName>Trophée Pantelis</CupName>
+        <CupLeagueLevel>0</CupLeagueLevel>
+        <CupLevel>2</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <MatchRound>2</MatchRound>
+        <MatchRoundsLeft>13</MatchRoundsLeft>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>225984</GlobalRanking>
+        <LeagueRanking>8026</LeagueRanking>
+        <RegionRanking>703</RegionRanking>
+        <PowerRating>604</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>0</FriendlyTeamID>
+      <NumberOfVictories>2</NumberOfVictories>
+      <NumberOfUndefeated>2</NumberOfUndefeated>
+      <TeamRank>7059</TeamRank>
+      <Fanclub>
+        <FanclubID>554732</FanclubID>
+        <FanclubName>Les Bots Bretons</FanclubName>
+        <FanclubSize>1815</FanclubSize>
+      </Fanclub>
+      <LogoURL />
+      <Guestbook>
+        <NumberOfGuestbookItems>31</NumberOfGuestbookItems>
+      </Guestbook>
+      <PressAnnouncement>
+        <Subject>Allez Metz !</Subject>
+        <Body>En avant pour les demies 
+
+</Body>
+        <SendDate>2023-09-20 14:10:00</SendDate>
+      </PressAnnouncement>
+      <TeamColors>
+        <BackgroundColor>288032</BackgroundColor>
+        <Color>ffffff</Color>
+      </TeamColors>
+      <YouthTeamID>2745926</YouthTeamID>
+      <YouthTeamName>Les Petits Pédëstres</YouthTeamName>
+      <NumberOfVisits>0</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>2</TrophySeason>
+          <LeagueLevel>2</LeagueLevel>
+          <LeagueLevelUnitId>5229161</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Coupe des buts à gogo</LeagueLevelUnitName>
+          <GainedDate>2022-01-17 08:47:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>2</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5164850</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Tournoi de la Neuville</LeagueLevelUnitName>
+          <GainedDate>2022-01-06 20:46:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>2</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>4949681</LeagueLevelUnitId>
+          <LeagueLevelUnitName>InterSeries League One</LeagueLevelUnitName>
+          <GainedDate>2021-04-05 14:48:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+    <Team>
+      <TeamID>2015749</TeamID>
+      <TeamName>Projet NUL Africain</TeamName>
+      <ShortTeamName>Africain</ShortTeamName>
+      <IsPrimaryClub>False</IsPrimaryClub>
+      <FoundedDate>2020-04-22 00:10:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
+      <Arena>
+        <ArenaID>2012310</ArenaID>
+        <ArenaName>Gloire au MdJ</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>77</LeagueID>
+        <LeagueName>Maroc</LeagueName>
+      </League>
+      <Country>
+        <CountryID>72</CountryID>
+        <CountryName>Maroc</CountryName>
+      </Country>
+      <Region>
+        <RegionID>2485</RegionID>
+        <RegionName>L'Oriental</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>391135185</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/27/262/2615/2614883/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>252667</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.77</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup>
+        <StillInCup>True</StillInCup>
+        <CupID>966</CupID>
+        <CupName>Consolante</CupName>
+        <CupLeagueLevel>0</CupLeagueLevel>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <MatchRound>1</MatchRound>
+        <MatchRoundsLeft>7</MatchRoundsLeft>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>261960</GlobalRanking>
+        <LeagueRanking>153</LeagueRanking>
+        <RegionRanking>9</RegionRanking>
+        <PowerRating>498</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>0</FriendlyTeamID>
+      <NumberOfVictories>0</NumberOfVictories>
+      <NumberOfUndefeated>0</NumberOfUndefeated>
+      <TeamRank>154</TeamRank>
+      <Fanclub>
+        <FanclubID>674149</FanclubID>
+        <FanclubName>Les Gloires au MdJ</FanclubName>
+        <FanclubSize>1809</FanclubSize>
+      </Fanclub>
+      <LogoURL />
+      <Guestbook>
+        <NumberOfGuestbookItems>39</NumberOfGuestbookItems>
+      </Guestbook>
+      <PressAnnouncement>
+        <Subject>Drapeau </Subject>
+        <Body>Benin H
+Bosnie H
+Moldavie H/A
+St Vincent H/A </Body>
+        <SendDate>2023-07-28 17:08:00</SendDate>
+      </PressAnnouncement>
+      <TeamColors>
+        <BackgroundColor>cc5669</BackgroundColor>
+        <Color>ffffff</Color>
+      </TeamColors>
+      <YouthTeamID>2827873</YouthTeamID>
+      <YouthTeamName>Afros NUL</YouthTeamName>
+      <NumberOfVisits>1</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>66</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>252816</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.226</LeagueLevelUnitName>
+          <GainedDate>2024-01-28 01:19:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>16</TrophyTypeId>
+          <TrophySeason>66</TrophySeason>
+          <LeagueLevel>0</LeagueLevel>
+          <LeagueLevelUnitId>966</LeagueLevelUnitId>
+          <LeagueLevelUnitName />
+          <GainedDate>2023-12-13 23:22:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/leaguecup_0.png</ImageUrl>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>3</CupLevel>
+          <CupLevelIndex>1</CupLevelIndex>
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5534114</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Zanimo div 3 saison 4</LeagueLevelUnitName>
+          <GainedDate>2023-02-13 22:26:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>7</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>4957623</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Olympic League</LeagueLevelUnitName>
+          <GainedDate>2023-02-04 20:47:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>81</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>2158308</LeagueLevelUnitId>
+          <LeagueLevelUnitName>FUTURE DREAM TEAMS - NEW GEN</LeagueLevelUnitName>
+          <GainedDate>2022-10-22 00:08:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>6</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>4957623</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Olympic League</LeagueLevelUnitName>
+          <GainedDate>2022-10-12 20:47:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>5475335</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Jubilé Paul Philipp</LeagueLevelUnitName>
+          <GainedDate>2022-09-06 21:26:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>2</LeagueLevel>
+          <LeagueLevelUnitId>5455383</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Mohammedia Summer Cup</LeagueLevelUnitName>
+          <GainedDate>2022-08-05 21:31:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>5461088</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Welcome home</LeagueLevelUnitName>
+          <GainedDate>2022-07-31 22:38:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>6</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>4922879</LeagueLevelUnitId>
+          <LeagueLevelUnitName>LIGA PROMOCIONAL I FPH</LeagueLevelUnitName>
+          <GainedDate>2022-07-13 05:47:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>5395847</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Jubilé Rudy Ducoulombier</LeagueLevelUnitName>
+          <GainedDate>2022-05-21 21:28:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>60</TrophySeason>
+          <LeagueLevel>3</LeagueLevel>
+          <LeagueLevelUnitId>34950</LeagueLevelUnitId>
+          <LeagueLevelUnitName>III.2</LeagueLevelUnitName>
+          <GainedDate>2022-03-27 08:27:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iii.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>58</TrophySeason>
+          <LeagueLevel>4</LeagueLevel>
+          <LeagueLevelUnitId>208321</LeagueLevelUnitId>
+          <LeagueLevelUnitName>IV.60</LeagueLevelUnitName>
+          <GainedDate>2021-08-15 01:24:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/iv.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>57</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>252846</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.256</LeagueLevelUnitName>
+          <GainedDate>2021-04-25 01:32:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>103</TrophyTypeId>
+          <TrophySeason>1</TrophySeason>
+          <LeagueLevel>1</LeagueLevel>
+          <LeagueLevelUnitId>4981942</LeagueLevelUnitId>
+          <LeagueLevelUnitName>Coupe Arie Haan</LeagueLevelUnitName>
+          <GainedDate>2021-02-04 21:09:00</GainedDate>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+  </Teams>
+</HattrickData>

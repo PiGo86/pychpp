@@ -8,7 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 class RequestWorldDetails(HTModel):
     """
-    Request arguments for world details
+    World Details - Request arguments
     """
     SOURCE_FILE = 'worlddetails'
     LAST_VERSION = '1.9'

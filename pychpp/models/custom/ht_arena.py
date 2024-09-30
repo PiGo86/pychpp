@@ -6,13 +6,13 @@ from pychpp.models.ht_field import HTProxyField
 from pychpp.models.xml import arena_details
 
 
-class HTArena(arena_details.ArenaDetails, BaseHTArena):
+class HTArena(arena_details.ArenaDetailsDefault, BaseHTArena):
     """
     Hattrick Arena
     """
-    team: 'HTArenaTeam' = HTProxyField(arena_details.ArenaDetails)
-    league: 'HTArenaLeague' = HTProxyField(arena_details.ArenaDetails)
-    region: 'HTArenaRegion' = HTProxyField(arena_details.ArenaDetails)
+    team: 'HTArenaTeam' = HTProxyField(arena_details.ArenaDetailsDefault)
+    league: 'HTArenaLeague' = HTProxyField(arena_details.ArenaDetailsDefault)
+    region: 'HTArenaRegion' = HTProxyField(arena_details.ArenaDetailsDefault)
 
 
 class HTArenaTeam(arena_details.Team, HTLightTeam):

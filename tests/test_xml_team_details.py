@@ -18,7 +18,7 @@ def test_get_current_team(chpp: 'CHPP'):
 
 def test_get_specific_team(mocked_chpp: 'CHPP'):
 
-    xml_team = mocked_chpp.xml_team_details(team_id=987765)
+    xml_team = mocked_chpp.xml_team_details(team_id=987765, version='3.6')
 
     assert xml_team.user.id == 12453550
     assert xml_team.user.language.id == 13
@@ -91,7 +91,7 @@ def test_get_specific_team(mocked_chpp: 'CHPP'):
 
 def test_get_specific_team_currently_playing(mocked_chpp):
 
-    xml_team = mocked_chpp.xml_team_details(team_id=326336)
+    xml_team = mocked_chpp.xml_team_details(team_id=326336, version='3.6')
     assert isinstance(xml_team, TeamDetails)
 
     assert xml_team.user.id == 8380636
@@ -174,3 +174,12 @@ def test_get_specific_team_currently_playing(mocked_chpp):
     assert team.team_rank is None
 
     assert team.number_of_visits == 16
+
+
+def test_team_details_version(chpp):
+
+    td_3_7 = chpp.xml_team_details()
+    assert isinstance(td_3_7.teams[0].is_deactivated, bool)
+
+    td_3_6 = chpp.xml_team_details(version='3.6')
+    assert td_3_6.teams[0].is_deactivated is None

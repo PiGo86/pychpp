@@ -14,7 +14,7 @@ from pychpp.models.xml.players import PlayersViewTeamPlayerItem, PlayersViewTeam
 from pychpp.models.xml import team_details as td
 
 
-class HTTeam(td.BaseTeamDetails, td.TeamItem, BaseHTTeam):
+class HTTeam(td.RequestTeamDetails, td.TeamItem, BaseHTTeam):
 
     XML_PREFIX = 'Teams/Team/'
     XML_FILTER = ''

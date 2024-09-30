@@ -4,9 +4,9 @@ from typing import Optional, List
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
-class CommonArenaDetails(HTModel):
+class CommonRequestArenaDetails(HTModel):
     """
-    Common Arena Details
+    Arena Details - Common request arguments
     """
     SOURCE_FILE = "arenadetails"
     LAST_VERSION = "1.7"
@@ -14,15 +14,15 @@ class CommonArenaDetails(HTModel):
     _r_stats_type: Optional[str] = HTInitVar('StatsType', init_arg='stats_type')
 
 
-class RequestArenaDetails(CommonArenaDetails):
+class RequestArenaDetailsDefault(CommonRequestArenaDetails):
     """
-    Base requests args for Arena Details
+    Arena Details - Default - Request arguments
     """
     _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='arena_id', fill_with='id')
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
 
 
-class ArenaDetails(RequestArenaDetails):
+class ArenaDetailsDefault(RequestArenaDetailsDefault):
     """
     Arena Details
     """
@@ -87,9 +87,9 @@ class ExpandedCapacity(BaseCapacity):
     expansion_date: Optional[datetime] = HTField('ExpansionDate')
 
 
-class ArenaDetailsMyArena(CommonArenaDetails):
+class RequestArenaDetailsMyArena(CommonRequestArenaDetails):
     """
-    Arena Details - My Arena
+    Arena Details - My Arena - Request arguments
     """
     _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='id', fill_with='id')
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
@@ -97,6 +97,11 @@ class ArenaDetailsMyArena(CommonArenaDetails):
     _r_first_date: Optional[datetime] = HTInitVar('FirstDate', init_arg='first_date')
     _r_last_date: Optional[datetime] = HTInitVar('LastDate', init_arg='last_date')
 
+
+class ArenaDetailsMyArena(RequestArenaDetailsMyArena):
+    """
+    Arena Details - My Arena
+    """
     id: Optional[int] = HTField('MyArena/ArenaID')
     name: Optional[str] = HTField('MyArena/ArenaName')
     image: Optional[str] = HTField('MyArena/ArenaImage')
@@ -121,12 +126,17 @@ class Visitors(HTModel):
     total: int = HTField('Total')
 
 
-class ArenaDetailsLeagueArenaStats(CommonArenaDetails):
+class RequestArenaDetailsLeagueArenaStats(CommonRequestArenaDetails):
     """
-    Arena Details - League Arena Stats
+    Arena Details - League Arena Stats - Request arguments
     """
     _r_league_id: int = HTInitVar('StatsLeagueID', init_arg='league_id')
 
+
+class ArenaDetailsLeagueArenaStats(RequestArenaDetailsLeagueArenaStats):
+    """
+    Arena Details - League Arena Stats
+    """
     league_id: int = HTField('LeagueArenaStats/LeagueID')
     league_name: str = HTField('LeagueArenaStats/LeagueName')
     created_date: datetime = HTField('LeagueArenaStats/CreatedDate')

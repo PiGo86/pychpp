@@ -8,7 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 class RequestMatchesArchive(HTModel):
     """
-    Request arguments for Matches Archive
+    Matches Archive - Request arguments
     """
     SOURCE_FILE = 'matchesarchive'
     LAST_VERSION = '1.5'

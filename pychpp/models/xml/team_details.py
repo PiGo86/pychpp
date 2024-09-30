@@ -4,13 +4,13 @@ from typing import List, Optional
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
-class BaseTeamDetails(HTModel):
+class RequestTeamDetails(HTModel):
     """
-    Base Team Details
+    Team Details - Request arguments
     """
 
-    SOURCE_FILE = "teamdetails"
-    LAST_VERSION = "3.6"
+    SOURCE_FILE = 'teamdetails'
+    LAST_VERSION = '3.7'
 
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_user_id: Optional[int] = HTInitVar('userID', init_arg='user_id')
@@ -21,7 +21,7 @@ class BaseTeamDetails(HTModel):
                                                       init_arg='include_supporters')
 
 
-class TeamDetails(BaseTeamDetails):
+class TeamDetails(RequestTeamDetails):
     """
     Team Details
     """
@@ -73,6 +73,7 @@ class TeamItem(HTModel):
     short_name: str = HTField('ShortTeamName')
     is_primary_club: bool = HTField('IsPrimaryClub')
     founded_date: datetime = HTField('FoundedDate')
+    is_deactivated: bool = HTField('IsDeactivated', version='>=3.7')
     arena: 'TeamItemArena' = HTField('Arena')
     league: 'TeamItemLeague' = HTField('League')
     country: 'TeamItemCountry' = HTField('Country')

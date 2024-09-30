@@ -12,7 +12,7 @@ if TYPE_CHECKING:
     from pychpp.models.custom import ht_team, ht_user
 
 
-class HTYouthTeam(ytd.BaseYouthTeamDetails, CustomModel):
+class HTYouthTeam(ytd.RequestYouthTeamDetails, CustomModel):
     """
     Hattrick Youth Team
     """
