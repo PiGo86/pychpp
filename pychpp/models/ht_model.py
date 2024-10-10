@@ -99,7 +99,6 @@ class HTModel(metaclass=MetaHTModel):
                  **kwargs,
                  ):
 
-        self._pre_init(**kwargs)
 
         if not isinstance(chpp, _chpp.CHPPBase):
             raise ValueError("chpp must be a CHPP instance")
@@ -287,10 +286,7 @@ class HTModel(metaclass=MetaHTModel):
                 field: HTAliasField
                 setattr(self, field_name, getattr(self, field.target))
 
-    def _pre_init(self, **kwargs):
         """
-        hook to make some stuff at the beginning of __init__ process
-
         """
 
     def _save_as_xml(self, path: pathlib.Path = None, filename: str = None):
