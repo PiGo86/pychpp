@@ -294,7 +294,8 @@ class HTModel(metaclass=MetaHTModel):
                                     field_name,
                                     HTXml.opt_ht_datetime_from_text(xml_node, attrib=field.attrib))
 
-                        # if the type is HTModel class, attribute will refer to another HTModel object
+                        # if the type is HTModel class, attribute will refer
+                        # to another HTModel object
                         elif issubclass(f_type, HTModel):
                             setattr(self, field_name, f_type(chpp=self._chpp,
                                                              data=xml_node,
