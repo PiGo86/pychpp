@@ -29,11 +29,12 @@ class HTTeam(td.RequestTeamDetails, td.TeamItem, BaseHTTeam):
     league_unit: 'HTTeamLeagueUnit' = HTProxyField(td.TeamItem, 'league_level_unit')
     youth_team: 'HTTeamYouthTeam' = HTProxyField(td.TeamItem)
 
-    def _pre_init(self, team_id=None, **kwargs):
+    def __init__(self, team_id=None, **kwargs):
         if team_id is not None:
             self.XML_FILTER = f".[TeamID='{team_id}']/"
         else:
             self.XML_FILTER = ".[IsPrimaryClub='True']/"
+        super().__init__(team_id=team_id, **kwargs)
 
     @property
     def is_bot(self) -> bool:
