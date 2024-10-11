@@ -11,7 +11,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                match_lineup, national_teams, national_team_details, player_details,
                                training, transfers_team, world_details, world_cup, players,
                                youth_player_details, youth_team_details, youth_player_list,
-                               matches_archive, match_details, cup_matches)
+                               matches_archive, match_details, cup_matches, alliances)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -370,6 +370,24 @@ class CHPPXml(CHPPBase):
     def xml_achievements(self, user_id: int = None) -> achievements.Achievements:
 
         return achievements.Achievements(chpp=self, user_id=user_id)
+
+    def xml_alliances(
+            self,
+            search_for: str,
+            search_type: int = None,
+            search_language_id: int = None,
+            page_index: int = None,
+            **kwargs,
+    ) -> alliances.Alliances:
+
+        return alliances.Alliances(
+            chpp=self,
+            search_type=search_type,
+            search_for=search_for,
+            search_language_id=search_language_id,
+            page_index=page_index,
+            **kwargs,
+        )
 
     def xml_arena_details(
             self, stats_type: str = None, arena_id: int = None, team_id: int = None,
