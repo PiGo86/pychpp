@@ -11,7 +11,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                match_lineup, national_teams, national_team_details, player_details,
                                training, transfers_team, world_details, world_cup, players,
                                youth_player_details, youth_team_details, youth_player_list,
-                               matches_archive, match_details, cup_matches, alliances)
+                               matches_archive, match_details, cup_matches, alliances,
+                               alliance_details)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -388,6 +389,56 @@ class CHPPXml(CHPPBase):
             page_index=page_index,
             **kwargs,
         )
+
+    def xml_alliance_details(
+            self,
+            action_type: str = 'view',
+            subset: int = None,
+            alliance_id: int = None,
+            **kwargs,
+    ) -> Union[alliance_details.AllianceDetailsView,
+               alliance_details.AllianceDetailsRoles,
+               alliance_details.AllianceDetailsMembers,
+               alliance_details.AllianceDetailsMembersSubset,
+               ]:
+
+        if action_type == 'view':
+            return alliance_details.AllianceDetailsView(
+                chpp=self,
+                action_type=action_type,
+                alliance_id=alliance_id,
+                **kwargs,
+            )
+
+        elif action_type == 'roles':
+            return alliance_details.AllianceDetailsRoles(
+                chpp=self,
+                action_type=action_type,
+                alliance_id=alliance_id,
+                **kwargs,
+            )
+
+        elif action_type == 'members':
+            return alliance_details.AllianceDetailsMembers(
+                chpp=self,
+                action_type=action_type,
+                alliance_id=alliance_id,
+                **kwargs,
+            )
+
+        elif action_type == 'membersSubset':
+            return alliance_details.AllianceDetailsMembersSubset(
+                chpp=self,
+                action_type=action_type,
+                subset=subset,
+                alliance_id=alliance_id,
+                **kwargs,
+            )
+
+        else:
+            ValueError("'action_type' argument must be "
+                       "equal to 'view', 'roles', "
+                       "'members' or 'membersSubset'")
 
     def xml_arena_details(
             self, stats_type: str = None, arena_id: int = None, team_id: int = None,
