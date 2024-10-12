@@ -1,4 +1,3 @@
-from datetime import datetime
 from typing import List, Optional
 
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
@@ -12,7 +11,8 @@ class RequestAlliances(HTModel):
     LAST_VERSION = "1.4"
 
     _r_search_type: Optional[int] = HTInitVar('searchType', init_arg='search_type')
-    _r_search_language_id: Optional[int] = HTInitVar('searchLanguageID', init_arg='search_language_id')
+    _r_search_language_id: Optional[int] = HTInitVar('searchLanguageID',
+                                                     init_arg='search_language_id')
     _r_search_for: str = HTInitVar('searchFor', init_arg='search_for')
     _r_page_index: Optional[int] = HTInitVar('pageIndex', init_arg='page_index')
 
