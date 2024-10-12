@@ -12,7 +12,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                training, transfers_team, world_details, world_cup, players,
                                youth_player_details, youth_team_details, youth_player_list,
                                matches_archive, match_details, cup_matches, alliances,
-                               alliance_details)
+                               alliance_details, avatars)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -467,6 +467,20 @@ class CHPPXml(CHPPBase):
         else:
             raise ValueError("'stats_type' argument must be None, "
                              "or equal to 'MyArena' or 'OtherArenas'")
+
+    def xml_avatars(
+            self,
+            action_type: str = None,
+            team_id: int = None,
+            **kwargs,
+    ) -> avatars.Avatars:
+
+        return avatars.Avatars(
+            chpp=self,
+            action_type=action_type,
+            team_id=team_id,
+            **kwargs,
+        )
 
     def xml_challenges(
             self, action_type: str = 'view', team_id: Optional[int] = None,
