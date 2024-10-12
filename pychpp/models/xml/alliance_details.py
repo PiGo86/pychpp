@@ -62,8 +62,9 @@ class AllianceView(BaseAlliance):
     home_page_url: str = HTField('HomePageURL')
     number_of_members: int = HTField('NumberOfMembers')
     languages: List['AllianceLanguageItem'] = HTField('Languages', items='Language')
-    message: str = HTField('Message')
+    message: Optional[str] = HTField('Message')
     rules: Optional[str] = HTField('Rules')
+    user_role: Optional['AllianceUserRole'] = HTField('UserRole')
 
 
 class AllianceLanguageItem(HTModel):
@@ -72,6 +73,14 @@ class AllianceLanguageItem(HTModel):
     """
     id: int = HTField('LanguageID')
     name: str = HTField('LanguageName')
+
+
+class AllianceUserRole(HTModel):
+    """
+    Alliance Details - View -> Alliance -> User Role
+    """
+    id: int = HTField('RoleId')
+    name: str = HTField('RoleName')
 
 
 class AllianceRoles(HTModel):
