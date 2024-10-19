@@ -1,0 +1,677 @@
+<HattrickData>
+  <FileName>Avatars.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-19 22:19:22</FetchedDate>
+  <Team>
+    <TeamId>960935</TeamId>
+    <Players>
+      <Player>
+        <PlayerID>442206693</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue_int.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd1_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f5c.png</Image>
+          </Layer>
+          <Layer x="24" y="10">
+            <Image>/Img/Avatar/eyes/e36b.png</Image>
+          </Layer>
+          <Layer x="29" y="43">
+            <Image>/Img/Avatar/mouths/m13b.png</Image>
+          </Layer>
+          <Layer x="16" y="16">
+            <Image>/Img/Avatar/noses/n27.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f5h11g.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/1.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>456885267</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd1_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f5c.png</Image>
+          </Layer>
+          <Layer x="23" y="7">
+            <Image>/Img/Avatar/eyes/e7c.png</Image>
+          </Layer>
+          <Layer x="30" y="49">
+            <Image>/Img/Avatar/mouths/m7c.png</Image>
+          </Layer>
+          <Layer x="16" y="16">
+            <Image>/Img/Avatar/noses/n27.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f5h14a.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/5.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>458114412</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd9_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f8c.png</Image>
+          </Layer>
+          <Layer x="21" y="21">
+            <Image>/Img/Avatar/eyes/e10b.png</Image>
+          </Layer>
+          <Layer x="32" y="64">
+            <Image>/Img/Avatar/mouths/m33b.png</Image>
+          </Layer>
+          <Layer x="20" y="32">
+            <Image>/Img/Avatar/noses/n9.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f8h3d.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/6.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>459043037</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd10_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f7d.png</Image>
+          </Layer>
+          <Layer x="23" y="4">
+            <Image>/Img/Avatar/eyes/e14a.png</Image>
+          </Layer>
+          <Layer x="32" y="41">
+            <Image>/Img/Avatar/mouths/m32a.png</Image>
+          </Layer>
+          <Layer x="19" y="8">
+            <Image>/Img/Avatar/noses/n15.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f7h15h.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/7.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>454419880</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd5_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f6a.png</Image>
+          </Layer>
+          <Layer x="27" y="14">
+            <Image>/Img/Avatar/eyes/e23c.png</Image>
+          </Layer>
+          <Layer x="32" y="66">
+            <Image>/Img/Avatar/mouths/m27cg.png</Image>
+          </Layer>
+          <Layer x="20" y="21">
+            <Image>/Img/Avatar/noses/n13.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f6h12c.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/8.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>447555740</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd11_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f6b.png</Image>
+          </Layer>
+          <Layer x="25" y="16">
+            <Image>/Img/Avatar/eyes/e27b.png</Image>
+          </Layer>
+          <Layer x="32" y="65">
+            <Image>/Img/Avatar/mouths/m32b.png</Image>
+          </Layer>
+          <Layer x="18" y="33">
+            <Image>/Img/Avatar/noses/n21.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f6h12c.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/16.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>468599333</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd12_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f1b.png</Image>
+          </Layer>
+          <Layer x="25" y="21">
+            <Image>/Img/Avatar/eyes/e29c.png</Image>
+          </Layer>
+          <Layer x="30" y="63">
+            <Image>/Img/Avatar/mouths/m16c.png</Image>
+          </Layer>
+          <Layer x="20" y="31">
+            <Image>/Img/Avatar/noses/n8.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f1h13c.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/17.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>468545260</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd3_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f1b.png</Image>
+          </Layer>
+          <Layer x="27" y="24">
+            <Image>/Img/Avatar/eyes/e6b.png</Image>
+          </Layer>
+          <Layer x="32" y="60">
+            <Image>/Img/Avatar/mouths/m18b.png</Image>
+          </Layer>
+          <Layer x="22" y="25">
+            <Image>/Img/Avatar/noses/n1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f1h8a.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/18.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>468633442</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd3_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f1b.png</Image>
+          </Layer>
+          <Layer x="22" y="20">
+            <Image>/Img/Avatar/eyes/e16c.png</Image>
+          </Layer>
+          <Layer x="32" y="60">
+            <Image>/Img/Avatar/mouths/m18c.png</Image>
+          </Layer>
+          <Layer x="18" y="32">
+            <Image>/Img/Avatar/noses/n28.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f1h6e.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/19.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>467685974</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd5_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f8c.png</Image>
+          </Layer>
+          <Layer x="24" y="11">
+            <Image>/Img/Avatar/eyes/e20b.png</Image>
+          </Layer>
+          <Layer x="31" y="63">
+            <Image>/Img/Avatar/mouths/m5b.png</Image>
+          </Layer>
+          <Layer x="19" y="54">
+            <Image>/Img/Avatar/goatees/g1.png</Image>
+          </Layer>
+          <Layer x="21" y="24">
+            <Image>/Img/Avatar/noses/n23.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f8h6c.png</Image>
+          </Layer>
+          <Layer x="83" y="130">
+            <Image>/Img/Avatar/numbers/20.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>487708715</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd6_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f8a.png</Image>
+          </Layer>
+          <Layer x="25" y="17">
+            <Image>/Img/Avatar/eyes/e2c.png</Image>
+          </Layer>
+          <Layer x="32" y="64">
+            <Image>/Img/Avatar/mouths/m29c.png</Image>
+          </Layer>
+          <Layer x="19" y="27">
+            <Image>/Img/Avatar/noses/n11.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f8h12e.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>481101814</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd3_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f5c.png</Image>
+          </Layer>
+          <Layer x="23" y="8">
+            <Image>/Img/Avatar/eyes/e24c.png</Image>
+          </Layer>
+          <Layer x="29" y="51">
+            <Image>/Img/Avatar/mouths/m35c.png</Image>
+          </Layer>
+          <Layer x="17" y="19">
+            <Image>/Img/Avatar/noses/n9.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f5h1c.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>453306340</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd5_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f9h.png</Image>
+          </Layer>
+          <Layer x="21" y="17">
+            <Image>/Img/Avatar/eyes/e10c.png</Image>
+          </Layer>
+          <Layer x="28" y="56">
+            <Image>/Img/Avatar/mouths/m23c.png</Image>
+          </Layer>
+          <Layer x="18" y="33">
+            <Image>/Img/Avatar/noses/n21.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f9h1f.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>459295043</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd11_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f3c.png</Image>
+          </Layer>
+          <Layer x="25" y="15">
+            <Image>/Img/Avatar/eyes/e34c.png</Image>
+          </Layer>
+          <Layer x="31" y="65">
+            <Image>/Img/Avatar/mouths/m27c.png</Image>
+          </Layer>
+          <Layer x="18" y="24">
+            <Image>/Img/Avatar/noses/n28.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f3h1c.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>472838118</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd7_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f5c.png</Image>
+          </Layer>
+          <Layer x="24" y="8">
+            <Image>/Img/Avatar/eyes/e27c.png</Image>
+          </Layer>
+          <Layer x="29" y="51">
+            <Image>/Img/Avatar/mouths/m35c.png</Image>
+          </Layer>
+          <Layer x="18" y="16">
+            <Image>/Img/Avatar/noses/n10.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f5h3e.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>481196463</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd1_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f2c.png</Image>
+          </Layer>
+          <Layer x="26" y="24">
+            <Image>/Img/Avatar/eyes/e2c.png</Image>
+          </Layer>
+          <Layer x="31" y="68">
+            <Image>/Img/Avatar/mouths/m37c.png</Image>
+          </Layer>
+          <Layer x="20" y="55">
+            <Image>/Img/Avatar/goatees/g3.png</Image>
+          </Layer>
+          <Layer x="18" y="25">
+            <Image>/Img/Avatar/noses/n31.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f2h0.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>458592934</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd8_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f3c.png</Image>
+          </Layer>
+          <Layer x="23" y="17">
+            <Image>/Img/Avatar/eyes/e3c.png</Image>
+          </Layer>
+          <Layer x="29" y="61">
+            <Image>/Img/Avatar/mouths/m1c.png</Image>
+          </Layer>
+          <Layer x="18" y="27">
+            <Image>/Img/Avatar/noses/n4.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f3h5a.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>444398344</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue_int.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd7_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f6e.png</Image>
+          </Layer>
+          <Layer x="24" y="17">
+            <Image>/Img/Avatar/eyes/e25c.png</Image>
+          </Layer>
+          <Layer x="31" y="55">
+            <Image>/Img/Avatar/mouths/m13c.png</Image>
+          </Layer>
+          <Layer x="19" y="20">
+            <Image>/Img/Avatar/noses/n29.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f6h5i.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>486031082</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd9_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f2b.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/beards/f2b4b.png</Image>
+          </Layer>
+          <Layer x="24" y="24">
+            <Image>/Img/Avatar/eyes/e12c.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/mouths/f2bem10c.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/noses/f2ben22.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f2h5b.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>450793169</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue_int.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd4_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f3b.png</Image>
+          </Layer>
+          <Layer x="21" y="18">
+            <Image>/Img/Avatar/eyes/e22b.png</Image>
+          </Layer>
+          <Layer x="30" y="62">
+            <Image>/Img/Avatar/mouths/m5b.png</Image>
+          </Layer>
+          <Layer x="19" y="32">
+            <Image>/Img/Avatar/noses/n20.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f3h2b.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>448267807</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue_int.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd10_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f5a.png</Image>
+          </Layer>
+          <Layer x="24" y="8">
+            <Image>/Img/Avatar/eyes/e27c.png</Image>
+          </Layer>
+          <Layer x="27" y="46">
+            <Image>/Img/Avatar/mouths/m21c.png</Image>
+          </Layer>
+          <Layer x="18" y="44">
+            <Image>/Img/Avatar/goatees/g3.png</Image>
+          </Layer>
+          <Layer x="16" y="19">
+            <Image>/Img/Avatar/noses/n19.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f5h4e.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>483852336</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/bd12_s1.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f1d.png</Image>
+          </Layer>
+          <Layer x="25" y="26">
+            <Image>/Img/Avatar/eyes/e7c.png</Image>
+          </Layer>
+          <Layer x="31" y="70">
+            <Image>/Img/Avatar/mouths/m38c.png</Image>
+          </Layer>
+          <Layer x="17" y="38">
+            <Image>/Img/Avatar/noses/n26.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f1h10h.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+      <Player>
+        <PlayerID>410685330</PlayerID>
+        <Avatar>
+          <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/backgrounds/bg_blue_int.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/bodies/f5man1a.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/faces/f5d.png</Image>
+          </Layer>
+          <Layer x="25" y="8">
+            <Image>/Img/Avatar/eyes/e23b.png</Image>
+          </Layer>
+          <Layer x="32" y="53">
+            <Image>/Img/Avatar/mouths/m33b.png</Image>
+          </Layer>
+          <Layer x="18" y="44">
+            <Image>/Img/Avatar/goatees/g3.png</Image>
+          </Layer>
+          <Layer x="17" y="19">
+            <Image>/Img/Avatar/noses/n9mh.png</Image>
+          </Layer>
+          <Layer x="9" y="10">
+            <Image>/Img/Avatar/hair/f5h8h.png</Image>
+          </Layer>
+        </Avatar>
+      </Player>
+    </Players>
+  </Team>
+</HattrickData>
