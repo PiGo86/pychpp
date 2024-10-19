@@ -1,0 +1,42 @@
+<HattrickData>
+  <FileName>AllianceDetails.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-15 22:49:15</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <ActionType>view</ActionType>
+  <Alliance>
+    <AllianceID>118840</AllianceID>
+    <AllianceName>Ligue Mondiale des Ambitieux</AllianceName>
+    <Abbreviation>LMA</Abbreviation>
+    <Description>La Ligue Mondiale des Ambitieux regroupe des managers qui veulent gravir les échelons et gagner des trophées.
+
+L'ambiance est conviviale, respectueuse de chacun.
+
+L'échange et le partage sont de mise afin d'apprendre de chacun.
+
+Chaque saison nous organisons une coupe au format unique offrant au final 4 coupes pour que tout le monde s'amuse.
+
+Cette fédération se veut être un espace d'échange apaisé et accueille des débutants et des membres du Championnat 😃
+
+Vous pouvez postuler si vous êtes un gentil ambitieux qui souhaite discuter et échanger.😉
+
+A noter que nous n'acceptons pas chaque demande mais filtrons les adhérents afin de garantir l'ambiance de notre communauté.
+
+Sebleger.</Description>
+    <LogoURL>https://res.hattrick.org/federationlogo/2/12/119/118840/118840.png</LogoURL>
+    <TopRole>Fondateur</TopRole>
+    <TopUserID>12375275</TopUserID>
+    <TopLoginname>Sebleger</TopLoginname>
+    <CreationDate>2021-10-10 19:04:21</CreationDate>
+    <HomePageURL>https://www.youtube.com/c/HattrickGuideduDébutant</HomePageURL>
+    <NumberOfMembers>240</NumberOfMembers>
+    <AwaitingRequests>1</AwaitingRequests>
+    <Languages>
+      <Language>
+        <LanguageID>5</LanguageID>
+        <LanguageName>Français</LanguageName>
+      </Language>
+    </Languages>
+  </Alliance>
+</HattrickData>

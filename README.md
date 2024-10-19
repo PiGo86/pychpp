@@ -143,13 +143,15 @@ Then, to use this new class:
 In this way, only the data you're really interested in is parsed, which can in some cases be interesting from a performance point of view.
 
 ## List of supported CHPP XML files
-![23/57](https://progress-bar.xyz/40/?title=23%20on%2057)
+![26/57](https://progress-bar.xyz/46/?title=26%20on%2057)
 
 The following table shows the CHPP XML files that are currently supported:
 
 |    pyCHPP class     |      CHPP XML files       |
 |:-------------------:|:-------------------------:|
 |    Achievements     |    `achievements.xml`     |
+|      Alliances      |      `alliances.xml`      |
+|   AllianceDetails   |   `alliancedetails.xml`   |
 |        Arena        |    `arenadetails.xml`     |
 |     Challenges      |     `challenges.xml`      |
 |     CupMatches      |     `cupmatches.xml`      |
