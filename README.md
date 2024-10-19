@@ -153,6 +153,7 @@ The following table shows the CHPP XML files that are currently supported:
 |      Alliances      |      `alliances.xml`      |
 |   AllianceDetails   |   `alliancedetails.xml`   |
 |        Arena        |    `arenadetails.xml`     |
+|       Avatars       |       `avatars.xml`       |
 |     Challenges      |     `challenges.xml`      |
 |     CupMatches      |     `cupmatches.xml`      |
 |    LeagueDetails    |    `leaguedetails.xml`    |
