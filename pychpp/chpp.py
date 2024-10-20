@@ -12,7 +12,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                training, transfers_team, world_details, world_cup, players,
                                youth_player_details, youth_team_details, youth_player_list,
                                matches_archive, match_details, cup_matches, alliances,
-                               alliance_details, avatars, bookmarks)
+                               alliance_details, avatars, bookmarks, club)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -552,6 +552,11 @@ class CHPPXml(CHPPBase):
             raise ValueError("if set, 'action_type' must be equal to"
                              "'view', 'challengeable', 'challenge', "
                              "'accept', 'decline' or 'withdraw'")
+
+    def xml_club(self, team_id: int = None, **kwargs,
+                 ) -> club.Club:
+
+        return club.Club(chpp=self, team_id=team_id, **kwargs)
 
     def xml_cup_matches(
             self, cup_id: int, season: int = None, cup_round: int = None,

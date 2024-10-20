@@ -1,0 +1,24 @@
+<HattrickData>
+  <FileName>club.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-20 10:09:28</FetchedDate>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <TeamName>Les Poitevins de La Chapelle</TeamName>
+    <Staff>
+      <AssistantTrainerLevels>10</AssistantTrainerLevels>
+      <FinancialDirectorLevels>0</FinancialDirectorLevels>
+      <FormCoachLevels>0</FormCoachLevels>
+      <MedicLevels>5</MedicLevels>
+      <SpokespersonLevels>0</SpokespersonLevels>
+      <SportPsychologistLevels>5</SportPsychologistLevels>
+      <TacticalAssistantLevels>0</TacticalAssistantLevels>
+    </Staff>
+    <YouthSquad>
+      <Investment>200000</Investment>
+      <HasPromoted>False</HasPromoted>
+      <YouthLevel>8</YouthLevel>
+    </YouthSquad>
+  </Team>
+</HattrickData>
