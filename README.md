@@ -163,6 +163,7 @@ The following table shows the CHPP XML files that are currently supported:
 |        Fans         |        `fans.xml`         |
 |  HallOfFamePlayers  |     `hofplayers.xml`      |
 |    LadderDetails    |    `ladderdetails.xml`    |
+|     LadderList      |     `ladderlist.xml`      |
 |    LeagueDetails    |    `leaguedetails.xml`    |
 |   LeagueFixtures    |   `leaguefixtures.xml`    |
 |  ManagerCompendium  |  `managercompendium.xml`  |
