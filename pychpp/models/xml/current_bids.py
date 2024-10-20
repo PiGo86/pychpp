@@ -27,19 +27,19 @@ class CurrentBids(RequestCurrentBids):
     selling_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="1"]',
                                                       items='BidItem')
     buying_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="2"]',
-                                                      items='BidItem')
+                                                     items='BidItem')
     mother_club_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="3"]',
-                                                      items='BidItem')
+                                                          items='BidItem')
     previous_team_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="4"]',
-                                                      items='BidItem')
+                                                            items='BidItem')
     hot_listed_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="5"]',
-                                                      items='BidItem')
+                                                         items='BidItem')
     losing_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="8"]',
-                                                      items='BidItem')
+                                                     items='BidItem')
     finished_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="9"]',
-                                                      items='BidItem')
+                                                       items='BidItem')
     prospects_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="10"]',
-                                                      items='BidItem')
+                                                        items='BidItem')
 
 
 class BidItem(HTModel):
