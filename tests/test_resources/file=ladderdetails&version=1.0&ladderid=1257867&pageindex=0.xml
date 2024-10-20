@@ -1,0 +1,61 @@
+<HattrickData>
+  <FileName>ladderdetails.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-20 22:17:44</FetchedDate>
+  <Ladder>
+    <LadderId>1257867</LadderId>
+    <Name>France</Name>
+    <NumOfTeams>1095</NumOfTeams>
+    <PageSize>25</PageSize>
+    <PageIndex>0</PageIndex>
+    <KingTeamId>964324</KingTeamId>
+    <KingTeamName>Malherbe United II</KingTeamName>
+    <KingSince>2024-10-15 17:40:00</KingSince>
+    <Team>
+      <TeamId>16387700</TeamId>
+      <TeamName>Malherbe United II</TeamName>
+      <Position>1</Position>
+      <Wins>66</Wins>
+      <Lost>15</Lost>
+      <WinsInARow>2</WinsInARow>
+      <LostInARow>0</LostInARow>
+    </Team>
+    <Team>
+      <TeamId>17889051</TeamId>
+      <TeamName>W.S.D.</TeamName>
+      <Position>2</Position>
+      <Wins>38</Wins>
+      <Lost>3</Lost>
+      <WinsInARow>2</WinsInARow>
+      <LostInARow>0</LostInARow>
+    </Team>
+    <Team>
+      <TeamId>8726908</TeamId>
+      <TeamName>football club niederschaeffolsheim</TeamName>
+      <Position>3</Position>
+      <Wins>129</Wins>
+      <Lost>104</Lost>
+      <WinsInARow>0</WinsInARow>
+      <LostInARow>2</LostInARow>
+    </Team>
+    <Team>
+      <TeamId>2947839</TeamId>
+      <TeamName>Afternoun FC</TeamName>
+      <Position>4</Position>
+      <Wins>82</Wins>
+      <Lost>59</Lost>
+      <WinsInARow>1</WinsInARow>
+      <LostInARow>0</LostInARow>
+    </Team>
+    <Team>
+      <TeamId>18136025</TeamId>
+      <TeamName>Massilia Tout Puissant</TeamName>
+      <Position>5</Position>
+      <Wins>35</Wins>
+      <Lost>5</Lost>
+      <WinsInARow>0</WinsInARow>
+      <LostInARow>3</LostInARow>
+    </Team>
+  </Ladder>
+</HattrickData>

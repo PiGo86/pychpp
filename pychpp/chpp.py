@@ -13,7 +13,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                youth_player_details, youth_team_details, youth_player_list,
                                matches_archive, match_details, cup_matches, alliances,
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
-                               fans, hof_players)
+                               fans, hof_players, ladder_details)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -601,6 +601,16 @@ class CHPPXml(CHPPBase):
                         ) -> hof_players.HallOfFamePlayers:
 
         return hof_players.HallOfFamePlayers(chpp=self, team_id=team_id, **kwargs)
+
+    def xml_ladder_details(
+            self, team_id: int = None, page_size: int = None,
+            page_index: int = None, **kwargs,
+    ) -> ladder_details.LadderDetails:
+
+        return ladder_details.LadderDetails(
+            chpp=self, team_id=team_id, page_size=page_size,
+            page_index=page_index, **kwargs,
+        )
 
     def xml_league_details(
             self, league_level_unit_id: int = None, **kwargs,
