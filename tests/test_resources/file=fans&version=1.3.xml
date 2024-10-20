@@ -1,0 +1,174 @@
+<HattrickData>
+  <FileName>fans.xml</FileName>
+  <Version>1.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-20 15:09:28</FetchedDate>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <FanclubId>656629</FanclubId>
+    <FanclubName>Les Exilés du Poitou</FanclubName>
+    <FanMood>10</FanMood>
+    <Members>1976</Members>
+    <FanSeasonExpectation>5</FanSeasonExpectation>
+    <PlayedMatches>
+      <Match>
+        <MatchID>739348980</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2233206</AwayTeamID>
+          <AwayTeamName>bastia en force</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-09-21 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <FanMatchExpectation>7</FanMatchExpectation>
+        <FanMoodAfterMatch>10</FanMoodAfterMatch>
+        <Weather>2</Weather>
+        <SoldSeats>35148</SoldSeats>
+      </Match>
+      <Match>
+        <MatchID>741384111</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>588545</AwayTeamID>
+          <AwayTeamName>F.C. Cailly</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-09-25 15:00:00</MatchDate>
+        <MatchType>3</MatchType>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+        <FanMatchExpectation>6</FanMatchExpectation>
+        <FanMoodAfterMatch>6</FanMoodAfterMatch>
+        <Weather>2</Weather>
+        <SoldSeats>34325</SoldSeats>
+      </Match>
+      <Match>
+        <MatchID>739348986</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2165975</HomeTeamID>
+          <HomeTeamName>diable noir</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-09-28 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>6</AwayGoals>
+        <FanMatchExpectation>5</FanMatchExpectation>
+        <FanMoodAfterMatch>9</FanMoodAfterMatch>
+        <Weather>2</Weather>
+        <SoldSeats>11890</SoldSeats>
+      </Match>
+      <Match>
+        <MatchID>739348989</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2243540</AwayTeamID>
+          <AwayTeamName>Little Britain</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-10-05 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+        <FanMatchExpectation>7</FanMatchExpectation>
+        <FanMoodAfterMatch>10</FanMoodAfterMatch>
+        <Weather>1</Weather>
+        <SoldSeats>30637</SoldSeats>
+      </Match>
+      <Match>
+        <MatchID>739348992</MatchID>
+        <HomeTeam>
+          <HomeTeamID>298358</HomeTeamID>
+          <HomeTeamName>DONNERY</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-10-12 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <HomeGoals>6</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <FanMatchExpectation>4</FanMatchExpectation>
+        <FanMoodAfterMatch>7</FanMoodAfterMatch>
+        <Weather>0</Weather>
+        <SoldSeats>36870</SoldSeats>
+      </Match>
+      <Match>
+        <MatchID>739348997</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>967083</AwayTeamID>
+          <AwayTeamName>Plékat</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-10-19 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <FanMatchExpectation>7</FanMatchExpectation>
+        <FanMoodAfterMatch>10</FanMoodAfterMatch>
+        <Weather>2</Weather>
+        <SoldSeats>33709</SoldSeats>
+      </Match>
+    </PlayedMatches>
+    <UpcomingMatches>
+      <Match>
+        <MatchID>739349000</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1751435</HomeTeamID>
+          <HomeTeamName>Kermouster Atlethic Club 2</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-10-26 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <FanMatchExpectation>8</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>739349004</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1161541</HomeTeamID>
+          <HomeTeamName>Jonk HAC</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-11-02 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <FanMatchExpectation>4</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>739349011</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1161541</AwayTeamID>
+          <AwayTeamName>Jonk HAC</AwayTeamName>
+        </AwayTeam>
+        <MatchDate>2024-11-09 21:00:00</MatchDate>
+        <MatchType>1</MatchType>
+        <FanMatchExpectation>7</FanMatchExpectation>
+      </Match>
+    </UpcomingMatches>
+  </Team>
+</HattrickData>

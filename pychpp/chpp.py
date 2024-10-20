@@ -12,7 +12,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                training, transfers_team, world_details, world_cup, players,
                                youth_player_details, youth_team_details, youth_player_list,
                                matches_archive, match_details, cup_matches, alliances,
-                               alliance_details, avatars)
+                               alliance_details, avatars, bookmarks, club, current_bids, economy,
+                               fans, hof_players)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -482,6 +483,17 @@ class CHPPXml(CHPPBase):
             **kwargs,
         )
 
+    def xml_bookmarks(
+            self, bookmark_type_id: int = None,
+            **kwargs,
+    ) -> bookmarks.Bookmarks:
+
+        return bookmarks.Bookmarks(
+            chpp=self,
+            bookmark_type_id=bookmark_type_id,
+            **kwargs,
+        )
+
     def xml_challenges(
             self, action_type: str = 'view', team_id: Optional[int] = None,
             is_weekend_friendly: int = 0, suggested_team_ids: str = None,
@@ -542,6 +554,11 @@ class CHPPXml(CHPPBase):
                              "'view', 'challengeable', 'challenge', "
                              "'accept', 'decline' or 'withdraw'")
 
+    def xml_club(self, team_id: int = None, **kwargs,
+                 ) -> club.Club:
+
+        return club.Club(chpp=self, team_id=team_id, **kwargs)
+
     def xml_cup_matches(
             self, cup_id: int, season: int = None, cup_round: int = None,
             start_after_match_id: int = None, **kwargs,
@@ -551,6 +568,39 @@ class CHPPXml(CHPPBase):
             chpp=self, cup_id=cup_id, season=season, cup_round=cup_round,
             start_after_match_id=start_after_match_id, **kwargs,
         )
+
+    def xml_current_bids(
+            self,
+            action_type: str = 'view',
+            team_id: int = None,
+            transfer_id: int = None,
+            tracking_type_id: int = None,
+            **kwargs,
+    ) -> current_bids.CurrentBids:
+
+        return current_bids.CurrentBids(
+            chpp=self,
+            action_type=action_type,
+            team_id=team_id,
+            transfer_id=transfer_id,
+            tracking_type_id=tracking_type_id,
+            **kwargs,
+        )
+
+    def xml_economy(self, team_id: int = None, **kwargs,
+                    ) -> economy.Economy:
+
+        return economy.Economy(chpp=self, team_id=team_id, **kwargs)
+
+    def xml_fans(self, team_id: int = None, **kwargs,
+                 ) -> fans.Fans:
+
+        return fans.Fans(chpp=self, team_id=team_id, **kwargs)
+
+    def xml_hof_players(self, team_id: int = None, **kwargs,
+                        ) -> hof_players.HallOfFamePlayers:
+
+        return hof_players.HallOfFamePlayers(chpp=self, team_id=team_id, **kwargs)
 
     def xml_league_details(
             self, league_level_unit_id: int = None, **kwargs,

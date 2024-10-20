@@ -1,0 +1,99 @@
+<HattrickData>
+  <FileName>hofplayers.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-20 15:38:27</FetchedDate>
+  <PlayerList>
+    <Player>
+      <PlayerId>426606995</PlayerId>
+      <FirstName>Claus Christoph</FirstName>
+      <NickName />
+      <LastName>Lewandowski</LastName>
+      <Age>42</Age>
+      <NextBirthday>2024-10-26 00:00:00</NextBirthday>
+      <CountryID>3</CountryID>
+      <ArrivalDate>2020-05-07 22:48:00</ArrivalDate>
+      <ExpertType>12</ExpertType>
+      <HofDate>2024-04-17 12:01:00</HofDate>
+      <HofAge>41</HofAge>
+    </Player>
+    <Player>
+      <PlayerId>437308836</PlayerId>
+      <FirstName>Cédric</FirstName>
+      <NickName />
+      <LastName>Jimenez</LastName>
+      <Age>39</Age>
+      <NextBirthday>2024-12-27 00:00:00</NextBirthday>
+      <CountryID>5</CountryID>
+      <ArrivalDate>2018-07-21 11:15:00</ArrivalDate>
+      <ExpertType>4</ExpertType>
+      <HofDate>2024-10-05 18:19:00</HofDate>
+      <HofAge>39</HofAge>
+    </Player>
+    <Player>
+      <PlayerId>410582992</PlayerId>
+      <FirstName>Petr</FirstName>
+      <NickName />
+      <LastName>Mamochkin</LastName>
+      <Age>47</Age>
+      <NextBirthday>2024-10-21 00:00:00</NextBirthday>
+      <CountryID>7</CountryID>
+      <ArrivalDate>2019-07-01 20:01:00</ArrivalDate>
+      <ExpertType>1</ExpertType>
+      <HofDate>2023-11-16 06:36:00</HofDate>
+      <HofAge>44</HofAge>
+    </Player>
+    <Player>
+      <PlayerId>422673507</PlayerId>
+      <FirstName>Corné</FirstName>
+      <NickName />
+      <LastName>Zijp</LastName>
+      <Age>45</Age>
+      <NextBirthday>2024-12-10 00:00:00</NextBirthday>
+      <CountryID>12</CountryID>
+      <ArrivalDate>2018-04-08 23:42:00</ArrivalDate>
+      <ExpertType>7</ExpertType>
+      <HofDate>2023-01-16 21:14:00</HofDate>
+      <HofAge>39</HofAge>
+    </Player>
+    <Player>
+      <PlayerId>423952089</PlayerId>
+      <FirstName>Artem</FirstName>
+      <NickName />
+      <LastName>Letnikov</LastName>
+      <Age>42</Age>
+      <NextBirthday>2024-11-21 00:00:00</NextBirthday>
+      <CountryID>51</CountryID>
+      <ArrivalDate>2020-05-14 09:09:00</ArrivalDate>
+      <ExpertType>5</ExpertType>
+      <HofDate>2023-11-18 23:16:00</HofDate>
+      <HofAge>39</HofAge>
+    </Player>
+    <Player>
+      <PlayerId>415400436</PlayerId>
+      <FirstName>Henning</FirstName>
+      <NickName />
+      <LastName>Eisgruber</LastName>
+      <Age>47</Age>
+      <NextBirthday>2024-12-11 00:00:00</NextBirthday>
+      <CountryID>3</CountryID>
+      <ArrivalDate>2019-07-01 20:10:00</ArrivalDate>
+      <ExpertType>1</ExpertType>
+      <HofDate>2023-12-06 08:15:00</HofDate>
+      <HofAge>44</HofAge>
+    </Player>
+    <Player>
+      <PlayerId>426797987</PlayerId>
+      <FirstName>Mbacké</FirstName>
+      <NickName />
+      <LastName>Haïbalo</LastName>
+      <Age>41</Age>
+      <NextBirthday>2024-11-25 00:00:00</NextBirthday>
+      <CountryID>5</CountryID>
+      <ArrivalDate>2020-01-10 22:57:00</ArrivalDate>
+      <ExpertType>2</ExpertType>
+      <HofDate>2024-03-01 22:40:00</HofDate>
+      <HofAge>39</HofAge>
+    </Player>
+  </PlayerList>
+</HattrickData>

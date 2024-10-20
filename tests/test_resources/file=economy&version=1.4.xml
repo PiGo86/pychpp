@@ -1,0 +1,50 @@
+<HattrickData>
+  <FileName>economy.xml</FileName>
+  <Version>1.4</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-20 14:11:19</FetchedDate>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <TeamName>Les Poitevins de La Chapelle</TeamName>
+    <Cash>60613476</Cash>
+    <ExpectedCash>62261366</ExpectedCash>
+    <SponsorsPopularity Available="True">8</SponsorsPopularity>
+    <SupportersPopularity Available="True">10</SupportersPopularity>
+    <FanClubSize>1976</FanClubSize>
+    <IncomeSpectators>3260290</IncomeSpectators>
+    <IncomeSponsors>670000</IncomeSponsors>
+    <IncomeSponsorBonuses>360000</IncomeSponsorBonuses>
+    <IncomeFinancial>0</IncomeFinancial>
+    <IncomeSoldPlayers>0</IncomeSoldPlayers>
+    <IncomeSoldPlayersCommission>0</IncomeSoldPlayersCommission>
+    <IncomeTemporary>0</IncomeTemporary>
+    <IncomeSum>4290290</IncomeSum>
+    <CostsArena>334300</CostsArena>
+    <CostsPlayers>1455300</CostsPlayers>
+    <CostsFinancial>0</CostsFinancial>
+    <CostsStaff>652800</CostsStaff>
+    <CostsBoughtPlayers>0</CostsBoughtPlayers>
+    <CostsArenaBuilding>0</CostsArenaBuilding>
+    <CostsTemporary>0</CostsTemporary>
+    <CostsYouth>200000</CostsYouth>
+    <CostsSum>2642400</CostsSum>
+    <ExpectedWeeksTotal>1647890</ExpectedWeeksTotal>
+    <LastIncomeSpectators>63129</LastIncomeSpectators>
+    <LastIncomeSponsors>670000</LastIncomeSponsors>
+    <LastIncomeFinancial>0</LastIncomeFinancial>
+    <LastIncomeSoldPlayers>0</LastIncomeSoldPlayers>
+    <LastIncomeSoldPlayersCommission>559999</LastIncomeSoldPlayersCommission>
+    <LastIncomeTemporary>0</LastIncomeTemporary>
+    <LastIncomeSum>1653128</LastIncomeSum>
+    <LastCostsArena>334300</LastCostsArena>
+    <LastCostsPlayers>1455300</LastCostsPlayers>
+    <LastCostsFinancial>0</LastCostsFinancial>
+    <LastCostsStaff>652800</LastCostsStaff>
+    <LastCostsBoughtPlayers>0</LastCostsBoughtPlayers>
+    <LastCostsArenaBuilding>0</LastCostsArenaBuilding>
+    <LastCostsTemporary>0</LastCostsTemporary>
+    <LastCostsYouth>200000</LastCostsYouth>
+    <LastCostsSum>2642400</LastCostsSum>
+    <LastWeeksTotal>-989272</LastWeeksTotal>
+  </Team>
+</HattrickData>

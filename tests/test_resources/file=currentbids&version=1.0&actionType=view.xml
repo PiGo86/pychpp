@@ -1,0 +1,20 @@
+<HattrickData>
+  <FileName>currentbids.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-20 11:50:23</FetchedDate>
+  <TeamId>1165592</TeamId>
+  <BidItems TrackingTypeID="2">
+    <BidItem>
+      <TransferId>375038517</TransferId>
+      <PlayerId>464753259</PlayerId>
+      <PlayerName>Władysław Szarafin</PlayerName>
+      <HighestBid>
+        <Amount>10000</Amount>
+        <TeamId>1165592</TeamId>
+        <TeamName>Les Poitevins de La Chapelle</TeamName>
+      </HighestBid>
+      <Deadline>2024-10-21 23:04:45</Deadline>
+    </BidItem>
+  </BidItems>
+</HattrickData>

@@ -112,14 +112,14 @@ However, for more advanced use, it is also possible to customize the framework's
 
 For example, if you need to perform a query on the arenadetails.xml file, but in reality only need the Arena/ArenaID, Arena/ArenaName and Arena/ArenaImage data, one way to proceed is to create a custom class inheriting from the RequestArenaDetails class, and use HTProxyField as follows:
 ```python
-from pychpp.models.xml.arena_details import RequestArenaDetails, ArenaDetails
+from pychpp.models.xml.arena_details import RequestArenaDetailsDefault, ArenaDetailsDefault
 from pychpp.models.ht_field import HTProxyField
 
 
-class MyCustomArenaClass(RequestArenaDetails):
-    id: int = HTProxyField(ArenaDetails)
-    name: str = HTProxyField(ArenaDetails)
-    image: str = HTProxyField(ArenaDetails)
+class MyCustomArenaClass(RequestArenaDetailsDefault):
+    id: int = HTProxyField(ArenaDetailsDefault)
+    name: str = HTProxyField(ArenaDetailsDefault)
+    image: str = HTProxyField(ArenaDetailsDefault)
 ```
 
 Then, to use this new class:
@@ -143,7 +143,7 @@ Then, to use this new class:
 In this way, only the data you're really interested in is parsed, which can in some cases be interesting from a performance point of view.
 
 ## List of supported CHPP XML files
-![26/57](https://progress-bar.xyz/46/?title=26%20on%2057)
+![32/57](https://progress-bar.xyz/56/?title=32%20on%2057)
 
 The following table shows the CHPP XML files that are currently supported:
 
@@ -153,8 +153,15 @@ The following table shows the CHPP XML files that are currently supported:
 |      Alliances      |      `alliances.xml`      |
 |   AllianceDetails   |   `alliancedetails.xml`   |
 |        Arena        |    `arenadetails.xml`     |
+|       Avatars       |       `avatars.xml`       |
+|      Bookmarks      |      `bookmarks.xml`      |
 |     Challenges      |     `challenges.xml`      |
+|        Club         |        `club.xml`         |
 |     CupMatches      |     `cupmatches.xml`      |
+|     CurrentBids     |     `currentbids.xml`     |
+|       Economy       |       `economy.xml`       |
+|        Fans         |        `fans.xml`         |
+|  HallOfFamePlayers  |     `hofplayers.xml`      |
 |    LeagueDetails    |    `leaguedetails.xml`    |
 |   LeagueFixtures    |   `leaguefixtures.xml`    |
 |  ManagerCompendium  |  `managercompendium.xml`  |
