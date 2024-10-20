@@ -112,14 +112,14 @@ However, for more advanced use, it is also possible to customize the framework's
 
 For example, if you need to perform a query on the arenadetails.xml file, but in reality only need the Arena/ArenaID, Arena/ArenaName and Arena/ArenaImage data, one way to proceed is to create a custom class inheriting from the RequestArenaDetails class, and use HTProxyField as follows:
 ```python
-from pychpp.models.xml.arena_details import RequestArenaDetails, ArenaDetails
+from pychpp.models.xml.arena_details import RequestArenaDetailsDefault, ArenaDetailsDefault
 from pychpp.models.ht_field import HTProxyField
 
 
-class MyCustomArenaClass(RequestArenaDetails):
-    id: int = HTProxyField(ArenaDetails)
-    name: str = HTProxyField(ArenaDetails)
-    image: str = HTProxyField(ArenaDetails)
+class MyCustomArenaClass(RequestArenaDetailsDefault):
+    id: int = HTProxyField(ArenaDetailsDefault)
+    name: str = HTProxyField(ArenaDetailsDefault)
+    image: str = HTProxyField(ArenaDetailsDefault)
 ```
 
 Then, to use this new class:
