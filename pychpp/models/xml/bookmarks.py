@@ -28,7 +28,7 @@ class BookmarkItem(HTModel):
     """
     id: str = HTField('BookmarkID')
     type_id: int = HTField('BookmarkTypeID')
-    text: str  =HTField('Text')
+    text: str = HTField('Text')
     text_2: Optional[str] = HTField('Text2')
     object_id: str = HTField('ObjectID')
     object_id_2: Optional[str] = HTField('ObjectID2')
