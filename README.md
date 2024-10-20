@@ -143,7 +143,7 @@ Then, to use this new class:
 In this way, only the data you're really interested in is parsed, which can in some cases be interesting from a performance point of view.
 
 ## List of supported CHPP XML files
-![33/57](https://progress-bar.xyz/58/?title=33%20on%2057)
+![34/57](https://progress-bar.xyz/60/?title=34%20on%2057)
 
 The following table shows the CHPP XML files that are currently supported:
 
