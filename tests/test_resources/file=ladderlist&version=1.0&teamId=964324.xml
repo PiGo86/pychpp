@@ -1,0 +1,40 @@
+<HattrickData>
+  <FileName>ladderlist.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-20 22:52:28</FetchedDate>
+  <Ladders>
+    <Ladder>
+      <LadderId>5237982</LadderId>
+      <Name>Ligue Mondiale des Ambitieux</Name>
+      <Position>2</Position>
+      <NextMatchDate>2024-09-01 13:21:00</NextMatchDate>
+      <Wins>20</Wins>
+      <Lost>10</Lost>
+    </Ladder>
+    <Ladder>
+      <LadderId>1257867</LadderId>
+      <Name>France</Name>
+      <Position>1</Position>
+      <NextMatchDate>2024-10-21 00:10:00</NextMatchDate>
+      <Wins>66</Wins>
+      <Lost>15</Lost>
+    </Ladder>
+    <Ladder>
+      <LadderId>1255368</LadderId>
+      <Name>Basse-Normandie</Name>
+      <Position>1</Position>
+      <NextMatchDate>2024-07-29 17:35:00</NextMatchDate>
+      <Wins>20</Wins>
+      <Lost>4</Lost>
+    </Ladder>
+    <Ladder>
+      <LadderId>1258066</LadderId>
+      <Name>1re saison : saison 74</Name>
+      <Position>1</Position>
+      <NextMatchDate>2024-10-17 23:04:00</NextMatchDate>
+      <Wins>76</Wins>
+      <Lost>22</Lost>
+    </Ladder>
+  </Ladders>
+</HattrickData>
