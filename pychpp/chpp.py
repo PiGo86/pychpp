@@ -13,7 +13,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                youth_player_details, youth_team_details, youth_player_list,
                                matches_archive, match_details, cup_matches, alliances,
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
-                               fans, hof_players, ladder_details, ladder_list, league_levels)
+                               fans, hof_players, ladder_details, ladder_list, league_levels, live,
+                               matches)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -640,6 +641,20 @@ class CHPPXml(CHPPBase):
             chpp=self, league_id=league_id, **kwargs,
         )
 
+    def xml_live(
+            self, action_type: str = 'view', match_id: int = None,
+            source_system: str = 'hattrick', include_starting_lineup: bool = False,
+            use_live_events_and_texts: bool = False, last_shown_indexes: str = None,
+            **kwargs,
+    ) -> live.Live:
+
+        return live.Live(
+            chpp=self, action_type=action_type, match_id=match_id,
+            source_system=source_system, include_starting_lineup=include_starting_lineup,
+            use_live_events_and_texts=use_live_events_and_texts,
+            last_shown_indexes=last_shown_indexes, **kwargs,
+        )
+
     def xml_manager_compendium(
             self, user_id: int = None, **kwargs,
     ) -> manager_compendium.ManagerCompendium:
@@ -666,6 +681,14 @@ class CHPPXml(CHPPBase):
         return match_lineup.MatchLineup(
             chpp=self, match_id=match_id, team_id=team_id,
             source_system=source_system, **kwargs,
+        )
+
+    def xml_matches(
+            self, team_id: int = None, is_youth: bool = None, **kwargs,
+    ) -> matches.Matches:
+
+        return matches.Matches(
+            chpp=self, team_id=team_id, is_youth=is_youth, **kwargs,
         )
 
     def xml_matches_archive(
