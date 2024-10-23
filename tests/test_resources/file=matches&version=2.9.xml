@@ -1,0 +1,283 @@
+<HattrickData>
+  <FileName>matches.xml</FileName>
+  <Version>2.9</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-23 23:08:36</FetchedDate>
+  <IsYouth>False</IsYouth>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <TeamName>Les Poitevins de La Chapelle</TeamName>
+    <ShortTeamName>Poitevins</ShortTeamName>
+    <League>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+    </League>
+    <LeagueLevelUnit>
+      <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+      <LeagueLevel>6</LeagueLevel>
+    </LeagueLevelUnit>
+    <MatchList>
+      <Match>
+        <MatchID>739348986</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2165975</HomeTeamID>
+          <HomeTeamName>diable noir</HomeTeamName>
+          <HomeTeamNameShortName>diable</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-09-28 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>6</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>741552633</MatchID>
+        <HomeTeam>
+          <HomeTeamID>588752</HomeTeamID>
+          <HomeTeamName>beroyos</HomeTeamName>
+          <HomeTeamNameShortName>beroyos</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-02 15:30:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>3</MatchType>
+        <MatchContextId>645</MatchContextId>
+        <CupLevel>2</CupLevel>
+        <CupLevelIndex>2</CupLevelIndex>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>739348989</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>2243540</AwayTeamID>
+          <AwayTeamName>Little Britain</AwayTeamName>
+          <AwayTeamNameShortName>Britain</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-05 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>741700708</MatchID>
+        <HomeTeam>
+          <HomeTeamID>-65012030</HomeTeamID>
+          <HomeTeamName>Footballeurs de rue</HomeTeamName>
+          <HomeTeamNameShortName>Footballeurs de rue</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-09 15:45:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>3</MatchType>
+        <MatchContextId>903</MatchContextId>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>9</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>739348992</MatchID>
+        <HomeTeam>
+          <HomeTeamID>298358</HomeTeamID>
+          <HomeTeamName>DONNERY</HomeTeamName>
+          <HomeTeamNameShortName>DONNERY</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-12 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>6</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>741804934</MatchID>
+        <HomeTeam>
+          <HomeTeamID>2162576</HomeTeamID>
+          <HomeTeamName>Soucoupe Volante</HomeTeamName>
+          <HomeTeamNameShortName>Soucoupe</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-16 15:45:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>3</MatchType>
+        <MatchContextId>903</MatchContextId>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>739348997</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>967083</AwayTeamID>
+          <AwayTeamName>Plékat</AwayTeamName>
+          <AwayTeamNameShortName>Plékat</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-19 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>741889738</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1754291</HomeTeamID>
+          <HomeTeamName>A.S Kernével</HomeTeamName>
+          <HomeTeamNameShortName>Kernével</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-23 15:45:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>3</MatchType>
+        <MatchContextId>903</MatchContextId>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+      </Match>
+      <Match>
+        <MatchID>739349000</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1751435</HomeTeamID>
+          <HomeTeamName>Kermouster Atlethic Club 2</HomeTeamName>
+          <HomeTeamNameShortName>Kermouster</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-10-26 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+      <Match>
+        <MatchID>739349004</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1161541</HomeTeamID>
+          <HomeTeamName>Jonk HAC</HomeTeamName>
+          <HomeTeamNameShortName>Jonk</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-11-02 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+      <Match>
+        <MatchID>739349011</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1161541</AwayTeamID>
+          <AwayTeamName>Jonk HAC</AwayTeamName>
+          <AwayTeamNameShortName>Jonk</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-11-09 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+      <Match>
+        <MatchID>739349014</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1751435</AwayTeamID>
+          <AwayTeamName>Kermouster Atlethic Club 2</AwayTeamName>
+          <AwayTeamNameShortName>Kermouster</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2024-11-16 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36777</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+      </Match>
+    </MatchList>
+  </Team>
+</HattrickData>
