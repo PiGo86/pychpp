@@ -14,7 +14,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches_archive, match_details, cup_matches, alliances,
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
-                               matches)
+                               matches, match_orders)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -273,7 +273,7 @@ class CHPPBase:
                              )
 
     def _base_request(
-            self, url, parse_data=True, **kwargs,
+            self, url, parse_data=True, method='GET', **kwargs,
     ) -> xml.etree.ElementTree:
         """
         Base method for sending a request via the CHPP API
@@ -283,7 +283,14 @@ class CHPPBase:
         :return: xml data fetched on Hattrick
         """
         session = self.open_session()
-        query = session.get(url, params=kwargs)
+
+        if method == 'GET':
+            query = session.get(url, params=kwargs)
+        elif method == 'POST':
+            query = session.post(url, data=kwargs)
+        else:
+            raise ValueError(f"Unknown method '{method}'")
+
         query.encoding = "UTF-8"
         self.last_url = query.url
 
@@ -682,6 +689,39 @@ class CHPPXml(CHPPBase):
             chpp=self, match_id=match_id, team_id=team_id,
             source_system=source_system, **kwargs,
         )
+
+    def xml_match_orders(
+            self, match_id: int, action_type: str = 'view', team_id: int = None,
+            source_system: str = 'Hattrick', lineup: str = None, **kwargs,
+    ) -> Union[match_orders.MatchOrdersView,
+               match_orders.MatchOrdersSetMatchOrder,
+               match_orders.MatchOrdersPredictRatings,
+               ]:
+
+        if action_type == 'view':
+            return match_orders.MatchOrdersView(
+                chpp=self, action_type=action_type, match_id=match_id,
+                team_id=team_id, source_system=source_system, lineup=lineup,
+                **kwargs,
+            )
+
+        elif action_type == 'setmatchorder':
+            return match_orders.MatchOrdersSetMatchOrder(
+                chpp=self, action_type=action_type, match_id=match_id,
+                team_id=team_id, source_system=source_system, lineup=lineup,
+                **kwargs,
+            )
+
+        elif action_type == 'predictratings':
+            return match_orders.MatchOrdersPredictRatings(
+                chpp=self, action_type=action_type, match_id=match_id,
+                team_id=team_id, source_system=source_system, lineup=lineup,
+                **kwargs,
+            )
+
+        else:
+            raise ValueError("if set, 'action_type' must be equal to"
+                             "'view', 'setmatchorder' or 'predictratings'")
 
     def xml_matches(
             self, team_id: int = None, is_youth: bool = None, **kwargs,

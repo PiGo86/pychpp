@@ -1,6 +1,6 @@
 import pathlib
 from copy import copy
-from typing import Optional, Type, Dict, Any, List
+from typing import Optional, Type, Dict, Any
 import xml.etree.ElementTree as ElementTree
 from datetime import datetime, date
 from typing import get_type_hints, get_origin, Union, get_args
@@ -43,7 +43,8 @@ class MetaHTModel(type):
 
 class HTModel(metaclass=MetaHTModel):
 
-    SOURCE_FILE: List[str]
+    SOURCE_FILE: str
+    METHOD: str = 'GET'
     LAST_VERSION: str
     URL_PATH: Optional[str] = None
     XML_PREFIX: str = ''
@@ -144,12 +145,12 @@ class HTModel(metaclass=MetaHTModel):
 
         # if data is None, fetch data on Hattrick
         if self._data is None:
-            self._fetch(version, **kwargs)
+            self._fetch(**kwargs)
 
         # Once data is obtained, transform HTField to actual values
         self._transform_fields()
 
-    def _fetch(self, version, **kwargs):
+    def _fetch(self, **kwargs):
 
         # data is fetched using ht_init_vars attribute as query parameters
         for attr, ht_init_var in self._ht_init_vars.items():
@@ -179,6 +180,7 @@ class HTModel(metaclass=MetaHTModel):
 
         # self._data is filled with the file returned by the API call
         self._data = self._chpp.request(file=self.SOURCE_FILE,
+                                        method=self.METHOD,
                                         version=self.version.as_string,
                                         **self._requests_args,
                                         )
