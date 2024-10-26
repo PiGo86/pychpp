@@ -16,6 +16,7 @@ class RequestNationalTeamMatches(HTModel):
     _r_league_office_type_id: Optional[int] = HTInitVar('LeagueOfficeTypeID',
                                                         init_arg='league_office_type_id')
 
+
 class NationalTeamMatches(RequestNationalTeamMatches):
     """
     National Team Matches

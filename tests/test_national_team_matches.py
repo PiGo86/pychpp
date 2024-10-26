@@ -1,5 +1,3 @@
-from re import match
-
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
