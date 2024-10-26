@@ -14,7 +14,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches_archive, match_details, cup_matches, alliances,
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
-                               matches, match_orders)
+                               matches, match_orders, national_team_matches)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -757,6 +757,14 @@ class CHPPXml(CHPPBase):
 
         return national_team_details.NationalTeamDetails(
             chpp=self, team_id=team_id, **kwargs,
+        )
+
+    def xml_national_team_matches(
+            self, league_office_type_id: int = None, **kwargs,
+    ) -> national_team_matches.NationalTeamMatches:
+
+        return national_team_matches.NationalTeamMatches(
+            chpp=self, league_office_type_id=league_office_type_id, **kwargs,
         )
 
     def xml_players(self, action_type: str = 'view', order_by: str = None,
