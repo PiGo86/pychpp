@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pychpp"
-version = "0.4.4"
+version = "0.4.5"
 description = "framework created to use the API provided by the online game Hattrick"
 license = "Apache-2.0"
 authors = ["Pierre Gobin <p.dev@gobin.cc>"]
