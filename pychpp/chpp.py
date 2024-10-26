@@ -14,7 +14,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches_archive, match_details, cup_matches, alliances,
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
-                               matches, match_orders, national_team_matches)
+                               matches, match_orders, national_team_matches, national_players)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -766,6 +766,28 @@ class CHPPXml(CHPPBase):
         return national_team_matches.NationalTeamMatches(
             chpp=self, league_office_type_id=league_office_type_id, **kwargs,
         )
+
+    def xml_national_players(
+            self, team_id: int, action_type: str = 'view', match_type_category: int = None,
+            show_all: bool = None, **kwargs,
+    ) -> Union[national_players.NationalPlayersView,
+               national_players.NationalPlayersStats,
+               ]:
+
+        if action_type == 'view':
+            return national_players.NationalPlayersView(
+                chpp=self, action_type=action_type, team_id=team_id, **kwargs,
+            )
+
+        elif action_type == 'SupporterStats':
+            return national_players.NationalPlayersStats(
+                chpp=self, action_type=action_type, team_id=team_id,
+                match_type_category=match_type_category, show_all=show_all, **kwargs,
+            )
+
+        else:
+            raise ValueError("if set, 'action_type' must be equal to"
+                             "'view', 'setmatchorder' or 'SupporterStats'")
 
     def xml_players(self, action_type: str = 'view', order_by: str = None,
                     team_id: int = None, include_match_info: bool = None, **kwargs,

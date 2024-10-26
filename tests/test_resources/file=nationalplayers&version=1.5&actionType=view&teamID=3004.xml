@@ -1,0 +1,885 @@
+<HattrickData>
+  <FileName>nationalplayers.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 00:10:17</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <TeamID>3004</TeamID>
+  <TeamName>France</TeamName>
+  <ActionType>view</ActionType>
+  <Players>
+    <Player>
+      <PlayerID>448825568</PlayerID>
+      <PlayerName>Abdelmouqit Selawi</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>5</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body1.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f4d.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/beards/f4b2d.png</Image>
+        </Layer>
+        <Layer x="24" y="17">
+          <Image>/Img/Avatar/eyes/e30c.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/mouths/f4bem24c.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/noses/f4ben10.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f4h4d.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>448689124</PlayerID>
+      <PlayerName>Axel Étcheverry</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>5</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body6.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f5m.png</Image>
+        </Layer>
+        <Layer x="24" y="6">
+          <Image>/Img/Avatar/eyes/e28b.png</Image>
+        </Layer>
+        <Layer x="30" y="49">
+          <Image>/Img/Avatar/mouths/m7b.png</Image>
+        </Layer>
+        <Layer x="18" y="39">
+          <Image>/Img/Avatar/goatees/g1.png</Image>
+        </Layer>
+        <Layer x="17" y="19">
+          <Image>/Img/Avatar/noses/n28.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f5h14e.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/25.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>456644452</PlayerID>
+      <PlayerName>Benoît 'White Chocolate' Talleux</PlayerName>
+      <Cards>1</Cards>
+      <Specialty>4</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body12.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f7b.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/beards/f7b1c.png</Image>
+        </Layer>
+        <Layer x="24" y="3">
+          <Image>/Img/Avatar/eyes/e24c.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/mouths/f7bem39c.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/noses/f7ben15.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f7h0.png</Image>
+        </Layer>
+        <Layer x="9" y="135">
+          <Image>/Img/Avatar/misc/yellow.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>452334010</PlayerID>
+      <PlayerName>Christopher Debuyser</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body5.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f6c.png</Image>
+        </Layer>
+        <Layer x="23" y="18">
+          <Image>/Img/Avatar/eyes/e12b.png</Image>
+        </Layer>
+        <Layer x="31" y="58">
+          <Image>/Img/Avatar/mouths/m16b.png</Image>
+        </Layer>
+        <Layer x="19" y="27">
+          <Image>/Img/Avatar/noses/n12.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f6h12c.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>450874242</PlayerID>
+      <PlayerName>Denis Dibango</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>5</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body9.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f7g.png</Image>
+        </Layer>
+        <Layer x="25" y="7">
+          <Image>/Img/Avatar/eyes/e31c.png</Image>
+        </Layer>
+        <Layer x="30" y="41">
+          <Image>/Img/Avatar/mouths/m40c.png</Image>
+        </Layer>
+        <Layer x="18" y="31">
+          <Image>/Img/Avatar/goatees/g1.png</Image>
+        </Layer>
+        <Layer x="15" y="0">
+          <Image>/Img/Avatar/noses/n33.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f7h9f.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>451154034</PlayerID>
+      <PlayerName>Didi 'Bretzel' Keseberg</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body12.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f4b.png</Image>
+        </Layer>
+        <Layer x="24" y="16">
+          <Image>/Img/Avatar/eyes/e28c.png</Image>
+        </Layer>
+        <Layer x="30" y="66">
+          <Image>/Img/Avatar/mouths/m10c.png</Image>
+        </Layer>
+        <Layer x="17" y="26">
+          <Image>/Img/Avatar/noses/n29.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f4h14d.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/11.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>456139571</PlayerID>
+      <PlayerName>Enguerran Flament</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>3</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body7.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f4a.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/beards/f4b1e.png</Image>
+        </Layer>
+        <Layer x="21" y="20">
+          <Image>/Img/Avatar/eyes/e22c.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/mouths/f4bem6c.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/noses/f4ben29.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f4h12e.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>445558618</PlayerID>
+      <PlayerName>Éric Banse</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>0</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body6.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f8b.png</Image>
+        </Layer>
+        <Layer x="25" y="16">
+          <Image>/Img/Avatar/eyes/e27c.png</Image>
+        </Layer>
+        <Layer x="32" y="64">
+          <Image>/Img/Avatar/mouths/m30c.png</Image>
+        </Layer>
+        <Layer x="18" y="31">
+          <Image>/Img/Avatar/noses/n4.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f8h5d.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/16.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>455927147</PlayerID>
+      <PlayerName>Fabien Régal</PlayerName>
+      <Cards>1</Cards>
+      <Specialty>5</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body2.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f6c.png</Image>
+        </Layer>
+        <Layer x="22" y="15">
+          <Image>/Img/Avatar/eyes/e16c.png</Image>
+        </Layer>
+        <Layer x="32" y="65">
+          <Image>/Img/Avatar/mouths/m32c.png</Image>
+        </Layer>
+        <Layer x="21" y="23">
+          <Image>/Img/Avatar/noses/n15.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f6h6b.png</Image>
+        </Layer>
+        <Layer x="9" y="135">
+          <Image>/Img/Avatar/misc/yellow.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>458499114</PlayerID>
+      <PlayerName>François-Marie Massé</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body2.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f9c.png</Image>
+        </Layer>
+        <Layer x="24" y="12">
+          <Image>/Img/Avatar/eyes/e24c.png</Image>
+        </Layer>
+        <Layer x="31" y="64">
+          <Image>/Img/Avatar/mouths/m30c.png</Image>
+        </Layer>
+        <Layer x="20" y="27">
+          <Image>/Img/Avatar/noses/n24.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f9h10d.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>445441861</PlayerID>
+      <PlayerName>Fritz 'Pantelis' Ratte</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>5</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body6.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f1b.png</Image>
+        </Layer>
+        <Layer x="22" y="23">
+          <Image>/Img/Avatar/eyes/e18c.png</Image>
+        </Layer>
+        <Layer x="30" y="65">
+          <Image>/Img/Avatar/mouths/m20cg.png</Image>
+        </Layer>
+        <Layer x="23" y="27">
+          <Image>/Img/Avatar/noses/n6.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f1h4c.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/3.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>449593445</PlayerID>
+      <PlayerName>Jean-Charles Urbain</PlayerName>
+      <Cards>1</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body1.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f6a.png</Image>
+        </Layer>
+        <Layer x="23" y="18">
+          <Image>/Img/Avatar/eyes/e9b.png</Image>
+        </Layer>
+        <Layer x="32" y="66">
+          <Image>/Img/Avatar/mouths/m39b.png</Image>
+        </Layer>
+        <Layer x="19" y="30">
+          <Image>/Img/Avatar/noses/n25.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f6h6b.png</Image>
+        </Layer>
+        <Layer x="9" y="135">
+          <Image>/Img/Avatar/misc/yellow.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/15.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>453190226</PlayerID>
+      <PlayerName>Kinté Fassa</PlayerName>
+      <Cards>1</Cards>
+      <Specialty>4</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body2.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f3g.png</Image>
+        </Layer>
+        <Layer x="22" y="18">
+          <Image>/Img/Avatar/eyes/e4c.png</Image>
+        </Layer>
+        <Layer x="31" y="63">
+          <Image>/Img/Avatar/mouths/m34c.png</Image>
+        </Layer>
+        <Layer x="19" y="53">
+          <Image>/Img/Avatar/goatees/g4.png</Image>
+        </Layer>
+        <Layer x="17" y="33">
+          <Image>/Img/Avatar/noses/n26.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f3h4f.png</Image>
+        </Layer>
+        <Layer x="9" y="135">
+          <Image>/Img/Avatar/misc/yellow.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>447391203</PlayerID>
+      <PlayerName>Laurent Fièvre</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>3</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body7.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f9c.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/beards/f9b2a.png</Image>
+        </Layer>
+        <Layer x="25" y="14">
+          <Image>/Img/Avatar/eyes/e29b.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/mouths/f9bem9b.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/noses/f9ben17.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f9h0.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/19.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>446641612</PlayerID>
+      <PlayerName>Ludovic Rémy</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>4</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body10.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f8c.png</Image>
+        </Layer>
+        <Layer x="26" y="16">
+          <Image>/Img/Avatar/eyes/e28c.png</Image>
+        </Layer>
+        <Layer x="30" y="56">
+          <Image>/Img/Avatar/mouths/m13c.png</Image>
+        </Layer>
+        <Layer x="20" y="51">
+          <Image>/Img/Avatar/goatees/g5.png</Image>
+        </Layer>
+        <Layer x="20" y="24">
+          <Image>/Img/Avatar/noses/n13.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f8h8c.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/4.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>457736904</PlayerID>
+      <PlayerName>Massaèr Boissy</PlayerName>
+      <Cards>1</Cards>
+      <Specialty>3</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body1.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f4f.png</Image>
+        </Layer>
+        <Layer x="23" y="19">
+          <Image>/Img/Avatar/eyes/e12b.png</Image>
+        </Layer>
+        <Layer x="28" y="57">
+          <Image>/Img/Avatar/mouths/m13b.png</Image>
+        </Layer>
+        <Layer x="19" y="55">
+          <Image>/Img/Avatar/goatees/g2.png</Image>
+        </Layer>
+        <Layer x="17" y="34">
+          <Image>/Img/Avatar/noses/n14mf.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f4h4f.png</Image>
+        </Layer>
+        <Layer x="9" y="135">
+          <Image>/Img/Avatar/misc/yellow.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>445348093</PlayerID>
+      <PlayerName>Maxence Bailly</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body9.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f2a.png</Image>
+        </Layer>
+        <Layer x="22" y="25">
+          <Image>/Img/Avatar/eyes/e22b.png</Image>
+        </Layer>
+        <Layer x="33" y="68">
+          <Image>/Img/Avatar/mouths/m27b.png</Image>
+        </Layer>
+        <Layer x="19" y="38">
+          <Image>/Img/Avatar/noses/n26.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f2h0.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/22.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>450026466</PlayerID>
+      <PlayerName>Mikaël Ricordeau</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>0</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body3.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f6b.png</Image>
+        </Layer>
+        <Layer x="26" y="17">
+          <Image>/Img/Avatar/eyes/e26c.png</Image>
+        </Layer>
+        <Layer x="32" y="65">
+          <Image>/Img/Avatar/mouths/m28cg.png</Image>
+        </Layer>
+        <Layer x="18" y="33">
+          <Image>/Img/Avatar/noses/n21md.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f6h12d.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>452914527</PlayerID>
+      <PlayerName>Nolan Goineau</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>0</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body10.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f3b.png</Image>
+        </Layer>
+        <Layer x="23" y="17">
+          <Image>/Img/Avatar/eyes/e3c.png</Image>
+        </Layer>
+        <Layer x="31" y="63">
+          <Image>/Img/Avatar/mouths/m34c.png</Image>
+        </Layer>
+        <Layer x="19" y="55">
+          <Image>/Img/Avatar/goatees/g3.png</Image>
+        </Layer>
+        <Layer x="18" y="20">
+          <Image>/Img/Avatar/noses/n29mb.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f3h2b.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>449694713</PlayerID>
+      <PlayerName>Pierre Mauffrey</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>4</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body2.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f8e.png</Image>
+        </Layer>
+        <Layer x="23" y="13">
+          <Image>/Img/Avatar/eyes/e18c.png</Image>
+        </Layer>
+        <Layer x="32" y="64">
+          <Image>/Img/Avatar/mouths/m34c.png</Image>
+        </Layer>
+        <Layer x="19" y="30">
+          <Image>/Img/Avatar/noses/n12.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f8h7i.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/12.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>449479076</PlayerID>
+      <PlayerName>Pierre Nabais</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body3.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f6a.png</Image>
+        </Layer>
+        <Layer x="24" y="20">
+          <Image>/Img/Avatar/eyes/e21c.png</Image>
+        </Layer>
+        <Layer x="29" y="59">
+          <Image>/Img/Avatar/mouths/m11c.png</Image>
+        </Layer>
+        <Layer x="19" y="33">
+          <Image>/Img/Avatar/noses/n14.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f6h12a.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>450388367</PlayerID>
+      <PlayerName>Pierre 'Gump' Robion</PlayerName>
+      <Cards>1</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body8.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f1e.png</Image>
+        </Layer>
+        <Layer x="27" y="24">
+          <Image>/Img/Avatar/eyes/e6c.png</Image>
+        </Layer>
+        <Layer x="32" y="70">
+          <Image>/Img/Avatar/mouths/m5c.png</Image>
+        </Layer>
+        <Layer x="19" y="62">
+          <Image>/Img/Avatar/goatees/g1.png</Image>
+        </Layer>
+        <Layer x="22" y="31">
+          <Image>/Img/Avatar/noses/n3mi.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f1h14i.png</Image>
+        </Layer>
+        <Layer x="9" y="135">
+          <Image>/Img/Avatar/misc/yellow.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/7.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>451355916</PlayerID>
+      <PlayerName>Romain 'Mozart' Marmet</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>8</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body8.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f5d.png</Image>
+        </Layer>
+        <Layer x="24" y="10">
+          <Image>/Img/Avatar/eyes/e34c.png</Image>
+        </Layer>
+        <Layer x="29" y="49">
+          <Image>/Img/Avatar/mouths/m9c.png</Image>
+        </Layer>
+        <Layer x="18" y="38">
+          <Image>/Img/Avatar/goatees/g2.png</Image>
+        </Layer>
+        <Layer x="18" y="16">
+          <Image>/Img/Avatar/noses/n10.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f5h3i.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>445731162</PlayerID>
+      <PlayerName>Stéphane 'Stan The Man' Le Brun</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body10.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f1a.png</Image>
+        </Layer>
+        <Layer x="25" y="21">
+          <Image>/Img/Avatar/eyes/e29b.png</Image>
+        </Layer>
+        <Layer x="32" y="72">
+          <Image>/Img/Avatar/mouths/m39b.png</Image>
+        </Layer>
+        <Layer x="19" y="62">
+          <Image>/Img/Avatar/goatees/g3.png</Image>
+        </Layer>
+        <Layer x="19" y="34">
+          <Image>/Img/Avatar/noses/n22.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f1h8e.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/21.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>445261018</PlayerID>
+      <PlayerName>Thamazight Omari</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>2</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body12.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f7e.png</Image>
+        </Layer>
+        <Layer x="24" y="4">
+          <Image>/Img/Avatar/eyes/e20c.png</Image>
+        </Layer>
+        <Layer x="32" y="41">
+          <Image>/Img/Avatar/mouths/m31c.png</Image>
+        </Layer>
+        <Layer x="17" y="14">
+          <Image>/Img/Avatar/noses/n40.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f7h1h.png</Image>
+        </Layer>
+        <Layer x="83" y="130">
+          <Image>/Img/Avatar/numbers/2.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+    <Player>
+      <PlayerID>455424090</PlayerID>
+      <PlayerName>Yoann Fremy</PlayerName>
+      <Cards>0</Cards>
+      <Specialty>0</Specialty>
+      <Avatar>
+        <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>http://res.hattrick.org/kits/30/291/2910/2909963/body10.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/faces/f1c.png</Image>
+        </Layer>
+        <Layer x="25" y="21">
+          <Image>/Img/Avatar/eyes/e29c.png</Image>
+        </Layer>
+        <Layer x="29" y="65">
+          <Image>/Img/Avatar/mouths/m24c.png</Image>
+        </Layer>
+        <Layer x="19" y="35">
+          <Image>/Img/Avatar/noses/n19.png</Image>
+        </Layer>
+        <Layer x="9" y="10">
+          <Image>/Img/Avatar/hair/f1h12c.png</Image>
+        </Layer>
+      </Avatar>
+    </Player>
+  </Players>
+</HattrickData>
