@@ -43,6 +43,7 @@ def mocked_chpp(monkeypatch):
 
     def mock_request(*args, **kwargs):
         args_dict = {'file': kwargs.pop('file'), 'version': kwargs.pop('version')}
+        kwargs.pop('method')
         args_dict.update(sorted(kwargs.items()))
         filename = '&'.join(f"{k}={v}" for k, v in args_dict.items()) + '.xml'
 

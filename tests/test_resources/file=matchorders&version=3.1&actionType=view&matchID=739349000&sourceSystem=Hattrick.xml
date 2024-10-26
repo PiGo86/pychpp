@@ -1,0 +1,278 @@
+<HattrickData>
+  <FileName>matchorders.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-26 16:11:39</FetchedDate>
+  <MatchID>739349000</MatchID>
+  <SourceSystem>Hattrick</SourceSystem>
+  <MatchData Available="True">
+    <HomeTeam>
+      <HomeTeamID>1751435</HomeTeamID>
+      <HomeTeamName>Kermouster Atlethic Club 2</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>1747997</ArenaID>
+      <ArenaName>La routourne</ArenaName>
+    </Arena>
+    <MatchDate>2024-10-26 21:00:00</MatchDate>
+    <MatchType>1</MatchType>
+    <Attitude Available="True">0</Attitude>
+    <TacticType>0</TacticType>
+    <CoachModifier Available="True">0</CoachModifier>
+    <Lineup>
+      <Positions>
+        <Player>
+          <PlayerID>414086970</PlayerID>
+          <RoleID>100</RoleID>
+          <FirstName>Joseph</FirstName>
+          <NickName />
+          <LastName>Chevalier</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>451087119</PlayerID>
+          <RoleID>101</RoleID>
+          <FirstName>Raphaël</FirstName>
+          <NickName />
+          <LastName>Da Silva</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>450799356</PlayerID>
+          <RoleID>103</RoleID>
+          <FirstName>Gaëtan</FirstName>
+          <NickName />
+          <LastName>Delhorbe</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>446137405</PlayerID>
+          <RoleID>105</RoleID>
+          <FirstName>Éric</FirstName>
+          <NickName />
+          <LastName>Julie</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>456732884</PlayerID>
+          <RoleID>106</RoleID>
+          <FirstName>Tobias</FirstName>
+          <NickName />
+          <LastName>Knaus</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>439028005</PlayerID>
+          <RoleID>107</RoleID>
+          <FirstName>Rui Lucas</FirstName>
+          <NickName />
+          <LastName>Alexandre</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>432084622</PlayerID>
+          <RoleID>108</RoleID>
+          <FirstName>Henryk</FirstName>
+          <NickName />
+          <LastName>Rycyniak</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>451143169</PlayerID>
+          <RoleID>109</RoleID>
+          <FirstName>Rémy</FirstName>
+          <NickName />
+          <LastName>Seguin</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>447229162</PlayerID>
+          <RoleID>110</RoleID>
+          <FirstName>Thomas</FirstName>
+          <NickName />
+          <LastName>Beck</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>444842361</PlayerID>
+          <RoleID>111</RoleID>
+          <FirstName>Milán</FirstName>
+          <NickName />
+          <LastName>Böröcz</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+        <Player>
+          <PlayerID>456847582</PlayerID>
+          <RoleID>113</RoleID>
+          <FirstName>Ştefan</FirstName>
+          <NickName />
+          <LastName>Tudosescu</LastName>
+          <Behaviour>0</Behaviour>
+        </Player>
+      </Positions>
+      <Bench>
+        <Player>
+          <PlayerID>430759322</PlayerID>
+          <RoleID>200</RoleID>
+          <FirstName>Frédérik</FirstName>
+          <NickName />
+          <LastName>Rivière</LastName>
+        </Player>
+        <Player>
+          <PlayerID>430759331</PlayerID>
+          <RoleID>201</RoleID>
+          <FirstName>Carlos André</FirstName>
+          <NickName />
+          <LastName>Branco</LastName>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>202</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>430759329</PlayerID>
+          <RoleID>203</RoleID>
+          <FirstName>Bougane</FirstName>
+          <NickName />
+          <LastName>Sall</LastName>
+        </Player>
+        <Player>
+          <PlayerID>421746800</PlayerID>
+          <RoleID>204</RoleID>
+          <FirstName>Quentin</FirstName>
+          <NickName />
+          <LastName>Lavigne</LastName>
+        </Player>
+        <Player>
+          <PlayerID>430759333</PlayerID>
+          <RoleID>205</RoleID>
+          <FirstName>Ronan</FirstName>
+          <NickName />
+          <LastName>Maire</LastName>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>206</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>207</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>208</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>209</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>210</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>211</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>212</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>213</RoleID>
+          <FirstName />
+          <NickName />
+          <LastName />
+        </Player>
+      </Bench>
+      <Kickers>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>22</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>23</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>24</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>25</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>26</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>27</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>28</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>29</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>30</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>31</RoleID>
+        </Player>
+        <Player>
+          <PlayerID>0</PlayerID>
+          <RoleID>32</RoleID>
+        </Player>
+      </Kickers>
+      <SetPieces>
+        <PlayerID>432084622</PlayerID>
+        <FirstName>Henryk</FirstName>
+        <NickName />
+        <LastName>Rycyniak</LastName>
+      </SetPieces>
+      <Captain>
+        <PlayerID>439028005</PlayerID>
+        <FirstName>Rui Lucas</FirstName>
+        <NickName />
+        <LastName>Alexandre</LastName>
+      </Captain>
+    </Lineup>
+    <PlayerOrders />
+  </MatchData>
+</HattrickData>

@@ -1,0 +1,2858 @@
+<HattrickData>
+  <FileName>nationalteammatches.xml</FileName>
+  <Version>1.4</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-26 23:10:10</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <LeagueOfficeTypeID>2</LeagueOfficeTypeID>
+  <Matches>
+    <Match>
+      <MatchID>35352649</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3312</HomeTeamId>
+      <HomeTeamName>Puerto Rico</HomeTeamName>
+      <AwayTeamId>3298</AwayTeamId>
+      <AwayTeamName>Ītyōṗṗyā</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352654</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3311</HomeTeamId>
+      <HomeTeamName>Haiti</HomeTeamName>
+      <AwayTeamId>3204</AwayTeamId>
+      <AwayTeamName>Liechtenstein</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>6</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35369238</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3310</HomeTeamId>
+      <HomeTeamName>San Marino</HomeTeamName>
+      <AwayTeamId>3028</AwayTeamId>
+      <AwayTeamName>Nippon</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352640</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3309</HomeTeamId>
+      <HomeTeamName>Zambia</HomeTeamName>
+      <AwayTeamId>3036</AwayTeamId>
+      <AwayTeamName>Singapore</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352653</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3308</HomeTeamId>
+      <HomeTeamName>Myanmar</HomeTeamName>
+      <AwayTeamId>3168</AwayTeamId>
+      <AwayTeamName>El Salvador</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35373314</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3307</HomeTeamId>
+      <HomeTeamName>Botswana</HomeTeamName>
+      <AwayTeamId>3300</AwayTeamId>
+      <AwayTeamName>Sri Lanka</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35385787</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3306</HomeTeamId>
+      <HomeTeamName>Madagasikara</HomeTeamName>
+      <AwayTeamId>3100</AwayTeamId>
+      <AwayTeamName>Chinese Taipei</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35376231</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3304</HomeTeamId>
+      <HomeTeamName>Saint Vincent and the Grenadines</HomeTeamName>
+      <AwayTeamId>3016</AwayTeamId>
+      <AwayTeamName>Venezuela</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35371545</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3303</HomeTeamId>
+      <HomeTeamName>RD Congo</HomeTeamName>
+      <AwayTeamId>3251</AwayTeamId>
+      <AwayTeamName>Dhivehi Raajje</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352696</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3302</HomeTeamId>
+      <HomeTeamName>Guam</HomeTeamName>
+      <AwayTeamId>3029</AwayTeamId>
+      <AwayTeamName>Polska</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352642</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3301</HomeTeamId>
+      <HomeTeamName>Curaçao</HomeTeamName>
+      <AwayTeamId>3224</AwayTeamId>
+      <AwayTeamName>Bangladesh</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352670</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3254</HomeTeamId>
+      <HomeTeamName>Cameroon</HomeTeamName>
+      <AwayTeamId>3134</AwayTeamId>
+      <AwayTeamName>Al Maghrib </AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352655</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3249</HomeTeamId>
+      <HomeTeamName>Uganda</HomeTeamName>
+      <AwayTeamId>3004</AwayTeamId>
+      <AwayTeamName>France</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352636</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3245</HomeTeamId>
+      <HomeTeamName>Dawlat Qatar</HomeTeamName>
+      <AwayTeamId>3019</AwayTeamId>
+      <AwayTeamName>Rossiya</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35374456</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3240</HomeTeamId>
+      <HomeTeamName>Bénin</HomeTeamName>
+      <AwayTeamId>3230</AwayTeamId>
+      <AwayTeamName>Oman</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352647</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3238</HomeTeamId>
+      <HomeTeamName>Prateh Kampuchea</HomeTeamName>
+      <AwayTeamId>3178</AwayTeamId>
+      <AwayTeamName>Shqiperia</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352652</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3234</HomeTeamId>
+      <HomeTeamName>Brunei</HomeTeamName>
+      <AwayTeamId>3172</AwayTeamId>
+      <AwayTeamName>Kyrgyzstan</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35381276</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3228</HomeTeamId>
+      <HomeTeamName>Al Yaman</HomeTeamName>
+      <AwayTeamId>3017</AwayTeamId>
+      <AwayTeamName>Prathet Thai</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>8</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35372760</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3226</HomeTeamId>
+      <HomeTeamName>Crna Gora</HomeTeamName>
+      <AwayTeamId>3140</AwayTeamId>
+      <AwayTeamName>Cyprus</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352683</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3222</HomeTeamId>
+      <HomeTeamName>Angola</HomeTeamName>
+      <AwayTeamId>3198</AwayTeamId>
+      <AwayTeamName>Senegal</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352648</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3220</HomeTeamId>
+      <HomeTeamName>Al Kuwayt</HomeTeamName>
+      <AwayTeamId>3138</AwayTeamId>
+      <AwayTeamName>Costa Rica</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35368343</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3214</HomeTeamId>
+      <HomeTeamName>Bahrain</HomeTeamName>
+      <AwayTeamId>3039</AwayTeamId>
+      <AwayTeamName>Österreich</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352684</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3206</HomeTeamId>
+      <HomeTeamName>Hayastan</HomeTeamName>
+      <AwayTeamId>3035</AwayTeamId>
+      <AwayTeamName>España</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35378461</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3188</HomeTeamId>
+      <HomeTeamName>Kazakhstan</HomeTeamName>
+      <AwayTeamId>3242</AwayTeamId>
+      <AwayTeamName>Suriyah</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352678</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3184</HomeTeamId>
+      <HomeTeamName>Guatemala</HomeTeamName>
+      <AwayTeamId>3190</AwayTeamId>
+      <AwayTeamName>Nicaragua</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352650</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3182</HomeTeamId>
+      <HomeTeamName>Sakartvelo</HomeTeamName>
+      <AwayTeamId>3232</AwayTeamId>
+      <AwayTeamName>Moçambique</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>4</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352643</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3176</HomeTeamId>
+      <HomeTeamName>Moldova</HomeTeamName>
+      <AwayTeamId>3236</AwayTeamId>
+      <AwayTeamName>Ghana</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352644</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3170</HomeTeamId>
+      <HomeTeamName>Honduras</HomeTeamName>
+      <AwayTeamId>3122</AwayTeamId>
+      <AwayTeamName>Pakistan</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35370408</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3162</HomeTeamId>
+      <HomeTeamName>Kenya</HomeTeamName>
+      <AwayTeamId>3192</AwayTeamId>
+      <AwayTeamName>Suriname</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352659</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3160</HomeTeamId>
+      <HomeTeamName>Jamaica</HomeTeamName>
+      <AwayTeamId>3018</AwayTeamId>
+      <AwayTeamName>Misr</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352701</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3150</HomeTeamId>
+      <HomeTeamName>Iran</HomeTeamName>
+      <AwayTeamId>3256</AwayTeamId>
+      <AwayTeamName>Cuba</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352658</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3148</HomeTeamId>
+      <HomeTeamName>Tounes</HomeTeamName>
+      <AwayTeamId>3305</AwayTeamId>
+      <AwayTeamName>Belize</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352657</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3146</HomeTeamId>
+      <HomeTeamName>Lëtzebuerg</HomeTeamName>
+      <AwayTeamId>3200</AwayTeamId>
+      <AwayTeamName>Mongol Uls</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352651</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3144</HomeTeamId>
+      <HomeTeamName>Saudi Arabia</HomeTeamName>
+      <AwayTeamId>3158</AwayTeamId>
+      <AwayTeamName>Severna Makedonija</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352641</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3142</HomeTeamId>
+      <HomeTeamName>United Arab Emirates</HomeTeamName>
+      <AwayTeamId>3008</AwayTeamId>
+      <AwayTeamName>Norge</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352669</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3132</HomeTeamId>
+      <HomeTeamName>Føroyar</HomeTeamName>
+      <AwayTeamId>3194</AwayTeamId>
+      <AwayTeamName>Trinidad &amp; Tobago</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352656</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3128</HomeTeamId>
+      <HomeTeamName>Ecuador</HomeTeamName>
+      <AwayTeamId>3102</AwayTeamId>
+      <AwayTeamName>Hong Kong</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352695</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3120</HomeTeamId>
+      <HomeTeamName>Việt Nam</HomeTeamName>
+      <AwayTeamId>3106</AwayTeamId>
+      <AwayTeamName>Bulgaria</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352690</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3116</HomeTeamId>
+      <HomeTeamName>Slovensko</HomeTeamName>
+      <AwayTeamId>3130</AwayTeamId>
+      <AwayTeamName>Bolivia</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352679</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3113</HomeTeamId>
+      <HomeTeamName>Lietuva</HomeTeamName>
+      <AwayTeamId>3152</AwayTeamId>
+      <AwayTeamName>República Dominicana</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352692</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3112</HomeTeamId>
+      <HomeTeamName>Bosna i Hercegovina</HomeTeamName>
+      <AwayTeamId>3218</AwayTeamId>
+      <AwayTeamName>Azərbaycan</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352637</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3110</HomeTeamId>
+      <HomeTeamName>Slovenija</HomeTeamName>
+      <AwayTeamId>3000</AwayTeamId>
+      <AwayTeamName>Sverige</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352645</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3104</HomeTeamId>
+      <HomeTeamName>Cymru</HomeTeamName>
+      <AwayTeamId>3040</AwayTeamId>
+      <AwayTeamName>Malaysia</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352687</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3090</HomeTeamId>
+      <HomeTeamName>Česká republika</HomeTeamName>
+      <AwayTeamId>3247</AwayTeamId>
+      <AwayTeamName>Tanzania</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352672</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3087</HomeTeamId>
+      <HomeTeamName>Srbija</HomeTeamName>
+      <AwayTeamId>3020</AwayTeamId>
+      <AwayTeamName>România</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352675</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3086</HomeTeamId>
+      <HomeTeamName>Eesti</HomeTeamName>
+      <AwayTeamId>3258</AwayTeamId>
+      <AwayTeamName>Palestine</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35368940</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3085</HomeTeamId>
+      <HomeTeamName>Pilipinas</HomeTeamName>
+      <AwayTeamId>3210</AwayTeamId>
+      <AwayTeamName>Cabo Verde</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352676</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3083</HomeTeamId>
+      <HomeTeamName>Latvija</HomeTeamName>
+      <AwayTeamId>3003</AwayTeamId>
+      <AwayTeamName>Italia</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352639</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3082</HomeTeamId>
+      <HomeTeamName>Magyarország</HomeTeamName>
+      <AwayTeamId>3174</AwayTeamId>
+      <AwayTeamName>Malta</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352646</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3038</HomeTeamId>
+      <HomeTeamName>Schweiz</HomeTeamName>
+      <AwayTeamId>3202</AwayTeamId>
+      <AwayTeamName>Lubnan</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352694</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3037</HomeTeamId>
+      <HomeTeamName>Belgium</HomeTeamName>
+      <AwayTeamId>3126</AwayTeamId>
+      <AwayTeamName>Nigeria</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35368777</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3034</HomeTeamId>
+      <HomeTeamName>China</HomeTeamName>
+      <AwayTeamId>3089</AwayTeamId>
+      <AwayTeamName>Hellas</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352682</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3033</HomeTeamId>
+      <HomeTeamName>Türkiye</HomeTeamName>
+      <AwayTeamId>3012</AwayTeamId>
+      <AwayTeamName>Ireland</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352691</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3032</HomeTeamId>
+      <HomeTeamName>Hanguk</HomeTeamName>
+      <AwayTeamId>3166</AwayTeamId>
+      <AwayTeamName>Panama</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35369894</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3030</HomeTeamId>
+      <HomeTeamName>Scotland</HomeTeamName>
+      <AwayTeamId>3260</AwayTeamId>
+      <AwayTeamName>O'zbekiston</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352638</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001319</MatchContextId>
+      <HomeTeamId>3027</HomeTeamId>
+      <HomeTeamName>India</HomeTeamName>
+      <AwayTeamId>3299</AwayTeamId>
+      <AwayTeamName>Comoros</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>4</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352680</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3026</HomeTeamId>
+      <HomeTeamName>Chile</HomeTeamName>
+      <AwayTeamId>3118</AwayTeamId>
+      <AwayTeamName>Ukraina</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>5</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352689</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3025</HomeTeamId>
+      <HomeTeamName>Nederland</HomeTeamName>
+      <AwayTeamId>3196</AwayTeamId>
+      <AwayTeamName>Algérie</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352693</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3024</HomeTeamId>
+      <HomeTeamName>Brasil</HomeTeamName>
+      <AwayTeamId>3297</AwayTeamId>
+      <AwayTeamName>São Tomé e Príncipe</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352677</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3023</HomeTeamId>
+      <HomeTeamName>Suomi</HomeTeamName>
+      <AwayTeamId>3156</AwayTeamId>
+      <AwayTeamName>Belarus</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352686</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3022</HomeTeamId>
+      <HomeTeamName>Danmark</HomeTeamName>
+      <AwayTeamId>3031</AwayTeamId>
+      <AwayTeamName>Uruguay</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352681</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3021</HomeTeamId>
+      <HomeTeamName>Ísland</HomeTeamName>
+      <AwayTeamId>3180</AwayTeamId>
+      <AwayTeamName>Al Urdun</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35368091</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3015</HomeTeamId>
+      <HomeTeamName>South Africa</HomeTeamName>
+      <AwayTeamId>3084</AwayTeamId>
+      <AwayTeamName>Indonesia</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>2</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352671</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3014</HomeTeamId>
+      <HomeTeamName>Portugal</HomeTeamName>
+      <AwayTeamId>3208</AwayTeamId>
+      <AwayTeamName>Côte d'Ivoire</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352707</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3013</HomeTeamId>
+      <HomeTeamName>Perú</HomeTeamName>
+      <AwayTeamId>3124</AwayTeamId>
+      <AwayTeamName>Paraguay</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35378645</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>12</MatchType>
+      <MatchContextId>5001325</MatchContextId>
+      <HomeTeamId>3011</HomeTeamId>
+      <HomeTeamName>Colombia</HomeTeamName>
+      <AwayTeamId>3164</AwayTeamId>
+      <AwayTeamName>Northern Ireland</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352685</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3010</HomeTeamId>
+      <HomeTeamName>Canada</HomeTeamName>
+      <AwayTeamId>3088</AwayTeamId>
+      <AwayTeamName>Hrvatska</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>2</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352674</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3009</HomeTeamId>
+      <HomeTeamName>Oceania</HomeTeamName>
+      <AwayTeamId>3216</AwayTeamId>
+      <AwayTeamName>Al Iraq</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352708</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3007</HomeTeamId>
+      <HomeTeamName>USA</HomeTeamName>
+      <AwayTeamId>3186</AwayTeamId>
+      <AwayTeamName>Andorra</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>4</HomeGoals>
+        <AwayGoals>4</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352673</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3006</HomeTeamId>
+      <HomeTeamName>Argentina</HomeTeamName>
+      <AwayTeamId>3212</AwayTeamId>
+      <AwayTeamName>Barbados</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>1</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352709</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3005</HomeTeamId>
+      <HomeTeamName>México</HomeTeamName>
+      <AwayTeamId>3108</AwayTeamId>
+      <AwayTeamName>Israel</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>3</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352688</MatchID>
+      <MatchDate>2024-10-25 20:00:00</MatchDate>
+      <MatchType>10</MatchType>
+      <MatchContextId>5001315</MatchContextId>
+      <HomeTeamId>3002</HomeTeamId>
+      <HomeTeamName>Deutschland</HomeTeamName>
+      <AwayTeamId>3001</AwayTeamId>
+      <AwayTeamName>England</AwayTeamName>
+      <MatchResult>
+        <HomeGoals>3</HomeGoals>
+        <AwayGoals>4</AwayGoals>
+      </MatchResult>
+    </Match>
+    <Match>
+      <MatchID>35352720</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3196</HomeTeamId>
+      <HomeTeamName>Algérie</HomeTeamName>
+      <AwayTeamId>3088</AwayTeamId>
+      <AwayTeamName>Hrvatska</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352697</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3208</HomeTeamId>
+      <HomeTeamName>Côte d'Ivoire</HomeTeamName>
+      <AwayTeamId>3190</AwayTeamId>
+      <AwayTeamName>Nicaragua</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352703</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3212</HomeTeamId>
+      <HomeTeamName>Barbados</HomeTeamName>
+      <AwayTeamId>3134</AwayTeamId>
+      <AwayTeamName>Al Maghrib </AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352715</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3222</HomeTeamId>
+      <HomeTeamName>Angola</HomeTeamName>
+      <AwayTeamId>3033</AwayTeamId>
+      <AwayTeamName>Türkiye</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352699</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3132</HomeTeamId>
+      <HomeTeamName>Føroyar</HomeTeamName>
+      <AwayTeamId>3087</AwayTeamId>
+      <AwayTeamName>Srbija</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352732</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3005</HomeTeamId>
+      <HomeTeamName>México</HomeTeamName>
+      <AwayTeamId>3150</AwayTeamId>
+      <AwayTeamName>Iran</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352704</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3006</HomeTeamId>
+      <HomeTeamName>Argentina</HomeTeamName>
+      <AwayTeamId>3254</AwayTeamId>
+      <AwayTeamName>Cameroon</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352724</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3013</HomeTeamId>
+      <HomeTeamName>Perú</HomeTeamName>
+      <AwayTeamId>3112</AwayTeamId>
+      <AwayTeamName>Bosna i Hercegovina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352700</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3014</HomeTeamId>
+      <HomeTeamName>Portugal</HomeTeamName>
+      <AwayTeamId>3184</AwayTeamId>
+      <AwayTeamName>Guatemala</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352705</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3021</HomeTeamId>
+      <HomeTeamName>Ísland</HomeTeamName>
+      <AwayTeamId>3026</AwayTeamId>
+      <AwayTeamName>Chile</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352710</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3023</HomeTeamId>
+      <HomeTeamName>Suomi</HomeTeamName>
+      <AwayTeamId>3113</AwayTeamId>
+      <AwayTeamName>Lietuva</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352728</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3024</HomeTeamId>
+      <HomeTeamName>Brasil</HomeTeamName>
+      <AwayTeamId>3120</AwayTeamId>
+      <AwayTeamName>Việt Nam</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352719</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3025</HomeTeamId>
+      <HomeTeamName>Nederland</HomeTeamName>
+      <AwayTeamId>3010</AwayTeamId>
+      <AwayTeamName>Canada</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352718</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3035</HomeTeamId>
+      <HomeTeamName>España</HomeTeamName>
+      <AwayTeamId>3031</AwayTeamId>
+      <AwayTeamName>Uruguay</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352730</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3037</HomeTeamId>
+      <HomeTeamName>Belgium</HomeTeamName>
+      <AwayTeamId>3302</AwayTeamId>
+      <AwayTeamName>Guam</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352702</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3086</HomeTeamId>
+      <HomeTeamName>Eesti</HomeTeamName>
+      <AwayTeamId>3009</AwayTeamId>
+      <AwayTeamName>Oceania</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352723</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3090</HomeTeamId>
+      <HomeTeamName>Česká republika</HomeTeamName>
+      <AwayTeamId>3007</AwayTeamId>
+      <AwayTeamName>USA</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352729</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3108</HomeTeamId>
+      <HomeTeamName>Israel</HomeTeamName>
+      <AwayTeamId>3256</AwayTeamId>
+      <AwayTeamName>Cuba</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352717</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3116</HomeTeamId>
+      <HomeTeamName>Slovensko</HomeTeamName>
+      <AwayTeamId>3032</AwayTeamId>
+      <AwayTeamName>Hanguk</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352726</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3124</HomeTeamId>
+      <HomeTeamName>Paraguay</HomeTeamName>
+      <AwayTeamId>3218</AwayTeamId>
+      <AwayTeamName>Azərbaycan</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352731</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3126</HomeTeamId>
+      <HomeTeamName>Nigeria</HomeTeamName>
+      <AwayTeamId>3029</AwayTeamId>
+      <AwayTeamName>Polska</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352713</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3001</HomeTeamId>
+      <HomeTeamName>England</HomeTeamName>
+      <AwayTeamId>3003</AwayTeamId>
+      <AwayTeamName>Italia</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352722</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3130</HomeTeamId>
+      <HomeTeamName>Bolivia</HomeTeamName>
+      <AwayTeamId>3166</AwayTeamId>
+      <AwayTeamName>Panama</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352714</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3002</HomeTeamId>
+      <HomeTeamName>Deutschland</HomeTeamName>
+      <AwayTeamId>3083</AwayTeamId>
+      <AwayTeamName>Latvija</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352725</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3297</HomeTeamId>
+      <HomeTeamName>São Tomé e Príncipe</HomeTeamName>
+      <AwayTeamId>3106</AwayTeamId>
+      <AwayTeamName>Bulgaria</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352706</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3156</HomeTeamId>
+      <HomeTeamName>Belarus</HomeTeamName>
+      <AwayTeamId>3152</AwayTeamId>
+      <AwayTeamName>República Dominicana</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352711</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3258</HomeTeamId>
+      <HomeTeamName>Palestine</HomeTeamName>
+      <AwayTeamId>3216</AwayTeamId>
+      <AwayTeamName>Al Iraq</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352712</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3180</HomeTeamId>
+      <HomeTeamName>Al Urdun</HomeTeamName>
+      <AwayTeamId>3118</AwayTeamId>
+      <AwayTeamName>Ukraina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352698</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3194</HomeTeamId>
+      <HomeTeamName>Trinidad &amp; Tobago</HomeTeamName>
+      <AwayTeamId>3020</AwayTeamId>
+      <AwayTeamName>România</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352716</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3198</HomeTeamId>
+      <HomeTeamName>Senegal</HomeTeamName>
+      <AwayTeamId>3012</AwayTeamId>
+      <AwayTeamName>Ireland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352721</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3206</HomeTeamId>
+      <HomeTeamName>Hayastan</HomeTeamName>
+      <AwayTeamId>3022</AwayTeamId>
+      <AwayTeamName>Danmark</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352727</MatchID>
+      <MatchDate>2024-10-28 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3247</HomeTeamId>
+      <HomeTeamName>Tanzania</HomeTeamName>
+      <AwayTeamId>3186</AwayTeamId>
+      <AwayTeamName>Andorra</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352759</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3186</HomeTeamId>
+      <HomeTeamName>Andorra</HomeTeamName>
+      <AwayTeamId>3090</AwayTeamId>
+      <AwayTeamName>Česká republika</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408602</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3202</HomeTeamId>
+      <HomeTeamName>Lubnan</HomeTeamName>
+      <AwayTeamId>3027</AwayTeamId>
+      <AwayTeamName>India</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352745</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3216</HomeTeamId>
+      <HomeTeamName>Al Iraq</HomeTeamName>
+      <AwayTeamId>3086</AwayTeamId>
+      <AwayTeamName>Eesti</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408614</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3224</HomeTeamId>
+      <HomeTeamName>Bangladesh</HomeTeamName>
+      <AwayTeamId>3038</AwayTeamId>
+      <AwayTeamName>Schweiz</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408619</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3232</HomeTeamId>
+      <HomeTeamName>Moçambique</HomeTeamName>
+      <AwayTeamId>3144</AwayTeamId>
+      <AwayTeamName>Saudi Arabia</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408624</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3234</HomeTeamId>
+      <HomeTeamName>Brunei</HomeTeamName>
+      <AwayTeamId>3204</AwayTeamId>
+      <AwayTeamName>Liechtenstein</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408601</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3236</HomeTeamId>
+      <HomeTeamName>Ghana</HomeTeamName>
+      <AwayTeamId>3178</AwayTeamId>
+      <AwayTeamName>Shqiperia</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408609</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3238</HomeTeamId>
+      <HomeTeamName>Prateh Kampuchea</HomeTeamName>
+      <AwayTeamId>3104</AwayTeamId>
+      <AwayTeamName>Cymru</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408613</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3249</HomeTeamId>
+      <HomeTeamName>Uganda</HomeTeamName>
+      <AwayTeamId>3102</AwayTeamId>
+      <AwayTeamName>Hong Kong</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352738</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3254</HomeTeamId>
+      <HomeTeamName>Cameroon</HomeTeamName>
+      <AwayTeamId>3212</AwayTeamId>
+      <AwayTeamName>Barbados</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352763</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3256</HomeTeamId>
+      <HomeTeamName>Cuba</HomeTeamName>
+      <AwayTeamId>3005</AwayTeamId>
+      <AwayTeamName>México</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408608</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3301</HomeTeamId>
+      <HomeTeamName>Curaçao</HomeTeamName>
+      <AwayTeamId>3019</AwayTeamId>
+      <AwayTeamName>Rossiya</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352764</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3302</HomeTeamId>
+      <HomeTeamName>Guam</HomeTeamName>
+      <AwayTeamId>3126</AwayTeamId>
+      <AwayTeamName>Nigeria</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408621</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3308</HomeTeamId>
+      <HomeTeamName>Myanmar</HomeTeamName>
+      <AwayTeamId>3182</AwayTeamId>
+      <AwayTeamName>Sakartvelo</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408611</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3309</HomeTeamId>
+      <HomeTeamName>Zambia</HomeTeamName>
+      <AwayTeamId>3176</AwayTeamId>
+      <AwayTeamName>Moldova</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352746</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3003</HomeTeamId>
+      <HomeTeamName>Italia</HomeTeamName>
+      <AwayTeamId>3002</AwayTeamId>
+      <AwayTeamName>Deutschland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352751</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3218</HomeTeamId>
+      <HomeTeamName>Azərbaycan</HomeTeamName>
+      <AwayTeamId>3013</AwayTeamId>
+      <AwayTeamName>Perú</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352756</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3022</HomeTeamId>
+      <HomeTeamName>Danmark</HomeTeamName>
+      <AwayTeamId>3035</AwayTeamId>
+      <AwayTeamName>España</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352736</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3190</HomeTeamId>
+      <HomeTeamName>Nicaragua</HomeTeamName>
+      <AwayTeamId>3014</AwayTeamId>
+      <AwayTeamName>Portugal</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352749</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3166</HomeTeamId>
+      <HomeTeamName>Panama</HomeTeamName>
+      <AwayTeamId>3116</AwayTeamId>
+      <AwayTeamName>Slovensko</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352761</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3029</HomeTeamId>
+      <HomeTeamName>Polska</HomeTeamName>
+      <AwayTeamId>3037</AwayTeamId>
+      <AwayTeamName>Belgium</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352750</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3031</HomeTeamId>
+      <HomeTeamName>Uruguay</HomeTeamName>
+      <AwayTeamId>3206</AwayTeamId>
+      <AwayTeamName>Hayastan</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352747</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3033</HomeTeamId>
+      <HomeTeamName>Türkiye</HomeTeamName>
+      <AwayTeamId>3198</AwayTeamId>
+      <AwayTeamName>Senegal</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352744</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3083</HomeTeamId>
+      <HomeTeamName>Latvija</HomeTeamName>
+      <AwayTeamId>3001</AwayTeamId>
+      <AwayTeamName>England</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352743</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3152</HomeTeamId>
+      <HomeTeamName>República Dominicana</HomeTeamName>
+      <AwayTeamId>3023</AwayTeamId>
+      <AwayTeamName>Suomi</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352739</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3134</HomeTeamId>
+      <HomeTeamName>Al Maghrib </HomeTeamName>
+      <AwayTeamId>3006</AwayTeamId>
+      <AwayTeamName>Argentina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352734</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3087</HomeTeamId>
+      <HomeTeamName>Srbija</HomeTeamName>
+      <AwayTeamId>3194</AwayTeamId>
+      <AwayTeamName>Trinidad &amp; Tobago</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352753</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3106</HomeTeamId>
+      <HomeTeamName>Bulgaria</HomeTeamName>
+      <AwayTeamId>3024</AwayTeamId>
+      <AwayTeamName>Brasil</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352741</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3118</HomeTeamId>
+      <HomeTeamName>Ukraina</HomeTeamName>
+      <AwayTeamId>3021</AwayTeamId>
+      <AwayTeamName>Ísland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352755</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3088</HomeTeamId>
+      <HomeTeamName>Hrvatska</HomeTeamName>
+      <AwayTeamId>3025</AwayTeamId>
+      <AwayTeamName>Nederland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408607</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3082</HomeTeamId>
+      <HomeTeamName>Magyarország</HomeTeamName>
+      <AwayTeamId>3245</AwayTeamId>
+      <AwayTeamName>Dawlat Qatar</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408612</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3040</HomeTeamId>
+      <HomeTeamName>Malaysia</HomeTeamName>
+      <AwayTeamId>3299</AwayTeamId>
+      <AwayTeamName>Comoros</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408604</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3110</HomeTeamId>
+      <HomeTeamName>Slovenija</HomeTeamName>
+      <AwayTeamId>3036</AwayTeamId>
+      <AwayTeamName>Singapore</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352757</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3032</HomeTeamId>
+      <HomeTeamName>Hanguk</HomeTeamName>
+      <AwayTeamId>3130</AwayTeamId>
+      <AwayTeamName>Bolivia</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352758</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3112</HomeTeamId>
+      <HomeTeamName>Bosna i Hercegovina</HomeTeamName>
+      <AwayTeamId>3124</AwayTeamId>
+      <AwayTeamName>Paraguay</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352742</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3113</HomeTeamId>
+      <HomeTeamName>Lietuva</HomeTeamName>
+      <AwayTeamId>3156</AwayTeamId>
+      <AwayTeamName>Belarus</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352740</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3026</HomeTeamId>
+      <HomeTeamName>Chile</HomeTeamName>
+      <AwayTeamId>3180</AwayTeamId>
+      <AwayTeamName>Al Urdun</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352760</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3120</HomeTeamId>
+      <HomeTeamName>Việt Nam</HomeTeamName>
+      <AwayTeamId>3297</AwayTeamId>
+      <AwayTeamName>São Tomé e Príncipe</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352735</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3020</HomeTeamId>
+      <HomeTeamName>România</HomeTeamName>
+      <AwayTeamId>3132</AwayTeamId>
+      <AwayTeamName>Føroyar</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408617</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3018</HomeTeamId>
+      <HomeTeamName>Misr</HomeTeamName>
+      <AwayTeamId>3305</AwayTeamId>
+      <AwayTeamName>Belize</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408616</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3122</HomeTeamId>
+      <HomeTeamName>Pakistan</HomeTeamName>
+      <AwayTeamId>3220</AwayTeamId>
+      <AwayTeamName>Al Kuwayt</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352748</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3012</HomeTeamId>
+      <HomeTeamName>Ireland</HomeTeamName>
+      <AwayTeamId>3222</AwayTeamId>
+      <AwayTeamName>Angola</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352752</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3010</HomeTeamId>
+      <HomeTeamName>Canada</HomeTeamName>
+      <AwayTeamId>3196</AwayTeamId>
+      <AwayTeamName>Algérie</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352737</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3009</HomeTeamId>
+      <HomeTeamName>Oceania</HomeTeamName>
+      <AwayTeamId>3258</AwayTeamId>
+      <AwayTeamName>Palestine</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408606</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3008</HomeTeamId>
+      <HomeTeamName>Norge</HomeTeamName>
+      <AwayTeamId>3200</AwayTeamId>
+      <AwayTeamName>Mongol Uls</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408622</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3138</HomeTeamId>
+      <HomeTeamName>Costa Rica</HomeTeamName>
+      <AwayTeamId>3158</AwayTeamId>
+      <AwayTeamName>Severna Makedonija</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408603</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3146</HomeTeamId>
+      <HomeTeamName>Lëtzebuerg</HomeTeamName>
+      <AwayTeamId>3160</AwayTeamId>
+      <AwayTeamName>Jamaica</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408620</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3148</HomeTeamId>
+      <HomeTeamName>Tounes</HomeTeamName>
+      <AwayTeamId>3128</AwayTeamId>
+      <AwayTeamName>Ecuador</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352766</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3150</HomeTeamId>
+      <HomeTeamName>Iran</HomeTeamName>
+      <AwayTeamId>3108</AwayTeamId>
+      <AwayTeamName>Israel</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352754</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3007</HomeTeamId>
+      <HomeTeamName>USA</HomeTeamName>
+      <AwayTeamId>3247</AwayTeamId>
+      <AwayTeamName>Tanzania</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408623</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3168</HomeTeamId>
+      <HomeTeamName>El Salvador</HomeTeamName>
+      <AwayTeamId>3311</AwayTeamId>
+      <AwayTeamName>Haiti</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408605</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3170</HomeTeamId>
+      <HomeTeamName>Honduras</HomeTeamName>
+      <AwayTeamId>3142</AwayTeamId>
+      <AwayTeamName>United Arab Emirates</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408618</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3172</HomeTeamId>
+      <HomeTeamName>Kyrgyzstan</HomeTeamName>
+      <AwayTeamId>3312</AwayTeamId>
+      <AwayTeamName>Puerto Rico</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408610</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3174</HomeTeamId>
+      <HomeTeamName>Malta</HomeTeamName>
+      <AwayTeamId>3000</AwayTeamId>
+      <AwayTeamName>Sverige</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35408615</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3004</HomeTeamId>
+      <HomeTeamName>France</HomeTeamName>
+      <AwayTeamId>3298</AwayTeamId>
+      <AwayTeamName>Ītyōṗṗyā</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352733</MatchID>
+      <MatchDate>2024-11-01 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3184</HomeTeamId>
+      <HomeTeamName>Guatemala</HomeTeamName>
+      <AwayTeamId>3208</AwayTeamId>
+      <AwayTeamName>Côte d'Ivoire</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352765</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3208</HomeTeamId>
+      <HomeTeamName>Côte d'Ivoire</HomeTeamName>
+      <AwayTeamId>3184</AwayTeamId>
+      <AwayTeamName>Guatemala</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352783</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3196</HomeTeamId>
+      <HomeTeamName>Algérie</HomeTeamName>
+      <AwayTeamId>3010</AwayTeamId>
+      <AwayTeamName>Canada</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352772</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3212</HomeTeamId>
+      <HomeTeamName>Barbados</HomeTeamName>
+      <AwayTeamId>3254</AwayTeamId>
+      <AwayTeamName>Cameroon</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352789</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3013</HomeTeamId>
+      <HomeTeamName>Perú</HomeTeamName>
+      <AwayTeamId>3218</AwayTeamId>
+      <AwayTeamName>Azərbaycan</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352762</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3014</HomeTeamId>
+      <HomeTeamName>Portugal</HomeTeamName>
+      <AwayTeamId>3190</AwayTeamId>
+      <AwayTeamName>Nicaragua</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352782</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3222</HomeTeamId>
+      <HomeTeamName>Angola</HomeTeamName>
+      <AwayTeamId>3012</AwayTeamId>
+      <AwayTeamName>Ireland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352786</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3247</HomeTeamId>
+      <HomeTeamName>Tanzania</HomeTeamName>
+      <AwayTeamId>3007</AwayTeamId>
+      <AwayTeamName>USA</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352774</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3156</HomeTeamId>
+      <HomeTeamName>Belarus</HomeTeamName>
+      <AwayTeamId>3113</AwayTeamId>
+      <AwayTeamName>Lietuva</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352778</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3021</HomeTeamId>
+      <HomeTeamName>Ísland</HomeTeamName>
+      <AwayTeamId>3118</AwayTeamId>
+      <AwayTeamName>Ukraina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352769</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3132</HomeTeamId>
+      <HomeTeamName>Føroyar</HomeTeamName>
+      <AwayTeamId>3020</AwayTeamId>
+      <AwayTeamName>România</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352790</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3130</HomeTeamId>
+      <HomeTeamName>Bolivia</HomeTeamName>
+      <AwayTeamId>3032</AwayTeamId>
+      <AwayTeamName>Hanguk</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352797</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3126</HomeTeamId>
+      <HomeTeamName>Nigeria</HomeTeamName>
+      <AwayTeamId>3302</AwayTeamId>
+      <AwayTeamName>Guam</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352775</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3023</HomeTeamId>
+      <HomeTeamName>Suomi</HomeTeamName>
+      <AwayTeamId>3152</AwayTeamId>
+      <AwayTeamName>República Dominicana</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352794</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3024</HomeTeamId>
+      <HomeTeamName>Brasil</HomeTeamName>
+      <AwayTeamId>3106</AwayTeamId>
+      <AwayTeamName>Bulgaria</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352780</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3025</HomeTeamId>
+      <HomeTeamName>Nederland</HomeTeamName>
+      <AwayTeamId>3088</AwayTeamId>
+      <AwayTeamName>Hrvatska</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352771</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3006</HomeTeamId>
+      <HomeTeamName>Argentina</HomeTeamName>
+      <AwayTeamId>3134</AwayTeamId>
+      <AwayTeamName>Al Maghrib </AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352800</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3005</HomeTeamId>
+      <HomeTeamName>México</HomeTeamName>
+      <AwayTeamId>3256</AwayTeamId>
+      <AwayTeamName>Cuba</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352781</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3035</HomeTeamId>
+      <HomeTeamName>España</HomeTeamName>
+      <AwayTeamId>3022</AwayTeamId>
+      <AwayTeamName>Danmark</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352768</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3258</HomeTeamId>
+      <HomeTeamName>Palestine</HomeTeamName>
+      <AwayTeamId>3009</AwayTeamId>
+      <AwayTeamName>Oceania</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352792</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3037</HomeTeamId>
+      <HomeTeamName>Belgium</HomeTeamName>
+      <AwayTeamId>3029</AwayTeamId>
+      <AwayTeamName>Polska</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352791</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3297</HomeTeamId>
+      <HomeTeamName>São Tomé e Príncipe</HomeTeamName>
+      <AwayTeamId>3120</AwayTeamId>
+      <AwayTeamName>Việt Nam</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352770</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3086</HomeTeamId>
+      <HomeTeamName>Eesti</HomeTeamName>
+      <AwayTeamId>3216</AwayTeamId>
+      <AwayTeamName>Al Iraq</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352767</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3194</HomeTeamId>
+      <HomeTeamName>Trinidad &amp; Tobago</HomeTeamName>
+      <AwayTeamId>3087</AwayTeamId>
+      <AwayTeamName>Srbija</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352773</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3180</HomeTeamId>
+      <HomeTeamName>Al Urdun</HomeTeamName>
+      <AwayTeamId>3026</AwayTeamId>
+      <AwayTeamName>Chile</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352779</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3198</HomeTeamId>
+      <HomeTeamName>Senegal</HomeTeamName>
+      <AwayTeamId>3033</AwayTeamId>
+      <AwayTeamName>Türkiye</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352787</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3090</HomeTeamId>
+      <HomeTeamName>Česká republika</HomeTeamName>
+      <AwayTeamId>3186</AwayTeamId>
+      <AwayTeamName>Andorra</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352788</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3206</HomeTeamId>
+      <HomeTeamName>Hayastan</HomeTeamName>
+      <AwayTeamId>3031</AwayTeamId>
+      <AwayTeamName>Uruguay</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352793</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3108</HomeTeamId>
+      <HomeTeamName>Israel</HomeTeamName>
+      <AwayTeamId>3150</AwayTeamId>
+      <AwayTeamName>Iran</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352785</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3124</HomeTeamId>
+      <HomeTeamName>Paraguay</HomeTeamName>
+      <AwayTeamId>3112</AwayTeamId>
+      <AwayTeamName>Bosna i Hercegovina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352776</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3001</HomeTeamId>
+      <HomeTeamName>England</HomeTeamName>
+      <AwayTeamId>3083</AwayTeamId>
+      <AwayTeamName>Latvija</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352777</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3002</HomeTeamId>
+      <HomeTeamName>Deutschland</HomeTeamName>
+      <AwayTeamId>3003</AwayTeamId>
+      <AwayTeamName>Italia</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352784</MatchID>
+      <MatchDate>2024-11-04 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3116</HomeTeamId>
+      <HomeTeamName>Slovensko</HomeTeamName>
+      <AwayTeamId>3166</AwayTeamId>
+      <AwayTeamName>Panama</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352826</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3302</HomeTeamId>
+      <HomeTeamName>Guam</HomeTeamName>
+      <AwayTeamId>3037</AwayTeamId>
+      <AwayTeamName>Belgium</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352796</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3190</HomeTeamId>
+      <HomeTeamName>Nicaragua</HomeTeamName>
+      <AwayTeamId>3208</AwayTeamId>
+      <AwayTeamName>Côte d'Ivoire</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352804</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3254</HomeTeamId>
+      <HomeTeamName>Cameroon</HomeTeamName>
+      <AwayTeamId>3006</AwayTeamId>
+      <AwayTeamName>Argentina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352821</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3218</HomeTeamId>
+      <HomeTeamName>Azərbaycan</HomeTeamName>
+      <AwayTeamId>3124</AwayTeamId>
+      <AwayTeamName>Paraguay</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352801</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3216</HomeTeamId>
+      <HomeTeamName>Al Iraq</HomeTeamName>
+      <AwayTeamId>3258</AwayTeamId>
+      <AwayTeamName>Palestine</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352803</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3134</HomeTeamId>
+      <HomeTeamName>Al Maghrib </HomeTeamName>
+      <AwayTeamId>3212</AwayTeamId>
+      <AwayTeamName>Barbados</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352827</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3256</HomeTeamId>
+      <HomeTeamName>Cuba</HomeTeamName>
+      <AwayTeamId>3108</AwayTeamId>
+      <AwayTeamName>Israel</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352815</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3186</HomeTeamId>
+      <HomeTeamName>Andorra</HomeTeamName>
+      <AwayTeamId>3247</AwayTeamId>
+      <AwayTeamName>Tanzania</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352798</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3184</HomeTeamId>
+      <HomeTeamName>Guatemala</HomeTeamName>
+      <AwayTeamId>3014</AwayTeamId>
+      <AwayTeamName>Portugal</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352820</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3166</HomeTeamId>
+      <HomeTeamName>Panama</HomeTeamName>
+      <AwayTeamId>3130</AwayTeamId>
+      <AwayTeamName>Bolivia</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352806</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3152</HomeTeamId>
+      <HomeTeamName>República Dominicana</HomeTeamName>
+      <AwayTeamId>3156</AwayTeamId>
+      <AwayTeamName>Belarus</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352828</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3150</HomeTeamId>
+      <HomeTeamName>Iran</HomeTeamName>
+      <AwayTeamId>3005</AwayTeamId>
+      <AwayTeamName>México</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352809</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3003</HomeTeamId>
+      <HomeTeamName>Italia</HomeTeamName>
+      <AwayTeamId>3001</AwayTeamId>
+      <AwayTeamName>England</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352805</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3118</HomeTeamId>
+      <HomeTeamName>Ukraina</HomeTeamName>
+      <AwayTeamId>3180</AwayTeamId>
+      <AwayTeamName>Al Urdun</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352819</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3022</HomeTeamId>
+      <HomeTeamName>Danmark</HomeTeamName>
+      <AwayTeamId>3206</AwayTeamId>
+      <AwayTeamName>Hayastan</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352813</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3007</HomeTeamId>
+      <HomeTeamName>USA</HomeTeamName>
+      <AwayTeamId>3090</AwayTeamId>
+      <AwayTeamName>Česká republika</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352802</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3009</HomeTeamId>
+      <HomeTeamName>Oceania</HomeTeamName>
+      <AwayTeamId>3086</AwayTeamId>
+      <AwayTeamName>Eesti</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352814</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3010</HomeTeamId>
+      <HomeTeamName>Canada</HomeTeamName>
+      <AwayTeamId>3025</AwayTeamId>
+      <AwayTeamName>Nederland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352795</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3087</HomeTeamId>
+      <HomeTeamName>Srbija</HomeTeamName>
+      <AwayTeamId>3132</AwayTeamId>
+      <AwayTeamName>Føroyar</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352823</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3120</HomeTeamId>
+      <HomeTeamName>Việt Nam</HomeTeamName>
+      <AwayTeamId>3024</AwayTeamId>
+      <AwayTeamName>Brasil</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352811</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3012</HomeTeamId>
+      <HomeTeamName>Ireland</HomeTeamName>
+      <AwayTeamId>3198</AwayTeamId>
+      <AwayTeamName>Senegal</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352817</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3031</HomeTeamId>
+      <HomeTeamName>Uruguay</HomeTeamName>
+      <AwayTeamId>3035</AwayTeamId>
+      <AwayTeamName>España</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352807</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3113</HomeTeamId>
+      <HomeTeamName>Lietuva</HomeTeamName>
+      <AwayTeamId>3023</AwayTeamId>
+      <AwayTeamName>Suomi</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352825</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3112</HomeTeamId>
+      <HomeTeamName>Bosna i Hercegovina</HomeTeamName>
+      <AwayTeamId>3013</AwayTeamId>
+      <AwayTeamName>Perú</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352808</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3026</HomeTeamId>
+      <HomeTeamName>Chile</HomeTeamName>
+      <AwayTeamId>3021</AwayTeamId>
+      <AwayTeamName>Ísland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352824</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3029</HomeTeamId>
+      <HomeTeamName>Polska</HomeTeamName>
+      <AwayTeamId>3126</AwayTeamId>
+      <AwayTeamName>Nigeria</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352816</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3032</HomeTeamId>
+      <HomeTeamName>Hanguk</HomeTeamName>
+      <AwayTeamId>3116</AwayTeamId>
+      <AwayTeamName>Slovensko</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352810</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3083</HomeTeamId>
+      <HomeTeamName>Latvija</HomeTeamName>
+      <AwayTeamId>3002</AwayTeamId>
+      <AwayTeamName>Deutschland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352822</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3106</HomeTeamId>
+      <HomeTeamName>Bulgaria</HomeTeamName>
+      <AwayTeamId>3297</AwayTeamId>
+      <AwayTeamName>São Tomé e Príncipe</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352818</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3088</HomeTeamId>
+      <HomeTeamName>Hrvatska</HomeTeamName>
+      <AwayTeamId>3196</AwayTeamId>
+      <AwayTeamName>Algérie</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352799</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3020</HomeTeamId>
+      <HomeTeamName>România</HomeTeamName>
+      <AwayTeamId>3194</AwayTeamId>
+      <AwayTeamName>Trinidad &amp; Tobago</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352812</MatchID>
+      <MatchDate>2024-11-08 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3033</HomeTeamId>
+      <HomeTeamName>Türkiye</HomeTeamName>
+      <AwayTeamId>3222</AwayTeamId>
+      <AwayTeamName>Angola</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352857</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3029</HomeTeamId>
+      <HomeTeamName>Polska</HomeTeamName>
+      <AwayTeamId>3302</AwayTeamId>
+      <AwayTeamName>Guam</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352842</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3003</HomeTeamId>
+      <HomeTeamName>Italia</HomeTeamName>
+      <AwayTeamId>3083</AwayTeamId>
+      <AwayTeamName>Latvija</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352859</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3256</HomeTeamId>
+      <HomeTeamName>Cuba</HomeTeamName>
+      <AwayTeamId>3150</AwayTeamId>
+      <AwayTeamName>Iran</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352846</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3035</HomeTeamId>
+      <HomeTeamName>España</HomeTeamName>
+      <AwayTeamId>3206</AwayTeamId>
+      <AwayTeamName>Hayastan</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352856</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3218</HomeTeamId>
+      <HomeTeamName>Azərbaycan</HomeTeamName>
+      <AwayTeamId>3112</AwayTeamId>
+      <AwayTeamName>Bosna i Hercegovina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352853</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3166</HomeTeamId>
+      <HomeTeamName>Panama</HomeTeamName>
+      <AwayTeamId>3032</AwayTeamId>
+      <AwayTeamName>Hanguk</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352838</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3156</HomeTeamId>
+      <HomeTeamName>Belarus</HomeTeamName>
+      <AwayTeamId>3023</AwayTeamId>
+      <AwayTeamName>Suomi</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352834</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3216</HomeTeamId>
+      <HomeTeamName>Al Iraq</HomeTeamName>
+      <AwayTeamId>3009</AwayTeamId>
+      <AwayTeamName>Oceania</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352840</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3152</HomeTeamId>
+      <HomeTeamName>República Dominicana</HomeTeamName>
+      <AwayTeamId>3113</AwayTeamId>
+      <AwayTeamName>Lietuva</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352835</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3212</HomeTeamId>
+      <HomeTeamName>Barbados</HomeTeamName>
+      <AwayTeamId>3006</AwayTeamId>
+      <AwayTeamName>Argentina</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352850</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3247</HomeTeamId>
+      <HomeTeamName>Tanzania</HomeTeamName>
+      <AwayTeamId>3090</AwayTeamId>
+      <AwayTeamName>Česká republika</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352829</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3208</HomeTeamId>
+      <HomeTeamName>Côte d'Ivoire</HomeTeamName>
+      <AwayTeamId>3014</AwayTeamId>
+      <AwayTeamName>Portugal</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352843</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3198</HomeTeamId>
+      <HomeTeamName>Senegal</HomeTeamName>
+      <AwayTeamId>3222</AwayTeamId>
+      <AwayTeamName>Angola</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352847</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3088</HomeTeamId>
+      <HomeTeamName>Hrvatska</HomeTeamName>
+      <AwayTeamId>3010</AwayTeamId>
+      <AwayTeamName>Canada</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352844</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3196</HomeTeamId>
+      <HomeTeamName>Algérie</HomeTeamName>
+      <AwayTeamId>3025</AwayTeamId>
+      <AwayTeamName>Nederland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352833</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3258</HomeTeamId>
+      <HomeTeamName>Palestine</HomeTeamName>
+      <AwayTeamId>3086</AwayTeamId>
+      <AwayTeamName>Eesti</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352831</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3194</HomeTeamId>
+      <HomeTeamName>Trinidad &amp; Tobago</HomeTeamName>
+      <AwayTeamId>3132</AwayTeamId>
+      <AwayTeamName>Føroyar</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352858</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3297</HomeTeamId>
+      <HomeTeamName>São Tomé e Príncipe</HomeTeamName>
+      <AwayTeamId>3024</AwayTeamId>
+      <AwayTeamName>Brasil</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352830</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3190</HomeTeamId>
+      <HomeTeamName>Nicaragua</HomeTeamName>
+      <AwayTeamId>3184</AwayTeamId>
+      <AwayTeamName>Guatemala</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352851</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3130</HomeTeamId>
+      <HomeTeamName>Bolivia</HomeTeamName>
+      <AwayTeamId>3116</AwayTeamId>
+      <AwayTeamName>Slovensko</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352849</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3186</HomeTeamId>
+      <HomeTeamName>Andorra</HomeTeamName>
+      <AwayTeamId>3007</AwayTeamId>
+      <AwayTeamName>USA</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352832</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3020</HomeTeamId>
+      <HomeTeamName>România</HomeTeamName>
+      <AwayTeamId>3087</AwayTeamId>
+      <AwayTeamName>Srbija</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352839</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3180</HomeTeamId>
+      <HomeTeamName>Al Urdun</HomeTeamName>
+      <AwayTeamId>3021</AwayTeamId>
+      <AwayTeamName>Ísland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352855</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3126</HomeTeamId>
+      <HomeTeamName>Nigeria</HomeTeamName>
+      <AwayTeamId>3037</AwayTeamId>
+      <AwayTeamName>Belgium</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352848</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3031</HomeTeamId>
+      <HomeTeamName>Uruguay</HomeTeamName>
+      <AwayTeamId>3022</AwayTeamId>
+      <AwayTeamName>Danmark</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352854</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3106</HomeTeamId>
+      <HomeTeamName>Bulgaria</HomeTeamName>
+      <AwayTeamId>3120</AwayTeamId>
+      <AwayTeamName>Việt Nam</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352841</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3001</HomeTeamId>
+      <HomeTeamName>England</HomeTeamName>
+      <AwayTeamId>3002</AwayTeamId>
+      <AwayTeamName>Deutschland</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352860</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3108</HomeTeamId>
+      <HomeTeamName>Israel</HomeTeamName>
+      <AwayTeamId>3005</AwayTeamId>
+      <AwayTeamName>México</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352836</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3134</HomeTeamId>
+      <HomeTeamName>Al Maghrib </HomeTeamName>
+      <AwayTeamId>3254</AwayTeamId>
+      <AwayTeamName>Cameroon</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352837</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3118</HomeTeamId>
+      <HomeTeamName>Ukraina</HomeTeamName>
+      <AwayTeamId>3026</AwayTeamId>
+      <AwayTeamName>Chile</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352845</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3012</HomeTeamId>
+      <HomeTeamName>Ireland</HomeTeamName>
+      <AwayTeamId>3033</AwayTeamId>
+      <AwayTeamName>Türkiye</AwayTeamName>
+      <MatchResult />
+    </Match>
+    <Match>
+      <MatchID>35352852</MatchID>
+      <MatchDate>2024-11-15 20:00:00</MatchDate>
+      <MatchType>50</MatchType>
+      <HomeTeamId>3124</HomeTeamId>
+      <HomeTeamName>Paraguay</HomeTeamName>
+      <AwayTeamId>3013</AwayTeamId>
+      <AwayTeamName>Perú</AwayTeamName>
+      <MatchResult />
+    </Match>
+  </Matches>
+</HattrickData>
