@@ -1,0 +1,48 @@
+<HattrickData>
+  <FileName>trainingevents.xml</FileName>
+  <Version>1.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 22:58:10</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <Player>
+    <PlayerID>456732884</PlayerID>
+    <TrainingEvents Available="True">
+      <TrainingEvent Index="0">
+        <EventDate>2024-08-23 05:16:00</EventDate>
+        <SkillID>6</SkillID>
+        <OldLevel>11</OldLevel>
+        <NewLevel>12</NewLevel>
+        <Season>88</Season>
+        <MatchRound>13</MatchRound>
+        <DayNumber>5</DayNumber>
+      </TrainingEvent>
+      <TrainingEvent Index="1">
+        <EventDate>2024-08-05 12:02:00</EventDate>
+        <SkillID>8</SkillID>
+        <OldLevel>15</OldLevel>
+        <NewLevel>14</NewLevel>
+        <Season>88</Season>
+        <MatchRound>11</MatchRound>
+        <DayNumber>1</DayNumber>
+      </TrainingEvent>
+      <TrainingEvent Index="2">
+        <EventDate>2024-04-12 05:16:00</EventDate>
+        <SkillID>2</SkillID>
+        <OldLevel>8</OldLevel>
+        <NewLevel>7</NewLevel>
+        <Season>87</Season>
+        <MatchRound>10</MatchRound>
+        <DayNumber>5</DayNumber>
+      </TrainingEvent>
+      <TrainingEvent Index="3">
+        <EventDate>2024-04-05 05:16:00</EventDate>
+        <SkillID>2</SkillID>
+        <OldLevel>7</OldLevel>
+        <NewLevel>8</NewLevel>
+        <Season>87</Season>
+        <MatchRound>9</MatchRound>
+        <DayNumber>5</DayNumber>
+      </TrainingEvent>
+    </TrainingEvents>
+  </Player>
+</HattrickData>

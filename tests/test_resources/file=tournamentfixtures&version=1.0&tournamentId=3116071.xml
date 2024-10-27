@@ -1,0 +1,1142 @@
+<HattrickData>
+  <FileName>tournamentFixtures.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 21:14:05</FetchedDate>
+  <Matches>
+    <Match>
+      <MatchId>34922028</MatchId>
+      <HomeTeamId>2052633</HomeTeamId>
+      <HomeTeamName>Immersieg</HomeTeamName>
+      <HomeShortTeamName>Immersieg</HomeShortTeamName>
+      <AwayTeamId>2056780</AwayTeamId>
+      <AwayTeamName>Atlético de Sintra</AwayTeamName>
+      <AwayShortTeamName>Atlético</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922025</MatchId>
+      <HomeTeamId>1921994</HomeTeamId>
+      <HomeTeamName>Castel De Britti FC</HomeTeamName>
+      <HomeShortTeamName>CDB</HomeShortTeamName>
+      <AwayTeamId>182424</AwayTeamId>
+      <AwayTeamName>Fc Gazele</AwayTeamName>
+      <AwayShortTeamName>Gazele</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922017</MatchId>
+      <HomeTeamId>19235</HomeTeamId>
+      <HomeTeamName>Aagesen United!</HomeTeamName>
+      <HomeShortTeamName>Åge</HomeShortTeamName>
+      <AwayTeamId>2056152</AwayTeamId>
+      <AwayTeamName>Jesse's Bushwhackers</AwayTeamName>
+      <AwayShortTeamName>Bushwhackers</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922021</MatchId>
+      <HomeTeamId>614794</HomeTeamId>
+      <HomeTeamName>FCO UNDERGROUND</HomeTeamName>
+      <HomeShortTeamName>UNDERGROUND</HomeShortTeamName>
+      <AwayTeamId>884546</AwayTeamId>
+      <AwayTeamName>Nk Zmajo</AwayTeamName>
+      <AwayShortTeamName>Zmajo</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922038</MatchId>
+      <HomeTeamId>419447</HomeTeamId>
+      <HomeTeamName>Draconarius</HomeTeamName>
+      <HomeShortTeamName>Draco</HomeShortTeamName>
+      <AwayTeamId>2012622</AwayTeamId>
+      <AwayTeamName>Magic71</AwayTeamName>
+      <AwayShortTeamName>Magic71</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922033</MatchId>
+      <HomeTeamId>2056468</HomeTeamId>
+      <HomeTeamName>Forlorn Pines</HomeTeamName>
+      <HomeShortTeamName>Pines</HomeShortTeamName>
+      <AwayTeamId>116046</AwayTeamId>
+      <AwayTeamName>FK MUCHOMŮRKY</AwayTeamName>
+      <AwayShortTeamName>MCHM</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922020</MatchId>
+      <HomeTeamId>2055055</HomeTeamId>
+      <HomeTeamName>World of Prazilia</HomeTeamName>
+      <HomeShortTeamName>Prazilia</HomeShortTeamName>
+      <AwayTeamId>76938</AwayTeamId>
+      <AwayTeamName>Roggo Wednesday</AwayTeamName>
+      <AwayShortTeamName>Wednesday</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922034</MatchId>
+      <HomeTeamId>2056036</HomeTeamId>
+      <HomeTeamName>InterMusa</HomeTeamName>
+      <HomeShortTeamName>InterMusa</HomeShortTeamName>
+      <AwayTeamId>2054445</AwayTeamId>
+      <AwayTeamName>Miški</AwayTeamName>
+      <AwayShortTeamName>Miški</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement>Esagerato!</HomeStatement>
+      <AwayStatement>E' stato già un successo arrivare fin qua: Peo è un campionissimo e ci inchiniamo. / E pure modesto!</AwayStatement>
+    </Match>
+    <Match>
+      <MatchId>34922030</MatchId>
+      <HomeTeamId>956257</HomeTeamId>
+      <HomeTeamName>FC Sort the Boiz</HomeTeamName>
+      <HomeShortTeamName>Sort</HomeShortTeamName>
+      <AwayTeamId>2057249</AwayTeamId>
+      <AwayTeamName>Fessi alla riscossa</AwayTeamName>
+      <AwayShortTeamName>riscossa</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>5</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922019</MatchId>
+      <HomeTeamId>2049898</HomeTeamId>
+      <HomeTeamName>Fresvik goas international</HomeTeamName>
+      <HomeShortTeamName>international</HomeShortTeamName>
+      <AwayTeamId>663328</AwayTeamId>
+      <AwayTeamName>PFC "IBM" Bulgaria</AwayTeamName>
+      <AwayShortTeamName>PFC "IBM"</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922022</MatchId>
+      <HomeTeamId>918790</HomeTeamId>
+      <HomeTeamName>hushishou</HomeTeamName>
+      <HomeShortTeamName>hushishou</HomeShortTeamName>
+      <AwayTeamId>1974257</AwayTeamId>
+      <AwayTeamName>Üsküpspor FK</AwayTeamName>
+      <AwayShortTeamName>Üsküp FK</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922032</MatchId>
+      <HomeTeamId>701674</HomeTeamId>
+      <HomeTeamName>Kenes FC</HomeTeamName>
+      <HomeShortTeamName>Kenes</HomeShortTeamName>
+      <AwayTeamId>835768</AwayTeamId>
+      <AwayTeamName>les héros du gazon</AwayTeamName>
+      <AwayShortTeamName>héros</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922023</MatchId>
+      <HomeTeamId>2053970</HomeTeamId>
+      <HomeTeamName>SG Rotation Friedrichshain</HomeTeamName>
+      <HomeShortTeamName>Rotation</HomeShortTeamName>
+      <AwayTeamId>709333</AwayTeamId>
+      <AwayTeamName>Axel Ray</AwayTeamName>
+      <AwayShortTeamName>Axel</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922029</MatchId>
+      <HomeTeamId>824528</HomeTeamId>
+      <HomeTeamName>Sportfreunde Mälardalen</HomeTeamName>
+      <HomeShortTeamName>Sportfreunde</HomeShortTeamName>
+      <AwayTeamId>2055849</AwayTeamId>
+      <AwayTeamName>AlphaCentauri</AwayTeamName>
+      <AwayShortTeamName>AlphaCentauri</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922018</MatchId>
+      <HomeTeamId>178527</HomeTeamId>
+      <HomeTeamName>GoldenJet</HomeTeamName>
+      <HomeShortTeamName>GJ</HomeShortTeamName>
+      <AwayTeamId>1139808</AwayTeamId>
+      <AwayTeamName>Roter Stern Zittau</AwayTeamName>
+      <AwayShortTeamName>Zittau</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>4</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922024</MatchId>
+      <HomeTeamId>1832948</HomeTeamId>
+      <HomeTeamName>Wild Viking II</HomeTeamName>
+      <HomeShortTeamName>Viking</HomeShortTeamName>
+      <AwayTeamId>489024</AwayTeamId>
+      <AwayTeamName>Steaua Oxigenada</AwayTeamName>
+      <AwayShortTeamName>Oxigenada</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922035</MatchId>
+      <HomeTeamId>2053642</HomeTeamId>
+      <HomeTeamName>Kling Klong</HomeTeamName>
+      <HomeShortTeamName>Kling</HomeShortTeamName>
+      <AwayTeamId>1579383</AwayTeamId>
+      <AwayTeamName>Tecnicosos FC</AwayTeamName>
+      <AwayShortTeamName>Tecnis</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922036</MatchId>
+      <HomeTeamId>1679180</HomeTeamId>
+      <HomeTeamName>Londrina Bulls</HomeTeamName>
+      <HomeShortTeamName>Bulls</HomeShortTeamName>
+      <AwayTeamId>2058296</AwayTeamId>
+      <AwayTeamName>GZWM Grodkov</AwayTeamName>
+      <AwayShortTeamName>Grodkov</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>6</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922026</MatchId>
+      <HomeTeamId>1988550</HomeTeamId>
+      <HomeTeamName>Long An city</HomeTeamName>
+      <HomeShortTeamName>LA FC</HomeShortTeamName>
+      <AwayTeamId>463591</AwayTeamId>
+      <AwayTeamName>Flights International Football School</AwayTeamName>
+      <AwayShortTeamName>FIFS</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922027</MatchId>
+      <HomeTeamId>2055034</HomeTeamId>
+      <HomeTeamName>Turtles</HomeTeamName>
+      <HomeShortTeamName>Turtles</HomeShortTeamName>
+      <AwayTeamId>227216</AwayTeamId>
+      <AwayTeamName>Dragon Kings FC</AwayTeamName>
+      <AwayShortTeamName>Dragon</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922031</MatchId>
+      <HomeTeamId>2055611</HomeTeamId>
+      <HomeTeamName>candadocuatro</HomeTeamName>
+      <HomeShortTeamName>candadocuatro</HomeShortTeamName>
+      <AwayTeamId>204648</AwayTeamId>
+      <AwayTeamName>LoS FiLoSoS</AwayTeamName>
+      <AwayShortTeamName>FiLoSoS</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922040</MatchId>
+      <HomeTeamId>923134</HomeTeamId>
+      <HomeTeamName>Hubei Greentown FC</HomeTeamName>
+      <HomeShortTeamName>Greentown</HomeShortTeamName>
+      <AwayTeamId>810574</AwayTeamId>
+      <AwayTeamName>Dutch Warriors</AwayTeamName>
+      <AwayShortTeamName>Warriors</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922037</MatchId>
+      <HomeTeamId>2011944</HomeTeamId>
+      <HomeTeamName>FC Speedcore</HomeTeamName>
+      <HomeShortTeamName>Speedcore</HomeShortTeamName>
+      <AwayTeamId>2054798</AwayTeamId>
+      <AwayTeamName>FK Opičí hory "C tým"</AwayTeamName>
+      <AwayShortTeamName>Opičí</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922045</MatchId>
+      <HomeTeamId>2054815</HomeTeamId>
+      <HomeTeamName>Milan Fanatic II</HomeTeamName>
+      <HomeShortTeamName>Milan</HomeShortTeamName>
+      <AwayTeamId>1680476</AwayTeamId>
+      <AwayTeamName>FC PVteam</AwayTeamName>
+      <AwayShortTeamName>PVteam</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922042</MatchId>
+      <HomeTeamId>2051841</HomeTeamId>
+      <HomeTeamName>FK Ørn Horten</HomeTeamName>
+      <HomeShortTeamName>FKØrn</HomeShortTeamName>
+      <AwayTeamId>1214103</AwayTeamId>
+      <AwayTeamName>Boulevard Norte h</AwayTeamName>
+      <AwayShortTeamName>BN Gesell</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922043</MatchId>
+      <HomeTeamId>1235889</HomeTeamId>
+      <HomeTeamName>Real Mandarle</HomeTeamName>
+      <HomeShortTeamName>Mandarle</HomeShortTeamName>
+      <AwayTeamId>2050476</AwayTeamId>
+      <AwayTeamName>Motörhead Germany</AwayTeamName>
+      <AwayShortTeamName>Motörhead</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922044</MatchId>
+      <HomeTeamId>2054700</HomeTeamId>
+      <HomeTeamName>Söder Glöder Int BK</HomeTeamName>
+      <HomeShortTeamName>Glöder</HomeShortTeamName>
+      <AwayTeamId>16390</AwayTeamId>
+      <AwayTeamName>Trygg BK</AwayTeamName>
+      <AwayShortTeamName>Trygg</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>4</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922047</MatchId>
+      <HomeTeamId>463543</HomeTeamId>
+      <HomeTeamName>Clover F.C.</HomeTeamName>
+      <HomeShortTeamName>Clover</HomeShortTeamName>
+      <AwayTeamId>2056777</AwayTeamId>
+      <AwayTeamName>LuYleLu</AwayTeamName>
+      <AwayShortTeamName>LuYleLu</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922039</MatchId>
+      <HomeTeamId>1760804</HomeTeamId>
+      <HomeTeamName>Las Salsissas</HomeTeamName>
+      <HomeShortTeamName>Salsissas</HomeShortTeamName>
+      <AwayTeamId>290042</AwayTeamId>
+      <AwayTeamName>CD UDEC</AwayTeamName>
+      <AwayShortTeamName>UDEC</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922048</MatchId>
+      <HomeTeamId>2054708</HomeTeamId>
+      <HomeTeamName>Ulaanbaatar Stars</HomeTeamName>
+      <HomeShortTeamName>Ulaanbaatar</HomeShortTeamName>
+      <AwayTeamId>360303</AwayTeamId>
+      <AwayTeamName>FC Jarlstad</AwayTeamName>
+      <AwayShortTeamName>Jarlstad</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922041</MatchId>
+      <HomeTeamId>661068</HomeTeamId>
+      <HomeTeamName>Yambol City</HomeTeamName>
+      <HomeShortTeamName>Yambol</HomeShortTeamName>
+      <AwayTeamId>2012557</AwayTeamId>
+      <AwayTeamName>Piuranitos FC</AwayTeamName>
+      <AwayShortTeamName>Piuranitos</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34922046</MatchId>
+      <HomeTeamId>1640712</HomeTeamId>
+      <HomeTeamName>HEMACIAS F.C</HomeTeamName>
+      <HomeShortTeamName>HEMACIAS</HomeShortTeamName>
+      <AwayTeamId>447860</AwayTeamId>
+      <AwayTeamName>Team Point FC</AwayTeamName>
+      <AwayShortTeamName>Point</AwayShortTeamName>
+      <MatchDate>2024-09-06 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925123</MatchId>
+      <HomeTeamId>2052633</HomeTeamId>
+      <HomeTeamName>Immersieg</HomeTeamName>
+      <HomeShortTeamName>Immersieg</HomeShortTeamName>
+      <AwayTeamId>182424</AwayTeamId>
+      <AwayTeamName>Fc Gazele</AwayTeamName>
+      <AwayShortTeamName>Gazele</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925124</MatchId>
+      <HomeTeamId>19235</HomeTeamId>
+      <HomeTeamName>Aagesen United!</HomeTeamName>
+      <HomeShortTeamName>Åge</HomeShortTeamName>
+      <AwayTeamId>614794</AwayTeamId>
+      <AwayTeamName>FCO UNDERGROUND</AwayTeamName>
+      <AwayShortTeamName>UNDERGROUND</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925125</MatchId>
+      <HomeTeamId>419447</HomeTeamId>
+      <HomeTeamName>Draconarius</HomeTeamName>
+      <HomeShortTeamName>Draco</HomeShortTeamName>
+      <AwayTeamId>2056468</AwayTeamId>
+      <AwayTeamName>Forlorn Pines</AwayTeamName>
+      <AwayShortTeamName>Pines</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>4</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925126</MatchId>
+      <HomeTeamId>2055055</HomeTeamId>
+      <HomeTeamName>World of Prazilia</HomeTeamName>
+      <HomeShortTeamName>Prazilia</HomeShortTeamName>
+      <AwayTeamId>2056036</AwayTeamId>
+      <AwayTeamName>InterMusa</AwayTeamName>
+      <AwayShortTeamName>InterMusa</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925127</MatchId>
+      <HomeTeamId>2057249</HomeTeamId>
+      <HomeTeamName>Fessi alla riscossa</HomeTeamName>
+      <HomeShortTeamName>riscossa</HomeShortTeamName>
+      <AwayTeamId>663328</AwayTeamId>
+      <AwayTeamName>PFC "IBM" Bulgaria</AwayTeamName>
+      <AwayShortTeamName>PFC "IBM"</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925128</MatchId>
+      <HomeTeamId>918790</HomeTeamId>
+      <HomeTeamName>hushishou</HomeTeamName>
+      <HomeShortTeamName>hushishou</HomeShortTeamName>
+      <AwayTeamId>835768</AwayTeamId>
+      <AwayTeamName>les héros du gazon</AwayTeamName>
+      <AwayShortTeamName>héros</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925129</MatchId>
+      <HomeTeamId>709333</HomeTeamId>
+      <HomeTeamName>Axel Ray</HomeTeamName>
+      <HomeShortTeamName>Axel</HomeShortTeamName>
+      <AwayTeamId>2055849</AwayTeamId>
+      <AwayTeamName>AlphaCentauri</AwayTeamName>
+      <AwayShortTeamName>AlphaCentauri</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>5</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925130</MatchId>
+      <HomeTeamId>1139808</HomeTeamId>
+      <HomeTeamName>Roter Stern Zittau</HomeTeamName>
+      <HomeShortTeamName>Zittau</HomeShortTeamName>
+      <AwayTeamId>1832948</AwayTeamId>
+      <AwayTeamName>Wild Viking II</AwayTeamName>
+      <AwayShortTeamName>Viking</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925131</MatchId>
+      <HomeTeamId>2053642</HomeTeamId>
+      <HomeTeamName>Kling Klong</HomeTeamName>
+      <HomeShortTeamName>Kling</HomeShortTeamName>
+      <AwayTeamId>1679180</AwayTeamId>
+      <AwayTeamName>Londrina Bulls</AwayTeamName>
+      <AwayShortTeamName>Bulls</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925132</MatchId>
+      <HomeTeamId>1988550</HomeTeamId>
+      <HomeTeamName>Long An city</HomeTeamName>
+      <HomeShortTeamName>LA FC</HomeShortTeamName>
+      <AwayTeamId>2055034</AwayTeamId>
+      <AwayTeamName>Turtles</AwayTeamName>
+      <AwayShortTeamName>Turtles</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925133</MatchId>
+      <HomeTeamId>204648</HomeTeamId>
+      <HomeTeamName>LoS FiLoSoS</HomeTeamName>
+      <HomeShortTeamName>FiLoSoS</HomeShortTeamName>
+      <AwayTeamId>923134</AwayTeamId>
+      <AwayTeamName>Hubei Greentown FC</AwayTeamName>
+      <AwayShortTeamName>Greentown</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925134</MatchId>
+      <HomeTeamId>2054798</HomeTeamId>
+      <HomeTeamName>FK Opičí hory "C tým"</HomeTeamName>
+      <HomeShortTeamName>Opičí</HomeShortTeamName>
+      <AwayTeamId>1680476</AwayTeamId>
+      <AwayTeamName>FC PVteam</AwayTeamName>
+      <AwayShortTeamName>PVteam</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>7</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925135</MatchId>
+      <HomeTeamId>1214103</HomeTeamId>
+      <HomeTeamName>Boulevard Norte h</HomeTeamName>
+      <HomeShortTeamName>BN Gesell</HomeShortTeamName>
+      <AwayTeamId>1235889</AwayTeamId>
+      <AwayTeamName>Real Mandarle</AwayTeamName>
+      <AwayShortTeamName>Mandarle</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>5</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925136</MatchId>
+      <HomeTeamId>16390</HomeTeamId>
+      <HomeTeamName>Trygg BK</HomeTeamName>
+      <HomeShortTeamName>Trygg</HomeShortTeamName>
+      <AwayTeamId>463543</AwayTeamId>
+      <AwayTeamName>Clover F.C.</AwayTeamName>
+      <AwayShortTeamName>Clover</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>6</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925137</MatchId>
+      <HomeTeamId>1760804</HomeTeamId>
+      <HomeTeamName>Las Salsissas</HomeTeamName>
+      <HomeShortTeamName>Salsissas</HomeShortTeamName>
+      <AwayTeamId>2054708</AwayTeamId>
+      <AwayTeamName>Ulaanbaatar Stars</AwayTeamName>
+      <AwayShortTeamName>Ulaanbaatar</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34925138</MatchId>
+      <HomeTeamId>661068</HomeTeamId>
+      <HomeTeamName>Yambol City</HomeTeamName>
+      <HomeShortTeamName>Yambol</HomeShortTeamName>
+      <AwayTeamId>447860</AwayTeamId>
+      <AwayTeamName>Team Point FC</AwayTeamName>
+      <AwayShortTeamName>Point</AwayShortTeamName>
+      <MatchDate>2024-09-06 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>10</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941372</MatchId>
+      <HomeTeamId>182424</HomeTeamId>
+      <HomeTeamName>Fc Gazele</HomeTeamName>
+      <HomeShortTeamName>Gazele</HomeShortTeamName>
+      <AwayTeamId>614794</AwayTeamId>
+      <AwayTeamName>FCO UNDERGROUND</AwayTeamName>
+      <AwayShortTeamName>UNDERGROUND</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941377</MatchId>
+      <HomeTeamId>2056468</HomeTeamId>
+      <HomeTeamName>Forlorn Pines</HomeTeamName>
+      <HomeShortTeamName>Pines</HomeShortTeamName>
+      <AwayTeamId>2056036</AwayTeamId>
+      <AwayTeamName>InterMusa</AwayTeamName>
+      <AwayShortTeamName>InterMusa</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941378</MatchId>
+      <HomeTeamId>2057249</HomeTeamId>
+      <HomeTeamName>Fessi alla riscossa</HomeTeamName>
+      <HomeShortTeamName>riscossa</HomeShortTeamName>
+      <AwayTeamId>918790</AwayTeamId>
+      <AwayTeamName>hushishou</AwayTeamName>
+      <AwayShortTeamName>hushishou</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941373</MatchId>
+      <HomeTeamId>2055849</HomeTeamId>
+      <HomeTeamName>AlphaCentauri</HomeTeamName>
+      <HomeShortTeamName>AlphaCentauri</HomeShortTeamName>
+      <AwayTeamId>1832948</AwayTeamId>
+      <AwayTeamName>Wild Viking II</AwayTeamName>
+      <AwayShortTeamName>Viking</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941381</MatchId>
+      <HomeTeamId>2053642</HomeTeamId>
+      <HomeTeamName>Kling Klong</HomeTeamName>
+      <HomeShortTeamName>Kling</HomeShortTeamName>
+      <AwayTeamId>1988550</AwayTeamId>
+      <AwayTeamName>Long An city</AwayTeamName>
+      <AwayShortTeamName>LA FC</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941379</MatchId>
+      <HomeTeamId>923134</HomeTeamId>
+      <HomeTeamName>Hubei Greentown FC</HomeTeamName>
+      <HomeShortTeamName>Greentown</HomeShortTeamName>
+      <AwayTeamId>1680476</AwayTeamId>
+      <AwayTeamName>FC PVteam</AwayTeamName>
+      <AwayShortTeamName>PVteam</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>6</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941382</MatchId>
+      <HomeTeamId>1235889</HomeTeamId>
+      <HomeTeamName>Real Mandarle</HomeTeamName>
+      <HomeShortTeamName>Mandarle</HomeShortTeamName>
+      <AwayTeamId>463543</AwayTeamId>
+      <AwayTeamName>Clover F.C.</AwayTeamName>
+      <AwayShortTeamName>Clover</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>5</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34941384</MatchId>
+      <HomeTeamId>2054708</HomeTeamId>
+      <HomeTeamName>Ulaanbaatar Stars</HomeTeamName>
+      <HomeShortTeamName>Ulaanbaatar</HomeShortTeamName>
+      <AwayTeamId>661068</AwayTeamId>
+      <AwayTeamName>Yambol City</AwayTeamName>
+      <AwayShortTeamName>Yambol</AwayShortTeamName>
+      <MatchDate>2024-09-07 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>11</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34943735</MatchId>
+      <HomeTeamId>182424</HomeTeamId>
+      <HomeTeamName>Fc Gazele</HomeTeamName>
+      <HomeShortTeamName>Gazele</HomeShortTeamName>
+      <AwayTeamId>2056468</AwayTeamId>
+      <AwayTeamName>Forlorn Pines</AwayTeamName>
+      <AwayShortTeamName>Pines</AwayShortTeamName>
+      <MatchDate>2024-09-07 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>12</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34943718</MatchId>
+      <HomeTeamId>2057249</HomeTeamId>
+      <HomeTeamName>Fessi alla riscossa</HomeTeamName>
+      <HomeShortTeamName>riscossa</HomeShortTeamName>
+      <AwayTeamId>2055849</AwayTeamId>
+      <AwayTeamName>AlphaCentauri</AwayTeamName>
+      <AwayShortTeamName>AlphaCentauri</AwayShortTeamName>
+      <MatchDate>2024-09-07 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>12</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>5</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34943716</MatchId>
+      <HomeTeamId>1988550</HomeTeamId>
+      <HomeTeamName>Long An city</HomeTeamName>
+      <HomeShortTeamName>LA FC</HomeShortTeamName>
+      <AwayTeamId>1680476</AwayTeamId>
+      <AwayTeamName>FC PVteam</AwayTeamName>
+      <AwayShortTeamName>PVteam</AwayShortTeamName>
+      <MatchDate>2024-09-07 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>12</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34943717</MatchId>
+      <HomeTeamId>463543</HomeTeamId>
+      <HomeTeamName>Clover F.C.</HomeTeamName>
+      <HomeShortTeamName>Clover</HomeShortTeamName>
+      <AwayTeamId>661068</AwayTeamId>
+      <AwayTeamName>Yambol City</AwayTeamName>
+      <AwayShortTeamName>Yambol</AwayShortTeamName>
+      <MatchDate>2024-09-07 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>12</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34946535</MatchId>
+      <HomeTeamId>2056468</HomeTeamId>
+      <HomeTeamName>Forlorn Pines</HomeTeamName>
+      <HomeShortTeamName>Pines</HomeShortTeamName>
+      <AwayTeamId>2055849</AwayTeamId>
+      <AwayTeamName>AlphaCentauri</AwayTeamName>
+      <AwayShortTeamName>AlphaCentauri</AwayShortTeamName>
+      <MatchDate>2024-09-08 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>13</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34946536</MatchId>
+      <HomeTeamId>1988550</HomeTeamId>
+      <HomeTeamName>Long An city</HomeTeamName>
+      <HomeShortTeamName>LA FC</HomeShortTeamName>
+      <AwayTeamId>463543</AwayTeamId>
+      <AwayTeamName>Clover F.C.</AwayTeamName>
+      <AwayShortTeamName>Clover</AwayShortTeamName>
+      <MatchDate>2024-09-08 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>13</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>34948781</MatchId>
+      <HomeTeamId>2055849</HomeTeamId>
+      <HomeTeamName>AlphaCentauri</HomeTeamName>
+      <HomeShortTeamName>AlphaCentauri</HomeShortTeamName>
+      <AwayTeamId>463543</AwayTeamId>
+      <AwayTeamName>Clover F.C.</AwayTeamName>
+      <AwayShortTeamName>Clover</AwayShortTeamName>
+      <MatchDate>2024-09-08 19:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>14</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>6</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+  </Matches>
+</HattrickData>
