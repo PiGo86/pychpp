@@ -15,7 +15,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
                                matches, match_orders, national_team_matches, national_players,
-                               player_events)
+                               player_events, search)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -843,6 +843,18 @@ class CHPPXml(CHPPBase):
     ) -> region_details.RegionDetails:
         return region_details.RegionDetails(
             chpp=self, region_id=region_id, **kwargs,
+        )
+
+    def xml_search(
+            self, search_type: int = None, search_string: str = None,
+            search_string_2: str = None, search_id: int = None, search_league_id: int = None,
+            page_index: int = None, **kwargs,
+    ) -> search.Search:
+
+        return search.Search(
+            chpp=self, search_type=search_type, search_string=search_string,
+            search_string_2=search_string_2, search_id=search_id,
+            search_league_id=search_league_id, page_index=page_index, **kwargs,
         )
 
     def xml_team_details(
