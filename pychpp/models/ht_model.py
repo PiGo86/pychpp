@@ -211,7 +211,9 @@ class HTModel(metaclass=MetaHTModel):
                     if proxy_path and proxy_path[-1] != '/':
                         proxy_path += '/'
                     proxy_path += previous_xml_prefix + target_field.path
-                    previous_xml_prefix = target_field.xml_prefix
+                    previous_xml_prefix = (target_field.xml_prefix
+                                           if target_field.xml_prefix is not None
+                                           else '')
 
                     if issubclass(type_, HTModel):
                         target_cls = type_

@@ -1,0 +1,773 @@
+<HattrickData>
+  <FileName>supporters.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 17:40:01</FetchedDate>
+  <SupportedTeams TotalItems="22">
+    <SupportedTeam>
+      <UserId>9228073</UserId>
+      <LoginName>Monsieur-le-Vicomte</LoginName>
+      <TeamId>292987</TeamId>
+      <TeamName>Montauban</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36621</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.633</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739340262</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>1752284</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>as pays neslois</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>1</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>292987</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Montauban</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>7</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741971334</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:45:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>292987</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>FC Veno</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>292987</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Montauban</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2022-04-05 11:59:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Brice Mokemo est parti</PressAnnouncementSubject>
+        <PressAnnouncementBody>Hier, Brice Mokemo [playerid=424110937 ]a signé dans un club de DIII hollandaise. Tous nos supporteurs sont en pleurs de te voir partir Brice. Tu étais la star du club, notre  numéro 10 légendaire. Tu étais arrivé à Montauban encore tout jeunot, déjà bien tapé en construction/passe et on t'a entrainer en ailier pour, pour... devenir notre 1er (et seul à ce jour) joueur entrainé à devenir international. On était pas peu fier. Et puis international pas qu'un peu, 25 sélections avec la NT de la Côte d'Ivoire. S'il vous plait.
+Festus Savimba ton fidèle DL camerounais entame une grève de la faim pour implorer ton retour. Brice, tu nous tapais régulièrement du 12 en notes de match, tu étais rayonnant sur ton aile. 
+Et puis un jour, Brice, tu est devenu vieux. Pas encore trop, tu aurais pu nous faire une dernière belle saison mais, d'un commun accord, avant que ta valeur marchande ne s'effondre, tu as été ok pour un dernier challenge sportif. Bonne suite de carrière Brice ... snif !!!</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>1728698</UserId>
+      <LoginName>Jean-Mi</LoginName>
+      <TeamId>1165592</TeamId>
+      <TeamName>Les Poitevins de La Chapelle</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739349000</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>1751435</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Kermouster Atlethic Club 2</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>1</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1165592</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Les Poitevins de La Chapelle</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>6</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>739349004</NextMatchId>
+        <NextMatchMatchDate>2024-11-02 21:00:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1165592</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Jonk HAC</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1165592</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Les Poitevins de La Chapelle</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>5149282</UserId>
+      <LoginName>Requins</LoginName>
+      <TeamId>960935</TeamId>
+      <TeamName>Requin d'eau douce</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>21733</LeagueLevelUnitID>
+      <LeagueLevelUnitName>V.157</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739299276</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>964906</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>F.C City de la Piscine</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>1</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>960935</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Requin d'eau douce</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>6</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>742004719</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:25:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>505964</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Requin d'eau douce</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>505964</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>S.V.Kok</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>6336642</UserId>
+      <LoginName>thekiki76</LoginName>
+      <TeamId>591993</TeamId>
+      <TeamName>thekiki's</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36496</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.508</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739333266</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>2175131</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>juluna</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>0</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>591993</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>thekiki's</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>6</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741971388</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:45:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>291844</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>thekiki's</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>291844</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>sporting toulon var</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2022-11-02 21:52:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Nouveau départ</PressAnnouncementSubject>
+        <PressAnnouncementBody>Le conseil d'administration du club a validé le souhait de la direction sportive de réalisé un grand renouveau au sein de l'effectif.
+Dans l'air du temps depuis quelques saisons, mais repoussé du fait de résultats sportifs au delà des espérances, ce nouveau départ  va engendrer quelques saisons délicates sportivement mais cela s'inscrit dans un nouveau projet a plus long terme.
+Les supporters vont manger leurs pain noir alors qu'aujourd'hui le trésorier et aux anges !</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>1578002</UserId>
+      <LoginName>SkyRhum</LoginName>
+      <TeamId>1750803</TeamId>
+      <TeamName>Capdenaguet</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>5489</LeagueLevelUnitID>
+      <LeagueLevelUnitName>IV.40</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739289137</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>1750803</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Capdenaguet</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>3</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1756343</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Boy's B'Hand</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>2</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741971091</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:45:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1750803</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>zeguib39</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1750803</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Capdenaguet</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>0001-01-01 00:00:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject />
+        <PressAnnouncementBody />
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>3771817</UserId>
+      <LoginName>litllmarmott</LoginName>
+      <TeamId>964339</TeamId>
+      <TeamName>dudu''s team</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36418</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.430</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739328897</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>964339</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>dudu''s team</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>0</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1753048</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>F.C.Kergonan</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>4</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>742020662</NextMatchId>
+        <NextMatchMatchDate>2024-10-29 20:30:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>964339</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Sar El</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>964339</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>dudu''s team</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>1136671</UserId>
+      <LoginName>franckys</LoginName>
+      <TeamId>295023</TeamId>
+      <TeamName>Les piments verts</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+      <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739295857</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>1763346</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Paris-Plages FC</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>3</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>295023</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Les piments verts</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>3</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741970804</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:30:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1765033</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Les piments verts</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1765033</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Toque y si gauses</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>1569942</UserId>
+      <LoginName>Koolseb</LoginName>
+      <TeamId>297884</TeamId>
+      <TeamName>L'Olympic de Paris</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36417</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.429</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739328841</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>2222631</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>CELLEFROUIN FC</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>1</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>297884</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>L'Olympic de Paris</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>6</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>742022397</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:25:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1040491</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>L'Olympic de Paris</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1040491</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>A.C. Ciughina</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>13721243</UserId>
+      <LoginName>-Persona-non-grata-</LoginName>
+      <TeamId>291106</TeamId>
+      <TeamName>Ceci n est pas une équipe !</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36640</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.652</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739341331</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>291106</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Ceci n est pas une équipe !</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>1</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>2221790</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Alsace FC</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>6</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>739341334</NextMatchId>
+        <NextMatchMatchDate>2024-11-02 21:00:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>291106</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Panamalt</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>291106</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Ceci n est pas une équipe !</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>3770884</UserId>
+      <LoginName>blueocean</LoginName>
+      <TeamId>962009</TeamId>
+      <TeamName>ocean blue team</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36806</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.818</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739350626</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>962009</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>ocean blue team</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>11</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>2233310</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>DreamTeamPlus1</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>0</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741970845</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:30:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>591616</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>ocean blue team</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>591616</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Riva Boys</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2023-03-19 12:36:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Le printemps du renouveau...</PressAnnouncementSubject>
+        <PressAnnouncementBody>Voilà, après une superbe aventure qui a démarré à l'été 2018, la génération actuelle tire sa révérence... toute l'équipe est à vendre et un reset total vient de démarrer !
+Que de belles choses à travers ces 5 années IRL, une saison exceptionnelle à 39 points en d2, une finale de coupe de France, une saison en championnat... il aura juste manqué à cette génération un secteur défensif cohérent que je n'ai pas pu financer arrivé en haut...
+L'équipe reviendra au sommet d'ici 3-4 ans avec cette fois un projet plus abouti en ayant encore et toujours appris des lacunes constatées...
+
+Merci à tous mes HT-supp pour tous les petits messages réconfortants ;)
+
+C'est le printemps, ce n'est que le début d'une renaissance...
+
+Enjoy !</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>7514635</UserId>
+      <LoginName>LA-Alpa</LoginName>
+      <TeamId>1165251</TeamId>
+      <TeamName>Ravanusa FC</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>5471</LeagueLevelUnitID>
+      <LeagueLevelUnitName>IV.22</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739288128</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>591114</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Experimental Jet Set Team And No Star</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>8</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1165251</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Ravanusa FC</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>0</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741998701</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:20:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>28588</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Ravanusa FC</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>28588</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Powerbok</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2022-05-01 10:08:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Gunnar Schindzielorz, nouveau secrétaire du club ! </PressAnnouncementSubject>
+        <PressAnnouncementBody>"Salut ! Merci de me donner l’occasion de poursuivre mon aventure avec le club en me nommant secrétaire. J’ai hâte de pouvoir collaborer avec vous en dehors des terrains. Je s'appelle Gunnar !"
+Ce sont sur ces mots très sobres que s'est exprimé Gunnar Schindzielorz, nouveau secrétaire du club et ancienne gloire du club depuis ses 17 ans, qui aura fait les beaux jours de l'équipe de France pendant 2 mandats et demi.
+Réservons-lui le meilleur accueil ! </PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>12721051</UserId>
+      <LoginName>Robail</LoginName>
+      <TeamId>1760861</TeamId>
+      <TeamName>Retour de flammes</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36006</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.18</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739305827</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>1164783</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Lyautey</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>0</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1760861</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Retour de flammes</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>7</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>739305832</NextMatchId>
+        <NextMatchMatchDate>2024-11-02 21:00:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>2234890</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Retour de flammes</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>2234890</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>mouss city</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>3770884</UserId>
+      <LoginName>blueocean</LoginName>
+      <TeamId>2060849</TeamId>
+      <TeamName>CF Black &amp; Blue</TeamName>
+      <LeagueID>154</LeagueID>
+      <LeagueName>Guam</LeagueName>
+      <LeagueLevelUnitID>258073</LeagueLevelUnitID>
+      <LeagueLevelUnitName>Guam Soccer League</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739634453</LastMatchId>
+        <LastMatchDate>2024-10-27 04:10:00</LastMatchDate>
+        <LastMatchHomeTeamId>2064206</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>guamjuniors</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>4</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>2060849</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>CF Black &amp; Blue</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>4</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741960975</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 04:15:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>2060849</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Agat Raiders</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>2060849</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>CF Black &amp; Blue</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2024-07-17 07:12:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>GUAM CUP </PressAnnouncementSubject>
+        <PressAnnouncementBody>A little over 4 years later, the CF Black &amp; Blue won its 4th Guam Cup :) 
+
+For this, it took 3 years of reconstruction to recreate a competitive team, but the work was worth it
+
+I would like to congratulate all the opponents I met during this cup campaign and in particular the finalist who really had a great run with a great team</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>13273138</UserId>
+      <LoginName>Ady69</LoginName>
+      <TeamId>1917655</TeamId>
+      <TeamName>Sorciverdi</TeamName>
+      <LeagueID>4</LeagueID>
+      <LeagueName>Italie</LeagueName>
+      <LeagueLevelUnitID>5797</LeagueLevelUnitID>
+      <LeagueLevelUnitName>IV.26</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>738012744</LastMatchId>
+        <LastMatchDate>2024-10-26 12:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>238280</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Real Strippolo</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>5</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1917655</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Sorciverdi</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>1</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741955976</NextMatchId>
+        <NextMatchMatchDate>2024-10-29 19:15:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1917655</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Rui Team</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1917655</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Sorciverdi</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2021-05-03 21:45:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Tempo di elezioni</PressAnnouncementSubject>
+        <PressAnnouncementBody>E' tempo di elezioni........ma quelli come me chi voteranno?
+Quelli nubbi del gioco, poco interessati al forum e poco coinvolti dalla nazionale.
+
+Penso che ci venga data una bella occasione questa volta.
+Finalmente un candidato con poca chiacchiera e di sostanza.
+Uno che punta dritto al sodo senza tanti giri di parole, senza rompere troppo con numeri e percentuali.
+Un candidato diretto e sincero.
+
+..........uno che la medaglia d'oro l'ha già vinta con l'U20 Italia.
+
+Io voto Monco-Ultras [userid=7860193]
+[link=/World/Elections/?LeagueID=4]</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>3935685</UserId>
+      <LoginName>SuperNazzi</LoginName>
+      <TeamId>1990801</TeamId>
+      <TeamName>Inter Mombasa</TeamName>
+      <LeagueID>95</LeagueID>
+      <LeagueName>Kenya</LeagueName>
+      <LeagueLevelUnitID>60214</LeagueLevelUnitID>
+      <LeagueLevelUnitName>III.7</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>740142478</LastMatchId>
+        <LastMatchDate>2024-10-27 12:45:00</LastMatchDate>
+        <LastMatchHomeTeamId>1990709</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Last Cubs United 2</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>0</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1990801</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Inter Mombasa</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>12</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741965973</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 12:00:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1990823</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Inter Mombasa</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1990823</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>THE BELGIAN CHEETAHS</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2022-11-25 17:10:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>For you...</PressAnnouncementSubject>
+        <PressAnnouncementBody>We have a new Stadium… dedicated to you… and now I have brought you a national team[tournamentmatchid=28056572]. See you soon ❤
+
+
+</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>7425121</UserId>
+      <LoginName>sessui_du_mil4</LoginName>
+      <TeamId>987924</TeamId>
+      <TeamName>loucogg team</TeamName>
+      <LeagueID>126</LeagueID>
+      <LeagueName>Côte d’Ivoire</LeagueName>
+      <LeagueLevelUnitID>123211</LeagueLevelUnitID>
+      <LeagueLevelUnitName>Ligue 1</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>741898569</LastMatchId>
+        <LastMatchDate>2024-10-23 19:25:00</LastMatchDate>
+        <LastMatchHomeTeamId>987866</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Pentapoli</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>7</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>987924</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>loucogg team</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>0</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>740619048</NextMatchId>
+        <NextMatchMatchDate>2024-10-27 18:55:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>987924</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>The Scores II</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>987924</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>loucogg team</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2024-07-15 18:21:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Quarts de Masters! La belle aventure</PressAnnouncementSubject>
+        <PressAnnouncementBody>Oui, oui , oui! loucogg team a atteint des sommets en masters en chutant en quart  [matchid=736604647]d'une magnifique épopée.
+
+Réaction des protagonistes à l'issue de cette mortifiante défaite :
+[b]Agnissan[/b], capitaine qui égalise et permet d'aller aux penaltys en 1/8ème [matchid=736551981]
+[i]On est terriblement triste de sortir maintenant, mais immensément fier d'être arrivé jusqu'ici[/i]
+
+[b]Frederick[/b], meilleur buteur en masters de l'histoire du club avec 6 buts,  blessé à la veille du 1/8ème 
+[i] Satanée épaule ! J'avais les jambes, les yeux de l'aigle et la force de l'éléphant.....ahhhhh[/i]
+
+[b]Stawimdła[/b], recordman de minutes jouées en masters:
+[i]Ce club est mythique, mais il reste un titre à aller chercher pour qu'il devienne divin![/i]
+
+Oui mesdames, messieurs, loucogg a chuté en quart de la compétition la plus prestigieuse d'hattrick, mais elle n'oublie pas de garder des objectifs à atteindre.
+
+Boouuiiihhh allez loucogg team, allez!
+</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>7425121</UserId>
+      <LoginName>sessui_du_mil4</LoginName>
+      <TeamId>1013234</TeamId>
+      <TeamName>Mil4 Elefants</TeamName>
+      <LeagueID>46</LeagueID>
+      <LeagueName>Suisse</LeagueName>
+      <LeagueLevelUnitID>11633</LeagueLevelUnitID>
+      <LeagueLevelUnitName>IV.14</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>738585351</LastMatchId>
+        <LastMatchDate>2024-10-26 19:15:00</LastMatchDate>
+        <LastMatchHomeTeamId>803386</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Der_weisse_Larry_Bird</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>1</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1013234</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Mil4 Elefants</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>0</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741965794</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 10:30:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>463947</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Mil4 Elefants</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>463947</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Leuggern Knights</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2021-09-02 10:38:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Tristesse</PressAnnouncementSubject>
+        <PressAnnouncementBody>Les Mil4 Elefants sont en deuil depuis ce début de semaine.
+
+En effet, à la suite de tragiques événements IRL, FatPantelis[userid=7118036] est décédé. Au delà du club, c'est son président qui est très très triste de perdre une merveilleuse personne, prête à donner des coups de main à beaucoup, qui aime rire, échanger et chercher puis trouver le bon en chacun. C'est un terrible choc encore maintenant de savoir que tu es mort poto.
+
+Le club cherche le moyen qui fait le plus de sens pour lui afin de lui rendre hommage.
+
+Jusqu'à nouvel ordre, le club se considère en deuil. 
+
+Je te souhaite le meilleur là ou tu es FatPantelis, et j'espère qu'on aura l'occasion d'en boire une ensemble lorsque ce sera le moment.
+
+Tout de bon.</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>13791943</UserId>
+      <LoginName>courbisom</LoginName>
+      <TeamId>593448</TeamId>
+      <TeamName>Olympisme 2 Marseille</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>706</LeagueLevelUnitID>
+      <LeagueLevelUnitName>II.3</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739285948</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>593448</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Olympisme 2 Marseille</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>3</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>587632</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Les Bigoudens</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>1</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741971572</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:00:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>593448</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Jesem Wa</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>593448</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Olympisme 2 Marseille</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2024-09-01 14:00:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Une rentrée chez les grands !</PressAnnouncementSubject>
+        <PressAnnouncementBody>2ans et 10 mois, c'est le temps qu'il a fallu à l'Olympisme 2 Marseille pour accéder à la D2. Cette saison, l'écart d'ancienneté avec l'autre plus jeune équipe de D3 était d'1 an et demi (coucou à mon ami Albusblack qui pourrait revenir en D3 avec cette étiquette !), ça sera sensiblement le même écart avec les plus jeunes D2, autant dire que je me sens bien jeune, dans ce ht-monde de dinosaures !
+Mais pour autant, mon ambitieux plan de construction et progression expres est simplement respecté. 
+J'ose le dire, je vise maintenant la montée en D1 dans les 2 saisons à venir pour espérer y faire quelque chose et revivre des ht-emotions pas si lointaines que ça !
+Mais pour cela, il me faudra de la réussite, comme j'ai pu l'avoir cette saison pour m'extirper d'une solide et très sympathique D3, vainqueur de la bataille des D3 !
+
+</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>9537632</UserId>
+      <LoginName>Stanko</LoginName>
+      <TeamId>1755041</TeamId>
+      <TeamName>Etoile Rouge de Caen</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36302</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.314</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>739322403</LastMatchId>
+        <LastMatchDate>2024-10-26 21:00:00</LastMatchDate>
+        <LastMatchHomeTeamId>1755339</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>FCNantes 44</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>0</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1755041</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Etoile Rouge de Caen</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>5</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741971058</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 15:45:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1755041</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>Aureilhan Club Marseillais</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1755041</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>Etoile Rouge de Caen</NextMatchAwayTeamName>
+      </NextMatch>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>11167477</UserId>
+      <LoginName>mical1004</LoginName>
+      <TeamId>802747</TeamId>
+      <TeamName>FC Mont-Noble Magic</TeamName>
+      <LeagueID>46</LeagueID>
+      <LeagueName>Suisse</LeagueName>
+      <LeagueLevelUnitID>8701</LeagueLevelUnitID>
+      <LeagueLevelUnitName>III.4</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>738583897</LastMatchId>
+        <LastMatchDate>2024-10-26 19:15:00</LastMatchDate>
+        <LastMatchHomeTeamId>802747</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>FC Mont-Noble Magic</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>4</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>1013738</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>Hinkebein Club Tribschen</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>0</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>741965791</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 10:30:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>802747</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>ELLAS Brothers</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>802747</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>FC Mont-Noble Magic</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2022-07-10 22:00:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>We are proud</PressAnnouncementSubject>
+        <PressAnnouncementBody>Congratulations to our players for their U21 and A selection with their countries:
+
+- Hakan Mattes [playerid=458068853] with U21 Switzerland   
+
+- Bapstiste Chamayou [playerid=459471937], Marc Vivien Kablan [playerid=458285352], Cédric Blekan [playerid=456717727], Agnimel Guiro [playerid=457122404], Apollinaire Danho [playerid=462621176], Axel Yeboah [playerid=456149628], Atoumgbré Fuego [playerid=469983154], Atchori Tanoh [playerid=466264906], Idriss Ekemézié [playerid=468959717], Diapi Atsin
+[playerid=472574664], Franck Benie [playerid=474249361] with U21/A Ivory Coast  
+
+- Clément Moloi [playerid=459341775] with U21/A Botswana  
+
+- Elyor Isomov [playerid=458258697] with U12 Ozbékistan  
+
+We are proud of you boys! </PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>11167477</UserId>
+      <LoginName>mical1004</LoginName>
+      <TeamId>2051719</TeamId>
+      <TeamName>1004 Galaxies Football Club</TeamName>
+      <LeagueID>1000</LeagueID>
+      <LeagueName>Hattrick International</LeagueName>
+      <LeagueLevelUnitID>256908</LeagueLevelUnitID>
+      <LeagueLevelUnitName>V.137</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>738729611</LastMatchId>
+        <LastMatchDate>2024-10-26 17:15:00</LastMatchDate>
+        <LastMatchHomeTeamId>2059521</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Hansa Tartumaa</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>0</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>2051719</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>1004 Galaxies Football Club</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>7</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>742018674</NextMatchId>
+        <NextMatchMatchDate>2024-10-30 18:55:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>1437229</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>1004 Galaxies Football Club</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>1437229</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>A Ras da Kona</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2023-02-05 17:33:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Champion d'Afrique!</PressAnnouncementSubject>
+        <PressAnnouncementBody>Sous la houlette de JMPALO, nous avons gagné la Coupe Continentale d'Afrique! Bravo donc à JMPALO [userid=13260639], sessui [userid=7425121], keseru [userid=11567498], Aigle Fin [userid=9206566], Rudy33 [userid=13481763], GaetanVN [userid=13515461], Nina [userid=13618787], luigiesposito [userid=13239497]
+
+On est les champions, on est les champions!</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+    <SupportedTeam>
+      <UserId>9779968</UserId>
+      <LoginName>K_Madig</LoginName>
+      <TeamId>987919</TeamId>
+      <TeamName>En Avant Madigood</TeamName>
+      <LeagueID>126</LeagueID>
+      <LeagueName>Côte d’Ivoire</LeagueName>
+      <LeagueLevelUnitID>123257</LeagueLevelUnitID>
+      <LeagueLevelUnitName>III.2</LeagueLevelUnitName>
+      <LastMatch>
+        <LastMatchId>741920951</LastMatchId>
+        <LastMatchDate>2024-10-23 15:25:00</LastMatchDate>
+        <LastMatchHomeTeamId>964252</LastMatchHomeTeamId>
+        <LastMatchHomeTeamName>Corse Deluxe</LastMatchHomeTeamName>
+        <LastMatchHomeGoals>3</LastMatchHomeGoals>
+        <LastMatchAwayTeamId>987919</LastMatchAwayTeamId>
+        <LastMatchAwayTeamName>En Avant Madigood</LastMatchAwayTeamName>
+        <LastMatchAwayGoals>5</LastMatchAwayGoals>
+      </LastMatch>
+      <NextMatch>
+        <NextMatchId>740619385</NextMatchId>
+        <NextMatchMatchDate>2024-10-27 18:55:00</NextMatchMatchDate>
+        <NextMatchHomeTeamId>987919</NextMatchHomeTeamId>
+        <NextMatchHomeTeamName>FC Royal Robin's World</NextMatchHomeTeamName>
+        <NextMatchAwayTeamId>987919</NextMatchAwayTeamId>
+        <NextMatchAwayTeamName>En Avant Madigood</NextMatchAwayTeamName>
+      </NextMatch>
+      <PressAnnouncement>
+        <PressAnnouncementSendDate>2024-09-09 17:20:00</PressAnnouncementSendDate>
+        <PressAnnouncementSubject>Une descente surprise</PressAnnouncementSubject>
+        <PressAnnouncementBody>[i]Le club a vécu une fin de saison difficile mais le fait de devoir passer par un match de barrage pour le maintien n'était pas inquiétant, outre mesure.
+
+Malheureusement, les aléas de la rencontre et un adversaire qui a sorti un beau milieu, ont fait que l'En Avant a été incapable de marquer. Le but encaissé en tout début de match a eu une terrible conséquence, car il envoie l'équipe en D.III.
+
+Ça va être l'occasion de se remettre en question en attendant un retour au niveau supérieur dès que possible.[/i]</PressAnnouncementBody>
+      </PressAnnouncement>
+    </SupportedTeam>
+  </SupportedTeams>
+</HattrickData>
