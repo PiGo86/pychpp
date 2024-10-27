@@ -1,0 +1,26 @@
+<HattrickData>
+  <FileName>tournamentlist.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 22:31:11</FetchedDate>
+  <Tournaments>
+    <Tournament>
+      <TournamentId>5292015</TournamentId>
+      <Name>Coupe des Hauts de France et du reste du monde</Name>
+      <TournamentType>3</TournamentType>
+      <Season>20</Season>
+      <LogoUrl>http://res.hattrick.org/tournamentlogo/53/530/5293/5292015/5292015.png</LogoUrl>
+      <TrophyType>1</TrophyType>
+      <NumberOfTeams>12</NumberOfTeams>
+      <NumberOfGroups>2</NumberOfGroups>
+      <LastMatchRound>5</LastMatchRound>
+      <FirstMatchRoundDate>2024-09-23 18:00:00</FirstMatchRoundDate>
+      <NextMatchRoundDate>2024-10-28 18:00:00</NextMatchRoundDate>
+      <IsMatchesOngoing>0</IsMatchesOngoing>
+      <Creator>
+        <UserId>4123541</UserId>
+        <Loginname>tigersspp</Loginname>
+      </Creator>
+    </Tournament>
+  </Tournaments>
+</HattrickData>
