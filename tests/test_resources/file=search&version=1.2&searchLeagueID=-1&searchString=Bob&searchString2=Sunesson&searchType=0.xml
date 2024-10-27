@@ -1,0 +1,37 @@
+<HattrickData>
+  <FileName>search.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 14:43:28</FetchedDate>
+  <SearchParams>
+    <SearchType>0</SearchType>
+    <SearchString>Bob</SearchString>
+    <SearchString2>Sunesson</SearchString2>
+    <SearchID>0</SearchID>
+    <SearchLeagueID>-1</SearchLeagueID>
+  </SearchParams>
+  <PageIndex>0</PageIndex>
+  <Pages>1</Pages>
+  <SearchResults>
+    <Result>
+      <ResultID>336960433</ResultID>
+      <ResultName>Bob Sunesson</ResultName>
+    </Result>
+    <Result>
+      <ResultID>460053187</ResultID>
+      <ResultName>Bob Sunesson</ResultName>
+    </Result>
+    <Result>
+      <ResultID>445358691</ResultID>
+      <ResultName>Bob 'Clown' Sunesson</ResultName>
+    </Result>
+    <Result>
+      <ResultID>467822364</ResultID>
+      <ResultName>Bob 'De la Gente' Sunesson</ResultName>
+    </Result>
+    <Result>
+      <ResultID>454396898</ResultID>
+      <ResultName>Bob 'Clown' Sunesson</ResultName>
+    </Result>
+  </SearchResults>
+</HattrickData>
