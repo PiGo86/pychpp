@@ -1,0 +1,97 @@
+<HattrickData>
+  <FileName>playerevents.xml</FileName>
+  <Version>1.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 09:47:06</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <Player>
+    <PlayerID>445879103</PlayerID>
+    <PlayerEvents Available="True">
+      <PlayerEvent>
+        <EventDate>2024-09-07 02:37:00</EventDate>
+        <PlayerEventTypeID>42</PlayerEventTypeID>
+        <EventText>A fait partie de l'équipe qui a été championne de &lt;a href="/World/Series/?LeagueLevelUnitID=703"&gt;Championnat&lt;/a&gt; (&lt;a href="/World/Leagues/League.aspx?LeagueID=5"&gt;France&lt;/a&gt;) lors de la saison 88.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2024-06-27 20:00:00</EventDate>
+        <PlayerEventTypeID>3</PlayerEventTypeID>
+        <EventText>A fait ses débuts dans les Hattrick Masters pour FC Mistral Gagnant.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2024-05-08 17:47:00</EventDate>
+        <PlayerEventTypeID>52</PlayerEventTypeID>
+        <EventText>A fait partie de l'équipe victorieuse en &lt;a href="/World/Cup/Cup.aspx?CupID=6"&gt;Coupe de France 87&lt;/a&gt;.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2024-02-11 14:04:00</EventDate>
+        <PlayerEventTypeID>34</PlayerEventTypeID>
+        <EventText>Un nouveau défi l'attend. Il est arrivé au club après avoir été transféré de Pedra Negra F. C..</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2023-10-08 01:54:00</EventDate>
+        <PlayerEventTypeID>42</PlayerEventTypeID>
+        <EventText>A fait partie de l'équipe qui a été championne de &lt;a href="/World/Series/?LeagueLevelUnitID=3306"&gt;IV.57&lt;/a&gt; (&lt;a href="/World/Leagues/League.aspx?LeagueID=16"&gt;Brésil&lt;/a&gt;) lors de la saison 73.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2023-07-31 00:00:00</EventDate>
+        <PlayerEventTypeID>44</PlayerEventTypeID>
+        <EventText>A franchi le jalon de 200 matchs joués pour son club. </EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2022-11-14 11:36:00</EventDate>
+        <PlayerEventTypeID>43</PlayerEventTypeID>
+        <EventText>L'entrainement rend meilleur. Reconnu comme le joueur ayant le plus progressé dans son équipe lors de la saison 70.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2022-11-06 01:51:00</EventDate>
+        <PlayerEventTypeID>42</PlayerEventTypeID>
+        <EventText>A fait partie de l'équipe qui a été championne de &lt;a href="/World/Series/?LeagueLevelUnitID=3258"&gt;IV.9&lt;/a&gt; (&lt;a href="/World/Leagues/League.aspx?LeagueID=16"&gt;Brésil&lt;/a&gt;) lors de la saison 70.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2022-07-25 09:04:00</EventDate>
+        <PlayerEventTypeID>43</PlayerEventTypeID>
+        <EventText>L'entrainement rend meilleur. Reconnu comme le joueur ayant le plus progressé dans son équipe lors de la saison 69.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2022-07-17 01:51:00</EventDate>
+        <PlayerEventTypeID>42</PlayerEventTypeID>
+        <EventText>A fait partie de l'équipe qui a été championne de &lt;a href="/World/Series/?LeagueLevelUnitID=11108"&gt;V.62&lt;/a&gt; (&lt;a href="/World/Leagues/League.aspx?LeagueID=16"&gt;Brésil&lt;/a&gt;) lors de la saison 69.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2021-11-29 00:00:00</EventDate>
+        <PlayerEventTypeID>44</PlayerEventTypeID>
+        <EventText>A franchi le jalon de 100 matchs joués pour son club. </EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2021-04-19 00:00:00</EventDate>
+        <PlayerEventTypeID>42</PlayerEventTypeID>
+        <EventText>A fait partie de l'équipe qui a été championne de &lt;a href="/World/Series/?LeagueLevelUnitID=53298"&gt;VI.542&lt;/a&gt; (&lt;a href="/World/Leagues/League.aspx?LeagueID=16"&gt;Brésil&lt;/a&gt;) lors de la saison 65.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2019-10-20 19:50:00</EventDate>
+        <PlayerEventTypeID>34</PlayerEventTypeID>
+        <EventText>Un nouveau défi l'attend. Il est arrivé au club après avoir été transféré de Oberanwalt &amp; Brüder.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2019-10-08 11:10:00</EventDate>
+        <PlayerEventTypeID>34</PlayerEventTypeID>
+        <EventText>Un nouveau défi l'attend. Il est arrivé au club après avoir été transféré de Seiken.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2019-10-06 04:10:00</EventDate>
+        <PlayerEventTypeID>42</PlayerEventTypeID>
+        <EventText>A fait partie de l'équipe qui a été championne de &lt;a href="/World/Series/?LeagueLevelUnitID=258471"&gt;IV.59&lt;/a&gt; (&lt;a href="/World/Leagues/League.aspx?LeagueID=154"&gt;Guam&lt;/a&gt;) lors de la saison 3.</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2019-10-05 11:09:00</EventDate>
+        <PlayerEventTypeID>20</PlayerEventTypeID>
+        <EventText>A été promu de l'académie des jeunes de &lt;a href="/Club/?TeamID=2064151" title="Seiken"&gt;Seiken&lt;/a&gt; à l'âge de 17 ans et 0 jour en région Yigo .</EventText>
+      </PlayerEvent>
+      <PlayerEvent>
+        <EventDate>2019-04-27 04:16:00</EventDate>
+        <PlayerEventTypeID>21</PlayerEventTypeID>
+        <EventText>A été repéré et recruté par Leonardo Lizama pour &lt;a href="/Club/Youth/?YouthTeamID=2758591"&gt;Densetsu&lt;/a&gt;.</EventText>
+      </PlayerEvent>
+    </PlayerEvents>
+  </Player>
+</HattrickData>
