@@ -15,7 +15,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
                                matches, match_orders, national_team_matches, national_players,
-                               player_events, search, staff_avatars)
+                               player_events, search, staff_avatars, staff_list)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -862,6 +862,14 @@ class CHPPXml(CHPPBase):
     ) -> staff_avatars.StaffAvatars:
 
         return staff_avatars.StaffAvatars(
+            chpp=self, team_id=team_id, **kwargs,
+        )
+
+    def xml_staff_list(
+            self, team_id: int = None, **kwargs,
+    ) -> staff_list.StaffList:
+
+        return staff_list.StaffList(
             chpp=self, team_id=team_id, **kwargs,
         )
 
