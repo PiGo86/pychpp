@@ -936,7 +936,7 @@ class CHPPXml(CHPPBase):
 
     def xml_tournament_list(
             self, team_id: int = None, **kwargs,
-    ) -> tournament_list.TournamentList :
+    ) -> tournament_list.TournamentList:
 
         return tournament_list.TournamentList(
             chpp=self, team_id=team_id, **kwargs,
