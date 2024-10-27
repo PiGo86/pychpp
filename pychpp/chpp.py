@@ -15,7 +15,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
                                matches, match_orders, national_team_matches, national_players,
-                               player_events, search, staff_avatars, staff_list, supporters)
+                               player_events, search, staff_avatars, staff_list, supporters,
+                               tournament_details)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -905,6 +906,14 @@ class CHPPXml(CHPPBase):
             include_domestics_flags=include_domestics_flags,
             include_flags=include_flags, include_supporters=include_supporters,
             ** kwargs,
+        )
+
+    def xml_tournament_details(
+            self, tournament_id: int, season: int = None, **kwargs,
+    ) -> tournament_details.TournamentDetails:
+
+        return tournament_details.TournamentDetails(
+            chpp=self, tournament_id=tournament_id, season=season, **kwargs,
         )
 
     def xml_training(

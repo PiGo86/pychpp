@@ -1,0 +1,24 @@
+<HattrickData>
+  <FileName>tournamentdetails.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-27 20:36:45</FetchedDate>
+  <Tournament>
+    <TournamentId>3116071</TournamentId>
+    <Name>Heroes of 2017 Trophy</Name>
+    <TournamentType>8</TournamentType>
+    <Season>23</Season>
+    <LogoUrl>//res.hattrick.org/tournamentlogo/generation-trophy-purple.png</LogoUrl>
+    <TrophyType>98</TrophyType>
+    <NumberOfTeams>2878</NumberOfTeams>
+    <NumberOfGroups>1</NumberOfGroups>
+    <LastMatchRound>14</LastMatchRound>
+    <FirstMatchRoundDate>2024-09-02 07:05:00</FirstMatchRoundDate>
+    <NextMatchRoundDate>0001-01-01 00:00:00</NextMatchRoundDate>
+    <IsMatchesOngoing>0</IsMatchesOngoing>
+    <Creator>
+      <UserId>3</UserId>
+      <Loginname>HT-Daniel</Loginname>
+    </Creator>
+  </Tournament>
+</HattrickData>
