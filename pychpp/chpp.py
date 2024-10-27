@@ -17,7 +17,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches, match_orders, national_team_matches, national_players,
                                player_events, search, staff_avatars, staff_list, supporters,
                                tournament_details, tournament_fixtures, tournament_league_tables,
-                               tournament_list)
+                               tournament_list, training_events)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -973,6 +973,14 @@ class CHPPXml(CHPPBase):
         else:
             raise ValueError("if set, 'action_type' must be equal to"
                              "'view', 'setTraining' or 'stats'")
+
+    def xml_training_events(
+            self, player_id: int, **kwargs,
+    ) -> training_events.TrainingEvents:
+
+        return training_events.TrainingEvents(
+            chpp=self, player_id=player_id, **kwargs,
+        )
 
     def xml_transfers_team(
             self, team_id: int = None, page_index: int = None, **kwargs,
