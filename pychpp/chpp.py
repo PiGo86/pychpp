@@ -14,7 +14,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches_archive, match_details, cup_matches, alliances,
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
-                               matches, match_orders, national_team_matches, national_players)
+                               matches, match_orders, national_team_matches, national_players,
+                               player_events, search, staff_avatars, staff_list, supporters)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -789,6 +790,14 @@ class CHPPXml(CHPPBase):
             raise ValueError("if set, 'action_type' must be equal to"
                              "'view', 'setmatchorder' or 'SupporterStats'")
 
+    def xml_player_events(
+            self, player_id: int = None, **kwargs,
+    ) -> player_events.PlayerEvents:
+
+        return player_events.PlayerEvents(
+            chpp=self, player_id=player_id, **kwargs,
+        )
+
     def xml_players(self, action_type: str = 'view', order_by: str = None,
                     team_id: int = None, include_match_info: bool = None, **kwargs,
                     ) -> Union[players.PlayersView,
@@ -835,6 +844,55 @@ class CHPPXml(CHPPBase):
         return region_details.RegionDetails(
             chpp=self, region_id=region_id, **kwargs,
         )
+
+    def xml_search(
+            self, search_type: int = None, search_string: str = None,
+            search_string_2: str = None, search_id: int = None, search_league_id: int = None,
+            page_index: int = None, **kwargs,
+    ) -> search.Search:
+
+        return search.Search(
+            chpp=self, search_type=search_type, search_string=search_string,
+            search_string_2=search_string_2, search_id=search_id,
+            search_league_id=search_league_id, page_index=page_index, **kwargs,
+        )
+
+    def xml_staff_avatars(
+            self, team_id: int = None, **kwargs,
+    ) -> staff_avatars.StaffAvatars:
+
+        return staff_avatars.StaffAvatars(
+            chpp=self, team_id=team_id, **kwargs,
+        )
+
+    def xml_staff_list(
+            self, team_id: int = None, **kwargs,
+    ) -> staff_list.StaffList:
+
+        return staff_list.StaffList(
+            chpp=self, team_id=team_id, **kwargs,
+        )
+
+    def xml_supporters(
+            self, action_type: str = 'supportedteams',
+            user_id: int = None, team_id: int = None, **kwargs,
+    ) -> Union[supporters.SupportersSupportedTeams,
+               supporters.SupportersMySupporters,
+               ]:
+
+        if action_type == 'supportedteams':
+            return supporters.SupportersSupportedTeams(
+                chpp=self, action_type=action_type, user_id=user_id, **kwargs,
+            )
+
+        elif action_type == 'mysupporters':
+            return supporters.SupportersMySupporters(
+                chpp=self, action_type=action_type, team_id=team_id, **kwargs,
+            )
+
+        else:
+            raise ValueError("if set, 'action_type' must be equal to"
+                             "'view', 'supportedteams' or 'mysupporters'")
 
     def xml_team_details(
             self, team_id: int = None, user_id: int = None,

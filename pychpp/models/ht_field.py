@@ -15,7 +15,7 @@ class HTField(HTBaseField):
     version: str = None
     items: str = None
     attrib: str = None
-    xml_prefix: str = ''
+    xml_prefix: str = None
     suppl_attrs: dict = field(default_factory=dict)
 
 
