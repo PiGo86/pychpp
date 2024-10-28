@@ -17,7 +17,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches, match_orders, national_team_matches, national_players,
                                player_events, search, staff_avatars, staff_list, supporters,
                                tournament_details, tournament_fixtures, tournament_league_tables,
-                               tournament_list, training_events)
+                               tournament_list, training_events, transfer_search, transfers_player,
+                               world_languages, youth_avatars, youth_league_details)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -982,6 +983,42 @@ class CHPPXml(CHPPBase):
             chpp=self, player_id=player_id, **kwargs,
         )
 
+    def xml_transfer_search(
+            self, age_min: int, age_max: int, skill_type_1: int, min_skill_value_1: int,
+            max_skill_value_1: int, age_days_min: int = None, age_days_max: int = None,
+            skill_type_2: int = None, min_skill_value_2: int = None, max_skill_value_2: int = None,
+            skill_type_3: int = None, min_skill_value_3: int = None, max_skill_value_3: int = None,
+            skill_type_4: int = None, min_skill_value_4: int = None, max_skill_value_4: int = None,
+            specialty: int = None, native_country_id: int = None,
+            tsi_min: int = None, tsi_max: int = None, price_min: int = None, price_max: int = None,
+            page_size: int = None, page_index: int = None, **kwargs,
+    ) -> transfer_search.TransferSearch:
+
+        return transfer_search.TransferSearch(
+            chpp=self,
+            age_min=age_min, age_days_min=age_days_min,
+            age_max=age_max, age_days_max=age_days_max,
+            skill_type_1=skill_type_1,
+            min_skill_value_1=min_skill_value_1, max_skill_value_1=max_skill_value_1,
+            skill_type_2=skill_type_2,
+            min_skill_value_2=min_skill_value_2, max_skill_value_2=max_skill_value_2,
+            skill_type_3=skill_type_3,
+            min_skill_value_3=min_skill_value_3, max_skill_value_3=max_skill_value_3,
+            skill_type_4=skill_type_4,
+            min_skill_value_4=min_skill_value_4, max_skill_value_4=max_skill_value_4,
+            specialty=specialty, native_country_id=native_country_id,
+            tsi_min=tsi_min, tsi_max=tsi_max, price_min=price_min, price_max=price_max,
+            page_size=page_size, page_index=page_index, **kwargs,
+        )
+
+    def xml_transfers_player(
+            self, player_id: int, **kwargs,
+    ) -> transfers_player.TransfersPlayer:
+
+        return transfers_player.TransfersPlayer(
+            chpp=self, player_id=player_id, **kwargs,
+        )
+
     def xml_transfers_team(
             self, team_id: int = None, page_index: int = None, **kwargs,
     ) -> transfers_team.TransfersTeam:
@@ -1021,6 +1058,26 @@ class CHPPXml(CHPPBase):
         return world_details.WorldDetails(
             chpp=self, include_regions=include_regions, country_id=country_id,
             league_id=league_id, **kwargs,
+        )
+
+    def xml_world_languages(self, **kwargs) -> world_languages.WorldLanguages:
+
+        return world_languages.WorldLanguages(chpp=self, **kwargs)
+
+    def xml_youth_avatars(
+            self, youth_team_id: int = None, **kwargs,
+    ) -> youth_avatars.YouthAvatars:
+
+        return youth_avatars.YouthAvatars(
+            chpp=self, youth_team_id=youth_team_id, **kwargs,
+        )
+
+    def xml_youth_league_details(
+            self, youth_league_id: int = None, **kwargs,
+    ) -> youth_league_details.YouthLeagueDetails:
+
+        return youth_league_details.YouthLeagueDetails(
+            chpp=self, youth_league_id=youth_league_id, **kwargs,
         )
 
     def xml_youth_player_details(
