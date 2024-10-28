@@ -18,7 +18,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                player_events, search, staff_avatars, staff_list, supporters,
                                tournament_details, tournament_fixtures, tournament_league_tables,
                                tournament_list, training_events, transfer_search, transfers_player,
-                               world_languages)
+                               world_languages, youth_avatars)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -1063,6 +1063,14 @@ class CHPPXml(CHPPBase):
     def xml_world_languages(self, **kwargs) -> world_languages.WorldLanguages:
 
         return world_languages.WorldLanguages(chpp=self, **kwargs)
+
+    def xml_youth_avatars(
+            self, youth_team_id: int = None, **kwargs,
+    ) -> youth_avatars.YouthAvatars:
+
+        return youth_avatars.YouthAvatars(
+            chpp=self, youth_team_id=youth_team_id, **kwargs,
+        )
 
     def xml_youth_player_details(
             self, action_type: str = None, youth_player_id: int = None,
