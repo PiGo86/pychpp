@@ -1,0 +1,43 @@
+<HattrickData>
+  <FileName>transfersplayer.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2024-10-28 22:00:33</FetchedDate>
+  <Transfers>
+    <StartDate>2018-10-17 23:55:00</StartDate>
+    <EndDate>2018-09-09 18:34:00</EndDate>
+    <Player>
+      <PlayerID>427947863</PlayerID>
+      <PlayerName>Batıkan Gündoğan</PlayerName>
+      <TeamId>1165592</TeamId>
+    </Player>
+    <Transfer>
+      <TransferID>331202431</TransferID>
+      <Deadline>2018-10-17 23:55:00</Deadline>
+      <Buyer>
+        <BuyerTeamID>1165592</BuyerTeamID>
+        <BuyerTeamName>Les Poitevins de Saint-Jo</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>121595</SellerTeamID>
+        <SellerTeamName>Linares Club de Fútbol</SellerTeamName>
+      </Seller>
+      <Price>18666000</Price>
+      <TSI>42980</TSI>
+    </Transfer>
+    <Transfer>
+      <TransferID>330572184</TransferID>
+      <Deadline>2018-09-09 18:34:00</Deadline>
+      <Buyer>
+        <BuyerTeamID>121595</BuyerTeamID>
+        <BuyerTeamName>Linares Club de Fútbol</BuyerTeamName>
+      </Buyer>
+      <Seller>
+        <SellerTeamID>588379</SellerTeamID>
+        <SellerTeamName>L'os pepettes</SellerTeamName>
+      </Seller>
+      <Price>18550000</Price>
+      <TSI>36130</TSI>
+    </Transfer>
+  </Transfers>
+</HattrickData>

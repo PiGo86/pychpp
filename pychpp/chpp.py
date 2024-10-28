@@ -17,7 +17,7 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                matches, match_orders, national_team_matches, national_players,
                                player_events, search, staff_avatars, staff_list, supporters,
                                tournament_details, tournament_fixtures, tournament_league_tables,
-                               tournament_list, training_events, transfer_search)
+                               tournament_list, training_events, transfer_search, transfers_player)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -1008,6 +1008,14 @@ class CHPPXml(CHPPBase):
             specialty=specialty, native_country_id=native_country_id,
             tsi_min=tsi_min, tsi_max=tsi_max, price_min=price_min, price_max=price_max,
             page_size=page_size, page_index=page_index, **kwargs,
+        )
+
+    def xml_transfers_player(
+            self, player_id: int, **kwargs,
+    ) -> transfers_player.TransfersPlayer:
+
+        return transfers_player.TransfersPlayer(
+            chpp=self, player_id=player_id, **kwargs,
         )
 
     def xml_transfers_team(
