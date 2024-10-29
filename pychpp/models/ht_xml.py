@@ -30,7 +30,7 @@ class HTXml:
     @staticmethod
     def ht_float(data: ElementTree.Element, attrib: str = None):
         if attrib is not None:
-            return float(data.attrib.get(attrib, None))
+            return float(data.attrib.get(attrib, None).replace(',', '.'))
         else:
             return float(data.text.replace(',', '.')) if data.text is not None else None
 

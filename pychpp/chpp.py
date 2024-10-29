@@ -18,7 +18,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                player_events, search, staff_avatars, staff_list, supporters,
                                tournament_details, tournament_fixtures, tournament_league_tables,
                                tournament_list, training_events, transfer_search, transfers_player,
-                               world_languages, youth_avatars, youth_league_details)
+                               world_languages, youth_avatars, youth_league_details,
+                               youth_league_fixtures, translations)
 from pychpp.models.custom import (ht_team, ht_arena, ht_user, ht_region, ht_youth_team, ht_player,
                                   ht_league_unit, ht_youth_player, ht_league, ht_matches_archive,
                                   ht_match, ht_challenge, ht_match_lineup, ht_transfer_history)
@@ -1027,6 +1028,14 @@ class CHPPXml(CHPPBase):
             chpp=self, team_id=team_id, page_index=page_index, **kwargs,
         )
 
+    def xml_translations(
+            self, language_id: int = None, **kwargs,
+    ) -> translations.Translations:
+
+        return translations.Translations(
+            chpp=self, language_id=language_id, **kwargs,
+        )
+
     def xml_world_cup(
             self, action_type: str = 'viewMatches', cup_id: int = None,
             season: int = None, match_round: int = None,
@@ -1078,6 +1087,14 @@ class CHPPXml(CHPPBase):
 
         return youth_league_details.YouthLeagueDetails(
             chpp=self, youth_league_id=youth_league_id, **kwargs,
+        )
+
+    def xml_youth_league_fixtures(
+            self, youth_league_id: int = None, season: int = None, **kwargs,
+    ) -> youth_league_fixtures.YouthLeagueFixtures:
+
+        return youth_league_fixtures.YouthLeagueFixtures(
+            chpp=self, youth_league_id=youth_league_id, season=season, **kwargs,
         )
 
     def xml_youth_player_details(
