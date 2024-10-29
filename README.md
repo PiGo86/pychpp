@@ -143,7 +143,7 @@ Then, to use this new class:
 In this way, only the data you're really interested in is parsed, which can in some cases be interesting from a performance point of view.
 
 ## List of supported CHPP XML files
-![55/57](https://progress-bar.xyz/96/?title=55%20on%2057)
+![56/57](https://progress-bar.xyz/98/?title=56%20on%2057)
 
 The following table shows the CHPP XML files that are currently supported:
 
@@ -201,6 +201,7 @@ The following table shows the CHPP XML files that are currently supported:
 |     WorldLanguages     |     `worldlanguages.xml`     |
 |      YouthAvatars      |      `youthavatars.xml`      |
 |   YouthLeagueDetails   |   `youthleaguedetails.xml`   |
+|  YouthLeagueFixtures   |  `youthleaguefixtures.xml`   |
 |   YouthPlayerDetails   |   `youthplayerdetails.xml`   |
 |    YouthPlayerList     |    `youthplayerlist.xml`     |
 |    YouthTeamDetails    |    `youthteamdetails.xml`    |
