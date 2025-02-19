@@ -35,8 +35,8 @@ pyCHPP can be installed using pip :
 # access_token['key'] and access_token['secret'] have to be stored
 # in order to be used later by the app
 >>> access_token = chpp.get_access_token(
-                        request_token=auth["request_token"],
-                        request_token_secret=auth["request_token_secret"],
+                        request_token=auth["oauth_token"],
+                        request_token_secret=auth["oauth_token_secret"],
                         code=code,
                         )
 ```

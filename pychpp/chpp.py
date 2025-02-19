@@ -1,10 +1,9 @@
 from datetime import datetime
 from typing import Union, Optional
 
-from rauth import OAuth1Service
-from rauth import OAuth1Session
-from rauth.oauth import HmacSha1Signature
 import xml.etree.ElementTree
+
+from requests_oauthlib import OAuth1Session
 
 from pychpp.models.xml import (manager_compendium, team_details, achievements, arena_details,
                                challenges, region_details, league_details, league_fixtures,
@@ -74,15 +73,7 @@ class CHPPBase:
         self.invalidate_token_url = (
             "https://chpp.hattrick.org/oauth/invalidate_token.ashx")
 
-        self.service = OAuth1Service(
-            consumer_key=self.consumer_key,
-            consumer_secret=self.consumer_secret,
-            request_token_url=self.request_token_url,
-            access_token_url=self.access_token_url,
-            authorize_url=self.authorize_url,
-            base_url=self.base_url,
-            signature_obj=HmacSha1Signature,
-        )
+        self.session = None
 
     @staticmethod
     def _analyze_error(xml_data):
@@ -174,7 +165,7 @@ class CHPPBase:
         Get url, request_token and request_token_secret
         to get authentification tokens from Hattrick for this user
 
-        :param callback_url: url that have to be request by Hattrick
+        :param callback_url: url that have to be requested by Hattrick
                              after the user have fill his credentials
         :param scope: authorization granted by user to the application
                       can be one or more from "", "manage_challenges",
@@ -218,16 +209,12 @@ class CHPPBase:
         else:
             raise ValueError("Scope parameter must be a string a or list")
 
-        auth = dict()
-
-        request_token, request_token_secret = (
-            self.service.get_request_token(
-                params={"oauth_callback": callback_url}))
-
-        auth["request_token"] = request_token
-        auth["request_token_secret"] = request_token_secret
-        auth["url"] = (
-            self.service.get_authorize_url(request_token, scope=scope))
+        oauth = OAuth1Session(client_key=self.consumer_key,
+                              client_secret=self.consumer_secret,
+                              callback_uri=callback_url,
+                              )
+        auth = oauth.fetch_request_token(self.request_token_url)
+        auth["url"] = oauth.authorization_url(self.authorize_url, scope=scope)
 
         return auth
 
@@ -254,28 +241,26 @@ class CHPPBase:
         elif not isinstance(code, str):
             raise ValueError("code must be a string")
 
-        access_token_query = (
-            self.service.get_access_token(request_token,
-                                          request_token_secret,
-                                          params={"oauth_verifier": code},
-                                          ))
+        oauth = OAuth1Session(client_key=self.consumer_key,
+                              client_secret=self.consumer_secret,
+                              resource_owner_key=request_token,
+                              resource_owner_secret=request_token_secret,
+                              verifier=code,
+                              )
 
-        access_token = dict()
+        tokens = oauth.fetch_access_token(self.access_token_url)
 
-        access_token["key"] = access_token_query[0]
-        access_token["secret"] = access_token_query[1]
-
-        return access_token
+        return dict(key=tokens['oauth_token'], secret=tokens['oauth_token_secret'])
 
     def open_session(self):
         """
         Open OAuth session
         """
-        return OAuth1Session(self.consumer_key,
-                             self.consumer_secret,
-                             access_token=self.access_token_key,
-                             access_token_secret=self.access_token_secret,
-                             )
+        self.session = OAuth1Session(client_key=self.consumer_key,
+                                     client_secret=self.consumer_secret,
+                                     resource_owner_key=self.access_token_key,
+                                     resource_owner_secret=self.access_token_secret,
+                                     )
 
     def _base_request(
             self, url, parse_data=True, method='GET', **kwargs,
@@ -287,12 +272,13 @@ class CHPPBase:
         :param parse_data: parse or not returned data as xml
         :return: xml data fetched on Hattrick
         """
-        session = self.open_session()
+        if self.session is None:
+            self.open_session()
 
         if method == 'GET':
-            query = session.get(url, params=kwargs)
+            query = self.session.get(url, params=kwargs)
         elif method == 'POST':
-            query = session.post(url, data=kwargs)
+            query = self.session.post(url, data=kwargs)
         else:
             raise ValueError(f"Unknown method '{method}'")
 
@@ -302,7 +288,7 @@ class CHPPBase:
         if query.status_code == 401:
             raise ht_error.HTUnauthorizedAction(
                 "The requested action seems to be unauthorized "
-                "(401 error code). Please heck your credentials scope.")
+                "(401 error code). Please check your credentials scope.")
 
         if not parse_data:
             return query.text
