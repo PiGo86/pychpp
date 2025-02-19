@@ -7,11 +7,11 @@ def test_request_token(chpp: CHPP):
 
     assert isinstance(auth, dict)
     for key in auth.keys():
-        assert key in ('request_token', 'request_token_secret', 'url',)
+        assert key in ('oauth_token', 'oauth_token_secret', 'oauth_callback_confirmed', 'url',)
 
-    assert isinstance(auth['request_token'], str) and auth['request_token']
-    assert isinstance(auth['request_token_secret'],
-                      str) and auth['request_token_secret']
+    assert isinstance(auth['oauth_token'], str) and auth['oauth_token']
+    assert isinstance(auth['oauth_token_secret'],
+                      str) and auth['oauth_token_secret']
     assert (isinstance(auth['url'], str)
             and 'https://chpp.hattrick.org/oauth/authorize.aspx'
                 '?scope=&oauth_token=' in auth['url'])
