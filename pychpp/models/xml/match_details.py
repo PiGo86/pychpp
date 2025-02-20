@@ -39,15 +39,15 @@ class Match(HTModel):
     cup_level: int = HTField('CupLevel')
     cup_level_index: int = HTField('CupLevelIndex')
     date: datetime = HTField('MatchDate')
-    finished_date: datetime = HTField('FinishedDate')
-    added_minutes: int = HTField('AddedMinutes')
+    finished_date: Optional[datetime] = HTField('FinishedDate')
+    added_minutes: Optional[int] = HTField('AddedMinutes')
     home_team: 'MatchHomeTeam' = HTField('HomeTeam')
     away_team: 'MatchAwayTeam' = HTField('AwayTeam')
     arena: 'MatchArena' = HTField('Arena')
     officials: 'MatchOfficials' = HTField('MatchOfficials')
-    goals: List['MatchGoalItem'] = HTField('Scorers', items='Goal')
-    bookings: List['MatchBookingItem'] = HTField('Bookings', items='Booking')
-    injuries: List['MatchInjuryItem'] = HTField('Injuries', items='Injury')
+    goals: Optional[List['MatchGoalItem']] = HTField('Scorers', items='Goal')
+    bookings: Optional[List['MatchBookingItem']] = HTField('Bookings', items='Booking')
+    injuries: Optional[List['MatchInjuryItem']] = HTField('Injuries', items='Injury')
     possession: 'MatchPossession' = HTField('.')
     events: Optional[List['MatchEventItem']] = HTField('EventList', items='Event')
 
@@ -56,10 +56,10 @@ class BaseMatchTeam(HTModel):
     """
     Match Details -> Match -> Base Home/Away team
     """
-    dress_uri: str = HTField('DressURI')
-    formation: str = HTField('Formation')
-    tactic_type: int = HTField('TacticType')
-    tactic_skill: int = HTField('TacticSkill')
+    dress_uri: Optional[str] = HTField('DressURI')
+    formation: Optional[str] = HTField('Formation')
+    tactic_type: Optional[int] = HTField('TacticType')
+    tactic_skill: Optional[int] = HTField('TacticSkill')
     ratings: 'MatchTeamRatings' = HTField('.')
     team_attitude: Optional[int] = HTField('TeamAttitude')
     chances: 'MatchTeamChances' = HTField('.')
@@ -71,7 +71,7 @@ class MatchHomeTeam(BaseMatchTeam):
     """
     id: int = HTField('HomeTeamID')
     name: str = HTField('HomeTeamName')
-    goals: int = HTField('HomeGoals')
+    goals: Optional[int] = HTField('HomeGoals')
 
 
 class MatchAwayTeam(BaseMatchTeam):
@@ -80,20 +80,20 @@ class MatchAwayTeam(BaseMatchTeam):
     """
     id: int = HTField('AwayTeamID')
     name: str = HTField('AwayTeamName')
-    goals: int = HTField('AwayGoals')
+    goals: Optional[int] = HTField('AwayGoals')
 
 
 class MatchTeamRatings(HTModel):
     """
     Match Details -> Match -> Home/Away team -> Ratings
     """
-    midfield: int = HTField('RatingMidfield')
-    right_defense: int = HTField('RatingRightDef')
-    mid_defense: int = HTField('RatingMidDef')
-    left_defense: int = HTField('RatingLeftDef')
-    right_attack: int = HTField('RatingRightDef')
-    mid_attack: int = HTField('RatingMidDef')
-    left_attack: int = HTField('RatingLeftDef')
+    midfield: Optional[int] = HTField('RatingMidfield')
+    right_defense: Optional[int] = HTField('RatingRightDef')
+    mid_defense: Optional[int] = HTField('RatingMidDef')
+    left_defense: Optional[int] = HTField('RatingLeftDef')
+    right_attack: Optional[int] = HTField('RatingRightDef')
+    mid_attack: Optional[int] = HTField('RatingMidDef')
+    left_attack: Optional[int] = HTField('RatingLeftDef')
     indirect_set_pieces_defense: Optional[int] = HTField('RatingIndirectSetPiecesDef')
     indirect_set_pieces_attack: Optional[int] = HTField('RatingIndirectSetPiecesAtt')
 
@@ -102,11 +102,11 @@ class MatchTeamChances(HTModel):
     """
     Match Details -> Match -> Home/Away team -> Chances
     """
-    left: int = HTField('NrOfChancesLeft')
-    center: int = HTField('NrOfChancesCenter')
-    right: int = HTField('NrOfChancesRight')
-    special_events: int = HTField('NrOfChancesSpecialEvents')
-    other: int = HTField('NrOfChancesOther')
+    left: Optional[int] = HTField('NrOfChancesLeft')
+    center: Optional[int] = HTField('NrOfChancesCenter')
+    right: Optional[int] = HTField('NrOfChancesRight')
+    special_events: Optional[int] = HTField('NrOfChancesSpecialEvents')
+    other: Optional[int] = HTField('NrOfChancesOther')
 
 
 class MatchArena(HTModel):
@@ -115,7 +115,7 @@ class MatchArena(HTModel):
     """
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
-    weather_id: int = HTField('WeatherID')
+    weather_id: Optional[int] = HTField('WeatherID')
     sold: 'MatchArenaSold' = HTField('.')
 
 
@@ -123,11 +123,11 @@ class MatchArenaSold(HTModel):
     """
     Match Details -> Match -> Arena -> Sold
     """
-    total: int = HTField('SoldTotal')
-    terraces: int = HTField('SoldTerraces')
-    basic: int = HTField('SoldBasic')
-    roof: int = HTField('SoldRoof')
-    vip: int = HTField('SoldVIP')
+    total: Optional[int] = HTField('SoldTotal')
+    terraces: Optional[int] = HTField('SoldTerraces')
+    basic: Optional[int] = HTField('SoldBasic')
+    roof: Optional[int] = HTField('SoldRoof')
+    vip: Optional[int] = HTField('SoldVIP')
 
 
 class MatchOfficials(HTModel):
@@ -206,10 +206,10 @@ class MatchPossession(HTModel):
     """
     Match Details -> Match -> Possession
     """
-    first_half_home: int = HTField('PossessionFirstHalfHome')
-    first_half_away: int = HTField('PossessionFirstHalfAway')
-    second_half_home: int = HTField('PossessionSecondHalfHome')
-    second_half_away: int = HTField('PossessionSecondHalfAway')
+    first_half_home: Optional[int] = HTField('PossessionFirstHalfHome')
+    first_half_away: Optional[int] = HTField('PossessionFirstHalfAway')
+    second_half_home: Optional[int] = HTField('PossessionSecondHalfHome')
+    second_half_away: Optional[int] = HTField('PossessionSecondHalfAway')
 
 
 class MatchEventItem(HTModel):
