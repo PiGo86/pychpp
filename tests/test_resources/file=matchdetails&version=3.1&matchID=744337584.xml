@@ -1,0 +1,55 @@
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-02-20 18:37:36</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>744337584</MatchID>
+    <MatchType>1</MatchType>
+    <MatchContextId>36777</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2025-02-22 21:00:00</MatchDate>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2318071</AwayTeamID>
+      <AwayTeamName>FC AT</AwayTeamName>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>1162154</ArenaID>
+      <ArenaName>Stade de La Chapelle</ArenaName>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>434421449</RefereeId>
+        <RefereeName>Pablo Gray</RefereeName>
+        <RefereeCountryId>36</RefereeCountryId>
+        <RefereeCountryName>España</RefereeCountryName>
+        <RefereeTeamId>346834</RefereeTeamId>
+        <RefereeTeamname>Beitar Afula</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>411442872</RefereeId>
+        <RefereeName>Firas Al-Jahrami</RefereeName>
+        <RefereeCountryId>123</RefereeCountryId>
+        <RefereeCountryName>Bahrain</RefereeCountryName>
+        <RefereeTeamId>987283</RefereeTeamId>
+        <RefereeTeamname>Club Union Magdalena S.A</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>437295082</RefereeId>
+        <RefereeName>Roberto Noriega</RefereeName>
+        <RefereeCountryId>147</RefereeCountryId>
+        <RefereeCountryName>Cuba</RefereeCountryName>
+        <RefereeTeamId>2012551</RefereeTeamId>
+        <RefereeTeamname>Magic Kicks II</RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+  </Match>
+</HattrickData>
