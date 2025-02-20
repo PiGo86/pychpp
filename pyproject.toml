@@ -9,15 +9,15 @@ homepage = "https://framagit.org/Pierre86/pychpp"
 
 
 [tool.poetry.dependencies]
-python = "^3.8"
-pytz = "^2024.2"
-Werkzeug = "^2.2.2"
+python = "^3.9"
+pytz = "^2025.1"
+Werkzeug = "^3.1.3"
 requests-oauthlib = "^2.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
 pytest-dotenv = "^0.5.2"
-flake8 = "^5.0.4"
+flake8 = "^7.1.2"
 
 [build-system]
 requires = ["poetry>=0.12"]
