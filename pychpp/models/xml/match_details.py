@@ -91,9 +91,9 @@ class MatchTeamRatings(HTModel):
     right_defense: Optional[int] = HTField('RatingRightDef')
     mid_defense: Optional[int] = HTField('RatingMidDef')
     left_defense: Optional[int] = HTField('RatingLeftDef')
-    right_attack: Optional[int] = HTField('RatingRightDef')
-    mid_attack: Optional[int] = HTField('RatingMidDef')
-    left_attack: Optional[int] = HTField('RatingLeftDef')
+    right_attack: Optional[int] = HTField('RatingRightAtt')
+    mid_attack: Optional[int] = HTField('RatingMidAtt')
+    left_attack: Optional[int] = HTField('RatingLeftAtt')
     indirect_set_pieces_defense: Optional[int] = HTField('RatingIndirectSetPiecesDef')
     indirect_set_pieces_attack: Optional[int] = HTField('RatingIndirectSetPiecesAtt')
 
