@@ -1,9 +1,12 @@
 from datetime import datetime
+from http.client import RemoteDisconnected
 from typing import Union, Optional
 
 import xml.etree.ElementTree
 
+from requests.adapters import HTTPAdapter
 from requests_oauthlib import OAuth1Session
+from urllib3 import Retry
 
 from pychpp.models.xml import (manager_compendium, team_details, achievements, arena_details,
                                challenges, region_details, league_details, league_fixtures,
@@ -262,6 +265,15 @@ class CHPPBase:
                                      resource_owner_secret=self.access_token_secret,
                                      )
 
+        # retry strategy
+        retry_strategy = Retry(
+            total=5,
+            redirect=5,
+            backoff_factor=0.5,
+        )
+
+        self.session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
+
     def _base_request(
             self, url, parse_data=True, method='GET', **kwargs,
     ) -> xml.etree.ElementTree:
@@ -272,15 +284,24 @@ class CHPPBase:
         :param parse_data: parse or not returned data as xml
         :return: xml data fetched on Hattrick
         """
+
+        def proceed_request():
+            if method == 'GET':
+                return self.session.get(url, params=kwargs)
+            elif method == 'POST':
+                return self.session.post(url, data=kwargs)
+            else:
+                raise ValueError(f"Unknown method '{method}'")
+
         if self.session is None:
             self.open_session()
 
-        if method == 'GET':
-            query = self.session.get(url, params=kwargs)
-        elif method == 'POST':
-            query = self.session.post(url, data=kwargs)
-        else:
-            raise ValueError(f"Unknown method '{method}'")
+        try:
+            query = proceed_request()
+
+        except RemoteDisconnected:
+            self.open_session()
+            query = proceed_request()
 
         query.encoding = "UTF-8"
         self.last_url = query.url
