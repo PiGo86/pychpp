@@ -1,0 +1,29 @@
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-02-28 00:55:14</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>HTOIntegrated</SourceSystem>
+  <Match>
+    <MatchID>36370661</MatchID>
+    <MatchType>10</MatchType>
+    <MatchContextId>5001273</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>0</CupLevel>
+    <CupLevelIndex>0</CupLevelIndex>
+    <MatchDate>2025-03-07 20:00:00</MatchDate>
+    <HomeTeam>
+      <HomeTeamID>3030</HomeTeamID>
+      <HomeTeamName>Scotland</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>3176</AwayTeamID>
+      <AwayTeamName>Moldova</AwayTeamName>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>67847</ArenaID>
+      <ArenaName>Alive and kicking</ArenaName>
+    </Arena>
+  </Match>
+</HattrickData>

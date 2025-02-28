@@ -44,7 +44,7 @@ class Match(HTModel):
     home_team: 'MatchHomeTeam' = HTField('HomeTeam')
     away_team: 'MatchAwayTeam' = HTField('AwayTeam')
     arena: 'MatchArena' = HTField('Arena')
-    officials: 'MatchOfficials' = HTField('MatchOfficials')
+    officials: Optional['MatchOfficials'] = HTField('MatchOfficials')
     goals: Optional[List['MatchGoalItem']] = HTField('Scorers', items='Goal')
     bookings: Optional[List['MatchBookingItem']] = HTField('Bookings', items='Booking')
     injuries: Optional[List['MatchInjuryItem']] = HTField('Injuries', items='Injury')
