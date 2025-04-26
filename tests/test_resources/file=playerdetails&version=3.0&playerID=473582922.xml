@@ -1,0 +1,75 @@
+<HattrickData>
+  <FileName>playerdetails.xml</FileName>
+  <Version>3.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-04-26 19:16:18</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Player>
+    <PlayerID>473582922</PlayerID>
+    <FirstName>Şerban</FirstName>
+    <NickName />
+    <LastName>Viţega</LastName>
+    <PlayerNumber>35</PlayerNumber>
+    <Age>24</Age>
+    <AgeDays>104</AgeDays>
+    <NextBirthDay>2025-05-04 05:52:00</NextBirthDay>
+    <ArrivalDate>2025-02-13 08:12:00</ArrivalDate>
+    <PlayerForm>5</PlayerForm>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Statement />
+    <PlayerLanguage>Romanian</PlayerLanguage>
+    <PlayerLanguageID>23</PlayerLanguageID>
+    <TrainerData />
+    <OwningTeam>
+      <TeamID>181557</TeamID>
+      <TeamName>Voiniceii</TeamName>
+      <LeagueID>37</LeagueID>
+    </OwningTeam>
+    <Salary>683500</Salary>
+    <IsAbroad>False</IsAbroad>
+    <Agreeability>3</Agreeability>
+    <Aggressiveness>1</Aggressiveness>
+    <Honesty>2</Honesty>
+    <Experience>4</Experience>
+    <Loyalty>9</Loyalty>
+    <MotherClubBonus>False</MotherClubBonus>
+    <MotherClub>
+      <TeamID>36391</TeamID>
+      <TeamName>Borussia Craiova</TeamName>
+    </MotherClub>
+    <Leadership>2</Leadership>
+    <Specialty>0</Specialty>
+    <NativeCountryID>36</NativeCountryID>
+    <NativeLeagueID>37</NativeLeagueID>
+    <NativeLeagueName>România</NativeLeagueName>
+    <TSI>154460</TSI>
+    <PlayerSkills>
+      <StaminaSkill>7</StaminaSkill>
+      <KeeperSkill>1</KeeperSkill>
+      <PlaymakerSkill>18</PlaymakerSkill>
+      <ScorerSkill>4</ScorerSkill>
+      <PassingSkill>5</PassingSkill>
+      <WingerSkill>3</WingerSkill>
+      <DefenderSkill>3</DefenderSkill>
+      <SetPiecesSkill>9</SetPiecesSkill>
+    </PlayerSkills>
+    <Caps>0</Caps>
+    <CapsU20>0</CapsU20>
+    <CareerGoals>16</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <CupGoals>0</CupGoals>
+    <FriendliesGoals>0</FriendliesGoals>
+    <MatchesCurrentTeam>10</MatchesCurrentTeam>
+    <GoalsCurrentTeam>0</GoalsCurrentTeam>
+    <TransferListed>True</TransferListed>
+    <TransferDetails>
+      <AskingPrice>0</AskingPrice>
+      <Deadline>2025-04-26 19:40:54</Deadline>
+      <HighestBid>0</HighestBid>
+      <BidderTeam />
+    </TransferDetails>
+  </Player>
+</HattrickData>

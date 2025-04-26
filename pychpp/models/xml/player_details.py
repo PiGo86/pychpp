@@ -142,8 +142,8 @@ class TransferDetailsBidderTeam(HTModel):
     """
     Player Details -> Transfer details -> Bidder team
     """
-    id: int = HTField('TeamID')
-    name: str = HTField('TeamName')
+    id: Optional[int] = HTField('TeamID')
+    name: Optional[str] = HTField('TeamName')
 
 
 class LastMatch(HTModel):
