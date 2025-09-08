@@ -1,0 +1,36 @@
+<HattrickData>
+  <FileName>youthplayerdetails.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-09-08 21:20:35</FetchedDate>
+  <YouthPlayer>
+    <YouthPlayerID>384579961</YouthPlayerID>
+    <FirstName>張 (Zhang)</FirstName>
+    <NickName />
+    <LastName>淮富 (Huaifu)</LastName>
+    <Age>16</Age>
+    <AgeDays>56</AgeDays>
+    <ArrivalDate>2025-05-03 16:23:00</ArrivalDate>
+    <CanBePromotedIn>56</CanBePromotedIn>
+    <PlayerNumber>100</PlayerNumber>
+    <Statement />
+    <NativeCountryID>52</NativeCountryID>
+    <NativeCountryName>Chinese Taipei</NativeCountryName>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Specialty>5</Specialty>
+    <CareerGoals>4</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>1</LeagueGoals>
+    <FriendlyGoals>3</FriendlyGoals>
+    <OwningYouthTeam>
+      <YouthTeamID>2987917</YouthTeamID>
+      <YouthTeamName>FCDBY</YouthTeamName>
+      <YouthTeamLeagueID>815786</YouthTeamLeagueID>
+      <SeniorTeam>
+        <SeniorTeamID>934302</SeniorTeamID>
+        <SeniorTeamName>FC Deprived BBT</SeniorTeamName>
+      </SeniorTeam>
+    </OwningYouthTeam>
+  </YouthPlayer>
+</HattrickData>
