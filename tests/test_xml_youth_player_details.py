@@ -1,4 +1,5 @@
 from pychpp.fixtures.ht_datetime import HTDatetime
+from pychpp.models.xml.youth_player_details import YouthPlayerDetails
 
 
 def test_get_own_youth_player(mocked_chpp):
@@ -94,3 +95,9 @@ def test_get_own_youth_player(mocked_chpp):
     assert yp.skills.set_pieces.skill_max.is_available is False
     assert yp.skills.set_pieces.skill_max.may_unlock is False
     assert yp.skills.set_pieces.skill_max.level is None
+
+
+def test_get_not_owned_youth_player(mocked_chpp):
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=384579961)
+    assert isinstance(ypd, YouthPlayerDetails)
+    assert ypd.skills is None
