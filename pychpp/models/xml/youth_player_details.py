@@ -53,7 +53,7 @@ class YouthPlayerDetails(RequestYouthPlayerDetails):
     league_goals: int = HTField('LeagueGoals')
     friendly_goals: int = HTField('FriendlyGoals')
     owning_youth_team: 'OwningYouthTeam' = HTField('OwningYouthTeam')
-    skills: 'Skills' = HTField('PlayerSkills')
+    skills: Optional['Skills'] = HTField('PlayerSkills')
     scout_call: Optional['ScoutCall'] = HTField('ScoutCall')
     last_match: Optional['LastMatch'] = HTField('LastMatch')
 
