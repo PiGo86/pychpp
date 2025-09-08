@@ -183,3 +183,8 @@ def test_team_details_version(chpp):
 
     td_3_6 = chpp.xml_team_details(version='3.6')
     assert td_3_6.teams[0].is_deactivated is None
+
+
+def test_get_bot(mocked_chpp):
+    bot = mocked_chpp.xml_team_details(team_id=2513478)
+    assert isinstance(bot, TeamDetails)

@@ -34,7 +34,7 @@ class User(HTModel):
     Team Details -> User
     """
     id: int = HTField('UserID')
-    language: 'UserLanguage' = HTField('Language')
+    language: Optional['UserLanguage'] = HTField('Language')
     supporter_tier: str = HTField('SupporterTier')
     login_name: str = HTField('Loginname')
     name: str = HTField('Name')
