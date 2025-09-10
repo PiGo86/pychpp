@@ -1,0 +1,34 @@
+<HattrickData>
+  <FileName>youthteam.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-09-10 18:39:56</FetchedDate>
+  <YouthTeam>
+    <YouthTeamID>3147468</YouthTeamID>
+    <YouthTeamName>Fc Menwan II</YouthTeamName>
+    <ShortTeamName>Menwan</ShortTeamName>
+    <CreatedDate>2024-10-19 18:47:00</CreatedDate>
+    <UserId>11528071</UserId>
+    <Country>
+      <CountryID>52</CountryID>
+      <CountryName>Chinese Taipei</CountryName>
+    </Country>
+    <Region>
+      <RegionID>1127</RegionID>
+      <RegionName>Chia-i</RegionName>
+    </Region>
+    <YouthArena>
+      <YouthArenaID>3112075</YouthArenaID>
+      <YouthArenaName>World Games Taiwan</YouthArenaName>
+    </YouthArena>
+    <YouthLeague />
+    <OwningTeam>
+      <MotherTeamID>935351</MotherTeamID>
+      <MotherTeamName>Fc Menwan</MotherTeamName>
+    </OwningTeam>
+    <YouthTrainer>
+      <YouthPlayerID>370842108</YouthPlayerID>
+    </YouthTrainer>
+    <NextTrainingMatchDate>2024-10-21 18:47:00</NextTrainingMatchDate>
+  </YouthTeam>
+</HattrickData>
