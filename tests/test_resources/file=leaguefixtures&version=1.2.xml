@@ -1,0 +1,761 @@
+<HattrickData>
+  <FileName>leaguefixtures.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-09-10 19:57:07</FetchedDate>
+  <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+  <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+  <Season>92</Season>
+  <Match>
+    <MatchID>753454056</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2352634</HomeTeamID>
+      <HomeTeamName>RC Léry</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2233206</AwayTeamID>
+      <AwayTeamName>bastia en force</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-23 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454057</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>295283</HomeTeamID>
+      <HomeTeamName>federal-mogul</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1757718</AwayTeamID>
+      <AwayTeamName>Matth Walker</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-23 21:00:00</MatchDate>
+    <HomeGoals>5</HomeGoals>
+    <AwayGoals>1</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454058</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2456004</HomeTeamID>
+      <HomeTeamName>Gramsci FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-23 21:00:00</MatchDate>
+    <HomeGoals>5</HomeGoals>
+    <AwayGoals>3</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454059</MatchID>
+    <MatchRound>1</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2597918</HomeTeamID>
+      <HomeTeamName>Chamalières</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2471157</AwayTeamID>
+      <AwayTeamName>Marseille Om</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-23 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454060</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1757718</HomeTeamID>
+      <HomeTeamName>Matth Walker</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2597918</AwayTeamID>
+      <AwayTeamName>Chamalières</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-30 21:00:00</MatchDate>
+    <HomeGoals>6</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454061</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2233206</HomeTeamID>
+      <HomeTeamName>bastia en force</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>295283</AwayTeamID>
+      <AwayTeamName>federal-mogul</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-30 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>6</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454062</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2352634</AwayTeamID>
+      <AwayTeamName>RC Léry</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-30 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>7</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454063</MatchID>
+    <MatchRound>2</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2471157</HomeTeamID>
+      <HomeTeamName>Marseille Om</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2456004</AwayTeamID>
+      <AwayTeamName>Gramsci FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-08-30 21:00:00</MatchDate>
+    <HomeGoals>2</HomeGoals>
+    <AwayGoals>3</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454064</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>295283</HomeTeamID>
+      <HomeTeamName>federal-mogul</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2471157</AwayTeamID>
+      <AwayTeamName>Marseille Om</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-06 21:00:00</MatchDate>
+    <HomeGoals>6</HomeGoals>
+    <AwayGoals>0</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454065</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2352634</HomeTeamID>
+      <HomeTeamName>RC Léry</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2456004</AwayTeamID>
+      <AwayTeamName>Gramsci FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-06 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454066</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2597918</HomeTeamID>
+      <HomeTeamName>Chamalières</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-06 21:00:00</MatchDate>
+    <HomeGoals>1</HomeGoals>
+    <AwayGoals>4</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454067</MatchID>
+    <MatchRound>3</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2233206</HomeTeamID>
+      <HomeTeamName>bastia en force</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1757718</AwayTeamID>
+      <AwayTeamName>Matth Walker</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-06 21:00:00</MatchDate>
+    <HomeGoals>0</HomeGoals>
+    <AwayGoals>2</AwayGoals>
+  </Match>
+  <Match>
+    <MatchID>753454068</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>295283</AwayTeamID>
+      <AwayTeamName>federal-mogul</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-13 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454069</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1757718</HomeTeamID>
+      <HomeTeamName>Matth Walker</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2352634</AwayTeamID>
+      <AwayTeamName>RC Léry</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-13 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454070</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2456004</HomeTeamID>
+      <HomeTeamName>Gramsci FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2597918</AwayTeamID>
+      <AwayTeamName>Chamalières</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-13 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454071</MatchID>
+    <MatchRound>4</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2471157</HomeTeamID>
+      <HomeTeamName>Marseille Om</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2233206</AwayTeamID>
+      <AwayTeamName>bastia en force</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-13 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454072</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>295283</HomeTeamID>
+      <HomeTeamName>federal-mogul</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2597918</AwayTeamID>
+      <AwayTeamName>Chamalières</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-20 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454073</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2233206</HomeTeamID>
+      <HomeTeamName>bastia en force</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2456004</AwayTeamID>
+      <AwayTeamName>Gramsci FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-20 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454074</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1757718</HomeTeamID>
+      <HomeTeamName>Matth Walker</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-20 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454078</MatchID>
+    <MatchRound>5</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2352634</HomeTeamID>
+      <HomeTeamName>RC Léry</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2471157</AwayTeamID>
+      <AwayTeamName>Marseille Om</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-20 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454075</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2456004</HomeTeamID>
+      <HomeTeamName>Gramsci FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>295283</AwayTeamID>
+      <AwayTeamName>federal-mogul</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-27 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454076</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2597918</HomeTeamID>
+      <HomeTeamName>Chamalières</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2352634</AwayTeamID>
+      <AwayTeamName>RC Léry</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-27 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454077</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2471157</HomeTeamID>
+      <HomeTeamName>Marseille Om</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1757718</AwayTeamID>
+      <AwayTeamName>Matth Walker</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-27 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454079</MatchID>
+    <MatchRound>6</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2233206</AwayTeamID>
+      <AwayTeamName>bastia en force</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-09-27 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454080</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2233206</HomeTeamID>
+      <HomeTeamName>bastia en force</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2597918</AwayTeamID>
+      <AwayTeamName>Chamalières</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-04 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454081</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>295283</HomeTeamID>
+      <HomeTeamName>federal-mogul</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2352634</AwayTeamID>
+      <AwayTeamName>RC Léry</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-04 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454082</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1757718</HomeTeamID>
+      <HomeTeamName>Matth Walker</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2456004</AwayTeamID>
+      <AwayTeamName>Gramsci FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-04 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454083</MatchID>
+    <MatchRound>7</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2471157</AwayTeamID>
+      <AwayTeamName>Marseille Om</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-04 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454084</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2471157</HomeTeamID>
+      <HomeTeamName>Marseille Om</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-11 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454085</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2597918</HomeTeamID>
+      <HomeTeamName>Chamalières</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2233206</AwayTeamID>
+      <AwayTeamName>bastia en force</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-11 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454086</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2456004</HomeTeamID>
+      <HomeTeamName>Gramsci FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1757718</AwayTeamID>
+      <AwayTeamName>Matth Walker</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-11 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454087</MatchID>
+    <MatchRound>8</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2352634</HomeTeamID>
+      <HomeTeamName>RC Léry</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>295283</AwayTeamID>
+      <AwayTeamName>federal-mogul</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-11 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454088</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1757718</HomeTeamID>
+      <HomeTeamName>Matth Walker</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2471157</AwayTeamID>
+      <AwayTeamName>Marseille Om</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-18 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454089</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2233206</HomeTeamID>
+      <HomeTeamName>bastia en force</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-18 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454090</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2352634</HomeTeamID>
+      <HomeTeamName>RC Léry</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2597918</AwayTeamID>
+      <AwayTeamName>Chamalières</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-18 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454091</MatchID>
+    <MatchRound>9</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>295283</HomeTeamID>
+      <HomeTeamName>federal-mogul</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2456004</AwayTeamID>
+      <AwayTeamName>Gramsci FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-18 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454092</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1757718</AwayTeamID>
+      <AwayTeamName>Matth Walker</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-25 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454093</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2471157</HomeTeamID>
+      <HomeTeamName>Marseille Om</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2352634</AwayTeamID>
+      <AwayTeamName>RC Léry</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-25 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454094</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2456004</HomeTeamID>
+      <HomeTeamName>Gramsci FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2233206</AwayTeamID>
+      <AwayTeamName>bastia en force</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-25 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454097</MatchID>
+    <MatchRound>10</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2597918</HomeTeamID>
+      <HomeTeamName>Chamalières</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>295283</AwayTeamID>
+      <AwayTeamName>federal-mogul</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-10-25 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454095</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2233206</HomeTeamID>
+      <HomeTeamName>bastia en force</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2471157</AwayTeamID>
+      <AwayTeamName>Marseille Om</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-01 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454096</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2597918</HomeTeamID>
+      <HomeTeamName>Chamalières</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2456004</AwayTeamID>
+      <AwayTeamName>Gramsci FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-01 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454098</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>295283</HomeTeamID>
+      <HomeTeamName>federal-mogul</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-01 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454103</MatchID>
+    <MatchRound>11</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2352634</HomeTeamID>
+      <HomeTeamName>RC Léry</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1757718</AwayTeamID>
+      <AwayTeamName>Matth Walker</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-01 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454099</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2597918</AwayTeamID>
+      <AwayTeamName>Chamalières</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-08 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454100</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1757718</HomeTeamID>
+      <HomeTeamName>Matth Walker</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2233206</AwayTeamID>
+      <AwayTeamName>bastia en force</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-08 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454101</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2456004</HomeTeamID>
+      <HomeTeamName>Gramsci FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2352634</AwayTeamID>
+      <AwayTeamName>RC Léry</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-08 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454102</MatchID>
+    <MatchRound>12</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2471157</HomeTeamID>
+      <HomeTeamName>Marseille Om</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>295283</AwayTeamID>
+      <AwayTeamName>federal-mogul</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-08 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454104</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2352634</HomeTeamID>
+      <HomeTeamName>RC Léry</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1165592</AwayTeamID>
+      <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-15 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454105</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2597918</HomeTeamID>
+      <HomeTeamName>Chamalières</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>1757718</AwayTeamID>
+      <AwayTeamName>Matth Walker</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-15 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454106</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>295283</HomeTeamID>
+      <HomeTeamName>federal-mogul</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2233206</AwayTeamID>
+      <AwayTeamName>bastia en force</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-15 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454116</MatchID>
+    <MatchRound>13</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2456004</HomeTeamID>
+      <HomeTeamName>Gramsci FC</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2471157</AwayTeamID>
+      <AwayTeamName>Marseille Om</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-15 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454107</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2471157</HomeTeamID>
+      <HomeTeamName>Marseille Om</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2597918</AwayTeamID>
+      <AwayTeamName>Chamalières</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-22 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454108</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2456004</AwayTeamID>
+      <AwayTeamName>Gramsci FC</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-22 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454109</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>2233206</HomeTeamID>
+      <HomeTeamName>bastia en force</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>2352634</AwayTeamID>
+      <AwayTeamName>RC Léry</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-22 21:00:00</MatchDate>
+  </Match>
+  <Match>
+    <MatchID>753454110</MatchID>
+    <MatchRound>14</MatchRound>
+    <HomeTeam>
+      <HomeTeamID>1757718</HomeTeamID>
+      <HomeTeamName>Matth Walker</HomeTeamName>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>295283</AwayTeamID>
+      <AwayTeamName>federal-mogul</AwayTeamName>
+    </AwayTeam>
+    <MatchDate>2025-11-22 21:00:00</MatchDate>
+  </Match>
+</HattrickData>

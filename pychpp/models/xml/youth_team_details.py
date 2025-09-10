@@ -66,9 +66,9 @@ class League(HTModel):
     """
     Youth Team Details -> League
     """
-    id: int = HTField('YouthLeagueID')
-    name: str = HTField('YouthLeagueName')
-    status: int = HTField('YouthLeagueStatus')
+    id: Optional[int] = HTField('YouthLeagueID')
+    name: Optional[str] = HTField('YouthLeagueName')
+    status: Optional[int] = HTField('YouthLeagueStatus')
 
 
 class OwningTeam(HTModel):

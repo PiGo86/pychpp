@@ -12,3 +12,10 @@ def test_get_league_fixtures(mocked_chpp):
     assert isinstance(l_fixtures.matches, list)
     assert len(l_fixtures.matches) == 56
     assert isinstance(l_fixtures.matches[10], MatchItem)
+
+
+def test_get_league_fixtures_without_arguments(mocked_chpp):
+    l_fixtures = mocked_chpp.xml_league_fixtures()
+
+    assert l_fixtures.id == 36777
+    assert l_fixtures.name == 'VI.789'

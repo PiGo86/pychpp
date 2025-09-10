@@ -13,8 +13,9 @@ class RequestLeagueFixtures(HTModel):
     SOURCE_FILE = 'leaguefixtures'
     LAST_VERSION = '1.2'
 
-    _r_league_level_unit_id: int = HTInitVar('leagueLevelUnitID', init_arg='league_level_unit_id')
-    _r_season: int = HTInitVar('season', init_arg='season')
+    _r_league_level_unit_id: Optional[int] = HTInitVar('leagueLevelUnitID',
+                                                       init_arg='league_level_unit_id')
+    _r_season: Optional[int] = HTInitVar('season', init_arg='season')
 
 
 class LeagueFixtures(RequestLeagueFixtures):
