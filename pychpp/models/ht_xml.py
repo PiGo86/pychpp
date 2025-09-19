@@ -25,7 +25,10 @@ class HTXml:
         if attrib is not None:
             return int(data.attrib.get(attrib, None))
         else:
-            return int(data.text) if data.text is not None else None
+            if data.text == 'Not available' or data.text is None:
+                return None
+            else:
+                return int(data.text)
 
     @staticmethod
     def ht_float(data: ElementTree.Element, attrib: str = None):
@@ -112,25 +115,28 @@ class HTXml:
         :rtype: ht_datetime.HTDatetime | None
         """
         if attrib is not None:
-            _data = data.attrib.get(attrib)
+            data_ = data.attrib.get(attrib)
         else:
-            _data = data.text
+            data_ = data.text
 
-        if _data is None:
+        if data_ is None:
             return None
         else:
-            _datetime = datetime.datetime.strptime(data.text, "%Y-%m-%d %H:%M:%S")
+            if ':' in data_:
+                datetime_ = datetime.datetime.strptime(data_, "%Y-%m-%d %H:%M:%S")
+            else:
+                datetime_ = datetime.datetime.strptime(data_, "%Y-%m-%d")
 
             # ValueError happens if text cannot be serialized
             # OverflowError happens with special datetimes
             # as 0001-01-01 9999-12-31 due to pytz limitations
             # In these cases, return None
             try:
-                _ht_date = ht_datetime.HTDatetime(datetime=_datetime)
+                ht_date_ = ht_datetime.HTDatetime(datetime=datetime_)
             except (ValueError, OverflowError):
-                _ht_date = None
+                ht_date_ = None
 
-            return _ht_date
+            return ht_date_
 
     @staticmethod
     def ht_datetime_to_text(_datetime):
