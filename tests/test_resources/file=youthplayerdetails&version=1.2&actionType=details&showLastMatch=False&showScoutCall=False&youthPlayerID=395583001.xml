@@ -1,0 +1,36 @@
+<HattrickData>
+  <FileName>youthplayerdetails.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-09-19 22:23:17</FetchedDate>
+  <YouthPlayer>
+    <YouthPlayerID>395583001</YouthPlayerID>
+    <FirstName>Mauro Román</FirstName>
+    <NickName />
+    <LastName>Saltiel</LastName>
+    <Age>15</Age>
+    <AgeDays>100</AgeDays>
+    <ArrivalDate>2025-07-30 04:48:00</ArrivalDate>
+    <CanBePromotedIn>124</CanBePromotedIn>
+    <PlayerNumber>21</PlayerNumber>
+    <Statement />
+    <NativeCountryID>7</NativeCountryID>
+    <NativeCountryName>Argentina</NativeCountryName>
+    <Cards>Not available</Cards>
+    <InjuryLevel>Not available</InjuryLevel>
+    <Specialty>0</Specialty>
+    <CareerGoals />
+    <CareerHattricks />
+    <LeagueGoals />
+    <FriendlyGoals />
+    <OwningYouthTeam>
+      <YouthTeamID>2846508</YouthTeamID>
+      <YouthTeamName>Deportivo Eskiavion Los Forajidos</YouthTeamName>
+      <YouthTeamLeagueID>456450</YouthTeamLeagueID>
+      <SeniorTeam>
+        <SeniorTeamID>324260</SeniorTeamID>
+        <SeniorTeamName>Deportivo Eskiavion</SeniorTeamName>
+      </SeniorTeam>
+    </OwningYouthTeam>
+  </YouthPlayer>
+</HattrickData>

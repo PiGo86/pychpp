@@ -1,0 +1,36 @@
+<HattrickData>
+  <FileName>youthplayerdetails.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2025-09-17 22:24:06</FetchedDate>
+  <YouthPlayer>
+    <YouthPlayerID>395385356</YouthPlayerID>
+    <FirstName>Steven</FirstName>
+    <NickName />
+    <LastName>Wynn</LastName>
+    <Age>16</Age>
+    <AgeDays>21</AgeDays>
+    <ArrivalDate>2025-08-04</ArrivalDate>
+    <CanBePromotedIn>91</CanBePromotedIn>
+    <PlayerNumber>100</PlayerNumber>
+    <Statement />
+    <NativeCountryID>16</NativeCountryID>
+    <NativeCountryName>Ireland</NativeCountryName>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Specialty>0</Specialty>
+    <CareerGoals>0</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <FriendlyGoals>1</FriendlyGoals>
+    <OwningYouthTeam>
+      <YouthTeamID>2819057</YouthTeamID>
+      <YouthTeamName>Young Pavel</YouthTeamName>
+      <YouthTeamLeagueID>10476</YouthTeamLeagueID>
+      <SeniorTeam>
+        <SeniorTeamID>280486</SeniorTeamID>
+        <SeniorTeamName>Irish Nedved-11</SeniorTeamName>
+      </SeniorTeam>
+    </OwningYouthTeam>
+  </YouthPlayer>
+</HattrickData>

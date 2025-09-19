@@ -101,3 +101,14 @@ def test_get_not_owned_youth_player(mocked_chpp):
     ypd = mocked_chpp.xml_youth_player_details(youth_player_id=384579961)
     assert isinstance(ypd, YouthPlayerDetails)
     assert ypd.skills is None
+
+
+def test_get_youth_player_midnight_arrival(mocked_chpp):
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=395385356)
+    assert isinstance(ypd, YouthPlayerDetails)
+    assert ypd.arrival_date == HTDatetime.from_calendar(2025, 8, 4, 0, 0, 0)
+
+
+def test_get_youth_player_currently_playing(mocked_chpp):
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=395583001)
+    assert isinstance(ypd, YouthPlayerDetails)
