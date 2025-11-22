@@ -9,5 +9,3 @@ class HTYouthPlayer(BaseCommonHTPlayer, YouthPlayerDetails):
     Hattrick Youth Player
     """
     URL_PATH = '/Club/Players/YouthPlayer.aspx'
-
-    skills: 'HTYouthPlayerSkills' = HTProxyField(YouthPlayerDetails)
