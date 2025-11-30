@@ -315,7 +315,7 @@ class HTMLSubstitutionItem(CustomModel, ml.TeamSubstitutionItem):
     """
 
 
-class HTMLEndingLineupPlayersItem(HTMLLineupPlayersItem, ml.TeamStartingLineupPlayerItem):
+class HTMLEndingLineupPlayersItem(HTMLLineupPlayersItem, ml.TeamLineupPlayerItem):
     """
     Hattrick Match Lineup -> Team lineup -> Ending lineup -> -> Player item
     """
