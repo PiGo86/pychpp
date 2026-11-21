@@ -1,0 +1,65 @@
+<HattrickData>
+  <FileName>stafflist.xml</FileName>
+  <Version>1.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 22:05:38</FetchedDate>
+  <StaffList>
+    <Trainer>
+      <TrainerId>421746800</TrainerId>
+      <Name>Quentin Lavigne</Name>
+      <Age>58</Age>
+      <AgeDays>35</AgeDays>
+      <ContractDate>2021-05-05 10:20:00</ContractDate>
+      <Cost>2500</Cost>
+      <CountryID>5</CountryID>
+      <TrainerType>2</TrainerType>
+      <Leadership>1</Leadership>
+      <TrainerSkillLevel>3</TrainerSkillLevel>
+      <TrainerStatus>1</TrainerStatus>
+    </Trainer>
+    <StaffMembers>
+      <Staff>
+        <Name>Kenan Bonnet</Name>
+        <StaffId>480936</StaffId>
+        <StaffType>1</StaffType>
+        <StaffLevel>5</StaffLevel>
+        <HiredDate>2022-02-08 19:36:00</HiredDate>
+        <Cost>163200</Cost>
+        <HofPlayerId>0</HofPlayerId>
+        <ContractExpires>2027-01-05 19:36:00</ContractExpires>
+      </Staff>
+      <Staff>
+        <Name>Didier Rocha</Name>
+        <StaffId>2068769</StaffId>
+        <StaffType>1</StaffType>
+        <StaffLevel>5</StaffLevel>
+        <HiredDate>2021-01-11 09:09:00</HiredDate>
+        <Cost>163200</Cost>
+        <HofPlayerId>0</HofPlayerId>
+        <ContractExpires>2027-03-01 09:09:00</ContractExpires>
+      </Staff>
+      <Staff>
+        <Name>Frédéric Aubert</Name>
+        <StaffId>474265</StaffId>
+        <StaffType>2</StaffType>
+        <StaffLevel>5</StaffLevel>
+        <HiredDate>2019-11-04 17:37:00</HiredDate>
+        <Cost>163200</Cost>
+        <HofPlayerId>0</HofPlayerId>
+        <ContractExpires>2026-11-23 17:37:00</ContractExpires>
+      </Staff>
+      <Staff>
+        <Name>Thibaut Juillard</Name>
+        <StaffId>1944740</StaffId>
+        <StaffType>4</StaffType>
+        <StaffLevel>5</StaffLevel>
+        <HiredDate>2019-06-29 16:40:00</HiredDate>
+        <Cost>163200</Cost>
+        <HofPlayerId>0</HofPlayerId>
+        <ContractExpires>2027-02-27 16:40:00</ContractExpires>
+      </Staff>
+    </StaffMembers>
+    <TotalStaffMembers>5</TotalStaffMembers>
+    <TotalCost>655300</TotalCost>
+  </StaffList>
+</HattrickData>
