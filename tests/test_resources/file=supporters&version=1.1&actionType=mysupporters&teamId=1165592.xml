@@ -1,0 +1,60 @@
+<HattrickData>
+  <FileName>supporters.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 22:17:24</FetchedDate>
+  <MySupporters TotalItems="5">
+    <PageIndex>0</PageIndex>
+    <Pages>1</Pages>
+    <SupporterTeam>
+      <UserId>6336642</UserId>
+      <LoginName>thekiki76</LoginName>
+      <TeamId>591993</TeamId>
+      <TeamName>thekiki's</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>722</LeagueLevelUnitID>
+      <LeagueLevelUnitName>III.15</LeagueLevelUnitName>
+    </SupporterTeam>
+    <SupporterTeam>
+      <UserId>9211673</UserId>
+      <LoginName>Alexisrp</LoginName>
+      <TeamId>1433741</TeamId>
+      <TeamName>Masillas FC</TeamName>
+      <LeagueID>36</LeagueID>
+      <LeagueName>Espagne</LeagueName>
+      <LeagueLevelUnitID>3406</LeagueLevelUnitID>
+      <LeagueLevelUnitName>II.3</LeagueLevelUnitName>
+    </SupporterTeam>
+    <SupporterTeam>
+      <UserId>13481763</UserId>
+      <LoginName>-Rudy-</LoginName>
+      <TeamId>1751092</TeamId>
+      <TeamName>Neustria FC</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>36036</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.48</LeagueLevelUnitName>
+    </SupporterTeam>
+    <SupporterTeam>
+      <UserId>1746007</UserId>
+      <LoginName>Canarisi</LoginName>
+      <TeamId>294290</TeamId>
+      <TeamName>Żółty i zielony</TeamName>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+      <LeagueLevelUnitID>5454</LeagueLevelUnitID>
+      <LeagueLevelUnitName>IV.5</LeagueLevelUnitName>
+    </SupporterTeam>
+    <SupporterTeam>
+      <UserId>11723338</UserId>
+      <LoginName>Iceman61</LoginName>
+      <TeamId>1472615</TeamId>
+      <TeamName>1.Fc Altstätten Devills</TeamName>
+      <LeagueID>46</LeagueID>
+      <LeagueName>Suisse</LeagueName>
+      <LeagueLevelUnitID>21544</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VI.992</LeagueLevelUnitName>
+    </SupporterTeam>
+  </MySupporters>
+</HattrickData>

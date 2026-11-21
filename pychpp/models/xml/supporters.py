@@ -11,7 +11,7 @@ class RequestSupporters(HTModel):
     Supporters - Request arguments
     """
     SOURCE_FILE = 'supporters'
-    LAST_VERSION = '1.0'
+    LAST_VERSION = '1.1'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
     _r_user_id: Optional[int] = HTInitVar('userId', init_arg='user_id')
@@ -25,6 +25,8 @@ class SupportersSupportedTeams(RequestSupporters):
     Supporters - Supported teams
     """
     total_supported_teams: int = HTField('SupportedTeams', attrib='TotalItems')
+    page_index: int = HTField('SupportedTeams/PageIndex', version='>=1.1')
+    pages: int = HTField('SupportedTeams/Pages', version='>=1.1')
     supported_teams: List['SupportedTeamItem'] = HTField('SupportedTeams', items='SupportedTeam')
 
 
@@ -33,6 +35,8 @@ class SupportersMySupporters(RequestSupporters):
     Supporters - My supporters
     """
     total_supporters: int = HTField('MySupporters', attrib='TotalItems')
+    page_index: int = HTField('MySupporters/PageIndex', version='>=1.1')
+    pages: int = HTField('MySupporters/Pages', version='>=1.1')
     my_supporters: List['MySupportersTeamItem'] = HTField('MySupporters', items='SupporterTeam')
 
 

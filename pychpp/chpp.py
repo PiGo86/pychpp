@@ -888,19 +888,22 @@ class CHPPXml(CHPPBase):
 
     def xml_supporters(
             self, action_type: str = 'supportedteams',
-            user_id: int = None, team_id: int = None, **kwargs,
+            user_id: int = None, team_id: int = None,
+            page_index: int = None, page_size: int = None, **kwargs,
     ) -> Union[supporters.SupportersSupportedTeams,
                supporters.SupportersMySupporters,
                ]:
 
         if action_type == 'supportedteams':
             return supporters.SupportersSupportedTeams(
-                chpp=self, action_type=action_type, user_id=user_id, **kwargs,
+                chpp=self, action_type=action_type, user_id=user_id,
+                page_index=page_index, page_size=page_size, **kwargs,
             )
 
         elif action_type == 'mysupporters':
             return supporters.SupportersMySupporters(
-                chpp=self, action_type=action_type, team_id=team_id, **kwargs,
+                chpp=self, action_type=action_type, team_id=team_id,
+                page_index=page_index, page_size=page_size, **kwargs,
             )
 
         else:
