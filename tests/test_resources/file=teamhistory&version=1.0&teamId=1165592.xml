@@ -1,0 +1,415 @@
+<HattrickData>
+  <FileName>teamhistory.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-22 00:44:29</FetchedDate>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <TeamName>Les Poitevins de La Chapelle</TeamName>
+    <League>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+    </League>
+    <FoundedDate>2017-09-09 17:09:00</FoundedDate>
+    <TeamHistory>
+      <Season Index="0">
+        <SeasonNumber>66</SeasonNumber>
+        <LeagueLevelUnitID>73092</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VII.277</LeagueLevelUnitName>
+        <LeagueLevel>7</LeagueLevel>
+        <Position>3</Position>
+        <Points>28</Points>
+        <GoalsFor>34</GoalsFor>
+        <GoalsAgainst>18</GoalsAgainst>
+        <CupRound>-1</CupRound>
+        <CupRoundsLeft>-1</CupRoundsLeft>
+      </Season>
+      <Season Index="1">
+        <SeasonNumber>67</SeasonNumber>
+        <LeagueLevelUnitID>36378</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>6</Position>
+        <Points>10</Points>
+        <GoalsFor>22</GoalsFor>
+        <GoalsAgainst>59</GoalsAgainst>
+        <CupRound>1</CupRound>
+        <CupRoundsLeft>14</CupRoundsLeft>
+      </Season>
+      <Season Index="2">
+        <SeasonNumber>68</SeasonNumber>
+        <LeagueLevelUnitID>36378</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>3</Position>
+        <Points>27</Points>
+        <GoalsFor>63</GoalsFor>
+        <GoalsAgainst>39</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="3">
+        <SeasonNumber>69</SeasonNumber>
+        <LeagueLevelUnitID>36378</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>4</Position>
+        <Points>21</Points>
+        <GoalsFor>34</GoalsFor>
+        <GoalsAgainst>40</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="4">
+        <SeasonNumber>70</SeasonNumber>
+        <LeagueLevelUnitID>36378</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>3</Position>
+        <Points>28</Points>
+        <GoalsFor>41</GoalsFor>
+        <GoalsAgainst>18</GoalsAgainst>
+        <CupRound>3</CupRound>
+        <CupRoundsLeft>12</CupRoundsLeft>
+      </Season>
+      <Season Index="5">
+        <SeasonNumber>71</SeasonNumber>
+        <LeagueLevelUnitID>36378</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>2</Position>
+        <Points>33</Points>
+        <GoalsFor>58</GoalsFor>
+        <GoalsAgainst>10</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="6">
+        <SeasonNumber>72</SeasonNumber>
+        <LeagueLevelUnitID>36378</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>1</Position>
+        <Points>42</Points>
+        <GoalsFor>63</GoalsFor>
+        <GoalsAgainst>10</GoalsAgainst>
+        <CupRound>4</CupRound>
+        <CupRoundsLeft>11</CupRoundsLeft>
+      </Season>
+      <Season Index="7">
+        <SeasonNumber>73</SeasonNumber>
+        <LeagueLevelUnitID>21832</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.256</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>2</Position>
+        <Points>31</Points>
+        <GoalsFor>48</GoalsFor>
+        <GoalsAgainst>16</GoalsAgainst>
+        <CupRound>3</CupRound>
+        <CupRoundsLeft>12</CupRoundsLeft>
+      </Season>
+      <Season Index="8">
+        <SeasonNumber>74</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>2</Position>
+        <Points>28</Points>
+        <GoalsFor>41</GoalsFor>
+        <GoalsAgainst>24</GoalsAgainst>
+        <CupRound>4</CupRound>
+        <CupRoundsLeft>11</CupRoundsLeft>
+      </Season>
+      <Season Index="9">
+        <SeasonNumber>75</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>3</Position>
+        <Points>23</Points>
+        <GoalsFor>33</GoalsFor>
+        <GoalsAgainst>25</GoalsAgainst>
+        <CupRound>7</CupRound>
+        <CupRoundsLeft>8</CupRoundsLeft>
+      </Season>
+      <Season Index="10">
+        <SeasonNumber>76</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>1</Position>
+        <Points>34</Points>
+        <GoalsFor>41</GoalsFor>
+        <GoalsAgainst>18</GoalsAgainst>
+        <CupRound>5</CupRound>
+        <CupRoundsLeft>10</CupRoundsLeft>
+      </Season>
+      <Season Index="11">
+        <SeasonNumber>77</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>3</Position>
+        <Points>28</Points>
+        <GoalsFor>32</GoalsFor>
+        <GoalsAgainst>22</GoalsAgainst>
+        <CupRound>5</CupRound>
+        <CupRoundsLeft>10</CupRoundsLeft>
+      </Season>
+      <Season Index="12">
+        <SeasonNumber>78</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>2</Position>
+        <Points>32</Points>
+        <GoalsFor>47</GoalsFor>
+        <GoalsAgainst>24</GoalsAgainst>
+        <CupRound>3</CupRound>
+        <CupRoundsLeft>12</CupRoundsLeft>
+      </Season>
+      <Season Index="13">
+        <SeasonNumber>79</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>1</Position>
+        <Points>35</Points>
+        <GoalsFor>65</GoalsFor>
+        <GoalsAgainst>21</GoalsAgainst>
+        <CupRound>6</CupRound>
+        <CupRoundsLeft>9</CupRoundsLeft>
+      </Season>
+      <Season Index="14">
+        <SeasonNumber>80</SeasonNumber>
+        <LeagueLevelUnitID>5466</LeagueLevelUnitID>
+        <LeagueLevelUnitName>IV.17</LeagueLevelUnitName>
+        <LeagueLevel>4</LeagueLevel>
+        <Position>4</Position>
+        <Points>26</Points>
+        <GoalsFor>58</GoalsFor>
+        <GoalsAgainst>20</GoalsAgainst>
+        <CupRound>6</CupRound>
+        <CupRoundsLeft>9</CupRoundsLeft>
+      </Season>
+      <Season Index="15">
+        <SeasonNumber>81</SeasonNumber>
+        <LeagueLevelUnitID>5466</LeagueLevelUnitID>
+        <LeagueLevelUnitName>IV.17</LeagueLevelUnitName>
+        <LeagueLevel>4</LeagueLevel>
+        <Position>6</Position>
+        <Points>16</Points>
+        <GoalsFor>21</GoalsFor>
+        <GoalsAgainst>26</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="16">
+        <SeasonNumber>82</SeasonNumber>
+        <LeagueLevelUnitID>5466</LeagueLevelUnitID>
+        <LeagueLevelUnitName>IV.17</LeagueLevelUnitName>
+        <LeagueLevel>4</LeagueLevel>
+        <Position>2</Position>
+        <Points>23</Points>
+        <GoalsFor>36</GoalsFor>
+        <GoalsAgainst>24</GoalsAgainst>
+        <CupRound>4</CupRound>
+        <CupRoundsLeft>11</CupRoundsLeft>
+      </Season>
+      <Season Index="17">
+        <SeasonNumber>83</SeasonNumber>
+        <LeagueLevelUnitID>5466</LeagueLevelUnitID>
+        <LeagueLevelUnitName>IV.17</LeagueLevelUnitName>
+        <LeagueLevel>4</LeagueLevel>
+        <Position>7</Position>
+        <Points>13</Points>
+        <GoalsFor>25</GoalsFor>
+        <GoalsAgainst>32</GoalsAgainst>
+        <CupRound>1</CupRound>
+        <CupRoundsLeft>14</CupRoundsLeft>
+      </Season>
+      <Season Index="18">
+        <SeasonNumber>84</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>2</Position>
+        <Points>34</Points>
+        <GoalsFor>52</GoalsFor>
+        <GoalsAgainst>23</GoalsAgainst>
+        <CupRound>5</CupRound>
+        <CupRoundsLeft>10</CupRoundsLeft>
+      </Season>
+      <Season Index="19">
+        <SeasonNumber>85</SeasonNumber>
+        <LeagueLevelUnitID>21672</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+        <Position>8</Position>
+        <Points>3</Points>
+        <GoalsFor>8</GoalsFor>
+        <GoalsAgainst>69</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="20">
+        <SeasonNumber>86</SeasonNumber>
+        <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>4</Position>
+        <Points>25</Points>
+        <GoalsFor>45</GoalsFor>
+        <GoalsAgainst>30</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="21">
+        <SeasonNumber>87</SeasonNumber>
+        <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>5</Position>
+        <Points>19</Points>
+        <GoalsFor>39</GoalsFor>
+        <GoalsAgainst>27</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="22">
+        <SeasonNumber>88</SeasonNumber>
+        <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>3</Position>
+        <Points>30</Points>
+        <GoalsFor>55</GoalsFor>
+        <GoalsAgainst>19</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="23">
+        <SeasonNumber>89</SeasonNumber>
+        <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>2</Position>
+        <Points>30</Points>
+        <GoalsFor>52</GoalsFor>
+        <GoalsAgainst>22</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="24">
+        <SeasonNumber>90</SeasonNumber>
+        <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>3</Position>
+        <Points>30</Points>
+        <GoalsFor>48</GoalsFor>
+        <GoalsAgainst>32</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="25">
+        <SeasonNumber>91</SeasonNumber>
+        <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>6</Position>
+        <Points>15</Points>
+        <GoalsFor>25</GoalsFor>
+        <GoalsAgainst>45</GoalsAgainst>
+        <CupRound>2</CupRound>
+        <CupRoundsLeft>13</CupRoundsLeft>
+      </Season>
+      <Season Index="26">
+        <SeasonNumber>92</SeasonNumber>
+        <LeagueLevelUnitID>36777</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.789</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>6</Position>
+        <Points>10</Points>
+        <GoalsFor>25</GoalsFor>
+        <GoalsAgainst>63</GoalsAgainst>
+        <CupRound>1</CupRound>
+        <CupRoundsLeft>14</CupRoundsLeft>
+      </Season>
+      <Season Index="27">
+        <SeasonNumber>93</SeasonNumber>
+        <LeagueLevelUnitID>36907</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.919</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>8</Position>
+        <Points>0</Points>
+        <GoalsFor>3</GoalsFor>
+        <GoalsAgainst>119</GoalsAgainst>
+        <CupRound>1</CupRound>
+        <CupRoundsLeft>14</CupRoundsLeft>
+      </Season>
+      <Season Index="28">
+        <SeasonNumber>94</SeasonNumber>
+        <LeagueLevelUnitID>36084</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.96</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>8</Position>
+        <Points>0</Points>
+        <GoalsFor>0</GoalsFor>
+        <GoalsAgainst>125</GoalsAgainst>
+        <CupRound>1</CupRound>
+        <CupRoundsLeft>14</CupRoundsLeft>
+      </Season>
+      <Season Index="29">
+        <SeasonNumber>95</SeasonNumber>
+        <LeagueLevelUnitID>36881</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VI.893</LeagueLevelUnitName>
+        <LeagueLevel>6</LeagueLevel>
+        <Position>8</Position>
+        <Points>0</Points>
+        <GoalsFor>1</GoalsFor>
+        <GoalsAgainst>120</GoalsAgainst>
+        <CupRound>1</CupRound>
+        <CupRoundsLeft>14</CupRoundsLeft>
+      </Season>
+    </TeamHistory>
+    <TrophyList>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TrophySeason>79</TrophySeason>
+        <LeagueLevel>5</LeagueLevel>
+        <LeagueLevelUnitId>21672</LeagueLevelUnitId>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <GainedDate>2021-12-04 02:59:00</GainedDate>
+        <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+        <CupLeagueLevel />
+        <CupLevel />
+        <CupLevelIndex />
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TrophySeason>76</TrophySeason>
+        <LeagueLevel>5</LeagueLevel>
+        <LeagueLevelUnitId>21672</LeagueLevelUnitId>
+        <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+        <GainedDate>2021-01-02 04:11:00</GainedDate>
+        <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+        <CupLeagueLevel />
+        <CupLevel />
+        <CupLevelIndex />
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TrophySeason>72</TrophySeason>
+        <LeagueLevel>6</LeagueLevel>
+        <LeagueLevelUnitId>36378</LeagueLevelUnitId>
+        <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+        <GainedDate>2019-10-12 02:55:00</GainedDate>
+        <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+        <CupLeagueLevel />
+        <CupLevel />
+        <CupLevelIndex />
+      </Trophy>
+    </TrophyList>
+  </Team>
+</HattrickData>

@@ -8,7 +8,8 @@ from requests.adapters import HTTPAdapter
 from requests_oauthlib import OAuth1Session
 from urllib3 import Retry
 
-from pychpp.models.xml import (manager_compendium, team_details, achievements, arena_details,
+from pychpp.models.xml import (manager_compendium, team_details, team_history, achievements,
+                               arena_details,
                                challenges, region_details, league_details, league_fixtures,
                                match_lineup, national_teams, national_team_details, player_details,
                                training, transfers_team, world_details, world_cup, players,
@@ -943,6 +944,14 @@ class CHPPXml(CHPPBase):
             include_domestics_flags=include_domestics_flags,
             include_flags=include_flags, include_supporters=include_supporters,
             ** kwargs,
+        )
+
+    def xml_team_history(
+            self, team_id: int = None, **kwargs,
+    ) -> team_history.TeamHistory:
+
+        return team_history.TeamHistory(
+            chpp=self, team_id=team_id, **kwargs,
         )
 
     def xml_tournament_details(
