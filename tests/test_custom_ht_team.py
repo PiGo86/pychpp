@@ -30,7 +30,7 @@ def test_get_secondary_team(mocked_chpp):
     assert user_match is not None
     assert int(user_match.group(1)) == 9638716
 
-    youth_team = team.youth_team.details()
+    youth_team = team.youth_team.details(version='1.2')
     assert isinstance(youth_team, HTYouthTeam)
     assert youth_team.id == 2745926
     assert youth_team.name == "Les Petits Pédëstres"

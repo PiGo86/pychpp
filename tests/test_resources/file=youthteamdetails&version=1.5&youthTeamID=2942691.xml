@@ -1,0 +1,41 @@
+<HattrickData>
+  <FileName>youthteam.xml</FileName>
+  <Version>1.5</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-22 00:06:50</FetchedDate>
+  <YouthTeam>
+    <YouthTeamID>2942691</YouthTeamID>
+    <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+    <ShortTeamName>LPC</ShortTeamName>
+    <CreatedDate>2022-01-16 16:09:00</CreatedDate>
+    <UserId>1728698</UserId>
+    <GenderID>1</GenderID>
+    <LeagueSystemID>1</LeagueSystemID>
+    <IsPlayingMatch>False</IsPlayingMatch>
+    <Country>
+      <CountryID>5</CountryID>
+      <CountryName>France</CountryName>
+    </Country>
+    <Region>
+      <RegionID>148</RegionID>
+      <RegionName>Poitou-Charentes</RegionName>
+    </Region>
+    <YouthArena>
+      <YouthArenaID>2942354</YouthArenaID>
+      <YouthArenaName>Le Terrain à Jojo</YouthArenaName>
+    </YouthArena>
+    <YouthLeague>
+      <YouthLeagueID>225490</YouthLeagueID>
+      <YouthLeagueName>Robaphipie League</YouthLeagueName>
+      <YouthLeagueStatus>3</YouthLeagueStatus>
+    </YouthLeague>
+    <OwningTeam>
+      <MotherTeamID>1165592</MotherTeamID>
+      <MotherTeamName>Les Poitevins de La Chapelle</MotherTeamName>
+    </OwningTeam>
+    <YouthTrainer>
+      <YouthPlayerID>301741209</YouthPlayerID>
+    </YouthTrainer>
+    <NextTrainingMatchDate>2022-01-17 16:09:00</NextTrainingMatchDate>
+  </YouthTeam>
+</HattrickData>

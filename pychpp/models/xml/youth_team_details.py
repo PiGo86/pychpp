@@ -11,7 +11,7 @@ class RequestYouthTeamDetails(HTModel):
     Youth Team Details - Request arguments
     """
     SOURCE_FILE = 'youthteamdetails'
-    LAST_VERSION = '1.2'
+    LAST_VERSION = '1.5'
 
     _r_youth_team_id: Optional[int] = HTInitVar('youthTeamID', init_arg='youth_team_id')
     _r_show_scouts: Optional[bool] = HTInitVar('showScouts', init_arg='show_scouts')
@@ -28,6 +28,9 @@ class YouthTeamDetails(RequestYouthTeamDetails):
     short_name: str = HTField('ShortTeamName')
     created_date: datetime = HTField('CreatedDate')
     user_id: int = HTField('UserId')
+    gender_id: int = HTField('GenderID', version='>=1.3')
+    league_system_id: int = HTField('LeagueSystemID', version='>=1.4')
+    is_playing_match: bool = HTField('IsPlayingMatch', version='>=1.5')
     country: 'Country' = HTField('Country')
     region: 'Region' = HTField('Region')
     arena: 'Arena' = HTField('YouthArena')
@@ -75,8 +78,8 @@ class OwningTeam(HTModel):
     """
     Youth Team Details -> Owning team
     """
-    id: int = HTField('MotherTeamID')
-    name: str = HTField('MotherTeamName')
+    id: Optional[int] = HTField('MotherTeamID')
+    name: Optional[str] = HTField('MotherTeamName')
 
 
 class Trainer(HTModel):
