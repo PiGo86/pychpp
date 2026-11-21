@@ -11,7 +11,7 @@ class RequestMatchDetails(HTModel):
     Match Details - Request arguments
     """
     SOURCE_FILE = 'matchdetails'
-    LAST_VERSION = '3.1'
+    LAST_VERSION = '3.2'
 
     _r_match_id: int = HTInitVar('matchID', init_arg='match_id')
     _r_source_system: Optional[str] = HTInitVar('sourceSystem', init_arg='source_system')
@@ -50,6 +50,7 @@ class Match(HTModel):
     injuries: Optional[List['MatchInjuryItem']] = HTField('Injuries', items='Injury')
     possession: 'MatchPossession' = HTField('.')
     events: Optional[List['MatchEventItem']] = HTField('EventList', items='Event')
+    expected_result: Optional['MatchExpectedResult'] = HTField('ExpectedResult', version='>=3.2')
 
 
 class BaseMatchTeam(HTModel):
@@ -63,6 +64,8 @@ class BaseMatchTeam(HTModel):
     ratings: 'MatchTeamRatings' = HTField('.')
     team_attitude: Optional[int] = HTField('TeamAttitude')
     chances: 'MatchTeamChances' = HTField('.')
+    has_replay: Optional[bool] = HTField('HasReplay', version='>=3.2')
+    nr_of_replays: Optional[int] = HTField('NrOfReplays', version='>=3.2')
 
 
 class MatchHomeTeam(BaseMatchTeam):
@@ -224,3 +227,76 @@ class MatchEventItem(HTModel):
     subject_team_id: int = HTField('SubjectTeamID')
     subject_player_id: int = HTField('SubjectPlayerID')
     object_player_id: int = HTField('ObjectPlayerID')
+
+
+class MatchExpectedResult(HTModel):
+    """
+    Match Details -> Match -> Expected result (simulated replays statistics)
+    """
+    nr_of_samples: int = HTField('NrOfSamples')
+    home_wins: int = HTField('HomeWins')
+    draws: int = HTField('Draws')
+    away_wins: int = HTField('AwayWins')
+    average_home_goals: float = HTField('AverageHomeGoals')
+    average_away_goals: float = HTField('AverageAwayGoals')
+    full_time: Optional['MatchExpectedResultFullTime'] = HTField('FullTime')
+    goal_distribution: 'MatchExpectedResultGoalDistribution' = HTField('GoalDistribution')
+    average_win_margin: 'MatchExpectedResultAverageWinMargin' = HTField('AverageWinMargin')
+    over_under: 'MatchExpectedResultOverUnder' = HTField('OverUnder')
+
+
+class MatchExpectedResultFullTime(HTModel):
+    """
+    Match Details -> Match -> Expected result -> Full time (before penalty shootout)
+    """
+    home_wins: int = HTField('HomeWins')
+    draws: int = HTField('Draws')
+    away_wins: int = HTField('AwayWins')
+
+
+class MatchExpectedResultGoalDistribution(HTModel):
+    """
+    Match Details -> Match -> Expected result -> Goal distribution
+    """
+    home: 'MatchExpectedResultGoalDistributionTeam' = HTField('Home')
+    away: 'MatchExpectedResultGoalDistributionTeam' = HTField('Away')
+
+
+class MatchExpectedResultGoalDistributionTeam(HTModel):
+    """
+    Match Details -> Match -> Expected result -> Goal distribution -> Home/Away team
+    """
+    goals_0: int = HTField('Goals0')
+    goals_1: int = HTField('Goals1')
+    goals_2: int = HTField('Goals2')
+    goals_3: int = HTField('Goals3')
+    goals_4: int = HTField('Goals4')
+    goals_5: int = HTField('Goals5')
+    goals_more_than_5: int = HTField('GoalsMoreThan5')
+
+
+class MatchExpectedResultAverageWinMargin(HTModel):
+    """
+    Match Details -> Match -> Expected result -> Average win margin
+    """
+    home: float = HTField('Home')
+    away: float = HTField('Away')
+
+
+class MatchExpectedResultOverUnder(HTModel):
+    """
+    Match Details -> Match -> Expected result -> Over/under goal lines
+    """
+    line_05: 'MatchExpectedResultOverUnderLine' = HTField('Line05')
+    line_15: 'MatchExpectedResultOverUnderLine' = HTField('Line15')
+    line_25: 'MatchExpectedResultOverUnderLine' = HTField('Line25')
+    line_35: 'MatchExpectedResultOverUnderLine' = HTField('Line35')
+    line_45: 'MatchExpectedResultOverUnderLine' = HTField('Line45')
+
+
+class MatchExpectedResultOverUnderLine(HTModel):
+    """
+    Match Details -> Match -> Expected result -> Over/under -> Line item
+    """
+    over: int = HTField('Over')
+    under: int = HTField('Under')

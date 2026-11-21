@@ -13,7 +13,7 @@ def test_get_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(match_id=660688698, team_id=86324)
 
     assert isinstance(match_lineup, HTMatchLineup)
-    assert isinstance(match_lineup.match.details(), HTMatch)
+    assert isinstance(match_lineup.match.details(version='3.1'), HTMatch)
 
     assert match_lineup.match.id == 660688698
     assert match_lineup.home_team.name == "Gazela.f.c"
