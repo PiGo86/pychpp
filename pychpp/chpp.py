@@ -932,11 +932,12 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_tournament_fixtures(
-            self, tournament_id: int, season: int = None, **kwargs,
+            self, tournament_id: int, season: int = None, match_round: int = None, **kwargs,
     ) -> tournament_fixtures.TournamentFixtures:
 
         return tournament_fixtures.TournamentFixtures(
-            chpp=self, tournament_id=tournament_id, season=season, **kwargs,
+            chpp=self, tournament_id=tournament_id, season=season,
+            match_round=match_round, **kwargs,
         )
 
     def xml_tournament_league_tables(

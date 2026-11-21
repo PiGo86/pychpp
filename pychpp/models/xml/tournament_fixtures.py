@@ -11,10 +11,11 @@ class RequestTournamentFixtures(HTModel):
     Tournament Fixtures - Request arguments
     """
     SOURCE_FILE = 'tournamentfixtures'
-    LAST_VERSION = '1.0'
+    LAST_VERSION = '1.1'
 
     _r_tournament_id: int = HTInitVar('tournamentId', init_arg='tournament_id')
     _r_season: Optional[int] = HTInitVar('season', init_arg='season')
+    _r_match_round: Optional[int] = HTInitVar('matchRound', init_arg='match_round')
 
 
 class TournamentFixtures(RequestTournamentFixtures):
