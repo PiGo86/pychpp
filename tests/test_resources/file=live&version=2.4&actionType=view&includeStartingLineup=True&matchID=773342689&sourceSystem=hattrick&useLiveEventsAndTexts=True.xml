@@ -1,0 +1,391 @@
+<HattrickData>
+  <FileName>live.xml</FileName>
+  <Version>2.4</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 18:51:08</FetchedDate>
+  <MatchList>
+    <Match>
+      <SourceSystem>Hattrick</SourceSystem>
+      <MatchID>773342689</MatchID>
+      <MatchType>1</MatchType>
+      <MatchDate>2026-11-21 18:00:00</MatchDate>
+      <HomeTeam>
+        <HomeTeamID>1244048</HomeTeamID>
+        <HomeTeamName>TV Vahrendorf</HomeTeamName>
+        <HomeTeamShortName>Vahrendorf</HomeTeamShortName>
+        <StartingLineup>
+          <Player>
+            <PlayerID>461685865</PlayerID>
+            <RoleID>100</RoleID>
+            <PlayerName>Tiziano Marchiol</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>464901110</PlayerID>
+            <RoleID>101</RoleID>
+            <PlayerName>Gesuele Interdonato</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>459240398</PlayerID>
+            <RoleID>103</RoleID>
+            <PlayerName>Alberto Gassmann</PlayerName>
+            <Behaviour>1</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>469354542</PlayerID>
+            <RoleID>104</RoleID>
+            <PlayerName>Suren Mangu</PlayerName>
+            <Behaviour>1</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>469093480</PlayerID>
+            <RoleID>106</RoleID>
+            <PlayerName>Mehmet Emin Başkan</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>472879777</PlayerID>
+            <RoleID>107</RoleID>
+            <PlayerName>Reinhard Kebis</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>470159652</PlayerID>
+            <RoleID>108</RoleID>
+            <PlayerName>Tomás Massad</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>466220498</PlayerID>
+            <RoleID>109</RoleID>
+            <PlayerName>Pyry Mäki</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>463736296</PlayerID>
+            <RoleID>110</RoleID>
+            <PlayerName>Luis Larrazabal</PlayerName>
+            <Behaviour>3</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>469045959</PlayerID>
+            <RoleID>111</RoleID>
+            <PlayerName>Isildo dos Santos</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>471241597</PlayerID>
+            <RoleID>113</RoleID>
+            <PlayerName>Simão José Neto</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>464901110</PlayerID>
+            <RoleID>17</RoleID>
+            <PlayerName>Gesuele Interdonato</PlayerName>
+          </Player>
+          <Player>
+            <PlayerID>461777189</PlayerID>
+            <RoleID>18</RoleID>
+            <PlayerName>Oladipupo Seka</PlayerName>
+          </Player>
+        </StartingLineup>
+      </HomeTeam>
+      <AwayTeam>
+        <AwayTeamID>649632</AwayTeamID>
+        <AwayTeamName>Undertaker United FC</AwayTeamName>
+        <AwayTeamShortName>U-U-FC</AwayTeamShortName>
+        <StartingLineup>
+          <Player>
+            <PlayerID>465876519</PlayerID>
+            <RoleID>100</RoleID>
+            <PlayerName>Oday Abou Saada</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>464451565</PlayerID>
+            <RoleID>101</RoleID>
+            <PlayerName>Marc Rönn</PlayerName>
+            <Behaviour>3</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>468531473</PlayerID>
+            <RoleID>103</RoleID>
+            <PlayerName>Loris Consiglio</PlayerName>
+            <Behaviour>0</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>468969200</PlayerID>
+            <RoleID>105</RoleID>
+            <PlayerName>Till-Werner Sentz</PlayerName>
+            <Behaviour>3</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>463960471</PlayerID>
+            <RoleID>106</RoleID>
+            <PlayerName>Gniewosz Syposz</PlayerName>
+            <Behaviour>3</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>470798062</PlayerID>
+            <RoleID>107</RoleID>
+            <PlayerName>Pablo Hoyos</PlayerName>
+            <Behaviour>4</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>465048555</PlayerID>
+            <RoleID>108</RoleID>
+            <PlayerName>Rafael Gazo</PlayerName>
+            <Behaviour>2</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>468489730</PlayerID>
+            <RoleID>109</RoleID>
+            <PlayerName>Byung-Won Ya</PlayerName>
+            <Behaviour>4</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>463950234</PlayerID>
+            <RoleID>110</RoleID>
+            <PlayerName>Antonio Monteiro</PlayerName>
+            <Behaviour>3</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>470048632</PlayerID>
+            <RoleID>111</RoleID>
+            <PlayerName>Mato Krznarić</PlayerName>
+            <Behaviour>2</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>468634835</PlayerID>
+            <RoleID>113</RoleID>
+            <PlayerName>Hannes Wendler</PlayerName>
+            <Behaviour>2</Behaviour>
+          </Player>
+          <Player>
+            <PlayerID>468969200</PlayerID>
+            <RoleID>18</RoleID>
+            <PlayerName>Till-Werner Sentz</PlayerName>
+          </Player>
+        </StartingLineup>
+      </AwayTeam>
+      <Substitutions>
+        <Substitution>
+          <TeamID>649632</TeamID>
+          <SubjectPlayerID>465048555</SubjectPlayerID>
+          <ObjectPlayerID>465048555</ObjectPlayerID>
+          <OrderType>4</OrderType>
+          <NewPositionId>108</NewPositionId>
+          <NewPositionBehaviour>0</NewPositionBehaviour>
+          <MatchMinute>34</MatchMinute>
+        </Substitution>
+        <Substitution>
+          <TeamID>649632</TeamID>
+          <SubjectPlayerID>468969200</SubjectPlayerID>
+          <ObjectPlayerID>468969200</ObjectPlayerID>
+          <OrderType>4</OrderType>
+          <NewPositionId>105</NewPositionId>
+          <NewPositionBehaviour>0</NewPositionBehaviour>
+          <MatchMinute>34</MatchMinute>
+        </Substitution>
+        <Substitution>
+          <TeamID>649632</TeamID>
+          <SubjectPlayerID>464451565</SubjectPlayerID>
+          <ObjectPlayerID>464451565</ObjectPlayerID>
+          <OrderType>4</OrderType>
+          <NewPositionId>101</NewPositionId>
+          <NewPositionBehaviour>0</NewPositionBehaviour>
+          <MatchMinute>34</MatchMinute>
+        </Substitution>
+        <Substitution>
+          <TeamID>649632</TeamID>
+          <SubjectPlayerID>465048555</SubjectPlayerID>
+          <ObjectPlayerID>464907615</ObjectPlayerID>
+          <OrderType>1</OrderType>
+          <NewPositionId>108</NewPositionId>
+          <NewPositionBehaviour>1</NewPositionBehaviour>
+          <MatchMinute>46</MatchMinute>
+        </Substitution>
+      </Substitutions>
+      <EventList>
+        <Event Index="0">
+          <Minute>-2</Minute>
+          <SubjectPlayerID>1240610</SubjectPlayerID>
+          <SubjectTeamID>70000</SubjectTeamID>
+          <ObjectPlayerID>66935</ObjectPlayerID>
+          <EventKey>32_3</EventKey>
+          <MatchPart>0</MatchPart>
+          <EventText>Il fait beau aujourd'hui, pas trop chaud, et pas de risque de pluie.&lt;br/&gt;Pas sûr que ça ait eu un impact sur l'affluence. Le &lt;a href="/Club/Stadium/?stadiumId=1240610"&gt;Spielwiese Vahrendorf&lt;/a&gt; semble presque plein aujourd'hui.  &lt;a href="/Club/HallOfFame/Player.aspx?playerId=458475791"&gt;Stefan Tomović&lt;/a&gt; est l'arbitre retenu aujourd'hui, assisté par &lt;a href="/Club/HallOfFame/Player.aspx?playerId=423940468"&gt;Sergio Cachero&lt;/a&gt; et &lt;a href="/Club/HallOfFame/Player.aspx?playerId=431931980"&gt;Fabien Thepot&lt;/a&gt;.</EventText>
+        </Event>
+        <Event Index="1">
+          <Minute>-2</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>0</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>19_2</EventKey>
+          <MatchPart>0</MatchPart>
+          <EventText>Le coup d'envoi sera donné dans quelques minutes, nous attendons l'entrée des joueurs sur le terrain.&lt;br/&gt;Certains spectateurs sont à la recherche de leur place, après avoir récupéré leurs pop-corn Wallid, il y avait une belle promo ! &lt;br/&gt;Pendant ce temps-là, je parie que d'autres font la file pour avoir leur hot-dog.&lt;br/&gt;Ah, voilà les équipes du jour ! Les joueurs saluent les supporters et semblent prêts à en découdre.</EventText>
+        </Event>
+        <Event Index="2">
+          <Minute>-1</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>1244048</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>21_2</EventKey>
+          <MatchPart>0</MatchPart>
+          <EventText>Aujourd'hui, le gardien de &lt;span class="hometeam"&gt;Vahrendorf&lt;/span&gt; sera &lt;a href="/Club/Players/Player.aspx?playerId=461685865" title="Marchiol" class="homeplayer"&gt;Marchiol&lt;/a&gt;. Il sera soutenu dans la défense de son but par &lt;a href="/Club/Players/Player.aspx?playerId=464901110" title="Interdonato" class="homeplayer"&gt;Interdonato&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=459240398" title="Gassmann" class="homeplayer"&gt;Gassmann&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=469354542" title="Mangu" class="homeplayer"&gt;Mangu&lt;/a&gt; juste devant lui.&lt;br /&gt;&lt;br /&gt;&lt;br/&gt;Le milieu sera composé de &lt;a href="/Club/Players/Player.aspx?playerId=469093480" title="Başkan" class="homeplayer"&gt;Başkan&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=472879777" title="Kebis" class="homeplayer"&gt;Kebis&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=470159652" title="Massad" class="homeplayer"&gt;Massad&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=466220498" title="M&amp;#228;ki" class="homeplayer"&gt;Mäki&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=463736296" title="Larrazabal" class="homeplayer"&gt;Larrazabal&lt;/a&gt;, tandis que nous verrons &lt;a href="/Club/Players/Player.aspx?playerId=469045959" title="dos Santos" class="homeplayer"&gt;dos Santos&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=471241597" title="Neto" class="homeplayer"&gt;Neto&lt;/a&gt; se charger de l'animation offensive.&lt;br /&gt;&lt;br /&gt;</EventText>
+        </Event>
+        <Event Index="3">
+          <Minute>-1</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>649632</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>21_4</EventKey>
+          <MatchPart>0</MatchPart>
+          <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=465876519" title="Abou Saada" class="awayplayer"&gt;Abou Saada&lt;/a&gt; va diriger la défense de &lt;span class="awayteam"&gt;U-U-FC&lt;/span&gt; aujourd'hui, il sera dans les buts.&lt;br /&gt;&lt;br /&gt;&lt;br/&gt;Devant lui, nous avons les défenseurs &lt;a href="/Club/Players/Player.aspx?playerId=464451565" title="R&amp;#246;nn" class="awayplayer"&gt;Rönn&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=468531473" title="Consiglio" class="awayplayer"&gt;Consiglio&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=468969200" title="Sentz" class="awayplayer"&gt;Sentz&lt;/a&gt;. &lt;br /&gt;&lt;br /&gt;&lt;br/&gt;La menace en attaque viendra de &lt;a href="/Club/Players/Player.aspx?playerId=470048632" title="Krznarić" class="awayplayer"&gt;Krznarić&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=468634835" title="Wendler" class="awayplayer"&gt;Wendler&lt;/a&gt;, soutenus au milieu par &lt;a href="/Club/Players/Player.aspx?playerId=463960471" title="Syposz" class="awayplayer"&gt;Syposz&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=470798062" title="Hoyos" class="awayplayer"&gt;Hoyos&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=465048555" title="Gazo" class="awayplayer"&gt;Gazo&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=468489730" title="Ya" class="awayplayer"&gt;Ya&lt;/a&gt; et &lt;a href="/Club/Players/Player.aspx?playerId=463950234" title="Monteiro" class="awayplayer"&gt;Monteiro&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+        </Event>
+        <Event Index="4">
+          <Minute>-1</Minute>
+          <SubjectPlayerID>1030502</SubjectPlayerID>
+          <SubjectTeamID>0</SubjectTeamID>
+          <ObjectPlayerID>1030502</ObjectPlayerID>
+          <EventKey>23_5</EventKey>
+          <MatchPart>0</MatchPart>
+          <EventText>Il y a des modes pour tout, y compris les équipes de football. Aujourd'hui, les deux entraineurs sont des ardents défenseurs du 3-5-2.</EventText>
+        </Event>
+        <Event Index="5">
+          <Minute>0</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>0</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>598_3</EventKey>
+          <MatchPart>0</MatchPart>
+          <EventText>C'est l'heure du coup d'envoi... Ça y est, c'est parti ! </EventText>
+        </Event>
+        <Event Index="6">
+          <Minute>0</Minute>
+          <SubjectPlayerID>170</SubjectPlayerID>
+          <SubjectTeamID>649632</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>331_1</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>L'équipe de &lt;span class="awayteam"&gt;U-U-FC&lt;/span&gt; démontre son niveau de pressing &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=12#skill" class="skill"&gt;inoubliable&lt;/a&gt;, ce qui leur permet d'annihiler les offensives adverses sur toute la surface du terrain.</EventText>
+        </Event>
+        <Event Index="7">
+          <Minute>7</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>1244048</SubjectTeamID>
+          <ObjectPlayerID>6</ObjectPlayerID>
+          <EventKey>802_5</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>&lt;span class="hometeam"&gt;Vahrendorf&lt;/span&gt; aborde ce match fort de 6 victoires à la suite. Peuvent-ils encore prolonger cette série ?</EventText>
+        </Event>
+        <Event Index="8">
+          <Minute>15</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>0</SubjectTeamID>
+          <ObjectPlayerID>4</ObjectPlayerID>
+          <EventKey>497_5</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>Avant ce match, les deux managers ont évoqué les matchs à venir pour leurs équipes en &lt;a href="/World/Cup/Cup.aspx?CupID=4"&gt;Deutschland-Pokal&lt;/a&gt;, mais ils ont refusé de dire si cela changerait leur façon d'aborder les rencontres de championnat. </EventText>
+        </Event>
+        <Event Index="9">
+          <Minute>23</Minute>
+          <SubjectPlayerID>463950234</SubjectPlayerID>
+          <SubjectTeamID>649632</SubjectTeamID>
+          <ObjectPlayerID>470048632</ObjectPlayerID>
+          <EventKey>219_2</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>C'est un corner pour &lt;span class="awayteam"&gt;U-U-FC&lt;/span&gt;.&lt;br/&gt;Le ballon prend la direction de &lt;a href="/Club/Players/Player.aspx?playerId=463950234" title="Antonio Monteiro" class="awayplayer"&gt;Antonio Monteiro&lt;/a&gt; au premier poteau...&lt;br/&gt;Il reprend de la tête, mais juste au-dessus !&lt;br/&gt;C'est toujours une menace dans les airs, mais cette fois il a manqué de réussite.</EventText>
+        </Event>
+        <Event Index="10">
+          <Minute>24</Minute>
+          <SubjectPlayerID>471241597</SubjectPlayerID>
+          <SubjectTeamID>1244048</SubjectTeamID>
+          <ObjectPlayerID>465876519</ObjectPlayerID>
+          <EventKey>222_4</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>&lt;span class="hometeam"&gt;Vahrendorf&lt;/span&gt; récupère le ballon et va tenter de prendre l'avantage dans cette partie. Les spectateurs se sont levés, pleins d'espérance.&lt;br/&gt;Une belle passe sur la gauche atteint &lt;a href="/Club/Players/Player.aspx?playerId=471241597" title="Sim&amp;#227;o Jos&amp;#233; Neto" class="homeplayer"&gt;Simão José Neto&lt;/a&gt;. Il lève les yeux et voit une ouverture.&lt;br/&gt;Il frappe... C'est dedans !&lt;br/&gt;Oh non, excusez-moi... Désolé de mon erreur... Comme de nombreux supporters, j'ai vu le filet bouger, mais le ballon est passé à l'extérieur, dans le petit filet. C'est toujours 0 - 0.</EventText>
+        </Event>
+        <Event Index="11">
+          <Minute>31</Minute>
+          <SubjectPlayerID>58</SubjectPlayerID>
+          <SubjectTeamID>1244048</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>471_5</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>Pour l'instant, &lt;span class="hometeam"&gt;Vahrendorf&lt;/span&gt; a pris plus d'initiatives dans le jeu que &lt;span class="awayteam"&gt;U-U-FC&lt;/span&gt;. &lt;br/&gt;Cependant, il est encore tôt dans cette partie et tout peut encore changer. </EventText>
+        </Event>
+        <Event Index="12">
+          <Minute>34</Minute>
+          <SubjectPlayerID>464901110</SubjectPlayerID>
+          <SubjectTeamID>1244048</SubjectTeamID>
+          <ObjectPlayerID>465876519</ObjectPlayerID>
+          <EventKey>123_3</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=464901110" title="Gesuele Interdonato" class="homeplayer"&gt;Gesuele Interdonato&lt;/a&gt; vient de s'approprier le ballon au milieu du terrain.&lt;br/&gt;Il se décale et lance une attaque sur l'aile droite.&lt;br/&gt;Trois joueurs de &lt;span class="hometeam"&gt;Vahrendorf&lt;/span&gt; s'élancent, alors qu'il n'y a qu'un seul défenseur face à eux.&lt;br/&gt;Un petit une-deux de &lt;a href="/Club/Players/Player.aspx?playerId=464901110" title="Gesuele Interdonato" class="homeplayer"&gt;Gesuele Interdonato&lt;/a&gt; avec un de ses équipiers, et le voilà seul face au gardien !&lt;br/&gt;Il tire et il marque ! &lt;span class="hometeam"&gt;Vahrendorf&lt;/span&gt; prend l'avantage avec un score de 1 - 0.</EventText>
+        </Event>
+        <Event Index="13">
+          <Minute>34</Minute>
+          <SubjectPlayerID>465048555</SubjectPlayerID>
+          <SubjectTeamID>649632</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>360_2</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>L'entraineur &lt;a href="/Club/Players/Player.aspx?playerId=415548142" title="Tim Melki" class="awayplayer"&gt;Tim Melki&lt;/a&gt; a appelé son capitaine pour lui transmettre de nouvelles instructions.&lt;br/&gt;C'est un bon moment pour intervenir, il est évident que ses joueurs doivent changer quelque chose s'ils veulent avoir une chance de renverser ce match.&lt;br/&gt;La partie a repris, voyons comment les choses vont tourner.</EventText>
+        </Event>
+        <Event Index="14">
+          <Minute>34</Minute>
+          <SubjectPlayerID>468969200</SubjectPlayerID>
+          <SubjectTeamID>649632</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>360_5</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>Il y a actuellement un temps mort dans le match, et l'entraineur de &lt;span class="awayteam"&gt;U-U-FC&lt;/span&gt; appelle ses joueurs pour une discussion.&lt;br/&gt;Je pense qu'il veut ajuster certains aspects tactiques. Et qui peut l'en blâmer, étant donné le tableau d'affichage actuel...</EventText>
+        </Event>
+        <Event Index="15">
+          <Minute>34</Minute>
+          <SubjectPlayerID>464451565</SubjectPlayerID>
+          <SubjectTeamID>649632</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>360_4</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>L'entraineur de &lt;span class="awayteam"&gt;U-U-FC&lt;/span&gt; semble désespérément vouloir faire un remplacement, et qui peut l'en blâmer ? &lt;br/&gt;Il hurle de nouveaux ordres à ses joueurs, on peut s'attendre à voir un changement de stratégie pour l'équipe.</EventText>
+        </Event>
+        <Event Index="16">
+          <Minute>35</Minute>
+          <SubjectPlayerID>170</SubjectPlayerID>
+          <SubjectTeamID>649632</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>68_2</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>La stratégie de &lt;span class="awayteam"&gt;U-U-FC&lt;/span&gt; est d'appliquer un gros pressing sur l'adversaire afin de récupérer rapidement le ballon et empêcher toute occasion de but en gênant la circulation du ballon.&lt;br/&gt;Pour l'instant, l'équipe arrive à bien appliquer cette idée de jeu.</EventText>
+        </Event>
+        <Event Index="17">
+          <Minute>45</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>0</SubjectTeamID>
+          <ObjectPlayerID>0</ObjectPlayerID>
+          <EventKey>45_3</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>C'est la mi-temps et pour l'instant, le score de la rencontre est de 1 à 0.</EventText>
+        </Event>
+        <Event Index="18">
+          <Minute>45</Minute>
+          <SubjectPlayerID>0</SubjectPlayerID>
+          <SubjectTeamID>1244048</SubjectTeamID>
+          <ObjectPlayerID>58</ObjectPlayerID>
+          <EventKey>40_4</EventKey>
+          <MatchPart>1</MatchPart>
+          <EventText>Cette mi-temps fut dominée par &lt;span class="hometeam"&gt;Vahrendorf&lt;/span&gt;, qui garda le contrôle du ballon pendant 58 % du temps.&lt;br /&gt;&lt;br /&gt;</EventText>
+        </Event>
+      </EventList>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <LastShownEventIndex>18</LastShownEventIndex>
+      <NextEventMinute>46</NextEventMinute>
+      <NextEventMatchPart>2</NextEventMatchPart>
+    </Match>
+  </MatchList>
+</HattrickData>
