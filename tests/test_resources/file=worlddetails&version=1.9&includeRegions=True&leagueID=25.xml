@@ -1,0 +1,239 @@
+<HattrickData>
+  <FileName>worlddetails.xml</FileName>
+  <Version>1.9</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 23:29:06</FetchedDate>
+  <LeagueList>
+    <League>
+      <LeagueID>25</LeagueID>
+      <LeagueName>Portugal</LeagueName>
+      <Season>84</Season>
+      <SeasonOffset>-12</SeasonOffset>
+      <MatchRound>3</MatchRound>
+      <ShortName>Portugal</ShortName>
+      <Continent>Europe</Continent>
+      <ZoneName>Southwestern Europe</ZoneName>
+      <EnglishName>Portugal</EnglishName>
+      <LanguageId>11</LanguageId>
+      <LanguageName>Português</LanguageName>
+      <Country Available="True">
+        <CountryID>23</CountryID>
+        <CountryName>Portugal</CountryName>
+        <CurrencyName>€</CurrencyName>
+        <CurrencyRate>10</CurrencyRate>
+        <CountryCode>PT</CountryCode>
+        <DateFormat>DD-MM-YYYY</DateFormat>
+        <TimeFormat>hh:mm</TimeFormat>
+        <RegionList>
+          <Region>
+            <RegionID>666</RegionID>
+            <RegionName>Açores</RegionName>
+          </Region>
+          <Region>
+            <RegionID>665</RegionID>
+            <RegionName>Aveiro</RegionName>
+          </Region>
+          <Region>
+            <RegionID>669</RegionID>
+            <RegionName>Beja</RegionName>
+          </Region>
+          <Region>
+            <RegionID>670</RegionID>
+            <RegionName>Braga</RegionName>
+          </Region>
+          <Region>
+            <RegionID>671</RegionID>
+            <RegionName>Bragança</RegionName>
+          </Region>
+          <Region>
+            <RegionID>672</RegionID>
+            <RegionName>Castelo Branco</RegionName>
+          </Region>
+          <Region>
+            <RegionID>673</RegionID>
+            <RegionName>Coimbra</RegionName>
+          </Region>
+          <Region>
+            <RegionID>689</RegionID>
+            <RegionName>Évora</RegionName>
+          </Region>
+          <Region>
+            <RegionID>676</RegionID>
+            <RegionName>Faro</RegionName>
+          </Region>
+          <Region>
+            <RegionID>677</RegionID>
+            <RegionName>Guarda</RegionName>
+          </Region>
+          <Region>
+            <RegionID>678</RegionID>
+            <RegionName>Leiria</RegionName>
+          </Region>
+          <Region>
+            <RegionID>679</RegionID>
+            <RegionName>Lisboa</RegionName>
+          </Region>
+          <Region>
+            <RegionID>681</RegionID>
+            <RegionName>Lisboa - Linhas</RegionName>
+          </Region>
+          <Region>
+            <RegionID>675</RegionID>
+            <RegionName>Lisboa - Oeste</RegionName>
+          </Region>
+          <Region>
+            <RegionID>668</RegionID>
+            <RegionName>Lisboa - Vale do Tejo</RegionName>
+          </Region>
+          <Region>
+            <RegionID>680</RegionID>
+            <RegionName>Madeira</RegionName>
+          </Region>
+          <Region>
+            <RegionID>682</RegionID>
+            <RegionName>Portalegre</RegionName>
+          </Region>
+          <Region>
+            <RegionID>674</RegionID>
+            <RegionName>Porto - Ave e Tâmega</RegionName>
+          </Region>
+          <Region>
+            <RegionID>683</RegionID>
+            <RegionName>Porto - Grande Porto</RegionName>
+          </Region>
+          <Region>
+            <RegionID>684</RegionID>
+            <RegionName>Santarém</RegionName>
+          </Region>
+          <Region>
+            <RegionID>685</RegionID>
+            <RegionName>Setúbal</RegionName>
+          </Region>
+          <Region>
+            <RegionID>667</RegionID>
+            <RegionName>Setúbal - Margem Sul</RegionName>
+          </Region>
+          <Region>
+            <RegionID>686</RegionID>
+            <RegionName>Viana do Castelo</RegionName>
+          </Region>
+          <Region>
+            <RegionID>687</RegionID>
+            <RegionName>Vila Real</RegionName>
+          </Region>
+          <Region>
+            <RegionID>688</RegionID>
+            <RegionName>Viseu</RegionName>
+          </Region>
+        </RegionList>
+      </Country>
+      <Cups>
+        <Cup>
+          <CupID>26</CupID>
+          <CupName>Taça de Portugal</CupName>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>1</CupLevel>
+          <CupLevelIndex>1</CupLevelIndex>
+          <MatchRound>2</MatchRound>
+          <MatchRoundsLeft>11</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>534</CupID>
+          <CupName>Taça Challenger Esmeralda de Portugal</CupName>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>1</CupLevelIndex>
+          <MatchRound>1</MatchRound>
+          <MatchRoundsLeft>12</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>663</CupID>
+          <CupName>Taça Challenger Rubi de Portugal</CupName>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>2</CupLevelIndex>
+          <MatchRound>0</MatchRound>
+          <MatchRoundsLeft>12</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>792</CupID>
+          <CupName>Taça Challenger Safira de Portugal</CupName>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>3</CupLevelIndex>
+          <MatchRound>-1</MatchRound>
+          <MatchRoundsLeft>0</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>921</CupID>
+          <CupName>Taça de Consolação de Portugal</CupName>
+          <CupLeagueLevel>0</CupLeagueLevel>
+          <CupLevel>3</CupLevel>
+          <CupLevelIndex>1</CupLevelIndex>
+          <MatchRound>0</MatchRound>
+          <MatchRoundsLeft>12</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>1336</CupID>
+          <CupName>Taça de Portugal da Divisão VII</CupName>
+          <CupLeagueLevel>7</CupLeagueLevel>
+          <CupLevel>1</CupLevel>
+          <CupLevelIndex>1</CupLevelIndex>
+          <MatchRound>2</MatchRound>
+          <MatchRoundsLeft>5</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>1349</CupID>
+          <CupName>Portugal Divisão VII Taça Challenger Esmeralda </CupName>
+          <CupLeagueLevel>7</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>1</CupLevelIndex>
+          <MatchRound>1</MatchRound>
+          <MatchRoundsLeft>6</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>1362</CupID>
+          <CupName>Portugal Divisão VII Taça Challenger Rubi</CupName>
+          <CupLeagueLevel>7</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>2</CupLevelIndex>
+          <MatchRound>0</MatchRound>
+          <MatchRoundsLeft>6</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>1375</CupID>
+          <CupName>Portugal Divisão VII Taça Challenger Safira</CupName>
+          <CupLeagueLevel>7</CupLeagueLevel>
+          <CupLevel>2</CupLevel>
+          <CupLevelIndex>3</CupLevelIndex>
+          <MatchRound>-1</MatchRound>
+          <MatchRoundsLeft>0</MatchRoundsLeft>
+        </Cup>
+        <Cup>
+          <CupID>1388</CupID>
+          <CupName>Portugal Divisão VII Taça de Consolação</CupName>
+          <CupLeagueLevel>7</CupLeagueLevel>
+          <CupLevel>3</CupLevel>
+          <CupLevelIndex>1</CupLevelIndex>
+          <MatchRound>0</MatchRound>
+          <MatchRoundsLeft>6</MatchRoundsLeft>
+        </Cup>
+      </Cups>
+      <NationalTeamId>3014</NationalTeamId>
+      <U20TeamId>3055</U20TeamId>
+      <ActiveTeams>6256</ActiveTeams>
+      <ActiveUsers>6153</ActiveUsers>
+      <WaitingUsers>1</WaitingUsers>
+      <TrainingDate>2026-11-26 19:00:00</TrainingDate>
+      <EconomyDate>2026-11-28 01:30:00</EconomyDate>
+      <CupMatchDate>2026-11-25 21:45:00</CupMatchDate>
+      <SeriesMatchDate>2026-11-28 21:45:00</SeriesMatchDate>
+      <Sequence1>2026-11-23 07:30:00</Sequence1>
+      <Sequence2>2026-11-24 07:30:00</Sequence2>
+      <Sequence3>2026-11-25 03:40:00</Sequence3>
+      <Sequence5>2026-11-26 10:30:00</Sequence5>
+      <Sequence7>2026-11-27 12:45:00</Sequence7>
+      <NumberOfLevels>7</NumberOfLevels>
+    </League>
+  </LeagueList>
+</HattrickData>

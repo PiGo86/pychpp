@@ -11,7 +11,7 @@ class RequestWorldDetails(HTModel):
     World Details - Request arguments
     """
     SOURCE_FILE = 'worlddetails'
-    LAST_VERSION = '1.9'
+    LAST_VERSION = '2.1'
 
     _r_include_regions: Optional[bool] = HTInitVar('includeRegions', init_arg='include_regions')
     _r_country_id: Optional[int] = HTInitVar('countryID', init_arg='country_id')
@@ -38,6 +38,7 @@ class LeagueItem(HTModel):
     continent: str = HTField('Continent')
     zone_name: str = HTField('ZoneName')
     english_name: str = HTField('EnglishName')
+    league_system_id: int = HTField('LeagueSystemID', version='>=2.0')
     language_id: int = HTField('LanguageId')
     language_name: str = HTField('LanguageName')
     country: 'LeagueItemCountry' = HTField('Country')
@@ -47,6 +48,10 @@ class LeagueItem(HTModel):
     active_teams: int = HTField('ActiveTeams')
     active_users: int = HTField('ActiveUsers')
     waiting_users: int = HTField('WaitingUsers')
+    total_teams: Optional[int] = HTField('TotalTeams', version='>=2.1')
+    number_of_foreign_owners: Optional[int] = HTField('NumberOfForeignOwners', version='>=2.1')
+    max_percentage_of_foreign_owners: Optional[int] = HTField('MaxPercentageOfForeignOwners',
+                                                              version='>=2.1')
     training_date: datetime = HTField('TrainingDate')
     economy_date: datetime = HTField('EconomyDate')
     cup_match_date: datetime = HTField('CupMatchDate')
