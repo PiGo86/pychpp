@@ -1,0 +1,240 @@
+<HattrickData>
+  <FileName>matches.xml</FileName>
+  <Version>3.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 20:35:57</FetchedDate>
+  <IsYouth>False</IsYouth>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <TeamName>Les Poitevins de La Chapelle</TeamName>
+    <ShortTeamName>Poitevins</ShortTeamName>
+    <League>
+      <LeagueID>5</LeagueID>
+      <LeagueName>France</LeagueName>
+    </League>
+    <LeagueLevelUnit>
+      <LeagueLevelUnitID>73592</LeagueLevelUnitID>
+      <LeagueLevelUnitName>VII.777</LeagueLevelUnitName>
+      <LeagueLevel>7</LeagueLevel>
+    </LeagueLevelUnit>
+    <MatchList>
+      <Match>
+        <MatchID>768781755</MatchID>
+        <HomeTeam>
+          <HomeTeamID>3360132</HomeTeamID>
+          <HomeTeamName>SC Meaux Academy</HomeTeamName>
+          <HomeTeamNameShortName>Academy</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-10-24 21:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>36881</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>10</HomeGoals>
+        <AwayGoals>0</AwayGoals>
+        <Status>FINISHED</Status>
+        <HomeStatement />
+        <AwayStatement />
+        <FanMatchExpectation>4</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>772433340</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>3423607</AwayTeamID>
+          <AwayTeamName>Fc apocalypse 1</AwayTeamName>
+          <AwayTeamNameShortName>apocalypse</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-11-11 15:00:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>3</MatchType>
+        <MatchContextId>1331</MatchContextId>
+        <CupLevel>1</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <HomeGoals>1</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+        <HomeStatement />
+        <AwayStatement />
+        <FanMatchExpectation>7</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>773525887</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>3375126</AwayTeamID>
+          <AwayTeamName>Nord-Pas-de-Calais FC</AwayTeamName>
+          <AwayTeamNameShortName>Nord-Pas-de-Calais</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-11-14 21:10:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>73592</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>7</AwayGoals>
+        <Status>FINISHED</Status>
+        <HomeStatement />
+        <AwayStatement />
+        <FanMatchExpectation>7</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>775863574</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>3478697</AwayTeamID>
+          <AwayTeamName>Fc Drouais</AwayTeamName>
+          <AwayTeamNameShortName>Drouais</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-11-18 15:15:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>3</MatchType>
+        <MatchContextId>1344</MatchContextId>
+        <CupLevel>2</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <HomeGoals>0</HomeGoals>
+        <AwayGoals>5</AwayGoals>
+        <Status>FINISHED</Status>
+        <HomeStatement />
+        <AwayStatement />
+      </Match>
+      <Match>
+        <MatchID>773525893</MatchID>
+        <HomeTeam>
+          <HomeTeamID>964537</HomeTeamID>
+          <HomeTeamName>FC TAIZ 2</HomeTeamName>
+          <HomeTeamNameShortName>TAIZ</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-11-21 21:10:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>73592</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+        <HomeStatement />
+        <AwayStatement />
+        <FanMatchExpectation>5</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>776052234</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>3291481</AwayTeamID>
+          <AwayTeamName>Tutur fay</AwayTeamName>
+          <AwayTeamNameShortName>Tutur</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-11-25 15:45:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>3</MatchType>
+        <MatchContextId>1383</MatchContextId>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+        <HomeStatement />
+        <AwayStatement />
+      </Match>
+      <Match>
+        <MatchID>773525897</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>593385</AwayTeamID>
+          <AwayTeamName>Doudou Klub</AwayTeamName>
+          <AwayTeamNameShortName>Doudou</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-11-28 21:10:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>73592</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+        <HomeStatement />
+        <AwayStatement />
+        <FanMatchExpectation>7</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>773525901</MatchID>
+        <HomeTeam>
+          <HomeTeamID>175882</HomeTeamID>
+          <HomeTeamName>F.C Marmande</HomeTeamName>
+          <HomeTeamNameShortName>Marmande</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>1165592</AwayTeamID>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+          <AwayTeamNameShortName>Poitevins</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-12-05 21:10:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>73592</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+        <HomeStatement />
+        <AwayStatement />
+        <FanMatchExpectation>4</FanMatchExpectation>
+      </Match>
+      <Match>
+        <MatchID>773525904</MatchID>
+        <HomeTeam>
+          <HomeTeamID>1165592</HomeTeamID>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+          <HomeTeamNameShortName>Poitevins</HomeTeamNameShortName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamID>964584</AwayTeamID>
+          <AwayTeamName>F.C Kroln 2</AwayTeamName>
+          <AwayTeamNameShortName>Kroln</AwayTeamNameShortName>
+        </AwayTeam>
+        <MatchDate>2026-12-12 21:10:00</MatchDate>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchType>1</MatchType>
+        <MatchContextId>73592</MatchContextId>
+        <CupLevel>0</CupLevel>
+        <CupLevelIndex>0</CupLevelIndex>
+        <OrdersGiven>False</OrdersGiven>
+        <Status>UPCOMING</Status>
+        <HomeStatement />
+        <AwayStatement />
+      </Match>
+    </MatchList>
+  </Team>
+</HattrickData>

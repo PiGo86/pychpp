@@ -11,7 +11,7 @@ class RequestMatches(HTModel):
     Matches - Request arguments
     """
     SOURCE_FILE = 'matches'
-    LAST_VERSION = '2.9'
+    LAST_VERSION = '3.0'
 
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_is_youth: Optional[bool] = HTInitVar('isYouth', init_arg='is_youth')
@@ -71,6 +71,9 @@ class MatchItem(HTModel):
     away_goals: Optional[int] = HTField('AwayGoals')
     status: str = HTField('Status')
     orders_given: Optional[bool] = HTField('OrdersGiven')
+    home_statement: Optional[str] = HTField('HomeStatement', version='>=3.0')
+    away_statement: Optional[str] = HTField('AwayStatement', version='>=3.0')
+    fan_match_expectation: Optional[int] = HTField('FanMatchExpectation', version='>=3.0')
 
 
 class MatchItemTeam(HTModel):
