@@ -8,7 +8,7 @@ class RequestManagerCompendium(HTModel):
     Manager Compendium - Request arguments
     """
     SOURCE_FILE = "managercompendium"
-    LAST_VERSION = "1.5"
+    LAST_VERSION = "1.8"
 
     _r_user_id: Optional[int] = HTInitVar(param='userID', init_arg='user_id', fill_with='id')
 
@@ -24,6 +24,7 @@ class ManagerCompendium(RequestManagerCompendium):
     language: 'Language' = HTField(path='Manager/Language')
     country: 'Country' = HTField(path='Manager/Country')
     currency: 'Currency' = HTField(path='Manager/Currency')
+    has_manager_license: bool = HTField(path='Manager/HasManagerLicense', version='>=1.8')
     teams: List['TeamItem'] = HTField(path='Manager/Teams', items='Team')
     national_teams_coach: List['NationalTeamItem'] = HTField(path='Manager/NationalTeamCoach',
                                                              items='NationalTeam')
@@ -63,6 +64,8 @@ class TeamItem(HTModel):
     """
     id: int = HTField(path='TeamId')
     name: str = HTField(path='TeamName')
+    gender_id: int = HTField(path='GenderID', version='>=1.6')
+    league_system_id: int = HTField(path='LeagueSystemID', version='>=1.7')
     arena: 'TeamItemArena' = HTField(path='Arena')
     league: 'TeamItemLeague' = HTField(path='League')
     country: 'TeamItemCountry' = HTField(path='Country')
@@ -116,9 +119,9 @@ class TeamItemYouthTeam(HTModel):
     """
     Manager Compendium -> Teams -> Team item -> Youth team
     """
-    id: int = HTField(path='YouthTeamId')
-    name: str = HTField(path='YouthTeamName')
-    league: 'TeamItemYouthTeamLeague' = HTField(path='YouthLeague')
+    id: Optional[int] = HTField(path='YouthTeamId')
+    name: Optional[str] = HTField(path='YouthTeamName')
+    league: Optional['TeamItemYouthTeamLeague'] = HTField(path='YouthLeague')
 
 
 class TeamItemYouthTeamLeague(HTModel):

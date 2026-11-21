@@ -1,0 +1,86 @@
+<HattrickData>
+  <FileName>managercompendium.xml</FileName>
+  <Version>1.8</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 19:19:35</FetchedDate>
+  <Manager>
+    <UserId>9638716</UserId>
+    <Loginname>F0977886-AA64-4C97-9187-DE8D88AC73DA</Loginname>
+    <SupporterTier>none</SupporterTier>
+    <LastLogins>
+      <LoginTime>2025-02-03 15:51:03 : 81.169.***.***</LoginTime>
+    </LastLogins>
+    <Language>
+      <LanguageId>5</LanguageId>
+      <LanguageName>Français</LanguageName>
+    </Language>
+    <Country>
+      <CountryId>38</CountryId>
+      <CountryName>Belgium</CountryName>
+    </Country>
+    <Currency>
+      <CurrencyName>€</CurrencyName>
+      <CurrencyRate>10</CurrencyRate>
+    </Currency>
+    <HasManagerLicense>True</HasManagerLicense>
+    <Teams>
+      <Team>
+        <TeamId>0</TeamId>
+        <TeamName />
+        <GenderID>0</GenderID>
+        <LeagueSystemID>0</LeagueSystemID>
+        <Arena>
+          <ArenaId>0</ArenaId>
+          <ArenaName />
+        </Arena>
+        <League>
+          <LeagueId>0</LeagueId>
+          <LeagueName />
+          <Season>0</Season>
+        </League>
+        <Country>
+          <CountryId>0</CountryId>
+          <CountryName>Hattrick International</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>0</LeagueLevelUnitId>
+          <LeagueLevelUnitName />
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>0</RegionId>
+          <RegionName />
+        </Region>
+        <YouthTeam />
+      </Team>
+    </Teams>
+    <NationalTeamCoach />
+    <NationalTeamAssistant />
+    <Avatar>
+      <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/bodies/f2man4b.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/faces/f2l.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/beards/f2b1i.png</Image>
+      </Layer>
+      <Layer x="25" y="26">
+        <Image>/Img/Avatar/eyes/e4c.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/mouths/f2bem37c.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/noses/f2ben18.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/hair/f2h1i.png</Image>
+      </Layer>
+    </Avatar>
+  </Manager>
+</HattrickData>

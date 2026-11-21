@@ -24,7 +24,7 @@ def test_get_secondary_team(mocked_chpp):
     user = team.user.details()
     assert isinstance(user, HTUser)
     assert user.id == 9638716
-    assert user.username == "Conteur_Merlin"
+    assert user.username == "F0977886-AA64-4C97-9187-DE8D88AC73DA"
 
     user_match = re.match(USER_PATTERN, user.url)
     assert user_match is not None
