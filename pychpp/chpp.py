@@ -399,6 +399,7 @@ class CHPPXml(CHPPBase):
             search_type: int = None,
             search_language_id: int = None,
             page_index: int = None,
+            user_id: int = None,
             **kwargs,
     ) -> alliances.Alliances:
 
@@ -408,6 +409,7 @@ class CHPPXml(CHPPBase):
             search_for=search_for,
             search_language_id=search_language_id,
             page_index=page_index,
+            user_id=user_id,
             **kwargs,
         )
 
