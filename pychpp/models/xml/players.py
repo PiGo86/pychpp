@@ -11,7 +11,7 @@ class RequestPlayers(HTModel):
     Players - Request arguments
     """
     SOURCE_FILE = 'players'
-    LAST_VERSION = '2.6'
+    LAST_VERSION = '2.8'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
     _r_order_by: Optional[str] = HTInitVar('orderBy', init_arg='order_by')
@@ -92,6 +92,7 @@ class BasePlayersTeamPlayerItem(HTModel):
     number: int = HTField('PlayerNumber')
     age: int = HTField('Age')
     age_days: int = HTField('AgeDays')
+    gender_id: int = HTField('GenderID', version='>=2.8')
     tsi: int = HTField('TSI')
     form: int = HTField('PlayerForm')
     statement: Optional[str] = HTField('Statement')
@@ -107,6 +108,8 @@ class BasePlayersTeamPlayerItem(HTModel):
     friendlies_goals: Optional[int] = HTField('FriendliesGoals')
     career_goals: int = HTField('CareerGoals')
     career_hattricks: int = HTField('CareerHattricks')
+    assists_current_team: int = HTField('AssistsCurrentTeam', version='>=2.7')
+    career_assists: int = HTField('CareerAssists', version='>=2.7')
     specialty: int = HTField('Specialty')
     transfer_listed: bool = HTField('TransferListed')
     national_team_id: int = HTField('NationalTeamID')
