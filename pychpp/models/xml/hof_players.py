@@ -41,6 +41,6 @@ class PlayerItem(HTModel):
     matches_in_club: Optional[int] = HTField('MatchesInClub', version='>=1.3')
     best_performance_value: Optional[float] = HTField('BestPerformanceValue', version='>=1.3')
     no_of_times_training_match_hero: Optional[int] = HTField('NoOfTimesTrainingMatchHero',
-                                                              version='>=1.3')
+                                                             version='>=1.3')
     faithful_to_the_club: Optional[int] = HTField('FaithfulToTheClub', version='>=1.3')
     no_of_clean_sheet: Optional[int] = HTField('NoOfCleanSheet', version='>=1.3')
