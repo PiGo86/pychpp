@@ -9,7 +9,7 @@ from .conftest import TEAM_PATTERN, USER_PATTERN, YOUTH_TEAM_PATTERN, ARENA_PATT
 
 
 def test_get_secondary_team(mocked_chpp):
-    team = mocked_chpp.team(id_=1755350)
+    team = mocked_chpp.team(id_=1755350, version='3.7')
 
     assert isinstance(team, HTTeam)
     assert team.id == 1755350

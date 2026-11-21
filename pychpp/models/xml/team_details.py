@@ -10,7 +10,7 @@ class RequestTeamDetails(HTModel):
     """
 
     SOURCE_FILE = 'teamdetails'
-    LAST_VERSION = '3.7'
+    LAST_VERSION = '4.0'
 
     _r_team_id: Optional[int] = HTInitVar('teamID', init_arg='team_id')
     _r_user_id: Optional[int] = HTInitVar('userID', init_arg='user_id')
@@ -35,6 +35,7 @@ class User(HTModel):
     """
     id: int = HTField('UserID')
     language: Optional['UserLanguage'] = HTField('Language')
+    currency: Optional['UserCurrency'] = HTField('Currency', version='>=4.0')
     supporter_tier: str = HTField('SupporterTier')
     login_name: str = HTField('Loginname')
     name: str = HTField('Name')
@@ -53,6 +54,14 @@ class UserLanguage(HTModel):
     """
     id: int = HTField('LanguageID')
     name: str = HTField('LanguageName')
+
+
+class UserCurrency(HTModel):
+    """
+    Team Details -> User -> Currency
+    """
+    name: str = HTField('CurrencyName')
+    rate: float = HTField('CurrencyRate')
 
 
 class NationalTeamItem(HTModel):
@@ -74,6 +83,8 @@ class TeamItem(HTModel):
     is_primary_club: bool = HTField('IsPrimaryClub')
     founded_date: datetime = HTField('FoundedDate')
     is_deactivated: bool = HTField('IsDeactivated', version='>=3.7')
+    gender_id: int = HTField('GenderID', version='>=3.8')
+    league_system_id: int = HTField('LeagueSystemID', version='>=3.9')
     arena: 'TeamItemArena' = HTField('Arena')
     league: 'TeamItemLeague' = HTField('League')
     country: 'TeamItemCountry' = HTField('Country')

@@ -1,0 +1,137 @@
+<HattrickData>
+  <FileName>teamdetails.xml</FileName>
+  <Version>4.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 16:36:29</FetchedDate>
+  <User>
+    <UserID>1728698</UserID>
+    <Language>
+      <LanguageID>5</LanguageID>
+      <LanguageName>Français</LanguageName>
+    </Language>
+    <Currency>
+      <CurrencyName>€</CurrencyName>
+      <CurrencyRate>10</CurrencyRate>
+    </Currency>
+    <SupporterTier>none</SupporterTier>
+    <Loginname>Jean-Mi</Loginname>
+    <Name>HIDDEN</Name>
+    <ICQ />
+    <SignupDate>2016-07-14 18:12:39</SignupDate>
+    <ActivationDate>2017-09-09 17:09:00</ActivationDate>
+    <LastLoginDate>2026-11-21 11:47:57</LastLoginDate>
+    <HasManagerLicense>True</HasManagerLicense>
+    <NationalTeams />
+  </User>
+  <Teams>
+    <Team>
+      <TeamID>1165592</TeamID>
+      <TeamName>Les Poitevins de La Chapelle</TeamName>
+      <ShortTeamName>Poitevins</ShortTeamName>
+      <IsPrimaryClub>True</IsPrimaryClub>
+      <FoundedDate>2017-09-09 17:09:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
+      <GenderID>1</GenderID>
+      <LeagueSystemID>1</LeagueSystemID>
+      <Arena>
+        <ArenaID>1162154</ArenaID>
+        <ArenaName>Stade de La Chapelle</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>5</LeagueID>
+        <LeagueName>France</LeagueName>
+      </League>
+      <Country>
+        <CountryID>5</CountryID>
+        <CountryName>France</CountryName>
+      </Country>
+      <Region>
+        <RegionID>148</RegionID>
+        <RegionName>Poitou-Charentes</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>421746800</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>73592</LeagueLevelUnitID>
+        <LeagueLevelUnitName>VII.777</LeagueLevelUnitName>
+        <LeagueLevel>7</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>False</IsBot>
+      </BotStatus>
+      <Cup>
+        <StillInCup>True</StillInCup>
+        <CupID>1383</CupID>
+        <CupName>Consolante des D.VII</CupName>
+        <CupLeagueLevel>7</CupLeagueLevel>
+        <CupLevel>3</CupLevel>
+        <CupLevelIndex>1</CupLevelIndex>
+        <MatchRound>1</MatchRound>
+        <MatchRoundsLeft>8</MatchRoundsLeft>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>232738</GlobalRanking>
+        <LeagueRanking>9959</LeagueRanking>
+        <RegionRanking>211</RegionRanking>
+        <PowerRating>298</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>0</FriendlyTeamID>
+      <NumberOfVictories>0</NumberOfVictories>
+      <NumberOfUndefeated>0</NumberOfUndefeated>
+      <TeamRank>10504</TeamRank>
+      <Fanclub>
+        <FanclubID>656629</FanclubID>
+        <FanclubName>Les Exilés du Poitou</FanclubName>
+        <FanclubSize>1370</FanclubSize>
+      </Fanclub>
+      <LogoURL>https://res.hattrick.org/teamlogo/12/117/1166/1165592/1165592.png</LogoURL>
+      <YouthTeamID>2942691</YouthTeamID>
+      <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+      <NumberOfVisits>0</NumberOfVisits>
+      <TrophyList>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>79</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>21672</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+          <GainedDate>2021-12-04 02:59:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>76</TrophySeason>
+          <LeagueLevel>5</LeagueLevel>
+          <LeagueLevelUnitId>21672</LeagueLevelUnitId>
+          <LeagueLevelUnitName>V.96</LeagueLevelUnitName>
+          <GainedDate>2021-01-02 04:11:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/v.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+        <Trophy>
+          <TrophyTypeId>17</TrophyTypeId>
+          <TrophySeason>72</TrophySeason>
+          <LeagueLevel>6</LeagueLevel>
+          <LeagueLevelUnitId>36378</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VI.390</LeagueLevelUnitName>
+          <GainedDate>2019-10-12 02:55:00</GainedDate>
+          <ImageUrl>/App_Themes/Standard/Images/Trophies/vi.png</ImageUrl>
+          <CupLeagueLevel />
+          <CupLevel />
+          <CupLevelIndex />
+        </Trophy>
+      </TrophyList>
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+  </Teams>
+</HattrickData>
