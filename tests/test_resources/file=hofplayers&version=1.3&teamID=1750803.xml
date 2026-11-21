@@ -1,0 +1,188 @@
+<HattrickData>
+  <FileName>hofplayers.xml</FileName>
+  <Version>1.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 17:44:25</FetchedDate>
+  <PlayerList>
+    <Player>
+      <PlayerId>415400436</PlayerId>
+      <FirstName>Henning</FirstName>
+      <NickName />
+      <LastName>Eisgruber</LastName>
+      <Age>54</Age>
+      <NextBirthday>2027-02-03 00:00:00</NextBirthday>
+      <CountryID>3</CountryID>
+      <ArrivalDate>2019-07-01 20:10:00</ArrivalDate>
+      <ExpertType>1</ExpertType>
+      <HofDate>2023-12-06 08:15:00</HofDate>
+      <HofAge>44</HofAge>
+      <MatchesInClub>161</MatchesInClub>
+      <BestPerformanceValue>9</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>2</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1619</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>437308836</PlayerId>
+      <FirstName>Cédric</FirstName>
+      <NickName />
+      <LastName>Jimenez</LastName>
+      <Age>46</Age>
+      <NextBirthday>2027-02-19 00:00:00</NextBirthday>
+      <CountryID>5</CountryID>
+      <ArrivalDate>2018-07-21 11:15:00</ArrivalDate>
+      <ExpertType>4</ExpertType>
+      <HofDate>2024-10-05 18:19:00</HofDate>
+      <HofAge>39</HofAge>
+      <MatchesInClub>212</MatchesInClub>
+      <BestPerformanceValue>5</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>0</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>2268</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>410582992</PlayerId>
+      <FirstName>Petr</FirstName>
+      <NickName />
+      <LastName>Mamochkin</LastName>
+      <Age>54</Age>
+      <NextBirthday>2026-12-14 00:00:00</NextBirthday>
+      <CountryID>7</CountryID>
+      <ArrivalDate>2019-07-01 20:01:00</ArrivalDate>
+      <ExpertType>1</ExpertType>
+      <HofDate>2023-11-16 06:36:00</HofDate>
+      <HofAge>44</HofAge>
+      <MatchesInClub>121</MatchesInClub>
+      <BestPerformanceValue>9</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>1</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1599</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>422673507</PlayerId>
+      <FirstName>Corné</FirstName>
+      <NickName />
+      <LastName>Zijp</LastName>
+      <Age>52</Age>
+      <NextBirthday>2027-02-02 00:00:00</NextBirthday>
+      <CountryID>12</CountryID>
+      <ArrivalDate>2018-04-08 23:42:00</ArrivalDate>
+      <ExpertType>7</ExpertType>
+      <HofDate>2023-01-16 21:14:00</HofDate>
+      <HofAge>39</HofAge>
+      <MatchesInClub>223</MatchesInClub>
+      <BestPerformanceValue>8</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>5</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1744</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>412554932</PlayerId>
+      <FirstName>Serdar</FirstName>
+      <NickName />
+      <LastName>Soydinç</LastName>
+      <Age>53</Age>
+      <NextBirthday>2027-01-13 00:00:00</NextBirthday>
+      <CountryID>31</CountryID>
+      <ArrivalDate>2017-11-30 17:48:00</ArrivalDate>
+      <ExpertType>3</ExpertType>
+      <HofDate>2025-08-19 00:24:00</HofDate>
+      <HofAge>49</HofAge>
+      <MatchesInClub>227</MatchesInClub>
+      <BestPerformanceValue>5</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>0</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>2819</FaithfulToTheClub>
+      <NoOfCleanSheet>65</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>423952089</PlayerId>
+      <FirstName>Artem</FirstName>
+      <NickName />
+      <LastName>Letnikov</LastName>
+      <Age>49</Age>
+      <NextBirthday>2027-01-14 00:00:00</NextBirthday>
+      <CountryID>51</CountryID>
+      <ArrivalDate>2020-05-14 09:09:00</ArrivalDate>
+      <ExpertType>5</ExpertType>
+      <HofDate>2023-11-18 23:16:00</HofDate>
+      <HofAge>39</HofAge>
+      <MatchesInClub>169</MatchesInClub>
+      <BestPerformanceValue>9</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>5</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1283</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>407173138</PlayerId>
+      <FirstName>Peter</FirstName>
+      <NickName />
+      <LastName>Hornberg</LastName>
+      <Age>54</Age>
+      <NextBirthday>2026-11-29 00:00:00</NextBirthday>
+      <CountryID>3</CountryID>
+      <ArrivalDate>2019-07-01 13:53:00</ArrivalDate>
+      <ExpertType>2</ExpertType>
+      <HofDate>2024-12-05 23:08:00</HofDate>
+      <HofAge>48</HofAge>
+      <MatchesInClub>160</MatchesInClub>
+      <BestPerformanceValue>9</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>11</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1984</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>426606995</PlayerId>
+      <FirstName>Claus Christoph</FirstName>
+      <NickName />
+      <LastName>Lewandowski</LastName>
+      <Age>49</Age>
+      <NextBirthday>2026-12-19 00:00:00</NextBirthday>
+      <CountryID>3</CountryID>
+      <ArrivalDate>2020-05-07 22:48:00</ArrivalDate>
+      <ExpertType>12</ExpertType>
+      <HofDate>2024-04-17 12:01:00</HofDate>
+      <HofAge>41</HofAge>
+      <MatchesInClub>206</MatchesInClub>
+      <BestPerformanceValue>9.5</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>8</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1441</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>426797987</PlayerId>
+      <FirstName>Mbacké</FirstName>
+      <NickName />
+      <LastName>Haïbalo</LastName>
+      <Age>48</Age>
+      <NextBirthday>2027-01-18 00:00:00</NextBirthday>
+      <CountryID>5</CountryID>
+      <ArrivalDate>2020-01-10 22:57:00</ArrivalDate>
+      <ExpertType>2</ExpertType>
+      <HofDate>2024-03-01 22:40:00</HofDate>
+      <HofAge>39</HofAge>
+      <MatchesInClub>221</MatchesInClub>
+      <BestPerformanceValue>9</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>7</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1512</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+    <Player>
+      <PlayerId>438331347</PlayerId>
+      <FirstName>Ghislain</FirstName>
+      <NickName />
+      <LastName>Bernard</LastName>
+      <Age>43</Age>
+      <NextBirthday>2026-12-28 00:00:00</NextBirthday>
+      <CountryID>5</CountryID>
+      <ArrivalDate>2019-06-29 17:22:00</ArrivalDate>
+      <ExpertType>7</ExpertType>
+      <HofDate>2025-03-02 23:14:00</HofDate>
+      <HofAge>38</HofAge>
+      <MatchesInClub>179</MatchesInClub>
+      <BestPerformanceValue>11</BestPerformanceValue>
+      <NoOfTimesTrainingMatchHero>33</NoOfTimesTrainingMatchHero>
+      <FaithfulToTheClub>1118</FaithfulToTheClub>
+      <NoOfCleanSheet>0</NoOfCleanSheet>
+    </Player>
+  </PlayerList>
+</HattrickData>
