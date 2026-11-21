@@ -17,7 +17,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
                                matches, match_orders, national_team_matches, national_players,
-                               player_events, search, staff_avatars, staff_list, supporters,
+                               national_prospect_players, player_events, search, staff_avatars,
+                               staff_list, supporters,
                                tournament_details, tournament_fixtures, tournament_league_tables,
                                tournament_list, training_events, transfer_search, transfers_player,
                                world_languages, youth_avatars, youth_league_details,
@@ -807,6 +808,14 @@ class CHPPXml(CHPPBase):
         else:
             raise ValueError("if set, 'action_type' must be equal to"
                              "'view', 'setmatchorder' or 'SupporterStats'")
+
+    def xml_national_prospect_players(
+            self, team_id: int, player_category_id: int = None, **kwargs,
+    ) -> national_prospect_players.NationalProspectPlayers:
+
+        return national_prospect_players.NationalProspectPlayers(
+            chpp=self, team_id=team_id, player_category_id=player_category_id, **kwargs,
+        )
 
     def xml_player_events(
             self, player_id: int = None, **kwargs,
