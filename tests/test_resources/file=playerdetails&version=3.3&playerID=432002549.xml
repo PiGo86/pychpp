@@ -1,0 +1,182 @@
+<HattrickData>
+  <FileName>playerdetails.xml</FileName>
+  <Version>3.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 21:32:37</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Player>
+    <PlayerID>432002549</PlayerID>
+    <FirstName>Benoît</FirstName>
+    <NickName />
+    <LastName>Thomas</LastName>
+    <PlayerNumber>100</PlayerNumber>
+    <Age>46</Age>
+    <AgeDays>53</AgeDays>
+    <NextBirthDay>2027-01-19 00:00:00</NextBirthDay>
+    <GenderID>1</GenderID>
+    <ArrivalDate>2024-04-04 07:52:00</ArrivalDate>
+    <PlayerForm>3</PlayerForm>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Statement />
+    <PlayerLanguage>Français</PlayerLanguage>
+    <PlayerLanguageID>5</PlayerLanguageID>
+    <TrainerData>
+      <TrainerType>0</TrainerType>
+      <TrainerSkillLevel>5</TrainerSkillLevel>
+    </TrainerData>
+    <OwningTeam>
+      <TeamID>924535</TeamID>
+      <TeamName>FC Ausgefall Verléierer</TeamName>
+      <LeagueID>84</LeagueID>
+    </OwningTeam>
+    <Salary>3000</Salary>
+    <IsAbroad>True</IsAbroad>
+    <Agreeability>2</Agreeability>
+    <Aggressiveness>3</Aggressiveness>
+    <Honesty>3</Honesty>
+    <Experience>16</Experience>
+    <Loyalty>20</Loyalty>
+    <MotherClubBonus>False</MotherClubBonus>
+    <MotherClub>
+      <TeamID>586602</TeamID>
+      <TeamName>toujours 2.0</TeamName>
+    </MotherClub>
+    <Leadership>4</Leadership>
+    <Specialty>5</Specialty>
+    <NativeCountryID>5</NativeCountryID>
+    <NativeLeagueID>5</NativeLeagueID>
+    <NativeLeagueName>France</NativeLeagueName>
+    <TSI>0</TSI>
+    <PlayerSkills>
+      <StaminaSkill>1</StaminaSkill>
+    </PlayerSkills>
+    <Caps>0</Caps>
+    <CapsU20>0</CapsU20>
+    <CareerGoals>99</CareerGoals>
+    <CareerHattricks>2</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <CupGoals>0</CupGoals>
+    <FriendliesGoals>0</FriendliesGoals>
+    <MatchesCurrentTeam>27</MatchesCurrentTeam>
+    <GoalsCurrentTeam>2</GoalsCurrentTeam>
+    <AssistsCurrentTeam>0</AssistsCurrentTeam>
+    <CareerAssists>4</CareerAssists>
+    <TransferListed>False</TransferListed>
+    <TransferDetails />
+    <FamilyRelation />
+    <TrophyList>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>924535</TeamId>
+        <TeamName>FC Ausgefall Verléierer</TeamName>
+        <TrophySeason>66</TrophySeason>
+        <LeagueLevel>4</LeagueLevel>
+        <LeagueLevelUnitId>115334</LeagueLevelUnitId>
+        <LeagueLevelUnitName>IV.31</LeagueLevelUnitName>
+        <GainedDate>2024-05-20 12:05:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>924535</TeamId>
+        <TeamName>FC Ausgefall Verléierer</TeamName>
+        <TrophySeason>67</TrophySeason>
+        <LeagueLevel>4</LeagueLevel>
+        <LeagueLevelUnitId>115334</LeagueLevelUnitId>
+        <LeagueLevelUnitName>IV.31</LeagueLevelUnitName>
+        <GainedDate>2024-09-07 23:45:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>924535</TeamId>
+        <TeamName>FC Ausgefall Verléierer</TeamName>
+        <TrophySeason>70</TrophySeason>
+        <LeagueLevel>4</LeagueLevel>
+        <LeagueLevelUnitId>115351</LeagueLevelUnitId>
+        <LeagueLevelUnitName>IV.48</LeagueLevelUnitName>
+        <GainedDate>2025-08-09 23:45:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>924535</TeamId>
+        <TeamName>FC Ausgefall Verléierer</TeamName>
+        <TrophySeason>72</TrophySeason>
+        <LeagueLevel>4</LeagueLevel>
+        <LeagueLevelUnitId>115351</LeagueLevelUnitId>
+        <LeagueLevelUnitName>IV.48</LeagueLevelUnitName>
+        <GainedDate>2026-03-22 10:52:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>924535</TeamId>
+        <TeamName>FC Ausgefall Verléierer</TeamName>
+        <TrophySeason>74</TrophySeason>
+        <LeagueLevel>4</LeagueLevel>
+        <LeagueLevelUnitId>115351</LeagueLevelUnitId>
+        <LeagueLevelUnitName>IV.48</LeagueLevelUnitName>
+        <GainedDate>2026-10-31 23:45:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>586602</TeamId>
+        <TeamName>toujours 2.0</TeamName>
+        <TrophySeason>79</TrophySeason>
+        <LeagueLevel>5</LeagueLevel>
+        <LeagueLevelUnitId>21736</LeagueLevelUnitId>
+        <LeagueLevelUnitName>V.160</LeagueLevelUnitName>
+        <GainedDate>2021-12-04 02:50:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>2110888</TeamId>
+        <TeamName>Kaakkurin ponnistus</TeamName>
+        <TrophySeason>4</TrophySeason>
+        <LeagueLevel>6</LeagueLevel>
+        <LeagueLevelUnitId>260778</LeagueLevelUnitId>
+        <LeagueLevelUnitName>VI.173</LeagueLevelUnitName>
+        <GainedDate>2023-06-16 13:22:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>586602</TeamId>
+        <TeamName>toujours 2.0</TeamName>
+        <TrophySeason>73</TrophySeason>
+        <LeagueLevel>6</LeagueLevel>
+        <LeagueLevelUnitId>36584</LeagueLevelUnitId>
+        <LeagueLevelUnitName>VI.596</LeagueLevelUnitName>
+        <GainedDate>2020-02-01 03:59:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>586602</TeamId>
+        <TeamName>toujours 2.0</TeamName>
+        <TrophySeason>76</TrophySeason>
+        <LeagueLevel>6</LeagueLevel>
+        <LeagueLevelUnitId>36366</LeagueLevelUnitId>
+        <LeagueLevelUnitName>VI.378</LeagueLevelUnitName>
+        <GainedDate>2021-01-02 04:01:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>586602</TeamId>
+        <TeamName>toujours 2.0</TeamName>
+        <TrophySeason>78</TrophySeason>
+        <LeagueLevel>6</LeagueLevel>
+        <LeagueLevelUnitId>36630</LeagueLevelUnitId>
+        <LeagueLevelUnitName>VI.642</LeagueLevelUnitName>
+        <GainedDate>2021-08-14 04:21:00</GainedDate>
+      </Trophy>
+      <Trophy>
+        <TrophyTypeId>17</TrophyTypeId>
+        <TeamId>586602</TeamId>
+        <TeamName>toujours 2.0</TeamName>
+        <TrophySeason>84</TrophySeason>
+        <LeagueLevel>6</LeagueLevel>
+        <LeagueLevelUnitId>36272</LeagueLevelUnitId>
+        <LeagueLevelUnitName>VI.284</LeagueLevelUnitName>
+        <GainedDate>2023-06-17 02:37:00</GainedDate>
+      </Trophy>
+    </TrophyList>
+  </Player>
+</HattrickData>
