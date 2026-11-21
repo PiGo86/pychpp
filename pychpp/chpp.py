@@ -389,9 +389,9 @@ class CHPPBase:
 
 class CHPPXml(CHPPBase):
 
-    def xml_achievements(self, user_id: int = None) -> achievements.Achievements:
+    def xml_achievements(self, user_id: int = None, **kwargs) -> achievements.Achievements:
 
-        return achievements.Achievements(chpp=self, user_id=user_id)
+        return achievements.Achievements(chpp=self, user_id=user_id, **kwargs)
 
     def xml_alliances(
             self,
