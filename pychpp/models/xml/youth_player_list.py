@@ -11,7 +11,7 @@ class RequestYouthPlayerList(HTModel):
     Youth Player List - Request arguments
     """
     SOURCE_FILE = 'youthplayerlist'
-    LAST_VERSION = '1.2'
+    LAST_VERSION = '1.4'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
     _r_order_by: Optional[str] = HTInitVar('orderBy', init_arg='order_by')
@@ -42,6 +42,7 @@ class YouthPlayerListListPlayerItem(HTModel):
     first_name: str = HTField('FirstName')
     nick_name: str = HTField('NickName')
     last_name: str = HTField('LastName')
+    gender_id: int = HTField('GenderID', version='>=1.3')
 
 
 class YouthPlayerListDetailsPlayerItem(YouthPlayerListListPlayerItem):
@@ -78,6 +79,7 @@ class OwningYouthTeam(HTModel):
     id: int = HTField('YouthTeamID')
     name: str = HTField('YouthTeamName')
     league_id: int = HTField('YouthTeamLeagueID')
+    user_id: int = HTField('UserId', version='>=1.4')
     senior_team: 'OwningYouthTeamSeniorTeam' = HTField('SeniorTeam')
 
 
