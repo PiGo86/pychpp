@@ -89,6 +89,11 @@ class CHPPBase:
 
         error_code = int(xml_data.find("ErrorCode").text)
 
+        if error_code == 1:
+            raise ht_error.HTAccessDeniedError(
+                "Access to specified parameters or file was denied : "
+                + xml_data.find("Error").text)
+
         if error_code == 50:
             raise ht_error.HTUnknownTeamIdError(
                 "The requested team id is unknown")
@@ -961,10 +966,11 @@ class CHPPXml(CHPPBase):
             self, action_type: str = 'view', team_id: int = None,
             training_type: int = None, training_level: int = None,
             training_level_stamina: int = None, league_id: int = None,
-            **kwargs,
+            from_date: datetime = None, **kwargs,
     ) -> Union[training.TrainingView,
                training.TrainingSetTraining,
-               training.TrainingStats]:
+               training.TrainingStats,
+               training.TrainingHistoryView]:
 
         if action_type == 'view':
             return training.TrainingView(
@@ -985,9 +991,15 @@ class CHPPXml(CHPPBase):
                 training_level_stamina=training_level_stamina, **kwargs,
             )
 
+        elif action_type == 'history':
+            return training.TrainingHistoryView(
+                chpp=self, action_type=action_type, team_id=team_id,
+                from_date=from_date, **kwargs,
+            )
+
         else:
             raise ValueError("if set, 'action_type' must be equal to"
-                             "'view', 'setTraining' or 'stats'")
+                             "'view', 'setTraining', 'stats' or 'history'")
 
     def xml_training_events(
             self, player_id: int, **kwargs,
