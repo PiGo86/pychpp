@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
 from pychpp.models.ht_init_var import HTInitVar
@@ -10,7 +10,7 @@ class RequestNationalTeamDetails(HTModel):
     National Team Details - Request arguments
     """
     SOURCE_FILE = 'nationalteamdetails'
-    LAST_VERSION = '1.9'
+    LAST_VERSION = '2.0'
 
     _r_team_id: int = HTInitVar('teamID', init_arg='team_id')
 
@@ -25,6 +25,8 @@ class NationalTeamDetails(RequestNationalTeamDetails):
     name: str = HTField('Team/TeamName')
     short_name: str = HTField('Team/ShortTeamName')
     national_coach: 'NationalCoach' = HTField('Team/NationalCoach')
+    assistant_coach: Optional['AssistantCoach'] = HTField('Team/AssistantCoach', version='>=2.0')
+    scouts: Optional[List['Scout']] = HTField('Team/Scouts', items='Scout', version='>=2.0')
     league: 'League' = HTField('Team/League')
     home_page: str = HTField('Team/HomePage')
     logo: str = HTField('Team/Logo')
@@ -45,6 +47,22 @@ class NationalCoach(HTModel):
     """
     id: int = HTField('NationalCoachUserID')
     login_name: str = HTField('NationalCoachLoginname')
+
+
+class AssistantCoach(HTModel):
+    """
+    National Team Details -> Assistant Coach (empty if the team has no assistant coach)
+    """
+    id: Optional[int] = HTField('UserID')
+    login_name: Optional[str] = HTField('Loginname')
+
+
+class Scout(HTModel):
+    """
+    National Team Details -> Scouts -> Scout item
+    """
+    id: Optional[int] = HTField('UserID')
+    login_name: Optional[str] = HTField('Loginname')
 
 
 class League(HTModel):
