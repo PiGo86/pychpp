@@ -1,0 +1,1030 @@
+<HattrickData>
+  <FileName>playerstats.xml</FileName>
+  <Version>1.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-22 00:36:56</FetchedDate>
+  <Player>
+    <PlayerID>430759322</PlayerID>
+    <FirstName>Frédérik</FirstName>
+    <NickName />
+    <LastName>Rivière</LastName>
+    <PlayerNumber>1</PlayerNumber>
+    <OwningTeam>
+      <TeamID>1165592</TeamID>
+      <TeamName>Les Poitevins de La Chapelle</TeamName>
+      <LeagueID>5</LeagueID>
+    </OwningTeam>
+    <MatchStats>
+      <Match>
+        <MatchID>773525893</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-11-21 21:10:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>FC TAIZ 2</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>69</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>3</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>775863574</MatchID>
+        <MatchType>3</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-11-18 15:15:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Fc Drouais</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>66</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>3</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>773525887</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-11-14 21:10:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Nord-Pas-de-Calais FC</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>62</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>3</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>772433340</MatchID>
+        <MatchType>3</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-11-11 15:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Fc apocalypse 1</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>59</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>4</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781755</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-10-24 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>SC Meaux Academy</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>41</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>4</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781756</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-10-17 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Montluc</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>34</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781750</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-10-10 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>olympique bouzoukakis</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>27</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>7</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781745</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-10-03 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>FC Saint-Lary Soulan</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>20</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>7</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781746</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-09-26 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>FC MONACCIA</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>13</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>7</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781740</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-09-19 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>ToulouzetteFC</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>51</Age>
+        <AgeDays>6</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>6</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781735</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-09-12 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Alan's Method</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>111</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>6</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781733</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-09-05 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Alan's Method</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>104</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>6</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781728</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-08-29 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>ToulouzetteFC</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>97</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>6</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781722</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-08-22 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>FC MONACCIA</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>90</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>6</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781720</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-08-15 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>FC Saint-Lary Soulan</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>83</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781719</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-08-08 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>olympique bouzoukakis</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>76</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>770851843</MatchID>
+        <MatchType>3</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-08-05 15:15:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Basse-Normandie AJ</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>73</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>4</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781711</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-08-01 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Montluc</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>69</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>4</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>770660611</MatchID>
+        <MatchType>3</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-07-29 15:15:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Footballeurs de rue</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>66</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>3</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>768781709</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-07-25 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>SC Meaux Academy</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>62</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>3</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>767303021</MatchID>
+        <MatchType>3</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-07-22 15:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>U.S. Le Saumon Barbaste</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>59</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>3</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492567</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-07-04 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>zofla</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>41</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>3</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492565</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-06-27 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>SIEMENS59239</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>34</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>4</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492559</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-06-20 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Fc Elancourt</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>27</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492556</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-06-13 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Celtis Australis FC</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>20</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>8</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492553</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-06-06 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>FC Fiasco Totale</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>13</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>8</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492548</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-05-30 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>foottotal</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>50</Age>
+        <AgeDays>6</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>8</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492544</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-05-23 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Supertatanne007</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>111</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>7</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492540</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-05-16 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Supertatanne007</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>104</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>7</PlayerForm>
+        <Stamina />
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>999</InjuryLevel>
+        <PlayedMinutes>0</PlayedMinutes>
+        <Rating>0</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions />
+      </Match>
+      <Match>
+        <MatchID>763492533</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-05-09 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>foottotal</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>97</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina>2</Stamina>
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>0</InjuryLevel>
+        <PlayedMinutes>94</PlayedMinutes>
+        <Rating>0.5</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions>
+          <Position>
+            <PositionCode>111</PositionCode>
+            <Minutes>94</Minutes>
+          </Position>
+        </Positions>
+      </Match>
+      <Match>
+        <MatchID>763492534</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-05-02 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>FC Fiasco Totale</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>90</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina>2</Stamina>
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>-1</InjuryLevel>
+        <PlayedMinutes>94</PlayedMinutes>
+        <Rating>0.5</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions>
+          <Position>
+            <PositionCode>102</PositionCode>
+            <Minutes>94</Minutes>
+          </Position>
+        </Positions>
+      </Match>
+      <Match>
+        <MatchID>763492529</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-04-25 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Celtis Australis FC</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>83</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina>2</Stamina>
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>-1</InjuryLevel>
+        <PlayedMinutes>95</PlayedMinutes>
+        <Rating>1</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions>
+          <Position>
+            <PositionCode>111</PositionCode>
+            <Minutes>95</Minutes>
+          </Position>
+        </Positions>
+      </Match>
+      <Match>
+        <MatchID>763492525</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-04-18 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Fc Elancourt</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>76</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina>2</Stamina>
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>-1</InjuryLevel>
+        <PlayedMinutes>95</PlayedMinutes>
+        <Rating>1</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions>
+          <Position>
+            <PositionCode>111</PositionCode>
+            <Minutes>95</Minutes>
+          </Position>
+        </Positions>
+      </Match>
+      <Match>
+        <MatchID>765687945</MatchID>
+        <MatchType>3</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-04-15 15:15:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>StArmel</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>73</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina>2</Stamina>
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>-1</InjuryLevel>
+        <PlayedMinutes>93</PlayedMinutes>
+        <Rating>1</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions>
+          <Position>
+            <PositionCode>111</PositionCode>
+            <Minutes>93</Minutes>
+          </Position>
+        </Positions>
+      </Match>
+      <Match>
+        <MatchID>763492520</MatchID>
+        <MatchType>1</MatchType>
+        <SourceSystem>Hattrick</SourceSystem>
+        <MatchDate>2026-04-11 21:00:00</MatchDate>
+        <HomeTeam>
+          <HomeTeamName>SIEMENS59239</HomeTeamName>
+        </HomeTeam>
+        <AwayTeam>
+          <AwayTeamName>Les Poitevins de La Chapelle</AwayTeamName>
+        </AwayTeam>
+        <IsWalkover>False</IsWalkover>
+        <Age>49</Age>
+        <AgeDays>69</AgeDays>
+        <TSI>0</TSI>
+        <PlayerForm>5</PlayerForm>
+        <Stamina>2</Stamina>
+        <Loyalty>20</Loyalty>
+        <Experience>5</Experience>
+        <GoalsInMatch>0</GoalsInMatch>
+        <YellowCardsInMatch>0</YellowCardsInMatch>
+        <RedCardsInMatch>0</RedCardsInMatch>
+        <InjuryLevel>-1</InjuryLevel>
+        <PlayedMinutes>93</PlayedMinutes>
+        <Rating>1</Rating>
+        <RatingEndOfGame>0</RatingEndOfGame>
+        <Positions>
+          <Position>
+            <PositionCode>111</PositionCode>
+            <Minutes>93</Minutes>
+          </Position>
+        </Positions>
+      </Match>
+    </MatchStats>
+  </Player>
+</HattrickData>
