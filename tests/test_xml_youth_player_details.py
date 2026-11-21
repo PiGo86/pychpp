@@ -4,7 +4,7 @@ from pychpp.models.xml.youth_player_details import YouthPlayerDetails
 
 def test_get_own_youth_player(mocked_chpp):
 
-    yp = mocked_chpp.youth_player(301741211)
+    yp = mocked_chpp.youth_player(301741211, version='1.2')
 
     assert yp.id == 301741211
     assert yp.first_name == "Akpa"
@@ -98,17 +98,36 @@ def test_get_own_youth_player(mocked_chpp):
 
 
 def test_get_not_owned_youth_player(mocked_chpp):
-    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=384579961)
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=384579961, version='1.2')
     assert isinstance(ypd, YouthPlayerDetails)
     assert ypd.skills is None
 
 
 def test_get_youth_player_midnight_arrival(mocked_chpp):
-    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=395385356)
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=395385356, version='1.2')
     assert isinstance(ypd, YouthPlayerDetails)
     assert ypd.arrival_date == HTDatetime.from_calendar(2025, 8, 4, 0, 0, 0)
 
 
 def test_get_youth_player_currently_playing(mocked_chpp):
-    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=395583001)
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=395583001, version='1.2')
     assert isinstance(ypd, YouthPlayerDetails)
+
+
+def test_youth_player_details_version_1_4(mocked_chpp):
+
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=301741224, version='1.4')
+    assert isinstance(ypd, YouthPlayerDetails)
+    assert ypd.id == 301741224
+    assert ypd.gender_id == 1
+    assert ypd.owning_youth_team.id == 2942691
+    assert ypd.owning_youth_team.user_id == 1728698
+    assert ypd.training_reports == []
+    assert ypd.skills is not None
+
+    ypd = mocked_chpp.xml_youth_player_details(youth_player_id=449911155, version='1.4')
+    assert isinstance(ypd, YouthPlayerDetails)
+    assert ypd.gender_id == 1
+    assert ypd.owning_youth_team.user_id == 14801244
+    assert ypd.training_reports == []
+    assert ypd.skills is None
