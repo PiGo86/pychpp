@@ -10,7 +10,7 @@ from .conftest import MATCH_LINEUP_PATTERN, PLAYER_PATTERN, YOUTH_PLAYER_PATTERN
 
 
 def test_get_match_lineup(mocked_chpp):
-    match_lineup = mocked_chpp.match_lineup(match_id=660688698, team_id=86324)
+    match_lineup = mocked_chpp.match_lineup(match_id=660688698, team_id=86324, version='2.1')
 
     assert isinstance(match_lineup, HTMatchLineup)
     assert isinstance(match_lineup.match.details(version='3.1'), HTMatch)
@@ -76,7 +76,7 @@ def test_get_match_lineup(mocked_chpp):
     assert sub.minute == 73
     assert sub.match_part == 2
 
-    ml2 = mocked_chpp.match_lineup(match_id=685566813, team_id=1750803)
+    ml2 = mocked_chpp.match_lineup(match_id=685566813, team_id=1750803, version='2.1')
 
     assert ml2.match.id == 685566813
     assert ml2.home_team.name == "Capdenaguet"
@@ -92,30 +92,30 @@ def test_get_match_lineup(mocked_chpp):
                                           ]
 
     # specific case : injured player is not replaced
-    ml3 = mocked_chpp.match_lineup(match_id=690094305, team_id=296272)
+    ml3 = mocked_chpp.match_lineup(match_id=690094305, team_id=296272, version='2.1')
 
     assert ml3.team_lineup.formations == [(0, "433"),
                                           (63, "333"),
                                           ]
 
-    ml4 = mocked_chpp.match_lineup(match_id=690183773, team_id=2053693)
+    ml4 = mocked_chpp.match_lineup(match_id=690183773, team_id=2053693, version='2.1')
 
     assert ml4.team_lineup.formations == [(0, "253"),
                                           (8, "153"),
                                           ]
 
     # test swap substitution
-    ml5 = mocked_chpp.match_lineup(match_id=685860616, team_id=113143)
+    ml5 = mocked_chpp.match_lineup(match_id=685860616, team_id=113143, version='2.1')
 
     assert ml5.team_lineup.formations == [(0, "352")]
 
     # other unreplaced player
-    ml6 = mocked_chpp.match_lineup(match_id=690328642, team_id=773670)
+    ml6 = mocked_chpp.match_lineup(match_id=690328642, team_id=773670, version='2.1')
 
     assert ml6.team_lineup.formations == [(0, "532"), (81, "432")]
 
     # goalkeeper replaced by field player
-    ml7 = mocked_chpp.match_lineup(match_id=693127128, team_id=291394)
+    ml7 = mocked_chpp.match_lineup(match_id=693127128, team_id=291394, version='2.1')
 
     assert ml7.team_lineup.formations == [(0, "352"),
                                           (77, "252"),
@@ -123,7 +123,7 @@ def test_get_match_lineup(mocked_chpp):
                                           ]
 
     # substitute player become captain and is swapped
-    ml8 = mocked_chpp.match_lineup(match_id=695301077, team_id=294798)
+    ml8 = mocked_chpp.match_lineup(match_id=695301077, team_id=294798, version='2.1')
 
     assert ml8.team_lineup.formations == [(0, "343"),
                                           (75, "253"),
@@ -133,7 +133,7 @@ def test_get_match_lineup(mocked_chpp):
 def test_get_youth_match_lineup(mocked_chpp):
     match_lineup = mocked_chpp.match_lineup(match_id=136016609,
                                             team_id=499165,
-                                            source_system='Youth',
+                                            source_system='Youth', version='2.1',
                                             )
 
     youth_player = match_lineup.team_lineup.ending_lineup_players[0]
