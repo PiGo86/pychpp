@@ -1017,6 +1017,8 @@ class CHPPXml(CHPPBase):
             skill_type_4: int = None, min_skill_value_4: int = None, max_skill_value_4: int = None,
             specialty: int = None, native_country_id: int = None,
             tsi_min: int = None, tsi_max: int = None, price_min: int = None, price_max: int = None,
+            salary_min: int = None, salary_max: int = None,
+            transfer_compare_avg_min: int = None, transfer_compare_avg_max: int = None,
             page_size: int = None, page_index: int = None, **kwargs,
     ) -> transfer_search.TransferSearch:
 
@@ -1034,6 +1036,9 @@ class CHPPXml(CHPPBase):
             min_skill_value_4=min_skill_value_4, max_skill_value_4=max_skill_value_4,
             specialty=specialty, native_country_id=native_country_id,
             tsi_min=tsi_min, tsi_max=tsi_max, price_min=price_min, price_max=price_max,
+            salary_min=salary_min, salary_max=salary_max,
+            transfer_compare_avg_min=transfer_compare_avg_min,
+            transfer_compare_avg_max=transfer_compare_avg_max,
             page_size=page_size, page_index=page_index, **kwargs,
         )
 

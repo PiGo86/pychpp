@@ -1,0 +1,923 @@
+<HattrickData>
+  <FileName>transfersearch.xml</FileName>
+  <Version>1.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 23:20:26</FetchedDate>
+  <TransferSearch>
+    <ItemCount>-1</ItemCount>
+    <PageSize>25</PageSize>
+    <PageIndex>0</PageIndex>
+    <TransferResults>
+      <TransferResult>
+        <PlayerId>497677283</PlayerId>
+        <FirstName>Clemente</FirstName>
+        <NickName />
+        <LastName>Lattarini</LastName>
+        <NativeCountryID>4</NativeCountryID>
+        <AskingPrice>5300000</AskingPrice>
+        <Deadline>2026-11-21 23:21:58</Deadline>
+        <HighestBid>12709200</HighestBid>
+        <BidderTeam>
+          <TeamID>568945</TeamID>
+          <TeamName>VI VON ZULUL</TeamName>
+        </BidderTeam>
+        <Details>
+          <Age>21</Age>
+          <AgeDays>56</AgeDays>
+          <Salary>8400</Salary>
+          <TSI>17290</TSI>
+          <PlayerForm>8</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>6</Leadership>
+          <Specialty>5</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>8</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>2</ScorerSkill>
+          <PassingSkill>9</PassingSkill>
+          <WingerSkill>9</WingerSkill>
+          <DefenderSkill>7</DefenderSkill>
+          <SetPiecesSkill>13</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>1600375</TeamID>
+            <TeamName>Atlético Birra</TeamName>
+            <LeagueId>36</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>496368891</PlayerId>
+        <FirstName>Erhan</FirstName>
+        <NickName />
+        <LastName>Tepir</LastName>
+        <NativeCountryID>31</NativeCountryID>
+        <AskingPrice>10</AskingPrice>
+        <Deadline>2026-11-21 23:30:48</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>21</Age>
+          <AgeDays>59</AgeDays>
+          <Salary>3300</Salary>
+          <TSI>1120</TSI>
+          <PlayerForm>8</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>5</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>8</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>5</ScorerSkill>
+          <PassingSkill>3</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>3</DefenderSkill>
+          <SetPiecesSkill>1</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>1708420</TeamID>
+            <TeamName>SyraX FC</TeamName>
+            <LeagueId>32</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>502698552</PlayerId>
+        <FirstName>Silvério</FirstName>
+        <NickName />
+        <LastName>Ribeiro</LastName>
+        <NativeCountryID>23</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-21 23:35:52</Deadline>
+        <HighestBid>10000</HighestBid>
+        <BidderTeam>
+          <TeamID>3522495</TeamID>
+          <TeamName>GKS ATOM</TeamName>
+        </BidderTeam>
+        <Details>
+          <Age>20</Age>
+          <AgeDays>50</AgeDays>
+          <Salary>3900</Salary>
+          <TSI>2190</TSI>
+          <PlayerForm>7</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>3</Leadership>
+          <Specialty>0</Specialty>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>6</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>6</DefenderSkill>
+          <SetPiecesSkill>4</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>565896</TeamID>
+            <TeamName>Foto Nandos</TeamName>
+            <LeagueId>25</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>512704080</PlayerId>
+        <FirstName>Zdenko</FirstName>
+        <NickName />
+        <LastName>Štefanović</LastName>
+        <NativeCountryID>63</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-21 23:37:44</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>85</AgeDays>
+          <Salary>3900</Salary>
+          <TSI>1420</TSI>
+          <PlayerForm>6</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>5</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>6</ScorerSkill>
+          <PassingSkill>3</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>4</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>535635</TeamID>
+            <TeamName>NK Šator</TeamName>
+            <LeagueId>69</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>500650865</PlayerId>
+        <FirstName>Giancarlo</FirstName>
+        <NickName />
+        <LastName>Trentin</LastName>
+        <NativeCountryID>4</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-21 23:40:15</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>21</Age>
+          <AgeDays>6</AgeDays>
+          <Salary>3500</Salary>
+          <TSI>720</TSI>
+          <PlayerForm>4</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>4</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>3</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>1169280</TeamID>
+            <TeamName>Partizan coverciano</TeamName>
+            <LeagueId>4</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>499564522</PlayerId>
+        <FirstName>Óscar</FirstName>
+        <NickName />
+        <LastName>Andrade</LastName>
+        <NativeCountryID>23</NativeCountryID>
+        <AskingPrice>15000</AskingPrice>
+        <Deadline>2026-11-21 23:41:40</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>93</AgeDays>
+          <Salary>5100</Salary>
+          <TSI>1180</TSI>
+          <PlayerForm>2</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>2</Leadership>
+          <Specialty>0</Specialty>
+          <StaminaSkill>8</StaminaSkill>
+          <KeeperSkill>2</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>4</ScorerSkill>
+          <PassingSkill>3</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>1</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>2342571</TeamID>
+            <TeamName>camarate1904</TeamName>
+            <LeagueId>25</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>515443440</PlayerId>
+        <FirstName>Antipas</FirstName>
+        <NickName />
+        <LastName>Antoniadis</LastName>
+        <NativeCountryID>45</NativeCountryID>
+        <AskingPrice>250000</AskingPrice>
+        <Deadline>2026-11-21 23:53:09</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>72</AgeDays>
+          <Salary>2700</Salary>
+          <TSI>1220</TSI>
+          <PlayerForm>6</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>5</Leadership>
+          <Specialty>4</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>7</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>4</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>1</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>899714</TeamID>
+            <TeamName>D15CO T5OUT5OUN1A F.C</TeamName>
+            <LeagueId>50</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>499387712</PlayerId>
+        <FirstName>Ilias</FirstName>
+        <NickName />
+        <LastName>Gkekas</LastName>
+        <NativeCountryID>45</NativeCountryID>
+        <AskingPrice>150000</AskingPrice>
+        <Deadline>2026-11-21 23:53:27</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>22</Age>
+          <AgeDays>42</AgeDays>
+          <Salary>3300</Salary>
+          <TSI>1160</TSI>
+          <PlayerForm>3</PlayerForm>
+          <Experience>3</Experience>
+          <Leadership>4</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>8</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>4</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>3</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>899714</TeamID>
+            <TeamName>D15CO T5OUT5OUN1A F.C</TeamName>
+            <LeagueId>50</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>514977018</PlayerId>
+        <FirstName>Ronald</FirstName>
+        <NickName />
+        <LastName>Mills</LastName>
+        <NativeCountryID>2</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-21 23:53:27</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>20</AgeDays>
+          <Salary>6300</Salary>
+          <TSI>3350</TSI>
+          <PlayerForm>7</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>2</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>7</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>8</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>6</PassingSkill>
+          <WingerSkill>2</WingerSkill>
+          <DefenderSkill>4</DefenderSkill>
+          <SetPiecesSkill>5</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>3405517</TeamID>
+            <TeamName>Arsenal 1986</TeamName>
+            <LeagueId>2</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>502058992</PlayerId>
+        <FirstName>Igor</FirstName>
+        <NickName />
+        <LastName>Wasielewski</LastName>
+        <NativeCountryID>26</NativeCountryID>
+        <AskingPrice>10000</AskingPrice>
+        <Deadline>2026-11-22 00:05:41</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>21</Age>
+          <AgeDays>10</AgeDays>
+          <Salary>3500</Salary>
+          <TSI>1310</TSI>
+          <PlayerForm>4</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>4</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>5</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>1</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>814769</TeamID>
+            <TeamName>De Eendjes van Dennis</TeamName>
+            <LeagueId>14</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>502766488</PlayerId>
+        <FirstName>Américo</FirstName>
+        <NickName />
+        <LastName>Faria</LastName>
+        <NativeCountryID>23</NativeCountryID>
+        <AskingPrice>10000</AskingPrice>
+        <Deadline>2026-11-22 00:06:04</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>20</AgeDays>
+          <Salary>4100</Salary>
+          <TSI>950</TSI>
+          <PlayerForm>3</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>5</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>5</StaminaSkill>
+          <KeeperSkill>2</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>5</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>5</WingerSkill>
+          <DefenderSkill>4</DefenderSkill>
+          <SetPiecesSkill>2</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>814769</TeamID>
+            <TeamName>De Eendjes van Dennis</TeamName>
+            <LeagueId>14</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>512152016</PlayerId>
+        <FirstName>Ernâni</FirstName>
+        <NickName />
+        <LastName>Costa</LastName>
+        <NativeCountryID>23</NativeCountryID>
+        <AskingPrice>5000000</AskingPrice>
+        <Deadline>2026-11-22 00:07:37</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>22</Age>
+          <AgeDays>94</AgeDays>
+          <Salary>3700</Salary>
+          <TSI>2150</TSI>
+          <PlayerForm>5</PlayerForm>
+          <Experience>3</Experience>
+          <Leadership>1</Leadership>
+          <Specialty>0</Specialty>
+          <StaminaSkill>8</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>6</WingerSkill>
+          <DefenderSkill>4</DefenderSkill>
+          <SetPiecesSkill>4</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>3299461</TeamID>
+            <TeamName>Barreiro United Elite Clube</TeamName>
+            <LeagueId>25</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>503391610</PlayerId>
+        <FirstName>Andrei-Marian</FirstName>
+        <NickName />
+        <LastName>Armăşescu</LastName>
+        <NativeCountryID>36</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-22 00:26:08</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>7</AgeDays>
+          <Salary>3600</Salary>
+          <TSI>460</TSI>
+          <PlayerForm>2</PlayerForm>
+          <Experience>1</Experience>
+          <Leadership>3</Leadership>
+          <Specialty>2</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>7</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>4</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>4</DefenderSkill>
+          <SetPiecesSkill>3</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>2837875</TeamID>
+            <TeamName>BenidormCF</TeamName>
+            <LeagueId>36</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>515231461</PlayerId>
+        <FirstName>Lucas Maria</FirstName>
+        <NickName />
+        <LastName>de Oliveira</LastName>
+        <NativeCountryID>23</NativeCountryID>
+        <AskingPrice>47000</AskingPrice>
+        <Deadline>2026-11-22 00:45:55</Deadline>
+        <HighestBid>47000</HighestBid>
+        <BidderTeam>
+          <TeamID>3523855</TeamID>
+          <TeamName>ChenZhou-cf</TeamName>
+        </BidderTeam>
+        <Details>
+          <Age>20</Age>
+          <AgeDays>2</AgeDays>
+          <Salary>4000</Salary>
+          <TSI>2060</TSI>
+          <PlayerForm>7</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>3</Leadership>
+          <Specialty>2</Specialty>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>6</ScorerSkill>
+          <PassingSkill>3</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>6</DefenderSkill>
+          <SetPiecesSkill>3</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>567166</TeamID>
+            <TeamName>alvados</TeamName>
+            <LeagueId>25</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>511617905</PlayerId>
+        <FirstName>Emmanuel</FirstName>
+        <NickName />
+        <LastName>Sayago</LastName>
+        <NativeCountryID>19</NativeCountryID>
+        <AskingPrice>750000</AskingPrice>
+        <Deadline>2026-11-22 00:59:21</Deadline>
+        <HighestBid>750000</HighestBid>
+        <BidderTeam>
+          <TeamID>3433748</TeamID>
+          <TeamName>Wallareal</TeamName>
+        </BidderTeam>
+        <Details>
+          <Age>21</Age>
+          <AgeDays>21</AgeDays>
+          <Salary>8900</Salary>
+          <TSI>5680</TSI>
+          <PlayerForm>7</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>6</Leadership>
+          <Specialty>1</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>8</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>9</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>6</PassingSkill>
+          <WingerSkill>5</WingerSkill>
+          <DefenderSkill>4</DefenderSkill>
+          <SetPiecesSkill>5</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>636385</TeamID>
+            <TeamName>Falocentrista</TeamName>
+            <LeagueId>28</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>503243175</PlayerId>
+        <FirstName>Flaviano</FirstName>
+        <NickName />
+        <LastName>Tolli</LastName>
+        <NativeCountryID>4</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-22 01:06:55</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>96</AgeDays>
+          <Salary>4000</Salary>
+          <TSI>770</TSI>
+          <PlayerForm>7</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>6</Leadership>
+          <Specialty>5</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>5</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>4</PassingSkill>
+          <WingerSkill>2</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>4</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>1041686</TeamID>
+            <TeamName>MKV</TeamName>
+            <LeagueId>4</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>515689110</PlayerId>
+        <FirstName>Jukka</FirstName>
+        <NickName />
+        <LastName>Koskinen</LastName>
+        <NativeCountryID>11</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-22 01:08:14</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>8</AgeDays>
+          <Salary>6700</Salary>
+          <TSI>2140</TSI>
+          <PlayerForm>3</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>5</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>8</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>6</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>5</DefenderSkill>
+          <SetPiecesSkill>6</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>3476714</TeamID>
+            <TeamName>La Gente de la S</TeamName>
+            <LeagueId>23</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>498539684</PlayerId>
+        <FirstName>Georgi</FirstName>
+        <NickName />
+        <LastName>Kostadinov</LastName>
+        <NativeCountryID>55</NativeCountryID>
+        <AskingPrice>6250000</AskingPrice>
+        <Deadline>2026-11-22 01:36:18</Deadline>
+        <HighestBid>6650000</HighestBid>
+        <BidderTeam>
+          <TeamID>339067</TeamID>
+          <TeamName>FC Karl Mathy Karlsruhe</TeamName>
+        </BidderTeam>
+        <Details>
+          <Age>20</Age>
+          <AgeDays>56</AgeDays>
+          <Salary>9100</Salary>
+          <TSI>11350</TSI>
+          <PlayerForm>6</PlayerForm>
+          <Experience>3</Experience>
+          <Leadership>4</Leadership>
+          <Specialty>4</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>7</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>8</PlaymakerSkill>
+          <ScorerSkill>4</ScorerSkill>
+          <PassingSkill>8</PassingSkill>
+          <WingerSkill>2</WingerSkill>
+          <DefenderSkill>9</DefenderSkill>
+          <SetPiecesSkill>2</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>3335671</TeamID>
+            <TeamName>CD Ingenieros de Temuco</TeamName>
+            <LeagueId>18</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>502629868</PlayerId>
+        <FirstName>Elliott</FirstName>
+        <NickName />
+        <LastName>Selders</LastName>
+        <NativeCountryID>40</NativeCountryID>
+        <AskingPrice>2250000</AskingPrice>
+        <Deadline>2026-11-22 01:39:18</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>78</AgeDays>
+          <Salary>4100</Salary>
+          <TSI>2900</TSI>
+          <PlayerForm>6</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>5</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>8</PlaymakerSkill>
+          <ScorerSkill>6</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>2</DefenderSkill>
+          <SetPiecesSkill>2</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>750991</TeamID>
+            <TeamName>RnR Sankt Gallen</TeamName>
+            <LeagueId>46</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>503274345</PlayerId>
+        <FirstName>Eugeniusz</FirstName>
+        <NickName />
+        <LastName>Jednoróg</LastName>
+        <NativeCountryID>26</NativeCountryID>
+        <AskingPrice>1875000</AskingPrice>
+        <Deadline>2026-11-22 02:09:53</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>72</AgeDays>
+          <Salary>7700</Salary>
+          <TSI>8300</TSI>
+          <PlayerForm>6</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>6</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>7</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>8</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>9</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>4</DefenderSkill>
+          <SetPiecesSkill>2</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>1327056</TeamID>
+            <TeamName>Lenese Lavazza</TeamName>
+            <LeagueId>24</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>502409050</PlayerId>
+        <FirstName>Armando</FirstName>
+        <NickName />
+        <LastName>Gay</LastName>
+        <NativeCountryID>20</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-22 02:33:51</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>34</AgeDays>
+          <Salary>4500</Salary>
+          <TSI>950</TSI>
+          <PlayerForm>4</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>5</Leadership>
+          <Specialty>4</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>3</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>4</DefenderSkill>
+          <SetPiecesSkill>6</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>458666</TeamID>
+            <TeamName>canteracity</TeamName>
+            <LeagueId>29</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>497745807</PlayerId>
+        <FirstName>Alberto</FirstName>
+        <NickName />
+        <LastName>Peña</LastName>
+        <NativeCountryID>20</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-22 02:35:49</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>21</Age>
+          <AgeDays>94</AgeDays>
+          <Salary>4300</Salary>
+          <TSI>1580</TSI>
+          <PlayerForm>3</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>4</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>6</ScorerSkill>
+          <PassingSkill>4</PassingSkill>
+          <WingerSkill>6</WingerSkill>
+          <DefenderSkill>3</DefenderSkill>
+          <SetPiecesSkill>5</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>458666</TeamID>
+            <TeamName>canteracity</TeamName>
+            <LeagueId>29</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>511590049</PlayerId>
+        <FirstName>Graziano</FirstName>
+        <NickName />
+        <LastName>Boccabianca</LastName>
+        <NativeCountryID>4</NativeCountryID>
+        <AskingPrice>0</AskingPrice>
+        <Deadline>2026-11-22 02:40:02</Deadline>
+        <HighestBid>200000</HighestBid>
+        <BidderTeam>
+          <TeamID>3520044</TeamID>
+          <TeamName>123prefackámťas.....</TeamName>
+        </BidderTeam>
+        <Details>
+          <Age>20</Age>
+          <AgeDays>62</AgeDays>
+          <Salary>5900</Salary>
+          <TSI>3820</TSI>
+          <PlayerForm>6</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>2</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>6</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>8</PlaymakerSkill>
+          <ScorerSkill>6</ScorerSkill>
+          <PassingSkill>6</PassingSkill>
+          <WingerSkill>4</WingerSkill>
+          <DefenderSkill>6</DefenderSkill>
+          <SetPiecesSkill>5</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>3459961</TeamID>
+            <TeamName>Guerreiros de Ogum</TeamName>
+            <LeagueId>16</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>503054090</PlayerId>
+        <FirstName>Andrian</FirstName>
+        <NickName />
+        <LastName>Buryanov</LastName>
+        <NativeCountryID>34</NativeCountryID>
+        <AskingPrice>500000</AskingPrice>
+        <Deadline>2026-11-22 03:20:16</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>20</AgeDays>
+          <Salary>10000</Salary>
+          <TSI>4110</TSI>
+          <PlayerForm>8</PlayerForm>
+          <Experience>2</Experience>
+          <Leadership>2</Leadership>
+          <Specialty>1</Specialty>
+          <Cards>1</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>7</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>9</PlaymakerSkill>
+          <ScorerSkill>6</ScorerSkill>
+          <PassingSkill>3</PassingSkill>
+          <WingerSkill>3</WingerSkill>
+          <DefenderSkill>3</DefenderSkill>
+          <SetPiecesSkill>3</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>3404597</TeamID>
+            <TeamName>La gallera FC</TeamName>
+            <LeagueId>18</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+      <TransferResult>
+        <PlayerId>501991803</PlayerId>
+        <FirstName>Rıfat</FirstName>
+        <NickName />
+        <LastName>Adsay</LastName>
+        <NativeCountryID>31</NativeCountryID>
+        <AskingPrice>9999990</AskingPrice>
+        <Deadline>2026-11-22 03:25:17</Deadline>
+        <HighestBid>0</HighestBid>
+        <BidderTeam />
+        <Details>
+          <Age>20</Age>
+          <AgeDays>109</AgeDays>
+          <Salary>7300</Salary>
+          <TSI>9520</TSI>
+          <PlayerForm>6</PlayerForm>
+          <Experience>3</Experience>
+          <Leadership>2</Leadership>
+          <Specialty>0</Specialty>
+          <Cards>0</Cards>
+          <InjuryLevel>-1</InjuryLevel>
+          <StaminaSkill>9</StaminaSkill>
+          <KeeperSkill>1</KeeperSkill>
+          <PlaymakerSkill>7</PlaymakerSkill>
+          <ScorerSkill>4</ScorerSkill>
+          <PassingSkill>5</PassingSkill>
+          <WingerSkill>6</WingerSkill>
+          <DefenderSkill>9</DefenderSkill>
+          <SetPiecesSkill>1</SetPiecesSkill>
+          <SellerTeam>
+            <TeamID>1714219</TeamID>
+            <TeamName>KOZLU ESENKÖY FK</TeamName>
+            <LeagueId>32</LeagueId>
+          </SellerTeam>
+        </Details>
+      </TransferResult>
+    </TransferResults>
+  </TransferSearch>
+</HattrickData>
