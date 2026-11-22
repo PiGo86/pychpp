@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Optional
+from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
 from pychpp.models.ht_init_var import HTInitVar
@@ -11,7 +11,7 @@ class RequestPlayerDetails(HTModel):
     Player Details - Request arguments
     """
     SOURCE_FILE = 'playerdetails'
-    LAST_VERSION = '3.0'
+    LAST_VERSION = '3.3'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
     _r_player_id: int = HTInitVar('playerID', init_arg='player_id')
@@ -40,6 +40,7 @@ class PlayerDetails(RequestPlayerDetails):
     age: int = HTField('Age')
     age_days: int = HTField('AgeDays')
     next_birthday: datetime = HTField('NextBirthDay')
+    gender_id: int = HTField('GenderID', version='>=3.2')
     arrival_date: datetime = HTField('ArrivalDate')
     form: int = HTField('PlayerForm')
     cards: int = HTField('Cards')
@@ -74,9 +75,17 @@ class PlayerDetails(RequestPlayerDetails):
     friendlies_goals: Optional[int] = HTField('FriendliesGoals')
     matches_current_team: Optional[int] = HTField('MatchesCurrentTeam')
     goals_current_team: Optional[int] = HTField('GoalsCurrentTeam')
+    assists_current_team: int = HTField('AssistsCurrentTeam', version='>=3.1')
+    career_assists: int = HTField('CareerAssists', version='>=3.1')
     national_team: 'NationalTeam' = HTField('.')
     transfer_listed: bool = HTField('TransferListed')
     transfer_details: 'TransferDetails' = HTField('TransferDetails')
+    transfer_compare_average: Optional[int] = HTField('TransferCompareAverage', version='>=3.3')
+    transfer_compare_average_date: Optional[datetime] = HTField('TransferCompareAverageDate',
+                                                                version='>=3.3')
+    family_relation: Optional['FamilyRelation'] = HTField('FamilyRelation', version='>=3.3')
+    trophies: Optional[List['TrophyItem']] = HTField('TrophyList', items='Trophy',
+                                                     version='>=3.3')
     last_match: Optional['LastMatch'] = HTField('LastMatch')
 
 
@@ -144,6 +153,30 @@ class TransferDetailsBidderTeam(HTModel):
     """
     id: Optional[int] = HTField('TeamID')
     name: Optional[str] = HTField('TeamName')
+
+
+class FamilyRelation(HTModel):
+    """
+    Player Details -> Family relation (empty if the player has no known relation)
+    """
+    related_player_id: Optional[int] = HTField('RelatedPlayerId')
+    related_player_source_id: Optional[int] = HTField('RelatedPlayerSourceId')
+    related_player_name: Optional[str] = HTField('RelatedPlayerName')
+    relationship_type_id: Optional[int] = HTField('RelationshipTypeId')
+
+
+class TrophyItem(HTModel):
+    """
+    Player Details -> Trophy list -> Trophy item
+    """
+    trophy_type_id: int = HTField('TrophyTypeId')
+    team_id: int = HTField('TeamId')
+    team_name: Optional[str] = HTField('TeamName')
+    trophy_season: int = HTField('TrophySeason')
+    league_level: int = HTField('LeagueLevel')
+    league_level_unit_id: int = HTField('LeagueLevelUnitId')
+    league_level_unit_name: Optional[str] = HTField('LeagueLevelUnitName')
+    gained_date: datetime = HTField('GainedDate')
 
 
 class LastMatch(HTModel):

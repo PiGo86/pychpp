@@ -3,7 +3,7 @@ from pychpp.fixtures.ht_datetime import HTDatetime
 
 def test_supporters(mocked_chpp):
 
-    supp = mocked_chpp.xml_supporters(user_id=13481763)
+    supp = mocked_chpp.xml_supporters(user_id=13481763, version='1.0')
 
     assert supp.total_supported_teams == 22
 
@@ -52,3 +52,33 @@ def test_supporters(mocked_chpp):
                        "aurais pu nous faire une dernière belle saison mais, d'un commun accord, "
                        "avant que ta valeur marchande ne s'effondre, tu as été ok pour un "
                        "dernier challenge sportif. Bonne suite de carrière Brice ... snif !!!")
+
+
+def test_supporters_version_1_1(mocked_chpp):
+
+    supp = mocked_chpp.xml_supporters(user_id=13481763, version='1.1')
+
+    assert supp.total_supported_teams == 23
+    assert supp.page_index == 0
+    assert supp.pages == 1
+    assert len(supp.supported_teams) == 23
+
+    team = supp.supported_teams[0]
+    assert team.user_id == 9228073
+    assert team.login_name == 'Monsieur-le-Vicomte'
+    assert team.team_id == 292987
+    assert team.team_name == 'Montauban'
+
+    my_supp = mocked_chpp.xml_supporters(action_type='mysupporters', team_id=1165592,
+                                         version='1.1')
+
+    assert my_supp.total_supporters == 5
+    assert my_supp.page_index == 0
+    assert my_supp.pages == 1
+    assert len(my_supp.my_supporters) == 5
+
+    supporter = my_supp.my_supporters[0]
+    assert supporter.user_id == 6336642
+    assert supporter.login_name == 'thekiki76'
+    assert supporter.team_id == 591993
+    assert supporter.team_name == "thekiki's"

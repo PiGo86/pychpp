@@ -9,7 +9,7 @@ from .conftest import TEAM_PATTERN, USER_PATTERN, YOUTH_TEAM_PATTERN, ARENA_PATT
 
 
 def test_get_secondary_team(mocked_chpp):
-    team = mocked_chpp.team(id_=1755350)
+    team = mocked_chpp.team(id_=1755350, version='3.7')
 
     assert isinstance(team, HTTeam)
     assert team.id == 1755350
@@ -24,13 +24,13 @@ def test_get_secondary_team(mocked_chpp):
     user = team.user.details()
     assert isinstance(user, HTUser)
     assert user.id == 9638716
-    assert user.username == "Conteur_Merlin"
+    assert user.username == "F0977886-AA64-4C97-9187-DE8D88AC73DA"
 
     user_match = re.match(USER_PATTERN, user.url)
     assert user_match is not None
     assert int(user_match.group(1)) == 9638716
 
-    youth_team = team.youth_team.details()
+    youth_team = team.youth_team.details(version='1.2')
     assert isinstance(youth_team, HTYouthTeam)
     assert youth_team.id == 2745926
     assert youth_team.name == "Les Petits Pédëstres"

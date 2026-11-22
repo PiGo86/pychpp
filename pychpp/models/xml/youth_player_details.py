@@ -11,7 +11,7 @@ class RequestYouthPlayerDetails(HTModel):
     Youth Player Details - Request arguments
     """
     SOURCE_FILE = 'youthplayerdetails'
-    LAST_VERSION = '1.2'
+    LAST_VERSION = '1.4'
 
     _r_action_type: Optional[str] = HTInitVar('actionType',
                                               init_arg='action_type',
@@ -37,6 +37,7 @@ class YouthPlayerDetails(RequestYouthPlayerDetails):
     last_name: str = HTField('LastName')
     age: int = HTField('Age')
     age_days: int = HTField('AgeDays')
+    gender_id: int = HTField('GenderID', version='>=1.3')
     arrival_date: datetime = HTField('ArrivalDate')
     can_be_promoted_in: int = HTField('CanBePromotedIn')
     number: Optional[int] = HTField('PlayerNumber')
@@ -55,6 +56,8 @@ class YouthPlayerDetails(RequestYouthPlayerDetails):
     owning_youth_team: 'OwningYouthTeam' = HTField('OwningYouthTeam')
     skills: Optional['Skills'] = HTField('PlayerSkills')
     scout_call: Optional['ScoutCall'] = HTField('ScoutCall')
+    training_reports: Optional[List['TrainingReportsReportItem']] = HTField(
+        'TrainingReports', items='TrainingReport', version='>=1.4')
     last_match: Optional['LastMatch'] = HTField('LastMatch')
 
 
@@ -65,6 +68,7 @@ class OwningYouthTeam(HTModel):
     id: int = HTField('YouthTeamID')
     name: str = HTField('YouthTeamName')
     league_id: int = HTField('YouthTeamLeagueID')
+    user_id: int = HTField('UserId', version='>=1.4')
     senior_team: 'OwningYouthTeamSeniorTeam' = HTField('SeniorTeam')
 
 
@@ -142,6 +146,17 @@ class ScoutCallCommentItem(HTModel):
     variation: int = HTField('CommentVariation')
     skill_type: int = HTField('CommentSkillType')
     skill_level: int = HTField('CommentSkillLevel')
+
+
+class TrainingReportsReportItem(HTModel):
+    """
+    Youth Player Details -> Training reports -> Report item
+    """
+    text: str = HTField('ReportText')
+    date: datetime = HTField('ReportDate')
+    type: int = HTField('ReportType')
+    skill_type: int = HTField('ReportSkillType')
+    skill_level: int = HTField('ReportSkillLevel')
 
 
 class LastMatch(HTModel):

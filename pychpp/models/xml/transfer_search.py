@@ -11,7 +11,7 @@ class RequestTransferSearch(HTModel):
     Transfer Search - Request arguments
     """
     SOURCE_FILE = 'transfersearch'
-    LAST_VERSION = '1.1'
+    LAST_VERSION = '1.2'
 
     _r_age_min: int = HTInitVar('ageMin', init_arg='age_min')
     _r_age_days_min: Optional[int] = HTInitVar('ageDaysMin', init_arg='age_days_min')
@@ -36,6 +36,12 @@ class RequestTransferSearch(HTModel):
     _r_tsi_max: Optional[int] = HTInitVar('tsiMax', init_arg='tsi_max')
     _r_price_min: Optional[int] = HTInitVar('priceMin', init_arg='price_min')
     _r_price_max: Optional[int] = HTInitVar('priceMax', init_arg='price_max')
+    _r_salary_min: Optional[int] = HTInitVar('salaryMin', init_arg='salary_min')
+    _r_salary_max: Optional[int] = HTInitVar('salaryMax', init_arg='salary_max')
+    _r_transfer_compare_avg_min: Optional[int] = HTInitVar('transferCompareAvgMin',
+                                                           init_arg='transfer_compare_avg_min')
+    _r_transfer_compare_avg_max: Optional[int] = HTInitVar('transferCompareAvgMax',
+                                                           init_arg='transfer_compare_avg_max')
     _r_page_size: Optional[int] = HTInitVar('pageSize', init_arg='page_size')
     _r_page_index: Optional[int] = HTInitVar('pageIndex', init_arg='page_index')
 

@@ -1,0 +1,106 @@
+<HattrickData>
+  <FileName>youthplayerlist.xml</FileName>
+  <Version>1.4</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-22 00:00:27</FetchedDate>
+  <PlayerList>
+    <YouthPlayer>
+      <YouthPlayerID>301741224</YouthPlayerID>
+      <FirstName>Brieuc</FirstName>
+      <NickName />
+      <LastName>Rousselet</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741219</YouthPlayerID>
+      <FirstName>Flavian</FirstName>
+      <NickName />
+      <LastName>Hommet</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>393197406</YouthPlayerID>
+      <FirstName>Gaby</FirstName>
+      <NickName />
+      <LastName>Janet</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>406086917</YouthPlayerID>
+      <FirstName>Jean-Joseph</FirstName>
+      <NickName />
+      <LastName>Joron</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741216</YouthPlayerID>
+      <FirstName>Jean-Paul</FirstName>
+      <NickName />
+      <LastName>Ruault</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>401705678</YouthPlayerID>
+      <FirstName>Loan</FirstName>
+      <NickName />
+      <LastName>Guichon</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741215</YouthPlayerID>
+      <FirstName>Loris</FirstName>
+      <NickName />
+      <LastName>Depré</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>365898445</YouthPlayerID>
+      <FirstName>Lukas</FirstName>
+      <NickName />
+      <LastName>Gouze</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741220</YouthPlayerID>
+      <FirstName>Marian</FirstName>
+      <NickName />
+      <LastName>Lourdel</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741218</YouthPlayerID>
+      <FirstName>Noël</FirstName>
+      <NickName />
+      <LastName>Fouillade</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741221</YouthPlayerID>
+      <FirstName>Omar</FirstName>
+      <NickName />
+      <LastName>Ndaw</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741223</YouthPlayerID>
+      <FirstName>Pierre-Alain</FirstName>
+      <NickName />
+      <LastName>Feral</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741214</YouthPlayerID>
+      <FirstName>Talla</FirstName>
+      <NickName />
+      <LastName>Coulibaly</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>300284899</YouthPlayerID>
+      <FirstName>Trystan</FirstName>
+      <NickName />
+      <LastName>Matton</LastName>
+      <GenderID>1</GenderID>
+    </YouthPlayer>
+  </PlayerList>
+</HattrickData>

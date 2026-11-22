@@ -5,7 +5,8 @@ def test_transfer_search(mocked_chpp):
 
     ts = mocked_chpp.xml_transfer_search(age_min=20, age_max=22,
                                          skill_type_1=8,
-                                         min_skill_value_1=7, max_skill_value_1=9)
+                                         min_skill_value_1=7, max_skill_value_1=9,
+                                         version='1.1')
 
     assert ts.item_count == -1
     assert ts.page_size == 25
@@ -47,3 +48,38 @@ def test_transfer_search(mocked_chpp):
     assert seller.id == 1735412
     assert seller.name == 'A. C. Adelscott'
     assert seller.league_id == 4
+
+
+def test_transfer_search_version_1_2(mocked_chpp):
+
+    ts = mocked_chpp.xml_transfer_search(age_min=20, age_max=22,
+                                         skill_type_1=8,
+                                         min_skill_value_1=7, max_skill_value_1=9,
+                                         salary_max=10_000, version='1.2')
+
+    assert ts.item_count == -1
+    assert ts.page_size == 25
+    assert ts.page_index == 0
+    assert len(ts.transfer_results) == 25
+
+    # salaryMax filter (new in 1.2) is applied server-side
+    assert all(result.details.salary <= 10_000 for result in ts.transfer_results)
+
+    pl = ts.transfer_results[0]
+    assert pl.id == 497677283
+    assert pl.first_name == 'Clemente'
+    assert pl.last_name == 'Lattarini'
+    assert pl.asking_price == 5_300_000
+    assert pl.deadline == HTDatetime.from_calendar(2026, 11, 21, 23, 21, 58)
+
+    details = pl.details
+    assert details.age == 21
+    assert details.age_days == 56
+    assert details.salary == 8_400
+    assert details.tsi == 17_290
+    assert details.playmaker_skill == 7
+
+    seller = details.seller_team
+    assert seller.id == 1600375
+    assert seller.name == 'Atlético Birra'
+    assert seller.league_id == 36

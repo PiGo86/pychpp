@@ -11,7 +11,7 @@ class RequestStaffList(HTModel):
     Staff List - Request arguments
     """
     SOURCE_FILE = 'stafflist'
-    LAST_VERSION = '1.2'
+    LAST_VERSION = '1.3'
 
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
 
@@ -56,3 +56,4 @@ class StaffMemberItem(HTModel):
     hired_date: datetime = HTField('HiredDate')
     cost: int = HTField('Cost')
     hof_player_id: int = HTField('HofPlayerId')
+    contract_expires: datetime = HTField('ContractExpires', version='>=1.3')

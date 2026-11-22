@@ -1,0 +1,95 @@
+<HattrickData>
+  <FileName>managercompendium.xml</FileName>
+  <Version>1.8</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 19:07:17</FetchedDate>
+  <Manager>
+    <UserId>1728698</UserId>
+    <Loginname>Jean-Mi</Loginname>
+    <SupporterTier>none</SupporterTier>
+    <LastLogins>
+      <LoginTime>2026-11-21 19:03:44 : 89.92.***.***</LoginTime>
+      <LoginTime>2026-11-21 17:04:45 : 89.92.***.***</LoginTime>
+      <LoginTime>2026-11-21 11:47:07 : 89.92.***.***</LoginTime>
+      <LoginTime>2026-11-21 11:29:53 : 89.92.***.***</LoginTime>
+      <LoginTime>2026-11-21 11:21:16 : 172.71.***.***</LoginTime>
+      <LoginTime>2026-11-21 11:21:16 : 89.92.***.***</LoginTime>
+    </LastLogins>
+    <Language>
+      <LanguageId>5</LanguageId>
+      <LanguageName>Français</LanguageName>
+    </Language>
+    <Country>
+      <CountryId>5</CountryId>
+      <CountryName>France</CountryName>
+    </Country>
+    <Currency>
+      <CurrencyName>€</CurrencyName>
+      <CurrencyRate>10</CurrencyRate>
+    </Currency>
+    <HasManagerLicense>True</HasManagerLicense>
+    <Teams>
+      <Team>
+        <TeamId>1165592</TeamId>
+        <TeamName>Les Poitevins de La Chapelle</TeamName>
+        <GenderID>1</GenderID>
+        <LeagueSystemID>1</LeagueSystemID>
+        <Arena>
+          <ArenaId>1162154</ArenaId>
+          <ArenaName>Stade de La Chapelle</ArenaName>
+        </Arena>
+        <League>
+          <LeagueId>5</LeagueId>
+          <LeagueName>France</LeagueName>
+          <Season>96</Season>
+        </League>
+        <Country>
+          <CountryId>5</CountryId>
+          <CountryName>France</CountryName>
+        </Country>
+        <LeagueLevelUnit>
+          <LeagueLevelUnitId>73592</LeagueLevelUnitId>
+          <LeagueLevelUnitName>VII.777</LeagueLevelUnitName>
+        </LeagueLevelUnit>
+        <Region>
+          <RegionId>148</RegionId>
+          <RegionName>Poitou-Charentes</RegionName>
+        </Region>
+        <YouthTeam>
+          <YouthTeamId>2942691</YouthTeamId>
+          <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+          <YouthLeague>
+            <YouthLeagueId>225490</YouthLeagueId>
+            <YouthLeagueName>Robaphipie League</YouthLeagueName>
+          </YouthLeague>
+        </YouthTeam>
+      </Team>
+    </Teams>
+    <NationalTeamCoach />
+    <NationalTeamAssistant />
+    <Avatar>
+      <BackgroundImage>/Img/Avatar/backgrounds/card1.png</BackgroundImage>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/backgrounds/bg_blue.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/bodies/f3man1c.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/faces/f3m.png</Image>
+      </Layer>
+      <Layer x="25" y="14">
+        <Image>/Img/Avatar/eyes/e23c.png</Image>
+      </Layer>
+      <Layer x="29" y="57">
+        <Image>/Img/Avatar/mouths/m16c.png</Image>
+      </Layer>
+      <Layer x="17" y="28">
+        <Image>/Img/Avatar/noses/n19.png</Image>
+      </Layer>
+      <Layer x="9" y="10">
+        <Image>/Img/Avatar/hair/f3h3g.png</Image>
+      </Layer>
+    </Avatar>
+  </Manager>
+</HattrickData>

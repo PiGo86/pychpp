@@ -8,7 +8,8 @@ from requests.adapters import HTTPAdapter
 from requests_oauthlib import OAuth1Session
 from urllib3 import Retry
 
-from pychpp.models.xml import (manager_compendium, team_details, achievements, arena_details,
+from pychpp.models.xml import (manager_compendium, team_details, team_history, achievements,
+                               arena_details,
                                challenges, region_details, league_details, league_fixtures,
                                match_lineup, national_teams, national_team_details, player_details,
                                training, transfers_team, world_details, world_cup, players,
@@ -17,7 +18,8 @@ from pychpp.models.xml import (manager_compendium, team_details, achievements, a
                                alliance_details, avatars, bookmarks, club, current_bids, economy,
                                fans, hof_players, ladder_details, ladder_list, league_levels, live,
                                matches, match_orders, national_team_matches, national_players,
-                               player_events, search, staff_avatars, staff_list, supporters,
+                               national_prospect_players, player_events, player_stats, search,
+                               staff_avatars, staff_list, supporters,
                                tournament_details, tournament_fixtures, tournament_league_tables,
                                tournament_list, training_events, transfer_search, transfers_player,
                                world_languages, youth_avatars, youth_league_details,
@@ -88,6 +90,11 @@ class CHPPBase:
         """
 
         error_code = int(xml_data.find("ErrorCode").text)
+
+        if error_code == 1:
+            raise ht_error.HTAccessDeniedError(
+                "Access to specified parameters or file was denied : "
+                + xml_data.find("Error").text)
 
         if error_code == 50:
             raise ht_error.HTUnknownTeamIdError(
@@ -389,9 +396,9 @@ class CHPPBase:
 
 class CHPPXml(CHPPBase):
 
-    def xml_achievements(self, user_id: int = None) -> achievements.Achievements:
+    def xml_achievements(self, user_id: int = None, **kwargs) -> achievements.Achievements:
 
-        return achievements.Achievements(chpp=self, user_id=user_id)
+        return achievements.Achievements(chpp=self, user_id=user_id, **kwargs)
 
     def xml_alliances(
             self,
@@ -399,6 +406,7 @@ class CHPPXml(CHPPBase):
             search_type: int = None,
             search_language_id: int = None,
             page_index: int = None,
+            user_id: int = None,
             **kwargs,
     ) -> alliances.Alliances:
 
@@ -408,6 +416,7 @@ class CHPPXml(CHPPBase):
             search_for=search_for,
             search_language_id=search_language_id,
             page_index=page_index,
+            user_id=user_id,
             **kwargs,
         )
 
@@ -801,11 +810,27 @@ class CHPPXml(CHPPBase):
             raise ValueError("if set, 'action_type' must be equal to"
                              "'view', 'setmatchorder' or 'SupporterStats'")
 
+    def xml_national_prospect_players(
+            self, team_id: int, player_category_id: int = None, **kwargs,
+    ) -> national_prospect_players.NationalProspectPlayers:
+
+        return national_prospect_players.NationalProspectPlayers(
+            chpp=self, team_id=team_id, player_category_id=player_category_id, **kwargs,
+        )
+
     def xml_player_events(
             self, player_id: int = None, **kwargs,
     ) -> player_events.PlayerEvents:
 
         return player_events.PlayerEvents(
+            chpp=self, player_id=player_id, **kwargs,
+        )
+
+    def xml_player_stats(
+            self, player_id: int = None, **kwargs,
+    ) -> player_stats.PlayerStats:
+
+        return player_stats.PlayerStats(
             chpp=self, player_id=player_id, **kwargs,
         )
 
@@ -886,19 +911,22 @@ class CHPPXml(CHPPBase):
 
     def xml_supporters(
             self, action_type: str = 'supportedteams',
-            user_id: int = None, team_id: int = None, **kwargs,
+            user_id: int = None, team_id: int = None,
+            page_index: int = None, page_size: int = None, **kwargs,
     ) -> Union[supporters.SupportersSupportedTeams,
                supporters.SupportersMySupporters,
                ]:
 
         if action_type == 'supportedteams':
             return supporters.SupportersSupportedTeams(
-                chpp=self, action_type=action_type, user_id=user_id, **kwargs,
+                chpp=self, action_type=action_type, user_id=user_id,
+                page_index=page_index, page_size=page_size, **kwargs,
             )
 
         elif action_type == 'mysupporters':
             return supporters.SupportersMySupporters(
-                chpp=self, action_type=action_type, team_id=team_id, **kwargs,
+                chpp=self, action_type=action_type, team_id=team_id,
+                page_index=page_index, page_size=page_size, **kwargs,
             )
 
         else:
@@ -918,6 +946,14 @@ class CHPPXml(CHPPBase):
             ** kwargs,
         )
 
+    def xml_team_history(
+            self, team_id: int = None, **kwargs,
+    ) -> team_history.TeamHistory:
+
+        return team_history.TeamHistory(
+            chpp=self, team_id=team_id, **kwargs,
+        )
+
     def xml_tournament_details(
             self, tournament_id: int, season: int = None, **kwargs,
     ) -> tournament_details.TournamentDetails:
@@ -927,11 +963,12 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_tournament_fixtures(
-            self, tournament_id: int, season: int = None, **kwargs,
+            self, tournament_id: int, season: int = None, match_round: int = None, **kwargs,
     ) -> tournament_fixtures.TournamentFixtures:
 
         return tournament_fixtures.TournamentFixtures(
-            chpp=self, tournament_id=tournament_id, season=season, **kwargs,
+            chpp=self, tournament_id=tournament_id, season=season,
+            match_round=match_round, **kwargs,
         )
 
     def xml_tournament_league_tables(
@@ -955,10 +992,11 @@ class CHPPXml(CHPPBase):
             self, action_type: str = 'view', team_id: int = None,
             training_type: int = None, training_level: int = None,
             training_level_stamina: int = None, league_id: int = None,
-            **kwargs,
+            from_date: datetime = None, **kwargs,
     ) -> Union[training.TrainingView,
                training.TrainingSetTraining,
-               training.TrainingStats]:
+               training.TrainingStats,
+               training.TrainingHistoryView]:
 
         if action_type == 'view':
             return training.TrainingView(
@@ -979,9 +1017,15 @@ class CHPPXml(CHPPBase):
                 training_level_stamina=training_level_stamina, **kwargs,
             )
 
+        elif action_type == 'history':
+            return training.TrainingHistoryView(
+                chpp=self, action_type=action_type, team_id=team_id,
+                from_date=from_date, **kwargs,
+            )
+
         else:
             raise ValueError("if set, 'action_type' must be equal to"
-                             "'view', 'setTraining' or 'stats'")
+                             "'view', 'setTraining', 'stats' or 'history'")
 
     def xml_training_events(
             self, player_id: int, **kwargs,
@@ -999,6 +1043,8 @@ class CHPPXml(CHPPBase):
             skill_type_4: int = None, min_skill_value_4: int = None, max_skill_value_4: int = None,
             specialty: int = None, native_country_id: int = None,
             tsi_min: int = None, tsi_max: int = None, price_min: int = None, price_max: int = None,
+            salary_min: int = None, salary_max: int = None,
+            transfer_compare_avg_min: int = None, transfer_compare_avg_max: int = None,
             page_size: int = None, page_index: int = None, **kwargs,
     ) -> transfer_search.TransferSearch:
 
@@ -1016,6 +1062,9 @@ class CHPPXml(CHPPBase):
             min_skill_value_4=min_skill_value_4, max_skill_value_4=max_skill_value_4,
             specialty=specialty, native_country_id=native_country_id,
             tsi_min=tsi_min, tsi_max=tsi_max, price_min=price_min, price_max=price_max,
+            salary_min=salary_min, salary_max=salary_max,
+            transfer_compare_avg_min=transfer_compare_avg_min,
+            transfer_compare_avg_max=transfer_compare_avg_max,
             page_size=page_size, page_index=page_index, **kwargs,
         )
 

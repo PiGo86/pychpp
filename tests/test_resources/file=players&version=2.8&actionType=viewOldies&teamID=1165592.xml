@@ -1,0 +1,62 @@
+<HattrickData>
+  <FileName>players.xml</FileName>
+  <Version>2.8</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 21:49:23</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsYouth>False</IsYouth>
+  <ActionType>viewoldies</ActionType>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <TeamName>Les Poitevins de La Chapelle</TeamName>
+    <PlayerList>
+      <Player>
+        <PlayerID>430759337</PlayerID>
+        <FirstName>Bastien</FirstName>
+        <NickName />
+        <LastName>Collot</LastName>
+        <PlayerNumber>100</PlayerNumber>
+        <Age>52</Age>
+        <AgeDays>5</AgeDays>
+        <GenderID>1</GenderID>
+        <ArrivalDate>2021-02-05 14:09:00</ArrivalDate>
+        <OwnerNotes />
+        <TSI>0</TSI>
+        <PlayerForm>2</PlayerForm>
+        <Statement />
+        <Experience>9</Experience>
+        <Loyalty>20</Loyalty>
+        <MotherClubBonus>False</MotherClubBonus>
+        <Leadership>7</Leadership>
+        <Salary>3000</Salary>
+        <IsAbroad>1</IsAbroad>
+        <Agreeability>1</Agreeability>
+        <Aggressiveness>4</Aggressiveness>
+        <Honesty>2</Honesty>
+        <LeagueGoals>0</LeagueGoals>
+        <CupGoals>0</CupGoals>
+        <FriendliesGoals>0</FriendliesGoals>
+        <CareerGoals>43</CareerGoals>
+        <CareerHattricks>1</CareerHattricks>
+        <MatchesCurrentTeam>0</MatchesCurrentTeam>
+        <GoalsCurrentTeam>0</GoalsCurrentTeam>
+        <AssistsCurrentTeam>0</AssistsCurrentTeam>
+        <CareerAssists>0</CareerAssists>
+        <Specialty>0</Specialty>
+        <TransferListed>False</TransferListed>
+        <NationalTeamID>0</NationalTeamID>
+        <CountryID>5</CountryID>
+        <Caps>0</Caps>
+        <CapsU20>0</CapsU20>
+        <Cards>0</Cards>
+        <InjuryLevel>-1</InjuryLevel>
+        <OwningTeam>
+          <TeamID>2065426</TeamID>
+          <TeamName>Korriban Warriors</TeamName>
+          <LeagueName>Botswana</LeagueName>
+        </OwningTeam>
+      </Player>
+    </PlayerList>
+  </Team>
+</HattrickData>

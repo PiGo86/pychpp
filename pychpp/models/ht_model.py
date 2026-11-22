@@ -207,7 +207,7 @@ class HTModel(metaclass=MetaHTModel):
                 previous_xml_prefix = ''
                 for level in field.attr_name.split('.'):
                     type_ = target_cls.get_type(level)
-                    target_field = getattr(target_cls, level)
+                    target_field = copy(getattr(target_cls, level))
                     if proxy_path and proxy_path[-1] != '/':
                         proxy_path += '/'
                     proxy_path += previous_xml_prefix + target_field.path

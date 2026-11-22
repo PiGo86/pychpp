@@ -1,0 +1,36 @@
+<HattrickData>
+  <FileName>training.xml</FileName>
+  <Version>2.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 23:10:02</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <Team>
+    <TeamID>1165592</TeamID>
+    <TeamName>Les Poitevins de La Chapelle</TeamName>
+    <TrainingLevel>100</TrainingLevel>
+    <NewTrainingLevel Available="False" />
+    <TrainingType>5</TrainingType>
+    <StaminaTrainingPart>22</StaminaTrainingPart>
+    <LastTrainingTrainingType>5</LastTrainingTrainingType>
+    <LastTrainingTrainingLevel>100</LastTrainingTrainingLevel>
+    <LastTrainingStaminaTrainingPart>22</LastTrainingStaminaTrainingPart>
+    <Trainer>
+      <TrainerID>421746800</TrainerID>
+      <TrainerName>Quentin Lavigne</TrainerName>
+      <ArrivalDate>2018-03-23 19:44:00</ArrivalDate>
+    </Trainer>
+    <SpecialTraining />
+    <Morale Available="True">4</Morale>
+    <SelfConfidence Available="True">5</SelfConfidence>
+    <Experience442>5</Experience442>
+    <Experience433>2</Experience433>
+    <Experience451>2</Experience451>
+    <Experience352>9</Experience352>
+    <Experience532>2</Experience532>
+    <Experience343>7</Experience343>
+    <Experience541>2</Experience541>
+    <Experience523>2</Experience523>
+    <Experience550>2</Experience550>
+    <Experience253>9</Experience253>
+  </Team>
+</HattrickData>

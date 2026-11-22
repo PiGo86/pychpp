@@ -1,0 +1,86 @@
+<HattrickData>
+  <FileName>teamdetails.xml</FileName>
+  <Version>4.0</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 16:38:04</FetchedDate>
+  <User>
+    <UserID>0</UserID>
+    <SupporterTier>none</SupporterTier>
+    <Loginname />
+    <Name>HIDDEN</Name>
+    <ICQ />
+    <SignupDate>0001-01-01 00:00:00</SignupDate>
+    <ActivationDate>2025-08-11 10:04:00</ActivationDate>
+    <LastLoginDate>0001-01-01 00:00:00</LastLoginDate>
+    <HasManagerLicense>False</HasManagerLicense>
+    <NationalTeams />
+  </User>
+  <Teams>
+    <Team>
+      <TeamID>2513478</TeamID>
+      <TeamName>Hua-lien Kickers</TeamName>
+      <ShortTeamName>Hua-lien</ShortTeamName>
+      <IsPrimaryClub>False</IsPrimaryClub>
+      <FoundedDate>2025-08-11 10:04:00</FoundedDate>
+      <IsDeactivated>False</IsDeactivated>
+      <GenderID>1</GenderID>
+      <LeagueSystemID>1</LeagueSystemID>
+      <Arena>
+        <ArenaID>2510221</ArenaID>
+        <ArenaName>Hua-lien Stadium</ArenaName>
+      </Arena>
+      <League>
+        <LeagueID>60</LeagueID>
+        <LeagueName>Taïwan</LeagueName>
+      </League>
+      <Country>
+        <CountryID>52</CountryID>
+        <CountryName>Taïwan</CountryName>
+      </Country>
+      <Region>
+        <RegionID>1130</RegionID>
+        <RegionName>Hua-lien</RegionName>
+      </Region>
+      <Trainer>
+        <PlayerID>494202489</PlayerID>
+      </Trainer>
+      <HomePage />
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <DressAlternateURI>//res.hattrick.org/kits/1/1/1/2/matchKitSmall.png</DressAlternateURI>
+      <LeagueLevelUnit>
+        <LeagueLevelUnitID>116524</LeagueLevelUnitID>
+        <LeagueLevelUnitName>V.5</LeagueLevelUnitName>
+        <LeagueLevel>5</LeagueLevel>
+      </LeagueLevelUnit>
+      <BotStatus>
+        <IsBot>True</IsBot>
+        <BotSince>2025-08-11 10:04:00</BotSince>
+      </BotStatus>
+      <Cup>
+        <StillInCup>False</StillInCup>
+      </Cup>
+      <PowerRating>
+        <GlobalRanking>0</GlobalRanking>
+        <LeagueRanking>0</LeagueRanking>
+        <RegionRanking>0</RegionRanking>
+        <PowerRating>0</PowerRating>
+      </PowerRating>
+      <FriendlyTeamID>0</FriendlyTeamID>
+      <NumberOfVictories>1</NumberOfVictories>
+      <NumberOfUndefeated>2</NumberOfUndefeated>
+      <TeamRank>0</TeamRank>
+      <Fanclub>
+        <FanclubID>0</FanclubID>
+        <FanclubName />
+        <FanclubSize>1490</FanclubSize>
+      </Fanclub>
+      <LogoURL />
+      <YouthTeamID>0</YouthTeamID>
+      <YouthTeamName />
+      <NumberOfVisits>0</NumberOfVisits>
+      <TrophyList />
+      <PossibleToChallengeMidweek>False</PossibleToChallengeMidweek>
+      <PossibleToChallengeWeekend>False</PossibleToChallengeWeekend>
+    </Team>
+  </Teams>
+</HattrickData>

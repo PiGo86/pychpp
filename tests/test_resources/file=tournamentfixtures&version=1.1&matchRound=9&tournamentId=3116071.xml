@@ -1,0 +1,584 @@
+<HattrickData>
+  <FileName>tournamentFixtures.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 22:36:17</FetchedDate>
+  <Matches>
+    <Match>
+      <MatchId>42712658</MatchId>
+      <HomeTeamId>827647</HomeTeamId>
+      <HomeTeamName>Club Atletico Fray Luis Beltran</HomeTeamName>
+      <HomeShortTeamName>Frayle</HomeShortTeamName>
+      <AwayTeamId>1802445</AwayTeamId>
+      <AwayTeamName>Pijaki z Jednej Paki</AwayTeamName>
+      <AwayShortTeamName>Pijaki</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712659</MatchId>
+      <HomeTeamId>2055390</HomeTeamId>
+      <HomeTeamName>Auberge CF</HomeTeamName>
+      <HomeShortTeamName>Auberge</HomeShortTeamName>
+      <AwayTeamId>1713890</AwayTeamId>
+      <AwayTeamName>Ankara1905</AwayTeamName>
+      <AwayShortTeamName>Ankara1905</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712662</MatchId>
+      <HomeTeamId>1539041</HomeTeamId>
+      <HomeTeamName>Pacifistas</HomeTeamName>
+      <HomeShortTeamName>Pacifistas</HomeShortTeamName>
+      <AwayTeamId>1433741</AwayTeamId>
+      <AwayTeamName>Masillas FC</AwayTeamName>
+      <AwayShortTeamName>Masillas</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>6</HomeGoals>
+      <AwayGoals>4</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712661</MatchId>
+      <HomeTeamId>2054570</HomeTeamId>
+      <HomeTeamName>FC Mongo</HomeTeamName>
+      <HomeShortTeamName>Mongo</HomeShortTeamName>
+      <AwayTeamId>2012129</AwayTeamId>
+      <AwayTeamName>Rio de Camaroes</AwayTeamName>
+      <AwayShortTeamName>Camaroes</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712660</MatchId>
+      <HomeTeamId>1008519</HomeTeamId>
+      <HomeTeamName>Saturn Rovers</HomeTeamName>
+      <HomeShortTeamName>Saturn</HomeShortTeamName>
+      <AwayTeamId>147190</AwayTeamId>
+      <AwayTeamName>Kinderboerderij De Manke Pony</AwayTeamName>
+      <AwayShortTeamName>KBDMP</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712663</MatchId>
+      <HomeTeamId>333027</HomeTeamId>
+      <HomeTeamName>Fortuna Fippes Freiburg</HomeTeamName>
+      <HomeShortTeamName>FFF</HomeShortTeamName>
+      <AwayTeamId>534267</AwayTeamId>
+      <AwayTeamName>fk tratincica</AwayTeamName>
+      <AwayShortTeamName>tratincica</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712667</MatchId>
+      <HomeTeamId>711127</HomeTeamId>
+      <HomeTeamName>Zlatan *Ibrahimovic*</HomeTeamName>
+      <HomeShortTeamName>Ibra</HomeShortTeamName>
+      <AwayTeamId>2053066</AwayTeamId>
+      <AwayTeamName>Dirkies Team</AwayTeamName>
+      <AwayShortTeamName>Dirkies</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712666</MatchId>
+      <HomeTeamId>342694</HomeTeamId>
+      <HomeTeamName>F.C Tukies</HomeTeamName>
+      <HomeShortTeamName>Tukies</HomeShortTeamName>
+      <AwayTeamId>2054708</AwayTeamId>
+      <AwayTeamName>Ulaanbaatar Stars</AwayTeamName>
+      <AwayShortTeamName>Ulaanbaatar</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712664</MatchId>
+      <HomeTeamId>275488</HomeTeamId>
+      <HomeTeamName>Deportivo Caneamo Silvestre</HomeTeamName>
+      <HomeShortTeamName>Caneamo</HomeShortTeamName>
+      <AwayTeamId>2052741</AwayTeamId>
+      <AwayTeamName>Gripen</AwayTeamName>
+      <AwayShortTeamName>Gripen</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712665</MatchId>
+      <HomeTeamId>1321281</HomeTeamId>
+      <HomeTeamName>ER Soccerteam</HomeTeamName>
+      <HomeShortTeamName>Soccerteam</HomeShortTeamName>
+      <AwayTeamId>2053298</AwayTeamId>
+      <AwayTeamName>Saint Lucifer FC</AwayTeamName>
+      <AwayShortTeamName>Lucifer</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>2</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712669</MatchId>
+      <HomeTeamId>2053705</HomeTeamId>
+      <HomeTeamName>Hagforsvikingarna</HomeTeamName>
+      <HomeShortTeamName>Hagforsvikingarna</HomeShortTeamName>
+      <AwayTeamId>53407</AwayTeamId>
+      <AwayTeamName>GEsindel Buchholz 1904</AwayTeamName>
+      <AwayShortTeamName>GLÜCK AUF</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712671</MatchId>
+      <HomeTeamId>2054098</HomeTeamId>
+      <HomeTeamName>CAJ Mäjkers</HomeTeamName>
+      <HomeShortTeamName>CAJ</HomeShortTeamName>
+      <AwayTeamId>894028</AwayTeamId>
+      <AwayTeamName>Nasypaní Běžci</AwayTeamName>
+      <AwayShortTeamName>Nasypanci</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712668</MatchId>
+      <HomeTeamId>1906561</HomeTeamId>
+      <HomeTeamName>e to the i*pi</HomeTeamName>
+      <HomeShortTeamName>e to i pi</HomeShortTeamName>
+      <AwayTeamId>456194</AwayTeamId>
+      <AwayTeamName>Vita Sannars FK</AwayTeamName>
+      <AwayShortTeamName>Sannars</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712670</MatchId>
+      <HomeTeamId>1388430</HomeTeamId>
+      <HomeTeamName>Dörfli Snipers</HomeTeamName>
+      <HomeShortTeamName>Snipers</HomeShortTeamName>
+      <AwayTeamId>811129</AwayTeamId>
+      <AwayTeamName>De Uni's</AwayTeamName>
+      <AwayShortTeamName>Unis</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712674</MatchId>
+      <HomeTeamId>1186126</HomeTeamId>
+      <HomeTeamName>FCBraila</HomeTeamName>
+      <HomeShortTeamName>FCBraila</HomeShortTeamName>
+      <AwayTeamId>2054798</AwayTeamId>
+      <AwayTeamName>FK Opičí hory "C tým"</AwayTeamName>
+      <AwayShortTeamName>Opičí</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712672</MatchId>
+      <HomeTeamId>875522</HomeTeamId>
+      <HomeTeamName>Fotbal Club Iași </HomeTeamName>
+      <HomeShortTeamName>F.C. Iași</HomeShortTeamName>
+      <AwayTeamId>869176</AwayTeamId>
+      <AwayTeamName>Roosters Bydgoszcz</AwayTeamName>
+      <AwayShortTeamName>Roosters</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712677</MatchId>
+      <HomeTeamId>927844</HomeTeamId>
+      <HomeTeamName>Atlético Vejgaard</HomeTeamName>
+      <HomeShortTeamName>Atlético</HomeShortTeamName>
+      <AwayTeamId>2056036</AwayTeamId>
+      <AwayTeamName>InterMusa</AwayTeamName>
+      <AwayShortTeamName>InterMusa</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712676</MatchId>
+      <HomeTeamId>329122</HomeTeamId>
+      <HomeTeamName>Club S. y R. El Quequen</HomeTeamName>
+      <HomeShortTeamName>Quequen</HomeShortTeamName>
+      <AwayTeamId>912025</AwayTeamId>
+      <AwayTeamName>Criollitos de Vzla</AwayTeamName>
+      <AwayShortTeamName>CVzla</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712673</MatchId>
+      <HomeTeamId>1728979</HomeTeamId>
+      <HomeTeamName>Falange Arancione</HomeTeamName>
+      <HomeShortTeamName>La Falange</HomeShortTeamName>
+      <AwayTeamId>1799443</AwayTeamId>
+      <AwayTeamName>Spencer Bullies</AwayTeamName>
+      <AwayShortTeamName>Spencer</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>3</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712675</MatchId>
+      <HomeTeamId>894008</HomeTeamId>
+      <HomeTeamName>roll deep</HomeTeamName>
+      <HomeShortTeamName>roll</HomeShortTeamName>
+      <AwayTeamId>614794</AwayTeamId>
+      <AwayTeamName>FCO UNDERGROUND</AwayTeamName>
+      <AwayShortTeamName>UNDERGROUND</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>3</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712678</MatchId>
+      <HomeTeamId>1854612</HomeTeamId>
+      <HomeTeamName>FC FANTASY DREAM</HomeTeamName>
+      <HomeShortTeamName>FANTASY</HomeShortTeamName>
+      <AwayTeamId>1130834</AwayTeamId>
+      <AwayTeamName>FC Fanligt Folk</AwayTeamName>
+      <AwayShortTeamName>FCFFolk</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712679</MatchId>
+      <HomeTeamId>517698</HomeTeamId>
+      <HomeTeamName>Waasland-Sint-Niklaas</HomeTeamName>
+      <HomeShortTeamName>Waasland-Sint-Nikla</HomeShortTeamName>
+      <AwayTeamId>1834708</AwayTeamId>
+      <AwayTeamName>Hapoeal "G" Arad</AwayTeamName>
+      <AwayShortTeamName>Hapoeal</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>4</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712680</MatchId>
+      <HomeTeamId>1158911</HomeTeamId>
+      <HomeTeamName>FC Quagadugu</HomeTeamName>
+      <HomeShortTeamName>Quagadugu</HomeShortTeamName>
+      <AwayTeamId>56611</AwayTeamId>
+      <AwayTeamName>South Bromwich Albion</AwayTeamName>
+      <AwayShortTeamName>SBA</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712681</MatchId>
+      <HomeTeamId>77034</HomeTeamId>
+      <HomeTeamName>Sangomango FC</HomeTeamName>
+      <HomeShortTeamName>Sangomango</HomeShortTeamName>
+      <AwayTeamId>2054757</AwayTeamId>
+      <AwayTeamName>Die Vierte Internationale</AwayTeamName>
+      <AwayShortTeamName>Internationale</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712683</MatchId>
+      <HomeTeamId>2052485</HomeTeamId>
+      <HomeTeamName>D_A_B_</HomeTeamName>
+      <HomeShortTeamName>Dilka</HomeShortTeamName>
+      <AwayTeamId>8917</AwayTeamId>
+      <AwayTeamName>ASF Looberghe C</AwayTeamName>
+      <AwayShortTeamName>Looberghe</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712682</MatchId>
+      <HomeTeamId>2053078</HomeTeamId>
+      <HomeTeamName>FC Bäretatze</HomeTeamName>
+      <HomeShortTeamName>Bäretatze</HomeShortTeamName>
+      <AwayTeamId>2012088</AwayTeamId>
+      <AwayTeamName>Shoegaze</AwayTeamName>
+      <AwayShortTeamName>Shoegaze</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>1</HomeGoals>
+      <AwayGoals>6</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712688</MatchId>
+      <HomeTeamId>1995015</HomeTeamId>
+      <HomeTeamName>Championia FC Budapest</HomeTeamName>
+      <HomeShortTeamName>CFC Bpest</HomeShortTeamName>
+      <AwayTeamId>2056468</AwayTeamId>
+      <AwayTeamName>Forlorn Pines</AwayTeamName>
+      <AwayShortTeamName>Pines</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>5</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712687</MatchId>
+      <HomeTeamId>1076085</HomeTeamId>
+      <HomeTeamName>Mørkeblå Kråker</HomeTeamName>
+      <HomeShortTeamName>Mørkeblå</HomeShortTeamName>
+      <AwayTeamId>1050683</AwayTeamId>
+      <AwayTeamName>Bianconeri FC 1897</AwayTeamName>
+      <AwayShortTeamName>BFC</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712684</MatchId>
+      <HomeTeamId>335220</HomeTeamId>
+      <HomeTeamName>Sv 1894 Sachsenhausen e.V.</HomeTeamName>
+      <HomeShortTeamName>SVS</HomeShortTeamName>
+      <AwayTeamId>2056497</AwayTeamId>
+      <AwayTeamName>Togola FC</AwayTeamName>
+      <AwayShortTeamName>Togola</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>0</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712686</MatchId>
+      <HomeTeamId>2053099</HomeTeamId>
+      <HomeTeamName>Everything Can Be Beaten Fc</HomeTeamName>
+      <HomeShortTeamName>Everything</HomeShortTeamName>
+      <AwayTeamId>409450</AwayTeamId>
+      <AwayTeamName>MIRNOFF FC</AwayTeamName>
+      <AwayShortTeamName>MIRNOFF</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>9</HomeGoals>
+      <AwayGoals>8</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712685</MatchId>
+      <HomeTeamId>2054134</HomeTeamId>
+      <HomeTeamName>Mantas</HomeTeamName>
+      <HomeShortTeamName>Mantas</HomeShortTeamName>
+      <AwayTeamId>146012</AwayTeamId>
+      <AwayTeamName>FC 0492 Helmond</AwayTeamName>
+      <AwayShortTeamName>Helmond</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>4</HomeGoals>
+      <AwayGoals>1</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+    <Match>
+      <MatchId>42712689</MatchId>
+      <HomeTeamId>2056441</HomeTeamId>
+      <HomeTeamName>Snow Elves</HomeTeamName>
+      <HomeShortTeamName>Elves</HomeShortTeamName>
+      <AwayTeamId>106691</AwayTeamId>
+      <AwayTeamName>Moskoep FC</AwayTeamName>
+      <AwayShortTeamName>Moskoep</AwayShortTeamName>
+      <MatchDate>2026-10-30 07:05:00</MatchDate>
+      <MatchType>51</MatchType>
+      <MatchRound>9</MatchRound>
+      <Group>0</Group>
+      <Status>2</Status>
+      <HomeGoals>2</HomeGoals>
+      <AwayGoals>0</AwayGoals>
+      <HomeStatement />
+      <AwayStatement />
+    </Match>
+  </Matches>
+</HattrickData>

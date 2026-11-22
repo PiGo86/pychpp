@@ -1,0 +1,67 @@
+<HattrickData>
+  <FileName>youthleaguedetails.xml</FileName>
+  <Version>1.1</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 23:38:57</FetchedDate>
+  <YouthLeagueID>225490</YouthLeagueID>
+  <YouthLeagueName>Robaphipie League</YouthLeagueName>
+  <YouthLeagueType>3</YouthLeagueType>
+  <Season>148</Season>
+  <LastMatchRound>0</LastMatchRound>
+  <NrOfTeamsInLeague>4</NrOfTeamsInLeague>
+  <LeagueSystemID>1</LeagueSystemID>
+  <Teams>
+    <Team>
+      <TeamID>3295934</TeamID>
+      <TeamName>santa rita</TeamName>
+      <Position>1</Position>
+      <PositionChange>0</PositionChange>
+      <Matches>0</Matches>
+      <GoalsFor>0</GoalsFor>
+      <GoalsAgainst>0</GoalsAgainst>
+      <Points>0</Points>
+      <Won>0</Won>
+      <Draws>0</Draws>
+      <Lost>0</Lost>
+    </Team>
+    <Team>
+      <TeamID>3010217</TeamID>
+      <TeamName>NLZ Hunsrück Höfchen International</TeamName>
+      <Position>2</Position>
+      <PositionChange>0</PositionChange>
+      <Matches>0</Matches>
+      <GoalsFor>0</GoalsFor>
+      <GoalsAgainst>0</GoalsAgainst>
+      <Points>0</Points>
+      <Won>0</Won>
+      <Draws>0</Draws>
+      <Lost>0</Lost>
+    </Team>
+    <Team>
+      <TeamID>499165</TeamID>
+      <TeamName>Jena West II</TeamName>
+      <Position>3</Position>
+      <PositionChange>0</PositionChange>
+      <Matches>0</Matches>
+      <GoalsFor>0</GoalsFor>
+      <GoalsAgainst>0</GoalsAgainst>
+      <Points>0</Points>
+      <Won>0</Won>
+      <Draws>0</Draws>
+      <Lost>0</Lost>
+    </Team>
+    <Team>
+      <TeamID>2942691</TeamID>
+      <TeamName>Les Petits Chapelains</TeamName>
+      <Position>4</Position>
+      <PositionChange>0</PositionChange>
+      <Matches>0</Matches>
+      <GoalsFor>0</GoalsFor>
+      <GoalsAgainst>0</GoalsAgainst>
+      <Points>0</Points>
+      <Won>0</Won>
+      <Draws>0</Draws>
+      <Lost>0</Lost>
+    </Team>
+  </Teams>
+</HattrickData>

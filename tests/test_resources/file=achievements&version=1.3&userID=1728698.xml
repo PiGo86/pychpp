@@ -1,0 +1,859 @@
+<HattrickData>
+  <FileName>achievements.xml</FileName>
+  <Version>1.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 17:19:10</FetchedDate>
+  <UserID>1728698</UserID>
+  <MaxPoints>740</MaxPoints>
+  <AchievementList>
+    <Achievement>
+      <AchievementTypeID>1</AchievementTypeID>
+      <AchievementTitle>La course au classement</AchievementTitle>
+      <AchievementText>L’équipe a été classée dans le top 500</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2021-12-20 05:06:00</EventDate>
+      <Points>40</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>4</Rank>
+      <NumberOfEvents>79278</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>100</MaxPoints>
+      <ProgressValue>194</ProgressValue>
+      <ProgressValueDate>2022-01-10 05:05:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>500</ValueToAchieve>
+        <Points>40</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>100</ValueToAchieve>
+        <Points>45</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>2</AchievementTypeID>
+      <AchievementTitle>Je te veux</AchievementTitle>
+      <AchievementText>A acheté ce joueur</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2017-09-09 18:18:30</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>189969</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>3</AchievementTypeID>
+      <AchievementTitle>Hors de ma vue</AchievementTitle>
+      <AchievementText>A vendu ce joueur acheté précédemment.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2018-07-10 20:29:20</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>164474</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>4</AchievementTypeID>
+      <AchievementTitle>Calmer la presse</AchievementTitle>
+      <AchievementText>A publié un communiqué de presse</AchievementText>
+      <CategoryID>6</CategoryID>
+      <EventDate>2017-09-09 23:09:35</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>56495</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>5</AchievementTypeID>
+      <AchievementTitle>Le monde veut savoir</AchievementTitle>
+      <AchievementText>A écrit un message sur le forum</AchievementText>
+      <CategoryID>4</CategoryID>
+      <EventDate>2018-11-08 21:49:35</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>98229</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>6</AchievementTypeID>
+      <AchievementTitle>On est tellement doués</AchievementTitle>
+      <AchievementText>Lors d'un &lt;a href="/Club/Matches/Match.aspx?matchID=681780295&amp;SourceSystem=Hattrick"&gt;match&lt;/a&gt;, l’équipe a réalisé une performance moyenne de niveau &lt;a href="/Help/Rules/AppDenominations.aspx?lt=skill&amp;amp;ll=13#skill" class="skill"&gt;légendaire&lt;/a&gt;</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2021-11-06 22:48:00</EventDate>
+      <Points>34</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>6</Rank>
+      <NumberOfEvents>30782</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>63</MaxPoints>
+      <CurrentVariation>
+        <Rank>6</Rank>
+        <ValueToAchieve>13</ValueToAchieve>
+        <Points>34</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>5</Rank>
+        <ValueToAchieve>14</ValueToAchieve>
+        <Points>39</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>7</AchievementTypeID>
+      <AchievementTitle>Amis lointains</AchievementTitle>
+      <AchievementText>A joué un match amical international</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2017-11-22 17:07:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>171228</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>8</AchievementTypeID>
+      <AchievementTitle>L'entrainement fait la différence</AchievementTitle>
+      <AchievementText>Progression d’un joueur</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2017-09-15 05:18:05</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>210225</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>9</AchievementTypeID>
+      <AchievementTitle>Donnons-lui sa chance</AchievementTitle>
+      <AchievementText>A promu un jeune joueur</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2017-09-09 18:10:18</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>187684</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>22</AchievementTypeID>
+      <AchievementTitle>Collectionneur d'étoiles</AchievementTitle>
+      <AchievementText>L’équipe a atteint ou dépassé 90 étoiles lors de ce &lt;a href="/Club/Matches/Match.aspx?matchID=665922742&amp;SourceSystem=Hattrick"&gt;match&lt;/a&gt;</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2020-12-19 22:46:00</EventDate>
+      <Points>50</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>5</Rank>
+      <NumberOfEvents>72184</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>100</MaxPoints>
+      <ProgressValue>190</ProgressValue>
+      <ProgressValueDate>2021-11-20 22:48:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>5</Rank>
+        <ValueToAchieve>180</ValueToAchieve>
+        <Points>50</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>200</ValueToAchieve>
+        <Points>60</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>23</AchievementTypeID>
+      <AchievementTitle>Tant de qualité</AchievementTitle>
+      <AchievementText>Le TSI total de l’équipe a atteint ou dépassé 1 500 000</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2022-02-04 05:20:00</EventDate>
+      <Points>65</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>2</Rank>
+      <NumberOfEvents>52982</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>80</MaxPoints>
+      <ProgressValue>1749350</ProgressValue>
+      <ProgressValueDate>2022-06-25 22:56:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>2</Rank>
+        <ValueToAchieve>1500000</ValueToAchieve>
+        <Points>65</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>2000000</ValueToAchieve>
+        <Points>80</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>25</AchievementTypeID>
+      <AchievementTitle>Composition avec des joueurs issus du club</AchievementTitle>
+      <AchievementText>Tous les joueurs de votre composition de départ sont originaires de votre club et ont une moyenne d'âge supérieure à 18 ans. Sachez qu'il doit y avoir 11 joueurs dans cette composition pour obtenir cette réussite.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2017-09-13 16:50:00</EventDate>
+      <Points>25</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>178417</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>25</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>26</AchievementTypeID>
+      <AchievementTitle>Composition de seniors</AchievementTitle>
+      <AchievementText>La moyenne d’âge des joueurs de votre composition de départ est de plus de 35 ans. Veuillez noter que seules les années sont prises en compte, pas les jours, et qu'il doit y avoir 11 joueurs dans cette composition pour obtenir cette réussite.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2022-07-06 16:51:00</EventDate>
+      <Points>35</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>32009</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>35</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>31</AchievementTypeID>
+      <AchievementTitle>L’argent règne !</AchievementTitle>
+      <AchievementText>L'argent de vos caisses a dépassé 10 000 000&amp;nbsp;€ lors de la mise à jour économique hebdomadaire.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2021-01-09 04:49:34</EventDate>
+      <Points>35</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>96181</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>35</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>100000000</ValueToAchieve>
+        <Points>35</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>32</AchievementTypeID>
+      <AchievementTitle>Se sentir aimé</AchievementTitle>
+      <AchievementText>Le club des supporters a atteint ou dépassé 2 000 membres</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2019-10-14 12:02:30</EventDate>
+      <Points>15</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>3</Rank>
+      <NumberOfEvents>141603</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>50</MaxPoints>
+      <ProgressValue>2811</ProgressValue>
+      <ProgressValueDate>2022-02-10 12:01:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>2000</ValueToAchieve>
+        <Points>15</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>2</Rank>
+        <ValueToAchieve>3000</ValueToAchieve>
+        <Points>30</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>34</AchievementTypeID>
+      <AchievementTitle>Retour sur investissement</AchievementTitle>
+      <AchievementText>A vendu ce jeune joueur</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2018-06-23 19:01:09</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>168498</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>36</AchievementTypeID>
+      <AchievementTitle>Moment important</AchievementTitle>
+      <AchievementText>A joué à Hattrick pendant 20 années.</AchievementText>
+      <CategoryID>4</CategoryID>
+      <EventDate>2026-07-15 09:41:00</EventDate>
+      <Points>0</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>29787</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>0</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>20</ValueToAchieve>
+        <Points>0</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>38</AchievementTypeID>
+      <AchievementTitle>Série d'invincibilité en Coupe</AchievementTitle>
+      <AchievementText>Réalisez une longue série de victoires en Coupe nationale. Les séries de victoires sont reconduites d'une saison vers la suivante.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2020-07-15 17:50:00</EventDate>
+      <Points>30</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>9</Rank>
+      <NumberOfEvents>38052</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>70</MaxPoints>
+      <CurrentVariation>
+        <Rank>9</Rank>
+        <ValueToAchieve>6</ValueToAchieve>
+        <Points>30</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>8</Rank>
+        <ValueToAchieve>7</ValueToAchieve>
+        <Points>35</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>39</AchievementTypeID>
+      <AchievementTitle>Efface ce sourire de tes lèvres</AchievementTitle>
+      <AchievementText>Mettez un coup d'arrêt à la série d'invincibilité d'une autre équipe en gagnant un &lt;a href="/Club/Matches/Match.aspx?matchID=713143984&amp;SourceSystem=Hattrick"&gt;match officiel&lt;/a&gt; contre elle. Plus longue sera la série que vous stoppez, plus élevée sera votre réussite.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2023-03-29 16:49:00</EventDate>
+      <Points>16</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>2</Rank>
+      <NumberOfEvents>89458</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>20</MaxPoints>
+      <CurrentVariation>
+        <Rank>2</Rank>
+        <ValueToAchieve>12</ValueToAchieve>
+        <Points>16</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>16</ValueToAchieve>
+        <Points>20</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>40</AchievementTypeID>
+      <AchievementTitle>Seule la victoire compte</AchievementTitle>
+      <AchievementText>Continuez à remporter des victoires. La réussite prend en compte les victoires depuis la création de votre équipe, en match officiel uniquement.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2024-11-09 21:00:00</EventDate>
+      <Points>30</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>117882</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>30</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>128</ValueToAchieve>
+        <Points>30</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>41</AchievementTypeID>
+      <AchievementTitle>Marquer au-delà des limites</AchievementTitle>
+      <AchievementText>Buts inscrits par votre équipe en matchs officiels.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2023-06-10 22:49:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>4</Rank>
+      <NumberOfEvents>127013</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>25</MaxPoints>
+      <ProgressValue>988</ProgressValue>
+      <ProgressValueDate>2026-11-11 16:47:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>500</ValueToAchieve>
+        <Points>10</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>1000</ValueToAchieve>
+        <Points>15</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>42</AchievementTypeID>
+      <AchievementTitle>Les forces spéciales</AchievementTitle>
+      <AchievementText>Remportez n'importe quel match en ne marquant que des buts sur situation exceptionnelle.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2022-09-14 16:50:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>153689</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>43</AchievementTypeID>
+      <AchievementTitle>Les rois de la remontada</AchievementTitle>
+      <AchievementText>Concerne les équipes qui ont été menées de plusieurs buts, puis ont renversé le &lt;a href="/Club/Matches/Match.aspx?matchID=676620137&amp;SourceSystem=Hattrick"&gt;match&lt;/a&gt;. Plus dramatique est la remontada, mieux c'est.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2021-07-24 22:49:00</EventDate>
+      <Points>3</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>4</Rank>
+      <NumberOfEvents>157528</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>12</MaxPoints>
+      <CurrentVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>2</ValueToAchieve>
+        <Points>3</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>3</ValueToAchieve>
+        <Points>6</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>44</AchievementTypeID>
+      <AchievementTitle>On est plus fort que Hattrick</AchievementTitle>
+      <AchievementText>Quand marquer un Hattrick dans un match ne suffit pas. Votre équipe doit en marquer deux dans le même match pour remporter cette distinction.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2022-01-01 22:50:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>126037</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>45</AchievementTypeID>
+      <AchievementTitle>Ça ne m'étonne pas </AchievementTitle>
+      <AchievementText>Votre équipe a vécu une &lt;a href="/Club/Matches/Match.aspx?matchID=734407359&amp;SourceSystem=Hattrick"&gt;sale journée&lt;/a&gt; avec beaucoup de blessures. Cette réussite est le prix de consolation.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2024-07-20 22:48:00</EventDate>
+      <Points>6</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>2</Rank>
+      <NumberOfEvents>155095</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>10</MaxPoints>
+      <CurrentVariation>
+        <Rank>2</Rank>
+        <ValueToAchieve>3</ValueToAchieve>
+        <Points>6</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>4</ValueToAchieve>
+        <Points>10</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>48</AchievementTypeID>
+      <AchievementTitle>En mission officielle</AchievementTitle>
+      <AchievementText>Un décompte de tous les matchs officiels joués par votre équipe.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2022-05-14 22:45:00</EventDate>
+      <Points>16</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>159599</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>16</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>64</ValueToAchieve>
+        <Points>16</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>50</AchievementTypeID>
+      <AchievementTitle>Je n'ai d'yeux que pour vous</AchievementTitle>
+      <AchievementText>Vérifiez tous les matchs en direct de votre poule, avec le site web ou l'appli, pendant une saison complète.</AchievementText>
+      <CategoryID>4</CategoryID>
+      <EventDate>2022-03-19 21:21:35</EventDate>
+      <Points>30</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>53750</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>30</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>54</AchievementTypeID>
+      <AchievementTitle>Je devrais déjà être au lit</AchievementTitle>
+      <AchievementText>S'est connecté à Hattrick à minuit, heure locale.</AchievementText>
+      <CategoryID>4</CategoryID>
+      <EventDate>2021-12-15 00:00:09</EventDate>
+      <Points>5</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>88115</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>5</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>58</AchievementTypeID>
+      <AchievementTitle>Jamais seul</AchievementTitle>
+      <AchievementText>La régularité est la clé. Jouez au moins un match amical par semaine, pendant plusieurs semaines d'affilée. Les matchs amicaux du weekend comptent également, si pour n'importe quelle raison, vous oubliez d'organiser votre match amical de milieu de semaine. Plus vous serez régulier, plus haut sera votre niveau de réussite.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2022-05-04 16:51:00</EventDate>
+      <Points>12</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>3</Rank>
+      <NumberOfEvents>141765</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>20</MaxPoints>
+      <ProgressValue>20</ProgressValue>
+      <ProgressValueDate>2022-06-01 16:53:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>16</ValueToAchieve>
+        <Points>12</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>2</Rank>
+        <ValueToAchieve>48</ValueToAchieve>
+        <Points>15</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>63</AchievementTypeID>
+      <AchievementTitle>Machine à buts</AchievementTitle>
+      <AchievementText>Faites marquer le plus de buts à votre équipe lors de matchs de ligue au cours de la &lt;a href="/World/Series/SeriesHistory.aspx?LeagueLevelUnitID=21672&amp;TeamID=-1&amp;RequestedSeason=79"&gt;même saison&lt;/a&gt;. Plus elle marque de buts, plus haut sera votre classement.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2021-11-27 22:49:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>5</Rank>
+      <NumberOfEvents>121191</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>18</MaxPoints>
+      <ProgressValue>65</ProgressValue>
+      <ProgressValueDate>2021-11-27 22:49:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>5</Rank>
+        <ValueToAchieve>60</ValueToAchieve>
+        <Points>10</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>70</ValueToAchieve>
+        <Points>12</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>64</AchievementTypeID>
+      <AchievementTitle>Vous ne passerez pas</AchievementTitle>
+      <AchievementText>Attribué quand vous avez disputé un certain nombre de matchs officiels sans encaisser de but. Vous atteignez les rangs plus élevés en augmentant votre total de matchs sans encaisser de but.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2024-02-17 22:49:00</EventDate>
+      <Points>20</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>128810</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>20</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>64</ValueToAchieve>
+        <Points>20</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>65</AchievementTypeID>
+      <AchievementTitle>C'est encore moi</AchievementTitle>
+      <AchievementText>Attribué quand le meilleur buteur de la saison fait partie de votre équipe. Vous atteignez les rangs plus élevés en réitérant cet évènement.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2023-06-10 23:23:00</EventDate>
+      <Points>4</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>4</Rank>
+      <NumberOfEvents>121367</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>10</MaxPoints>
+      <CurrentVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>2</ValueToAchieve>
+        <Points>4</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>4</ValueToAchieve>
+        <Points>6</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>69</AchievementTypeID>
+      <AchievementTitle>Toujours là pour vous</AchievementTitle>
+      <AchievementText>Visitez Hattrick chaque jour. Réussite attribuée quand vous réalisez une série de connexions sur plusieurs jours. Plus longue est votre série, plus élevé est votre rang.</AchievementText>
+      <CategoryID>4</CategoryID>
+      <EventDate>2021-07-01 00:06:00</EventDate>
+      <Points>30</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>53027</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>30</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>90</ValueToAchieve>
+        <Points>30</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>73</AchievementTypeID>
+      <AchievementTitle>Si près !</AchievementTitle>
+      <AchievementText>Perdre une séance de tirs au but était cruel, mais au moins vous avez gagné cette réussite.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2025-05-28 18:29:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>147378</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>74</AchievementTypeID>
+      <AchievementTitle>Expert en pénalty</AchievementTitle>
+      <AchievementText>Un décompte des pénaltys marqués en matchs officiels. Les tirs au but ne sont pas pris en compte. </AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2023-07-19 17:15:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>134239</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>20</ValueToAchieve>
+        <Points>10</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>75</AchievementTypeID>
+      <AchievementTitle>Embrasser le blason</AchievementTitle>
+      <AchievementText>A créé un logo pour l'équipe avec l'éditeur de logo du club.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2022-02-26 09:59:54</EventDate>
+      <Points>5</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>88114</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>5</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>79</AchievementTypeID>
+      <AchievementTitle>Chasse aux Œufs de Pâques</AchievementTitle>
+      <AchievementText>[Hidden]</AchievementText>
+      <CategoryID>0</CategoryID>
+      <EventDate>2026-04-06 17:33:00</EventDate>
+      <Points>0</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>5</Rank>
+      <NumberOfEvents>76411</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>0</MaxPoints>
+      <CurrentVariation>
+        <Rank>5</Rank>
+        <ValueToAchieve>1</ValueToAchieve>
+        <Points>0</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>2</ValueToAchieve>
+        <Points>0</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>83</AchievementTypeID>
+      <AchievementTitle>Ils sont là avec moi</AchievementTitle>
+      <AchievementText>Un manager que vous avez recruté est resté actif pendant plus de 12 mois. Votre niveau dans cette réussite augmentera avec le nombre de mois d'activité de ce manager.</AchievementText>
+      <CategoryID>4</CategoryID>
+      <EventDate>2022-11-02 11:41:00</EventDate>
+      <Points>20</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>6322</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>20</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>12</ValueToAchieve>
+        <Points>20</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>84</AchievementTypeID>
+      <AchievementTitle>Future statue</AchievementTitle>
+      <AchievementText>La loyauté avant tout. Cette réussite célèbre le dévouement d'un joueur à son équipe, accordée selon les jalons de nombre de matchs officiels disputés. Chaque nouveau palier commémore un plus grand dévouement.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2025-11-22 22:46:00</EventDate>
+      <Points>25</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>135914</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>25</MaxPoints>
+      <CurrentVariation>
+        <Rank>1</Rank>
+        <ValueToAchieve>96</ValueToAchieve>
+        <Points>25</Points>
+      </CurrentVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>86</AchievementTypeID>
+      <AchievementTitle>Mon jour parfait</AchievementTitle>
+      <AchievementText>[Hidden]</AchievementText>
+      <CategoryID>0</CategoryID>
+      <EventDate>2025-01-08 16:48:00</EventDate>
+      <Points>10</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>152886</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>10</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>88</AchievementTypeID>
+      <AchievementTitle>Club 200</AchievementTitle>
+      <AchievementText>Le joueur est reconnu pour ses buts en matchs officiels, avec un rang plus élevé à chaque fois qu'il atteint un palier.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2025-05-03 22:47:00</EventDate>
+      <Points>15</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>3</Rank>
+      <NumberOfEvents>61984</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>25</MaxPoints>
+      <ProgressValue>112</ProgressValue>
+      <ProgressValueDate>2025-11-08 22:46:00</ProgressValueDate>
+      <CurrentVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>100</ValueToAchieve>
+        <Points>15</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>2</Rank>
+        <ValueToAchieve>150</ValueToAchieve>
+        <Points>20</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>89</AchievementTypeID>
+      <AchievementTitle>Étoile montante</AchievementTitle>
+      <AchievementText>Découvrez une pépite exceptionnelle. Cette réussite est accordée quand un joueur, dont les trois plus hautes caractéristiques cumulées atteignent un certain niveau, est promu de votre équipe junior ou de votre centre de formation.</AchievementText>
+      <CategoryID>2</CategoryID>
+      <EventDate>2025-11-21 22:00:00</EventDate>
+      <Points>5</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>4</Rank>
+      <NumberOfEvents>166112</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>20</MaxPoints>
+      <CurrentVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>14</ValueToAchieve>
+        <Points>5</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>16</ValueToAchieve>
+        <Points>10</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>90</AchievementTypeID>
+      <AchievementTitle>Collectionneurs de cartons</AchievementTitle>
+      <AchievementText>Rejoignez le côté obscur du jeu. Cette réussite retrace combien de cartons votre équipe a reçus en un seul match. Plus vous prenez de cartons, plus votre équipe gagne en reconnaissance.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2025-02-05 17:17:00</EventDate>
+      <Points>4</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>4</Rank>
+      <NumberOfEvents>187547</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>10</MaxPoints>
+      <CurrentVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>3</ValueToAchieve>
+        <Points>4</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>3</Rank>
+        <ValueToAchieve>4</ValueToAchieve>
+        <Points>6</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>92</AchievementTypeID>
+      <AchievementTitle>Vous n'êtes pas sérieux ?</AchievementTitle>
+      <AchievementText>Ça peut arriver aux meilleurs d'entre nous. Remportez cette distinction douteuse en perdant un match officiel contre un bot. Un humble rappel qu'il y a des conséquences à sous-estimer n'importe quel adversaire.</AchievementText>
+      <CategoryID>3</CategoryID>
+      <EventDate>2025-02-15 22:46:00</EventDate>
+      <Points>5</Points>
+      <MultiLevel>False</MultiLevel>
+      <Rank>1</Rank>
+      <NumberOfEvents>70497</NumberOfEvents>
+      <Completed>True</Completed>
+      <MaxPoints>5</MaxPoints>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>99</AchievementTypeID>
+      <AchievementTitle>L'assemblée continentale</AchievementTitle>
+      <AchievementText>Composer une équipe de joueurs provenant du même continent semble assez facile. Mais pourrez-vous le faire six fois ?</AchievementText>
+      <CategoryID>7</CategoryID>
+      <EventDate>2025-12-22 20:27:00</EventDate>
+      <Points>5</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>6</Rank>
+      <NumberOfEvents>85996</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>30</MaxPoints>
+      <CurrentVariation>
+        <Rank>6</Rank>
+        <ValueToAchieve>1</ValueToAchieve>
+        <Points>5</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>5</Rank>
+        <ValueToAchieve>2</ValueToAchieve>
+        <Points>10</Points>
+      </NextVariation>
+    </Achievement>
+    <Achievement>
+      <AchievementTypeID>103</AchievementTypeID>
+      <AchievementTitle>Je suis partout</AchievementTitle>
+      <AchievementText>Soyez un explorateur de l'Arena ! Débloquez un niveau pour chaque nouveau tournoi auquel vous participez.</AchievementText>
+      <CategoryID>7</CategoryID>
+      <EventDate>2025-12-19 16:15:00</EventDate>
+      <Points>5</Points>
+      <MultiLevel>True</MultiLevel>
+      <Rank>5</Rank>
+      <NumberOfEvents>139220</NumberOfEvents>
+      <Completed>False</Completed>
+      <MaxPoints>25</MaxPoints>
+      <CurrentVariation>
+        <Rank>5</Rank>
+        <ValueToAchieve>1</ValueToAchieve>
+        <Points>5</Points>
+      </CurrentVariation>
+      <NextVariation>
+        <Rank>4</Rank>
+        <ValueToAchieve>4</ValueToAchieve>
+        <Points>10</Points>
+      </NextVariation>
+    </Achievement>
+  </AchievementList>
+</HattrickData>

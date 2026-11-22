@@ -78,5 +78,5 @@ class HTLightYouthTeam(BaseHTYouthTeam):
 
     _r_id = HTInitVar(param='youthTeamID', init_arg='id_', fill_with='id')
 
-    def details(self):
-        return self._chpp.youth_team(id_=self.id)
+    def details(self, **kwargs):
+        return self._chpp.youth_team(id_=self.id, **kwargs)

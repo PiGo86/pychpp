@@ -143,69 +143,72 @@ Then, to use this new class:
 In this way, only the data you're really interested in is parsed, which can in some cases be interesting from a performance point of view.
 
 ## List of supported CHPP XML files
-![57/57](https://progress-bar.xyz/100/?title=57%20on%2057)
+![60/60](https://progress-bar.xyz/100/?title=60%20on%2060)
 
 The following table shows the CHPP XML files that are currently supported:
 
-|      pyCHPP class      |        CHPP XML files        |
-|:----------------------:|:----------------------------:|
-|      Achievements      |      `achievements.xml`      |
-|       Alliances        |       `alliances.xml`        |
-|    AllianceDetails     |    `alliancedetails.xml`     |
-|         Arena          |      `arenadetails.xml`      |
-|        Avatars         |        `avatars.xml`         |
-|       Bookmarks        |       `bookmarks.xml`        |
-|       Challenges       |       `challenges.xml`       |
-|          Club          |          `club.xml`          |
-|       CupMatches       |       `cupmatches.xml`       |
-|      CurrentBids       |      `currentbids.xml`       |
-|        Economy         |        `economy.xml`         |
-|          Fans          |          `fans.xml`          |
-|   HallOfFamePlayers    |       `hofplayers.xml`       |
-|     LadderDetails      |     `ladderdetails.xml`      |
-|       LadderList       |       `ladderlist.xml`       |
-|     LeagueDetails      |     `leaguedetails.xml`      |
-|     LeagueFixtures     |     `leaguefixtures.xml`     |
-|      LeagueLevels      |      `leaguelevels.xml`      |
-|          Live          |          `live.xml`          |
-|   ManagerCompendium    |   `managercompendium.xml`    |
-|      MatchDetails      |      `matchdetails.xml`      |
-|      MatchLineup       |      `matchlineup.xml`       |
-|      MatchOrders       |      `matchorders.xml`       |
-|     MatchesArchive     |     `matchesarchive.xml`     |
-|        Matches         |        `matches.xml`         |
-|  NationalTeamDetails   |  `nationalteamdetails.xml`   |
-|  NationalTeamMatches   |  `nationalteammatches.xml`   |
-|     NationalTeams      |     `nationalteams.xml`      |
-|    NationalPlayers     |    `nationalplayers.xml`     |
-|     PlayerDetails      |     `playerdetails.xml`      |
-|      PlayerEvents      |      `playerevents.xml`      |
-|        Players         |        `players.xml`         |
-|     RegionDetails      |     `regiondetails.xml`      |
-|         Search         |         `search.xml`         |
-|      StaffAvatars      |      `staffavatars.xml`      |
-|       StaffList        |       `stafflist.xml`        |
-|       Supporters       |       `supporters.xml`       |
-|      TeamDetails       |      `teamdetails.xml`       |
-|   TournamentDetails    |   `tournamentdetails.xml`    |
-|   TournamentFixtures   |   `tournamentfixtures.xml`   |
-| TournamentLeagueTables | `tournamentleaguetables.xml` |
-|     TournamentList     |     `tournamentlist.xml`     |
-|        Training        |        `training.xml`        |
-|     TrainingEvents     |     `trainingevents.xml`     |
-|     TransferSearch     |     `transfersearch.xml`     |
-|    TransfersPlayer     |    `transfersplayer.xml`     |
-|     TransfersTeam      |     `transfersteam.xml`      |
-|      Translations      |      `translations.xml`      |
-|        WorldCup        |        `worldcup.xml`        |
-|      WorldDetails      |      `worlddetails.xml`      |
-|     WorldLanguages     |     `worldlanguages.xml`     |
-|      YouthAvatars      |      `youthavatars.xml`      |
-|   YouthLeagueDetails   |   `youthleaguedetails.xml`   |
-|  YouthLeagueFixtures   |  `youthleaguefixtures.xml`   |
-|   YouthPlayerDetails   |   `youthplayerdetails.xml`   |
-|    YouthPlayerList     |    `youthplayerlist.xml`     |
-|    YouthTeamDetails    |    `youthteamdetails.xml`    |
+|       pyCHPP class      |         CHPP XML files        |
+|:------------------------|:------------------------------|
+|       Achievements      |       `achievements.xml`      |
+|        Alliances        |        `alliances.xml`        |
+|     AllianceDetails     |     `alliancedetails.xml`     |
+|          Arena          |       `arenadetails.xml`      |
+|         Avatars         |         `avatars.xml`         |
+|        Bookmarks        |        `bookmarks.xml`        |
+|        Challenges       |        `challenges.xml`       |
+|           Club          |           `club.xml`          |
+|        CupMatches       |        `cupmatches.xml`       |
+|       CurrentBids       |       `currentbids.xml`       |
+|         Economy         |         `economy.xml`         |
+|           Fans          |           `fans.xml`          |
+|    HallOfFamePlayers    |        `hofplayers.xml`       |
+|      LadderDetails      |      `ladderdetails.xml`      |
+|        LadderList       |        `ladderlist.xml`       |
+|      LeagueDetails      |      `leaguedetails.xml`      |
+|      LeagueFixtures     |      `leaguefixtures.xml`     |
+|       LeagueLevels      |       `leaguelevels.xml`      |
+|           Live          |           `live.xml`          |
+|    ManagerCompendium    |    `managercompendium.xml`    |
+|       MatchDetails      |       `matchdetails.xml`      |
+|       MatchLineup       |       `matchlineup.xml`       |
+|       MatchOrders       |       `matchorders.xml`       |
+|      MatchesArchive     |      `matchesarchive.xml`     |
+|         Matches         |         `matches.xml`         |
+|   NationalTeamDetails   |   `nationalteamdetails.xml`   |
+|   NationalTeamMatches   |   `nationalteammatches.xml`   |
+|      NationalTeams      |      `nationalteams.xml`      |
+|     NationalPlayers     |     `nationalplayers.xml`     |
+| NationalProspectPlayers | `nationalprospectplayers.xml` |
+|      PlayerDetails      |      `playerdetails.xml`      |
+|       PlayerEvents      |       `playerevents.xml`      |
+|         Players         |         `players.xml`         |
+|       PlayerStats       |       `playerstats.xml`       |
+|      RegionDetails      |      `regiondetails.xml`      |
+|          Search         |          `search.xml`         |
+|       StaffAvatars      |       `staffavatars.xml`      |
+|        StaffList        |        `stafflist.xml`        |
+|        Supporters       |        `supporters.xml`       |
+|       TeamDetails       |       `teamdetails.xml`       |
+|       TeamHistory       |       `teamhistory.xml`       |
+|    TournamentDetails    |    `tournamentdetails.xml`    |
+|    TournamentFixtures   |    `tournamentfixtures.xml`   |
+|  TournamentLeagueTables |  `tournamentleaguetables.xml` |
+|      TournamentList     |      `tournamentlist.xml`     |
+|         Training        |         `training.xml`        |
+|      TrainingEvents     |      `trainingevents.xml`     |
+|      TransferSearch     |      `transfersearch.xml`     |
+|     TransfersPlayer     |     `transfersplayer.xml`     |
+|      TransfersTeam      |      `transfersteam.xml`      |
+|       Translations      |       `translations.xml`      |
+|         WorldCup        |         `worldcup.xml`        |
+|       WorldDetails      |       `worlddetails.xml`      |
+|      WorldLanguages     |      `worldlanguages.xml`     |
+|       YouthAvatars      |       `youthavatars.xml`      |
+|    YouthLeagueDetails   |    `youthleaguedetails.xml`   |
+|   YouthLeagueFixtures   |   `youthleaguefixtures.xml`   |
+|    YouthPlayerDetails   |    `youthplayerdetails.xml`   |
+|     YouthPlayerList     |     `youthplayerlist.xml`     |
+|     YouthTeamDetails    |     `youthteamdetails.xml`    |
 
 ## License
 pyCHPP is licensed under the Apache License 2.0.

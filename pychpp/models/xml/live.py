@@ -11,7 +11,7 @@ class RequestLive(HTModel):
     Live - Request arguments
     """
     SOURCE_FILE = 'live'
-    LAST_VERSION = '2.3'
+    LAST_VERSION = '2.4'
 
     _r_action_type: Optional[str] = HTInitVar('actionType', init_arg='action_type')
     _r_match_id: Optional[int] = HTInitVar('matchID', init_arg='match_id')
@@ -46,9 +46,9 @@ class MatchItem(HTModel):
     events: List['EventItem'] = HTField('EventList', items='Event')
     home_goals: int = HTField('HomeGoals')
     away_goals: int = HTField('AwayGoals')
-    last_shown_event_index: int = HTField('LastShownEventIndex')
-    next_event_minute: int = HTField('NextEventMinute')
-    next_event_match_part: int = HTField('NextEventMatchPart')
+    last_shown_event_index: Optional[int] = HTField('LastShownEventIndex')
+    next_event_minute: Optional[int] = HTField('NextEventMinute')
+    next_event_match_part: Optional[int] = HTField('NextEventMatchPart', version='>=1.9')
 
 
 class HomeTeam(HTModel):
@@ -92,6 +92,7 @@ class SubstitutionItem(HTModel):
     new_position_id: int = HTField('NewPositionId')
     new_position_behaviour: int = HTField('NewPositionBehaviour')
     match_minute: int = HTField('MatchMinute')
+    match_part: Optional[int] = HTField('MatchPart', version='>=1.9')
 
 
 class EventItem(HTModel):
@@ -100,7 +101,7 @@ class EventItem(HTModel):
     """
     index: int = HTField('.', attrib='Index')
     minute: int = HTField('Minute')
-    match_part: int = HTField('MatchPart')
+    match_part: int = HTField('MatchPart', version='>=1.9')
     key: str = HTField('EventKey')
     text: str = HTField('EventText')
     subject_team_id: int = HTField('SubjectTeamID')

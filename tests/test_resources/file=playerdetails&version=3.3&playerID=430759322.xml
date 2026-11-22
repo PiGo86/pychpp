@@ -1,0 +1,79 @@
+<HattrickData>
+  <FileName>playerdetails.xml</FileName>
+  <Version>3.3</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 21:32:37</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <IsPlayingMatch>False</IsPlayingMatch>
+  <Player>
+    <PlayerID>430759322</PlayerID>
+    <FirstName>Frédérik</FirstName>
+    <NickName />
+    <LastName>Rivière</LastName>
+    <PlayerNumber>1</PlayerNumber>
+    <PlayerCategoryID>0</PlayerCategoryID>
+    <OwnerNotes />
+    <Age>51</Age>
+    <AgeDays>69</AgeDays>
+    <NextBirthDay>2027-01-03 17:08:00</NextBirthDay>
+    <GenderID>1</GenderID>
+    <ArrivalDate>2017-09-09 17:09:00</ArrivalDate>
+    <PlayerForm>3</PlayerForm>
+    <Cards>0</Cards>
+    <InjuryLevel>999</InjuryLevel>
+    <Statement />
+    <PlayerLanguage>Français</PlayerLanguage>
+    <PlayerLanguageID>5</PlayerLanguageID>
+    <TrainerData />
+    <OwningTeam>
+      <TeamID>1165592</TeamID>
+      <TeamName>Les Poitevins de La Chapelle</TeamName>
+      <LeagueID>5</LeagueID>
+    </OwningTeam>
+    <Salary>2500</Salary>
+    <IsAbroad>False</IsAbroad>
+    <Agreeability>0</Agreeability>
+    <Aggressiveness>0</Aggressiveness>
+    <Honesty>3</Honesty>
+    <Experience>5</Experience>
+    <Loyalty>20</Loyalty>
+    <MotherClubBonus>True</MotherClubBonus>
+    <MotherClub>
+      <TeamID>1165592</TeamID>
+      <TeamName>Les Poitevins de La Chapelle</TeamName>
+    </MotherClub>
+    <Leadership>2</Leadership>
+    <Specialty>3</Specialty>
+    <NativeCountryID>5</NativeCountryID>
+    <NativeLeagueID>5</NativeLeagueID>
+    <NativeLeagueName>France</NativeLeagueName>
+    <TSI>0</TSI>
+    <PlayerSkills>
+      <StaminaSkill>1</StaminaSkill>
+      <KeeperSkill>0</KeeperSkill>
+      <PlaymakerSkill>0</PlaymakerSkill>
+      <ScorerSkill>0</ScorerSkill>
+      <PassingSkill>0</PassingSkill>
+      <WingerSkill>0</WingerSkill>
+      <DefenderSkill>0</DefenderSkill>
+      <SetPiecesSkill>0</SetPiecesSkill>
+    </PlayerSkills>
+    <Caps>0</Caps>
+    <CapsU20>0</CapsU20>
+    <CareerGoals>2</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <CupGoals>0</CupGoals>
+    <FriendliesGoals>0</FriendliesGoals>
+    <MatchesCurrentTeam>86</MatchesCurrentTeam>
+    <GoalsCurrentTeam>2</GoalsCurrentTeam>
+    <AssistsCurrentTeam>1</AssistsCurrentTeam>
+    <CareerAssists>1</CareerAssists>
+    <TransferListed>False</TransferListed>
+    <TransferDetails />
+    <TransferCompareAverage>1911121</TransferCompareAverage>
+    <TransferCompareAverageDate>2023-02-20 12:15:00</TransferCompareAverageDate>
+    <FamilyRelation />
+    <TrophyList />
+  </Player>
+</HattrickData>

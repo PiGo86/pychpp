@@ -67,6 +67,10 @@ class HTUnauthorizedAction(HTError):
     """Raise when CHPP request returns a 401 error code"""
 
 
+class HTAccessDeniedError(HTError):
+    """Raise when Hattrick denies access to a parameter or file (error code 1)"""
+
+
 class HTUndefinedError(HTError):
     """Raise when error occurs with Hattrick request"""
 

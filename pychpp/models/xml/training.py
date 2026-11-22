@@ -11,7 +11,7 @@ class BaseRequestTraining(HTModel):
     Base Training
     """
     SOURCE_FILE = 'training'
-    LAST_VERSION = '2.2'
+    LAST_VERSION = '2.3'
 
     _r_action_type: str = HTInitVar('actionType', init_arg='action_type', default='view')
     _r_team_id: int = HTInitVar('teamId', init_arg='team_id')
@@ -118,6 +118,35 @@ class TrainingSetTraining(CommonTrainingViewSetTraining):
     Training - Set training
     """
     training_set: bool = HTField('TrainingSet')
+
+
+class RequestTrainingHistory(BaseRequestTraining):
+    """
+    Training - History - Request arguments
+    """
+    _r_from_date: Optional[datetime] = HTInitVar('fromDate', init_arg='from_date')
+
+
+class TrainingHistoryView(RequestTrainingHistory):
+    """
+    Training - History
+    """
+    team_id: int = HTField('TeamID', version='>=2.3')
+    from_date: datetime = HTField('FromDate', version='>=2.3')
+    training_history: List['TrainingHistoryItem'] = HTField('TrainingHistory',
+                                                            items='Training', version='>=2.3')
+
+
+class TrainingHistoryItem(HTModel):
+    """
+    Training - History -> Training history -> Training item
+    """
+    season: int = HTField('HattrickSeason')
+    week: int = HTField('HattrickWeek')
+    training_type: int = HTField('TrainingType')
+    training_level: int = HTField('TrainingLevel')
+    training_level_stamina: int = HTField('TrainingLevelStamina')
+    date: datetime = HTField('TrainingDate')
 
 
 class RequestTrainingStats(BaseRequestTraining):

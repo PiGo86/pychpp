@@ -1,0 +1,38 @@
+<HattrickData>
+  <FileName>youthplayerdetails.xml</FileName>
+  <Version>1.4</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 23:51:27</FetchedDate>
+  <YouthPlayer>
+    <YouthPlayerID>449911155</YouthPlayerID>
+    <FirstName>Caio César</FirstName>
+    <NickName />
+    <LastName>Moura</LastName>
+    <Age>15</Age>
+    <AgeDays>89</AgeDays>
+    <GenderID>1</GenderID>
+    <ArrivalDate>2026-11-20 16:36:00</ArrivalDate>
+    <CanBePromotedIn>135</CanBePromotedIn>
+    <PlayerNumber>100</PlayerNumber>
+    <Statement />
+    <NativeCountryID>22</NativeCountryID>
+    <NativeCountryName>Brasil</NativeCountryName>
+    <Cards>0</Cards>
+    <InjuryLevel>-1</InjuryLevel>
+    <Specialty>0</Specialty>
+    <CareerGoals>0</CareerGoals>
+    <CareerHattricks>0</CareerHattricks>
+    <LeagueGoals>0</LeagueGoals>
+    <FriendlyGoals>0</FriendlyGoals>
+    <OwningYouthTeam>
+      <YouthTeamID>3295934</YouthTeamID>
+      <YouthTeamName>santa rita</YouthTeamName>
+      <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+      <UserId>14801244</UserId>
+      <SeniorTeam>
+        <SeniorTeamID>3525483</SeniorTeamID>
+        <SeniorTeamName />
+      </SeniorTeam>
+    </OwningYouthTeam>
+  </YouthPlayer>
+</HattrickData>

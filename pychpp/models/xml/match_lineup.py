@@ -10,7 +10,7 @@ class RequestMatchLineup(HTModel):
     Match Lineup - Request arguments
     """
     SOURCE_FILE = 'matchlineup'
-    LAST_VERSION = '2.1'
+    LAST_VERSION = '2.2'
 
     _r_match_id: int = HTInitVar('matchID', init_arg='match_id')
     _r_team_id: int = HTInitVar('teamID', init_arg='team_id')
@@ -100,4 +100,4 @@ class TeamSubstitutionItem(HTModel):
     new_position_id: int = HTField('NewPositionId')
     new_position_behaviour: int = HTField('NewPositionBehaviour')
     minute: int = HTField('MatchMinute')
-    match_part: int = HTField('MatchPart')
+    match_part: int = HTField('MatchPart', version='>=2.0')

@@ -1,0 +1,680 @@
+<HattrickData>
+  <FileName>youthplayerlist.xml</FileName>
+  <Version>1.4</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-22 00:00:27</FetchedDate>
+  <PlayerList>
+    <YouthPlayer>
+      <YouthPlayerID>301741224</YouthPlayerID>
+      <FirstName>Brieuc</FirstName>
+      <NickName />
+      <LastName>Rousselet</LastName>
+      <Age>31</Age>
+      <AgeDays>28</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1596</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <DefenderSkillMax IsAvailable="False" MayUnlock="False" />
+        <PlaymakerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PlaymakerSkillMax IsAvailable="True">4</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <WingerSkillMax IsAvailable="False" MayUnlock="False" />
+        <PassingSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PassingSkillMax IsAvailable="True">4</PassingSkillMax>
+        <ScorerSkill IsAvailable="True" IsMaxReached="True">2</ScorerSkill>
+        <ScorerSkillMax IsAvailable="True">2</ScorerSkillMax>
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741219</YouthPlayerID>
+      <FirstName>Flavian</FirstName>
+      <NickName />
+      <LastName>Hommet</LastName>
+      <Age>31</Age>
+      <AgeDays>75</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1643</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="True" IsMaxReached="False">5</DefenderSkill>
+        <DefenderSkillMax IsAvailable="True">5</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">4</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">4</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="True">3</WingerSkill>
+        <WingerSkillMax IsAvailable="True">3</WingerSkillMax>
+        <PassingSkill IsAvailable="True" IsMaxReached="True">3</PassingSkill>
+        <PassingSkillMax IsAvailable="True">3</PassingSkillMax>
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="False" MayUnlock="False" />
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>393197406</YouthPlayerID>
+      <FirstName>Gaby</FirstName>
+      <NickName />
+      <LastName>Janet</LastName>
+      <Age>20</Age>
+      <AgeDays>20</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2025-11-22 09:12:00</ArrivalDate>
+      <CanBePromotedIn>-252</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <DefenderSkillMax IsAvailable="True">5</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PlaymakerSkillMax IsAvailable="False" MayUnlock="False" />
+        <WingerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <WingerSkillMax IsAvailable="False" MayUnlock="False" />
+        <PassingSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PassingSkillMax IsAvailable="False" MayUnlock="False" />
+        <ScorerSkill IsAvailable="True" IsMaxReached="False">4</ScorerSkill>
+        <ScorerSkillMax IsAvailable="False" MayUnlock="False" />
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>406086917</YouthPlayerID>
+      <FirstName>Jean-Joseph</FirstName>
+      <NickName />
+      <LastName>Joron</LastName>
+      <Age>18</Age>
+      <AgeDays>64</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2025-11-21 22:03:00</ArrivalDate>
+      <CanBePromotedIn>-176</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <DefenderSkillMax IsAvailable="False" MayUnlock="False" />
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="False">4</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="False" MayUnlock="False" />
+        <WingerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <WingerSkillMax IsAvailable="False" MayUnlock="False" />
+        <PassingSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PassingSkillMax IsAvailable="True">4</PassingSkillMax>
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="False" MayUnlock="False" />
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741216</YouthPlayerID>
+      <FirstName>Jean-Paul</FirstName>
+      <NickName />
+      <LastName>Ruault</LastName>
+      <Age>31</Age>
+      <AgeDays>106</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1658</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>1</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="True">1</KeeperSkillMax>
+        <DefenderSkill IsAvailable="True" IsMaxReached="True">4</DefenderSkill>
+        <DefenderSkillMax IsAvailable="True">4</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">2</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">2</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="True">3</WingerSkill>
+        <WingerSkillMax IsAvailable="True">3</WingerSkillMax>
+        <PassingSkill IsAvailable="True" IsMaxReached="True">3</PassingSkill>
+        <PassingSkillMax IsAvailable="True">3</PassingSkillMax>
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="True">5</ScorerSkillMax>
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>401705678</YouthPlayerID>
+      <FirstName>Loan</FirstName>
+      <NickName />
+      <LastName>Guichon</LastName>
+      <Age>19</Age>
+      <AgeDays>13</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2025-11-30 01:30:00</ArrivalDate>
+      <CanBePromotedIn>-237</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <DefenderSkillMax IsAvailable="False" MayUnlock="False" />
+        <PlaymakerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PlaymakerSkillMax IsAvailable="False" MayUnlock="False" />
+        <WingerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <WingerSkillMax IsAvailable="False" MayUnlock="False" />
+        <PassingSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PassingSkillMax IsAvailable="True">7</PassingSkillMax>
+        <ScorerSkill IsAvailable="True" IsMaxReached="False">4</ScorerSkill>
+        <ScorerSkillMax IsAvailable="False" MayUnlock="False" />
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741215</YouthPlayerID>
+      <FirstName>Loris</FirstName>
+      <NickName />
+      <LastName>Depré</LastName>
+      <Age>31</Age>
+      <AgeDays>107</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1658</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>2</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="True">1</KeeperSkillMax>
+        <DefenderSkill IsAvailable="True" IsMaxReached="True">3</DefenderSkill>
+        <DefenderSkillMax IsAvailable="True">3</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">3</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">3</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="False">3</WingerSkill>
+        <WingerSkillMax IsAvailable="True">4</WingerSkillMax>
+        <PassingSkill IsAvailable="True" IsMaxReached="True">3</PassingSkill>
+        <PassingSkillMax IsAvailable="True">3</PassingSkillMax>
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="True">2</ScorerSkillMax>
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>365898445</YouthPlayerID>
+      <FirstName>Lukas</FirstName>
+      <NickName />
+      <LastName>Gouze</LastName>
+      <Age>22</Age>
+      <AgeDays>49</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2024-09-03 20:12:00</ArrivalDate>
+      <CanBePromotedIn>-609</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <DefenderSkillMax IsAvailable="False" MayUnlock="False" />
+        <PlaymakerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PlaymakerSkillMax IsAvailable="True">3</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <WingerSkillMax IsAvailable="False" MayUnlock="False" />
+        <PassingSkill IsAvailable="True" IsMaxReached="False">3</PassingSkill>
+        <PassingSkillMax IsAvailable="False" MayUnlock="False" />
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="False" MayUnlock="False" />
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741220</YouthPlayerID>
+      <FirstName>Marian</FirstName>
+      <NickName />
+      <LastName>Lourdel</LastName>
+      <Age>31</Age>
+      <AgeDays>75</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1643</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="True">1</KeeperSkillMax>
+        <DefenderSkill IsAvailable="True" IsMaxReached="False">5</DefenderSkill>
+        <DefenderSkillMax IsAvailable="True">5</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PlaymakerSkillMax IsAvailable="True">2</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="True">4</WingerSkill>
+        <WingerSkillMax IsAvailable="True">4</WingerSkillMax>
+        <PassingSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PassingSkillMax IsAvailable="False" MayUnlock="False" />
+        <ScorerSkill IsAvailable="True" IsMaxReached="True">2</ScorerSkill>
+        <ScorerSkillMax IsAvailable="True">2</ScorerSkillMax>
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741218</YouthPlayerID>
+      <FirstName>Noël</FirstName>
+      <NickName />
+      <LastName>Fouillade</LastName>
+      <Age>31</Age>
+      <AgeDays>101</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1658</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>6</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="True">1</KeeperSkillMax>
+        <DefenderSkill IsAvailable="True" IsMaxReached="False">5</DefenderSkill>
+        <DefenderSkillMax IsAvailable="True">6</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">2</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">2</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="True">4</WingerSkill>
+        <WingerSkillMax IsAvailable="True">4</WingerSkillMax>
+        <PassingSkill IsAvailable="True" IsMaxReached="True">3</PassingSkill>
+        <PassingSkillMax IsAvailable="True">3</PassingSkillMax>
+        <ScorerSkill IsAvailable="True" IsMaxReached="True">5</ScorerSkill>
+        <ScorerSkillMax IsAvailable="True">5</ScorerSkillMax>
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741221</YouthPlayerID>
+      <FirstName>Omar</FirstName>
+      <NickName />
+      <LastName>Ndaw</LastName>
+      <Age>31</Age>
+      <AgeDays>16</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1584</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>3</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <DefenderSkillMax IsAvailable="True">2</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">3</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">3</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="False">2</WingerSkill>
+        <WingerSkillMax IsAvailable="False" MayUnlock="False" />
+        <PassingSkill IsAvailable="True" IsMaxReached="True">5</PassingSkill>
+        <PassingSkillMax IsAvailable="True">5</PassingSkillMax>
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="False" MayUnlock="False" />
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741223</YouthPlayerID>
+      <FirstName>Pierre-Alain</FirstName>
+      <NickName />
+      <LastName>Feral</LastName>
+      <Age>31</Age>
+      <AgeDays>22</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1590</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="False" MayUnlock="False" />
+        <DefenderSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <DefenderSkillMax IsAvailable="False" MayUnlock="False" />
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">2</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">2</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="True">3</WingerSkill>
+        <WingerSkillMax IsAvailable="True">3</WingerSkillMax>
+        <PassingSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <PassingSkillMax IsAvailable="False" MayUnlock="False" />
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="False" MayUnlock="False" />
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>301741214</YouthPlayerID>
+      <FirstName>Talla</FirstName>
+      <NickName />
+      <LastName>Coulibaly</LastName>
+      <Age>31</Age>
+      <AgeDays>12</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-16 16:17:00</ArrivalDate>
+      <CanBePromotedIn>-1580</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>5</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <KeeperSkillMax IsAvailable="True">1</KeeperSkillMax>
+        <DefenderSkill IsAvailable="True" IsMaxReached="True">3</DefenderSkill>
+        <DefenderSkillMax IsAvailable="True">3</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">2</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">2</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="True">5</WingerSkill>
+        <WingerSkillMax IsAvailable="True">5</WingerSkillMax>
+        <PassingSkill IsAvailable="True" IsMaxReached="True">4</PassingSkill>
+        <PassingSkillMax IsAvailable="True">4</PassingSkillMax>
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="True">2</ScorerSkillMax>
+        <SetPiecesSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+    <YouthPlayer>
+      <YouthPlayerID>300284899</YouthPlayerID>
+      <FirstName>Trystan</FirstName>
+      <NickName />
+      <LastName>Matton</LastName>
+      <Age>31</Age>
+      <AgeDays>33</AgeDays>
+      <GenderID>1</GenderID>
+      <ArrivalDate>2022-01-20 23:09:00</ArrivalDate>
+      <CanBePromotedIn>-1601</CanBePromotedIn>
+      <PlayerNumber>100</PlayerNumber>
+      <Statement />
+      <NativeCountryID>5</NativeCountryID>
+      <NativeCountryName>France</NativeCountryName>
+      <Cards>0</Cards>
+      <InjuryLevel>-1</InjuryLevel>
+      <Specialty>0</Specialty>
+      <CareerGoals>0</CareerGoals>
+      <CareerHattricks>0</CareerHattricks>
+      <LeagueGoals>0</LeagueGoals>
+      <FriendlyGoals>0</FriendlyGoals>
+      <OwningYouthTeam>
+        <YouthTeamID>2942691</YouthTeamID>
+        <YouthTeamName>Les Petits Chapelains</YouthTeamName>
+        <YouthTeamLeagueID>225490</YouthTeamLeagueID>
+        <UserId>1728698</UserId>
+        <SeniorTeam>
+          <SeniorTeamID>1165592</SeniorTeamID>
+          <SeniorTeamName>Les Poitevins de La Chapelle</SeniorTeamName>
+        </SeniorTeam>
+      </OwningYouthTeam>
+      <PlayerSkills>
+        <KeeperSkill IsAvailable="True" IsMaxReached="False">4</KeeperSkill>
+        <KeeperSkillMax IsAvailable="True">4</KeeperSkillMax>
+        <DefenderSkill IsAvailable="True" IsMaxReached="True">4</DefenderSkill>
+        <DefenderSkillMax IsAvailable="True">4</DefenderSkillMax>
+        <PlaymakerSkill IsAvailable="True" IsMaxReached="True">2</PlaymakerSkill>
+        <PlaymakerSkillMax IsAvailable="True">2</PlaymakerSkillMax>
+        <WingerSkill IsAvailable="True" IsMaxReached="True">1</WingerSkill>
+        <WingerSkillMax IsAvailable="True">1</WingerSkillMax>
+        <PassingSkill IsAvailable="True" IsMaxReached="True">2</PassingSkill>
+        <PassingSkillMax IsAvailable="True">2</PassingSkillMax>
+        <ScorerSkill IsAvailable="False" IsMaxReached="False" MayUnlock="False" />
+        <ScorerSkillMax IsAvailable="True">2</ScorerSkillMax>
+        <SetPiecesSkill IsAvailable="True" IsMaxReached="False">3</SetPiecesSkill>
+        <SetPiecesSkillMax IsAvailable="False" MayUnlock="False" />
+      </PlayerSkills>
+    </YouthPlayer>
+  </PlayerList>
+</HattrickData>

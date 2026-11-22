@@ -10,7 +10,7 @@ class RequestYouthLeagueDetails(HTModel):
     Youth League Details - Request arguments
     """
     SOURCE_FILE = 'youthleaguedetails'
-    LAST_VERSION = '1.0'
+    LAST_VERSION = '1.1'
 
     _r_youth_league_id: Optional[int] = HTInitVar('youthLeagueId', init_arg='youth_league_id')
 
@@ -25,6 +25,7 @@ class YouthLeagueDetails(RequestYouthLeagueDetails):
     season: int = HTField('Season')
     last_match_round: int = HTField('LastMatchRound')
     nr_of_teams_in_league: int = HTField('NrOfTeamsInLeague')
+    league_system_id: int = HTField('LeagueSystemID', version='>=1.1')
     teams: List['TeamItem'] = HTField('Teams', items='Team')
 
 

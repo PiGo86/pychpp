@@ -1,0 +1,497 @@
+<HattrickData>
+  <FileName>matchdetails.xml</FileName>
+  <Version>3.2</Version>
+  <UserID>1728698</UserID>
+  <FetchedDate>2026-11-21 19:29:42</FetchedDate>
+  <UserSupporterTier>none</UserSupporterTier>
+  <SourceSystem>Hattrick</SourceSystem>
+  <Match>
+    <MatchID>775863574</MatchID>
+    <MatchType>3</MatchType>
+    <MatchContextId>1344</MatchContextId>
+    <MatchRuleId>0</MatchRuleId>
+    <CupLevel>2</CupLevel>
+    <CupLevelIndex>1</CupLevelIndex>
+    <MatchDate>2026-11-18 15:15:00</MatchDate>
+    <FinishedDate>2026-11-18 17:02:00</FinishedDate>
+    <AddedMinutes>2</AddedMinutes>
+    <HomeTeam>
+      <HomeTeamID>1165592</HomeTeamID>
+      <HomeTeamName>Les Poitevins de La Chapelle</HomeTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/1/matchKitSmall.png</DressURI>
+      <Formation>3-5-2</Formation>
+      <HomeGoals>0</HomeGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>6</RatingMidfield>
+      <RatingRightDef>5</RatingRightDef>
+      <RatingMidDef>7</RatingMidDef>
+      <RatingLeftDef>6</RatingLeftDef>
+      <RatingRightAtt>9</RatingRightAtt>
+      <RatingMidAtt>5</RatingMidAtt>
+      <RatingLeftAtt>7</RatingLeftAtt>
+      <TeamAttitude>0</TeamAttitude>
+      <RatingIndirectSetPiecesDef>10</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>8</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>0</NrOfChancesLeft>
+      <NrOfChancesCenter>0</NrOfChancesCenter>
+      <NrOfChancesRight>1</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>2</NrOfChancesOther>
+      <HasReplay>False</HasReplay>
+      <NrOfReplays>0</NrOfReplays>
+    </HomeTeam>
+    <AwayTeam>
+      <AwayTeamID>3478697</AwayTeamID>
+      <AwayTeamName>Fc Drouais</AwayTeamName>
+      <DressURI>//res.hattrick.org/kits/1/1/1/4/matchKitSmall.png</DressURI>
+      <Formation>4-4-2</Formation>
+      <AwayGoals>5</AwayGoals>
+      <TacticType>0</TacticType>
+      <TacticSkill>0</TacticSkill>
+      <RatingMidfield>10</RatingMidfield>
+      <RatingRightDef>11</RatingRightDef>
+      <RatingMidDef>18</RatingMidDef>
+      <RatingLeftDef>18</RatingLeftDef>
+      <RatingRightAtt>12</RatingRightAtt>
+      <RatingMidAtt>9</RatingMidAtt>
+      <RatingLeftAtt>9</RatingLeftAtt>
+      <RatingIndirectSetPiecesDef>16</RatingIndirectSetPiecesDef>
+      <RatingIndirectSetPiecesAtt>16</RatingIndirectSetPiecesAtt>
+      <NrOfChancesLeft>2</NrOfChancesLeft>
+      <NrOfChancesCenter>2</NrOfChancesCenter>
+      <NrOfChancesRight>2</NrOfChancesRight>
+      <NrOfChancesSpecialEvents>0</NrOfChancesSpecialEvents>
+      <NrOfChancesOther>1</NrOfChancesOther>
+    </AwayTeam>
+    <Arena>
+      <ArenaID>1162154</ArenaID>
+      <ArenaName>Stade de La Chapelle</ArenaName>
+      <WeatherID>2</WeatherID>
+      <SoldTotal>1970</SoldTotal>
+      <SoldTerraces>1344</SoldTerraces>
+      <SoldBasic>457</SoldBasic>
+      <SoldRoof>148</SoldRoof>
+      <SoldVIP>21</SoldVIP>
+    </Arena>
+    <MatchOfficials>
+      <Referee>
+        <RefereeId>493211977</RefereeId>
+        <RefereeName>Saymen La Roche</RefereeName>
+        <RefereeCountryId>147</RefereeCountryId>
+        <RefereeCountryName>Cuba</RefereeCountryName>
+        <RefereeTeamId>2130759</RefereeTeamId>
+        <RefereeTeamname>Melmac CRF</RefereeTeamname>
+      </Referee>
+      <RefereeAssistant1>
+        <RefereeId>462651427</RefereeId>
+        <RefereeName>Moritz Rautenburger</RefereeName>
+        <RefereeCountryId>3</RefereeCountryId>
+        <RefereeCountryName>Deutschland</RefereeCountryName>
+        <RefereeTeamId>525577</RefereeTeamId>
+        <RefereeTeamname>FC Phoenix WD</RefereeTeamname>
+      </RefereeAssistant1>
+      <RefereeAssistant2>
+        <RefereeId>430603460</RefereeId>
+        <RefereeName>Dragoş Bangălă</RefereeName>
+        <RefereeCountryId>37</RefereeCountryId>
+        <RefereeCountryName>România</RefereeCountryName>
+        <RefereeTeamId>877552</RefereeTeamId>
+        <RefereeTeamname>B&amp;G United</RefereeTeamname>
+      </RefereeAssistant2>
+    </MatchOfficials>
+    <Scorers>
+      <Goal Index="0">
+        <ScorerPlayerID>517075778</ScorerPlayerID>
+        <ScorerPlayerName>Robin Rouat</ScorerPlayerName>
+        <ScorerTeamID>3478697</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>1</ScorerAwayGoals>
+        <ScorerMinute>20</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="1">
+        <ScorerPlayerID>517075777</ScorerPlayerID>
+        <ScorerPlayerName>Abdelatif Abed</ScorerPlayerName>
+        <ScorerTeamID>3478697</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>2</ScorerAwayGoals>
+        <ScorerMinute>27</ScorerMinute>
+        <MatchPart>1</MatchPart>
+      </Goal>
+      <Goal Index="2">
+        <ScorerPlayerID>517075783</ScorerPlayerID>
+        <ScorerPlayerName>Raphaël Garcia</ScorerPlayerName>
+        <ScorerTeamID>3478697</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>3</ScorerAwayGoals>
+        <ScorerMinute>49</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="3">
+        <ScorerPlayerID>517075783</ScorerPlayerID>
+        <ScorerPlayerName>Raphaël Garcia</ScorerPlayerName>
+        <ScorerTeamID>3478697</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>4</ScorerAwayGoals>
+        <ScorerMinute>77</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+      <Goal Index="4">
+        <ScorerPlayerID>517075784</ScorerPlayerID>
+        <ScorerPlayerName>Martin Costa</ScorerPlayerName>
+        <ScorerTeamID>3478697</ScorerTeamID>
+        <ScorerHomeGoals>0</ScorerHomeGoals>
+        <ScorerAwayGoals>5</ScorerAwayGoals>
+        <ScorerMinute>78</ScorerMinute>
+        <MatchPart>2</MatchPart>
+      </Goal>
+    </Scorers>
+    <Bookings>
+      <Booking Index="0">
+        <BookingPlayerID>517075783</BookingPlayerID>
+        <BookingPlayerName>Raphaël Garcia</BookingPlayerName>
+        <BookingTeamID>3478697</BookingTeamID>
+        <BookingType>1</BookingType>
+        <BookingMinute>30</BookingMinute>
+        <MatchPart>1</MatchPart>
+      </Booking>
+    </Bookings>
+    <Injuries>
+      <Injury Index="0">
+        <InjuryPlayerID>422524621</InjuryPlayerID>
+        <InjuryPlayerName>Étienne Asselin</InjuryPlayerName>
+        <InjuryTeamID>1165592</InjuryTeamID>
+        <InjuryType>1</InjuryType>
+        <InjuryMinute>15</InjuryMinute>
+        <MatchPart>1</MatchPart>
+      </Injury>
+    </Injuries>
+    <PossessionFirstHalfHome>35</PossessionFirstHalfHome>
+    <PossessionFirstHalfAway>65</PossessionFirstHalfAway>
+    <PossessionSecondHalfHome>34</PossessionSecondHalfHome>
+    <PossessionSecondHalfAway>66</PossessionSecondHalfAway>
+    <EventList>
+      <Event Index="0">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1162154</SubjectPlayerID>
+        <SubjectTeamID>50000</SubjectTeamID>
+        <ObjectPlayerID>1970</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>32</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>La météo était plutôt bonne et 1970 spectateurs étaient venus au &lt;a href="/Club/Stadium/?stadiumId=1162154"&gt;Stade de La Chapelle&lt;/a&gt; pour assister au match. &lt;a href="/Club/HallOfFame/Player.aspx?playerId=493211977"&gt;Saymen La Roche&lt;/a&gt; fut l'arbitre retenu pour le match, assisté par &lt;a href="/Club/HallOfFame/Player.aspx?playerId=462651427"&gt;Moritz Rautenburger&lt;/a&gt; et &lt;a href="/Club/HallOfFame/Player.aspx?playerId=430603460"&gt;Dragoş Bangălă&lt;/a&gt;.</EventText>
+      </Event>
+      <Event Index="1">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>19</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="2">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>28</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;span class="hometeam"&gt;Poitevins&lt;/span&gt; était mal préparée pour ce match, car son manager était absent depuis un certain temps. Le personnel administratif du club dut définir une composition à aligner à sa place. </EventText>
+      </Event>
+      <Event Index="3">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Le onze de départ de &lt;span class="hometeam"&gt;Poitevins&lt;/span&gt; se composa des joueurs suivants : &lt;a href="/Club/Players/Player.aspx?playerId=499311434" title="Moisan" class="homeplayer"&gt;Moisan&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=422524621" title="Asselin" class="homeplayer"&gt;Asselin&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=414086970" title="Chevalier" class="homeplayer"&gt;Chevalier&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=430759325" title="Fouquet" class="homeplayer"&gt;Fouquet&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=499311430" title="Fr&amp;#233;mont" class="homeplayer"&gt;Frémont&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=499311447" title="Castillon" class="homeplayer"&gt;Castillon&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=499311431" title="Picault" class="homeplayer"&gt;Picault&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=499311366" title="Gamard" class="homeplayer"&gt;Gamard&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=455762785" title="Mendes" class="homeplayer"&gt;Mendes&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=499311432" title="Gren&amp;#232;che" class="homeplayer"&gt;Grenèche&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=388484370" title="Gicquel" class="homeplayer"&gt;Gicquel&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="4">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>21</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Ce fut le moment d’écouter le speaker annoncer la composition d’équipe de &lt;span class="awayteam"&gt;Drouais&lt;/span&gt; : &lt;a href="/Club/Players/Player.aspx?playerId=517075785" title="Defontaine" class="awayplayer"&gt;Defontaine&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=517075784" title="Costa" class="awayplayer"&gt;Costa&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=517075783" title="Garcia" class="awayplayer"&gt;Garcia&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=517075773" title="Vasseur" class="awayplayer"&gt;Vasseur&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=517075781" title="Coupin" class="awayplayer"&gt;Coupin&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=517075780" title="H&amp;#233;rvo" class="awayplayer"&gt;Hérvo&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=517075779" title="Allard" class="awayplayer"&gt;Allard&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=517075778" title="Rouat" class="awayplayer"&gt;Rouat&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=517075777" title="Abed" class="awayplayer"&gt;Abed&lt;/a&gt; - &lt;a href="/Club/Players/Player.aspx?playerId=517075776" title="M&amp;#233;zi&amp;#232;res" class="awayplayer"&gt;Mézières&lt;/a&gt;, &lt;a href="/Club/Players/Player.aspx?playerId=517075775" title="Gondo Gueu" class="awayplayer"&gt;Gondo Gueu&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="5">
+        <Minute>0</Minute>
+        <SubjectPlayerID>1030502</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>1040402</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>24</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>C'était une opposition de style entre les locaux en 3-5-2 et les visiteurs en 4-4-2.</EventText>
+      </Event>
+      <Event Index="6">
+        <Minute>0</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>0</MatchPart>
+        <EventTypeID>598</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="8">
+        <Minute>6</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>1030502</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>481</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="9">
+        <Minute>12</Minute>
+        <SubjectPlayerID>36</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>471</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="10">
+        <Minute>15</Minute>
+        <SubjectPlayerID>422524621</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>407</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=422524621" title="&amp;#201;tienne Asselin" class="homeplayer"&gt;Étienne Asselin&lt;/a&gt; se retrouva au sol après s'être tordu la cheville gauche à la 15e minute, mais il pouvait continuer le match malgré tout.</EventText>
+      </Event>
+      <Event Index="11">
+        <Minute>17</Minute>
+        <SubjectPlayerID>517075782</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>800</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="12">
+        <Minute>20</Minute>
+        <SubjectPlayerID>517075778</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>499311434</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>172</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Les chants des supporters locaux résonnèrent moins fort dans le stade lorsque &lt;a href="/Club/Players/Player.aspx?playerId=517075778" title="Robin Rouat" class="awayplayer"&gt;Robin Rouat&lt;/a&gt;, sur un centre parfait venant de l’aile gauche, fit trembler les filets, permettant ainsi à  &lt;span class="awayteam"&gt;Drouais&lt;/span&gt; de mener 0 à 1 après 20 minutes de jeu.</EventText>
+      </Event>
+      <Event Index="13">
+        <Minute>27</Minute>
+        <SubjectPlayerID>517075777</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>499311434</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>183</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=517075777" title="Abdelatif Abed" class="awayplayer"&gt;Abdelatif Abed&lt;/a&gt; augmenta l'avance de son équipe en reprenant le ballon de volée sur un centre venant de la droite. 0 - 2.</EventText>
+      </Event>
+      <Event Index="14">
+        <Minute>30</Minute>
+        <SubjectPlayerID>517075783</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>511</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=517075783" title="Rapha&amp;#235;l Garcia" class="awayplayer"&gt;Raphaël Garcia&lt;/a&gt; de &lt;span class="awayteam"&gt;Drouais&lt;/span&gt; reçut un carton jaune pour avoir tapé dans le ballon après le coup de sifflet.</EventText>
+      </Event>
+      <Event Index="17">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>45</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>0 - 2 à la mi-temps.</EventText>
+      </Event>
+      <Event Index="18">
+        <Minute>45</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>65</ObjectPlayerID>
+        <MatchPart>1</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>&lt;span class="awayteam"&gt;Drouais&lt;/span&gt; intimida suffisamment ses adversaires en imposant ses 65 % de possession de balle.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="19">
+        <Minute>46</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>597</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="20">
+        <Minute>49</Minute>
+        <SubjectPlayerID>517075783</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>499311434</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>181</EventTypeID>
+        <EventVariation>5</EventVariation>
+        <EventText>49 minutes s’étaient écoulées lorsque &lt;a href="/Club/Players/Player.aspx?playerId=517075783" title="Rapha&amp;#235;l Garcia" class="awayplayer"&gt;Raphaël Garcia&lt;/a&gt; déboula dans la défense centrale adverse et, d’un tir puissant, marqua un nouveau but pour &lt;span class="awayteam"&gt;Drouais&lt;/span&gt;. 0 - 3.</EventText>
+      </Event>
+      <Event Index="21">
+        <Minute>53</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>1970</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>464</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="22">
+        <Minute>61</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>495</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="23">
+        <Minute>67</Minute>
+        <SubjectPlayerID>517075776</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>499311434</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>281</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Après 67 minutes de jeu, &lt;a href="/Club/Players/Player.aspx?playerId=517075776" title="Ivan M&amp;#233;zi&amp;#232;res" class="awayplayer"&gt;Ivan Mézières&lt;/a&gt; eut une belle occasion de marquer un nouveau but pour les visiteurs après un raid solitaire au centre du terrain, mais son tir passa juste au-dessus de la barre.</EventText>
+      </Event>
+      <Event Index="24">
+        <Minute>72</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>1383</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>451</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="25">
+        <Minute>77</Minute>
+        <SubjectPlayerID>517075783</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>499311434</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>180</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Un coup franc puissant de &lt;a href="/Club/Players/Player.aspx?playerId=517075783" title="Rapha&amp;#235;l Garcia" class="awayplayer"&gt;Raphaël Garcia&lt;/a&gt; tiré après 77 minutes réussit à passer le mur adverse pour permettre à &lt;span class="awayteam"&gt;Drouais&lt;/span&gt; d’accroitre son avance. 0 - 4.</EventText>
+      </Event>
+      <Event Index="26">
+        <Minute>78</Minute>
+        <SubjectPlayerID>517075784</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>499311434</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>183</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Les supporters locaux prirent un coup au moral après 78 minutes lorsque &lt;a href="/Club/Players/Player.aspx?playerId=517075784" title="Martin Costa" class="awayplayer"&gt;Martin Costa&lt;/a&gt; déboula sur le côté droit et propulsa le ballon au fond des filets. &lt;span class="awayteam"&gt;Drouais&lt;/span&gt; menait désormais 0 - 5.</EventText>
+      </Event>
+      <Event Index="27">
+        <Minute>80</Minute>
+        <SubjectPlayerID>517075781</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>499311434</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>282</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=517075781" title="Adrian Coupin" class="awayplayer"&gt;Adrian Coupin&lt;/a&gt; aurait pu ajouter un autre but pour les visiteurs après 80 minutes à la suite d’une série de dribbles sur la gauche, mais son tir s’écrasa sur le poteau.</EventText>
+      </Event>
+      <Event Index="28">
+        <Minute>89</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>75</EventTypeID>
+        <EventVariation>3</EventVariation>
+        <EventText>Les joueurs étaient fatigués, mais quand l'arbitre indiqua 2 minutes de temps additionnel, ils accueillirent avec plaisir cette nouvelle opportunité d'influer sur le score.</EventText>
+      </Event>
+      <Event Index="29">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>0</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>599</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>Le match se termina sur le score de 0 - 5.</EventText>
+      </Event>
+      <Event Index="30">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>601</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="31">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>1383</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>603</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText />
+      </Event>
+      <Event Index="32">
+        <Minute>92</Minute>
+        <SubjectPlayerID>0</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>66</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>40</EventTypeID>
+        <EventVariation>4</EventVariation>
+        <EventText>Cette mi-temps fut dominée par &lt;span class="awayteam"&gt;Drouais&lt;/span&gt;, qui garda le contrôle du ballon pendant 66 % du temps.&lt;br /&gt;&lt;br /&gt;</EventText>
+      </Event>
+      <Event Index="33">
+        <Minute>92</Minute>
+        <SubjectPlayerID>499311430</SubjectPlayerID>
+        <SubjectTeamID>1165592</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>1</EventVariation>
+        <EventText>&lt;a href="/Club/Players/Player.aspx?playerId=499311430" title="Yvan Fr&amp;#233;mont" class="homeplayer"&gt;Yvan Frémont&lt;/a&gt; fut le meilleur joueur de &lt;span class="hometeam"&gt;Poitevins&lt;/span&gt;.</EventText>
+      </Event>
+      <Event Index="34">
+        <Minute>92</Minute>
+        <SubjectPlayerID>517075778</SubjectPlayerID>
+        <SubjectTeamID>3478697</SubjectTeamID>
+        <ObjectPlayerID>0</ObjectPlayerID>
+        <MatchPart>2</MatchPart>
+        <EventTypeID>41</EventTypeID>
+        <EventVariation>2</EventVariation>
+        <EventText>Le meilleur joueur de &lt;span class="awayteam"&gt;Drouais&lt;/span&gt; fut sans aucun doute &lt;a href="/Club/Players/Player.aspx?playerId=517075778" title="Robin Rouat" class="awayplayer"&gt;Robin Rouat&lt;/a&gt;.</EventText>
+      </Event>
+    </EventList>
+  </Match>
+</HattrickData>

@@ -8,7 +8,7 @@ from .conftest import MATCH_PATTERN
 
 def test_get_match(mocked_chpp):
 
-    m = mocked_chpp.match(547513790, events=True)
+    m = mocked_chpp.match(547513790, events=True, version='3.1')
 
     assert isinstance(m, HTMatch)
     assert m.id == 547513790

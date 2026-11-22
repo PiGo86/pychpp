@@ -188,3 +188,35 @@ def test_team_details_version(chpp):
 def test_get_bot(mocked_chpp):
     bot = mocked_chpp.xml_team_details(team_id=2513478)
     assert isinstance(bot, TeamDetails)
+
+
+def test_team_details_version_3_8(mocked_chpp):
+    xml_team = mocked_chpp.xml_team_details(team_id=1755350, version='3.8')
+
+    assert isinstance(xml_team, TeamDetails)
+    assert xml_team.teams[0].id == 1755350
+    assert xml_team.teams[0].gender_id == 1
+    # LeagueSystemID (>=3.9) and Currency (>=4.0) are not available yet
+    assert xml_team.teams[0].league_system_id is None
+    assert xml_team.user.currency is None
+
+
+def test_team_details_version_3_9(mocked_chpp):
+    xml_team = mocked_chpp.xml_team_details(team_id=1755350, version='3.9')
+
+    assert xml_team.teams[0].id == 1755350
+    assert xml_team.teams[0].gender_id == 1
+    assert xml_team.teams[0].league_system_id == 1
+    # Currency (>=4.0) is not available yet
+    assert xml_team.user.currency is None
+
+
+def test_team_details_version_4_0(mocked_chpp):
+    xml_team = mocked_chpp.xml_team_details(version='4.0')
+
+    assert xml_team.user.id == 1728698
+    assert xml_team.user.currency.name == '€'
+    assert xml_team.user.currency.rate == 10.0
+    assert xml_team.teams[0].id == 1165592
+    assert xml_team.teams[0].gender_id == 1
+    assert xml_team.teams[0].league_system_id == 1
