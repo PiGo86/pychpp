@@ -216,7 +216,7 @@ This project uses [uv](https://docs.astral.sh/uv/) to manage dependencies and th
 
     uv sync            # create .venv and install dependencies (Python version from .python-version)
     uv run pytest tests/
-    uv run flake8
+    uv run ruff check
     uv lock --upgrade && uv sync   # update all dependencies to their latest compatible versions
 
 ## License
