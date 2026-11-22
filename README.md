@@ -210,5 +210,14 @@ The following table shows the CHPP XML files that are currently supported:
 |     YouthPlayerList     |     `youthplayerlist.xml`     |
 |     YouthTeamDetails    |     `youthteamdetails.xml`    |
 
+## Development
+
+This project uses [uv](https://docs.astral.sh/uv/) to manage dependencies and the virtual environment:
+
+    uv sync            # create .venv and install dependencies (Python version from .python-version)
+    uv run pytest tests/
+    uv run flake8
+    uv lock --upgrade && uv sync   # update all dependencies to their latest compatible versions
+
 ## License
 pyCHPP is licensed under the Apache License 2.0.

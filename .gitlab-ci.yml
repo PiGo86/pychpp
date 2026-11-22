@@ -1,4 +1,4 @@
-image: "python:3.9"
+image: "python:3.11"
 
 before_script:
   - echo PYCHPP_CONSUMER_KEY=$PYCHPP_CONSUMER_KEY >> .env
@@ -6,9 +6,8 @@ before_script:
   - echo PYCHPP_ACCESS_TOKEN_KEY=$PYCHPP_ACCESS_TOKEN_KEY >> .env
   - echo PYCHPP_ACCESS_TOKEN_SECRET=$PYCHPP_ACCESS_TOKEN_SECRET >> .env
   - echo PYCHPP_SCOPE=$PYCHPP_SCOPE >> .env
-  - pip install poetry
-  - poetry config virtualenvs.create false
-  - poetry install
+  - pip install uv
+  - uv sync --frozen
 
 stages:
   - test
@@ -16,13 +15,15 @@ stages:
 
 style:
   stage: test
-  script: poetry run flake8
+  script: uv run flake8
 
 test:
   stage: test
-  script: poetry run pytest
+  script: uv run pytest
 
 deploy:
   stage: deploy
   only: [master]
-  script: poetry publish --build -u $PYCHPP_PYPI_USERNAME -p $PYCHPP_PYPI_PASSWORD
+  script:
+    - uv build
+    - uv publish --token $PYCHPP_PYPI_TOKEN
