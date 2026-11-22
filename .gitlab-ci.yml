@@ -15,7 +15,7 @@ stages:
 
 style:
   stage: test
-  script: uv run flake8
+  script: uv run ruff check
 
 test:
   stage: test
