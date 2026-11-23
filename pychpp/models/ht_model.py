@@ -134,8 +134,8 @@ class HTModel(metaclass=MetaHTModel):
                  chpp: "_chpp.CHPPBase | _chpp.CHPPXml | _chpp.CHPP",
                  data: Optional[ElementTree.Element] = None,
                  version: Optional[str] = None,
-                 xml_prefix: str = None,
-                 suppl_attrs: dict = None,
+                 xml_prefix: Optional[str] = None,
+                 suppl_attrs: Optional[dict] = None,
                  **kwargs,
                  ):
         """Instantiate a new HTModel object.
@@ -348,7 +348,7 @@ class HTModel(metaclass=MetaHTModel):
                 field: HTAliasField
                 setattr(self, field_name, getattr(self, field.target))
 
-    def _save_as_xml(self, path: pathlib.Path = None, filename: str = None):
+    def _save_as_xml(self, path: Optional[pathlib.Path] = None, filename: Optional[str] = None):
         """Save the fetched xml data to a file.
 
         Args:

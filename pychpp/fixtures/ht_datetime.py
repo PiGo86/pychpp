@@ -1,6 +1,8 @@
 """Datetime helpers used in pychpp."""
 
 import datetime as dt
+from typing import Optional
+
 import pytz
 
 
@@ -159,12 +161,12 @@ class HTDatetime:
     }
 
     def __init__(self,
-                 season=None, week=None, weekday=None,
-                 year=None, month=None, day=None,
+                 season: Optional[int]=None, week: Optional[int]=None, weekday: Optional[int]=None,
+                 year: Optional[int]=None, month: Optional[int]=None, day: Optional[int]=None,
                  hour=0, minute=0, second=0,
-                 datetime=None,
-                 league=None,
-                 timezone=None,
+                 datetime: Optional[dt.datetime]=None,
+                 league: Optional[int | str]=None,
+                 timezone: Optional[str]=None,
                  ):
         """Initialize a HTDatetime instance.
 

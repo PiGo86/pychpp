@@ -48,7 +48,7 @@ class HTTeam(td.RequestTeamDetails, td.TeamItem, BaseHTTeam):
     league_unit: 'HTTeamLeagueUnit' = HTProxyField(td.TeamItem, 'league_level_unit')
     youth_team: 'HTTeamYouthTeam' = HTProxyField(td.TeamItem)
 
-    def __init__(self, team_id=None, **kwargs):
+    def __init__(self, team_id: Optional[int]=None, **kwargs):
         if team_id is not None:
             self.XML_FILTER = f".[TeamID='{team_id}']/"
         else:

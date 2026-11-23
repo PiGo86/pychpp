@@ -2,7 +2,7 @@
 
 from datetime import datetime
 from http.client import RemoteDisconnected
-from typing import Optional
+from typing import Literal, Optional, overload
 
 import xml.etree.ElementTree
 
@@ -83,12 +83,13 @@ class CHPPBase:
                 error code returned by Hattrick.
 
         """
-        error_code = int(xml_data.find("ErrorCode").text)
+        error_code = int(xml_data.findtext("ErrorCode", "0"))
+        error_text = xml_data.findtext("Error", "")
 
         if error_code == 1:
             raise ht_error.HTAccessDeniedError(
                 "Access to specified parameters or file was denied : "
-                + xml_data.find("Error").text)
+                + error_text)
 
         if error_code == 50:
             raise ht_error.HTUnknownTeamIdError(
@@ -119,52 +120,51 @@ class CHPPBase:
                 "The requested team is not owned by the connected user")
 
         elif error_code == 70:
-            error_text = xml_data.find("Error").text.split(
-                "Additional Info:")[-1].strip()
+            error_info = error_text.split("Additional Info:")[-1].strip()
 
-            if "You tried to challenge yourself" in error_text:
+            if "You tried to challenge yourself" in error_info:
                 raise ht_error.HTTeamChallengingItself(
                     "The team is challenging itself")
 
-            elif error_text == "arena busy":
+            elif error_info == "arena busy":
                 raise ht_error.HTArenaNotAvailableError(
                     "The arena is not available")
 
-            elif "Your team already has booked" in error_text:
+            elif "Your team already has booked" in error_info:
                 raise ht_error.HTTeamNotAvailableError(
                     "The own team has already booked a friendly match")
 
-            elif "Your team is still in the cup" in error_text:
+            elif "Your team is still in the cup" in error_info:
                 raise ht_error.HTTeamNotAvailableError(
                     "The own team is still in cup")
 
-            elif error_text[-10:] == "être défié":
+            elif error_info[-10:] == "être défié":
                 raise ht_error.HTOpponentTeamNotAvailableError(
                     "The opponent team is not available")
 
-            elif "Your team is travelling" in error_text:
+            elif "Your team is travelling" in error_info:
                 raise ht_error.HTTeamIsTravellingError(
                     "The own team is travelling and can't launch a challenge")
 
-            elif "are currently abroad" in error_text:
+            elif "are currently abroad" in error_info:
                 raise ht_error.HTOpponentTeamIsTravellingError(
                     "The opponent team is travelling and can't be challenged")
 
-            elif "Challenges have been temporarily disabled" in error_text:
+            elif "Challenges have been temporarily disabled" in error_info:
                 raise ht_error.HTChallengesNotOpenedError(
                     "Challenges can't be launched (to soon)")
 
             else:
                 raise ht_error.HTChallengeError(
                     f"Unknown Hattrick error with challenge : "
-                    f"{xml_data.find('Error').text}")
+                    f"{error_text}")
 
         else:
             raise ht_error.HTUndefinedError(
                 f"Unknown Hattrick error : "
-                f"({error_code}) {xml_data.find('Error').text}")
+                f"({error_code}) {error_text}")
 
-    def get_auth(self, callback_url="oob", scope=""):
+    def get_auth(self, callback_url="oob", scope: str | list = ""):
         """Get the url, request_token and request_token_secret to authenticate a user.
 
         Args:
@@ -277,9 +277,21 @@ class CHPPBase:
 
         self.session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
 
+    @overload
+    def _base_request(
+            self, url, parse_data: Literal[True] = ..., method: str = ...,
+            **kwargs,
+    ) -> xml.etree.ElementTree.Element: ...
+
+    @overload
+    def _base_request(
+            self, url, parse_data: Literal[False], method: str = ...,
+            **kwargs,
+    ) -> str: ...
+
     def _base_request(
             self, url, parse_data=True, method='GET', **kwargs,
-    ) -> xml.etree.ElementTree:
+    ) -> xml.etree.ElementTree.Element | str:
         """Send a request via the CHPP API.
 
         Args:
@@ -324,7 +336,7 @@ class CHPPBase:
 
         else:
             data = xml.etree.ElementTree.fromstring(query.text)
-            file_name = data.find("FileName").text
+            file_name = data.findtext("FileName")
 
             # If Hattrick returns an error, an exception is raised
             if file_name == "chpperror.xml":
@@ -384,7 +396,7 @@ class CHPPBase:
         except ht_error.HTUnauthorizedAction:
             return "token is already invalid"
 
-    def request(self, **kwargs):
+    def request(self, **kwargs) -> xml.etree.ElementTree.Element:
         """Send a request to the CHPP API endpoint.
 
         Args:
@@ -528,7 +540,7 @@ class CHPPXml(CHPPBase):
             )
 
         else:
-            ValueError("'action_type' argument must be "
+            raise ValueError("'action_type' argument must be "
                        "equal to 'view', 'roles', "
                        "'members' or 'membersSubset'")
 
