@@ -1,11 +1,11 @@
+"""Light model used as a base for the custom models."""
+
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
 
 
 class BaseHTRegion(CustomModel):
-    """
-    Base model for Hattrick region
-    """
+    """Base model for Hattrick region."""
     id: int
     name: str
 
@@ -17,11 +17,10 @@ class BaseHTRegion(CustomModel):
 
 
 class HTLightRegion(BaseHTRegion):
-    """
-    Hattrick light region
-    """
+    """Hattrick light region."""
 
     _r_id = HTInitVar(param='regionID', init_arg='id_', fill_with='id')
 
     def details(self):
+        """Get the full details of this region."""
         return self._chpp.region(id_=self.id)

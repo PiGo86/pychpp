@@ -1,3 +1,5 @@
+"""Models for the `nationalteammatches.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestNationalTeamMatches(HTModel):
-    """
-    National Team Matches - Request arguments
-    """
+    """National Team Matches - Request arguments."""
     SOURCE_FILE = 'nationalteammatches'
     LAST_VERSION = '1.4'
 
@@ -18,18 +18,14 @@ class RequestNationalTeamMatches(HTModel):
 
 
 class NationalTeamMatches(RequestNationalTeamMatches):
-    """
-    National Team Matches
-    """
+    """National Team Matches."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     league_office_type_id: int = HTField('LeagueOfficeTypeID')
     matches: List['MatchItem'] = HTField('Matches', items='Match')
 
 
 class MatchItem(HTModel):
-    """
-    National Team Matches -> Matches -> Match item
-    """
+    """National Team Matches -> Matches -> Match item."""
     id: int = HTField('MatchID')
     date: datetime = HTField('MatchDate')
     type: int = HTField('MatchType')
@@ -42,8 +38,6 @@ class MatchItem(HTModel):
 
 
 class MatchResult(HTModel):
-    """
-    National Team Matches -> Matches -> Match item -> Match result
-    """
+    """National Team Matches -> Matches -> Match item -> Match result."""
     home_goals: Optional[int] = HTField('HomeGoals')
     away_goals: Optional[int] = HTField('AwayGoals')

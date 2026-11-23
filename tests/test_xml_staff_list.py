@@ -1,8 +1,9 @@
+"""Tests for the `stafflist.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_staff_list(mocked_chpp):
-
     sl = mocked_chpp.xml_staff_list(version='1.2')
 
     assert sl.trainer.id == 421746800
@@ -29,7 +30,6 @@ def test_staff_list(mocked_chpp):
 
 
 def test_staff_list_version_1_3(mocked_chpp):
-
     sl = mocked_chpp.xml_staff_list(version='1.3')
 
     assert sl.trainer.id == 421746800

@@ -1,8 +1,9 @@
+"""Tests for the `youthleaguefixtures.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_youth_league_fixtures(mocked_chpp):
-
     ylf = mocked_chpp.xml_youth_league_fixtures(
         youth_league_id=251460,
         season=91,

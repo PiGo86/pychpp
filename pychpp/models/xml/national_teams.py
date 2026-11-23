@@ -1,3 +1,5 @@
+"""Models for the `nationalteams.xml` CHPP file."""
+
 from typing import List
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestNationalTeams(HTModel):
-    """
-    National Teams - Request arguments
-    """
+    """National Teams - Request arguments."""
     SOURCE_FILE = 'nationalteams'
     LAST_VERSION = '1.6'
 
@@ -17,9 +17,7 @@ class RequestNationalTeams(HTModel):
 
 
 class NationalTeams(RequestNationalTeams):
-    """
-    National Teams
-    """
+    """National Teams."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     league_office_type_id: int = HTField('LeagueOfficeTypeID')
     national_teams: List['NationalTeamItem'] = HTField('NationalTeams', items='NationalTeam')
@@ -27,9 +25,7 @@ class NationalTeams(RequestNationalTeams):
 
 
 class NationalTeamItem(HTModel):
-    """
-    National Teams -> National Teams -> National team item
-    """
+    """National Teams -> National Teams -> National team item."""
     id: int = HTField('NationalTeamID')
     name: str = HTField('NationalTeamName')
     dress: str = HTField('Dress')
@@ -38,16 +34,12 @@ class NationalTeamItem(HTModel):
 
 
 class CupItem(HTModel):
-    """
-    National Teams -> Cups -> Cup item
-    """
+    """National Teams -> Cups -> Cup item."""
     id: int = HTField('CupID')
     cup_teams: List['CupItemCupTeamItem'] = HTField('CupTeams', items='CupTeam')
 
 
 class CupItemCupTeamItem(HTModel):
-    """
-    National Teams -> Cups -> Cup item -> Cup Teams -> Cup Team item
-    """
+    """National Teams -> Cups -> Cup item -> Cup Teams -> Cup Team item."""
     id: int = HTField('CupNationalTeamID')
     name: str = HTField('CupNationalTeamName')

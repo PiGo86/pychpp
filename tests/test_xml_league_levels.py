@@ -1,3 +1,5 @@
+"""Tests for the `leaguelevels.xml` CHPP file parsing."""
+
 def test_league_levels(mocked_chpp):
     league_levels = mocked_chpp.xml_league_levels(league_id=5)
 

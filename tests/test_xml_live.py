@@ -1,8 +1,9 @@
+"""Tests for the `live.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_xml_live(mocked_chpp):
-
     live = mocked_chpp.xml_live(include_starting_lineup=True, use_live_events_and_texts=True,
                                 version='2.3')
 
@@ -56,7 +57,6 @@ def test_xml_live(mocked_chpp):
 
 
 def test_xml_live_version_2_4(mocked_chpp):
-
     live = mocked_chpp.xml_live(match_id=773342689, include_starting_lineup=True,
                                 use_live_events_and_texts=True)
 

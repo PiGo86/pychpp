@@ -1,8 +1,9 @@
+"""Tests for the `matchlineup.xml` CHPP file parsing."""
+
 from pychpp.models.xml.match_lineup import MatchLineup
 
 
 def test_match_lineup_version_2_2(mocked_chpp):
-
     ml = mocked_chpp.xml_match_lineup(match_id=773342689, team_id=649632)
 
     assert isinstance(ml, MatchLineup)

@@ -1,5 +1,6 @@
-def test_xml_economy(mocked_chpp):
+"""Tests for the `economy.xml` CHPP file parsing."""
 
+def test_xml_economy(mocked_chpp):
     eco = mocked_chpp.xml_economy()
     t = eco.team
 

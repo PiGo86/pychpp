@@ -1,12 +1,12 @@
+"""Light model used as a base for the custom models."""
+
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.xml.match_details import MatchHomeTeam, MatchAwayTeam
 
 
 class BaseHTMatch(CustomModel):
-    """
-    Base model for Hattrick match, youth and senior
-    """
+    """Base model for Hattrick match, youth and senior."""
     URL_PATH = '/Club/Matches/Match.aspx'
 
     _r_match_id = HTInitVar('matchID', fill_with='id')
@@ -23,17 +23,18 @@ class BaseHTMatch(CustomModel):
 
 
 class HTCommonLightMatch(BaseHTMatch):
-    """
-    Base model for Hattrick common light match
-    """
+    """Base model for Hattrick common light match."""
 
     @property
     def is_youth(self):
+        """Whether the match is a youth match."""
         return self.source_system == 'Youth'
 
     @property
     def is_hto(self):
+        """Whether the match is a HTO integrated match."""
         return self.source_system == 'HTOIntegrated'
 
     def details(self, **kwargs):
+        """Get the full details of this match."""
         return self._chpp.match(id_=self.id, source_system=self.source_system, **kwargs)

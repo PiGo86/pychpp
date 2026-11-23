@@ -1,3 +1,5 @@
+"""Models for the `cupmatches.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestCupMatches(HTModel):
-    """
-    Cup Matches - Request arguments
-    """
+    """Cup Matches - Request arguments."""
     SOURCE_FILE = "cupmatches"
     LAST_VERSION = "1.4"
 
@@ -21,9 +21,7 @@ class RequestCupMatches(HTModel):
 
 
 class CupMatches(RequestCupMatches):
-    """
-    Cup Matches
-    """
+    """Cup Matches."""
     XML_PREFIX = 'Cup/'
 
     id: int = HTField('CupID')
@@ -34,9 +32,7 @@ class CupMatches(RequestCupMatches):
 
 
 class MatchListMatchItem(HTModel):
-    """
-    Cup Matches -> Match list -> Match item
-    """
+    """Cup Matches -> Match list -> Match item."""
     id: int = HTField('MatchID')
     date: datetime = HTField('MatchDate')
     home_team: 'MatchListMatchItemTeam' = HTField('HomeTeam')
@@ -46,26 +42,20 @@ class MatchListMatchItem(HTModel):
 
 
 class MatchListMatchItemTeam(HTModel):
-    """
-    Cup Matches -> Match list -> Match item -> Home/Away team
-    """
+    """Cup Matches -> Match list -> Match item -> Home/Away team."""
     id: int = HTField('TeamId')
     name: str = HTField('TeamName')
 
 
 class MatchListMatchItemMatchResult(HTModel):
-    """
-    Cup Matches -> Match list -> Match item -> Match result
-    """
+    """Cup Matches -> Match list -> Match item -> Match result."""
     available: bool = HTField('.', attrib='Available')
     home_goals: Optional[int] = HTField('HomeGoals')
     away_goals: Optional[int] = HTField('AwayGoals')
 
 
 class MatchListMatchItemLeagueInfo(HTModel):
-    """
-    Cup Matches -> Match list -> Match item -> League info
-    """
+    """Cup Matches -> Match list -> Match item -> League info."""
     available: bool = HTField('.', attrib='Available')
     home_league: Optional['MatchListMatchItemLeagueInfoTeam'] = HTField('.',
                                                                         xml_prefix='HomeLeague')
@@ -74,8 +64,6 @@ class MatchListMatchItemLeagueInfo(HTModel):
 
 
 class MatchListMatchItemLeagueInfoTeam(HTModel):
-    """
-    Cup Matches -> Match list -> Match item -> League info -> Home/Away team league info
-    """
+    """Cup Matches -> Match list -> Match item -> League info -> Home/Away team league info."""
     id: Optional[int] = HTField('ID')
     name: Optional[str] = HTField('Name')

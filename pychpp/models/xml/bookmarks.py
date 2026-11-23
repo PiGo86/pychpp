@@ -1,3 +1,5 @@
+"""Models for the `bookmarks.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestBookmarks(HTModel):
-    """
-    Bookmarks - Request arguments
-    """
+    """Bookmarks - Request arguments."""
     SOURCE_FILE = 'bookmarks'
     LAST_VERSION = '1.0'
 
@@ -16,16 +16,12 @@ class RequestBookmarks(HTModel):
 
 
 class Bookmarks(RequestBookmarks):
-    """
-    Bookmarks
-    """
+    """Parsed data of the `bookmarks.xml` CHPP file."""
     bookmark_list: List['BookmarkItem'] = HTField('BookmarkList', items='Bookmark')
 
 
 class BookmarkItem(HTModel):
-    """
-    Bookmarks -> Bookmark list -> Bookmark item
-    """
+    """Bookmarks -> Bookmark list -> Bookmark item."""
     id: str = HTField('BookmarkID')
     type_id: int = HTField('BookmarkTypeID')
     text: str = HTField('Text')

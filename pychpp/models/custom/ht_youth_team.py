@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from datetime import datetime
 from typing import TYPE_CHECKING, List
 
@@ -13,9 +15,7 @@ if TYPE_CHECKING:
 
 
 class HTYouthTeam(ytd.RequestYouthTeamDetails, CustomModel):
-    """
-    Hattrick Youth Team
-    """
+    """Hattrick Youth Team."""
 
     URL_PATH = '/Club/Youth/'
 
@@ -30,22 +30,24 @@ class HTYouthTeam(ytd.RequestYouthTeamDetails, CustomModel):
     league_id: int = HTProxyField(ytd.YouthTeamDetails, 'league.id')
 
     def players(self) -> List[YouthPlayerListListPlayerItem]:
+        """Get the players of the youth team."""
         xml_players = HTYouthTeamPlayers(chpp=self._chpp,
                                          youth_team_id=self.id)
         return xml_players.list
 
     def senior_team(self) -> 'ht_team.HTTeam':
+        """Get the senior team owning this youth team."""
         return self._chpp.team(id=self.senior_team_id)
 
     def user(self) -> 'ht_user.HTUser':
+        """Get the user owning this youth team."""
         return self._chpp.user(id=self.user_id)
 
 
 class HTYouthTeamPlayers(YouthPlayerListList):
+    """Players list of a youth team."""
     list: List['HTYouthTeamPlayerItem'] = HTProxyField(YouthPlayerListList)
 
 
 class HTYouthTeamPlayerItem(HTLightYouthPlayer, YouthPlayerListListPlayerItem):
-    """
-    Hattrick light player for youth team
-    """
+    """Hattrick light player for youth team."""

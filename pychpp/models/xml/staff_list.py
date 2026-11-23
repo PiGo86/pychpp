@@ -1,3 +1,5 @@
+"""Models for the `stafflist.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestStaffList(HTModel):
-    """
-    Staff List - Request arguments
-    """
+    """Staff List - Request arguments."""
     SOURCE_FILE = 'stafflist'
     LAST_VERSION = '1.3'
 
@@ -17,9 +17,7 @@ class RequestStaffList(HTModel):
 
 
 class StaffList(RequestStaffList):
-    """
-    Staff List
-    """
+    """Staff List."""
     XML_PREFIX = 'StaffList/'
 
     trainer: 'Trainer' = HTField('Trainer')
@@ -29,9 +27,7 @@ class StaffList(RequestStaffList):
 
 
 class Trainer(HTModel):
-    """
-    Staff List -> Trainer
-    """
+    """Staff List -> Trainer."""
     id: int = HTField('TrainerId')
     name: str = HTField('Name')
     age: int = HTField('Age')
@@ -46,9 +42,7 @@ class Trainer(HTModel):
 
 
 class StaffMemberItem(HTModel):
-    """
-    Staff List -> Staff members -> Staff member item
-    """
+    """Staff List -> Staff members -> Staff member item."""
     id: int = HTField('StaffId')
     name: str = HTField('Name')
     type: int = HTField('StaffType')

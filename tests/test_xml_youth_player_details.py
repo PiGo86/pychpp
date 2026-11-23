@@ -1,9 +1,10 @@
+"""Tests for the `youthplayerdetails.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.youth_player_details import YouthPlayerDetails
 
 
 def test_get_own_youth_player(mocked_chpp):
-
     yp = mocked_chpp.youth_player(301741211, version='1.2')
 
     assert yp.id == 301741211
@@ -115,7 +116,6 @@ def test_get_youth_player_currently_playing(mocked_chpp):
 
 
 def test_youth_player_details_version_1_4(mocked_chpp):
-
     ypd = mocked_chpp.xml_youth_player_details(youth_player_id=301741224, version='1.4')
     assert isinstance(ypd, YouthPlayerDetails)
     assert ypd.id == 301741224

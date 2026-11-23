@@ -1,5 +1,6 @@
-def test_youth_league_details(mocked_chpp):
+"""Tests for the `youthleaguedetails.xml` CHPP file parsing."""
 
+def test_youth_league_details(mocked_chpp):
     yld = mocked_chpp.xml_youth_league_details(version='1.0')
 
     assert yld.id == 225490
@@ -24,7 +25,6 @@ def test_youth_league_details(mocked_chpp):
 
 
 def test_youth_league_details_version_1_1(mocked_chpp):
-
     yld = mocked_chpp.xml_youth_league_details(version='1.1')
 
     assert yld.id == 225490

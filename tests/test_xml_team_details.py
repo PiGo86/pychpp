@@ -1,10 +1,11 @@
+"""Tests for the `teamdetails.xml` CHPP file parsing."""
+
 from pychpp import CHPP
 from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.team_details import TeamDetails
 
 
 def test_get_current_team(chpp: 'CHPP'):
-
     xml_team = chpp.xml_team_details()
 
     assert isinstance(xml_team, TeamDetails)
@@ -17,7 +18,6 @@ def test_get_current_team(chpp: 'CHPP'):
 
 
 def test_get_specific_team(mocked_chpp: 'CHPP'):
-
     xml_team = mocked_chpp.xml_team_details(team_id=987765, version='3.6')
 
     assert xml_team.user.id == 12453550
@@ -90,7 +90,6 @@ def test_get_specific_team(mocked_chpp: 'CHPP'):
 
 
 def test_get_specific_team_currently_playing(mocked_chpp):
-
     xml_team = mocked_chpp.xml_team_details(team_id=326336, version='3.6')
     assert isinstance(xml_team, TeamDetails)
 
@@ -177,7 +176,6 @@ def test_get_specific_team_currently_playing(mocked_chpp):
 
 
 def test_team_details_version(chpp):
-
     td_3_7 = chpp.xml_team_details()
     assert isinstance(td_3_7.teams[0].is_deactivated, bool)
 

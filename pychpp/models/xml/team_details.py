@@ -1,3 +1,5 @@
+"""Models for the `teamdetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -5,9 +7,7 @@ from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
 class RequestTeamDetails(HTModel):
-    """
-    Team Details - Request arguments
-    """
+    """Team Details - Request arguments."""
 
     SOURCE_FILE = 'teamdetails'
     LAST_VERSION = '4.0'
@@ -22,17 +22,13 @@ class RequestTeamDetails(HTModel):
 
 
 class TeamDetails(RequestTeamDetails):
-    """
-    Team Details
-    """
+    """Team Details."""
     user: 'User' = HTField('User')
     teams: List['TeamItem'] = HTField('Teams', items='Team')
 
 
 class User(HTModel):
-    """
-    Team Details -> User
-    """
+    """Team Details -> User."""
     id: int = HTField('UserID')
     language: Optional['UserLanguage'] = HTField('Language')
     currency: Optional['UserCurrency'] = HTField('Currency', version='>=4.0')
@@ -49,34 +45,26 @@ class User(HTModel):
 
 
 class UserLanguage(HTModel):
-    """
-    Team Details -> User -> Language
-    """
+    """Team Details -> User -> Language."""
     id: int = HTField('LanguageID')
     name: str = HTField('LanguageName')
 
 
 class UserCurrency(HTModel):
-    """
-    Team Details -> User -> Currency
-    """
+    """Team Details -> User -> Currency."""
     name: str = HTField('CurrencyName')
     rate: float = HTField('CurrencyRate')
 
 
 class NationalTeamItem(HTModel):
-    """
-    Team Details -> National teams -> National team item
-    """
+    """Team Details -> National teams -> National team item."""
     id: int = HTField('NationalTeamID')
     name: str = HTField('NationalTeamName')
     staff_type_id: int = HTField('NationalTeamStaffType')
 
 
 class TeamItem(HTModel):
-    """
-    Team Details -> Teams -> Team item
-    """
+    """Team Details -> Teams -> Team item."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     short_name: str = HTField('ShortTeamName')
@@ -117,48 +105,36 @@ class TeamItem(HTModel):
 
 
 class TeamItemArena(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Arena
-    """
+    """Team Details -> Teams -> Team item -> Arena."""
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
 
 
 class TeamItemLeague(HTModel):
-    """
-    Team Details -> Teams -> Team item -> League
-    """
+    """Team Details -> Teams -> Team item -> League."""
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')
 
 
 class TeamItemCountry(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Country
-    """
+    """Team Details -> Teams -> Team item -> Country."""
     id: int = HTField('CountryID')
     name: str = HTField('CountryName')
 
 
 class TeamItemRegion(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Region
-    """
+    """Team Details -> Teams -> Team item -> Region."""
     id: int = HTField('RegionID')
     name: str = HTField('RegionName')
 
 
 class TeamItemTrainer(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Trainer
-    """
+    """Team Details -> Teams -> Team item -> Trainer."""
     id: int = HTField('PlayerID')
 
 
 class TeamItemCup(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Cup
-    """
+    """Team Details -> Teams -> Team item -> Cup."""
     still_in_cup: Optional[bool] = HTField('StillInCup')
     id: Optional[int] = HTField('CupID')
     name: Optional[str] = HTField('CupName')
@@ -170,9 +146,7 @@ class TeamItemCup(HTModel):
 
 
 class TeamItemPowerRating(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Power rating
-    """
+    """Team Details -> Teams -> Team item -> Power rating."""
     global_ranking: int = HTField('GlobalRanking')
     league_ranking: int = HTField('LeagueRanking')
     region_ranking: int = HTField('RegionRanking')
@@ -180,91 +154,69 @@ class TeamItemPowerRating(HTModel):
 
 
 class TeamItemLeagueLevelUnit(HTModel):
-    """
-    Team Details -> Teams -> Team item -> League level unit
-    """
+    """Team Details -> Teams -> Team item -> League level unit."""
     id: Optional[int] = HTField('LeagueLevelUnitID')
     name: Optional[str] = HTField('LeagueLevelUnitName')
     level: Optional[int] = HTField('LeagueLevel')
 
 
 class TeamItemFanClub(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Fan club
-    """
+    """Team Details -> Teams -> Team item -> Fan club."""
     id: int = HTField('FanclubID')
     name: str = HTField('FanclubName')
     size: int = HTField('FanclubSize')
 
 
 class TeamItemGuestbook(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Guestbook
-    """
+    """Team Details -> Teams -> Team item -> Guestbook."""
     number_of_items: int = HTField('NumberOfGuestbookItems')
 
 
 class BasePress(HTModel):
-    """
-    Team Details -> Base press announcement
-    """
+    """Team Details -> Base press announcement."""
     subject: str = HTField('Subject')
     body: str = HTField('Body')
     send_date: datetime = HTField('SendDate')
 
 
 class TeamItemPressAnnouncement(BasePress):
-    """
-    Team Details -> Teams -> Team item -> Press announcement
-    """
+    """Team Details -> Teams -> Team item -> Press announcement."""
     pass
 
 
 class TeamItemColors(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Colors
-    """
+    """Team Details -> Teams -> Team item -> Colors."""
     background_color: Optional[str] = HTField('BackgroundColor')
     color: Optional[str] = HTField('Color')
 
 
 class TeamItemBotStatus(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Bot status
-    """
+    """Team Details -> Teams -> Team item -> Bot status."""
     is_bot: bool = HTField('IsBot')
     bot_since: Optional[datetime] = HTField('BotSince')
 
 
 class TeamItemYouthTeam(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Youth team
-    """
+    """Team Details -> Teams -> Team item -> Youth team."""
     id: int = HTField('YouthTeamID')
     name: str = HTField('YouthTeamName')
 
 
 class TeamItemFlags(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Flags
-    """
+    """Team Details -> Teams -> Team item -> Flags."""
     home_flags: List['TeamItemFlagsHomeOrAwayFlagsItem'] = HTField('HomeFlags', items='Flag')
     away_flags: List['TeamItemFlagsHomeOrAwayFlagsItem'] = HTField('AwayFlags', items='Flag')
 
 
 class TeamItemFlagsHomeOrAwayFlagsItem(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Flags -> Home or away flags -> Flag item
-    """
+    """Team Details -> Teams -> Team item -> Flags -> Home or away flags -> Flag item."""
     league_id: int = HTField('LeagueId')
     league_name: str = HTField('LeagueName')
     country_code: str = HTField('CountryCode')
 
 
 class TeamItemTrophyItem(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Trophies -> Trophy item
-    """
+    """Team Details -> Teams -> Team item -> Trophies -> Trophy item."""
     type_id: int = HTField('TrophyTypeId')
     season: int = HTField('TrophySeason')
     league_level: int = HTField('LeagueLevel')
@@ -278,18 +230,14 @@ class TeamItemTrophyItem(HTModel):
 
 
 class TeamItemSupportedTeams(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Supported teams
-    """
+    """Team Details -> Teams -> Team item -> Supported teams."""
     total_items: int = HTField('.', attrib='TotalItems')
     max_items: int = HTField('.', attrib='MaxItems')
     teams: List['TeamItemSupportedTeamsTeamItem'] = HTField('.', items='SupportedTeam')
 
 
 class TeamItemSupportedTeamsOrSupportersBaseTeamItem(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Supported teams or Supporters -> Base team item
-    """
+    """Team Details -> Teams -> Team item -> Supported teams or Supporters -> Base team item."""
     id: int = HTField('TeamId')
     name: str = HTField('TeamName')
     user_id: int = HTField('UserId')
@@ -301,18 +249,14 @@ class TeamItemSupportedTeamsOrSupportersBaseTeamItem(HTModel):
 
 
 class TeamItemSupportedTeamsTeamItem(TeamItemSupportedTeamsOrSupportersBaseTeamItem):
-    """
-    Team Details -> Teams -> Team item -> Supported teams -> Team item
-    """
+    """Team Details -> Teams -> Team item -> Supported teams -> Team item."""
     last_match: 'TeamItemSupportedTeamsTeamItemLastMatch' = HTField('LastMatch')
     next_match: 'TeamItemSupportedTeamsTeamItemNextMatch' = HTField('NextMatch')
     press_announcement: 'TeamItemSupportedTeamsTeamItemPress' = HTField('PressAnnouncement')
 
 
 class TeamItemSupportedTeamsTeamItemLastMatch(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Supported teams -> Team item -> Last Match
-    """
+    """Team Details -> Teams -> Team item -> Supported teams -> Team item -> Last Match."""
     id: int = HTField('LastMatchId')
     date: datetime = HTField('LastMatchDate')
     home_team_id: int = HTField('LastMatchHomeTeamId')
@@ -324,9 +268,7 @@ class TeamItemSupportedTeamsTeamItemLastMatch(HTModel):
 
 
 class TeamItemSupportedTeamsTeamItemNextMatch(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Supported teams -> Team item -> Next Match
-    """
+    """Team Details -> Teams -> Team item -> Supported teams -> Team item -> Next Match."""
     id: int = HTField('NextMatchId')
     date: datetime = HTField('NextMatchDate')
     home_team_id: int = HTField('NextMatchHomeTeamId')
@@ -336,23 +278,17 @@ class TeamItemSupportedTeamsTeamItemNextMatch(HTModel):
 
 
 class TeamItemSupportedTeamsTeamItemPress(BasePress):
-    """
-    Team Details -> Teams -> Team item -> Supported teams -> Team item -> Press announcement
-    """
+    """Team Details -> Teams -> Team item -> Supported teams -> Team item -> Press announcement."""
     pass
 
 
 class TeamItemSupporters(HTModel):
-    """
-    Team Details -> Teams -> Team item -> Supporters
-    """
+    """Team Details -> Teams -> Team item -> Supporters."""
     total_items: int = HTField('.', attrib='TotalItems')
     max_items: int = HTField('.', attrib='MaxItems')
     teams: List['TeamItemSupportersTeamItem'] = HTField('.', items='SupportedTeam')
 
 
 class TeamItemSupportersTeamItem(TeamItemSupportedTeamsOrSupportersBaseTeamItem):
-    """
-    Team Details -> Teams -> Team item -> Supporters -> Team item
-    """
+    """Team Details -> Teams -> Team item -> Supporters -> Team item."""
     pass

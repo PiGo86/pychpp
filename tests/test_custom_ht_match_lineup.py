@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_match_lineup` model."""
+
 import re
 
 from pychpp.models.custom.ht_arena import HTArena

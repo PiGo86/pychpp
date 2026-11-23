@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from typing import List, Tuple, Union, Iterable, TYPE_CHECKING, Dict
 
 from pychpp.models.custom import CustomModel
@@ -11,9 +13,7 @@ if TYPE_CHECKING:
 
 
 class HTChallengeManager:
-    """
-    Managing challenges on Hattrick
-    """
+    """Managing challenges on Hattrick."""
 
     def __init__(self, chpp: 'CHPP', team_id: int = None,
                  is_weekend_friendly: bool = None, **kwargs):
@@ -25,7 +25,15 @@ class HTChallengeManager:
     def pending_challenges(
             self, author: str = 'both',
     ) -> Union[List[ChallengeItem], Tuple[List[ChallengeItem], List[ChallengeItem]]]:
+        """Get the pending challenges of the team.
 
+        Args:
+            author: Whose challenges to return: 'own_team', 'other_teams' or 'both'.
+
+        Returns:
+            The pending challenges (or a tuple of both lists if author='both').
+
+        """
         challenges = HTChallenges(self._chpp, action_type='view', team_id=self.team_id,
                                   is_week_friendly=self.is_weekend_friendly, **self.kwargs)
 
@@ -45,6 +53,16 @@ class HTChallengeManager:
     def are_challengeable(
             self, teams: Iterable['HTTeam'] = None, team_ids: Iterable[int] = None,
     ) -> Dict[int, bool]:
+        """Check if teams are challengeable.
+
+        Args:
+            teams: Teams to check (HTTeam objects).
+            team_ids: Or team IDs to check.
+
+        Returns:
+            A dict mapping each team ID to its challengeable status.
+
+        """
         if teams is not None:
             result = ChallengesChallengeable(
                 chpp=self._chpp, action_type='challengeable',
@@ -64,6 +82,15 @@ class HTChallengeManager:
 
     def challenge(self, opponent_team_id: int, match_type: int = None,
                   match_place: int = None, arena_id: int = None) -> None:
+        """Challenge an opponent team.
+
+        Args:
+            opponent_team_id: Hattrick ID of the opponent team.
+            match_type: Type of the match.
+            match_place: Place of the match.
+            arena_id: ID of a neutral arena.
+
+        """
         self._chpp.xml_challenges(
             action_type='challenge', opponent_team_id=opponent_team_id,
             match_type=match_type, match_place=match_place,
@@ -71,18 +98,37 @@ class HTChallengeManager:
         )
 
     def accept(self, training_match_ht_id) -> None:
+        """Accept a challenge.
+
+        Args:
+            training_match_ht_id: Hattrick ID of the training match to accept.
+
+        """
         self._chpp.xml_challenges(action_type='accept',
                                   training_match_id=training_match_ht_id, **self.kwargs)
 
     def decline(self, training_match_ht_id) -> None:
+        """Decline a challenge.
+
+        Args:
+            training_match_ht_id: Hattrick ID of the training match to decline.
+
+        """
         self._chpp.xml_challenges(action_type='decline',
                                   training_match_id=training_match_ht_id, **self.kwargs)
 
     def withdraw(self, training_match_ht_id) -> None:
+        """Withdraw a challenge.
+
+        Args:
+            training_match_ht_id: Hattrick ID of the training match to withdraw.
+
+        """
         self._chpp.xml_challenges(action_type='withdraw',
                                   training_match_id=training_match_ht_id, **self.kwargs)
 
 
 class HTChallenges(CustomModel, CommonRequestChallenges):
+    """Challenges of a team."""
     challenges_by_me: List['ChallengeItem'] = HTProxyField(ChallengesView)
     offers_by_others: List['ChallengeItem'] = HTProxyField(ChallengesView)

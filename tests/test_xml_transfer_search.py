@@ -1,8 +1,9 @@
+"""Tests for the `transfersearch.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_transfer_search(mocked_chpp):
-
     ts = mocked_chpp.xml_transfer_search(age_min=20, age_max=22,
                                          skill_type_1=8,
                                          min_skill_value_1=7, max_skill_value_1=9,
@@ -51,7 +52,6 @@ def test_transfer_search(mocked_chpp):
 
 
 def test_transfer_search_version_1_2(mocked_chpp):
-
     ts = mocked_chpp.xml_transfer_search(age_min=20, age_max=22,
                                          skill_type_1=8,
                                          min_skill_value_1=7, max_skill_value_1=9,

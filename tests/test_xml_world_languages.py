@@ -1,5 +1,6 @@
-def test_world_languages(mocked_chpp):
+"""Tests for the `worldlanguages.xml` CHPP file parsing."""
 
+def test_world_languages(mocked_chpp):
     wl = mocked_chpp.xml_world_languages()
 
     assert wl.language_list[-1].id == 12

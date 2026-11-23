@@ -1,8 +1,9 @@
+"""Tests for the `hofplayers.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_hof_players(mocked_chpp):
-
     hof = mocked_chpp.xml_hof_players(team_id=1750803, version='1.2')
 
     players = hof.players
@@ -30,7 +31,6 @@ def test_hof_players(mocked_chpp):
 
 
 def test_hof_players_version_1_3(mocked_chpp):
-
     hof = mocked_chpp.xml_hof_players(team_id=1750803, version='1.3')
 
     players = hof.players

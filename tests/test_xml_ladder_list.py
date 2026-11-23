@@ -1,8 +1,9 @@
+"""Tests for the `ladderlist.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_ladder_list(mocked_chpp):
-
     xml_ladders = mocked_chpp.xml_ladder_list(team_id=964324)
 
     ladders = xml_ladders.ladders

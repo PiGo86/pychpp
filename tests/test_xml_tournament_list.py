@@ -1,8 +1,9 @@
+"""Tests for the `tournamentlist.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_tournament_list(mocked_chpp):
-
     tl = mocked_chpp.xml_tournament_list(1758305)
 
     tournament = tl.tournaments[0]

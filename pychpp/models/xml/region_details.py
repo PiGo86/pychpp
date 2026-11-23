@@ -1,3 +1,5 @@
+"""Models for the `regiondetails.xml` CHPP file."""
+
 from typing import Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestRegionDetails(HTModel):
-    """
-    Region Details - Request arguments
-    """
+    """Region Details - Request arguments."""
     SOURCE_FILE = 'regiondetails'
     LAST_VERSION = '1.2'
 
@@ -16,25 +16,19 @@ class RequestRegionDetails(HTModel):
 
 
 class RegionDetails(RequestRegionDetails):
-    """
-    Region Details
-    """
+    """Region Details."""
     league: 'League' = HTField('.')
     region: 'Region' = HTField('League/Region')
 
 
 class League(HTModel):
-    """
-    Region Details -> League
-    """
+    """Region Details -> League."""
     id: int = HTField('League/LeagueID')
     name: str = HTField('League/LeagueName')
 
 
 class Region(HTModel):
-    """
-    Region Details -> Region
-    """
+    """Region Details -> Region."""
     id: int = HTField('RegionID')
     name: str = HTField('RegionName')
     number_of_users: int = HTField('NumberOfUsers')

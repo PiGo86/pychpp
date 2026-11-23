@@ -1,3 +1,5 @@
+"""Tests for the `training.xml` CHPP file parsing."""
+
 from datetime import datetime
 
 import pytest
@@ -8,7 +10,6 @@ from pychpp.fixtures.ht_error import HTAccessDeniedError
 
 
 def test_get_training(mocked_chpp):
-
     training = mocked_chpp.xml_training(action_type='view', team_id=1165592,
                                         version='2.2')
 
@@ -46,7 +47,6 @@ def test_get_training(mocked_chpp):
 
 
 def test_training_version_2_3(mocked_chpp):
-
     training = mocked_chpp.xml_training(action_type='view', team_id=1165592,
                                         version='2.3')
 

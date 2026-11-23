@@ -1,3 +1,5 @@
+"""Models for the `club.xml` CHPP file."""
+
 from typing import Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestClub(HTModel):
-    """
-    Club - Request arguments
-    """
+    """Club - Request arguments."""
     SOURCE_FILE = 'club'
     LAST_VERSION = '1.5'
 
@@ -16,16 +16,12 @@ class RequestClub(HTModel):
 
 
 class Club(RequestClub):
-    """
-    Club
-    """
+    """Parsed data of the `club.xml` CHPP file."""
     team: 'Team' = HTField('Team')
 
 
 class Team(HTModel):
-    """
-    Club -> Team
-    """
+    """Club -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     staff: 'TeamStaff' = HTField('Staff')
@@ -33,9 +29,7 @@ class Team(HTModel):
 
 
 class TeamStaff(HTModel):
-    """
-    Club -> Team -> Staff
-    """
+    """Club -> Team -> Staff."""
     assistant_trainer_levels: int = HTField('AssistantTrainerLevels')
     financial_director_levels: int = HTField('FinancialDirectorLevels')
     form_coach_levels: int = HTField('FormCoachLevels')
@@ -46,9 +40,7 @@ class TeamStaff(HTModel):
 
 
 class TeamYouthSquad(HTModel):
-    """
-    Club -> Team -> Youth Squad
-    """
+    """Club -> Team -> Youth Squad."""
     investment: int = HTField('Investment')
     has_promoted: bool = HTField('HasPromoted')
     youth_level: int = HTField('YouthLevel')

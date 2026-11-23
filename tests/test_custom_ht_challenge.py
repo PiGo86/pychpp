@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_challenge` model."""
+
 import pytest
 
 from pychpp.models.custom.ht_challenge import HTChallengeManager
@@ -7,7 +9,6 @@ from .conftest import PYCHPP_SCOPE
 
 
 def test_is_challengeable(chpp):
-
     challenge = HTChallengeManager(chpp)
     team_ids_to_test = [1750803, 299981]
 

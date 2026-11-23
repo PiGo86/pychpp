@@ -1,3 +1,5 @@
+"""Models for the `teamhistory.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTeamHistory(HTModel):
-    """
-    Team History - Request arguments
-    """
+    """Team History - Request arguments."""
     SOURCE_FILE = 'teamhistory'
     LAST_VERSION = '1.0'
 
@@ -17,9 +17,7 @@ class RequestTeamHistory(HTModel):
 
 
 class TeamHistory(RequestTeamHistory):
-    """
-    Team History
-    """
+    """Team History."""
     XML_PREFIX = 'Team/'
 
     id: int = HTField('TeamID')
@@ -31,17 +29,13 @@ class TeamHistory(RequestTeamHistory):
 
 
 class League(HTModel):
-    """
-    Team History -> League
-    """
+    """Team History -> League."""
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')
 
 
 class SeasonItem(HTModel):
-    """
-    Team History -> Team history -> Season item
-    """
+    """Team History -> Team history -> Season item."""
     index: int = HTField('.', attrib='Index')
     season_number: int = HTField('SeasonNumber')
     league_level_unit_id: int = HTField('LeagueLevelUnitID')
@@ -56,9 +50,7 @@ class SeasonItem(HTModel):
 
 
 class TrophyItem(HTModel):
-    """
-    Team History -> Trophy list -> Trophy item
-    """
+    """Team History -> Trophy list -> Trophy item."""
     type_id: int = HTField('TrophyTypeId')
     season: int = HTField('TrophySeason')
     league_level: int = HTField('LeagueLevel')

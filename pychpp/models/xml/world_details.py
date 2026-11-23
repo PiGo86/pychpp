@@ -1,3 +1,5 @@
+"""Models for the `worlddetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestWorldDetails(HTModel):
-    """
-    World Details - Request arguments
-    """
+    """World Details - Request arguments."""
     SOURCE_FILE = 'worlddetails'
     LAST_VERSION = '2.1'
 
@@ -19,16 +19,12 @@ class RequestWorldDetails(HTModel):
 
 
 class WorldDetails(RequestWorldDetails):
-    """
-    World Details
-    """
+    """World Details."""
     leagues: List['LeagueItem'] = HTField('LeagueList', items='League')
 
 
 class LeagueItem(HTModel):
-    """
-    World Details - Leagues - League item
-    """
+    """World Details - Leagues - League item."""
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')
     season: int = HTField('Season')
@@ -61,9 +57,7 @@ class LeagueItem(HTModel):
 
 
 class LeagueItemCountry(HTModel):
-    """
-    World Details > Leagues > League item -> Country
-    """
+    """World Details > Leagues > League item -> Country."""
     available: bool = HTField('.', attrib='Available')
     id: Optional[int] = HTField('CountryID')
     name: Optional[str] = HTField('CountryName')
@@ -75,17 +69,13 @@ class LeagueItemCountry(HTModel):
 
 
 class LeagueItemCountryRegionItem(HTModel):
-    """
-    World Details > Leagues > League item -> Country -> Regions -> Region item
-    """
+    """World Details > Leagues > League item -> Country -> Regions -> Region item."""
     id: Optional[int] = HTField('RegionID')
     name: Optional[str] = HTField('RegionName')
 
 
 class LeagueItemCupItem(HTModel):
-    """
-    World Details > Leagues > League item -> Cups -> Cup item
-    """
+    """World Details > Leagues > League item -> Cups -> Cup item."""
     id: int = HTField('CupID')
     name: str = HTField('CupName')
     league_level: int = HTField('CupLeagueLevel')
@@ -96,9 +86,7 @@ class LeagueItemCupItem(HTModel):
 
 
 class LeagueItemSequences(HTModel):
-    """
-    World Details > Leagues > League item -> Sequences
-    """
+    """World Details > Leagues > League item -> Sequences."""
     sequence_1: Optional[datetime] = HTField('Sequence1')
     sequence_2: Optional[datetime] = HTField('Sequence2')
     sequence_3: Optional[datetime] = HTField('Sequence3')

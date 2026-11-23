@@ -1,3 +1,5 @@
+"""Models for the `youthteamdetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestYouthTeamDetails(HTModel):
-    """
-    Youth Team Details - Request arguments
-    """
+    """Youth Team Details - Request arguments."""
     SOURCE_FILE = 'youthteamdetails'
     LAST_VERSION = '1.5'
 
@@ -20,9 +20,7 @@ class RequestYouthTeamDetails(HTModel):
 
 
 class YouthTeamDetails(RequestYouthTeamDetails):
-    """
-    Youth Team Details
-    """
+    """Youth Team Details."""
     id: int = HTField('YouthTeamID')
     name: str = HTField('YouthTeamName')
     short_name: str = HTField('ShortTeamName')
@@ -42,57 +40,43 @@ class YouthTeamDetails(RequestYouthTeamDetails):
 
 
 class Country(HTModel):
-    """
-    Youth Team Details -> Country
-    """
+    """Youth Team Details -> Country."""
     id: int = HTField('CountryID')
     name: str = HTField('CountryName')
 
 
 class Region(HTModel):
-    """
-    Youth Team Details -> Region
-    """
+    """Youth Team Details -> Region."""
     id: int = HTField('RegionID')
     name: str = HTField('RegionName')
 
 
 class Arena(HTModel):
-    """
-    Youth Team Details -> Arena
-    """
+    """Youth Team Details -> Arena."""
     id: int = HTField('YouthArenaID')
     name: str = HTField('YouthArenaName')
 
 
 class League(HTModel):
-    """
-    Youth Team Details -> League
-    """
+    """Youth Team Details -> League."""
     id: Optional[int] = HTField('YouthLeagueID')
     name: Optional[str] = HTField('YouthLeagueName')
     status: Optional[int] = HTField('YouthLeagueStatus')
 
 
 class OwningTeam(HTModel):
-    """
-    Youth Team Details -> Owning team
-    """
+    """Youth Team Details -> Owning team."""
     id: Optional[int] = HTField('MotherTeamID')
     name: Optional[str] = HTField('MotherTeamName')
 
 
 class Trainer(HTModel):
-    """
-    Youth Team Details -> Trainer
-    """
+    """Youth Team Details -> Trainer."""
     id: int = HTField('YouthPlayerID')
 
 
 class ScoutItem(HTModel):
-    """
-    Youth Team Details -> Scouts -> Scout item
-    """
+    """Youth Team Details -> Scouts -> Scout item."""
     id: int = HTField('YouthScoutID')
     name: str = HTField('ScoutName')
     age: int = HTField('Age')
@@ -108,9 +92,7 @@ class ScoutItem(HTModel):
 
 
 class Travel(HTModel):
-    """
-    Youth Team Details -> Scouts -> Scout item -> Travel
-    """
+    """Youth Team Details -> Scouts -> Scout item -> Travel."""
     start_date: datetime = HTField('TravelStartDate')
     length: int = HTField('TravelLength')
     type: int = HTField('TravelType')

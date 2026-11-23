@@ -1,3 +1,5 @@
+"""Models for the `matchdetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestMatchDetails(HTModel):
-    """
-    Match Details - Request arguments
-    """
+    """Match Details - Request arguments."""
     SOURCE_FILE = 'matchdetails'
     LAST_VERSION = '3.2'
 
@@ -19,9 +19,7 @@ class RequestMatchDetails(HTModel):
 
 
 class MatchDetails(RequestMatchDetails):
-    """
-    Match Details
-    """
+    """Match Details."""
 
     source_system: str = HTField('SourceSystem')
     user_supporter_tier: str = HTField('UserSupporterTier')
@@ -29,9 +27,7 @@ class MatchDetails(RequestMatchDetails):
 
 
 class Match(HTModel):
-    """
-    Match Details -> Match
-    """
+    """Match Details -> Match."""
     id: int = HTField('MatchID')
     type: int = HTField('MatchType')
     context_id: int = HTField('MatchContextId')
@@ -54,9 +50,7 @@ class Match(HTModel):
 
 
 class BaseMatchTeam(HTModel):
-    """
-    Match Details -> Match -> Base Home/Away team
-    """
+    """Match Details -> Match -> Base Home/Away team."""
     dress_uri: Optional[str] = HTField('DressURI')
     formation: Optional[str] = HTField('Formation')
     tactic_type: Optional[int] = HTField('TacticType')
@@ -69,27 +63,21 @@ class BaseMatchTeam(HTModel):
 
 
 class MatchHomeTeam(BaseMatchTeam):
-    """
-    Match Details -> Match -> Home team
-    """
+    """Match Details -> Match -> Home team."""
     id: int = HTField('HomeTeamID')
     name: str = HTField('HomeTeamName')
     goals: Optional[int] = HTField('HomeGoals')
 
 
 class MatchAwayTeam(BaseMatchTeam):
-    """
-    Match Details -> Match -> Away team
-    """
+    """Match Details -> Match -> Away team."""
     id: int = HTField('AwayTeamID')
     name: str = HTField('AwayTeamName')
     goals: Optional[int] = HTField('AwayGoals')
 
 
 class MatchTeamRatings(HTModel):
-    """
-    Match Details -> Match -> Home/Away team -> Ratings
-    """
+    """Match Details -> Match -> Home/Away team -> Ratings."""
     midfield: Optional[int] = HTField('RatingMidfield')
     right_defense: Optional[int] = HTField('RatingRightDef')
     mid_defense: Optional[int] = HTField('RatingMidDef')
@@ -102,9 +90,7 @@ class MatchTeamRatings(HTModel):
 
 
 class MatchTeamChances(HTModel):
-    """
-    Match Details -> Match -> Home/Away team -> Chances
-    """
+    """Match Details -> Match -> Home/Away team -> Chances."""
     left: Optional[int] = HTField('NrOfChancesLeft')
     center: Optional[int] = HTField('NrOfChancesCenter')
     right: Optional[int] = HTField('NrOfChancesRight')
@@ -113,9 +99,7 @@ class MatchTeamChances(HTModel):
 
 
 class MatchArena(HTModel):
-    """
-    Match Details -> Match -> Arena
-    """
+    """Match Details -> Match -> Arena."""
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
     weather_id: Optional[int] = HTField('WeatherID')
@@ -123,9 +107,7 @@ class MatchArena(HTModel):
 
 
 class MatchArenaSold(HTModel):
-    """
-    Match Details -> Match -> Arena -> Sold
-    """
+    """Match Details -> Match -> Arena -> Sold."""
     total: Optional[int] = HTField('SoldTotal')
     terraces: Optional[int] = HTField('SoldTerraces')
     basic: Optional[int] = HTField('SoldBasic')
@@ -134,18 +116,14 @@ class MatchArenaSold(HTModel):
 
 
 class MatchOfficials(HTModel):
-    """
-    Match Details -> Match -> Official referees
-    """
+    """Match Details -> Match -> Official referees."""
     referee: 'MatchOfficialsRefereeItem' = HTField('Referee')
     referee_assistant_1: 'MatchOfficialsRefereeItem' = HTField('RefereeAssistant1')
     referee_assistant_2: 'MatchOfficialsRefereeItem' = HTField('RefereeAssistant2')
 
 
 class MatchOfficialsRefereeItem(HTModel):
-    """
-    Match Details -> Match -> Official referees -> Referee item
-    """
+    """Match Details -> Match -> Official referees -> Referee item."""
     id: int = HTField('RefereeId')
     name: str = HTField('RefereeName')
     country: 'MatchOfficialsRefereeItemCountry' = HTField('.')
@@ -153,25 +131,19 @@ class MatchOfficialsRefereeItem(HTModel):
 
 
 class MatchOfficialsRefereeItemCountry(HTModel):
-    """
-    Match Details -> Match -> Official referees -> Referee item -> Country
-    """
+    """Match Details -> Match -> Official referees -> Referee item -> Country."""
     id: int = HTField('RefereeCountryId')
     name: str = HTField('RefereeCountryName')
 
 
 class MatchOfficialsRefereeItemTeam(HTModel):
-    """
-    Match Details -> Match -> Official referees -> Referee item -> Team
-    """
+    """Match Details -> Match -> Official referees -> Referee item -> Team."""
     id: int = HTField('RefereeTeamId')
     name: str = HTField('RefereeTeamname')
 
 
 class MatchGoalItem(HTModel):
-    """
-    Match Details -> Match -> Goals -> Goal item
-    """
+    """Match Details -> Match -> Goals -> Goal item."""
     player_id: int = HTField('ScorerPlayerID')
     player_name: str = HTField('ScorerPlayerName')
     team_id: int = HTField('ScorerTeamID')
@@ -182,9 +154,7 @@ class MatchGoalItem(HTModel):
 
 
 class MatchBookingItem(HTModel):
-    """
-    Match Details -> Match -> Bookings -> Booking item
-    """
+    """Match Details -> Match -> Bookings -> Booking item."""
     player_id: int = HTField('BookingPlayerID')
     player_name: str = HTField('BookingPlayerName')
     team_id: int = HTField('BookingTeamID')
@@ -194,9 +164,7 @@ class MatchBookingItem(HTModel):
 
 
 class MatchInjuryItem(HTModel):
-    """
-    Match Details -> Match -> Injuries -> Injury item
-    """
+    """Match Details -> Match -> Injuries -> Injury item."""
     player_id: int = HTField('InjuryPlayerID')
     player_name: str = HTField('InjuryPlayerName')
     team_id: int = HTField('InjuryTeamID')
@@ -206,9 +174,7 @@ class MatchInjuryItem(HTModel):
 
 
 class MatchPossession(HTModel):
-    """
-    Match Details -> Match -> Possession
-    """
+    """Match Details -> Match -> Possession."""
     first_half_home: Optional[int] = HTField('PossessionFirstHalfHome')
     first_half_away: Optional[int] = HTField('PossessionFirstHalfAway')
     second_half_home: Optional[int] = HTField('PossessionSecondHalfHome')
@@ -216,9 +182,7 @@ class MatchPossession(HTModel):
 
 
 class MatchEventItem(HTModel):
-    """
-    Match Details -> Match -> Events -> Event item
-    """
+    """Match Details -> Match -> Events -> Event item."""
     minute: int = HTField('Minute')
     match_part: int = HTField('MatchPart')
     type_id: int = HTField('EventTypeID')
@@ -230,9 +194,7 @@ class MatchEventItem(HTModel):
 
 
 class MatchExpectedResult(HTModel):
-    """
-    Match Details -> Match -> Expected result (simulated replays statistics)
-    """
+    """Match Details -> Match -> Expected result (simulated replays statistics)."""
     nr_of_samples: int = HTField('NrOfSamples')
     home_wins: int = HTField('HomeWins')
     draws: int = HTField('Draws')
@@ -246,26 +208,20 @@ class MatchExpectedResult(HTModel):
 
 
 class MatchExpectedResultFullTime(HTModel):
-    """
-    Match Details -> Match -> Expected result -> Full time (before penalty shootout)
-    """
+    """Match Details -> Match -> Expected result -> Full time (before penalty shootout)."""
     home_wins: int = HTField('HomeWins')
     draws: int = HTField('Draws')
     away_wins: int = HTField('AwayWins')
 
 
 class MatchExpectedResultGoalDistribution(HTModel):
-    """
-    Match Details -> Match -> Expected result -> Goal distribution
-    """
+    """Match Details -> Match -> Expected result -> Goal distribution."""
     home: 'MatchExpectedResultGoalDistributionTeam' = HTField('Home')
     away: 'MatchExpectedResultGoalDistributionTeam' = HTField('Away')
 
 
 class MatchExpectedResultGoalDistributionTeam(HTModel):
-    """
-    Match Details -> Match -> Expected result -> Goal distribution -> Home/Away team
-    """
+    """Match Details -> Match -> Expected result -> Goal distribution -> Home/Away team."""
     goals_0: int = HTField('Goals0')
     goals_1: int = HTField('Goals1')
     goals_2: int = HTField('Goals2')
@@ -276,17 +232,13 @@ class MatchExpectedResultGoalDistributionTeam(HTModel):
 
 
 class MatchExpectedResultAverageWinMargin(HTModel):
-    """
-    Match Details -> Match -> Expected result -> Average win margin
-    """
+    """Match Details -> Match -> Expected result -> Average win margin."""
     home: float = HTField('Home')
     away: float = HTField('Away')
 
 
 class MatchExpectedResultOverUnder(HTModel):
-    """
-    Match Details -> Match -> Expected result -> Over/under goal lines
-    """
+    """Match Details -> Match -> Expected result -> Over/under goal lines."""
     line_05: 'MatchExpectedResultOverUnderLine' = HTField('Line05')
     line_15: 'MatchExpectedResultOverUnderLine' = HTField('Line15')
     line_25: 'MatchExpectedResultOverUnderLine' = HTField('Line25')
@@ -295,8 +247,6 @@ class MatchExpectedResultOverUnder(HTModel):
 
 
 class MatchExpectedResultOverUnderLine(HTModel):
-    """
-    Match Details -> Match -> Expected result -> Over/under -> Line item
-    """
+    """Match Details -> Match -> Expected result -> Over/under -> Line item."""
     over: int = HTField('Over')
     under: int = HTField('Under')

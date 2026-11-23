@@ -1,3 +1,5 @@
+"""Tests for the `matchdetails.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.match_details import MatchDetails
 

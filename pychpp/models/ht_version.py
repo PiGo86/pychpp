@@ -1,4 +1,13 @@
+"""Version objects and constraints used to compare CHPP xml file versions."""
+
+
 class HTVersion:
+    """Version of a CHPP xml file, comparable with other HTVersion instances.
+
+    Args:
+        version: Version string, e.g. "1.7".
+
+    """
 
     def __init__(self, version: str):
         self.as_string = version
@@ -40,6 +49,12 @@ class HTVersion:
 
 
 class HTVersionConstraint:
+    """Constraint on a CHPP xml file version.
+
+    Args:
+        version_constraint: Constraint string, e.g. "=1.7", "<=2.0", ">1.5".
+
+    """
 
     def __init__(self, version_constraint: str):
 
@@ -67,7 +82,15 @@ class HTVersionConstraint:
             self.version = HTVersion(version_constraint[1:])
 
     def is_valid(self, ht_version: HTVersion):
+        """Check if a version satisfies the constraint.
 
+        Args:
+            ht_version: Version to check.
+
+        Returns:
+            True if the version satisfies the constraint.
+
+        """
         if self.constraint == 'eq':
             return ht_version == self.version
 

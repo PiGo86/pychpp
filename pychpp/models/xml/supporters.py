@@ -1,3 +1,5 @@
+"""Models for the `supporters.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestSupporters(HTModel):
-    """
-    Supporters - Request arguments
-    """
+    """Supporters - Request arguments."""
     SOURCE_FILE = 'supporters'
     LAST_VERSION = '1.1'
 
@@ -21,9 +21,7 @@ class RequestSupporters(HTModel):
 
 
 class SupportersSupportedTeams(RequestSupporters):
-    """
-    Supporters - Supported teams
-    """
+    """Supporters - Supported teams."""
     total_supported_teams: int = HTField('SupportedTeams', attrib='TotalItems')
     page_index: int = HTField('SupportedTeams/PageIndex', version='>=1.1')
     pages: int = HTField('SupportedTeams/Pages', version='>=1.1')
@@ -31,9 +29,7 @@ class SupportersSupportedTeams(RequestSupporters):
 
 
 class SupportersMySupporters(RequestSupporters):
-    """
-    Supporters - My supporters
-    """
+    """Supporters - My supporters."""
     total_supporters: int = HTField('MySupporters', attrib='TotalItems')
     page_index: int = HTField('MySupporters/PageIndex', version='>=1.1')
     pages: int = HTField('MySupporters/Pages', version='>=1.1')
@@ -41,9 +37,7 @@ class SupportersMySupporters(RequestSupporters):
 
 
 class CommonTeamItem(HTModel):
-    """
-    Supporters - Supported teams/My Supporters -> Supported teams/My Supporters -> Team item
-    """
+    """Supporters - Supported teams/My Supporters -> Supported teams/My Supporters -> Team item."""
     user_id: int = HTField('UserId')
     login_name: str = HTField('LoginName')
     team_id: int = HTField('TeamId')
@@ -55,24 +49,18 @@ class CommonTeamItem(HTModel):
 
 
 class SupportedTeamItem(CommonTeamItem):
-    """
-    Supporters - Supported teams -> Supported teams -> Team item
-    """
+    """Supporters - Supported teams -> Supported teams -> Team item."""
     last_match: 'LastMatch' = HTField('LastMatch')
     next_match: 'NextMatch' = HTField('NextMatch')
     press_announcement: Optional['PressAnnouncement'] = HTField('PressAnnouncement')
 
 
 class MySupportersTeamItem(CommonTeamItem):
-    """
-    Supporters - Supported teams -> My Supporters -> Team item
-    """
+    """Supporters - Supported teams -> My Supporters -> Team item."""
 
 
 class CommonLastNextMatch(HTModel):
-    """
-    Supporters - Supported teams -> Supported teams -> Team item -> Last/Next match
-    """
+    """Supporters - Supported teams -> Supported teams -> Team item -> Last/Next match."""
     id: int = HTField('Id')
     date: datetime = HTField('Date')
     home_team_id: int = HTField('HomeTeamId')
@@ -82,26 +70,20 @@ class CommonLastNextMatch(HTModel):
 
 
 class LastMatch(CommonLastNextMatch):
-    """
-    Supporters - Supported teams -> Supported teams -> Team item -> Last match
-    """
+    """Supporters - Supported teams -> Supported teams -> Team item -> Last match."""
     XML_PREFIX = 'LastMatch'
     home_goals: int = HTField('HomeGoals')
     away_goals: int = HTField('AwayGoals')
 
 
 class NextMatch(CommonLastNextMatch):
-    """
-    Supporters - Supported teams -> Supported teams -> Team item -> Next match
-    """
+    """Supporters - Supported teams -> Supported teams -> Team item -> Next match."""
     XML_PREFIX = 'NextMatch'
     date: datetime = HTField('MatchDate')
 
 
 class PressAnnouncement(HTModel):
-    """
-    Supporters - Supported teams -> Supported teams -> Team item -> Press Announcement
-    """
+    """Supporters - Supported teams -> Supported teams -> Team item -> Press Announcement."""
     XML_PREFIX = 'PressAnnouncement'
     send_date: datetime = HTField('SendDate')
     subject: str = HTField('Subject')

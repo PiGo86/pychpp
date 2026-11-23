@@ -1,12 +1,12 @@
+"""Models for the `alliances.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
 class RequestAlliances(HTModel):
-    """
-    Alliances - Request arguments
-    """
+    """Alliances - Request arguments."""
     SOURCE_FILE = "alliances"
     LAST_VERSION = "1.5"
 
@@ -19,9 +19,7 @@ class RequestAlliances(HTModel):
 
 
 class Alliances(RequestAlliances):
-    """
-    Alliances
-    """
+    """Parsed data of the `alliances.xml` CHPP file."""
     pages: int = HTField('Pages')
     page_index: int = HTField('PageIndex')
     user_supporter_tier: str = HTField('UserSupporterTier', version='>=1.4')
@@ -29,9 +27,7 @@ class Alliances(RequestAlliances):
 
 
 class AllianceItem(HTModel):
-    """
-    Alliances -> Alliances -> Alliance item
-    """
+    """Alliances -> Alliances -> Alliance item."""
     id: int = HTField('ID')
     name: str = HTField('Name')
     description: str = HTField('Description')

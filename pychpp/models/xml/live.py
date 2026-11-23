@@ -1,3 +1,5 @@
+"""Models for the `live.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestLive(HTModel):
-    """
-    Live - Request arguments
-    """
+    """Live - Request arguments."""
     SOURCE_FILE = 'live'
     LAST_VERSION = '2.4'
 
@@ -25,16 +25,12 @@ class RequestLive(HTModel):
 
 
 class Live(RequestLive):
-    """
-    Live
-    """
+    """Parsed data of the `live.xml` CHPP file."""
     matches: Optional[List['MatchItem']] = HTField('MatchList', items='Match')
 
 
 class MatchItem(HTModel):
-    """
-    Live -> Matches -> Match item
-    """
+    """Live -> Matches -> Match item."""
     id: int = HTField('MatchID')
     type: int = HTField('MatchType')
     source_system: str = HTField('SourceSystem')
@@ -52,9 +48,7 @@ class MatchItem(HTModel):
 
 
 class HomeTeam(HTModel):
-    """
-    Live -> Matches -> Match item -> Home team
-    """
+    """Live -> Matches -> Match item -> Home team."""
     id: int = HTField('HomeTeamID')
     name: str = HTField('HomeTeamName')
     short_name: str = HTField('HomeTeamShortName')
@@ -62,9 +56,7 @@ class HomeTeam(HTModel):
 
 
 class AwayTeam(HTModel):
-    """
-    Live -> Matches -> Match item -> Away team
-    """
+    """Live -> Matches -> Match item -> Away team."""
     id: int = HTField('AwayTeamID')
     name: str = HTField('AwayTeamName')
     short_name: str = HTField('AwayTeamShortName')
@@ -72,9 +64,7 @@ class AwayTeam(HTModel):
 
 
 class PlayerItem(HTModel):
-    """
-    Live -> Matches -> Match item -> Home/Away team -> Starting Lineup -> Player item
-    """
+    """Live -> Matches -> Match item -> Home/Away team -> Starting Lineup -> Player item."""
     id: int = HTField('PlayerID')
     role_id: int = HTField('RoleID')
     name: str = HTField('PlayerName')
@@ -82,9 +72,7 @@ class PlayerItem(HTModel):
 
 
 class SubstitutionItem(HTModel):
-    """
-    Live -> Matches -> Match item -> Substitutions -> Substitution item
-    """
+    """Live -> Matches -> Match item -> Substitutions -> Substitution item."""
     team_id: int = HTField('TeamID')
     subject_player_id: int = HTField('SubjectPlayerID')
     object_player_id: int = HTField('ObjectPlayerID')
@@ -96,9 +84,7 @@ class SubstitutionItem(HTModel):
 
 
 class EventItem(HTModel):
-    """
-    Live -> Matches -> Match item -> Event -> Event item
-    """
+    """Live -> Matches -> Match item -> Event -> Event item."""
     index: int = HTField('.', attrib='Index')
     minute: int = HTField('Minute')
     match_part: int = HTField('MatchPart', version='>=1.9')

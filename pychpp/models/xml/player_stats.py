@@ -1,3 +1,5 @@
+"""Models for the `playerstats.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestPlayerStats(HTModel):
-    """
-    Player Stats - Request arguments
-    """
+    """Player Stats - Request arguments."""
     SOURCE_FILE = 'playerstats'
     LAST_VERSION = '1.0'
 
@@ -17,9 +17,7 @@ class RequestPlayerStats(HTModel):
 
 
 class PlayerStats(RequestPlayerStats):
-    """
-    Player Stats
-    """
+    """Player Stats."""
     XML_PREFIX = 'Player/'
 
     id: int = HTField('PlayerID')
@@ -32,18 +30,14 @@ class PlayerStats(RequestPlayerStats):
 
 
 class OwningTeam(HTModel):
-    """
-    Player Stats -> Owning team
-    """
+    """Player Stats -> Owning team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     league_id: int = HTField('LeagueID')
 
 
 class MatchItem(HTModel):
-    """
-    Player Stats -> Match stats -> Match item
-    """
+    """Player Stats -> Match stats -> Match item."""
     id: int = HTField('MatchID')
     type: int = HTField('MatchType')
     source_system: str = HTField('SourceSystem')
@@ -69,22 +63,16 @@ class MatchItem(HTModel):
 
 
 class MatchItemHomeTeam(HTModel):
-    """
-    Player Stats -> Match stats -> Match item -> Home team
-    """
+    """Player Stats -> Match stats -> Match item -> Home team."""
     name: str = HTField('HomeTeamName')
 
 
 class MatchItemAwayTeam(HTModel):
-    """
-    Player Stats -> Match stats -> Match item -> Away team
-    """
+    """Player Stats -> Match stats -> Match item -> Away team."""
     name: str = HTField('AwayTeamName')
 
 
 class PositionItem(HTModel):
-    """
-    Player Stats -> Match stats -> Match item -> Positions -> Position item
-    """
+    """Player Stats -> Match stats -> Match item -> Positions -> Position item."""
     position_code: int = HTField('PositionCode')
     minutes: int = HTField('Minutes')

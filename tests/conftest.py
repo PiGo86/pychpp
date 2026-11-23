@@ -1,3 +1,5 @@
+"""Pytest configuration and fixtures."""
+
 import os
 import pathlib
 import xml.etree.ElementTree as EltTree
@@ -40,7 +42,6 @@ def chpp():
 
 @pytest.fixture
 def mocked_chpp(monkeypatch):
-
     def mock_request(*args, **kwargs):
         args_dict = {'file': kwargs.pop('file'), 'version': kwargs.pop('version')}
         kwargs.pop('method')

@@ -1,3 +1,5 @@
+"""Models for the `matches.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestMatches(HTModel):
-    """
-    Matches - Request arguments
-    """
+    """Matches - Request arguments."""
     SOURCE_FILE = 'matches'
     LAST_VERSION = '3.0'
 
@@ -19,16 +19,12 @@ class RequestMatches(HTModel):
 
 
 class Matches(RequestMatches):
-    """
-    Matches
-    """
+    """Parsed data of the `matches.xml` CHPP file."""
     team: 'Team' = HTField('Team')
 
 
 class Team(HTModel):
-    """
-    Matches -> Team
-    """
+    """Matches -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     short_name: str = HTField('ShortTeamName')
@@ -38,26 +34,20 @@ class Team(HTModel):
 
 
 class League(HTModel):
-    """
-    Matches -> Team -> League
-    """
+    """Matches -> Team -> League."""
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')
 
 
 class LeagueLevelUnit(HTModel):
-    """
-    Matches -> Team -> League -> League Level Unit
-    """
+    """Matches -> Team -> League -> League Level Unit."""
     id: int = HTField('LeagueLevelUnitID')
     name: str = HTField('LeagueLevelUnitName')
     level: int = HTField('LeagueLevel')
 
 
 class MatchItem(HTModel):
-    """
-    Matches -> Team -> Matches -> Match item
-    """
+    """Matches -> Team -> Matches -> Match item."""
     id: int = HTField('MatchID')
     home_team: 'MatchItemTeam' = HTField('HomeTeam', xml_prefix='Home')
     away_team: 'MatchItemTeam' = HTField('AwayTeam', xml_prefix='Away')
@@ -77,9 +67,7 @@ class MatchItem(HTModel):
 
 
 class MatchItemTeam(HTModel):
-    """
-    Matches -> Team -> Matches -> Match item -> Home/Away team
-    """
+    """Matches -> Team -> Matches -> Match item -> Home/Away team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     short_name: str = HTField('TeamNameShortName')

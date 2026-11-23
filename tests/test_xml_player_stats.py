@@ -1,9 +1,10 @@
+"""Tests for the `playerstats.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.player_stats import PlayerStats
 
 
 def test_player_stats_version_1_0(mocked_chpp):
-
     ps = mocked_chpp.xml_player_stats(player_id=430759322, version='1.0')
 
     assert isinstance(ps, PlayerStats)

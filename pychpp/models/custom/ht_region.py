@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from typing import Optional
 
 from pychpp.models.custom.base.ht_region import BaseHTRegion, HTLightRegion
@@ -7,9 +9,7 @@ from pychpp.models.xml.region_details import RequestRegionDetails, Region, Regio
 
 
 class HTRegion(RequestRegionDetails, BaseHTRegion):
-    """
-    Hattrick region
-    """
+    """Hattrick region."""
     XML_PREFIX = 'League/Region/'
 
     _r_region_id: Optional[int] = HTInitVar('regionID', init_arg='region_id', fill_with='id')
@@ -25,6 +25,4 @@ class HTRegion(RequestRegionDetails, BaseHTRegion):
 
 
 class HTRegionLeague(HTLightRegion, League):
-    """
-    Hattrick region -> League
-    """
+    """Hattrick region -> League."""

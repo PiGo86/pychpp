@@ -1,8 +1,9 @@
+"""Tests for the CHPP access tokens."""
+
 from pychpp import CHPP
 
 
 def test_request_token(chpp: CHPP):
-
     auth = chpp.get_auth(scope='')
 
     assert isinstance(auth, dict)

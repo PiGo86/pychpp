@@ -1,3 +1,5 @@
+"""Models for the `youthleaguefixtures.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestYouthLeagueFixtures(HTModel):
-    """
-    Youth League Fixtures - Request arguments
-    """
+    """Youth League Fixtures - Request arguments."""
     SOURCE_FILE = 'youthleaguefixtures'
     LAST_VERSION = '1.0'
 
@@ -18,9 +18,7 @@ class RequestYouthLeagueFixtures(HTModel):
 
 
 class YouthLeagueFixtures(RequestYouthLeagueFixtures):
-    """
-    Youth League Fixtures
-    """
+    """Youth League Fixtures."""
     id: int = HTField('YouthLeagueID')
     name: str = HTField('YouthLeagueName')
     type: int = HTField('YouthLeagueType')
@@ -31,9 +29,7 @@ class YouthLeagueFixtures(RequestYouthLeagueFixtures):
 
 
 class MatchItem(HTModel):
-    """
-    Youth League Fixtures -> Matches -> Match item
-    """
+    """Youth League Fixtures -> Matches -> Match item."""
     id: int = HTField('MatchID')
     round: int = HTField('MatchRound')
     status: str = HTField('Status')
@@ -45,8 +41,6 @@ class MatchItem(HTModel):
 
 
 class Team(HTModel):
-    """
-    Youth League Fixtures -> Matches -> Match item -> Home/Away teams
-    """
+    """Youth League Fixtures -> Matches -> Match item -> Home/Away teams."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')

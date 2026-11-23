@@ -1,8 +1,9 @@
+"""Tests for the `alliancedetails.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_get_alliance_details(mocked_chpp):
-
     alliance_xml = mocked_chpp.xml_alliance_details(action_type='view', alliance_id=118840)
 
     assert alliance_xml.user_supporter_tier == 'none'

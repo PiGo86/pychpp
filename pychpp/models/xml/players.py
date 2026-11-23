@@ -1,3 +1,5 @@
+"""Models for the `players.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestPlayers(HTModel):
-    """
-    Players - Request arguments
-    """
+    """Players - Request arguments."""
     SOURCE_FILE = 'players'
     LAST_VERSION = '2.8'
 
@@ -21,9 +21,7 @@ class RequestPlayers(HTModel):
 
 
 class BasePlayers(RequestPlayers):
-    """
-    Players
-    """
+    """Players."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     is_youth: bool = HTField('IsYouth')
     action_type: str = HTField('ActionType')
@@ -31,59 +29,43 @@ class BasePlayers(RequestPlayers):
 
 
 class PlayersView(BasePlayers):
-    """
-    Players - View
-    """
+    """Players - View."""
     team: 'PlayersViewTeam' = HTField('Team')
 
 
 class PlayersViewOldies(BasePlayers):
-    """
-    Players - View oldies
-    """
+    """Players - View oldies."""
     team: 'PlayersViewOldiesTeam' = HTField('Team')
 
 
 class PlayersViewOldCoaches(BasePlayers):
-    """
-    Players - View old coaches
-    """
+    """Players - View old coaches."""
     team: 'PlayersViewOldCoachesTeam' = HTField('Team')
 
 
 class BasePlayersTeam(HTModel):
-    """
-    Players -> Team
-    """
+    """Players -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class PlayersViewTeam(BasePlayersTeam):
-    """
-    Players - View -> Team
-    """
+    """Players - View -> Team."""
     players: List['PlayersViewTeamPlayerItem'] = HTField('PlayerList', items='Player')
 
 
 class PlayersViewOldiesTeam(BasePlayersTeam):
-    """
-    Players - View oldies -> Team
-    """
+    """Players - View oldies -> Team."""
     players: List['PlayersViewOldiesTeamPlayerItem'] = HTField('PlayerList', items='Player')
 
 
 class PlayersViewOldCoachesTeam(BasePlayersTeam):
-    """
-    Players - View oldies -> Team
-    """
+    """Players - View old coaches -> Team."""
     players: List['PlayersViewOldCoachesTeamPlayerItem'] = HTField('PlayerList', items='Player')
 
 
 class BasePlayersTeamPlayerItem(HTModel):
-    """
-    Base Players -> Team -> Players -> Player item
-    """
+    """Base Players -> Team -> Players -> Player item."""
 
     id: int = HTField('PlayerID')
     first_name: str = HTField('FirstName')
@@ -122,9 +104,7 @@ class BasePlayersTeamPlayerItem(HTModel):
 
 
 class PlayersViewTeamPlayerItem(BasePlayersTeamPlayerItem):
-    """
-    Players - View -> Team -> Players -> Player item
-    """
+    """Players - View -> Team -> Players -> Player item."""
 
     arrival_date: datetime = HTField('ArrivalDate')
     owner_notes: Optional[str] = HTField('OwnerNotes')
@@ -138,9 +118,7 @@ class PlayersViewTeamPlayerItem(BasePlayersTeamPlayerItem):
 
 
 class PlayersViewTeamPlayerItemPlayerSkills(HTModel):
-    """
-    Players - View -> Team -> Players -> Player item -> Skills
-    """
+    """Players - View -> Team -> Players -> Player item -> Skills."""
     stamina: int = HTField('StaminaSkill')
     keeper: Optional[int] = HTField('KeeperSkill')
     playmaker: Optional[int] = HTField('PlaymakerSkill')
@@ -152,9 +130,7 @@ class PlayersViewTeamPlayerItemPlayerSkills(HTModel):
 
 
 class BasePlayersTeamPlayerItemLastMatch(HTModel):
-    """
-    Base Players -> Team -> Players -> Player item -> Last match
-    """
+    """Base Players -> Team -> Players -> Player item -> Last match."""
     date: datetime = HTField('Date')
     id: int = HTField('MatchId')
     position_code: int = HTField('PositionCode')
@@ -164,31 +140,23 @@ class BasePlayersTeamPlayerItemLastMatch(HTModel):
 
 
 class CommonTeamPlayerItemTrainerData(HTModel):
-    """
-    Players - View or View old coaches -> Team -> Players -> Player Item -> Trainer Data
-    """
+    """Players - View or View old coaches -> Team -> Players -> Player Item -> Trainer Data."""
     type: Optional[int] = HTField('TrainerType')
     skill_level: Optional[int] = HTField('TrainerSkillLevel')
 
 
 class PlayersViewOldiesTeamPlayerItem(BasePlayersTeamPlayerItem):
-    """
-    Players - View oldies -> Team -> Players -> Player Item
-    """
+    """Players - View oldies -> Team -> Players -> Player Item."""
     owning_team: 'PlayersViewOldiesTeamPlayerItemOwningTeam' = HTField('OwningTeam')
 
 
 class PlayersViewOldiesTeamPlayerItemOwningTeam(HTModel):
-    """
-    Players - View oldies -> Team -> Players -> Player Item -> Owning team
-    """
+    """Players - View oldies -> Team -> Players -> Player Item -> Owning team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     league_name: str = HTField('LeagueName')
 
 
 class PlayersViewOldCoachesTeamPlayerItem(BasePlayersTeamPlayerItem):
-    """
-    Players - View old coaches -> Team -> Players -> Player Item
-    """
+    """Players - View old coaches -> Team -> Players -> Player Item."""
     trainer_data: 'CommonTeamPlayerItemTrainerData' = HTField('TrainerData')

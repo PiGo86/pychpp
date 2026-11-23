@@ -1,3 +1,5 @@
+"""Models for the `search.xml` CHPP file."""
+
 from typing import Optional, List
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestSearch(HTModel):
-    """
-    Search - Request arguments
-    """
+    """Search - Request arguments."""
     SOURCE_FILE = 'search'
     LAST_VERSION = '1.2'
 
@@ -21,9 +21,7 @@ class RequestSearch(HTModel):
 
 
 class Search(RequestSearch):
-    """
-    Search
-    """
+    """Parsed data of the `search.xml` CHPP file."""
     search_params: 'SearchParams' = HTField('SearchParams')
     page_index: int = HTField('PageIndex')
     pages: int = HTField('Pages')
@@ -31,9 +29,7 @@ class Search(RequestSearch):
 
 
 class SearchParams(HTModel):
-    """
-    Search -> Search params
-    """
+    """Search -> Search params."""
     type: int = HTField('SearchType')
     string: str = HTField('SearchString')
     string_2: str = HTField('SearchString2')
@@ -42,8 +38,6 @@ class SearchParams(HTModel):
 
 
 class ResultItem(HTModel):
-    """
-    Search -> Search results -> Result item
-    """
+    """Search -> Search results -> Result item."""
     id: int = HTField('ResultID')
     name: str = HTField('ResultName')

@@ -1,3 +1,5 @@
+"""Models for the `leaguedetails.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestLeagueDetails(HTModel):
-    """
-    League Details - Request arguments
-    """
+    """League Details - Request arguments."""
     SOURCE_FILE = 'leaguedetails'
     LAST_VERSION = '1.6'
 
@@ -19,9 +19,7 @@ class RequestLeagueDetails(HTModel):
 
 
 class LeagueDetails(RequestLeagueDetails):
-    """
-    League Details
-    """
+    """League Details."""
     league: 'League' = HTField('.')
     league_level_unit_id: int = HTField('LeagueLevelUnitID')
     league_level_unit_name: str = HTField('LeagueLevelUnitName')
@@ -31,9 +29,7 @@ class LeagueDetails(RequestLeagueDetails):
 
 
 class League(HTModel):
-    """
-    League Details -> League
-    """
+    """League Details -> League."""
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')
     level: int = HTField('LeagueLevel')
@@ -41,9 +37,7 @@ class League(HTModel):
 
 
 class TeamItem(HTModel):
-    """
-    League Details -> Team item
-    """
+    """League Details -> Team item."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     user_id: int = HTField('UserId')

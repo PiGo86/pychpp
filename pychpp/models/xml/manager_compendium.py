@@ -1,12 +1,12 @@
+"""Models for the `managercompendium.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
 class RequestManagerCompendium(HTModel):
-    """
-    Manager Compendium - Request arguments
-    """
+    """Manager Compendium - Request arguments."""
     SOURCE_FILE = "managercompendium"
     LAST_VERSION = "1.8"
 
@@ -14,9 +14,7 @@ class RequestManagerCompendium(HTModel):
 
 
 class ManagerCompendium(RequestManagerCompendium):
-    """
-    Manager Compendium
-    """
+    """Manager Compendium."""
     id: int = HTField(path='Manager/UserId')
     login_name: str = HTField(path='Manager/Loginname')
     supporter_tier: str = HTField(path='Manager/SupporterTier')
@@ -35,33 +33,25 @@ class ManagerCompendium(RequestManagerCompendium):
 
 
 class Language(HTModel):
-    """
-    Manager Compendium -> Language
-    """
+    """Manager Compendium -> Language."""
     id: int = HTField(path='LanguageId')
     name: str = HTField(path='LanguageName')
 
 
 class Country(HTModel):
-    """
-    Manager Compendium -> Country
-    """
+    """Manager Compendium -> Country."""
     id: int = HTField(path='CountryId')
     name: str = HTField(path='CountryName')
 
 
 class Currency(HTModel):
-    """
-    Manager Compendium -> Currency
-    """
+    """Manager Compendium -> Currency."""
     name: str = HTField(path='CurrencyName')
     rate: float = HTField(path='CurrencyRate')
 
 
 class TeamItem(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item
-    """
+    """Manager Compendium -> Teams -> Team item."""
     id: int = HTField(path='TeamId')
     name: str = HTField(path='TeamName')
     gender_id: int = HTField(path='GenderID', version='>=1.6')
@@ -75,83 +65,63 @@ class TeamItem(HTModel):
 
 
 class TeamItemArena(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item -> Arena
-    """
+    """Manager Compendium -> Teams -> Team item -> Arena."""
     id: int = HTField(path='ArenaId')
     name: str = HTField(path='ArenaName')
 
 
 class TeamItemLeague(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item -> League
-    """
+    """Manager Compendium -> Teams -> Team item -> League."""
     id: int = HTField(path='LeagueId')
     name: str = HTField(path='LeagueName')
     season: int = HTField(path='Season')
 
 
 class TeamItemCountry(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item -> Country
-    """
+    """Manager Compendium -> Teams -> Team item -> Country."""
     id: int = HTField(path='CountryId')
     name: str = HTField(path='CountryName')
 
 
 class TeamItemLeagueLevelUnit(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item -> League Level Unit
-    """
+    """Manager Compendium -> Teams -> Team item -> League Level Unit."""
     id: int = HTField(path='LeagueLevelUnitId')
     name: str = HTField(path='LeagueLevelUnitName')
 
 
 class TeamItemRegion(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item -> Region
-    """
+    """Manager Compendium -> Teams -> Team item -> Region."""
     id: int = HTField(path='RegionId')
     name: str = HTField(path='RegionName')
 
 
 class TeamItemYouthTeam(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item -> Youth team
-    """
+    """Manager Compendium -> Teams -> Team item -> Youth team."""
     id: Optional[int] = HTField(path='YouthTeamId')
     name: Optional[str] = HTField(path='YouthTeamName')
     league: Optional['TeamItemYouthTeamLeague'] = HTField(path='YouthLeague')
 
 
 class TeamItemYouthTeamLeague(HTModel):
-    """
-    Manager Compendium -> Teams -> Team item -> Youth team -> League
-    """
+    """Manager Compendium -> Teams -> Team item -> Youth team -> League."""
     id: int = HTField(path='YouthLeagueId')
     name: str = HTField(path='YouthLeagueName')
 
 
 class NationalTeamItem(HTModel):
-    """
-    Manager Compendium -> National teams (coach or assistant) -> National team item
-    """
+    """Manager Compendium -> National teams (coach or assistant) -> National team item."""
     id: int = HTField(path='NationalTeamId')
     name: str = HTField(path='NationalTeamName')
 
 
 class Avatar(HTModel):
-    """
-    Manager Compendium -> Avatar
-    """
+    """Manager Compendium -> Avatar."""
     background_image: str = HTField(path='BackgroundImage')
     layers: Optional[List['AvatarLayer']] = HTField(path='../..', items='Layer')
 
 
 class AvatarLayer(HTModel):
-    """
-    Manager Compendium -> Avatar -> Layers -> Layer item
-    """
+    """Manager Compendium -> Avatar -> Layers -> Layer item."""
     x: int = HTField(path='../..', attrib='x')
     y: int = HTField(path='../..', attrib='y')
     image: str = HTField(path='Image')

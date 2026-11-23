@@ -1,5 +1,6 @@
-def test_national_players(mocked_chpp):
+"""Tests for the `nationalplayers.xml` CHPP file parsing."""
 
+def test_national_players(mocked_chpp):
     ntp = mocked_chpp.xml_national_players(team_id=3004)
 
     assert ntp.user_supporter_tier == 'none'
