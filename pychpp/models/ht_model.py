@@ -5,6 +5,7 @@ from copy import copy
 from typing import Optional, Type, Dict, Any
 import xml.etree.ElementTree as ElementTree
 from datetime import datetime, date
+from types import UnionType
 from typing import get_type_hints, get_origin, Union, get_args
 
 import pychpp.chpp as _chpp
@@ -60,7 +61,7 @@ class HTModel(metaclass=MetaHTModel):
     XML_PREFIX: str = ''
     XML_FILTER: str = ''
 
-    _ht_fields: Dict[str, Union[HTField, HTAliasField]]
+    _ht_fields: Dict[str, HTField | HTAliasField]
     _ht_init_vars: Dict[str, HTInitVar]
 
     @classmethod
@@ -75,7 +76,7 @@ class HTModel(metaclass=MetaHTModel):
 
         """
         typehint = get_type_hints(cls).get(attrib)
-        return get_origin(typehint) is Union and type(None) in get_args(typehint)
+        return get_origin(typehint) in (Union, UnionType) and type(None) in get_args(typehint)
 
     @classmethod
     def get_type(cls, attrib: str) -> Any:
@@ -122,7 +123,7 @@ class HTModel(metaclass=MetaHTModel):
 
             list_arg = get_args(list_hint)
 
-            if not list_arg or get_origin(list_arg[0]) in (Union, Optional):
+            if not list_arg or get_origin(list_arg[0]) in (Union, UnionType, Optional):
                 raise ValueError("HTModel does not support list typehint without argument, "
                                  "nor Union or Optional arguments")
 
@@ -130,7 +131,7 @@ class HTModel(metaclass=MetaHTModel):
                 return list_arg[0]
 
     def __init__(self,
-                 chpp: Union['_chpp.CHPPBase', '_chpp.CHPPXml', '_chpp.CHPP'],
+                 chpp: "_chpp.CHPPBase | _chpp.CHPPXml | _chpp.CHPP",
                  data: Optional[ElementTree.Element] = None,
                  version: Optional[str] = None,
                  xml_prefix: str = None,
