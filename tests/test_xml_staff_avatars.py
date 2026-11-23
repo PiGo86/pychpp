@@ -1,5 +1,6 @@
-def test_staff_avatars(mocked_chpp):
+"""Tests for the `staffavatars.xml` CHPP file parsing."""
 
+def test_staff_avatars(mocked_chpp):
     sa = mocked_chpp.xml_staff_avatars()
 
     assert sa.trainer.id == 421746800

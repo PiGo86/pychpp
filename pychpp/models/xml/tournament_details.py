@@ -1,3 +1,5 @@
+"""Models for the `tournamentdetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTournamentDetails(HTModel):
-    """
-    Tournament Details - Request arguments
-    """
+    """Tournament Details - Request arguments."""
     SOURCE_FILE = 'tournamentdetails'
     LAST_VERSION = '1.0'
 
@@ -18,9 +18,7 @@ class RequestTournamentDetails(HTModel):
 
 
 class TournamentDetails(RequestTournamentDetails):
-    """
-    Tournament Details
-    """
+    """Tournament Details."""
     XML_PREFIX = 'Tournament/'
 
     id: int = HTField('TournamentId')
@@ -39,8 +37,6 @@ class TournamentDetails(RequestTournamentDetails):
 
 
 class Creator(HTModel):
-    """
-    Tournament Details -> Creator
-    """
+    """Tournament Details -> Creator."""
     id: int = HTField('UserId')
     login_name: str = HTField('Loginname')

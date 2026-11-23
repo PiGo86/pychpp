@@ -1,3 +1,5 @@
+"""Models for the `arenadetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -5,9 +7,7 @@ from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
 class CommonRequestArenaDetails(HTModel):
-    """
-    Arena Details - Common request arguments
-    """
+    """Arena Details - Common request arguments."""
     SOURCE_FILE = "arenadetails"
     LAST_VERSION = "1.7"
 
@@ -15,17 +15,13 @@ class CommonRequestArenaDetails(HTModel):
 
 
 class RequestArenaDetailsDefault(CommonRequestArenaDetails):
-    """
-    Arena Details - Default - Request arguments
-    """
+    """Arena Details - Default - Request arguments."""
     _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='arena_id', fill_with='id')
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
 
 
 class ArenaDetailsDefault(RequestArenaDetailsDefault):
-    """
-    Arena Details
-    """
+    """Arena Details."""
     id: int = HTField('Arena/ArenaID')
     name: str = HTField('Arena/ArenaName')
     image: str = HTField('Arena/ArenaImage')
@@ -38,33 +34,25 @@ class ArenaDetailsDefault(RequestArenaDetailsDefault):
 
 
 class Team(HTModel):
-    """
-    Arena Details -> Team
-    """
+    """Arena Details -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class League(HTModel):
-    """
-    Arena Details -> League
-    """
+    """Arena Details -> League."""
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')
 
 
 class Region(HTModel):
-    """
-    Arena Details -> Region
-    """
+    """Arena Details -> Region."""
     id: int = HTField('RegionID')
     name: str = HTField('RegionName')
 
 
 class BaseCapacity(HTModel):
-    """
-    Arena Details -> Base capacity
-    """
+    """Arena Details -> Base capacity."""
     terraces: Optional[int] = HTField('Terraces')
     basic: Optional[int] = HTField('Basic')
     roof: Optional[int] = HTField('Roof')
@@ -73,24 +61,18 @@ class BaseCapacity(HTModel):
 
 
 class CurrentCapacity(BaseCapacity):
-    """
-    Arena Details -> Current capacity
-    """
+    """Arena Details -> Current capacity."""
     rebuilt_date: Optional[datetime] = HTField('RebuiltDate')
 
 
 class ExpandedCapacity(BaseCapacity):
-    """
-    Arena Details -> Expanded capacity
-    """
+    """Arena Details -> Expanded capacity."""
     available: bool = HTField('.', attrib='Available')
     expansion_date: Optional[datetime] = HTField('ExpansionDate')
 
 
 class RequestArenaDetailsMyArena(CommonRequestArenaDetails):
-    """
-    Arena Details - My Arena - Request arguments
-    """
+    """Arena Details - My Arena - Request arguments."""
     _r_arena_id: Optional[int] = HTInitVar('arenaID', init_arg='id', fill_with='id')
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
     _r_match_type: Optional[str] = HTInitVar('MatchType', init_arg='match_type')
@@ -99,9 +81,7 @@ class RequestArenaDetailsMyArena(CommonRequestArenaDetails):
 
 
 class ArenaDetailsMyArena(RequestArenaDetailsMyArena):
-    """
-    Arena Details - My Arena
-    """
+    """Arena Details - My Arena."""
     id: Optional[int] = HTField('MyArena/ArenaID')
     name: Optional[str] = HTField('MyArena/ArenaName')
     image: Optional[str] = HTField('MyArena/ArenaImage')
@@ -116,9 +96,7 @@ class ArenaDetailsMyArena(RequestArenaDetailsMyArena):
 
 
 class Visitors(HTModel):
-    """
-    Arena Details - My Arena - Visitors (average, most or least)
-    """
+    """Arena Details - My Arena - Visitors (average, most or least)."""
     terraces: int = HTField('Terraces')
     basic: int = HTField('Basic')
     roof: int = HTField('Roof')
@@ -127,16 +105,12 @@ class Visitors(HTModel):
 
 
 class RequestArenaDetailsLeagueArenaStats(CommonRequestArenaDetails):
-    """
-    Arena Details - League Arena Stats - Request arguments
-    """
+    """Arena Details - League Arena Stats - Request arguments."""
     _r_league_id: int = HTInitVar('StatsLeagueID', init_arg='league_id')
 
 
 class ArenaDetailsLeagueArenaStats(RequestArenaDetailsLeagueArenaStats):
-    """
-    Arena Details - League Arena Stats
-    """
+    """Arena Details - League Arena Stats."""
     league_id: int = HTField('LeagueArenaStats/LeagueID')
     league_name: str = HTField('LeagueArenaStats/LeagueName')
     created_date: datetime = HTField('LeagueArenaStats/CreatedDate')
@@ -144,9 +118,7 @@ class ArenaDetailsLeagueArenaStats(RequestArenaDetailsLeagueArenaStats):
 
 
 class Arenas(HTModel):
-    """
-    Arena Details - League Arena Stats - Arena item
-    """
+    """Arena Details - League Arena Stats - Arena item."""
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
     image: str = HTField('ArenaImage')

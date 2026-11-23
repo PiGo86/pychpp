@@ -1,3 +1,5 @@
+"""Tests for the `managercompendium.xml` CHPP file parsing."""
+
 from pychpp.models.xml.manager_compendium import ManagerCompendium
 
 
@@ -10,7 +12,6 @@ def test_get_current_user(chpp):
 
 
 def test_manager_compendium_version_1_8(mocked_chpp):
-
     mc = mocked_chpp.xml_manager_compendium()
 
     assert mc.id == 1728698

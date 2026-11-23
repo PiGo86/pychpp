@@ -39,5 +39,9 @@ select = ["E", "W", "F", "D"]
 # D105/D107: magic methods and __init__ are documented at class level (Google style)
 ignore = ["D105", "D107"]
 
+[tool.ruff.lint.per-file-ignores]
+# Test functions are self-descriptive: no docstring required (D103)
+"tests/**" = ["D103"]
+
 [tool.ruff.lint.pydocstyle]
 convention = "google"

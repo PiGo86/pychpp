@@ -1,8 +1,9 @@
+"""Tests for the `transfersplayer.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_transfers_player(mocked_chpp):
-
     tp = mocked_chpp.xml_transfers_player(427947863)
 
     assert tp.start_date == HTDatetime.from_calendar(2018, 10, 17, 23, 55)

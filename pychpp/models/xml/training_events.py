@@ -1,3 +1,5 @@
+"""Models for the `trainingevents.xml` CHPP file."""
+
 from typing import List
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTrainingEvents(HTModel):
-    """
-    Training Events - Request arguments
-    """
+    """Training Events - Request arguments."""
     SOURCE_FILE = 'trainingevents'
     LAST_VERSION = '1.3'
 
@@ -16,17 +16,13 @@ class RequestTrainingEvents(HTModel):
 
 
 class TrainingEvents(RequestTrainingEvents):
-    """
-    Training Events
-    """
+    """Training Events."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     player: 'Player' = HTField('Player')
 
 
 class Player(HTModel):
-    """
-    Training Events -> Player
-    """
+    """Training Events -> Player."""
     id: int = HTField('PlayerID')
     training_events_available: bool = HTField('TrainingEvents', attrib='Available')
     training_events: List['TrainingEventItem'] = HTField('TrainingEvents',
@@ -34,9 +30,7 @@ class Player(HTModel):
 
 
 class TrainingEventItem(HTModel):
-    """
-    Training Events -> Player -> Training Events -> Training event item
-    """
+    """Training Events -> Player -> Training Events -> Training event item."""
     index: int = HTField('.', attrib='Index')
     skill_id: int = HTField('SkillID')
     old_level: int = HTField('OldLevel')

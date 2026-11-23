@@ -1,3 +1,5 @@
+"""Models for the `fans.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestFans(HTModel):
-    """
-    Fans - Request arguments
-    """
+    """Fans - Request arguments."""
     SOURCE_FILE = 'fans'
     LAST_VERSION = '1.3'
 
@@ -17,16 +17,12 @@ class RequestFans(HTModel):
 
 
 class Fans(RequestFans):
-    """
-    Fans
-    """
+    """Parsed data of the `fans.xml` CHPP file."""
     team: 'Team' = HTField('Team')
 
 
 class Team(HTModel):
-    """
-    Fans -> Team
-    """
+    """Fans -> Team."""
     id: int = HTField('TeamID')
     fan_club_id: int = HTField('FanclubId')
     fan_club_name: str = HTField('FanclubName')
@@ -38,9 +34,7 @@ class Team(HTModel):
 
 
 class BaseMatchItem(HTModel):
-    """
-    Fans -> Team -> Played/Upcoming matches -> Match item
-    """
+    """Fans -> Team -> Played/Upcoming matches -> Match item."""
     id: int = HTField('MatchID')
     home_team: 'BaseMatchItemTeam' = HTField('HomeTeam', xml_prefix='Home')
     away_team: 'BaseMatchItemTeam' = HTField('AwayTeam', xml_prefix='Away')
@@ -50,17 +44,13 @@ class BaseMatchItem(HTModel):
 
 
 class BaseMatchItemTeam(HTModel):
-    """
-    Fans -> Team -> Played/Upcoming matches -> Match item -> Home/Away team
-    """
+    """Fans -> Team -> Played/Upcoming matches -> Match item -> Home/Away team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class PlayedMatchItem(BaseMatchItem):
-    """
-    Fans -> Team -> Played matches -> Match item
-    """
+    """Fans -> Team -> Played matches -> Match item."""
     home_goals: int = HTField('HomeGoals')
     away_goals: int = HTField('AwayGoals')
     fan_mood_after_match: int = HTField('FanMoodAfterMatch')
@@ -69,6 +59,4 @@ class PlayedMatchItem(BaseMatchItem):
 
 
 class UpcomingMatchItem(BaseMatchItem):
-    """
-    Fans -> Team -> Upcoming matches -> Match item
-    """
+    """Fans -> Team -> Upcoming matches -> Match item."""

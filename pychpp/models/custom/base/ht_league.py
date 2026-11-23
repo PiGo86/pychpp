@@ -1,11 +1,11 @@
+"""Light model used as a base for the custom models."""
+
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
 
 
 class BaseHTLeague(CustomModel):
-    """
-    Base model for Hattrick team
-    """
+    """Base model for Hattrick league."""
     id: int
     name: str
 
@@ -17,11 +17,10 @@ class BaseHTLeague(CustomModel):
 
 
 class HTLightLeague(BaseHTLeague):
-    """
-    Hattrick light league
-    """
+    """Hattrick light league."""
 
     _r_id = HTInitVar(param='leagueID', init_arg='id_', fill_with='id')
 
     def details(self):
+        """Get the details of this league."""
         return self._chpp.league(id_=self.id)

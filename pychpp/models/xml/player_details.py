@@ -1,3 +1,5 @@
+"""Models for the `playerdetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestPlayerDetails(HTModel):
-    """
-    Player Details - Request arguments
-    """
+    """Player Details - Request arguments."""
     SOURCE_FILE = 'playerdetails'
     LAST_VERSION = '3.3'
 
@@ -23,9 +23,7 @@ class RequestPlayerDetails(HTModel):
 
 
 class PlayerDetails(RequestPlayerDetails):
-    """
-    Player Details
-    """
+    """Player Details."""
     XML_PREFIX = 'Player/'
 
     user_supporter_tier: str = HTField('../UserSupporterTier')
@@ -90,34 +88,26 @@ class PlayerDetails(RequestPlayerDetails):
 
 
 class TrainerData(HTModel):
-    """
-    Player Details -> Trainer Data
-    """
+    """Player Details -> Trainer Data."""
     type: Optional[int] = HTField('TrainerType')
     skill_level: Optional[int] = HTField('TrainerSkillLevel')
 
 
 class MotherClub(HTModel):
-    """
-    Player Details -> Mother club
-    """
+    """Player Details -> Mother club."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class OwningTeam(HTModel):
-    """
-    Player Details -> Owning team
-    """
+    """Player Details -> Owning team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     league_id: int = HTField('LeagueID')
 
 
 class PlayerSkills(HTModel):
-    """
-    Player Details -> Player skills
-    """
+    """Player Details -> Player skills."""
     stamina: int = HTField('StaminaSkill')
     keeper: Optional[int] = HTField('KeeperSkill')
     playmaker: Optional[int] = HTField('PlaymakerSkill')
@@ -129,17 +119,13 @@ class PlayerSkills(HTModel):
 
 
 class NationalTeam(HTModel):
-    """
-    Player Details -> National team
-    """
+    """Player Details -> National team."""
     id: Optional[int] = HTField('NationalTeamID')
     name: Optional[str] = HTField('NationalTeamName')
 
 
 class TransferDetails(HTModel):
-    """
-    Player Details -> Transfer details
-    """
+    """Player Details -> Transfer details."""
     asking_price: Optional[int] = HTField('AskingPrice')
     deadline: Optional[datetime] = HTField('Deadline')
     highest_bid: Optional[int] = HTField('HighestBid')
@@ -148,17 +134,13 @@ class TransferDetails(HTModel):
 
 
 class TransferDetailsBidderTeam(HTModel):
-    """
-    Player Details -> Transfer details -> Bidder team
-    """
+    """Player Details -> Transfer details -> Bidder team."""
     id: Optional[int] = HTField('TeamID')
     name: Optional[str] = HTField('TeamName')
 
 
 class FamilyRelation(HTModel):
-    """
-    Player Details -> Family relation (empty if the player has no known relation)
-    """
+    """Player Details -> Family relation (empty if the player has no known relation)."""
     related_player_id: Optional[int] = HTField('RelatedPlayerId')
     related_player_source_id: Optional[int] = HTField('RelatedPlayerSourceId')
     related_player_name: Optional[str] = HTField('RelatedPlayerName')
@@ -166,9 +148,7 @@ class FamilyRelation(HTModel):
 
 
 class TrophyItem(HTModel):
-    """
-    Player Details -> Trophy list -> Trophy item
-    """
+    """Player Details -> Trophy list -> Trophy item."""
     trophy_type_id: int = HTField('TrophyTypeId')
     team_id: int = HTField('TeamId')
     team_name: Optional[str] = HTField('TeamName')
@@ -180,9 +160,7 @@ class TrophyItem(HTModel):
 
 
 class LastMatch(HTModel):
-    """
-    Player Details -> Last match
-    """
+    """Player Details -> Last match."""
     date: datetime = HTField('Date')
     id: int = HTField('MatchId')
     position_code: int = HTField('PositionCode')

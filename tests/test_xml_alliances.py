@@ -1,3 +1,5 @@
+"""Tests for the `alliances.xml` CHPP file parsing."""
+
 from pychpp import CHPP
 from pychpp.models.xml.alliances import Alliances
 

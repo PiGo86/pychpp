@@ -1,8 +1,9 @@
+"""Tests for the `supporters.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_supporters(mocked_chpp):
-
     supp = mocked_chpp.xml_supporters(user_id=13481763, version='1.0')
 
     assert supp.total_supported_teams == 22
@@ -55,7 +56,6 @@ def test_supporters(mocked_chpp):
 
 
 def test_supporters_version_1_1(mocked_chpp):
-
     supp = mocked_chpp.xml_supporters(user_id=13481763, version='1.1')
 
     assert supp.total_supported_teams == 23

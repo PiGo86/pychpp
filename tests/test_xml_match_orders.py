@@ -1,8 +1,9 @@
+"""Tests for the `matchorders.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_match_orders(mocked_chpp):
-
     mo = mocked_chpp.xml_match_orders(match_id=739349000)
 
     assert mo.id == 739349000

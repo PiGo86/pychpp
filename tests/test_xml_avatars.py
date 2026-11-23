@@ -1,5 +1,6 @@
-def test_get_avatars(mocked_chpp):
+"""Tests for the `avatars.xml` CHPP file parsing."""
 
+def test_get_avatars(mocked_chpp):
     avatars = mocked_chpp.xml_avatars(action_type='players', team_id=960935)
 
     assert avatars.team.id == 960935

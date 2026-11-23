@@ -1,11 +1,11 @@
+"""Light model used as a base for the custom models."""
+
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
 
 
 class BaseHTUser(CustomModel):
-    """
-    Base model for Hattrick user
-    """
+    """Base model for Hattrick user."""
     id: int
     username: str
 
@@ -17,11 +17,10 @@ class BaseHTUser(CustomModel):
 
 
 class HTLightUser(BaseHTUser):
-    """
-    Hattrick light user
-    """
+    """Hattrick light user."""
 
     _r_id = HTInitVar(param='userID', init_arg='id_', fill_with='id')
 
     def details(self):
+        """Get the full details of this user."""
         return self._chpp.user(id_=self.id)

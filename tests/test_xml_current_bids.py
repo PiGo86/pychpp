@@ -1,8 +1,9 @@
+"""Tests for the `currentbids.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_current_bids(mocked_chpp):
-
     bids = mocked_chpp.xml_current_bids()
 
     assert bids.team_id == 1165592

@@ -1,3 +1,5 @@
+"""Models for the `playerevents.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestPlayerEvents(HTModel):
-    """
-    Player Events - Request arguments
-    """
+    """Player Events - Request arguments."""
     SOURCE_FILE = 'playerevents'
     LAST_VERSION = '1.3'
 
@@ -17,25 +17,19 @@ class RequestPlayerEvents(HTModel):
 
 
 class PlayerEvents(RequestPlayerEvents):
-    """
-    Player Events
-    """
+    """Player Events."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     player: 'Player' = HTField('Player')
 
 
 class Player(HTModel):
-    """
-    Player Events -> Player
-    """
+    """Player Events -> Player."""
     id: int = HTField('PlayerID')
     events: List['EventItem'] = HTField('PlayerEvents', items='PlayerEvent')
 
 
 class EventItem(HTModel):
-    """
-    Player Events -> Player -> Events -> Event item
-    """
+    """Player Events -> Player -> Events -> Event item."""
     date: datetime = HTField('EventDate')
     type_id: int = HTField('PlayerEventTypeID')
     text: str = HTField('EventText')

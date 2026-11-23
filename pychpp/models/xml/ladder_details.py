@@ -1,3 +1,5 @@
+"""Models for the `ladderdetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestLadderDetails(HTModel):
-    """
-    Ladder Details - Request arguments
-    """
+    """Ladder Details - Request arguments."""
     SOURCE_FILE = 'ladderdetails'
     LAST_VERSION = '1.0'
 
@@ -20,16 +20,12 @@ class RequestLadderDetails(HTModel):
 
 
 class LadderDetails(RequestLadderDetails):
-    """
-    Ladder Details
-    """
+    """Ladder Details."""
     ladder: 'Ladder' = HTField('Ladder')
 
 
 class Ladder(HTModel):
-    """
-    Ladder Details -> Ladder
-    """
+    """Ladder Details -> Ladder."""
     id: int = HTField('LadderId')
     name: str = HTField('Name')
     num_of_teams: int = HTField('NumOfTeams')
@@ -42,9 +38,7 @@ class Ladder(HTModel):
 
 
 class Team(HTModel):
-    """
-    Ladder Details -> Ladder -> Teams -> Team item
-    """
+    """Ladder Details -> Ladder -> Teams -> Team item."""
     id: int = HTField('TeamId')
     name: str = HTField('TeamName')
     position: int = HTField('Position')

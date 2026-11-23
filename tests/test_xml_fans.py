@@ -1,8 +1,9 @@
+"""Tests for the `fans.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_xml_fans(mocked_chpp):
-
     fans = mocked_chpp.xml_fans()
 
     t = fans.team

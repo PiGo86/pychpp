@@ -1,3 +1,5 @@
+"""Models for the `matchlineup.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestMatchLineup(HTModel):
-    """
-    Match Lineup - Request arguments
-    """
+    """Match Lineup - Request arguments."""
     SOURCE_FILE = 'matchlineup'
     LAST_VERSION = '2.2'
 
@@ -20,9 +20,7 @@ class RequestMatchLineup(HTModel):
 
 
 class MatchLineup(RequestMatchLineup):
-    """
-    Match Lineup
-    """
+    """Match Lineup."""
     match_id: int = HTField('MatchID')
     source_system: str = HTField('SourceSystem')
     home_team: 'Team' = HTField('HomeTeam', xml_prefix='Home')
@@ -34,25 +32,19 @@ class MatchLineup(RequestMatchLineup):
 
 
 class Team(HTModel):
-    """
-    Match Lineup -> Home/Away team
-    """
+    """Match Lineup -> Home/Away team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class Arena(HTModel):
-    """
-    Match Lineup -> Arena
-    """
+    """Match Lineup -> Arena."""
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
 
 
 class TeamLineup(HTModel):
-    """
-    Match Lineup -> Team
-    """
+    """Match Lineup -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     experience_level: int = HTField('ExperienceLevel')
@@ -64,9 +56,7 @@ class TeamLineup(HTModel):
 
 
 class BaseTeamPlayerItem(HTModel):
-    """
-    Match Lineup -> Team -> Starting Lineup / Lineup -> Base Player item
-    """
+    """Match Lineup -> Team -> Starting Lineup / Lineup -> Base Player item."""
     id: int = HTField('PlayerID')
     role_id: int = HTField('RoleID')
     first_name: str = HTField('FirstName')
@@ -76,23 +66,17 @@ class BaseTeamPlayerItem(HTModel):
 
 
 class TeamStartingLineupPlayerItem(BaseTeamPlayerItem):
-    """
-    Match Lineup -> Team -> Starting Lineup -> Player item
-    """
+    """Match Lineup -> Team -> Starting Lineup -> Player item."""
 
 
 class TeamLineupPlayerItem(BaseTeamPlayerItem):
-    """
-    Match Lineup -> Team -> Starting Lineup -> Player item
-    """
+    """Match Lineup -> Team -> Starting Lineup -> Player item."""
     rating_stars: Optional[float] = HTField('RatingStars')
     rating_stars_end_of_match: Optional[float] = HTField('RatingStarsEndOfMatch')
 
 
 class TeamSubstitutionItem(HTModel):
-    """
-    Match Lineup -> Team -> Substitutions -> Substitution item
-    """
+    """Match Lineup -> Team -> Substitutions -> Substitution item."""
     team_id: int = HTField('TeamID')
     subject_player_id: int = HTField('SubjectPlayerID')
     object_player_id: int = HTField('ObjectPlayerID')

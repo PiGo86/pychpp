@@ -1,5 +1,6 @@
-def test_xml_club(mocked_chpp):
+"""Tests for the `club.xml` CHPP file parsing."""
 
+def test_xml_club(mocked_chpp):
     club = mocked_chpp.xml_club()
 
     assert club.team.id == 1165592

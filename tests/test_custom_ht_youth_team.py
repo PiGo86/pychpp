@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_youth_team` model."""
+
 import re
 
 from pychpp.models.custom.ht_youth_team import HTYouthTeam, HTYouthTeamPlayerItem
@@ -6,7 +8,6 @@ from .conftest import YOUTH_PLAYER_PATTERN
 
 
 def test_get_own_team_youth_player(chpp):
-
     youth_team = chpp.youth_team()
     assert isinstance(youth_team, HTYouthTeam)
 

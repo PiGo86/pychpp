@@ -1,19 +1,19 @@
+"""High-level custom model built on top of the xml models."""
+
 from urllib.parse import urlencode
 
 from pychpp.models.ht_model import HTModel
 
 
 class CustomModel(HTModel):
-    """
-    Base class for custom models
-    """
+    """Base class for custom models."""
 
     _BASE_URL: str = "https://www.hattrick.org/goto.ashx?path="
     URL_SUFFIX: str = ''
 
     @property
     def url(self):
-
+        """Url of this object on hattrick.org."""
         if self._url:
             return self._url
 

@@ -1,3 +1,5 @@
+"""Models for the `transfersearch.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTransferSearch(HTModel):
-    """
-    Transfer Search - Request arguments
-    """
+    """Transfer Search - Request arguments."""
     SOURCE_FILE = 'transfersearch'
     LAST_VERSION = '1.2'
 
@@ -47,9 +47,7 @@ class RequestTransferSearch(HTModel):
 
 
 class TransferSearch(RequestTransferSearch):
-    """
-    Transfer Search
-    """
+    """Transfer Search."""
     XML_PREFIX = 'TransferSearch/'
 
     item_count: int = HTField('ItemCount')
@@ -60,9 +58,7 @@ class TransferSearch(RequestTransferSearch):
 
 
 class TransferResultItem(HTModel):
-    """
-    Transfer Search -> Transfer Results -> Transfer Result item
-    """
+    """Transfer Search -> Transfer Results -> Transfer Result item."""
     id: int = HTField('PlayerId')
     first_name: str = HTField('FirstName')
     nick_name: str = HTField('NickName')
@@ -76,17 +72,13 @@ class TransferResultItem(HTModel):
 
 
 class BidderTeam(HTModel):
-    """
-    Transfer Search -> Transfer Results -> Transfer Result item -> Bidder Team
-    """
+    """Transfer Search -> Transfer Results -> Transfer Result item -> Bidder Team."""
     id: Optional[int] = HTField('TeamID')
     name: Optional[str] = HTField('TeamName')
 
 
 class Details(HTModel):
-    """
-    Transfer Search -> Transfer Results -> Transfer Result item -> Details
-    """
+    """Transfer Search -> Transfer Results -> Transfer Result item -> Details."""
     age: int = HTField('Age')
     age_days: int = HTField('AgeDays')
     salary: int = HTField('Salary')
@@ -109,9 +101,7 @@ class Details(HTModel):
 
 
 class SellerTeam(HTModel):
-    """
-    Transfer Search -> Transfer Results -> Transfer Result item -> Details -> Seller Team
-    """
+    """Transfer Search -> Transfer Results -> Transfer Result item -> Details -> Seller Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     league_id: int = HTField('LeagueId')

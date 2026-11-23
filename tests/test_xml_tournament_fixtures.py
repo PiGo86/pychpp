@@ -1,8 +1,9 @@
+"""Tests for the `tournamentfixtures.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_tournament_fixtures(mocked_chpp):
-
     tf = mocked_chpp.xml_tournament_fixtures(3116071, version='1.0')
 
     match_ = tf.matches[0]
@@ -24,7 +25,6 @@ def test_tournament_fixtures(mocked_chpp):
 
 
 def test_tournament_fixtures_version_1_1(mocked_chpp):
-
     tf = mocked_chpp.xml_tournament_fixtures(3116071, match_round=9, version='1.1')
 
     assert len(tf.matches) == 32

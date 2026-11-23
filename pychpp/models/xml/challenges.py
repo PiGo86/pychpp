@@ -1,3 +1,5 @@
+"""Models for the `challenges.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class CommonRequestChallenges(HTModel):
-    """
-    Challenges - Common request arguments
-    """
+    """Challenges - Common request arguments."""
     SOURCE_FILE = 'challenges'
     LAST_VERSION = '1.6'
 
@@ -20,9 +20,7 @@ class CommonRequestChallenges(HTModel):
 
 
 class BaseChallenges(CommonRequestChallenges):
-    """
-    Base Challenges
-    """
+    """Base Challenges."""
     team_id: int = HTField('Team/TeamID')
     team_name: str = HTField('Team/TeamName')
     challenges_by_me: List['ChallengeItem'] = HTField('Team/ChallengesByMe', items='Challenge')
@@ -30,9 +28,7 @@ class BaseChallenges(CommonRequestChallenges):
 
 
 class ChallengeItem(HTModel):
-    """
-    Challenges -> Challenges by me / Offers by others -> Challenge item
-    """
+    """Challenges -> Challenges by me / Offers by others -> Challenge item."""
     training_match_id: int = HTField('TrainingMatchID')
     match_time: datetime = HTField('MatchTime')
     match_id: Optional[int] = HTField('MatchID')
@@ -44,41 +40,31 @@ class ChallengeItem(HTModel):
 
 
 class ChallengeItemOpponent(HTModel):
-    """
-    Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent
-    """
+    """Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     logo_url: str = HTField('LogoURL')
 
 
 class ChallengeArena(HTModel):
-    """
-    Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent -> Arena
-    """
+    """Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent -> Arena."""
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
 
 
 class ChallengeCountry(HTModel):
-    """
-    Challenges -> Challenges by me / Offers by others -> Challenge item -> Opponent -> Country
-    """
+    """Challenges -> Challenge item -> Opponent -> Country."""
     id: int = HTField('CountryID')
     name: str = HTField('CountryName')
 
 
 class ChallengesView(BaseChallenges):
-    """
-    Challenges - View
-    """
+    """Challenges - View."""
     pass
 
 
 class ChallengesChallengeable(BaseChallenges):
-    """
-    Challenges - Challengeable
-    """
+    """Challenges - Challengeable."""
     _r_suggested_team_ids: str = HTInitVar('suggestedTeamIds', init_arg='suggested_team_ids')
 
     challengeable_result: List['ChallengesChallengeableOpponentItem'] = HTField(
@@ -87,9 +73,7 @@ class ChallengesChallengeable(BaseChallenges):
 
 
 class ChallengesChallengeableOpponentItem(HTModel):
-    """
-    Challenges - Challengeable -> Challengeable result -> Opponent item
-    """
+    """Challenges - Challengeable -> Challengeable result -> Opponent item."""
     is_challengeable: bool = HTField('IsChallengeable')
     user_id: int = HTField('UserId')
     team_id: int = HTField('TeamId')
@@ -98,9 +82,7 @@ class ChallengesChallengeableOpponentItem(HTModel):
 
 
 class ChallengesChallenge(BaseChallenges):
-    """
-    Challenges - Challenge
-    """
+    """Challenges - Challenge."""
     _r_opponent_team_id: int = HTInitVar('opponentTeamId', init_arg='opponent_team_id')
     _r_match_type: Optional[int] = HTInitVar('matchType', init_arg='match_type')
     _r_match_place: Optional[int] = HTInitVar('matchPlace', init_arg='match_place')
@@ -108,28 +90,20 @@ class ChallengesChallenge(BaseChallenges):
 
 
 class BaseChallengesDecision(BaseChallenges):
-    """
-    Challenges - Accept, decline or withdraw a challenge
-    """
+    """Challenges - Accept, decline or withdraw a challenge."""
     r_training_match_id: int = HTInitVar('trainingMatchId', init_arg='training_match_id')
 
 
 class ChallengesAccept(BaseChallengesDecision):
-    """
-    Challenges - Accept a challenge
-    """
+    """Challenges - Accept a challenge."""
     pass
 
 
 class ChallengesDecline(BaseChallengesDecision):
-    """
-    Challenges - Decline a challenge
-    """
+    """Challenges - Decline a challenge."""
     pass
 
 
 class ChallengesWithdraw(BaseChallengesDecision):
-    """
-    Challenges - Withdraw a challenge
-    """
+    """Challenges - Withdraw a challenge."""
     pass

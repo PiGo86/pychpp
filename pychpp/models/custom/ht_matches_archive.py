@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -10,9 +12,7 @@ from pychpp.models.xml import matches_archive as ma
 
 
 class HTMatchesArchive(ma.RequestMatchesArchive, CustomModel):
-    """
-    Hattrick Matches Archive
-    """
+    """Hattrick Matches Archive."""
 
     URL_PATH = '/Club/Matches/Archive.aspx'
 
@@ -29,15 +29,11 @@ class HTMatchesArchive(ma.RequestMatchesArchive, CustomModel):
 
 
 class HTMATeam(HTCommonLightTeam, ma.Team):
-    """
-    Hattrick Matches Archive -> Team
-    """
+    """Hattrick Matches Archive -> Team."""
 
 
 class HTMAItem(HTCommonLightMatch, ma.MatchItem):
-    """
-    Hattrick Matches Archive -> Match item
-    """
+    """Hattrick Matches Archive -> Match item."""
 
     URL_PATH = '/Club/Matches/Match.aspx'
 
@@ -62,6 +58,4 @@ class HTMAItem(HTCommonLightMatch, ma.MatchItem):
 
 
 class HTMAItemTeam(HTCommonLightTeam, ma.MatchItemTeam):
-    """
-    Hattrick Matches Archive -> Match item -> Home/Away team
-    """
+    """Hattrick Matches Archive -> Match item -> Home/Away team."""

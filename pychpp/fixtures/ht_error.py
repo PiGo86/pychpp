@@ -1,87 +1,92 @@
+"""Exceptions raised when the CHPP API returns an error."""
+
 class HTError(Exception):
-    """Base Hattrick error"""
+    """Base Hattrick error."""
 
 
 class HTUnknownMatchIdError(HTError):
-    """Raise when the requested match id is unknown"""
+    """Raised when the requested match ID is unknown."""
 
 
 class HTUnknownTeamIdError(HTError):
-    """Raise when the requested team id is unknown"""
+    """Raised when the requested team ID is unknown."""
 
 
 class HTUnknownYouthTeamIdError(HTError):
-    """Raise when the requested youth team id is unknown"""
+    """Raised when the requested youth team ID is unknown."""
 
 
 class HTUnknownPlayerIdError(HTError):
-    """Raise when the requested player id is unknown"""
+    """Raised when the requested player ID is unknown."""
 
 
 class HTUnknownYouthPlayerIdError(HTError):
-    """Raise when the requested youth player id is unknown"""
+    """Raised when the requested youth player ID is unknown."""
 
 
 class HTUnknownActionTypeError(HTError):
-    """Raise when the requested action type is unknown"""
+    """Raised when the requested action type is unknown."""
 
 
 class HTNotOwnedTeamError(HTError):
-    """Raise when the request concerns a team
-    not owned by the connected user"""
+    """Raised when the request concerns a team not owned by the connected user."""
 
 
 class HTChallengeError(HTError):
-    """Raise when error occurs on Hattrick with challenges"""
+    """Raised when error occurs on Hattrick with challenges."""
 
 
 class HTTeamChallengingItself(HTChallengeError):
-    """Raise when a team is challenging itself"""
+    """Raised when a team is challenging itself."""
 
 
 class HTArenaNotAvailableError(HTChallengeError):
-    """Raise when arena is busy"""
+    """Raised when arena is busy."""
 
 
 class HTTeamNotAvailableError(HTChallengeError):
-    """Raise when opponent team is not available for a challenge"""
+    """Raised when the own team is not available for a challenge.
+
+    For example when a friendly is already booked or the team is still in cup.
+
+    """
 
 
 class HTOpponentTeamNotAvailableError(HTChallengeError):
-    """Raise when opponent team is not available for a challenge"""
+    """Raised when opponent team is not available for a challenge."""
 
 
 class HTTeamIsTravellingError(HTChallengeError):
-    """Raise when own team is travelling and can't challenge someone else"""
+    """Raised when own team is travelling and can't challenge someone else."""
 
 
 class HTOpponentTeamIsTravellingError(HTChallengeError):
-    """Raise when opponent team is travelling and can't be challenged"""
+    """Raised when opponent team is travelling and can't be challenged."""
 
 
 class HTChallengesNotOpenedError(HTChallengeError):
-    """Raise when challenges can't be organized yet (to soon)"""
+    """Raised when challenges can't be organized yet (too soon)."""
 
 
 class HTUnauthorizedAction(HTError):
-    """Raise when CHPP request returns a 401 error code"""
+    """Raised when CHPP request returns a 401 error code."""
 
 
 class HTAccessDeniedError(HTError):
-    """Raise when Hattrick denies access to a parameter or file (error code 1)"""
+    """Raised when Hattrick denies access to a parameter or file (error code 1)."""
 
 
 class HTUndefinedError(HTError):
-    """Raise when error occurs with Hattrick request"""
+    """Raised when error occurs with Hattrick request."""
 
 
 class HTSkillError(HTError):
-    """Raise when skill can't be well-defined"""
+    """Raised when skill can't be well-defined."""
 
 
 class HTAgeError(HTError):
-    """Raise when age can't be well-defined"""
+    """Raised when age can't be well-defined."""
 
 
 class UnknownLeagueError(HTError):
-    """Raise when world league doesn't exist in the list"""
+    """Raised when world league doesn't exist in the list."""

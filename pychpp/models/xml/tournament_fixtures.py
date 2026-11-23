@@ -1,3 +1,5 @@
+"""Models for the `tournamentfixtures.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTournamentFixtures(HTModel):
-    """
-    Tournament Fixtures - Request arguments
-    """
+    """Tournament Fixtures - Request arguments."""
     SOURCE_FILE = 'tournamentfixtures'
     LAST_VERSION = '1.1'
 
@@ -19,16 +19,12 @@ class RequestTournamentFixtures(HTModel):
 
 
 class TournamentFixtures(RequestTournamentFixtures):
-    """
-    Tournament Fixtures
-    """
+    """Tournament Fixtures."""
     matches: List['MatchItem'] = HTField('Matches', items='Match')
 
 
 class MatchItem(HTModel):
-    """
-    Tournament Fixtures -> Matches -> Match item
-    """
+    """Tournament Fixtures -> Matches -> Match item."""
     id: int = HTField('MatchId')
     home_team_id: int = HTField('HomeTeamId')
     home_team_name: str = HTField('HomeTeamName')

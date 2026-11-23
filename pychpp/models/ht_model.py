@@ -1,3 +1,5 @@
+"""Base classes and metaclass used to build the pychpp models."""
+
 import pathlib
 from copy import copy
 from typing import Optional, Type, Dict, Any
@@ -13,12 +15,14 @@ from pychpp.models.ht_init_var import HTInitVar
 
 
 class MetaHTModel(type):
-    """
-    Metaclass used for registering ht_init_vars and ht_fields
-    declared in current class and its ancestors
+    """Metaclass registering the ht_init_vars and ht_fields of each model class.
+
+    Fields and init vars declared in a class and its ancestors are gathered
+    in the `_ht_fields` and `_ht_init_vars` class attributes.
+
     """
     def __new__(cls, name, bases, dict_):
-
+        """Create the class and register its fields and init vars."""
         dict_['_ht_fields'] = dict()
         dict_['_ht_init_vars'] = dict()
 
@@ -42,6 +46,12 @@ class MetaHTModel(type):
 
 
 class HTModel(metaclass=MetaHTModel):
+    """Base class of every pychpp model.
+
+    Attributes are declared as class attributes using HTField, HTAliasField
+    and HTProxyField (mapping to xml data) or HTInitVar (request parameters).
+
+    """
 
     SOURCE_FILE: str
     METHOD: str = 'GET'
@@ -55,16 +65,28 @@ class HTModel(metaclass=MetaHTModel):
 
     @classmethod
     def is_optional_attrib(cls, attrib: str) -> bool:
-        """
-        Check if an attribute is optional according to its typehint
+        """Check if an attribute is optional according to its typehint.
+
+        Args:
+            attrib: Name of the attribute to check.
+
+        Returns:
+            True if the attribute's typehint includes None.
+
         """
         typehint = get_type_hints(cls).get(attrib)
         return get_origin(typehint) is Union and type(None) in get_args(typehint)
 
     @classmethod
     def get_type(cls, attrib: str) -> Any:
-        """
-        Return attribute type from its typehint
+        """Return the attribute type from its typehint.
+
+        Args:
+            attrib: Name of the attribute.
+
+        Returns:
+            The type of the attribute (None included in Optional types is stripped).
+
         """
         typehint = get_type_hints(cls).get(attrib)
 
@@ -78,8 +100,14 @@ class HTModel(metaclass=MetaHTModel):
 
     @classmethod
     def get_item_type(cls, attrib: str) -> Any:
-        """
-        Return item type if attribute's type is a list
+        """Return the item type if the attribute's type is a list, else None.
+
+        Args:
+            attrib: Name of the attribute.
+
+        Returns:
+            The type of the list items, or None if the attribute is not a list.
+
         """
         if cls.get_type(attrib) is not list:
             return None
@@ -109,16 +137,17 @@ class HTModel(metaclass=MetaHTModel):
                  suppl_attrs: dict = None,
                  **kwargs,
                  ):
-        """
-        Instantiate a new HTModel object
+        """Instantiate a new HTModel object.
 
-        :param chpp: a CHPPBase object instantiated with credentials to connect to CHPP API
-        :param data: data to proceed (if given, no request is sent to CHPP API
-        :param version: xml file version to fetch
-        :param xml_prefix: default prefix added to tag names used to parse xml data
-        :param suppl_attrs: attributes dynamically added to the instance
-        """
+        Args:
+            chpp: A CHPP instance instantiated with credentials to connect to the CHPP API.
+            data: Xml data to parse. If given, no request is sent to the CHPP API.
+            version: Xml file version to fetch.
+            xml_prefix: Default prefix added to the tag names used to parse the xml data.
+            suppl_attrs: Attributes dynamically added to the instance.
+            **kwargs: Additional request parameters mapped to HTInitVar attributes.
 
+        """
         if not isinstance(chpp, _chpp.CHPPBase):
             raise ValueError("chpp must be a CHPP instance")
 
@@ -319,8 +348,12 @@ class HTModel(metaclass=MetaHTModel):
                 setattr(self, field_name, getattr(self, field.target))
 
     def _save_as_xml(self, path: pathlib.Path = None, filename: str = None):
-        """
-        Save self._data to a xml file
+        """Save the fetched xml data to a file.
+
+        Args:
+            path: Directory in which the file is saved (current directory if None).
+            filename: Name of the file (generated from the request arguments if None).
+
         """
         if path is None:
             path = pathlib.Path.cwd()

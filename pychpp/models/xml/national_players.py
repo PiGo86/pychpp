@@ -1,3 +1,5 @@
+"""Models for the `nationalplayers.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestNationalPlayers(HTModel):
-    """
-    National Players - Request arguments
-    """
+    """National Players - Request arguments."""
     SOURCE_FILE = 'nationalplayers'
     LAST_VERSION = '1.5'
 
@@ -20,9 +20,7 @@ class RequestNationalPlayers(HTModel):
 
 
 class NationalPlayersView(RequestNationalPlayers):
-    """
-    National Players - View
-    """
+    """National Players - View."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     action_type: str = HTField('ActionType')
     team_id: int = HTField('TeamID')
@@ -31,9 +29,7 @@ class NationalPlayersView(RequestNationalPlayers):
 
 
 class ViewPlayerItem(HTModel):
-    """
-    National Players - View -> Players -> Player item
-    """
+    """National Players - View -> Players -> Player item."""
     id: int = HTField('PlayerID')
     name: str = HTField('PlayerName')
     cards: int = HTField('Cards')
@@ -42,26 +38,20 @@ class ViewPlayerItem(HTModel):
 
 
 class Avatar(HTModel):
-    """
-    National Players - View -> Players -> Player item -> Avatar
-    """
+    """National Players - View -> Players -> Player item -> Avatar."""
     background_image: str = HTField('BackgroundImage')
     layer: 'Layer' = HTField('Layer')
 
 
 class Layer(HTModel):
-    """
-    National Players - View -> Players -> Player item -> Avatar -> Layer
-    """
+    """National Players - View -> Players -> Player item -> Avatar -> Layer."""
     x: int = HTField('.', attrib='x')
     y: int = HTField('.', attrib='y')
     image: str = HTField('Image')
 
 
 class NationalPlayersStats(RequestNationalPlayers):
-    """
-    National Players - Supporter Stats
-    """
+    """National Players - Supporter Stats."""
     user_is_supporter: bool = HTField('UserIsSupporter')
     user_has_clubhouse: bool = HTField('UserHasClubhouse')
     action_type: str = HTField('ActionType')
@@ -71,9 +61,7 @@ class NationalPlayersStats(RequestNationalPlayers):
 
 
 class Stats(HTModel):
-    """
-    National Players - Supporter Stats -> Stats
-    """
+    """National Players - Supporter Stats -> Stats."""
     match_type_category: str = HTField('MatchTypeCategory')
     show_all: bool = HTField('ShowAll')
     more_records_available: bool = HTField('MoreRecordsAvailable')
@@ -81,9 +69,7 @@ class Stats(HTModel):
 
 
 class PlayerItemStats(HTModel):
-    """
-    National Players - Supporter Stats -> Stats -> Players -> Player item
-    """
+    """National Players - Supporter Stats -> Stats -> Players -> Player item."""
     id: int = HTField('PlayerID')
     name: str = HTField('PlayerName')
     nr_of_matches: int = HTField('NrOfMatches')

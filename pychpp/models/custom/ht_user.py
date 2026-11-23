@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from typing import List
 
 from pychpp.models.custom.base.ht_arena import HTLightArena
@@ -10,14 +12,13 @@ from pychpp.models.xml import manager_compendium as mc
 
 
 class HTUser(mc.ManagerCompendium, BaseHTUser):
-    """
-    Hattrick user
-    """
+    """Hattrick user."""
     username: str = HTProxyField(mc.ManagerCompendium, attr_name='login_name')
     teams: List['HTUserTeam'] = HTProxyField(mc.ManagerCompendium)
 
 
 class HTUserTeam(mc.TeamItem, HTLightTeam):
+    """Team of a user."""
     arena: 'HTUserTeamArena' = HTProxyField(mc.TeamItem)
     league: 'HTUserTeamLeague' = HTProxyField(mc.TeamItem)
     region: 'HTUserTeamRegion' = HTProxyField(mc.TeamItem)
@@ -25,16 +26,20 @@ class HTUserTeam(mc.TeamItem, HTLightTeam):
 
 
 class HTUserTeamArena(mc.TeamItemArena, HTLightArena):
+    """Arena of a user's team."""
     pass
 
 
 class HTUserTeamLeague(mc.TeamItemLeague, HTLightLeague):
+    """League of a user's team."""
     pass
 
 
 class HTUserTeamRegion(mc.TeamItemRegion, HTLightRegion):
+    """Region of a user's team."""
     pass
 
 
 class HTUserTeamYouthTeam(mc.TeamItemYouthTeam, HTLightYouthTeam):
+    """Youth team of a user's team."""
     pass

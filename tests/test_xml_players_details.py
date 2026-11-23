@@ -1,3 +1,5 @@
+"""Tests for the `playersdetails.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.player_details import PlayerDetails, PlayerSkills
 

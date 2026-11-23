@@ -1,5 +1,6 @@
-def test_training_events(mocked_chpp):
+"""Tests for the `trainingevents.xml` CHPP file parsing."""
 
+def test_training_events(mocked_chpp):
     te = mocked_chpp.xml_training_events(456732884)
 
     assert te.user_supporter_tier == 'none'

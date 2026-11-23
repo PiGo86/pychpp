@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from typing import List, Optional
 
 from pychpp.models.custom.base.ht_arena import HTLightArena
@@ -15,6 +17,23 @@ from pychpp.models.xml import team_details as td
 
 
 class HTTeam(td.RequestTeamDetails, td.TeamItem, BaseHTTeam):
+    """Hattrick team.
+
+    Args:
+        team_id: Hattrick ID of the team. If None, the primary team is used.
+
+    Attributes:
+        id: Hattrick ID of the team.
+        name: Name of the team.
+        user: User owning the team.
+        arena: Arena of the team.
+        league: League of the team.
+        country: Country of the team.
+        region: Region of the team.
+        league_unit: League unit of the team.
+        youth_team: Youth team of the team.
+
+    """
 
     XML_PREFIX = 'Teams/Team/'
     XML_FILTER = ''
@@ -38,46 +57,54 @@ class HTTeam(td.RequestTeamDetails, td.TeamItem, BaseHTTeam):
 
     @property
     def is_bot(self) -> bool:
+        """Whether the team is a bot."""
         return self.bot_status.is_bot
 
     def players(self) -> 'List[HTTeamPlayersItem]':
+        """Get the players of the team."""
         return HTTeamPlayers(chpp=self._chpp, team_id=self.id).list
 
 
 class HTTeamUser(HTLightUser, td.User):
+    """User owning the team."""
     username: str = HTProxyField(td.User, 'login_name')
 
 
 class HTTeamArena(HTLightArena, td.TeamItemArena):
+    """Arena of the team."""
     pass
 
 
 class HTTeamLeague(HTLightLeague, td.TeamItemLeague):
+    """League of the team."""
     pass
 
 
 class HTTeamCountry(HTLightCountry, td.TeamItemCountry):
+    """Country of the team."""
     pass
 
 
 class HTTeamRegion(HTLightRegion, td.TeamItemRegion):
+    """Region of the team."""
     pass
 
 
 class HTTeamLeagueUnit(HTLightLeagueUnit, td.TeamItemLeagueLevelUnit):
+    """League unit of the team."""
     pass
 
 
 class HTTeamYouthTeam(HTLightYouthTeam, td.TeamItemYouthTeam):
+    """Youth team of the team."""
     pass
 
 
 class HTTeamPlayers(RequestPlayers, PlayersViewTeam):
+    """Players list of a team."""
     XML_PREFIX = 'Team/'
     list: List['HTTeamPlayersItem'] = HTProxyField(PlayersViewTeam, 'players')
 
 
 class HTTeamPlayersItem(HTLightPlayer, PlayersViewTeamPlayerItem):
-    """
-    Hattrick light player for team
-    """
+    """Hattrick light player for team."""

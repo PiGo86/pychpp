@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_league` model."""
+
 import re
 
 from pychpp.models.xml.world_details import LeagueItemCountryRegionItem
@@ -6,7 +8,6 @@ from .conftest import COUNTRY_LEAGUE_PATTERN, REGION_PATTERN
 
 
 def test_get_league(chpp):
-
     portugal_league = chpp.league(25, include_regions=True)
 
     assert portugal_league.name == "Portugal"

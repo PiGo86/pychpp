@@ -1,5 +1,6 @@
-def test_xml_bookmarks(mocked_chpp):
+"""Tests for the `bookmarks.xml` CHPP file parsing."""
 
+def test_xml_bookmarks(mocked_chpp):
     xml_bookmarks = mocked_chpp.xml_bookmarks()
 
     assert isinstance(xml_bookmarks.bookmark_list, list)

@@ -1,3 +1,5 @@
+"""Models for the `avatars.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestAvatars(HTModel):
-    """
-    Avatars - Request arguments
-    """
+    """Avatars - Request arguments."""
     SOURCE_FILE = 'avatars'
     LAST_VERSION = '1.1'
 
@@ -17,40 +17,30 @@ class RequestAvatars(HTModel):
 
 
 class Avatars(RequestAvatars):
-    """
-    Avatars
-    """
+    """Parsed data of the `avatars.xml` CHPP file."""
     team: 'Team' = HTField('Team')
 
 
 class Team(HTModel):
-    """
-    Avatars -> Team
-    """
+    """Avatars -> Team."""
     id: int = HTField('TeamId')
     players: List['PlayerItem'] = HTField('Players', items='Player')
 
 
 class PlayerItem(HTModel):
-    """
-    Avatars -> Team -> Players -> Player item
-    """
+    """Avatars -> Team -> Players -> Player item."""
     id: int = HTField('PlayerID')
     avatar: 'Avatar' = HTField('Avatar')
 
 
 class Avatar(HTModel):
-    """
-    Avatars -> Team -> Players -> Player item -> Avatar
-    """
+    """Avatars -> Team -> Players -> Player item -> Avatar."""
     background_image: str = HTField('BackgroundImage')
     layers: List['LayerItem'] = HTField('.', items='Layer')
 
 
 class LayerItem(HTModel):
-    """
-    Avatars -> Team -> Players -> Player item -> Avatar -> Layer
-    """
+    """Avatars -> Team -> Players -> Player item -> Avatar -> Layer."""
     x: int = HTField('.', attrib='x')
     y: int = HTField('.', attrib='y')
     image: str = HTField('Image')

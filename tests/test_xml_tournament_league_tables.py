@@ -1,5 +1,6 @@
-def test_tournament_league_tables(mocked_chpp):
+"""Tests for the `tournamentleaguetables.xml` CHPP file parsing."""
 
+def test_tournament_league_tables(mocked_chpp):
     tlt = mocked_chpp.xml_tournament_league_tables(5292015)
 
     assert tlt.id == 5292015

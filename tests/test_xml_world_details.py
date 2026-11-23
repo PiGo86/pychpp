@@ -1,3 +1,5 @@
+"""Tests for the `worlddetails.xml` CHPP file parsing."""
+
 from pychpp.models.xml.world_details import (WorldDetails, LeagueItem,
                                              LeagueItemCountry, LeagueItemCupItem)
 

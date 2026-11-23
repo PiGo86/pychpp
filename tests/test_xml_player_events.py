@@ -1,8 +1,9 @@
+"""Tests for the `playerevents.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_player_events(mocked_chpp):
-
     pe = mocked_chpp.xml_player_events(player_id=445879103)
 
     assert pe.user_supporter_tier == 'none'

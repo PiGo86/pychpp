@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_team` model."""
+
 import re
 
 from pychpp.models.custom.ht_team import HTTeam

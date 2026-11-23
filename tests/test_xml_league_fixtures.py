@@ -1,3 +1,5 @@
+"""Tests for the `leaguefixtures.xml` CHPP file parsing."""
+
 from pychpp.models.xml.league_fixtures import LeagueFixtures, MatchItem
 
 

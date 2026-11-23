@@ -1,3 +1,5 @@
+"""Models for the `hofplayers.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestHallOfFamePlayers(HTModel):
-    """
-    Hall of Fame Players - Request arguments
-    """
+    """Hall of Fame Players - Request arguments."""
     SOURCE_FILE = 'hofplayers'
     LAST_VERSION = '1.3'
 
@@ -17,16 +17,12 @@ class RequestHallOfFamePlayers(HTModel):
 
 
 class HallOfFamePlayers(RequestHallOfFamePlayers):
-    """
-    Hall of Fame Players
-    """
+    """Hall of Fame Players."""
     players: Optional[List['PlayerItem']] = HTField('PlayerList', items='Player')
 
 
 class PlayerItem(HTModel):
-    """
-    Hall of Fame Players -> Players -> Player item
-    """
+    """Hall of Fame Players -> Players -> Player item."""
     id: int = HTField('PlayerId')
     first_name: str = HTField('FirstName')
     nick_name: Optional[str] = HTField('NickName')

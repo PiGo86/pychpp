@@ -1,8 +1,9 @@
+"""Tests for the `youthteamdetails.xml` CHPP file parsing."""
+
 from pychpp.models.xml.youth_team_details import YouthTeamDetails
 
 
 def test_get_youth_team_without_league(mocked_chpp):
-
     ytd = mocked_chpp.xml_youth_team_details(3147468, version='1.2')
 
     assert isinstance(ytd, YouthTeamDetails)
@@ -10,7 +11,6 @@ def test_get_youth_team_without_league(mocked_chpp):
 
 
 def test_youth_team_details_version_1_5(mocked_chpp):
-
     ytd = mocked_chpp.xml_youth_team_details(youth_team_id=2942691, version='1.5')
 
     assert isinstance(ytd, YouthTeamDetails)

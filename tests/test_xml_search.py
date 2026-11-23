@@ -1,5 +1,6 @@
-def test_search(mocked_chpp):
+"""Tests for the `search.xml` CHPP file parsing."""
 
+def test_search(mocked_chpp):
     search = mocked_chpp.xml_search(search_type=0,
                                     search_string='Bob',
                                     search_string_2='Sunesson',
