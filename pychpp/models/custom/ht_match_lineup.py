@@ -3,7 +3,7 @@
 from copy import deepcopy
 from dataclasses import dataclass
 from enum import Enum
-from typing import List, Optional, Union, Iterable, Dict
+from typing import List, Optional, Iterable, Dict
 
 from pychpp.models.custom import CustomModel
 from pychpp.models.custom.base.ht_match import HTCommonLightMatch
@@ -86,10 +86,9 @@ class HTMatchLineupTeamLineup(CustomModel):
 
         lineup: Dict[str,
                      Dict[int,
-                          Optional[Union['HTMLStartingLineupPlayersItem',
-                                         'HTMLEndingLineupPlayersItem',
-                                         'GhostPlayer',
-                                         ]]]]
+                          Optional[HTMLStartingLineupPlayersItem
+                                   | HTMLEndingLineupPlayersItem
+                                   | GhostPlayer]]]
         lineup = {a.name: {v: None for v in a.value} for a in LineupGlobalRoles}
 
         for p in lineup_players:

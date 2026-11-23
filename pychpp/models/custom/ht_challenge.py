@@ -1,6 +1,6 @@
 """High-level custom model built on top of the xml models."""
 
-from typing import List, Tuple, Union, Iterable, TYPE_CHECKING, Dict
+from typing import List, Tuple, Iterable, TYPE_CHECKING, Dict
 
 from pychpp.models.custom import CustomModel
 from pychpp.models.custom.ht_team import HTTeam
@@ -24,7 +24,7 @@ class HTChallengeManager:
 
     def pending_challenges(
             self, author: str = 'both',
-    ) -> Union[List[ChallengeItem], Tuple[List[ChallengeItem], List[ChallengeItem]]]:
+    ) -> List[ChallengeItem] | Tuple[List[ChallengeItem], List[ChallengeItem]]:
         """Get the pending challenges of the team.
 
         Args:
