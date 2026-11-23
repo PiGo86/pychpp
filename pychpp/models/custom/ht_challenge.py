@@ -1,6 +1,6 @@
 """High-level custom model built on top of the xml models."""
 
-from typing import List, Tuple, Iterable, TYPE_CHECKING, Dict
+from typing import List, Optional, Tuple, Iterable, TYPE_CHECKING, Dict
 
 from pychpp.models.custom import CustomModel
 from pychpp.models.custom.ht_team import HTTeam
@@ -15,8 +15,8 @@ if TYPE_CHECKING:
 class HTChallengeManager:
     """Managing challenges on Hattrick."""
 
-    def __init__(self, chpp: 'CHPP', team_id: int = None,
-                 is_weekend_friendly: bool = None, **kwargs):
+    def __init__(self, chpp: 'CHPP', team_id: Optional[int] = None,
+                 is_weekend_friendly: Optional[bool] = None, **kwargs):
         self._chpp = chpp
         self.team_id = team_id
         self.is_weekend_friendly = is_weekend_friendly
@@ -51,7 +51,9 @@ class HTChallengeManager:
                              "'own_team', 'other_teams', 'both'")
 
     def are_challengeable(
-            self, teams: Iterable['HTTeam'] = None, team_ids: Iterable[int] = None,
+            self,
+            teams: Optional[Iterable['HTTeam']] = None,
+            team_ids: Optional[Iterable[int]] = None,
     ) -> Dict[int, bool]:
         """Check if teams are challengeable.
 
@@ -80,8 +82,8 @@ class HTChallengeManager:
 
         return {item.team_id: item.is_challengeable for item in result}
 
-    def challenge(self, opponent_team_id: int, match_type: int = None,
-                  match_place: int = None, arena_id: int = None) -> None:
+    def challenge(self, opponent_team_id: int, match_type: Optional[int] = None,
+                  match_place: Optional[int] = None, arena_id: Optional[int] = None) -> None:
         """Challenge an opponent team.
 
         Args:

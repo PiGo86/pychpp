@@ -1,6 +1,7 @@
 """Helpers to parse and format the xml data returned by the CHPP API."""
 
 import datetime
+from typing import Optional
 from xml.etree import ElementTree
 
 from pychpp.fixtures import ht_datetime
@@ -10,7 +11,7 @@ class HTXml:
     """Gather the different methods used to parse the xml files fetched on Hattrick."""
 
     @staticmethod
-    def ht_str(data: ElementTree.Element, attrib: str = None):
+    def ht_str(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
         """Return the text of an xml element, or one of its attributes, as a string.
 
         Args:
@@ -18,6 +19,8 @@ class HTXml:
             attrib: Name of the attribute to read instead of the text.
 
         """
+        if data is None:
+            return None
         if attrib is not None:
             return str(data.attrib.get(attrib, None))
         else:
@@ -35,7 +38,7 @@ class HTXml:
         return [item.text for item in data.findall(item_tag)]
 
     @staticmethod
-    def ht_int(data: ElementTree.Element, attrib: str = None):
+    def ht_int(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
         """Return the text of an xml element as an int ('Not available' becomes None).
 
         Args:
@@ -43,6 +46,8 @@ class HTXml:
             attrib: Name of the attribute to read instead of the text.
 
         """
+        if data is None:
+            return None
         if attrib is not None:
             return int(data.attrib.get(attrib, None))
         else:
@@ -52,7 +57,7 @@ class HTXml:
                 return int(data.text)
 
     @staticmethod
-    def ht_float(data: ElementTree.Element, attrib: str = None):
+    def ht_float(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
         """Return the text of an xml element as a float (comma replaced by dot).
 
         Args:
@@ -60,13 +65,15 @@ class HTXml:
             attrib: Name of the attribute to read instead of the text.
 
         """
+        if data is None:
+            return None
         if attrib is not None:
             return float(data.attrib.get(attrib, None).replace(',', '.'))
         else:
             return float(data.text.replace(',', '.')) if data.text is not None else None
 
     @staticmethod
-    def ht_bool(data: ElementTree.Element, attrib: str = None):
+    def ht_bool(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
         """Return the text of an xml element as a bool.
 
         Args:
@@ -74,6 +81,8 @@ class HTXml:
             attrib: Name of the attribute to read instead of the text.
 
         """
+        if data is None:
+            return None
         if attrib is not None:
             value = data.attrib.get(attrib, None)
         else:
@@ -152,7 +161,7 @@ class HTXml:
         return events
 
     @staticmethod
-    def ht_datetime_from_text(data: ElementTree.Element, attrib: str = None):
+    def ht_datetime_from_text(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
         """Convert a string from xml data to a HTDatetime object.
 
         Args:
@@ -163,6 +172,8 @@ class HTXml:
             A HTDatetime object.
 
         """
+        if data is None:
+            return None
         if attrib is not None:
             _datetime = datetime.datetime.strptime(data.attrib.get(attrib), "%Y-%m-%d %H:%M:%S")
         else:
@@ -170,7 +181,9 @@ class HTXml:
         return ht_datetime.HTDatetime(datetime=_datetime)
 
     @staticmethod
-    def opt_ht_datetime_from_text(data: ElementTree.Element, attrib: str = None):
+    def opt_ht_datetime_from_text(
+        data: Optional[ElementTree.Element], attrib: Optional[str] = None,
+    ):
         """Convert a string from xml data to a HTDatetime object, or None if empty.
 
         Args:
@@ -181,6 +194,8 @@ class HTXml:
             A HTDatetime object, or None if the data is empty or cannot be parsed.
 
         """
+        if data is None:
+            return None
         if attrib is not None:
             data_ = data.attrib.get(attrib)
         else:
