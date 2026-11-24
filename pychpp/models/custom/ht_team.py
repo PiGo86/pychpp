@@ -1,6 +1,6 @@
 """High-level custom model built on top of the xml models."""
 
-from typing import List, Optional
+from typing import Any, List, Optional
 
 from pychpp.models.custom.base.ht_arena import HTLightArena
 from pychpp.models.custom.base.ht_country import HTLightCountry
@@ -48,7 +48,7 @@ class HTTeam(td.RequestTeamDetails, td.TeamItem, BaseHTTeam):
     league_unit: 'HTTeamLeagueUnit' = HTProxyField(td.TeamItem, 'league_level_unit')
     youth_team: 'HTTeamYouthTeam' = HTProxyField(td.TeamItem)
 
-    def __init__(self, team_id: Optional[int]=None, **kwargs):
+    def __init__(self, team_id: Optional[int]=None, **kwargs: Any):
         if team_id is not None:
             self.XML_FILTER = f".[TeamID='{team_id}']/"
         else:

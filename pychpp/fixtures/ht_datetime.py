@@ -1,7 +1,7 @@
 """Datetime helpers used in pychpp."""
 
 import datetime as dt
-from typing import Optional
+from typing import Any, Optional
 
 import pytz
 
@@ -370,7 +370,7 @@ class HTDatetime:
     @classmethod
     def from_ht_calendar(cls, season, week, weekday,
                          hour=0, minute=0, second=0,
-                         **kwargs,
+                         **kwargs: Any,
                          ):
         """Build a HTDatetime from a Hattrick calendar date (season, week, weekday)."""
         return cls(season=season, week=week, weekday=weekday,
@@ -380,14 +380,14 @@ class HTDatetime:
     @classmethod
     def from_calendar(cls, year, month, day,
                       hour=0, minute=0, second=0,
-                      **kwargs):
+                      **kwargs: Any):
         """Build a HTDatetime from a calendar date (year, month, day)."""
         return cls(year=year, month=month, day=day,
                    hour=hour, minute=minute, second=second,
                    **kwargs)
 
     @classmethod
-    def from_datetime(cls, datetime, **kwargs):
+    def from_datetime(cls, datetime, **kwargs: Any):
         """Build a HTDatetime from a datetime object."""
         return cls(datetime=datetime, **kwargs)
 

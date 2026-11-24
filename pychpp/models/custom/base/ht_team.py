@@ -2,6 +2,7 @@
 
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
+from typing import Any
 
 
 class BaseCommonHTTeam(CustomModel):
@@ -40,7 +41,7 @@ class HTCommonLightTeam(BaseCommonHTTeam):
                                               f"?teamID={self.id}")
         return self._url
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this team (youth or senior)."""
         if self.is_youth:
             return self._chpp.youth_team(id_=self.id, **kwargs)
@@ -73,6 +74,6 @@ class HTLightYouthTeam(BaseHTYouthTeam):
 
     _r_id = HTInitVar(param='youthTeamID', init_arg='id_', fill_with='id')
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this youth team."""
         return self._chpp.youth_team(id_=self.id, **kwargs)

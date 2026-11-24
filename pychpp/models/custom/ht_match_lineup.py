@@ -3,7 +3,7 @@
 from copy import deepcopy
 from dataclasses import dataclass
 from enum import Enum
-from typing import List, Optional, Iterable, Dict
+from typing import Any, List, Optional, Iterable, Dict
 
 from pychpp.models.custom import CustomModel
 from pychpp.models.custom.base.ht_match import HTCommonLightMatch
@@ -42,14 +42,14 @@ class HTMatchLineupMatch(HTCommonLightMatch):
 
 class HTMatchLineupTeam(CustomModel, ml.Team):
     """Hattrick Match Lineup -> Home/Away Team."""
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this team."""
         return self._chpp.team(id_=self.id, **kwargs)
 
 
 class HTMatchLineupArena(CustomModel, ml.Arena):
     """Hattrick Match Lineup -> Arena."""
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this arena."""
         return self._chpp.arena(id_=self.id, **kwargs)
 
@@ -70,7 +70,7 @@ class HTMatchLineupTeamLineup(CustomModel):
         ml.TeamLineup, 'lineup', suppl_attrs={'source_system': 'source_system'},
     )
 
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs: Any):
         self._starting_lineup: Optional[dict] = None
         self._ending_lineup: Optional[dict] = None
         self._starting_formation: Optional[str] = None
