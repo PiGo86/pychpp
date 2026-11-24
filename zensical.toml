@@ -1,0 +1,64 @@
+[project]
+site_name = "pyCHPP"
+site_description = "Python OO framework for the Hattrick CHPP API"
+site_url = "https://pierre86.frama.io/pychpp/"
+docs_dir = "docs"
+site_dir = "site"
+repo_url = "https://framagit.org/Pierre86/pychpp"
+edit_uri = "-/edit/master/docs/"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Guide" = [
+    { "Installation" = "guide/installation.md" },
+    { "Authentication" = "guide/authentication.md" },
+    { "Error handling" = "guide/errors.md" },
+    { "Examples" = "guide/examples.md" },
+  ] },
+  { "API reference" = [
+    { "Overview" = "api/index.md" },
+    { "CHPP client" = "api/chpp.md" },
+    { "Models" = "api/models.md" },
+    { "Fixtures" = "api/fixtures.md" },
+  ] },
+]
+
+[project.theme]
+language = "en"
+features = [
+  "content.action.edit",
+  "content.code.copy",
+  "navigation.expand",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.sections",
+  "navigation.top",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.markdown_extensions]
+admonition = {}
+toc.permalink = true
+pymdownx.highlight = {}
+pymdownx.superfences = {}
+
+[project.plugins.mkdocstrings.handlers.python.options]
+docstring_style = "google"
+show_source = false
+show_root_heading = true
+merge_init_into_class = true
+separate_signature = true
+members = true
+inherited_members = true
