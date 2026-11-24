@@ -136,7 +136,7 @@ class HTModel(metaclass=MetaHTModel):
                  version: Optional[str] = None,
                  xml_prefix: Optional[str] = None,
                  suppl_attrs: Optional[dict] = None,
-                 **kwargs,
+                 **kwargs: Any,
                  ):
         """Instantiate a new HTModel object.
 
@@ -180,7 +180,7 @@ class HTModel(metaclass=MetaHTModel):
         # Once data is obtained, transform HTField to actual values
         self._transform_fields()
 
-    def _fetch(self, **kwargs):
+    def _fetch(self, **kwargs: Any):
 
         # data is fetched using ht_init_vars attribute as query parameters
         for attr, ht_init_var in self._ht_init_vars.items():

@@ -2,7 +2,7 @@
 
 from datetime import datetime
 from http.client import RemoteDisconnected
-from typing import Literal, Optional, overload
+from typing import Any, Literal, Optional, overload
 
 import xml.etree.ElementTree
 
@@ -280,17 +280,17 @@ class CHPPBase:
     @overload
     def _base_request(
             self, url, parse_data: Literal[True] = ..., method: str = ...,
-            **kwargs,
+            **kwargs: Any,
     ) -> xml.etree.ElementTree.Element: ...
 
     @overload
     def _base_request(
             self, url, parse_data: Literal[False], method: str = ...,
-            **kwargs,
+            **kwargs: Any,
     ) -> str: ...
 
     def _base_request(
-            self, url, parse_data=True, method='GET', **kwargs,
+            self, url, parse_data=True, method='GET', **kwargs: Any,
     ) -> xml.etree.ElementTree.Element | str:
         """Send a request via the CHPP API.
 
@@ -396,7 +396,7 @@ class CHPPBase:
         except ht_error.HTUnauthorizedAction:
             return "token is already invalid"
 
-    def request(self, **kwargs) -> xml.etree.ElementTree.Element:
+    def request(self, **kwargs: Any) -> xml.etree.ElementTree.Element:
         """Send a request to the CHPP API endpoint.
 
         Args:
@@ -422,7 +422,7 @@ class CHPPXml(CHPPBase):
     """
 
     def xml_achievements(
-        self, user_id: Optional[int] = None, **kwargs,
+        self, user_id: Optional[int] = None, **kwargs: Any,
     ) -> achievements.Achievements:
         """Request the `achievements.xml` file from the CHPP API.
 
@@ -444,7 +444,7 @@ class CHPPXml(CHPPBase):
             search_language_id: Optional[int] = None,
             page_index: Optional[int] = None,
             user_id: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> alliances.Alliances:
         """Request the `alliances.xml` file from the CHPP API.
 
@@ -485,7 +485,7 @@ class CHPPXml(CHPPBase):
             action_type: str = 'view',
             subset: Optional[int] = None,
             alliance_id: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> (alliance_details.AllianceDetailsView
           | alliance_details.AllianceDetailsRoles
           | alliance_details.AllianceDetailsMembers
@@ -602,7 +602,7 @@ class CHPPXml(CHPPBase):
             self,
             action_type: Optional[str] = None,
             team_id: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> avatars.Avatars:
         """Request the `avatars.xml` file from the CHPP API.
 
@@ -628,7 +628,7 @@ class CHPPXml(CHPPBase):
 
     def xml_bookmarks(
             self, bookmark_type_id: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> bookmarks.Bookmarks:
         """Request the `bookmarks.xml` file from the CHPP API.
 
@@ -651,7 +651,7 @@ class CHPPXml(CHPPBase):
             is_weekend_friendly: int = 0, suggested_team_ids: Optional[str] = None,
             opponent_team_id: Optional[int] = None, match_type: Optional[int] = None,
             match_place: Optional[int] = None, neutral_arena_id: Optional[int] = None,
-            training_match_id: Optional[int] = None, **kwargs,
+            training_match_id: Optional[int] = None, **kwargs: Any,
     ) -> (challenges.ChallengesView
           | challenges.ChallengesChallengeable
           | challenges.ChallengesChallenge
@@ -740,7 +740,7 @@ class CHPPXml(CHPPBase):
                              "'view', 'challengeable', 'challenge', "
                              "'accept', 'decline' or 'withdraw'")
 
-    def xml_club(self, team_id: Optional[int] = None, **kwargs,
+    def xml_club(self, team_id: Optional[int] = None, **kwargs: Any,
                  ) -> club.Club:
         """Request the `club.xml` file from the CHPP API.
 
@@ -758,7 +758,7 @@ class CHPPXml(CHPPBase):
 
     def xml_cup_matches(
             self, cup_id: int, season: Optional[int] = None, cup_round: Optional[int] = None,
-            start_after_match_id: Optional[int] = None, **kwargs,
+            start_after_match_id: Optional[int] = None, **kwargs: Any,
     ) -> cup_matches.CupMatches:
         """Request the `cup_matches.xml` file from the CHPP API.
 
@@ -790,7 +790,7 @@ class CHPPXml(CHPPBase):
             team_id: Optional[int] = None,
             transfer_id: Optional[int] = None,
             tracking_type_id: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> current_bids.CurrentBids:
         """Request the `current_bids.xml` file from the CHPP API.
 
@@ -821,7 +821,7 @@ class CHPPXml(CHPPBase):
             **kwargs,
         )
 
-    def xml_economy(self, team_id: Optional[int] = None, **kwargs,
+    def xml_economy(self, team_id: Optional[int] = None, **kwargs: Any,
                     ) -> economy.Economy:
         """Request the `economy.xml` file from the CHPP API.
 
@@ -837,7 +837,7 @@ class CHPPXml(CHPPBase):
         """
         return economy.Economy(chpp=self, team_id=team_id, **kwargs)
 
-    def xml_fans(self, team_id: Optional[int] = None, **kwargs,
+    def xml_fans(self, team_id: Optional[int] = None, **kwargs: Any,
                  ) -> fans.Fans:
         """Request the `fans.xml` file from the CHPP API.
 
@@ -853,7 +853,7 @@ class CHPPXml(CHPPBase):
         """
         return fans.Fans(chpp=self, team_id=team_id, **kwargs)
 
-    def xml_hof_players(self, team_id: Optional[int] = None, **kwargs,
+    def xml_hof_players(self, team_id: Optional[int] = None, **kwargs: Any,
                         ) -> hof_players.HallOfFamePlayers:
         """Request the `hof_players.xml` file from the CHPP API.
 
@@ -870,7 +870,7 @@ class CHPPXml(CHPPBase):
 
     def xml_ladder_details(
             self, team_id: Optional[int] = None, page_size: Optional[int] = None,
-            page_index: Optional[int] = None, **kwargs,
+            page_index: Optional[int] = None, **kwargs: Any,
     ) -> ladder_details.LadderDetails:
         """Request the `ladder_details.xml` file from the CHPP API.
 
@@ -893,7 +893,7 @@ class CHPPXml(CHPPBase):
             page_index=page_index, **kwargs,
         )
 
-    def xml_ladder_list(self, team_id: Optional[int] = None, **kwargs,
+    def xml_ladder_list(self, team_id: Optional[int] = None, **kwargs: Any,
                         ) -> ladder_list.LadderList:
         """Request the `ladder_list.xml` file from the CHPP API.
 
@@ -909,7 +909,7 @@ class CHPPXml(CHPPBase):
         return ladder_list.LadderList(chpp=self, team_id=team_id, **kwargs)
 
     def xml_league_details(
-            self, league_level_unit_id: Optional[int] = None, **kwargs,
+            self, league_level_unit_id: Optional[int] = None, **kwargs: Any,
     ) -> league_details.LeagueDetails:
         """Request the `league_details.xml` file from the CHPP API.
 
@@ -931,7 +931,7 @@ class CHPPXml(CHPPBase):
             self,
             league_level_unit_id: Optional[int] = None,
             season: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> league_fixtures.LeagueFixtures:
         """Request the `league_fixtures.xml` file from the CHPP API.
 
@@ -951,7 +951,7 @@ class CHPPXml(CHPPBase):
             chpp=self, league_level_unit_id=league_level_unit_id, season=season, **kwargs,
         )
 
-    def xml_league_levels(self, league_id: Optional[int] = None, **kwargs,
+    def xml_league_levels(self, league_id: Optional[int] = None, **kwargs: Any,
                           ) -> league_levels.LeagueLevels:
         """Request the `league_levels.xml` file from the CHPP API.
 
@@ -973,7 +973,7 @@ class CHPPXml(CHPPBase):
             self, action_type: str = 'view', match_id: Optional[int] = None,
             source_system: str = 'hattrick', include_starting_lineup: bool = False,
             use_live_events_and_texts: bool = False, last_shown_indexes: Optional[str] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> live.Live:
         """Request the `live.xml` file from the CHPP API.
 
@@ -1007,7 +1007,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_manager_compendium(
-            self, user_id: Optional[int] = None, **kwargs,
+            self, user_id: Optional[int] = None, **kwargs: Any,
     ) -> manager_compendium.ManagerCompendium:
         """Request the `manager_compendium.xml` file from the CHPP API.
 
@@ -1026,7 +1026,7 @@ class CHPPXml(CHPPBase):
 
     def xml_match_details(
             self, match_id: int, source_system: Optional[str] = None,
-            match_events: Optional[bool] = None, **kwargs,
+            match_events: Optional[bool] = None, **kwargs: Any,
     ) -> match_details.MatchDetails:
         """Request the `match_details.xml` file from the CHPP API.
 
@@ -1048,7 +1048,7 @@ class CHPPXml(CHPPBase):
 
     def xml_match_lineup(
             self, match_id: Optional[int] = None, team_id: Optional[int] = None,
-            source_system: Optional[str] = None, **kwargs,
+            source_system: Optional[str] = None, **kwargs: Any,
     ) -> match_lineup.MatchLineup:
         """Request the `match_lineup.xml` file from the CHPP API.
 
@@ -1072,7 +1072,7 @@ class CHPPXml(CHPPBase):
 
     def xml_match_orders(
             self, match_id: int, action_type: str = 'view', team_id: Optional[int] = None,
-            source_system: str = 'Hattrick', lineup: Optional[str] = None, **kwargs,
+            source_system: str = 'Hattrick', lineup: Optional[str] = None, **kwargs: Any,
     ) -> (match_orders.MatchOrdersView
           | match_orders.MatchOrdersSetMatchOrder
           | match_orders.MatchOrdersPredictRatings):
@@ -1126,7 +1126,7 @@ class CHPPXml(CHPPBase):
                              "'view', 'setmatchorder' or 'predictratings'")
 
     def xml_matches(
-            self, team_id: Optional[int] = None, is_youth: Optional[bool] = None, **kwargs,
+            self, team_id: Optional[int] = None, is_youth: Optional[bool] = None, **kwargs: Any,
     ) -> matches.Matches:
         """Request the `matches.xml` file from the CHPP API.
 
@@ -1152,7 +1152,7 @@ class CHPPXml(CHPPBase):
             self, team_id: Optional[int] = None, is_youth: Optional[bool] = None,
             first_match_date: Optional[datetime] = None,
             last_match_date: Optional[datetime] = None,
-            season: Optional[int] = None, include_hto: Optional[bool] = None, **kwargs,
+            season: Optional[int] = None, include_hto: Optional[bool] = None, **kwargs: Any,
     ) -> matches_archive.MatchesArchive:
         """Request the `matches_archive.xml` file from the CHPP API.
 
@@ -1182,7 +1182,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_national_teams(
-            self, league_office_type_id: Optional[int] = None, **kwargs,
+            self, league_office_type_id: Optional[int] = None, **kwargs: Any,
     ) -> national_teams.NationalTeams:
         """Request the `national_teams.xml` file from the CHPP API.
 
@@ -1200,7 +1200,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_national_team_details(
-            self, team_id: int, **kwargs,
+            self, team_id: int, **kwargs: Any,
     ) -> national_team_details.NationalTeamDetails:
         """Request the `national_team_details.xml` file from the CHPP API.
 
@@ -1217,7 +1217,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_national_team_matches(
-            self, league_office_type_id: Optional[int] = None, **kwargs,
+            self, league_office_type_id: Optional[int] = None, **kwargs: Any,
     ) -> national_team_matches.NationalTeamMatches:
         """Request the `national_team_matches.xml` file from the CHPP API.
 
@@ -1239,7 +1239,7 @@ class CHPPXml(CHPPBase):
             team_id: int,
             action_type: str = 'view',
             match_type_category: Optional[int] = None,
-            show_all: Optional[bool] = None, **kwargs,
+            show_all: Optional[bool] = None, **kwargs: Any,
     ) -> (national_players.NationalPlayersView
           | national_players.NationalPlayersStats):
         """Request the `national_players.xml` file from the CHPP API.
@@ -1277,7 +1277,7 @@ class CHPPXml(CHPPBase):
                              "'view', 'setmatchorder' or 'SupporterStats'")
 
     def xml_national_prospect_players(
-            self, team_id: int, player_category_id: Optional[int] = None, **kwargs,
+            self, team_id: int, player_category_id: Optional[int] = None, **kwargs: Any,
     ) -> national_prospect_players.NationalProspectPlayers:
         """Request the `national_prospect_players.xml` file from the CHPP API.
 
@@ -1296,7 +1296,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_player_events(
-            self, player_id: Optional[int] = None, **kwargs,
+            self, player_id: Optional[int] = None, **kwargs: Any,
     ) -> player_events.PlayerEvents:
         """Request the `player_events.xml` file from the CHPP API.
 
@@ -1313,7 +1313,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_player_stats(
-            self, player_id: Optional[int] = None, **kwargs,
+            self, player_id: Optional[int] = None, **kwargs: Any,
     ) -> player_stats.PlayerStats:
         """Request the `player_stats.xml` file from the CHPP API.
 
@@ -1332,7 +1332,7 @@ class CHPPXml(CHPPBase):
     def xml_players(self, action_type: str = 'view', order_by: Optional[str] = None,
                     team_id: Optional[int] = None,
                     include_match_info: Optional[bool] = None,
-                    **kwargs,
+                    **kwargs: Any,
                     ) -> (players.PlayersView
                           | players.PlayersViewOldies
                           | players.PlayersViewOldCoaches):
@@ -1381,7 +1381,7 @@ class CHPPXml(CHPPBase):
     def xml_player_details(
             self, action_type: Optional[str] = None, player_id: Optional[int] = None,
             include_match_info: Optional[bool] = None, team_id: Optional[int] = None,
-            bid_amount: Optional[int] = None, max_bid_amount: Optional[int] = None, **kwargs,
+            bid_amount: Optional[int] = None, max_bid_amount: Optional[int] = None, **kwargs: Any,
     ) -> player_details.PlayerDetails:
         """Request the `player_details.xml` file from the CHPP API.
 
@@ -1410,7 +1410,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_region_details(
-            self, region_id: Optional[int] = None, **kwargs,
+            self, region_id: Optional[int] = None, **kwargs: Any,
     ) -> region_details.RegionDetails:
         """Request the `region_details.xml` file from the CHPP API.
 
@@ -1431,7 +1431,7 @@ class CHPPXml(CHPPBase):
             search_string_2: Optional[str] = None,
             search_id: Optional[int] = None,
             search_league_id: Optional[int] = None,
-            page_index: Optional[int] = None, **kwargs,
+            page_index: Optional[int] = None, **kwargs: Any,
     ) -> search.Search:
         """Request the `search.xml` file from the CHPP API.
 
@@ -1460,7 +1460,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_staff_avatars(
-            self, team_id: Optional[int] = None, **kwargs,
+            self, team_id: Optional[int] = None, **kwargs: Any,
     ) -> staff_avatars.StaffAvatars:
         """Request the `staff_avatars.xml` file from the CHPP API.
 
@@ -1478,7 +1478,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_staff_list(
-            self, team_id: Optional[int] = None, **kwargs,
+            self, team_id: Optional[int] = None, **kwargs: Any,
     ) -> staff_list.StaffList:
         """Request the `staff_list.xml` file from the CHPP API.
 
@@ -1498,7 +1498,7 @@ class CHPPXml(CHPPBase):
     def xml_supporters(
             self, action_type: str = 'supportedteams',
             user_id: Optional[int] = None, team_id: Optional[int] = None,
-            page_index: Optional[int] = None, page_size: Optional[int] = None, **kwargs,
+            page_index: Optional[int] = None, page_size: Optional[int] = None, **kwargs: Any,
     ) -> (supporters.SupportersSupportedTeams
           | supporters.SupportersMySupporters):
         """Request the `supporters.xml` file from the CHPP API.
@@ -1538,7 +1538,7 @@ class CHPPXml(CHPPBase):
     def xml_team_details(
             self, team_id: Optional[int] = None, user_id: Optional[int] = None,
             include_domestics_flags: Optional[bool] = None, include_flags: Optional[bool] = None,
-            include_supporters: Optional[bool] = None, **kwargs,
+            include_supporters: Optional[bool] = None, **kwargs: Any,
     ) -> team_details.TeamDetails:
         """Request the `team_details.xml` file from the CHPP API.
 
@@ -1570,7 +1570,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_team_history(
-            self, team_id: Optional[int] = None, **kwargs,
+            self, team_id: Optional[int] = None, **kwargs: Any,
     ) -> team_history.TeamHistory:
         """Request the `team_history.xml` file from the CHPP API.
 
@@ -1588,7 +1588,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_tournament_details(
-            self, tournament_id: int, season: Optional[int] = None, **kwargs,
+            self, tournament_id: int, season: Optional[int] = None, **kwargs: Any,
     ) -> tournament_details.TournamentDetails:
         """Request the `tournament_details.xml` file from the CHPP API.
 
@@ -1610,7 +1610,7 @@ class CHPPXml(CHPPBase):
             tournament_id: int,
             season: Optional[int] = None,
             match_round: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> tournament_fixtures.TournamentFixtures:
         """Request the `tournament_fixtures.xml` file from the CHPP API.
 
@@ -1636,7 +1636,7 @@ class CHPPXml(CHPPBase):
             tournament_id: int,
             season: Optional[int] = None,
             world_cup_round: Optional[int] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> tournament_league_tables.TournamentLeagueTables:
         """Request the `tournament_league_tables.xml` file from the CHPP API.
 
@@ -1657,7 +1657,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_tournament_list(
-            self, team_id: Optional[int] = None, **kwargs,
+            self, team_id: Optional[int] = None, **kwargs: Any,
     ) -> tournament_list.TournamentList:
         """Request the `tournament_list.xml` file from the CHPP API.
 
@@ -1678,7 +1678,7 @@ class CHPPXml(CHPPBase):
             self, action_type: str = 'view', team_id: Optional[int] = None,
             training_type: Optional[int] = None, training_level: Optional[int] = None,
             training_level_stamina: Optional[int] = None, league_id: Optional[int] = None,
-            from_date: Optional[datetime] = None, **kwargs,
+            from_date: Optional[datetime] = None, **kwargs: Any,
     ) -> (training.TrainingView
           | training.TrainingSetTraining
           | training.TrainingStats
@@ -1745,7 +1745,7 @@ class CHPPXml(CHPPBase):
                              "'view', 'setTraining', 'stats' or 'history'")
 
     def xml_training_events(
-            self, player_id: int, **kwargs,
+            self, player_id: int, **kwargs: Any,
     ) -> training_events.TrainingEvents:
         """Request the `training_events.xml` file from the CHPP API.
 
@@ -1783,7 +1783,7 @@ class CHPPXml(CHPPBase):
             salary_min: Optional[int] = None, salary_max: Optional[int] = None,
             transfer_compare_avg_min: Optional[int] = None,
             transfer_compare_avg_max: Optional[int] = None,
-            page_size: Optional[int] = None, page_index: Optional[int] = None, **kwargs,
+            page_size: Optional[int] = None, page_index: Optional[int] = None, **kwargs: Any,
     ) -> transfer_search.TransferSearch:
         """Request the `transfer_search.xml` file from the CHPP API.
 
@@ -1873,7 +1873,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_transfers_player(
-            self, player_id: int, **kwargs,
+            self, player_id: int, **kwargs: Any,
     ) -> transfers_player.TransfersPlayer:
         """Request the `transfers_player.xml` file from the CHPP API.
 
@@ -1890,7 +1890,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_transfers_team(
-            self, team_id: Optional[int] = None, page_index: Optional[int] = None, **kwargs,
+            self, team_id: Optional[int] = None, page_index: Optional[int] = None, **kwargs: Any,
     ) -> transfers_team.TransfersTeam:
         """Request the `transfers_team.xml` file from the CHPP API.
 
@@ -1911,7 +1911,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_translations(
-            self, language_id: Optional[int] = None, **kwargs,
+            self, language_id: Optional[int] = None, **kwargs: Any,
     ) -> translations.Translations:
         """Request the `translations.xml` file from the CHPP API.
 
@@ -1930,7 +1930,7 @@ class CHPPXml(CHPPBase):
     def xml_world_cup(
             self, action_type: str = 'viewMatches', cup_id: Optional[int] = None,
             season: Optional[int] = None, match_round: Optional[int] = None,
-            cup_series_unit_id: Optional[int] = None, **kwargs,
+            cup_series_unit_id: Optional[int] = None, **kwargs: Any,
     ) -> world_cup.WorldCupViewMatches | world_cup.WorldCupViewGroups:
         """Request the `world_cup.xml` file from the CHPP API.
 
@@ -1972,7 +1972,7 @@ class CHPPXml(CHPPBase):
 
     def xml_world_details(
             self, league_id: Optional[int] = None, country_id: Optional[int] = None,
-            include_regions: Optional[bool] = None, **kwargs,
+            include_regions: Optional[bool] = None, **kwargs: Any,
     ) -> world_details.WorldDetails:
         """Request the `world_details.xml` file from the CHPP API.
 
@@ -1991,7 +1991,7 @@ class CHPPXml(CHPPBase):
             league_id=league_id, **kwargs,
         )
 
-    def xml_world_languages(self, **kwargs) -> world_languages.WorldLanguages:
+    def xml_world_languages(self, **kwargs: Any) -> world_languages.WorldLanguages:
         """Request the `world_languages.xml` file from the CHPP API.
 
         Args:
@@ -2004,7 +2004,7 @@ class CHPPXml(CHPPBase):
         return world_languages.WorldLanguages(chpp=self, **kwargs)
 
     def xml_youth_avatars(
-            self, youth_team_id: Optional[int] = None, **kwargs,
+            self, youth_team_id: Optional[int] = None, **kwargs: Any,
     ) -> youth_avatars.YouthAvatars:
         """Request the `youth_avatars.xml` file from the CHPP API.
 
@@ -2023,7 +2023,7 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_youth_league_details(
-            self, youth_league_id: Optional[int] = None, **kwargs,
+            self, youth_league_id: Optional[int] = None, **kwargs: Any,
     ) -> youth_league_details.YouthLeagueDetails:
         """Request the `youth_league_details.xml` file from the CHPP API.
 
@@ -2042,7 +2042,10 @@ class CHPPXml(CHPPBase):
         )
 
     def xml_youth_league_fixtures(
-            self, youth_league_id: Optional[int] = None, season: Optional[int] = None, **kwargs,
+            self,
+            youth_league_id: Optional[int] = None,
+            season: Optional[int] = None,
+            **kwargs: Any,
     ) -> youth_league_fixtures.YouthLeagueFixtures:
         """Request the `youth_league_fixtures.xml` file from the CHPP API.
 
@@ -2065,7 +2068,7 @@ class CHPPXml(CHPPBase):
     def xml_youth_player_details(
             self, action_type: Optional[str] = None, youth_player_id: Optional[int] = None,
             show_scout_call: Optional[bool] = None, show_last_match: Optional[bool] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> youth_player_details.YouthPlayerDetails:
         """Request the `youth_player_details.xml` file from the CHPP API.
 
@@ -2093,7 +2096,7 @@ class CHPPXml(CHPPBase):
     def xml_youth_player_list(
             self, action_type: str = 'list', order_by: Optional[str] = None,
             youth_team_id: Optional[int] = None, show_scout_call: Optional[bool] = None,
-            show_last_match: Optional[bool] = None, **kwargs,
+            show_last_match: Optional[bool] = None, **kwargs: Any,
     ) -> (youth_player_list.YouthPlayerListList
           | youth_player_list.YouthPlayerListDetails):
         """Request the `youth_player_list.xml` file from the CHPP API.
@@ -2140,7 +2143,7 @@ class CHPPXml(CHPPBase):
             self,
             youth_team_id: Optional[int] = None,
             show_scouts: Optional[bool] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> youth_team_details.YouthTeamDetails:
         """Request the `youth_team_details.xml` file from the CHPP API.
 
@@ -2168,7 +2171,7 @@ class CHPP(CHPPXml):
 
     """
 
-    def arena(self, id_: Optional[int]=None, **kwargs) -> ht_arena.HTArena:
+    def arena(self, id_: Optional[int]=None, **kwargs: Any) -> ht_arena.HTArena:
         """Get an arena by its Hattrick ID.
 
         If no ID is defined, the arena of the connected user's primary team is returned.
@@ -2180,7 +2183,7 @@ class CHPP(CHPPXml):
         """
         return ht_arena.HTArena(chpp=self, arena_id=id_, **kwargs)
 
-    def league_unit(self, id_: Optional[int]=None, **kwargs) -> ht_league_unit.HTLeagueUnit:
+    def league_unit(self, id_: Optional[int]=None, **kwargs: Any) -> ht_league_unit.HTLeagueUnit:
         """Get a league unit by its Hattrick ID.
 
         If no ID is defined, the league unit of the connected user's primary team
@@ -2193,7 +2196,7 @@ class CHPP(CHPPXml):
         """
         return ht_league_unit.HTLeagueUnit(chpp=self, league_level_unit_id=id_, **kwargs)
 
-    def user(self, id_: Optional[int] = None, **kwargs) -> ht_user.HTUser:
+    def user(self, id_: Optional[int] = None, **kwargs: Any) -> ht_user.HTUser:
         """Get a user by their Hattrick ID.
 
         If no ID is defined, the connected user is returned.
@@ -2206,7 +2209,7 @@ class CHPP(CHPPXml):
         return ht_user.HTUser(chpp=self, user_id=id_, **kwargs)
 
     def team(
-        self, id_: Optional[int] = None, user_id: Optional[int] = None, **kwargs,
+        self, id_: Optional[int] = None, user_id: Optional[int] = None, **kwargs: Any,
     ) -> ht_team.HTTeam:
         """Get a team by its Hattrick ID.
 
@@ -2222,7 +2225,7 @@ class CHPP(CHPPXml):
         """
         return ht_team.HTTeam(chpp=self, team_id=id_, user_id=user_id, **kwargs)
 
-    def youth_team(self, id_: Optional[int]=None, **kwargs) -> ht_youth_team.HTYouthTeam:
+    def youth_team(self, id_: Optional[int]=None, **kwargs: Any) -> ht_youth_team.HTYouthTeam:
         """Get a youth team by its Hattrick ID.
 
         If no id_ is provided, the youth primary team of the connected user is returned.
@@ -2234,7 +2237,7 @@ class CHPP(CHPPXml):
         """
         return ht_youth_team.HTYouthTeam(chpp=self, youth_team_id=id_, **kwargs)
 
-    def player(self, id_: int, **kwargs) -> ht_player.HTPlayer:
+    def player(self, id_: int, **kwargs: Any) -> ht_player.HTPlayer:
         """Get a player by their Hattrick ID.
 
         Args:
@@ -2244,7 +2247,7 @@ class CHPP(CHPPXml):
         """
         return ht_player.HTPlayer(chpp=self, player_id=id_, **kwargs)
 
-    def youth_player(self, id_: int, **kwargs) -> ht_youth_player.HTYouthPlayer:
+    def youth_player(self, id_: int, **kwargs: Any) -> ht_youth_player.HTYouthPlayer:
         """Get a youth player by their Hattrick ID.
 
         Args:
@@ -2254,7 +2257,7 @@ class CHPP(CHPPXml):
         """
         return ht_youth_player.HTYouthPlayer(chpp=self, youth_player_id=id_, **kwargs)
 
-    def region(self, id_: Optional[int] = None, **kwargs) -> ht_region.HTRegion:
+    def region(self, id_: Optional[int] = None, **kwargs: Any) -> ht_region.HTRegion:
         """Get a region by its Hattrick ID.
 
         Args:
@@ -2268,7 +2271,7 @@ class CHPP(CHPPXml):
             self,
             team_id: Optional[int] = None,
             is_weekend_friendly: Optional[bool] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> ht_challenge.HTChallengeManager:
         """Get a challenge manager object.
 
@@ -2284,7 +2287,7 @@ class CHPP(CHPPXml):
 
     def league(
             self, id_: Optional[int] = None, country_id: Optional[int] = None,
-            include_regions: Optional[bool] = None, **kwargs,
+            include_regions: Optional[bool] = None, **kwargs: Any,
     ) -> ht_league.HTLeague:
         """Get a league by its Hattrick ID or from a country ID.
 
@@ -2303,7 +2306,7 @@ class CHPP(CHPPXml):
         id_: int,
         source_system: Optional[str] = None,
         events: Optional[bool] = None,
-        **kwargs,
+        **kwargs: Any,
     ):
         """Get a match by its Hattrick ID.
 
@@ -2321,7 +2324,9 @@ class CHPP(CHPPXml):
     def matches_archive(self, id_: Optional[int] = None, is_youth: Optional[bool] = None,
                         first_match_date: Optional[datetime] = None,
                         last_match_date: Optional[datetime] = None,
-                        season: Optional[int] = None, include_hto: Optional[bool] = None, **kwargs,
+                        season: Optional[int] = None,
+                        include_hto: Optional[bool] = None,
+                        **kwargs: Any,
                         ) -> ht_matches_archive.HTMatchesArchive:
         """Get a matches archive.
 
@@ -2344,7 +2349,7 @@ class CHPP(CHPPXml):
             match_id: Optional[int] = None,
             team_id: Optional[int] = None,
             source_system: Optional[str] = None,
-            **kwargs,
+            **kwargs: Any,
     ) -> ht_match_lineup.HTMatchLineup:
         """Get a match lineup.
 
@@ -2362,7 +2367,7 @@ class CHPP(CHPPXml):
 
     def transfer_history(
             self, team_id: Optional[int] = None, page: Optional[int] = None,
-            all_transfers: Optional[bool] = None, **kwargs,
+            all_transfers: Optional[bool] = None, **kwargs: Any,
     ) -> ht_transfer_history.HTTransferHistory:
         """Get the transfer history of a team.
 

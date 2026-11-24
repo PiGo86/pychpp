@@ -3,6 +3,7 @@
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.xml.match_details import MatchHomeTeam, MatchAwayTeam
+from typing import Any
 
 
 class BaseHTMatch(CustomModel):
@@ -35,6 +36,6 @@ class HTCommonLightMatch(BaseHTMatch):
         """Whether the match is a HTO integrated match."""
         return self.source_system == 'HTOIntegrated'
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this match."""
         return self._chpp.match(id_=self.id, source_system=self.source_system, **kwargs)

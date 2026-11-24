@@ -3,6 +3,7 @@
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.xml import youth_player_details as ypd
+from typing import Any
 
 
 class BaseCommonHTPlayer(CustomModel):
@@ -32,7 +33,7 @@ class HTCommonLightPlayer(BaseCommonHTPlayer):
                                               f"?playerID={self.id}")
         return self._url
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this player (youth or senior)."""
         if self.is_youth:
             return self._chpp.youth_player(id_=self.id, **kwargs)
@@ -47,7 +48,7 @@ class HTLightPlayer(BaseCommonHTPlayer):
     # not used for fetching data, but to allow url property to work correctly
     _r_id = HTInitVar(param='playerID', init_arg='id_', fill_with='id')
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this player."""
         return self._chpp.player(id_=self.id, **kwargs)
 
@@ -59,7 +60,7 @@ class HTLightYouthPlayer(BaseCommonHTPlayer):
     # not used for fetching data, but to allow url property to work correctly
     _r_id = HTInitVar(param='youthPlayerID', init_arg='id_', fill_with='id')
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
         """Get the full details of this youth player."""
         return self._chpp.youth_player(id_=self.id, **kwargs)
 

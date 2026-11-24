@@ -1,6 +1,6 @@
 """High-level custom model built on top of the xml models."""
 
-from typing import Optional, TYPE_CHECKING
+from typing import Any, Optional, TYPE_CHECKING
 
 if TYPE_CHECKING:
     from pychpp.chpp import CHPP
@@ -10,7 +10,7 @@ class HTTransferHistory:
     """Transfer history of a team."""
 
     def __init__(self, chpp: Optional['CHPP'] = None, team_id: Optional[int] = None,
-                 page: Optional[int] = None, all_transfers: Optional[bool] = False, **kwargs):
+                 page: Optional[int] = None, all_transfers: Optional[bool] = False, **kwargs: Any):
 
         self._chpp = chpp
         self.transfers = []
