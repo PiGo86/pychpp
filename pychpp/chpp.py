@@ -573,10 +573,6 @@ class CHPPXml(CHPPBase):
                 Hattrick uses DateTime.Now.
             stats_league_id: Which league to show statistics for. 0 = global statistic. Defaults
                 to 0.
-            id: Which arena to show details for. If `None` (the default), Hattrick uses the
-                authenticated user's own arena ID, if no team ID is supplied.
-            league_id: Which league to show statistics for. 0 = global statistic. If `None` (the
-                default), Hattrick uses 0.
 
         Returns:
             The parsed data from the `arena_details.xml` file.
@@ -885,8 +881,8 @@ class CHPPXml(CHPPBase):
                 `None` (the default), Hattrick uses 25.
             page_index: What page to be shown, starts from 0. If `None` (the default), Hattrick
                 uses -1.
-            **kwargs: Additional keyword arguments forwarded to the model class.
             ladder_id: Ladder ID to get data for.
+            **kwargs: Additional keyword arguments forwarded to the model class.
 
         Returns:
             The parsed data from the `ladder_details.xml` file.
@@ -990,8 +986,8 @@ class CHPPXml(CHPPBase):
                          session), 'addMatch' (Add a new match to be tracked), 'deleteMatch'
                          (Remove a particular match from the session).
             match_id: The globally unique matchID.
-            source_system: Specifies which source system the match belongs to, this replace the old
-                           isYouth param. Defaults to hattrick.
+            source_system: Specifies which source system the match belongs to.
+                           Defaults to hattrick.
             include_starting_lineup: Should StartingLineup and Substitutions be included in the
                                      response? Defaults to false.
             use_live_events_and_texts: Should the events and texts be as on the live page on the
@@ -1036,8 +1032,7 @@ class CHPPXml(CHPPBase):
 
         Args:
             match_id: Which match to show details for.
-            source_system: Specifies which source system the match belongs to, this replace the old
-                           isYouth param.
+            source_system: Specifies which source system the match belongs to.
             match_events: Whether match events shall be shown or not. Allowed values: 'false' (Show
                           no match events), 'true' (Show match events).
             **kwargs: Additional keyword arguments forwarded to the model class.
@@ -1062,8 +1057,8 @@ class CHPPXml(CHPPBase):
                 default), Hattrick uses the last match.
             team_id: Specifies which of the two participating teams data should be shown for. If
                 `None` (the default), Hattrick uses the authenticated user's team.
-            source_system: Specifies which source system the match belongs to, this replace the
-                old isYouth param. If `None` (the default), Hattrick uses Hattrick.
+            source_system: Specifies which source system the match belongs to.
+                           If `None` (the default), Hattrick uses Hattrick.
             **kwargs: Additional keyword arguments forwarded to the model class.
 
         Returns:
@@ -1093,8 +1088,8 @@ class CHPPXml(CHPPBase):
             team_id: Team ID to get/set orders for. Must refer to a senior or youth team managed
                 by requesting user. If `None` (the default), Hattrick uses the authenticated
                 user's primary team ID.
-            source_system: Specifies which source system the match belongs to, this replace the old
-                           isYouth param. Defaults to Hattrick.
+            source_system: Specifies which source system the match belongs to.
+                           Defaults to Hattrick.
             lineup: JSON formatted match orders to set for the match specified or to predict
                     ratings. Must be specified as request body for POST. Required for
                     actionType=setmatchorder and optional for actionType=predictratings, otherwise
@@ -1140,10 +1135,10 @@ class CHPPXml(CHPPBase):
                 isYouth. If `None` (the default), Hattrick uses the authenticated user's senior or
                 youth team ID.
             is_youth: Is request for youth or not. If `None` (the default), Hattrick uses false.
-            **kwargs: Additional keyword arguments forwarded to the model class.
             last_match_date: Last date to show matches to. If more than 50 matches are affected,
                              only the 50 first will be returned. If `None` (the default), Hattrick
                              uses Datetime.Now + 28 days.
+            **kwargs: Additional keyword arguments forwarded to the model class.
 
         Returns:
             The parsed data from the `matches.xml` file.
@@ -1552,8 +1547,8 @@ class CHPPXml(CHPPBase):
                 except that ownerless teams can only be accessed if submitting a teamID and that
                 users without a team can only be accessed if userID is submitted. If `None` (the
                 default), Hattrick uses the authenticated user's senior team ID.
-            user_id: Which team/user to show data for. If neither userID or teamID is supplied,
-                     userID defaults to the authenticated user's ID (if teamID is also not set).
+            user_id: Which team/user to show data for. If neither user_id nor team_id is supplied,
+                     user_id defaults to the authenticated user's ID.
             include_domestics_flags: Whether or not the teams own country should be included in
                 the flag collections (provided games against domestic opponents have been played).
                 If `None` (the default), Hattrick uses false.
@@ -1649,7 +1644,7 @@ class CHPPXml(CHPPBase):
             tournament_id: The ID for the tournament to get data for.
             season: The season of the tournament.
             world_cup_round: Specifies which particular world cup stage data is requested for. Used
-                             only for World Cup tournaments. Otherwise not used.
+                             only for World Cup tournaments. Otherwise, not used.
             **kwargs: Additional keyword arguments forwarded to the model class.
 
         Returns:
@@ -1942,7 +1937,7 @@ class CHPPXml(CHPPBase):
         Args:
             action_type: Indicates what type of action the page should perform. Allowed values:
                          'viewMatches' (View a list of the matches of a particular group),
-                         'viewGroups' (View a list of the groups (with points, place etc) of a
+                         'viewGroups' (View a list of the groups (with points, place, etc.) of a
                          particular round, season).
             cup_id: The globally unique cupID. If `None` (the default), Hattrick uses 137 (the
                 World Cup).
