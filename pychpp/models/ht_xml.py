@@ -1,16 +1,26 @@
+"""Helpers to parse and format the xml data returned by the CHPP API."""
+
 import datetime
+from typing import Optional
 from xml.etree import ElementTree
 
 from pychpp.fixtures import ht_datetime
 
 
 class HTXml:
-    """
-    Gather different method to parse xml files fetched on Hattrick
-    """
+    """Gather the different methods used to parse the xml files fetched on Hattrick."""
 
     @staticmethod
-    def ht_str(data: ElementTree.Element, attrib: str = None):
+    def ht_str(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
+        """Return the text of an xml element, or one of its attributes, as a string.
+
+        Args:
+            data: Xml element to read.
+            attrib: Name of the attribute to read instead of the text.
+
+        """
+        if data is None:
+            return None
         if attrib is not None:
             return str(data.attrib.get(attrib, None))
         else:
@@ -18,10 +28,26 @@ class HTXml:
 
     @staticmethod
     def ht_str_items(data: ElementTree.Element, item_tag: str):
+        """Return the texts of all the children of an xml element with the given tag.
+
+        Args:
+            data: Xml element to read.
+            item_tag: Tag of the children to read.
+
+        """
         return [item.text for item in data.findall(item_tag)]
 
     @staticmethod
-    def ht_int(data: ElementTree.Element, attrib: str = None):
+    def ht_int(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
+        """Return the text of an xml element as an int ('Not available' becomes None).
+
+        Args:
+            data: Xml element to read.
+            attrib: Name of the attribute to read instead of the text.
+
+        """
+        if data is None:
+            return None
         if attrib is not None:
             return int(data.attrib.get(attrib, None))
         else:
@@ -31,14 +57,32 @@ class HTXml:
                 return int(data.text)
 
     @staticmethod
-    def ht_float(data: ElementTree.Element, attrib: str = None):
+    def ht_float(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
+        """Return the text of an xml element as a float (comma replaced by dot).
+
+        Args:
+            data: Xml element to read.
+            attrib: Name of the attribute to read instead of the text.
+
+        """
+        if data is None:
+            return None
         if attrib is not None:
             return float(data.attrib.get(attrib, None).replace(',', '.'))
         else:
             return float(data.text.replace(',', '.')) if data.text is not None else None
 
     @staticmethod
-    def ht_bool(data: ElementTree.Element, attrib: str = None):
+    def ht_bool(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
+        """Return the text of an xml element as a bool.
+
+        Args:
+            data: Xml element to read.
+            attrib: Name of the attribute to read instead of the text.
+
+        """
+        if data is None:
+            return None
         if attrib is not None:
             value = data.attrib.get(attrib, None)
         else:
@@ -53,12 +97,31 @@ class HTXml:
 
     @staticmethod
     def iter_data_items(data, item_tag):
+        """Iterate over the children of an xml element with the given tag.
+
+        Args:
+            data: Xml element to read.
+            item_tag: Tag of the children to iterate over.
+
+        Yields:
+            The matching child elements.
+
+        """
         if data is not None:
             for item in data.findall(item_tag):
                 yield item
 
     @staticmethod
     def ht_goals(data):
+        """Parse the goals of a match xml node.
+
+        Args:
+            data: Xml node containing the Goal elements.
+
+        Returns:
+            A list of dicts describing each goal.
+
+        """
         goals = list()
         for goal in data.findall('Goal'):
             goals.append({"player_id": int(goal.find("ScorerPlayerID").text),
@@ -72,6 +135,15 @@ class HTXml:
 
     @staticmethod
     def ht_match_events(data):
+        """Parse the events of a match xml node.
+
+        Args:
+            data: Xml node containing the Event elements.
+
+        Returns:
+            A list of dicts describing each event.
+
+        """
         events = list()
         for event in data.findall('Event'):
             events.append({"minute": int(event.find("Minute").text),
@@ -89,15 +161,19 @@ class HTXml:
         return events
 
     @staticmethod
-    def ht_datetime_from_text(data: ElementTree.Element, attrib: str = None):
-        """
-        Converting strings from xml data to HTDatetime objects
+    def ht_datetime_from_text(data: Optional[ElementTree.Element], attrib: Optional[str] = None):
+        """Convert a string from xml data to a HTDatetime object.
 
-        :param data: xml data representing a date and a time
-        :param attrib: attr to fetch
-        :return: a datetime object
-        :rtype: ht_datetime.HTDatetime
+        Args:
+            data: Xml data representing a date and a time.
+            attrib: Name of the attribute to fetch instead of the text.
+
+        Returns:
+            A HTDatetime object.
+
         """
+        if data is None:
+            return None
         if attrib is not None:
             _datetime = datetime.datetime.strptime(data.attrib.get(attrib), "%Y-%m-%d %H:%M:%S")
         else:
@@ -105,15 +181,21 @@ class HTXml:
         return ht_datetime.HTDatetime(datetime=_datetime)
 
     @staticmethod
-    def opt_ht_datetime_from_text(data: ElementTree.Element, attrib: str = None):
-        """
-        Converting strings from xml data to HTDatetime objects optionnaly
+    def opt_ht_datetime_from_text(
+        data: Optional[ElementTree.Element], attrib: Optional[str] = None,
+    ):
+        """Convert a string from xml data to a HTDatetime object, or None if empty.
 
-        :param data: xml data representing a date and a time
-        :param attrib: attr to fetch
-        :return: a datetime object or None
-        :rtype: ht_datetime.HTDatetime | None
+        Args:
+            data: Xml data representing a date and a time.
+            attrib: Name of the attribute to fetch instead of the text.
+
+        Returns:
+            A HTDatetime object, or None if the data is empty or cannot be parsed.
+
         """
+        if data is None:
+            return None
         if attrib is not None:
             data_ = data.attrib.get(attrib)
         else:
@@ -140,15 +222,15 @@ class HTXml:
 
     @staticmethod
     def ht_datetime_to_text(_datetime):
-        """
-        Converting HTDatetime objects to string
+        """Convert a datetime object to a string.
 
-        :param _datetime: a datetime object
-        :type _datetime: datetime.datetime or ht_datetime.HTDatetime
-        :return: a string representing a date and a time
-        :rtype: str
-        """
+        Args:
+            _datetime: A datetime or HTDatetime object.
 
+        Returns:
+            A string representing a date and a time, e.g. "2006-02-23 20:00:00".
+
+        """
         # if a datetime instance is given
         # convert it to HTDatetime in CET timezone
         if isinstance(_datetime, datetime.datetime):
@@ -159,15 +241,15 @@ class HTXml:
 
     @staticmethod
     def ht_date_to_text(_datetime):
-        """
-        Converting HTDatetime objects to string
+        """Convert a datetime object to a date string.
 
-        :param _datetime: a datetime object
-        :type _datetime: datetime.datetime or ht_datetime.HTDatetime
-        :return: a string representing a date and a time
-        :rtype: str
-        """
+        Args:
+            _datetime: A datetime or HTDatetime object.
 
+        Returns:
+            A string representing a date, e.g. "2006-02-23".
+
+        """
         # if a datetime instance is given
         # convert it to HTDatetime in CET timezone
         if isinstance(_datetime, datetime.datetime):
@@ -178,4 +260,10 @@ class HTXml:
 
     @staticmethod
     def to_string(data):
+        """Serialize an xml element to a string.
+
+        Args:
+            data: Xml element to serialize.
+
+        """
         return ElementTree.tostring(data, encoding='unicode')

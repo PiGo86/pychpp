@@ -1,8 +1,9 @@
+"""Tests for the `youthplayerlist.xml` CHPP file parsing."""
+
 from pychpp.models.xml.youth_player_list import YouthPlayerListList, YouthPlayerListDetails
 
 
 def test_youth_player_list_version_1_4(mocked_chpp):
-
     ypl = mocked_chpp.xml_youth_player_list(version='1.4')
     assert isinstance(ypl, YouthPlayerListList)
     assert len(ypl.list) == 14

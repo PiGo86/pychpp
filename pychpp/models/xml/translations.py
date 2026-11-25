@@ -1,3 +1,5 @@
+"""Models for the `translations.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTranslations(HTModel):
-    """
-    Translations - Request arguments
-    """
+    """Translations - Request arguments."""
     SOURCE_FILE = 'translations'
     LAST_VERSION = '1.2'
 
@@ -16,18 +16,14 @@ class RequestTranslations(HTModel):
 
 
 class Translations(RequestTranslations):
-    """
-    Translations
-    """
+    """Parsed data of the `translations.xml` CHPP file."""
     id: int = HTField('Language', attrib='Id')
     name: str = HTField('Language')
     texts: 'Texts' = HTField('Texts')
 
 
 class Texts(HTModel):
-    """
-    Translations -> Texts
-    """
+    """Translations -> Texts."""
     skill_names: List['SkillNameItem'] = HTField('SkillNames', items='Skill')
     skill_levels: List['SkillLevelItem'] = HTField('SkillLevels', items='Level')
     skill_sub_levels: List['SkillSubLevelItem'] = HTField('SkillSubLevels', items='SubLevel')
@@ -50,73 +46,55 @@ class Texts(HTModel):
 
 
 class SkillNameItem(HTModel):
-    """
-    Translations -> Skill Names -> Skill item
-    """
+    """Translations -> Skill Names -> Skill item."""
     type: str = HTField('.', attrib='Type')
     type_name: str = HTField('.')
 
 
 class SkillLevelItem(HTModel):
-    """
-    Translations -> Skill Levels -> Skill item
-    """
+    """Translations -> Skill Levels -> Skill item."""
     value: int = HTField('.', attrib='Value')
     value_name: str = HTField('.')
 
 
 class SkillSubLevelItem(HTModel):
-    """
-    Translations -> Skill Levels -> Skill item
-    """
+    """Translations -> Skill Levels -> Skill item."""
     value: float = HTField('.', attrib='Value')
     value_name: str = HTField('.')
 
 
 class TranslationListItemValue(HTModel):
-    """
-    Translations -> Translation list - Item-Value
-    """
+    """Translations -> Translation list - Item-Value."""
     label: str = HTField('.', attrib='Label')
     list: List['LevelOrItemValue'] = HTField('.', items='Item')
 
 
 class TranslationListItemType(HTModel):
-    """
-    Translations -> Translation list - Item-Type
-    """
+    """Translations -> Translation list - Item-Type."""
     label: str = HTField('.', attrib='Label')
     list: List['LevelOrItemType'] = HTField('.', items='Item')
 
 
 class TranslationListLevelValue(HTModel):
-    """
-    Translations -> Translation list - Level-Value
-    """
+    """Translations -> Translation list - Level-Value."""
     label: str = HTField('.', attrib='Label')
     list: List['LevelOrItemValue'] = HTField('.', items='Level')
 
 
 class LevelOrItemValue(HTModel):
-    """
-    Translations -> Translation list -> Translation list item - Level or Item with Value
-    """
+    """Translations -> Translation list -> Translation list item - Level or Item with Value."""
     value: int = HTField('.', attrib='Value')
     label: str = HTField('.')
 
 
 class LevelOrItemType(HTModel):
-    """
-    Translations -> Translation list -> Translation list item - Level or Item with Type
-    """
+    """Translations -> Translation list -> Translation list item - Level or Item with Type."""
     type: str = HTField('.', attrib='Type')
     label: str = HTField('.')
 
 
 class LeagueItem(HTModel):
-    """
-    Translations -> League Names -> League item
-    """
+    """Translations -> League Names -> League item."""
     id: int = HTField('LeagueId')
     local_name: str = HTField('LocalLeagueName')
     language_name: str = HTField('LanguageLeagueName')

@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_region` model."""
+
 import re
 
 from pychpp.models.custom.ht_region import HTRegion

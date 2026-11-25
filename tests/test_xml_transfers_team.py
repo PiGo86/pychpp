@@ -1,9 +1,10 @@
+"""Tests for the `transfersteam.xml` CHPP file parsing."""
+
 from pychpp.models.xml.transfers_team import TransfersTeam, TransfersTransferItem
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_get_team_transfers(mocked_chpp):
-
     transfers_team = mocked_chpp.xml_transfers_team(team_id=940, page_index=1)
 
     assert isinstance(transfers_team, TransfersTeam)

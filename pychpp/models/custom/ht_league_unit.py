@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from typing import List
 
 from pychpp.models.custom.base.ht_league import HTLightLeague
@@ -8,9 +10,7 @@ from pychpp.models.xml.league_details import LeagueDetails, League, TeamItem
 
 
 class HTLeagueUnit(LeagueDetails, BaseHTLeagueUnit):
-    """
-    Hattrick League Level Unit
-    """
+    """Hattrick League Level Unit."""
     id: int = HTProxyField(LeagueDetails, 'league_level_unit_id')
     name: str = HTProxyField(LeagueDetails, 'league_level_unit_name')
     league: 'HTLeagueUnitLeague' = HTProxyField(LeagueDetails)
@@ -18,12 +18,8 @@ class HTLeagueUnit(LeagueDetails, BaseHTLeagueUnit):
 
 
 class HTLeagueUnitLeague(HTLightLeague, League):
-    """
-    Hattrick League Level Unit -> League
-    """
+    """Hattrick League Level Unit -> League."""
 
 
 class HTLeagueUnitLeagueTeamItem(HTLightTeam, TeamItem):
-    """
-    Hattrick League Level Unit -> Teams -> Team item
-    """
+    """Hattrick League Level Unit -> Teams -> Team item."""

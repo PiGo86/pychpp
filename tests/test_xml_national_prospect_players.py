@@ -1,8 +1,9 @@
+"""Tests for the `nationalprospectplayers.xml` CHPP file parsing."""
+
 from pychpp.models.xml.national_prospect_players import NationalProspectPlayers
 
 
 def test_national_prospect_players_version_1_0(mocked_chpp):
-
     npp = mocked_chpp.xml_national_prospect_players(team_id=3001, version='1.0')
 
     assert isinstance(npp, NationalProspectPlayers)

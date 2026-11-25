@@ -1,3 +1,5 @@
+"""Models for the `matchorders.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestMatchOrders(HTModel):
-    """
-    Match Orders - Request arguments
-    """
+    """Match Orders - Request arguments."""
     SOURCE_FILE = 'matchorders'
     LAST_VERSION = '3.1'
 
@@ -21,24 +21,18 @@ class RequestMatchOrders(HTModel):
 
 
 class CommonMatchOrders(RequestMatchOrders):
-    """
-    Match Orders
-    """
+    """Match Orders."""
     id: int = HTField('MatchID')
     source_system: str = HTField('SourceSystem')
 
 
 class MatchOrdersView(CommonMatchOrders):
-    """
-    Match Orders - View
-    """
+    """Match Orders - View."""
     match_data: Optional['MatchDataView'] = HTField('MatchData')
 
 
 class MatchDataView(HTModel):
-    """
-    Match Orders - View -> Match Data
-    """
+    """Match Orders - View -> Match Data."""
     available: bool = HTField('.', attrib='Available')
     home_team: 'Team' = HTField('HomeTeam', xml_prefix='Home')
     away_team: 'Team' = HTField('AwayTeam', xml_prefix='Away')
@@ -53,25 +47,19 @@ class MatchDataView(HTModel):
 
 
 class Team(HTModel):
-    """
-    Match Orders - View -> Match Data -> Home/Away Team
-    """
+    """Match Orders - View -> Match Data -> Home/Away Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class Arena(HTModel):
-    """
-    Match Orders - View -> Match Data -> Arena
-    """
+    """Match Orders - View -> Match Data -> Arena."""
     id: int = HTField('ArenaID')
     name: str = HTField('ArenaName')
 
 
 class Lineup(HTModel):
-    """
-    Match Orders - View -> Match Data -> Lineup
-    """
+    """Match Orders - View -> Match Data -> Lineup."""
     positions: List['PositionPlayerItem'] = HTField('Positions', items='Player')
     bench: List['BenchPlayerItem'] = HTField('Bench', items='Player')
     kickers: List['KickerPlayerItem'] = HTField('Kickers', items='Player')
@@ -80,9 +68,7 @@ class Lineup(HTModel):
 
 
 class BasePlayer(HTModel):
-    """
-    Match Orders - View -> Match Data -> Lineup -> Base player
-    """
+    """Match Orders - View -> Match Data -> Lineup -> Base player."""
     id: int = HTField('PlayerID')
     first_name: str = HTField('FirstName')
     nick_name: str = HTField('NickName')
@@ -90,44 +76,32 @@ class BasePlayer(HTModel):
 
 
 class PositionPlayerItem(BasePlayer):
-    """
-    Match Orders - View -> Match Data -> Lineup -> Positions -> Player item
-    """
+    """Match Orders - View -> Match Data -> Lineup -> Positions -> Player item."""
     role_id: int = HTField('RoleID')
     behaviour: int = HTField('Behaviour')
 
 
 class BenchPlayerItem(BasePlayer):
-    """
-    Match Orders - View -> Match Data -> Lineup -> Bench -> Player item
-    """
+    """Match Orders - View -> Match Data -> Lineup -> Bench -> Player item."""
     role_id: int = HTField('RoleID')
 
 
 class KickerPlayerItem(HTModel):
-    """
-    Match Orders - View -> Match Data -> Lineup -> Kickers -> Player item
-    """
+    """Match Orders - View -> Match Data -> Lineup -> Kickers -> Player item."""
     id: int = HTField('PlayerID')
     role_id: int = HTField('RoleID')
 
 
 class SetPieces(BasePlayer):
-    """
-    Match Orders - View -> Match Data -> Lineup -> Set Pieces
-    """
+    """Match Orders - View -> Match Data -> Lineup -> Set Pieces."""
 
 
 class Captain(BasePlayer):
-    """
-    Match Orders - View -> Match Data -> Lineup -> Captain
-    """
+    """Match Orders - View -> Match Data -> Lineup -> Captain."""
 
 
 class PlayerOrderItem(HTModel):
-    """
-    Match Orders - View -> Match Data -> Player Orders -> Player order item
-    """
+    """Match Orders - View -> Match Data -> Player Orders -> Player order item."""
     id: int = HTField('PlayerOrderID')
     match_minute_criteria: int = HTField('MatchMinuteCriteria')
     goal_diff_criteria: int = HTField('GoalDiffCriteria')
@@ -141,32 +115,24 @@ class PlayerOrderItem(HTModel):
 
 
 class MatchOrdersSetMatchOrder(CommonMatchOrders):
-    """
-    Match Orders - Set match order
-    """
+    """Match Orders - Set match order."""
     METHOD = 'POST'
     match_data: Optional['MatchDataSetMatchOrder'] = HTField('MatchData')
 
 
 class MatchDataSetMatchOrder(HTModel):
-    """
-    Match Orders - Set match order -> Match Data
-    """
+    """Match Orders - Set match order -> Match Data."""
     orders_set: bool = HTField('.', attrib='OrdersSet')
     reason: Optional[str] = HTField('Reason')
 
 
 class MatchOrdersPredictRatings(CommonMatchOrders):
-    """
-    Match Orders - Predict Ratings
-    """
+    """Match Orders - Predict Ratings."""
     match_data: Optional['MatchDataPredictRatings'] = HTField('MatchData')
 
 
 class MatchDataPredictRatings(HTModel):
-    """
-    Match Orders - Predict Ratings -> Match Data
-    """
+    """Match Orders - Predict Ratings -> Match Data."""
     tactic_type: int = HTField('TacticType')
     tactic_skill: int = HTField('TacticSkill')
     rating_midfield: int = HTField('RatingMidfield')

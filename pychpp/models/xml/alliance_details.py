@@ -1,3 +1,5 @@
+"""Models for the `alliancedetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestAllianceDetails(HTModel):
-    """
-    Alliance Details - Base request arguments
-    """
+    """Alliance Details - Base request arguments."""
     SOURCE_FILE = 'alliancedetails'
     LAST_VERSION = '1.5'
 
@@ -19,39 +19,29 @@ class RequestAllianceDetails(HTModel):
 
 
 class BaseAllianceDetails(RequestAllianceDetails):
-    """
-    Alliance Details
-    """
+    """Alliance Details."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     action_type: str = HTField('ActionType')
 
 
 class AllianceDetailsView(BaseAllianceDetails):
-    """
-    Alliance Details - View
-    """
+    """Alliance Details - View."""
     alliance: 'AllianceView' = HTField('Alliance')
 
 
 class AllianceDetailsRoles(BaseAllianceDetails):
-    """
-    Alliance Details - Roles
-    """
+    """Alliance Details - Roles."""
     alliance: 'AllianceRoles' = HTField('Alliance')
 
 
 class BaseAlliance(HTModel):
-    """
-    Alliance Details -> Base Alliance
-    """
+    """Alliance Details -> Base Alliance."""
     id: int = HTField('AllianceID')
     name: str = HTField('AllianceName')
 
 
 class AllianceView(BaseAlliance):
-    """
-    Alliance Details - View -> Alliance
-    """
+    """Alliance Details - View -> Alliance."""
     abbreviation: str = HTField('Abbreviation')
     description: str = HTField('Description')
     logo_url: str = HTField('LogoURL')
@@ -68,32 +58,24 @@ class AllianceView(BaseAlliance):
 
 
 class AllianceLanguageItem(HTModel):
-    """
-    Alliance Details - View -> Alliance -> Languages -> Language item
-    """
+    """Alliance Details - View -> Alliance -> Languages -> Language item."""
     id: int = HTField('LanguageID')
     name: str = HTField('LanguageName')
 
 
 class AllianceUserRole(HTModel):
-    """
-    Alliance Details - View -> Alliance -> User Role
-    """
+    """Alliance Details - View -> Alliance -> User Role."""
     id: int = HTField('RoleId')
     name: str = HTField('RoleName')
 
 
 class AllianceRoles(HTModel):
-    """
-    Alliance Details - Roles -> Alliance
-    """
+    """Alliance Details - Roles -> Alliance."""
     roles: List['AllianceRoleItem'] = HTField('Roles', items='Role', xml_prefix='Role')
 
 
 class AllianceRoleItem(HTModel):
-    """
-    Alliance Details - Roles -> Alliance -> Roles -> Role item
-    """
+    """Alliance Details - Roles -> Alliance -> Roles -> Role item."""
     id: int = HTField('Id')
     name: str = HTField('Name')
     rank: int = HTField('Rank')
@@ -104,31 +86,23 @@ class AllianceRoleItem(HTModel):
 
 
 class AllianceDetailsMembers(BaseAllianceDetails):
-    """
-    Alliance Details - Members
-    """
+    """Alliance Details - Members."""
     alliance: 'AllianceMembers' = HTField('Alliance')
 
 
 class AllianceMembers(BaseAlliance):
-    """
-    Alliance Details - Members -> Alliance
-    """
+    """Alliance Details - Members -> Alliance."""
     members: List['AllianceMemberItem'] = HTField('Members', items='Member')
 
 
 class AllianceDetailsMembersSubset(BaseAllianceDetails):
-    """
-    Alliance Details - Members Subset
-    """
+    """Alliance Details - Members Subset."""
     list_subset: str = HTField('ListSubset')
     members: List['AllianceMemberItem']
 
 
 class AllianceMemberItem(HTModel):
-    """
-    Alliance Details - Members/Members Subset -> Alliance -> Members -> Member item
-    """
+    """Alliance Details - Members/Members Subset -> Alliance -> Members -> Member item."""
     user_id: int = HTField('UserID')
     login_name: str = HTField('Loginname')
     role_id: int = HTField('RoleId')

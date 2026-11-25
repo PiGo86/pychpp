@@ -1,3 +1,5 @@
+"""Tests for the `worldcup.xml` CHPP file parsing."""
+
 from pychpp.models.xml.world_cup import (WorldCupViewGroups, ViewGroupsRoundItem,
                                          WorldCupViewMatches, ViewGroupsTeamItem,
                                          ViewMatchesMatchItem, ViewMatchesRoundItem)

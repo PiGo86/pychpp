@@ -1,3 +1,5 @@
+"""Models for the `nationalprospectplayers.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestNationalProspectPlayers(HTModel):
-    """
-    National Prospect Players - Request arguments
-    """
+    """National Prospect Players - Request arguments."""
     SOURCE_FILE = 'nationalprospectplayers'
     LAST_VERSION = '1.0'
 
@@ -18,9 +18,7 @@ class RequestNationalProspectPlayers(HTModel):
 
 
 class NationalProspectPlayers(RequestNationalProspectPlayers):
-    """
-    National Prospect Players
-    """
+    """National Prospect Players."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     team_id: int = HTField('TeamID')
     team_name: str = HTField('TeamName')
@@ -28,9 +26,7 @@ class NationalProspectPlayers(RequestNationalProspectPlayers):
 
 
 class PlayerItem(HTModel):
-    """
-    National Prospect Players -> Players -> Player item
-    """
+    """National Prospect Players -> Players -> Player item."""
     id: int = HTField('PlayerID')
     name: str = HTField('PlayerName')
     category_id: int = HTField('PlayerCategoryId')
@@ -39,17 +35,13 @@ class PlayerItem(HTModel):
 
 
 class Avatar(HTModel):
-    """
-    National Prospect Players -> Players -> Player item -> Avatar
-    """
+    """National Prospect Players -> Players -> Player item -> Avatar."""
     background_image: str = HTField('BackgroundImage')
     layers: List['LayerItem'] = HTField('.', items='Layer')
 
 
 class LayerItem(HTModel):
-    """
-    National Prospect Players -> Players -> Player item -> Avatar -> Layer
-    """
+    """National Prospect Players -> Players -> Player item -> Avatar -> Layer."""
     x: int = HTField('.', attrib='x')
     y: int = HTField('.', attrib='y')
     image: str = HTField('Image')

@@ -1,3 +1,5 @@
+"""High-level custom model built on top of the xml models."""
+
 from typing import List
 
 from pychpp.models.custom.base.ht_country import BaseHTCountry
@@ -9,17 +11,17 @@ from pychpp.models.xml.world_details import RequestWorldDetails, LeagueItem, Lea
 
 
 class HTLeague(RequestWorldDetails, LeagueItem, BaseHTLeague):
-    """
-    Hattrick League
-    """
+    """Hattrick League."""
     XML_PREFIX = 'LeagueList/League/'
 
     country: 'HTLeagueCountry' = HTProxyField(LeagueItem)
 
 
 class HTLeagueCountry(LeagueItemCountry, BaseHTCountry):
+    """Country of a league."""
     regions: List['HTLeagueCountryRegion'] = HTProxyField(LeagueItemCountry)
 
 
 class HTLeagueCountryRegion(LeagueItemCountryRegionItem, HTLightRegion):
+    """Region of a league's country."""
     pass

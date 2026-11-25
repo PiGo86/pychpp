@@ -1,7 +1,9 @@
+"""High-level custom model built on top of the xml models."""
+
 from copy import deepcopy
 from dataclasses import dataclass
 from enum import Enum
-from typing import List, Optional, Union, Iterable, Dict
+from typing import Any, List, Optional, Iterable, Dict
 
 from pychpp.models.custom import CustomModel
 from pychpp.models.custom.base.ht_match import HTCommonLightMatch
@@ -11,9 +13,7 @@ from pychpp.models.xml import match_lineup as ml
 
 
 class HTMatchLineup(CustomModel, ml.RequestMatchLineup):
-    """
-    Hattrick Match Lineup
-    """
+    """Hattrick Match Lineup."""
     URL_PATH = '/Club/Matches/Match.aspx'
     URL_SUFFIX = '#tab2'
 
@@ -32,9 +32,7 @@ class HTMatchLineup(CustomModel, ml.RequestMatchLineup):
 
 
 class HTMatchLineupMatch(HTCommonLightMatch):
-    """
-    Hattrick Match Lineup -> Match
-    """
+    """Hattrick Match Lineup -> Match."""
     id: int = HTProxyField(ml.MatchLineup, 'match_id')
     type: int = HTProxyField(ml.MatchLineup, 'match_type')
     context_id: Optional[int] = HTProxyField(ml.MatchLineup, 'match_context_id')
@@ -43,25 +41,21 @@ class HTMatchLineupMatch(HTCommonLightMatch):
 
 
 class HTMatchLineupTeam(CustomModel, ml.Team):
-    """
-    Hattrick Match Lineup -> Home/Away Team
-    """
-    def details(self, **kwargs):
+    """Hattrick Match Lineup -> Home/Away Team."""
+    def details(self, **kwargs: Any):
+        """Get the full details of this team."""
         return self._chpp.team(id_=self.id, **kwargs)
 
 
 class HTMatchLineupArena(CustomModel, ml.Arena):
-    """
-    Hattrick Match Lineup -> Arena
-    """
-    def details(self, **kwargs):
+    """Hattrick Match Lineup -> Arena."""
+    def details(self, **kwargs: Any):
+        """Get the full details of this arena."""
         return self._chpp.arena(id_=self.id, **kwargs)
 
 
 class HTMatchLineupTeamLineup(CustomModel):
-    """
-    Hattrick Match Lineup -> Team lineup
-    """
+    """Hattrick Match Lineup -> Team lineup."""
     source_system: str
 
     id: int = HTProxyField(ml.TeamLineup)
@@ -76,7 +70,7 @@ class HTMatchLineupTeamLineup(CustomModel):
         ml.TeamLineup, 'lineup', suppl_attrs={'source_system': 'source_system'},
     )
 
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs: Any):
         self._starting_lineup: Optional[dict] = None
         self._ending_lineup: Optional[dict] = None
         self._starting_formation: Optional[str] = None
@@ -92,10 +86,9 @@ class HTMatchLineupTeamLineup(CustomModel):
 
         lineup: Dict[str,
                      Dict[int,
-                          Optional[Union['HTMLStartingLineupPlayersItem',
-                                         'HTMLEndingLineupPlayersItem',
-                                         'GhostPlayer',
-                                         ]]]]
+                          Optional[HTMLStartingLineupPlayersItem
+                                   | HTMLEndingLineupPlayersItem
+                                   | GhostPlayer]]]
         lineup = {a.name: {v: None for v in a.value} for a in LineupGlobalRoles}
 
         for p in lineup_players:
@@ -131,31 +124,35 @@ class HTMatchLineupTeamLineup(CustomModel):
 
     @property
     def starting_lineup(self):
+        """Starting lineup, as a dict of position -> role_id -> player."""
         if self._starting_lineup is None:
             self._starting_lineup = self._base_lineup(start=True)
         return self._starting_lineup
 
     @property
     def ending_lineup(self):
+        """Ending lineup, as a dict of position -> role_id -> player."""
         if self._ending_lineup is None:
             self._ending_lineup = self._base_lineup(start=False)
         return self._ending_lineup
 
     @property
     def starting_formation(self):
+        """Formation at the start of the match (e.g. '433')."""
         if self._starting_formation is None:
             self._starting_formation = self._base_formation(start=True)
         return self._starting_formation
 
     @property
     def ending_formation(self):
+        """Formation at the end of the match (e.g. '433')."""
         if self._ending_formation is None:
             self._ending_formation = self._base_formation(start=False)
         return self._ending_formation
 
     @property
     def formations(self):
-
+        """List of (minute, formation) tuples for each formation change during the match."""
         if self._formations is None:
             lineup = deepcopy(self.starting_lineup)
             end_lineup = self.ending_lineup
@@ -288,45 +285,41 @@ class HTMatchLineupTeamLineup(CustomModel):
 
 
 class HTMLLineupPlayersItem(HTCommonLightPlayer):
-    """
-    Hattrick Match Lineup -> Team lineup -> Starting/Ending lineup -> Player item
-    """
+    """Hattrick Match Lineup -> Team lineup -> Starting/Ending lineup -> Player item."""
     role_id: int
     source_system: str
 
     @property
     def is_youth(self):
+        """Whether the player is a youth player."""
         return self.source_system == 'Youth'
 
     @property
     def role_name(self):
+        """Name of the player's role in the lineup (e.g. 'KEEPER')."""
         return LineupRoles(self.role_id).name
 
 
 class HTMLStartingLineupPlayersItem(HTMLLineupPlayersItem, ml.TeamStartingLineupPlayerItem):
-    """
-    Hattrick Match Lineup -> Team lineup -> Starting lineup -> Player item
-    """
+    """Hattrick Match Lineup -> Team lineup -> Starting lineup -> Player item."""
 
 
 class HTMLSubstitutionItem(CustomModel, ml.TeamSubstitutionItem):
-    """
-    Hattrick Match Lineup -> Team lineup -> Substitutions -> Substitution item
-    """
+    """Hattrick Match Lineup -> Team lineup -> Substitutions -> Substitution item."""
 
 
 class HTMLEndingLineupPlayersItem(HTMLLineupPlayersItem, ml.TeamLineupPlayerItem):
-    """
-    Hattrick Match Lineup -> Team lineup -> Ending lineup -> -> Player item
-    """
+    """Hattrick Match Lineup -> Team lineup -> Ending lineup -> Player item."""
 
 
 @dataclass
 class GhostPlayer:
+    """Placeholder for a player not present in the lineup data."""
     id: int
 
 
 class LineupRoles(Enum):
+    """Roles a player can have in a lineup, with their Hattrick role IDs."""
     SET_PIECES_TAKER = 17
     CAPTAIN = 18
     REPLACED_PLAYER_1 = 19
@@ -384,6 +377,7 @@ class LineupRoles(Enum):
 
 
 class LineupGlobalRoles(Enum):
+    """Global positions grouping the lineup role IDs (DEFENDER, MIDFIELD, ...)."""
 
     KEEPER = {LineupRoles.KEEPER.value}
 
@@ -460,7 +454,18 @@ class LineupGlobalRoles(Enum):
 
     @classmethod
     def position_from_role_id(cls, role_id: int):
+        """Get the position name (KEEPER, DEFENDER, ...) from a role ID.
 
+        Args:
+            role_id: Hattrick role ID of the player in the lineup.
+
+        Returns:
+            The name of the global position (KEEPER, DEFENDER, MIDFIELD, FORWARD, ...).
+
+        Raises:
+            ValueError: If the role ID does not belong to any known position.
+
+        """
         for role in cls:
             if role_id in role.value:
                 return role.name
@@ -469,6 +474,15 @@ class LineupGlobalRoles(Enum):
 
     @classmethod
     def formation_from_lineup(cls, lineup):
+        """Compute the formation string (e.g. '433') from a lineup dict.
+
+        Args:
+            lineup: Lineup dict, as position name -> role ID -> player.
+
+        Returns:
+            The formation string (defenders, midfielders, forwards).
+
+        """
         return (
             f"{len([i for i in lineup[cls.DEFENDER.name].values() if i is not None])}"
             f"{len([i for i in lineup[cls.MIDFIELD.name].values() if i is not None])}"
@@ -477,6 +491,7 @@ class LineupGlobalRoles(Enum):
 
 
 class LineupEventCodes(Enum):
+    """Match event type IDs that impact the lineup."""
     RED_CARD = {512, 513, 514}
     NO_REPLACED = {93, 96, 97, 425, 426}
     SUBSTITUTION = {91, 92, 95,

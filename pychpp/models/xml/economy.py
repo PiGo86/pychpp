@@ -1,3 +1,5 @@
+"""Models for the `economy.xml` CHPP file."""
+
 from typing import Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestEconomy(HTModel):
-    """
-    Economy - Request arguments
-    """
+    """Economy - Request arguments."""
     SOURCE_FILE = 'economy'
     LAST_VERSION = '1.4'
 
@@ -16,16 +16,12 @@ class RequestEconomy(HTModel):
 
 
 class Economy(RequestEconomy):
-    """
-    Economy
-    """
+    """Parsed data of the `economy.xml` CHPP file."""
     team: 'Team' = HTField('Team')
 
 
 class Team(HTModel):
-    """
-    Economy -> Team
-    """
+    """Economy -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     cash: int = HTField('Cash')

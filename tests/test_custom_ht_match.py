@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_match` model."""
+
 import re
 
 from pychpp.fixtures.ht_datetime import HTDatetime
@@ -7,7 +9,6 @@ from .conftest import MATCH_PATTERN
 
 
 def test_get_match(mocked_chpp):
-
     m = mocked_chpp.match(547513790, events=True, version='3.1')
 
     assert isinstance(m, HTMatch)

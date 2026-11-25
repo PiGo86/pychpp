@@ -1,8 +1,9 @@
+"""Tests for the `matches.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_xml_matches(mocked_chpp):
-
     xml_matches = mocked_chpp.xml_matches(version='2.9')
 
     team = xml_matches.team
@@ -38,7 +39,6 @@ def test_xml_matches(mocked_chpp):
 
 
 def test_xml_matches_version_3_0(mocked_chpp):
-
     xml_matches = mocked_chpp.xml_matches()
 
     team = xml_matches.team

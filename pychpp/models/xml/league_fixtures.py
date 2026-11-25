@@ -1,3 +1,5 @@
+"""Models for the `leaguefixtures.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestLeagueFixtures(HTModel):
-    """
-    League Fixtures - Request arguments
-    """
+    """League Fixtures - Request arguments."""
     SOURCE_FILE = 'leaguefixtures'
     LAST_VERSION = '1.2'
 
@@ -19,9 +19,7 @@ class RequestLeagueFixtures(HTModel):
 
 
 class LeagueFixtures(RequestLeagueFixtures):
-    """
-    League Fixtures
-    """
+    """League Fixtures."""
     id: int = HTField('LeagueLevelUnitID')
     name: str = HTField('LeagueLevelUnitName')
     season: int = HTField('Season')
@@ -30,9 +28,7 @@ class LeagueFixtures(RequestLeagueFixtures):
 
 
 class MatchItem(HTModel):
-    """
-    League Fixtures -> Match item
-    """
+    """League Fixtures -> Match item."""
     id: int = HTField('MatchID')
     round: int = HTField('MatchRound')
     home_team: 'MatchItemHomeTeamItem' = HTField('HomeTeam')
@@ -43,16 +39,12 @@ class MatchItem(HTModel):
 
 
 class MatchItemHomeTeamItem(HTModel):
-    """
-    League Fixtures -> Match item -> Home team item
-    """
+    """League Fixtures -> Match item -> Home team item."""
     id: int = HTField('HomeTeamID')
     name: str = HTField('HomeTeamName')
 
 
 class MatchItemAwayTeamItem(HTModel):
-    """
-    League Fixtures -> Match item -> Away team item
-    """
+    """League Fixtures -> Match item -> Away team item."""
     id: int = HTField('AwayTeamID')
     name: str = HTField('AwayTeamName')

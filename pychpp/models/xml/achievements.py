@@ -1,3 +1,5 @@
+"""Models for the `achievements.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -5,9 +7,7 @@ from pychpp.models.ht_model import HTField, HTInitVar, HTModel
 
 
 class RequestAchievements(HTModel):
-    """
-    Achievements - Request arguments
-    """
+    """Achievements - Request arguments."""
     SOURCE_FILE = "achievements"
     LAST_VERSION = "1.4"
 
@@ -15,17 +15,13 @@ class RequestAchievements(HTModel):
 
 
 class Achievements(RequestAchievements):
-    """
-    Achievements
-    """
+    """Parsed data of the `achievements.xml` CHPP file."""
     max_points: int = HTField('MaxPoints')
     achievements: List['Achievement'] = HTField('AchievementList', items='Achievement')
 
 
 class Achievement(HTModel):
-    """
-    Achievements -> Achievements -> Achievement item
-    """
+    """Achievements -> Achievements -> Achievement item."""
     type_id: int = HTField('AchievementTypeID')
     title: str = HTField('AchievementTitle', version='>=1.2')
     text: str = HTField('AchievementText')
@@ -47,9 +43,7 @@ class Achievement(HTModel):
 
 
 class AchievementVariation(HTModel):
-    """
-    Achievements -> Achievement -> Current/Next variation
-    """
+    """Achievements -> Achievement -> Current/Next variation."""
     rank: int = HTField('Rank')
     value_to_achieve: int = HTField('ValueToAchieve')
     points: int = HTField('Points')

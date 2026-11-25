@@ -11,15 +11,28 @@ before_script:
 
 stages:
   - test
+  - docs
   - deploy
 
 style:
   stage: test
-  script: uv run flake8
+  script: uv run ruff check
 
 test:
   stage: test
   script: uv run pytest
+
+pages:
+  stage: docs
+  only: [master]
+  script:
+    - uv sync --group docs --frozen
+    - uv run zensical build
+    - rm -rf public
+    - mv site public
+  artifacts:
+    paths:
+      - public
 
 deploy:
   stage: deploy

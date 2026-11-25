@@ -1,0 +1,2 @@
+"""Test suite of pychpp."""
+

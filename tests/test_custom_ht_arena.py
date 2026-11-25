@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_arena` model."""
+
 import re
 
 from pychpp.models.custom.ht_arena import HTArena

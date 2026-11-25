@@ -1,3 +1,5 @@
+"""Tests for the `players.xml` CHPP file parsing."""
+
 from pychpp.models.xml.players import PlayersView, PlayersViewOldies
 
 

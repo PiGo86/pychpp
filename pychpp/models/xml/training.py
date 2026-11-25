@@ -1,3 +1,5 @@
+"""Models for the `training.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class BaseRequestTraining(HTModel):
-    """
-    Base Training
-    """
+    """Base Training."""
     SOURCE_FILE = 'training'
     LAST_VERSION = '2.3'
 
@@ -18,16 +18,12 @@ class BaseRequestTraining(HTModel):
 
 
 class RequestTrainingView(HTModel):
-    """
-    Base Training - View
-    """
+    """Base Training - View."""
     _r_team_id: Optional[int] = HTInitVar('teamId', init_arg='team_id')
 
 
 class RequestTrainingSetTraining(HTModel):
-    """
-    Base Training - Set training
-    """
+    """Base Training - Set training."""
     _r_training_type: str = HTInitVar('trainingType', init_arg='training_type')
     _r_training_level: int = HTInitVar('trainingLevel', init_arg='training_level')
     _r_training_level_stamina: int = HTInitVar('trainingLevelStamina',
@@ -35,9 +31,7 @@ class RequestTrainingSetTraining(HTModel):
 
 
 class CommonTrainingViewSetTraining(BaseRequestTraining):
-    """
-    Training View or Set Training
-    """
+    """Training View or Set Training."""
     XML_PREFIX = 'Team/'
 
     user_supporter_tier: str = HTField('../UserSupporterTier')
@@ -56,44 +50,34 @@ class CommonTrainingViewSetTraining(BaseRequestTraining):
 
 
 class LastTraining(HTModel):
-    """
-    Training -> Last training
-    """
+    """Training -> Last training."""
     training_type: int = HTField('LastTrainingTrainingType')
     training_level: int = HTField('LastTrainingTrainingLevel')
     stamina_training_part: int = HTField('LastTrainingStaminaTrainingPart')
 
 
 class Trainer(HTModel):
-    """
-    Training -> Trainer
-    """
+    """Training -> Trainer."""
     id: int = HTField('TrainerID')
     name: str = HTField('TrainerName')
     arrival_date: datetime = HTField('ArrivalDate')
 
 
 class SpecialTraining(HTModel):
-    """
-    Training -> Special training
-    """
+    """Training -> Special training."""
     players: List['SpecialTrainingPlayerItem'] = HTField('.', items='Player')
     trainer_name: Optional[str] = HTField('TrainerName')
     arrival_date: Optional[datetime] = HTField('ArrivalDate')
 
 
 class SpecialTrainingPlayerItem(HTModel):
-    """
-    Training -> Special training -> Players -> Player item
-    """
+    """Training -> Special training -> Players -> Player item."""
     id: Optional[int] = HTField('PlayerID')
     training_type_id: Optional[int] = HTField('SpecialTrainingTypeID')
 
 
 class Experience(HTModel):
-    """
-    Training -> Experience
-    """
+    """Training -> Experience."""
     _442: int = HTField('Experience442')
     _433: int = HTField('Experience433')
     _451: int = HTField('Experience451')
@@ -107,30 +91,22 @@ class Experience(HTModel):
 
 
 class TrainingView(CommonTrainingViewSetTraining):
-    """
-    Training - View
-    """
+    """Training - View."""
     pass
 
 
 class TrainingSetTraining(CommonTrainingViewSetTraining):
-    """
-    Training - Set training
-    """
+    """Training - Set training."""
     training_set: bool = HTField('TrainingSet')
 
 
 class RequestTrainingHistory(BaseRequestTraining):
-    """
-    Training - History - Request arguments
-    """
+    """Training - History - Request arguments."""
     _r_from_date: Optional[datetime] = HTInitVar('fromDate', init_arg='from_date')
 
 
 class TrainingHistoryView(RequestTrainingHistory):
-    """
-    Training - History
-    """
+    """Training - History."""
     team_id: int = HTField('TeamID', version='>=2.3')
     from_date: datetime = HTField('FromDate', version='>=2.3')
     training_history: List['TrainingHistoryItem'] = HTField('TrainingHistory',
@@ -138,9 +114,7 @@ class TrainingHistoryView(RequestTrainingHistory):
 
 
 class TrainingHistoryItem(HTModel):
-    """
-    Training - History -> Training history -> Training item
-    """
+    """Training - History -> Training history -> Training item."""
     season: int = HTField('HattrickSeason')
     week: int = HTField('HattrickWeek')
     training_type: int = HTField('TrainingType')
@@ -150,23 +124,17 @@ class TrainingHistoryItem(HTModel):
 
 
 class RequestTrainingStats(BaseRequestTraining):
-    """
-    Training - Stats - Request arguments
-    """
+    """Training - Stats - Request arguments."""
     _r_league_id: int = HTInitVar('leagueID', init_arg='league_id')
 
 
 class TrainingStats(RequestTrainingStats):
-    """
-    Training - Stats
-    """
+    """Training - Stats."""
     league_id: int = HTField('LeagueID')
     league_name: str = HTField('LeagueName')
     training_stats: List['TrainingStatItem'] = HTField('TrainingStatList')
 
 
 class TrainingStatItem(HTModel):
-    """
-    Training - Stats -> Stat item
-    """
+    """Training - Stats -> Stat item."""
     # TODO: I don't know the xml output structure here

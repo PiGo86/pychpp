@@ -1,3 +1,5 @@
+"""Models for the `currentbids.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestCurrentBids(HTModel):
-    """
-    Current Bids - Request arguments
-    """
+    """Current Bids - Request arguments."""
     SOURCE_FILE = 'currentbids'
     LAST_VERSION = '1.0'
 
@@ -20,9 +20,7 @@ class RequestCurrentBids(HTModel):
 
 
 class CurrentBids(RequestCurrentBids):
-    """
-    Current Bids
-    """
+    """Current Bids."""
     team_id: int = HTField('TeamId')
     selling_bids: Optional[List['BidItem']] = HTField('BidItems[@TrackingTypeID="1"]',
                                                       items='BidItem')
@@ -43,9 +41,7 @@ class CurrentBids(RequestCurrentBids):
 
 
 class BidItem(HTModel):
-    """
-    Current Bids -> Bids -> Bid item
-    """
+    """Current Bids -> Bids -> Bid item."""
     transfer_id: int = HTField('TransferId')
     player_id: int = HTField('PlayerId')
     player_name: str = HTField('PlayerName')
@@ -54,9 +50,7 @@ class BidItem(HTModel):
 
 
 class HighestBid(HTModel):
-    """
-    Current Bids -> Bids -> Bid item -> Highest Bid
-    """
+    """Current Bids -> Bids -> Bid item -> Highest Bid."""
     amount: int = HTField('Amount')
     team_id: int = HTField('TeamId')
     team_name: str = HTField('TeamName')

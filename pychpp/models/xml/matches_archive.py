@@ -1,3 +1,5 @@
+"""Models for the `matchesarchive.xml` CHPP file."""
+
 from datetime import datetime, date
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestMatchesArchive(HTModel):
-    """
-    Matches Archive - Request arguments
-    """
+    """Matches Archive - Request arguments."""
     SOURCE_FILE = 'matchesarchive'
     LAST_VERSION = '1.5'
 
@@ -24,9 +24,7 @@ class RequestMatchesArchive(HTModel):
 
 
 class MatchesArchive(RequestMatchesArchive):
-    """
-    Matches Archive
-    """
+    """Matches Archive."""
     team: 'Team' = HTField('.')
     first_match_date: Optional[datetime] = HTField('FirstMatchDate')
     last_match_date: Optional[datetime] = HTField('LastMatchDate')
@@ -34,17 +32,13 @@ class MatchesArchive(RequestMatchesArchive):
 
 
 class Team(HTModel):
-    """
-    Matches Archives -> Team
-    """
+    """Matches Archives -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class MatchItem(HTModel):
-    """
-    Matches Archives -> Matches -> Match item
-    """
+    """Matches Archives -> Matches -> Match item."""
     id: int = HTField('MatchID')
     home_team: 'MatchItemTeam' = HTField('HomeTeam', xml_prefix='Home')
     away_team: 'MatchItemTeam' = HTField('AwayTeam', xml_prefix='Away')
@@ -59,17 +53,13 @@ class MatchItem(HTModel):
 
 
 class MatchItemTeam(HTModel):
-    """
-    Matches Archives -> Matches -> Match item -> Team
-    """
+    """Matches Archives -> Matches -> Match item -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
 
 
 class MatchItemCup(HTModel):
-    """
-    Matches Archives -> Matches -> Match item -> Cup
-    """
+    """Matches Archives -> Matches -> Match item -> Cup."""
     id: int = HTField('CupId')
     level: int = HTField('CupLevel')
     level_index: int = HTField('CupLevelIndex')

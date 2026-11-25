@@ -1,12 +1,17 @@
+"""Datetime helpers used in pychpp."""
+
 import datetime as dt
+from typing import Any, Optional
+
 import pytz
 
 
 class HTDatetime:
-    """
-    Hattrick datetime
-    Give Hattrick season, week and weekday according to calendar datetime and
-    calendar time according to Hattrick season, week and weekday
+    """Hattrick datetime.
+
+    Convert between a calendar datetime and the Hattrick calendar
+    (season, week, weekday).
+
     """
 
     _ORIGIN_DATE = dt.datetime(1997, 9, 22, 0, 0)
@@ -156,40 +161,29 @@ class HTDatetime:
     }
 
     def __init__(self,
-                 season=None, week=None, weekday=None,
-                 year=None, month=None, day=None,
+                 season: Optional[int]=None, week: Optional[int]=None, weekday: Optional[int]=None,
+                 year: Optional[int]=None, month: Optional[int]=None, day: Optional[int]=None,
                  hour=0, minute=0, second=0,
-                 datetime=None,
-                 league=None,
-                 timezone=None,
+                 datetime: Optional[dt.datetime]=None,
+                 league: Optional[int | str]=None,
+                 timezone: Optional[str]=None,
                  ):
-        """
-        Initialization of a HTDatetime instance
+        """Initialize a HTDatetime instance.
 
-        :param season: Hattrick season (from season 1)
-        :param week: Hattrick week in season (from 1 to 16)
-        :param weekday: weekday in Hattrick week (from 1 to 7)
-        :param year: calendar year (from 1997)
-        :param month: calendar month (from 1 to 12)
-        :param day: calendar day in month (from 1 to 31)
-        :param hour: hour in day (from 0 to 23)
-        :param minute: minute in hour (from 0 to 59)
-        :param second: second in minute (from 0 to 59)
-        :param datetime: date and time (from 1997-09-22 00:00)
-        :param league: league for which HTDatetime is given
-        :param timezone: timezone to use to localize HTDatetime
-        :type season: int
-        :type week: int
-        :type weekday: int
-        :type year: int
-        :type month: int
-        :type day: int
-        :type hour: int
-        :type minute: int
-        :type second: int
-        :type datetime: datetime.datetime
-        :type league: Union[int, str]
-        :type timezone: str
+        Args:
+            season: Hattrick season (from season 1).
+            week: Hattrick week in the season (from 1 to 16).
+            weekday: Weekday in the Hattrick week (from 1 to 7).
+            year: Calendar year (from 1997).
+            month: Calendar month (from 1 to 12).
+            day: Calendar day in the month (from 1 to 31).
+            hour: Hour in the day (from 0 to 23).
+            minute: Minute in the hour (from 0 to 59).
+            second: Second in the minute (from 0 to 59).
+            datetime: Date and time (from 1997-09-22 00:00).
+            league: League for which the HTDatetime is given (ID or name).
+            timezone: Timezone used to localize the HTDatetime.
+
         """
         # Get season offset according to league, defaults to 0
         season_offset = self._get_season_offset(self._to_league_name(league))
@@ -376,8 +370,9 @@ class HTDatetime:
     @classmethod
     def from_ht_calendar(cls, season, week, weekday,
                          hour=0, minute=0, second=0,
-                         **kwargs,
+                         **kwargs: Any,
                          ):
+        """Build a HTDatetime from a Hattrick calendar date (season, week, weekday)."""
         return cls(season=season, week=week, weekday=weekday,
                    hour=hour, minute=minute, second=second,
                    **kwargs)
@@ -385,123 +380,144 @@ class HTDatetime:
     @classmethod
     def from_calendar(cls, year, month, day,
                       hour=0, minute=0, second=0,
-                      **kwargs):
+                      **kwargs: Any):
+        """Build a HTDatetime from a calendar date (year, month, day)."""
         return cls(year=year, month=month, day=day,
                    hour=hour, minute=minute, second=second,
                    **kwargs)
 
     @classmethod
-    def from_datetime(cls, datetime, **kwargs):
+    def from_datetime(cls, datetime, **kwargs: Any):
+        """Build a HTDatetime from a datetime object."""
         return cls(datetime=datetime, **kwargs)
 
     @property
     def season(self):
+        """Season number."""
         return self._season
 
     @season.setter
     def season(self, value):
+        """Season number."""
         self.__init__(season=value, week=self.week, weekday=self.weekday,
                       hour=self.hour, minute=self.minute, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def week(self):
+        """Week number in the season."""
         return self._week
 
     @week.setter
     def week(self, value):
+        """Week number in the season."""
         self.__init__(season=self.season, week=value, weekday=self.weekday,
                       hour=self.hour, minute=self.minute, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def weekday(self):
+        """Day of the week."""
         return self._weekday
 
     @weekday.setter
     def weekday(self, value):
+        """Day of the week."""
         self.__init__(season=self.season, week=self.week, weekday=value,
                       hour=self.hour, minute=self.minute, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def year(self):
+        """Year of the datetime."""
         return self._year
 
     @year.setter
     def year(self, value):
+        """Year of the datetime."""
         self.__init__(year=value, month=self.month, day=self.day,
                       hour=self.hour, minute=self.minute, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def month(self):
+        """Month of the datetime."""
         return self._month
 
     @month.setter
     def month(self, value):
+        """Month of the datetime."""
         self.__init__(year=self.year, month=value, day=self.day,
                       hour=self.hour, minute=self.minute, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def day(self):
+        """Day of the datetime."""
         return self._day
 
     @day.setter
     def day(self, value):
+        """Day of the datetime."""
         self.__init__(year=self.year, month=self.month, day=value,
                       hour=self.hour, minute=self.minute, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def hour(self):
+        """Hour of the datetime."""
         return self._hour
 
     @hour.setter
     def hour(self, value):
+        """Hour of the datetime."""
         self.__init__(year=self.year, month=self.month, day=self.day,
                       hour=value, minute=self.minute, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def minute(self):
+        """Minute of the datetime."""
         return self._minute
 
     @minute.setter
     def minute(self, value):
+        """Minute of the datetime."""
         self.__init__(year=self.year, month=self.month, day=self.day,
                       hour=self.hour, minute=value, second=self.second,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def second(self):
+        """Second of the datetime."""
         return self._second
 
     @second.setter
     def second(self, value):
+        """Second of the datetime."""
         self.__init__(year=self.year, month=self.month, day=self.day,
                       hour=self.hour, minute=self.minute, second=value,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def datetime(self):
+        """Underlying datetime object."""
         return self._datetime
 
     @datetime.setter
     def datetime(self, value):
+        """Underlying datetime object."""
         self.__init__(datetime=value,
                       league=self.league, timezone=self.timezone_name)
 
     @property
     def league(self):
+        """League name, used to compute the season."""
         return self._league
 
     @league.setter
     def league(self, value):
-        """
-        season is modified according league change
-        """
+        """Change the league, updating the season offset accordingly."""
         new_league = self._to_league_name(value)
         old_league = self._to_league_name(self._league)
 
@@ -513,10 +529,12 @@ class HTDatetime:
 
     @property
     def timezone(self):
+        """Timezone of the datetime."""
         return self._timezone
 
     @timezone.setter
     def timezone(self, value):
+        """Timezone of the datetime."""
         tz = pytz.timezone(value)
         self.__init__(datetime=self.datetime.astimezone(tz),
                       league=self.league)

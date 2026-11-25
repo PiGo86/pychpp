@@ -1,3 +1,5 @@
+"""Models for the `transfersteam.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTransfersTeam(HTModel):
-    """
-    Transfers Team - Request arguments
-    """
+    """Transfers Team - Request arguments."""
     SOURCE_FILE = 'transfersteam'
     LAST_VERSION = "1.2"
 
@@ -18,27 +18,21 @@ class RequestTransfersTeam(HTModel):
 
 
 class TransfersTeam(RequestTransfersTeam):
-    """
-    Transfers Team
-    """
+    """Transfers Team."""
     team: 'Team' = HTField('Team')
     stats: 'Stats' = HTField('Stats')
     transfers: 'Transfers' = HTField('Transfers')
 
 
 class Team(HTModel):
-    """
-    Transfers Team -> Team
-    """
+    """Transfers Team -> Team."""
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')
     activated_date: datetime = HTField('ActivatedDate')
 
 
 class Stats(HTModel):
-    """
-    Transfers Team -> Stats
-    """
+    """Transfers Team -> Stats."""
     total_sum_of_buys: int = HTField('TotalSumOfBuys')
     total_sum_of_sales: int = HTField('TotalSumOfSales')
     number_of_buys: int = HTField('NumberOfBuys')
@@ -46,9 +40,7 @@ class Stats(HTModel):
 
 
 class Transfers(HTModel):
-    """
-    Transfers Team -> Transfers
-    """
+    """Transfers Team -> Transfers."""
     page_index: int = HTField('PageIndex')
     pages: int = HTField('Pages')
     start_date: datetime = HTField('StartDate')
@@ -57,9 +49,7 @@ class Transfers(HTModel):
 
 
 class TransfersTransferItem(HTModel):
-    """
-    Transfers Team -> Transfers -> Transfer items -> Transfer item
-    """
+    """Transfers Team -> Transfers -> Transfer items -> Transfer item."""
     id: int = HTField('TransferID')
     deadline: datetime = HTField('Deadline')
     type: str = HTField('TransferType')
@@ -70,25 +60,19 @@ class TransfersTransferItem(HTModel):
 
 
 class TransfersTransferItemPlayer(HTModel):
-    """
-    Transfers Team -> Transfers -> Transfer items -> Transfer item -> Player
-    """
+    """Transfers Team -> Transfers -> Transfer items -> Transfer item -> Player."""
     id: int = HTField('PlayerID')
     name: str = HTField('PlayerName')
     tsi: int = HTField('TSI')
 
 
 class TransfersTransferItemBuyer(HTModel):
-    """
-    Transfers Team -> Transfers -> Transfer items -> Transfer item -> Buyer
-    """
+    """Transfers Team -> Transfers -> Transfer items -> Transfer item -> Buyer."""
     id: int = HTField('BuyerTeamID')
     name: str = HTField('BuyerTeamName')
 
 
 class TransfersTransferItemSeller(HTModel):
-    """
-    Transfers Team -> Transfers -> Transfer items -> Transfer item -> Seller
-    """
+    """Transfers Team -> Transfers -> Transfer items -> Transfer item -> Seller."""
     id: int = HTField('SellerTeamID')
     name: str = HTField('SellerTeamName')

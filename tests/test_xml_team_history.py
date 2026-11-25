@@ -1,9 +1,10 @@
+"""Tests for the `teamhistory.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.team_history import TeamHistory
 
 
 def test_team_history_version_1_0(mocked_chpp):
-
     th = mocked_chpp.xml_team_history(team_id=1165592, version='1.0')
 
     assert isinstance(th, TeamHistory)

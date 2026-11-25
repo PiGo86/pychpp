@@ -1,5 +1,6 @@
-def test_translations(mocked_chpp):
+"""Tests for the `translations.xml` CHPP file parsing."""
 
+def test_translations(mocked_chpp):
     tr = mocked_chpp.xml_translations(language_id=5)
 
     assert tr.id == 5

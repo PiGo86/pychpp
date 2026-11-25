@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_user` model."""
+
 import re
 
 from pychpp.models.custom.ht_user import HTUser

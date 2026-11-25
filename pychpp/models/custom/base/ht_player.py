@@ -1,12 +1,13 @@
+"""Light model used as a base for the custom models."""
+
 from pychpp.models.custom import CustomModel
 from pychpp.models.ht_init_var import HTInitVar
 from pychpp.models.xml import youth_player_details as ypd
+from typing import Any
 
 
 class BaseCommonHTPlayer(CustomModel):
-    """
-    Base model for Hattrick player, youth and senior
-    """
+    """Base model for Hattrick player, youth and senior."""
     id: int
     first_name: str
     last_name: str
@@ -17,13 +18,12 @@ class BaseCommonHTPlayer(CustomModel):
 
 
 class HTCommonLightPlayer(BaseCommonHTPlayer):
-    """
-    Base model for common Hattrick light player
-    """
+    """Base model for common Hattrick light player."""
     is_youth: bool
 
     @property
     def url(self):
+        """Url of this player on hattrick.org."""
         if not self._url:
             if self.is_youth:
                 self._url = self._BASE_URL + (f"/Club/Players/YouthPlayer.aspx"
@@ -33,7 +33,8 @@ class HTCommonLightPlayer(BaseCommonHTPlayer):
                                               f"?playerID={self.id}")
         return self._url
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
+        """Get the full details of this player (youth or senior)."""
         if self.is_youth:
             return self._chpp.youth_player(id_=self.id, **kwargs)
         else:
@@ -41,42 +42,40 @@ class HTCommonLightPlayer(BaseCommonHTPlayer):
 
 
 class HTLightPlayer(BaseCommonHTPlayer):
-    """
-    Base model for Hattrick light player
-    """
+    """Base model for Hattrick light player."""
     URL_PATH = '/Club/Players/Player.aspx'
 
     # not used for fetching data, but to allow url property to work correctly
     _r_id = HTInitVar(param='playerID', init_arg='id_', fill_with='id')
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
+        """Get the full details of this player."""
         return self._chpp.player(id_=self.id, **kwargs)
 
 
 class HTLightYouthPlayer(BaseCommonHTPlayer):
-    """
-    Base model for Hattrick light youth player
-    """
+    """Base model for Hattrick light youth player."""
     URL_PATH = '/Club/Players/YouthPlayer.aspx'
 
     # not used for fetching data, but to allow url property to work correctly
     _r_id = HTInitVar(param='youthPlayerID', init_arg='id_', fill_with='id')
 
-    def details(self, **kwargs):
+    def details(self, **kwargs: Any):
+        """Get the full details of this youth player."""
         return self._chpp.youth_player(id_=self.id, **kwargs)
 
 
 class HTYouthPlayerSkills(CustomModel, ypd.Skills):
-    """
-    Hattrick youth player skills
-    """
+    """Hattrick youth player skills."""
     def __str__(self):
-        """
-        Pretty print of HTSkillYouth, 4 different cases possible :
-         - (?/?)
-         - (X/?)
-         - (?/Y)
-         - (X/Y)
+        """Pretty print of the youth player skills.
+
+        4 different cases are possible:
+        - (?/?)
+        - (X/?)
+        - (?/Y)
+        - (X/Y)
+
         """
 
         def sumup(level_, max_level_):
@@ -114,6 +113,7 @@ class HTYouthPlayerSkills(CustomModel, ypd.Skills):
 
 
 class HTAge(CustomModel):
+    """Age of a player, in years and days."""
     years: int
     days: int
 
@@ -148,9 +148,9 @@ class HTAge(CustomModel):
                              f" instance with HTAge instance")
 
     def __str__(self):
-        """Pretty print an HTAge"""
+        """Pretty print an HTAge."""
         return f"{self.years} years and {self.days} days"
 
     def __repr__(self):
-        """HTAge representation"""
+        """HTAge representation."""
         return f"<HTAge object : {self.__str__()}>"

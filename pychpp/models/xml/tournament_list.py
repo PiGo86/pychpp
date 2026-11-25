@@ -1,3 +1,5 @@
+"""Models for the `tournamentlist.xml` CHPP file."""
+
 from datetime import datetime
 from typing import List, Optional
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTournamentList(HTModel):
-    """
-    Tournament List - Request arguments
-    """
+    """Tournament List - Request arguments."""
     SOURCE_FILE = 'tournamentlist'
     LAST_VERSION = '1.0'
 
@@ -17,16 +17,12 @@ class RequestTournamentList(HTModel):
 
 
 class TournamentList(RequestTournamentList):
-    """
-    Tournament List
-    """
+    """Tournament List."""
     tournaments: List['TournamentItem'] = HTField('Tournaments', items='Tournament')
 
 
 class TournamentItem(HTModel):
-    """
-    Tournament List -> Tournaments -> Tournament item
-    """
+    """Tournament List -> Tournaments -> Tournament item."""
     id: int = HTField('TournamentId')
     name: str = HTField('Name')
     type: int = HTField('TournamentType')
@@ -43,8 +39,6 @@ class TournamentItem(HTModel):
 
 
 class Creator(HTModel):
-    """
-    Tournament Details -> Creator
-    """
+    """Tournament Details -> Creator."""
     id: int = HTField('UserId')
     login_name: str = HTField('Loginname')

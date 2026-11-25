@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_league_unit` model."""
+
 import re
 
 from pychpp.models.custom.ht_league_unit import HTLeagueUnit

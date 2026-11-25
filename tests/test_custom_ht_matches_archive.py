@@ -1,3 +1,5 @@
+"""Tests for the custom `ht_matches_archive` model."""
+
 import re
 
 from pychpp.fixtures.ht_datetime import HTDatetime

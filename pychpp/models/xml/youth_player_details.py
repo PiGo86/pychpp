@@ -1,3 +1,5 @@
+"""Models for the `youthplayerdetails.xml` CHPP file."""
+
 from datetime import datetime
 from typing import Optional, List
 
@@ -7,9 +9,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestYouthPlayerDetails(HTModel):
-    """
-    Youth Player Details - Request arguments
-    """
+    """Youth Player Details - Request arguments."""
     SOURCE_FILE = 'youthplayerdetails'
     LAST_VERSION = '1.4'
 
@@ -26,9 +26,7 @@ class RequestYouthPlayerDetails(HTModel):
 
 
 class YouthPlayerDetails(RequestYouthPlayerDetails):
-    """
-    Youth Player Details
-    """
+    """Youth Player Details."""
     XML_PREFIX = 'YouthPlayer/'
 
     id: int = HTField('YouthPlayerID')
@@ -62,9 +60,7 @@ class YouthPlayerDetails(RequestYouthPlayerDetails):
 
 
 class OwningYouthTeam(HTModel):
-    """
-    Youth Player Details -> Owning youth team
-    """
+    """Youth Player Details -> Owning youth team."""
     id: int = HTField('YouthTeamID')
     name: str = HTField('YouthTeamName')
     league_id: int = HTField('YouthTeamLeagueID')
@@ -73,17 +69,13 @@ class OwningYouthTeam(HTModel):
 
 
 class OwningYouthTeamSeniorTeam(HTModel):
-    """
-    Youth Player Details -> Owning youth team -> Senior team
-    """
+    """Youth Player Details -> Owning youth team -> Senior team."""
     id: int = HTField('SeniorTeamID')
     name: str = HTField('SeniorTeamName')
 
 
 class Skills(HTModel):
-    """
-    Youth Player Details -> Skills
-    """
+    """Youth Player Details -> Skills."""
     keeper: 'SkillsSkillItem' = HTField('.', xml_prefix='Keeper')
     defender: 'SkillsSkillItem' = HTField('.', xml_prefix='Defender')
     playmaker: 'SkillsSkillItem' = HTField('.', xml_prefix='Playmaker')
@@ -94,17 +86,13 @@ class Skills(HTModel):
 
 
 class SkillsSkillItem(HTModel):
-    """
-    Youth Player Details -> Skills -> Skill item
-    """
+    """Youth Player Details -> Skills -> Skill item."""
     skill: 'SkillsSkillItemSkill' = HTField('Skill')
     skill_max: 'SkillsSkillItemSkillMax' = HTField('SkillMax')
 
 
 class SkillsSkillItemSkill(HTModel):
-    """
-    Youth Player Details -> Skills -> Skill item -> Skill
-    """
+    """Youth Player Details -> Skills -> Skill item -> Skill."""
     is_available: bool = HTField('.', attrib='IsAvailable')
     is_max_reached: bool = HTField('.', attrib='IsMaxReached')
     may_unlock: bool = HTField('.', attrib='MayUnlock')
@@ -112,35 +100,27 @@ class SkillsSkillItemSkill(HTModel):
 
 
 class SkillsSkillItemSkillMax(HTModel):
-    """
-    Youth Player Details -> Skills -> Skill item -> Skill
-    """
+    """Youth Player Details -> Skills -> Skill item -> Skill."""
     is_available: bool = HTField('.', attrib='IsAvailable')
     may_unlock: bool = HTField('.', attrib='MayUnlock')
     level: int = HTField('.')
 
 
 class ScoutCall(HTModel):
-    """
-    Youth Player Details -> Scout call
-    """
+    """Youth Player Details -> Scout call."""
     scout: 'ScoutCallScout' = HTField('Scout')
     scouting_region_id: int = HTField('ScoutingRegionID')
     comments: List['ScoutCallCommentItem'] = HTField('ScoutComments', items='ScoutComment')
 
 
 class ScoutCallScout(HTModel):
-    """
-    Youth Player Details -> Scout call -> Scout
-    """
+    """Youth Player Details -> Scout call -> Scout."""
     id: int = HTField('ScoutId')
     name: str = HTField('ScoutName')
 
 
 class ScoutCallCommentItem(HTModel):
-    """
-    Youth Player Details -> Scout call -> Comments -> Comment item
-    """
+    """Youth Player Details -> Scout call -> Comments -> Comment item."""
     text: str = HTField('CommentText')
     type: int = HTField('CommentType')
     variation: int = HTField('CommentVariation')
@@ -149,9 +129,7 @@ class ScoutCallCommentItem(HTModel):
 
 
 class TrainingReportsReportItem(HTModel):
-    """
-    Youth Player Details -> Training reports -> Report item
-    """
+    """Youth Player Details -> Training reports -> Report item."""
     text: str = HTField('ReportText')
     date: datetime = HTField('ReportDate')
     type: int = HTField('ReportType')
@@ -160,9 +138,7 @@ class TrainingReportsReportItem(HTModel):
 
 
 class LastMatch(HTModel):
-    """
-    Youth Player Details -> Last match
-    """
+    """Youth Player Details -> Last match."""
     date: Optional[datetime] = HTField('Date')
     youth_match_id: Optional[int] = HTField('YouthMatchID')
     position_code: Optional[int] = HTField('PositionCode')

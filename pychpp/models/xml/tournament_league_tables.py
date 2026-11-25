@@ -1,3 +1,5 @@
+"""Models for the `tournamentleaguetables.xml` CHPP file."""
+
 from typing import Optional, List
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestTournamentLeagueTables(HTModel):
-    """
-    Tournament League Tables - Request arguments
-    """
+    """Tournament League Tables - Request arguments."""
     SOURCE_FILE = 'tournamentleaguetables'
     LAST_VERSION = '1.1'
 
@@ -18,9 +18,7 @@ class RequestTournamentLeagueTables(HTModel):
 
 
 class TournamentLeagueTables(RequestTournamentLeagueTables):
-    """
-    Tournament League Tables
-    """
+    """Tournament League Tables."""
     id: int = HTField('TournamentId')
     season: int = HTField('Season')
     world_cup_round: Optional[int] = HTField('WorldCupRound')
@@ -29,17 +27,16 @@ class TournamentLeagueTables(RequestTournamentLeagueTables):
 
 
 class TableItem(HTModel):
-    """
-    Tournament League Tables -> Tournament League Tables -> Tournament League Table item
-    """
+    """Tournament League Tables -> Tournament League Tables -> Tournament League Table item."""
     group_id: int = HTField('GroupId')
     teams: List['TeamItem'] = HTField('Teams', items='Team')
 
 
 class TeamItem(HTModel):
-    """
-    Tournament League Tables -> Tournament League Tables -> Tournament League Table item
+    """Tournament League Tables -> Tournament League Tables -> Tournament League Table item.
+
     -> Teams -> Team item
+
     """
     id: int = HTField('TeamID')
     name: str = HTField('TeamName')

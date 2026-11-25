@@ -1,3 +1,5 @@
+"""Tests for the `nationalteams.xml` CHPP file parsing."""
+
 from pychpp.models.xml.national_teams import NationalTeams, NationalTeamItem
 
 

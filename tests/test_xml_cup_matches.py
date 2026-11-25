@@ -1,8 +1,9 @@
+"""Tests for the `cupmatches.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_get_hattrick_masters_matches(mocked_chpp):
-
     hm = mocked_chpp.xml_cup_matches(183, season=88, cup_round=6)
 
     assert hm.id == 183

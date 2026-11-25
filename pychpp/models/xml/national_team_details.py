@@ -1,3 +1,5 @@
+"""Models for the `nationalteamdetails.xml` CHPP file."""
+
 from typing import List, Optional
 
 from pychpp.models.ht_field import HTField
@@ -6,9 +8,7 @@ from pychpp.models.ht_model import HTModel
 
 
 class RequestNationalTeamDetails(HTModel):
-    """
-    National Team Details - Request arguments
-    """
+    """National Team Details - Request arguments."""
     SOURCE_FILE = 'nationalteamdetails'
     LAST_VERSION = '2.0'
 
@@ -16,9 +16,7 @@ class RequestNationalTeamDetails(HTModel):
 
 
 class NationalTeamDetails(RequestNationalTeamDetails):
-    """
-    National Team Details
-    """
+    """National Team Details."""
     user_supporter_tier: str = HTField('UserSupporterTier')
     is_playing_match: bool = HTField('IsPlayingMatch')
     id: int = HTField('Team/TeamID')
@@ -42,41 +40,31 @@ class NationalTeamDetails(RequestNationalTeamDetails):
 
 
 class NationalCoach(HTModel):
-    """
-    National Team Details -> National Coach
-    """
+    """National Team Details -> National Coach."""
     id: int = HTField('NationalCoachUserID')
     login_name: str = HTField('NationalCoachLoginname')
 
 
 class AssistantCoach(HTModel):
-    """
-    National Team Details -> Assistant Coach (empty if the team has no assistant coach)
-    """
+    """National Team Details -> Assistant Coach (empty if the team has no assistant coach)."""
     id: Optional[int] = HTField('UserID')
     login_name: Optional[str] = HTField('Loginname')
 
 
 class Scout(HTModel):
-    """
-    National Team Details -> Scouts -> Scout item
-    """
+    """National Team Details -> Scouts -> Scout item."""
     id: Optional[int] = HTField('UserID')
     login_name: Optional[str] = HTField('Loginname')
 
 
 class League(HTModel):
-    """
-    National Team Details -> League
-    """
+    """National Team Details -> League."""
     id: int = HTField('LeagueID')
     name: str = HTField('LeagueName')
 
 
 class Experience(HTModel):
-    """
-    National Team Details -> Experience
-    """
+    """National Team Details -> Experience."""
     _433: int = HTField('Experience433')
     _451: int = HTField('Experience451')
     _352: int = HTField('Experience352')

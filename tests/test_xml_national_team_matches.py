@@ -1,8 +1,9 @@
+"""Tests for the `nationalteammatches.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_national_team_matches(mocked_chpp):
-
     nt_matches = mocked_chpp.xml_national_team_matches()
 
     assert nt_matches.user_supporter_tier == 'none'

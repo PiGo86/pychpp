@@ -1,3 +1,5 @@
+"""Tests for the `achievements.xml` CHPP file parsing."""
+
 from pychpp import CHPP
 from pychpp.fixtures.ht_datetime import HTDatetime
 from pychpp.models.xml.achievements import Achievements

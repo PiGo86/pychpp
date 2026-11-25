@@ -1,3 +1,5 @@
+"""Tests for the HTDatetime fixture."""
+
 import datetime as dt
 import pytz
 
@@ -5,7 +7,6 @@ from pychpp.fixtures.ht_datetime import HTDatetime
 
 
 def test_use_ht_datetime():
-
     ht_d = HTDatetime(datetime=dt.datetime(year=2020, month=9, day=7))
     assert (ht_d.season, ht_d.week, ht_d.weekday) == (75, 15, 1)
     assert ht_d.league == ""

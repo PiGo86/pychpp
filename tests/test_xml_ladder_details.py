@@ -1,3 +1,5 @@
+"""Tests for the `ladderdetails.xml` CHPP file parsing."""
+
 from pychpp.fixtures.ht_datetime import HTDatetime
 
 

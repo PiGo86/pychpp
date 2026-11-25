@@ -1,5 +1,6 @@
-def test_youth_avatars(mocked_chpp):
+"""Tests for the `youthavatars.xml` CHPP file parsing."""
 
+def test_youth_avatars(mocked_chpp):
     ya = mocked_chpp.xml_youth_avatars()
 
     assert ya.youth_team_id == 2942691
